@@ -9,8 +9,16 @@ export default defineNuxtConfig({
     "~/assets/main.css"
   ],
   modules: [
-    'nuxt-lucide-icons'
+    'nuxt-lucide-icons',
+    '@nuxtjs/google-fonts'
   ],
+  googleFonts: {
+    families: {
+      Lora: [400, 700],
+      'Roboto Flex': [100, 300, 400, 500, 700, 900]
+    },
+    display: 'swap' // Ensures text remains visible during webfont load
+  },
   plugins: [
     '~/plugins/rellax.client.js'
   ],
@@ -40,8 +48,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon/favicon-16x16.png' },
         { rel: 'manifest', href: '/images/favicon/site.webmanifest' },
-        { rel: 'mask-icon', href: '/images/favicon/safari-pinned-tab.svg', color: '#5bbad5' },
-      ],
+        { rel: 'mask-icon', href: '/images/favicon/safari-pinned-tab.svg', color: '#5bbad5' },  ],
     }
   }
 })
