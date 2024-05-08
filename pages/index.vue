@@ -1,42 +1,5 @@
 <template>
   <main>
-    <header>
-      <div
-        class="background-image rellax"
-        data-rellax-speed="3"
-        data-rellax-mobile-speed="0">
-        <img alt="ALT TEXT" src="/assets/images/pool-night.png" />
-      </div>
-      <div class="container grid index-hero">
-        <div class="hero-text item">
-          <TextReveal tag="h1"> Thermae Bath Spa </TextReveal>
-          <TextReveal tag="h2"
-            >Britain's original natural thermal spa</TextReveal
-          >
-        </div>
-        <div class="item paragraph">
-          <p class="body">
-            Discover relaxation and rejuvenation at the only naturally warm,
-            mineral-rich waters in Britain. Immerse yourself in our luxurious
-            spa facilities, including the iconic rooftop pool with stunning
-            views of the historic city of Bath. Experience a blend of ancient
-            tradition and modern spa therapy as you unwind in the soothing
-            waters and indulge in a range of therapeutic treatments designed to
-            refresh both body and mind. Whether you seek a moment of solitude or
-            a shared experience, Thermae Bath Spa offers a timeless escape to
-            enhance your wellbeing.
-          </p>
-          <a
-            href="URL"
-            aria-label="DESCRIPTION"
-            class="item link underline-out-icon">
-            <i data-lucide="arrow-right"></i>
-            Book Now
-          </a>
-        </div>
-      </div>
-    </header>
-
     <section id="about">
       <div class="container grid">
         <p class="item accent section-label">About —</p>
@@ -275,7 +238,7 @@
           <div class="item-inner">
             <div class="accordion-item">
               <p class="accordion-title">
-                Before You Arrive<i data-lucide="arrow-up-right"></i>
+                Before You Arrive<LucideArrowUpRight />
               </p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
@@ -287,7 +250,7 @@
             </div>
             <div class="accordion-item">
               <p class="accordion-title">
-                Your Visit<i data-lucide="arrow-up-right"></i>
+                Your Visit<LucideArrowUpRight />
               </p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
@@ -299,7 +262,7 @@
             </div>
             <div class="accordion-item">
               <p class="accordion-title">
-                Medical Conditions<i data-lucide="arrow-up-right"></i>
+                Medical Conditions<LucideArrowUpRight />
               </p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
@@ -311,7 +274,7 @@
             </div>
             <div class="accordion-item">
               <p class="accordion-title">
-                Opening Hours<i data-lucide="arrow-up-right"></i>
+                Opening Hours<LucideArrowUpRight />
               </p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
@@ -323,7 +286,7 @@
             </div>
             <div class="accordion-item">
               <p class="accordion-title">
-                Find Us<i data-lucide="arrow-up-right"></i>
+                Find Us<LucideArrowUpRight />
               </p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>

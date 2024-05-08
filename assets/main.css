@@ -360,16 +360,6 @@ section {
   transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-body.scrolled-past-header .logo-hide {
-  max-width: 9em;
-  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-body.scrolled-past-header nav .logo img {
-  filter: invert(100%);
-  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
 /** Nav */
 
 nav {
@@ -405,14 +395,6 @@ nav a {
 
 nav a::after {
   background-color: var(--color-white);
-}
-
-body.scrolled-past-header nav a {
-  color: var(--color-black);
-}
-
-body.scrolled-past-header nav a::after {
-  background-color: var(--color-black);
 }
 
 nav .card {
@@ -1416,10 +1398,6 @@ form label:nth-child(4) {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f2f3f4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-align-justify'%3E%3Cline x1='3' x2='21' y1='6' y2='6'/%3E%3Cline x1='3' x2='21' y1='12' y2='12'/%3E%3Cline x1='3' x2='21' y1='18' y2='18'/%3E%3C/svg%3E");
     opacity: 1;
     transform: translate(-50%, -50%);
-  }
-
-  body.scrolled-past-header .burger-menu::before {
-    filter: invert(100%);
   }
 
   .burger-menu::after {

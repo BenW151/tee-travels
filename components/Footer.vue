@@ -55,7 +55,7 @@
   </footer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   mounted() {
     this.addScrollEffect();
@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      const footer = this.$refs.footer;
+      const footer = this.$refs.footer as HTMLElement;
       const scrollableDistance =
         document.documentElement.scrollHeight - window.innerHeight;
       const footerHeight = footer.clientHeight;

@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   css: [
     "~/assets/main.css"
   ],
+  modules: [
+    'nuxt-lucide-icons'
+  ],
   app: {
     head: {
       title: 'Bath Spa',
