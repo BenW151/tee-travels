@@ -5,7 +5,7 @@
         <p class="item accent section-label">About —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">Our Story</h3>
+            <TextReveal tag="h3" class="subtitle">Our Story</TextReveal>
             <p class="body">
               Thermae Bath Spa stands as a modern continuation of a
               centuries-old tradition, rooted in the ancient practice of bathing
@@ -29,6 +29,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper right">
             <h4>The Cross Bath</h4>
@@ -44,6 +45,7 @@
           <img
             alt="ALT TEXT"
             class="rellax"
+            v-rellax
             data-rellax-percentage="0.5"
             src="/assets/images/bath-pools.png" />
         </div>
@@ -55,7 +57,7 @@
         <p class="item accent section-label">Facilities —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">The Wellness Suite</h3>
+            <TextReveal tag="h3" class="subtitle">The Wellness Suite</TextReveal>
             <p class="body">
               The Wellness Suite is a haven of tranquility designed to cater to
               every aspect of your wellbeing. Within this serene area, guests
@@ -73,6 +75,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper left">
             <h4>Infrared Room</h4>
@@ -81,6 +84,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6"
           data-rellax-speed="2">
           <div class="text-wrapper right">
@@ -93,6 +97,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6"
           data-rellax-speed="3">
           <div class="text-wrapper left">
@@ -105,6 +110,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper left">
             <h4>
@@ -116,6 +122,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6"
           data-rellax-speed="3">
           <div class="text-wrapper right">
@@ -131,11 +138,11 @@
 
     <section id="lead-text">
       <div class="container grid">
-        <h3 class="item text-reveal">
+        <TextReveal tag="h3" class="item">
           Elevating wellness through serene experiences, Thermae Bath Spa
           invites you to indulge in transformative relaxation and meaningful
           tranquility for a restorative journey unlike any other.
-        </h3>
+        </TextReveal>
       </div>
     </section>
 
@@ -144,7 +151,7 @@
         <p class="item accent section-label">Packages —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">Treatments</h3>
+            <TextReveal tag="h3" class="subtitle">Treatments</TextReveal>
             <p class="body">
               Our treatments are meticulously crafted to offer a deeply personal
               sense of wellbeing, drawing on both ancient rituals and modern
@@ -167,6 +174,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper right">
             <h4>
@@ -184,7 +192,7 @@
         <p class="item accent section-label">Dining —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">Springs Café</h3>
+            <TextReveal tag="h3" class="subtitle">Springs Café</TextReveal>
             <p class="body">
               The Springs Café combines beautiful Georgian architecture with
               classic, contemporary style. Throughout the day and evening, spa
@@ -197,6 +205,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper left">
             <h4>
@@ -214,7 +223,7 @@
         <p class="item accent section-label">Details —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">Information</h3>
+            <TextReveal tag="h3" class="subtitle">Information</TextReveal>
             <p class="body">
               Thermae Bath Spa stands as a modern continuation of a
               centuries-old tradition, rooted in the ancient practice of bathing
@@ -228,6 +237,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper right">
             <h4>Minerva Bath</h4>
@@ -249,9 +259,7 @@
               </ul>
             </div>
             <div class="accordion-item">
-              <p class="accordion-title">
-                Your Visit<LucideArrowUpRight />
-              </p>
+              <p class="accordion-title">Your Visit<LucideArrowUpRight /></p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
                 <li>List Item One</li>
@@ -273,9 +281,7 @@
               </ul>
             </div>
             <div class="accordion-item">
-              <p class="accordion-title">
-                Opening Hours<LucideArrowUpRight />
-              </p>
+              <p class="accordion-title">Opening Hours<LucideArrowUpRight /></p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
                 <li>List Item One</li>
@@ -285,9 +291,7 @@
               </ul>
             </div>
             <div class="accordion-item">
-              <p class="accordion-title">
-                Find Us<LucideArrowUpRight />
-              </p>
+              <p class="accordion-title">Find Us<LucideArrowUpRight /></p>
               <ul class="item accordion-content list">
                 <li class="list-title">Default List</li>
                 <li>List Item One</li>
@@ -300,6 +304,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-speed="3"
           data-rellax-percentage="0.6">
           <div class="text-wrapper left">
@@ -315,7 +320,7 @@
         <p class="item accent section-label">Dining —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <h3 class="subtitle text-reveal">Packages</h3>
+            <TextReveal tag="h3" class="subtitle">Packages</TextReveal>
             <p class="body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -332,6 +337,7 @@
         </div>
         <div
           class="item image image-text-overlay rellax"
+          v-rellax
           data-rellax-percentage="0.6">
           <div class="text-wrapper left">
             <h4>Twilight for Two</h4>

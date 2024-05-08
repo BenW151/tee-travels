@@ -2,6 +2,7 @@
   <header>
     <div
       class="background-image rellax"
+      v-rellax
       data-rellax-speed="3"
       data-rellax-mobile-speed="0">
       <img alt="ALT TEXT" src="/assets/images/pool-night.png" />

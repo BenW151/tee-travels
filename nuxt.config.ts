@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-lucide-icons'
   ],
+  plugins: [
+    '~/plugins/rellax.client.js'
+  ],
   app: {
     head: {
       title: 'Bath Spa',
