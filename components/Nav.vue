@@ -9,7 +9,8 @@
       </div>
     </div>
 
-    <div class="burger-menu"></div>
+    <div class="burger-menu" @click="toggleMenu"></div>
+    
     <div class="nav">
       <a
         class="nav-item text-reveal active"
@@ -51,6 +52,16 @@
   </nav>
 </template>
 
-<script lang="ts" setup></script>
-
+<script>
+export default {
+  methods: {
+    toggleMenu() {
+      const nav = this.$el.querySelector(".nav");
+      const burger = this.$el.querySelector(".burger-menu");
+      nav.classList.toggle("nav-open");
+      burger.classList.toggle("active");
+    },
+  },
+};
+</script>
 <style></style>

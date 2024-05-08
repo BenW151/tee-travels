@@ -9,10 +9,10 @@
       </div>
       <div class="container grid index-hero">
         <div class="hero-text item">
-          <TextReveal tag="h1">
-            Thermae Bath Spa 
-          </TextReveal>
-          <h2 class="text-reveal">Britain's original natural thermal spa</h2>
+          <TextReveal tag="h1"> Thermae Bath Spa </TextReveal>
+          <TextReveal tag="h2"
+            >Britain's original natural thermal spa</TextReveal
+          >
         </div>
         <div class="item paragraph">
           <p class="body">
