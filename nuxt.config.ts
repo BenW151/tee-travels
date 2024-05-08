@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       Lora: [400, 700],
       'Roboto Flex': [100, 300, 400, 500, 700, 900]
     },
-    display: 'swap' // Ensures text remains visible during webfont load
+    display: 'swap'
   },
   plugins: [
     '~/plugins/rellax.client.js'
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         { name: 'keywords', content: 'keyword, keyword, keyword' },
         { name: 'theme-color', content: '#ffffff' },
         { name: 'msapplication-TileColor', content: '#da532c' },
-        { name: 'msapplication-config', content: '/images/favicon/browserconfig.xml' },
+        { name: 'msapplication-config', content: '/browserconfig.xml' },
         { property: 'og:title', content: 'Template - Short Tagline' },
         { property: 'og:description', content: 'Offering top-notch IT services and solutions tailored to your business needs. From cloud services to cybersecurity, weve got you covered.' },
         { property: 'og:image', content: 'https://www.yourwebsite.com/images/social-preview.png' },
@@ -43,12 +43,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'canonical', href: 'https://benw151.github.io/template/index.html' },
-        { rel: 'icon', type: 'image/x-icon', href: '/images/favicon/favicon.ico' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/favicon/apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/favicon/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/favicon/favicon-16x16.png' },
-        { rel: 'manifest', href: '/images/favicon/site.webmanifest' },
-        { rel: 'mask-icon', href: '/images/favicon/safari-pinned-tab.svg', color: '#5bbad5' },  ],
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },  ],
     }
   }
 })
