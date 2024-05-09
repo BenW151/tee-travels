@@ -130,6 +130,44 @@ nav.scrolled {
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.wordmark {
+  white-space: nowrap;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.wordmark a {
+  display: flex;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-S);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.wordmark a::after {
+  bottom: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: var(--spacing-3);
+}
+
+.logo img {
+  height: 2rem;
+  margin-right: var(--spacing-2);
+}
+
+.logo-hide {
+  max-width: 0px;
+  white-space: pre;
+  overflow: hidden;
+  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 @media (max-width: 767px) {
   nav {
     height: 6vh;
@@ -205,6 +243,18 @@ nav.scrolled {
   nav .contact a {
     color: var(--color-black);
     font-size: var(--font-size-XS);
+  }
+
+  .wordmark {
+    margin-left: 0;
+    margin-top: var(--spacing-1);
+    margin-bottom: var(--spacing-1);
+    z-index: -1;
+  }
+
+  .wordmark a {
+    font-size: var(--font-size-L);
+    line-height: normal;
   }
 
   .burger-menu {

@@ -35,7 +35,7 @@
   </header>
 </template>
 
-<style scoped>
+<style>
 header {
   height: 180lvh;
 }
