@@ -307,7 +307,6 @@ section {
 }
 
 .item img {
-  overflow: hidden;
   display: block;
 }
 
@@ -374,7 +373,6 @@ section {
 .card img {
   width: 6vw;
   height: 6vw;
-  overflow: inherit;
   margin-right: var(--spacing-2);
 }
 
