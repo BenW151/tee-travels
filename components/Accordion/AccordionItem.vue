@@ -18,7 +18,6 @@ const props = defineProps({
   index: String
 });
 
-
 const setActiveIndex = inject('setActiveIndex');
 const activeIndex = inject('activeIndex');
 

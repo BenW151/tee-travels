@@ -26,6 +26,9 @@ export default defineNuxtConfig({
       title: "Bath Spa",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+      htmlAttrs: {
+        lang: 'en'
+      },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1.0" },

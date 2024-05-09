@@ -43,6 +43,7 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
 
