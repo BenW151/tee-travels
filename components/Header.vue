@@ -7,7 +7,7 @@
       data-rellax-mobile-speed="0">
       <img alt="ALT TEXT" src="/images/pool-night.png" />
     </div>
-    <div class="container grid index-hero">
+    <LayoutGridContainer>
       <div class="hero-text item">
         <TextReveal tag="h1">Thermae Bath Spa </TextReveal>
         <TextReveal tag="h2">Britain's original natural thermal spa</TextReveal>
@@ -31,11 +31,11 @@
           Book Now
         </a>
       </div>
-    </div>
+    </LayoutGridContainer>
   </header>
 </template>
 
-<style>
+<style scoped>
 header {
   height: 180lvh;
 }
@@ -50,7 +50,7 @@ header a.link::after {
   background-color: var(--color-white);
 }
 
-.index-hero {
+.container {
   min-height: 100%;
 }
 

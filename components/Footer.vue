@@ -1,6 +1,6 @@
 <template>
   <footer ref="footer" class="background-inverted">
-    <div class="container grid">
+    <LayoutGridContainer>
       <div class="item card">
         <img alt="ALT TEXT" src="/images/logo-white.svg" />
         <div class="card-text">
@@ -32,9 +32,9 @@
         <li><a href="URL" aria-label="DESCRIPTION">Twitter</a></li>
         <li><a href="URL" aria-label="DESCRIPTION">Facebook</a></li>
       </ul>
-    </div>
+    </LayoutGridContainer>
 
-    <div class="container grid footer-end">
+    <LayoutGridContainer class="footer-end">
       <p class="item">Copyright ©2024</p>
       <a class="item" href="https://github.com/BenW151" aria-label="Home Page"
         >Designed by Ben Ward</a
@@ -51,7 +51,7 @@
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</a
       >
-    </div>
+    </LayoutGridContainer>
   </footer>
 </template>
 

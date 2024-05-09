@@ -1,7 +1,7 @@
 <template>
   <main>
     <section id="about">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">About —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Our Story</template>
@@ -33,7 +33,7 @@
           altText="The Cross Bath"
           overlayText="The Cross Bath"
           textPosition="right" />
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section>
@@ -45,7 +45,7 @@
     </section>
 
     <section id="facilities">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">Facilities —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>The Wellness Suite</template>
@@ -96,21 +96,21 @@
           textPosition="right"
           rellaxPercentage="0.6"
           rellaxSpeed="3" />
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section id="lead-text">
-      <div class="container grid">
+      <LayoutGridContainer>
         <TextReveal tag="h3" class="item">
           Elevating wellness through serene experiences, Thermae Bath Spa
           invites you to indulge in transformative relaxation and meaningful
           tranquility for a restorative journey unlike any other.
         </TextReveal>
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section id="treatments">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">Packages —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Treatments</template>
@@ -138,11 +138,11 @@
           altText="Hot Stones Therapy"
           overlayText="Hot Stones <br /> Therapy"
           textPosition="right" />
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section id="springs-cafe">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">Dining —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Springs Café</template>
@@ -163,11 +163,11 @@
           altText="Springs Cafe"
           overlayText="Springs <br /> Cafe"
           textPosition="left" />
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section id="information">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">Details —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Information</template>
@@ -242,11 +242,11 @@
           overlayText="Rooftop Pool"
           data-rellax-speed="3"
           textPosition="left" />
-      </div>
+      </LayoutGridContainer>
     </section>
 
     <section id="packages">
-      <div class="container grid">
+      <LayoutGridContainer>
         <p class="item accent section-label">Dining —</p>
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Packages</template>
@@ -406,7 +406,7 @@
           </template>
           <template #link-text>View Package Details</template>
         </TextParagraphWithTitle>
-      </div>
+      </LayoutGridContainer>
     </section>
   </main>
 </template>
