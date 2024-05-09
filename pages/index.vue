@@ -57,7 +57,9 @@
         <p class="item accent section-label">Facilities —</p>
         <div class="item paragraph-with-title">
           <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">The Wellness Suite</TextReveal>
+            <TextReveal tag="h3" class="subtitle"
+              >The Wellness Suite</TextReveal
+            >
             <p class="body">
               The Wellness Suite is a haven of tranquility designed to cater to
               every aspect of your wellbeing. Within this serene area, guests
@@ -244,64 +246,53 @@
           </div>
           <img alt="ALT TEXT" src="/assets/images/minerva-bath.png" />
         </div>
-        <div class="item accordion">
-          <div class="item-inner">
-            <div class="accordion-item">
-              <p class="accordion-title">
-                Before You Arrive<LucideArrowUpRight />
-              </p>
-              <ul class="item accordion-content list">
-                <li class="list-title">Default List</li>
-                <li>List Item One</li>
-                <li>List Item Two</li>
-                <li>List Item Three</li>
-                <li>List Item Four</li>
-              </ul>
-            </div>
-            <div class="accordion-item">
-              <p class="accordion-title">Your Visit<LucideArrowUpRight /></p>
-              <ul class="item accordion-content list">
-                <li class="list-title">Default List</li>
-                <li>List Item One</li>
-                <li>List Item Two</li>
-                <li>List Item Three</li>
-                <li>List Item Four</li>
-              </ul>
-            </div>
-            <div class="accordion-item">
-              <p class="accordion-title">
-                Medical Conditions<LucideArrowUpRight />
-              </p>
-              <ul class="item accordion-content list">
-                <li class="list-title">Default List</li>
-                <li>List Item One</li>
-                <li>List Item Two</li>
-                <li>List Item Three</li>
-                <li>List Item Four</li>
-              </ul>
-            </div>
-            <div class="accordion-item">
-              <p class="accordion-title">Opening Hours<LucideArrowUpRight /></p>
-              <ul class="item accordion-content list">
-                <li class="list-title">Default List</li>
-                <li>List Item One</li>
-                <li>List Item Two</li>
-                <li>List Item Three</li>
-                <li>List Item Four</li>
-              </ul>
-            </div>
-            <div class="accordion-item">
-              <p class="accordion-title">Find Us<LucideArrowUpRight /></p>
-              <ul class="item accordion-content list">
-                <li class="list-title">Default List</li>
-                <li>List Item One</li>
-                <li>List Item Two</li>
-                <li>List Item Three</li>
-                <li>List Item Four</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Accordion>
+          <AccordionItem title="Before You Arrive" index="1">
+            <ul class="item list">
+              <li class="list-title">Default List</li>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+              <li>List Item Four</li>
+            </ul>
+          </AccordionItem>
+          <AccordionItem title="Your Visit" index="2">
+            <ul class="item list">
+              <li class="list-title">Default List</li>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+              <li>List Item Four</li>
+            </ul>
+          </AccordionItem>
+          <AccordionItem title="Medical Conditions" index="3">
+            <ul class="item list">
+              <li class="list-title">Default List</li>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+              <li>List Item Four</li>
+            </ul>
+          </AccordionItem>
+          <AccordionItem title="Opening Hours" index="4">
+            <ul class="item list">
+              <li class="list-title">Default List</li>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+              <li>List Item Four</li>
+            </ul>
+          </AccordionItem>
+          <AccordionItem title="Find Us" index="5">
+            <ul class="item list">
+              <li class="list-title">Default List</li>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+              <li>List Item Four</li>
+            </ul>
+          </AccordionItem>
+        </Accordion>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
