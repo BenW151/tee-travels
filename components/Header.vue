@@ -5,7 +5,7 @@
       v-rellax
       data-rellax-speed="3"
       data-rellax-mobile-speed="0">
-      <img alt="ALT TEXT" src="/assets/images/pool-night.png" />
+      <img alt="ALT TEXT" src="/images/pool-night.png" />
     </div>
     <div class="container grid index-hero">
       <div class="hero-text item">

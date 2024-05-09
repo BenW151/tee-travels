@@ -2,7 +2,7 @@
   <footer ref="footer" class="background-inverted">
     <div class="container grid">
       <div class="item card">
-        <img alt="ALT TEXT" src="/assets/images/logo-white.svg" />
+        <img alt="ALT TEXT" src="/images/logo-white.svg" />
         <div class="card-text">
           <h4>Thermae Bath Spa</h4>
           <p>Britain's original natural thermal spa</p>

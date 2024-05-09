@@ -1,7 +1,7 @@
 <template>
   <nav :class="{ scrolled: isScrolled }">
     <div class="logo">
-      <img alt="ALT TEXT" src="/assets/images/logo-white.svg" />
+      <img alt="ALT TEXT" src="/images/logo-white.svg" />
       <div class="wordmark">
         <a class="logo-hide" href="index.html" aria-label="Home Page"
           >Thermae Bath Spa</a
@@ -42,7 +42,7 @@
       </ul>
 
       <div class="item card">
-        <img alt="ALT TEXT" src="/assets/images/logo-black.svg" />
+        <img alt="ALT TEXT" src="/images/logo-black.svg" />
         <div class="card-text">
           <h4>Thermae Bath Spa</h4>
           <p>Britain's original natural thermal spa</p>

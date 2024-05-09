@@ -27,16 +27,21 @@
 const props = defineProps({
   subtitleTag: {
     type: String,
-    default: 'h3', 
+    default: "h3",
   },
-  linkUrl: String, 
+  linkUrl: String,
   useTextReveal: {
     type: Boolean,
-    default: true // Use TextReveal by default
-  }
+    default: true, // Use TextReveal by default
+  },
 });
 </script>
 
 <style scoped>
-/* Your styles here */
+.paragraph-with-title {
+  grid-column: span 7;
+  background-color: var(--color-white);
+  margin: auto;
+  z-index: 5;
+}
 </style>

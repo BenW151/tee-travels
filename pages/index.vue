@@ -3,9 +3,7 @@
     <section id="about">
       <div class="container grid">
         <p class="item accent section-label">About —</p>
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Our Story</template>
           <template #body>
             <p>
@@ -30,15 +28,11 @@
           </template>
           <template #link-text>View Treatments & Packages</template>
         </TextParagraphWithTitle>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper right">
-            <h4>The Cross Bath</h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/cross-bath.png" />
-        </div>
+        <ImageWithTextOverlay
+          imageUrl="/images/cross-bath.png"
+          altText="The Cross Bath"
+          overlayText="The Cross Bath"
+          textPosition="right" />
       </div>
     </section>
 
@@ -50,7 +44,7 @@
             class="rellax"
             v-rellax
             data-rellax-percentage="0.5"
-            src="/assets/images/bath-pools.png" />
+            src="/images/bath-pools.png" />
         </div>
       </div>
     </section>
@@ -58,9 +52,7 @@
     <section id="facilities">
       <div class="container grid">
         <p class="item accent section-label">Facilities —</p>
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>The Wellness Suite</template>
           <template #body>
             <p>
@@ -78,66 +70,37 @@
           </template>
           <template #link-text> View All Facilities </template>
         </TextParagraphWithTitle>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper left">
-            <h4>Infrared Room</h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/infrared-room.png" />
-        </div>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6"
-          data-rellax-speed="2">
-          <div class="text-wrapper right">
-            <h4>
-              Georgian <br />
-              Steam Bath
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/georgian-room.png" />
-        </div>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6"
-          data-rellax-speed="3">
-          <div class="text-wrapper left">
-            <h4>
-              Ice <br />
-              Chamber
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/ice-chamber.png" />
-        </div>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper left">
-            <h4>
-              Roman <br />
-              Steam Bath
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/roman-room.png" />
-        </div>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6"
-          data-rellax-speed="3">
-          <div class="text-wrapper right">
-            <h4>
-              Celestial <br />
-              Relaxation Room
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/celestial-room.webp" />
-        </div>
+        <ImageWithTextOverlay
+          imageUrl="/images/infrared-room.png"
+          altText="Infrared Room"
+          overlayText="Infrared Room"
+          textPosition="left" />
+        <ImageWithTextOverlay
+          imageUrl="/images/georgian-room.png"
+          altText="Georgian Steam Bath"
+          overlayText="Georgian <br /> Steam Bath"
+          textPosition="right"
+          rellaxSpeed="1" />
+        <ImageWithTextOverlay
+          imageUrl="/images/ice-chamber.png"
+          altText="Ice Chamber"
+          overlayText="Ice <br /> Chamber"
+          textPosition="left"
+          rellaxPercentage="0.6"
+          rellaxSpeed="3" />
+        <ImageWithTextOverlay
+          imageUrl="/images/roman-room.png"
+          altText="Roman Steam Bath"
+          overlayText="Roman <br /> Steam Bath"
+          textPosition="left"
+          rellaxPercentage="0.6" />
+        <ImageWithTextOverlay
+          imageUrl="/images/celestial-room.webp"
+          altText="Celestial Relaxation Room"
+          overlayText="Celestial <br /> Relaxation Room"
+          textPosition="right"
+          rellaxPercentage="0.6"
+          rellaxSpeed="3" />
       </div>
     </section>
 
@@ -154,9 +117,7 @@
     <section id="treatments">
       <div class="container grid">
         <p class="item accent section-label">Packages —</p>
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Treatments</template>
           <template #body>
             <p>
@@ -177,27 +138,18 @@
           </template>
           <template #link-text>View Treatments & Packages</template>
         </TextParagraphWithTitle>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper right">
-            <h4>
-              Hot Stones <br />
-              Therapy
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/treatments-rocks.png" />
-        </div>
+        <ImageWithTextOverlay
+          imageUrl="/images/treatments-rocks.png"
+          altText="Hot Stones Therapy"
+          overlayText="Hot Stones <br /> Therapy"
+          textPosition="right" />
       </div>
     </section>
 
     <section id="springs-cafe">
       <div class="container grid">
         <p class="item accent section-label">Dining —</p>
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Springs Café</template>
           <template #body>
             <p>
@@ -211,27 +163,18 @@
           </template>
           <template #link-text>View Treatments & Packages</template>
         </TextParagraphWithTitle>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper left">
-            <h4>
-              Springs <br />
-              Cafe
-            </h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/springs-cafe.png" />
-        </div>
+        <ImageWithTextOverlay
+          imageUrl="/images/springs-cafe.png"
+          altText="Springs Cafe"
+          overlayText="Springs <br /> Cafe"
+          textPosition="left" />
       </div>
     </section>
 
     <section id="information">
       <div class="container grid">
         <p class="item accent section-label">Details —</p>
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Information</template>
           <template #body>
             <p>
@@ -246,15 +189,11 @@
           </template>
           <template #link-text>View Treatments & Packages</template>
         </TextParagraphWithTitle>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper right">
-            <h4>Minerva Bath</h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/minerva-bath.png" />
-        </div>
+        <ImageWithTextOverlay
+          imageUrl="/images/minerva-bath.png"
+          altText="Minerva Bath"
+          overlayText="Minerva Bath"
+          textPosition="right" />
         <Accordion>
           <AccordionItem title="Before You Arrive" index="1">
             <ul class="item list">
@@ -302,16 +241,12 @@
             </ul>
           </AccordionItem>
         </Accordion>
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
+        <ImageWithTextOverlay
+          imageUrl="/images/roof-pool-day.png"
+          altText="Rooftop Pool"
+          overlayText="Rooftop Pool"
           data-rellax-speed="3"
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper left">
-            <h4>Rooftop Pool</h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/roof-pool-day.png" />
-        </div>
+          textPosition="left" />
       </div>
     </section>
 
@@ -319,9 +254,7 @@
       <div class="container grid">
         <p class="item accent section-label">Dining —</p>
 
-        <TextParagraphWithTitle
-          subtitleTag="h3"
-          linkUrl="/facilities">
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Packages</template>
           <template #body>
             <p>
@@ -339,17 +272,11 @@
           </template>
           <template #link-text>View Treatments & Packages</template>
         </TextParagraphWithTitle>
-
-        <div
-          class="item image image-text-overlay rellax"
-          v-rellax
-          data-rellax-percentage="0.6">
-          <div class="text-wrapper left">
-            <h4>Twilight for Two</h4>
-          </div>
-          <img alt="ALT TEXT" src="/assets/images/rootop-pool-twilight.png" />
-        </div>
-
+        <ImageWithTextOverlay
+          imageUrl="/images/rootop-pool-twilight.png"
+          altText="Twilight for Two"
+          overlayText="Twilight for Two"
+          textPosition="left" />
         <TextParagraphWithTitle
           subtitleTag="h4"
           linkUrl="/facilities"
@@ -485,7 +412,6 @@
           </template>
           <template #link-text>View Package Details</template>
         </TextParagraphWithTitle>
-
       </div>
     </section>
   </main>
