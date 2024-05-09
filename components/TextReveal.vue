@@ -43,8 +43,12 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+.hero-text .line-container {
   justify-content: center;
 }
+
 </style>
 
 <script setup lang="ts">

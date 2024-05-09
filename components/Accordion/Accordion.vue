@@ -5,24 +5,25 @@
 
   <!-- !Component Code
     <Accordion>
-    <AccordionItem title="Before You Arrive" index="1">
-      <ul class="item accordion-content list">
-        <li class="list-title">Default List</li>
-        <li>List Item One</li>
-        <li>List Item Two</li>
-        <li>List Item Three</li>
-        <li>List Item Four</li>
-      </ul>
-    </AccordionItem>
-    <AccordionItem title="Your Visit" index="2">
-      <ul class="item accordion-content list">
-        <li class="list-title">Default List</li>
-        <li>List Item One</li>
-        <li>List Item Two</li>
-        <li>List Item Three</li>
-        <li>List Item Four</li>
-      </ul>
-    </AccordionItem>    
+      <AccordionItem title="Before You Arrive" index="1">
+        <ul class="item accordion-content list">
+          <li class="list-title">Default List</li>
+          <li>List Item One</li>
+          <li>List Item Two</li>
+          <li>List Item Three</li>
+          <li>List Item Four</li>
+        </ul>
+      </AccordionItem>
+      <AccordionItem title="Your Visit" index="2">
+        <ul class="item accordion-content list">
+          <li class="list-title">Default List</li>
+          <li>List Item One</li>
+          <li>List Item Two</li>
+          <li>List Item Three</li>
+          <li>List Item Four</li>
+        </ul>
+      </AccordionItem>  
+    </Accordion>  
     -->
 </template>
 

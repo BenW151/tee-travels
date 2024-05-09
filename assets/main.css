@@ -251,11 +251,6 @@ p {
   height: 40vw;
 }
 
-#packages .paragraph-with-title .item-inner {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 #packages a.link {
   display: inline-block;
 }
@@ -323,10 +318,6 @@ section {
 /** Logo */
 
 /** Text */
-.section-head-temp {
-  grid-column: 1 / 17;
-}
-
 .title {
   grid-column: span 8;
 }

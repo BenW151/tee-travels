@@ -3,10 +3,12 @@
     <section id="about">
       <div class="container grid">
         <p class="item accent section-label">About —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">Our Story</TextReveal>
-            <p class="body">
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>Our Story</template>
+          <template #body>
+            <p>
               Thermae Bath Spa stands as a modern continuation of a
               centuries-old tradition, rooted in the ancient practice of bathing
               in naturally heated springs. The city of Bath, renowned for its
@@ -15,7 +17,7 @@
               spa town, attracting visitors from across the globe seeking the
               curative properties of its mineral-rich waters.
             </p>
-            <p class="body">
+            <p>
               Our spa reimagines these age-old traditions with state-of-the-art
               facilities and contemporary wellness treatments. Opening its doors
               in the 21st century, Bath Thermae Spa has quickly established
@@ -25,8 +27,9 @@
               powers of water, continuing the legacy of wellness that has
               defined Bath for millennia.
             </p>
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Treatments & Packages</template>
+        </TextParagraphWithTitle>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -55,12 +58,12 @@
     <section id="facilities">
       <div class="container grid">
         <p class="item accent section-label">Facilities —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle"
-              >The Wellness Suite</TextReveal
-            >
-            <p class="body">
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>The Wellness Suite</template>
+          <template #body>
+            <p>
               The Wellness Suite is a haven of tranquility designed to cater to
               every aspect of your wellbeing. Within this serene area, guests
               can indulge in a variety of thermal experiences that detoxify,
@@ -72,9 +75,9 @@
               modern therapeutic practices, ensuring a restorative visit for all
               who enter.
             </p>
-            <a href="URL" class="link underline-out">View All Facilities</a>
-          </div>
-        </div>
+          </template>
+          <template #link-text> View All Facilities </template>
+        </TextParagraphWithTitle>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -151,10 +154,12 @@
     <section id="treatments">
       <div class="container grid">
         <p class="item accent section-label">Packages —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">Treatments</TextReveal>
-            <p class="body">
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>Treatments</template>
+          <template #body>
+            <p>
               Our treatments are meticulously crafted to offer a deeply personal
               sense of wellbeing, drawing on both ancient rituals and modern
               therapeutic techniques. Our guests can choose from a wide range of
@@ -169,11 +174,9 @@
               therapists in a calm, soothing environment, ensuring a restorative
               and holistic spa experience.
             </p>
-            <a class="link underline-out" href="UTL"
-              >View Treatments & Packages</a
-            >
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Treatments & Packages</template>
+        </TextParagraphWithTitle>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -192,10 +195,12 @@
     <section id="springs-cafe">
       <div class="container grid">
         <p class="item accent section-label">Dining —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">Springs Café</TextReveal>
-            <p class="body">
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>Springs Café</template>
+          <template #body>
+            <p>
               The Springs Café combines beautiful Georgian architecture with
               classic, contemporary style. Throughout the day and evening, spa
               users can enjoy light snacks and drinks. The drinks menu presents
@@ -203,8 +208,9 @@
               drinks and specially selected wines, beers and ciders. Please note
               robes are to be worn in the Restaurant.
             </p>
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Treatments & Packages</template>
+        </TextParagraphWithTitle>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -223,10 +229,12 @@
     <section id="information">
       <div class="container grid">
         <p class="item accent section-label">Details —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">Information</TextReveal>
-            <p class="body">
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>Information</template>
+          <template #body>
+            <p>
               Thermae Bath Spa stands as a modern continuation of a
               centuries-old tradition, rooted in the ancient practice of bathing
               in naturally heated springs. The city of Bath, renowned for its
@@ -235,8 +243,9 @@
               spa town, attracting visitors from across the globe seeking the
               curative properties of its mineral-rich waters.
             </p>
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Treatments & Packages</template>
+        </TextParagraphWithTitle>
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -309,23 +318,28 @@
     <section id="packages">
       <div class="container grid">
         <p class="item accent section-label">Dining —</p>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <TextReveal tag="h3" class="subtitle">Packages</TextReveal>
-            <p class="body">
+
+        <TextParagraphWithTitle
+          subtitleTag="h3"
+          linkUrl="/facilities">
+          <template #title>Packages</template>
+          <template #body>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p class="body">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Treatments & Packages</template>
+        </TextParagraphWithTitle>
+
         <div
           class="item image image-text-overlay rellax"
           v-rellax
@@ -335,126 +349,143 @@
           </div>
           <img alt="ALT TEXT" src="/assets/images/rootop-pool-twilight.png" />
         </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Welcome</h4>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
             <h5>£20</h5>
-            <p class="body">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Unwind</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Refresh</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Retreat</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Serenity</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Classic Thermae</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Thermae Indulgence</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
-        <div class="item paragraph-with-title">
-          <div class="item-inner">
-            <h4 class="subtitle">Twilight for Two</h4>
-            <h5>£45</h5>
-            <p class="body">
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
+        <TextParagraphWithTitle
+          subtitleTag="h4"
+          linkUrl="/facilities"
+          :use-text-reveal="false">
+          <template #title>Thermae Welcome</template>
+          <template #body>
+            <h5>£20</h5>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-              >View Package Details</a
-            >
-          </div>
-        </div>
+          </template>
+          <template #link-text>View Package Details</template>
+        </TextParagraphWithTitle>
+
       </div>
     </section>
   </main>
