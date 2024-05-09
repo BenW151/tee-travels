@@ -199,25 +199,6 @@ p {
   z-index: -1;
 }
 
-.image-strip.container {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.image-strip .image {
-  height: 80vh;
-  overflow: hidden;
-}
-
-.image-strip img {
-  position: absolute;
-  height: 120vh;
-  width: 100%;
-  bottom: -40%;
-  object-fit: cover;
-}
-
 #treatments .paragraph-with-title:nth-of-type(1) {
   grid-column: 3 / 11;
   grid-row: 1;
@@ -831,10 +812,6 @@ form label:nth-child(4) {
     grid-row: auto;
     height: 30vh;
     margin: 0;
-  }
-
-  .image-strip {
-    display: none;
   }
 
   #treatments .item.paragraph-with-title {

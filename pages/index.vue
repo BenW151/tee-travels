@@ -37,16 +37,11 @@
     </section>
 
     <section>
-      <div class="image-strip container">
-        <div class="item image">
-          <img
-            alt="ALT TEXT"
-            class="rellax"
-            v-rellax
-            data-rellax-percentage="0.5"
-            src="/images/bath-pools.png" />
-        </div>
-      </div>
+      <ImageStrip
+      src="/images/bath-pools.png"
+      alt="Bath Pools"
+      rellax-percentage="0.5"
+    />
     </section>
 
     <section id="facilities">
@@ -253,7 +248,6 @@
     <section id="packages">
       <div class="container grid">
         <p class="item accent section-label">Dining —</p>
-
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Packages</template>
           <template #body>
