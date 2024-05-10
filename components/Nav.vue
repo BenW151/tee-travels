@@ -1,7 +1,7 @@
 <template>
   <nav :class="{ scrolled: isScrolled }">
     <div class="logo">
-      <img alt="ALT TEXT" src="/images/logo-white.svg" />
+      <NuxtImg alt="ALT TEXT" src="/images/logo-white.svg" />
       <div class="wordmark">
         <NuxtLink class="logo-hide" to="index.html" aria-label="Home Page"
           >Thermae Bath Spa</NuxtLink
@@ -21,16 +21,28 @@
       <NuxtLink class="nav-item text-reveal" to="/about" aria-label="Home Page"
         >Story</NuxtLink
       >
-      <NuxtLink class="nav-item text-reveal" to="/portfolio" aria-label="Home Page"
+      <NuxtLink
+        class="nav-item text-reveal"
+        to="/portfolio"
+        aria-label="Home Page"
         >Facilities</NuxtLink
       >
-      <NuxtLink class="nav-item text-reveal" to="/services" aria-label="Home Page"
+      <NuxtLink
+        class="nav-item text-reveal"
+        to="/services"
+        aria-label="Home Page"
         >Treatments</NuxtLink
       >
-      <NuxtLink class="nav-item text-reveal" to="/projects" aria-label="Home Page"
+      <NuxtLink
+        class="nav-item text-reveal"
+        to="/projects"
+        aria-label="Home Page"
         >Information</NuxtLink
       >
-      <NuxtLink class="nav-item text-reveal" to="/contact" aria-label="Home Page"
+      <NuxtLink
+        class="nav-item text-reveal"
+        to="/contact"
+        aria-label="Home Page"
         >Book</NuxtLink
       >
       <ListsLinkList
@@ -42,7 +54,7 @@
         ]" />
 
       <div class="item card">
-        <img alt="ALT TEXT" src="/images/logo-black.svg" />
+        <NuxtImg alt="ALT TEXT" src="/images/logo-black.svg" />
         <div class="card-text">
           <h4>Thermae Bath Spa</h4>
           <p>Britain's original natural thermal spa</p>

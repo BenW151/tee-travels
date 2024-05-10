@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     assets: "/<rootDir>/assets",
   },
   css: ["~/assets/main.css"],
-  modules: ["nuxt-lucide-icons", "@nuxtjs/google-fonts"],
+  modules: ["nuxt-lucide-icons", "@nuxtjs/google-fonts", "@nuxt/image"],
   googleFonts: {
     families: {
       Lora: {

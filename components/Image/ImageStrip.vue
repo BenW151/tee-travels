@@ -1,6 +1,6 @@
 <template>
   <div class="image-strip container">
-    <img
+    <NuxtImg
       :alt="alt"
       :src="src"
       class="item rellax"
