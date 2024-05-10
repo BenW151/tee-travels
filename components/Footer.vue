@@ -41,19 +41,28 @@
       <ListsLinkList
         class="socials"
         :links="[
-          { url: '/contact', label: 'Instagram', description: 'Instagram' },
-          { url: '/contact', label: 'Twitter', description: 'Twitter' },
-          { url: '/contact', label: 'Facebook', description: 'Facebook' },
+          {
+            url: 'https://instagram.com',
+            label: 'Instagram',
+            description: 'Instagram',
+          },
+          {
+            url: 'https://instagram.com',
+            label: 'Twitter',
+            description: 'Twitter',
+          },
+          {
+            url: 'https://instagram.com',
+            label: 'Facebook',
+            description: 'Facebook',
+          },
         ]" />
     </LayoutGridContainer>
 
     <LayoutGridContainer class="footer-end">
       <p class="item">Copyright ©2024</p>
-      <NuxtLink
-        class="item"
-        to="https://github.com/BenW151"
-        aria-label="Home Page"
-        >Designed by Ben Ward</NuxtLink
+      <a class="item" href="https://github.com/BenW151" aria-label="Home Page"
+        >Designed by Ben Ward</a
       >
       <NuxtLink
         class="item"
