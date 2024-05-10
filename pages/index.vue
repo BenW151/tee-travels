@@ -210,8 +210,8 @@
           altText="Minerva Bath"
           overlayText="Minerva Bath"
           textPosition="right" />
-        <NuxtLinkccordion>
-          <NuxtLinkccordionItem title="Before You Arrive" index="1">
+        <Accordion>
+          <AccordionItem title="Before You Arrive" index="1">
             <ListsDefaultList
               title="List Title"
               :items="[
@@ -220,8 +220,8 @@
                 { id: 3, text: 'List Item Three' },
                 { id: 4, text: 'List Item Four' },
               ]" />
-          </NuxtLinkccordionItem>
-          <NuxtLinkccordionItem title="Your Visit" index="2">
+          </AccordionItem>
+          <AccordionItem title="Your Visit" index="2">
             <ListsDefaultList
               title="List Title"
               :items="[
@@ -230,8 +230,8 @@
                 { id: 3, text: 'List Item Three' },
                 { id: 4, text: 'List Item Four' },
               ]" />
-          </NuxtLinkccordionItem>
-          <NuxtLinkccordionItem title="Medical Conditions" index="3">
+          </AccordionItem>
+          <AccordionItem title="Medical Conditions" index="3">
             <ListsDefaultList
               title="List Title"
               :items="[
@@ -240,8 +240,8 @@
                 { id: 3, text: 'List Item Three' },
                 { id: 4, text: 'List Item Four' },
               ]" />
-          </NuxtLinkccordionItem>
-          <NuxtLinkccordionItem title="Opening Hours" index="4">
+          </AccordionItem>
+          <AccordionItem title="Opening Hours" index="4">
             <ListsDefaultList
               title="List Title"
               :items="[
@@ -250,8 +250,8 @@
                 { id: 3, text: 'List Item Three' },
                 { id: 4, text: 'List Item Four' },
               ]" />
-          </NuxtLinkccordionItem>
-          <NuxtLinkccordionItem title="Find Us" index="5">
+          </AccordionItem>
+          <AccordionItem title="Find Us" index="5">
             <ListsDefaultList
               title="List Title"
               :items="[
@@ -260,8 +260,8 @@
                 { id: 3, text: 'List Item Three' },
                 { id: 4, text: 'List Item Four' },
               ]" />
-          </NuxtLinkccordionItem>
-        </NuxtLinkccordion>
+          </AccordionItem>
+        </Accordion>
         <ImageWithTextOverlay
           imageUrl="/images/roof-pool-day.png"
           altText="Rooftop Pool"
