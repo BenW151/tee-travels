@@ -154,27 +154,6 @@ section {
   margin: var(--spacing-4);
 }
 
-.paragraph {
-  grid-column: span 5;
-}
-
-.paragraph-large {
-  grid-column: span 8;
-}
-
-.paragraph-large .body {
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-S);
-}
-
-.paragraph-small {
-  grid-column: span 4;
-}
-
-.paragraph-small .body {
-  font-size: var(--font-size-XXS);
-}
-
 .block-quote {
   grid-column: span 4;
   font-style: italic;
@@ -599,22 +578,6 @@ form label:nth-child(4) {
     grid-column: span 6;
   }
 
-  .paragraph-with-title {
-    grid-column: span 5;
-  }
-
-  .paragraph {
-    grid-column: span 5;
-  }
-
-  .paragraph-large {
-    grid-column: span 6;
-  }
-
-  .paragraph-small {
-    grid-column: span 4;
-  }
-
   .block-quote {
     grid-column: span 4;
   }
@@ -629,19 +592,9 @@ form label:nth-child(4) {
     content: none;
   }
 
-  /** Lists */
-
-  .item.list {
-    grid-column: span 3;
-  }
-  /** Accents */
-
-
   /** Text Effects */
 
-  .text-reveal {
-    grid-column: span 6;
-  }
+
 
   .marquee {
     grid-column: span 6;

@@ -12,7 +12,7 @@
         <TextReveal tag="h1">{{ title }}</TextReveal>
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
       </div>
-      <div class="item paragraph">
+      <TextParagraph paragraphSize="medium">
         <slot name="description"></slot>
         <NuxtLink
           :to="buttonUrl"
@@ -20,7 +20,7 @@
           class="item link underline-out">
           {{ buttonText }}
         </NuxtLink>
-      </div>
+      </TextParagraph>
     </LayoutGridContainer>
   </header>
 </template>

@@ -44,4 +44,10 @@ const props = defineProps({
   margin: auto;
   z-index: 5;
 }
+
+@media (max-width: 767px) {
+  .paragraph-with-title {
+    grid-column: span 5;
+  }
+}
 </style>

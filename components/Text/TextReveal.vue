@@ -49,16 +49,21 @@
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .text-reveal {
+    grid-column: span 6;
+  }
+}
 </style>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue';
+import { ref, defineProps } from "vue";
 
 const props = defineProps({
   tag: {
     type: String,
-    default: 'div' // Default to div, but allow any tag to be specified
-  }
+    default: "div", // Default to div, but allow any tag to be specified
+  },
 });
 
 const textContainer = ref<HTMLElement | null>(null);
@@ -66,17 +71,20 @@ const textContainer = ref<HTMLElement | null>(null);
 onMounted(() => {
   if (textContainer.value) {
     prepareText(textContainer.value);
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateText(entry.target as HTMLElement);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      rootMargin: '0px',
-      threshold: 0.5 // Adjust as needed for when the animation should trigger
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateText(entry.target as HTMLElement);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.5, // Adjust as needed for when the animation should trigger
+      }
+    );
 
     observer.observe(textContainer.value);
   }
@@ -84,19 +92,19 @@ onMounted(() => {
 
 function prepareText(container: HTMLElement): void {
   const text = container.innerHTML;
-  container.innerHTML = ''; // Clear initial content
+  container.innerHTML = ""; // Clear initial content
   const lines = text.split(/<br\s*\/?>/i);
-  lines.forEach(line => {
-    const lineContainer = document.createElement('div');
-    lineContainer.className = 'line-container';
+  lines.forEach((line) => {
+    const lineContainer = document.createElement("div");
+    lineContainer.className = "line-container";
     const words = line.trim().split(/\s+/);
     words.forEach((word, index) => {
-      const wordContainer = document.createElement('div');
-      wordContainer.className = 'reveal-mask';
-      const wordSpan = document.createElement('span');
-      wordSpan.className = 'word';
+      const wordContainer = document.createElement("div");
+      wordContainer.className = "reveal-mask";
+      const wordSpan = document.createElement("span");
+      wordSpan.className = "word";
       // Add a space after each word except the last
-      wordSpan.textContent = word + (index < words.length - 1 ? ' ' : '');
+      wordSpan.textContent = word + (index < words.length - 1 ? " " : "");
       wordContainer.appendChild(wordSpan);
       lineContainer.appendChild(wordContainer);
     });
@@ -104,14 +112,12 @@ function prepareText(container: HTMLElement): void {
   });
 }
 
-
 function animateText(container: HTMLElement): void {
-  const words = container.querySelectorAll('.word');
+  const words = container.querySelectorAll(".word");
   words.forEach((word, index) => {
     setTimeout(() => {
-      (word as HTMLElement).style.animation = 'reveal 0.6s forwards';
+      (word as HTMLElement).style.animation = "reveal 0.6s forwards";
     }, 100 * index); // Delay can be adjusted
   });
 }
 </script>
-
