@@ -24,7 +24,7 @@
   <main>
     <section id="about">
       <LayoutGridContainer>
-        <p class="item accent section-label">About —</p>
+        <TextSectionLabel labelText="About" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Our Story</template>
           <template #body>
@@ -67,7 +67,7 @@
 
     <section id="facilities">
       <LayoutGridContainer>
-        <p class="item accent section-label">Facilities —</p>
+        <TextSectionLabel labelText="Facilities" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>The Wellness Suite</template>
           <template #body>
@@ -132,7 +132,7 @@
 
     <section id="treatments">
       <LayoutGridContainer>
-        <p class="item accent section-label">Packages —</p>
+        <TextSectionLabel labelText="Packages" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Treatments</template>
           <template #body>
@@ -164,7 +164,7 @@
 
     <section id="springs-cafe">
       <LayoutGridContainer>
-        <p class="item accent section-label">Dining —</p>
+        <TextSectionLabel labelText="Dining" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Springs Café</template>
           <template #body>
@@ -189,7 +189,7 @@
 
     <section id="information">
       <LayoutGridContainer>
-        <p class="item accent section-label">Details —</p>
+        <TextSectionLabel labelText="Details" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Information</template>
           <template #body>
@@ -273,7 +273,7 @@
 
     <section id="packages">
       <LayoutGridContainer>
-        <p class="item accent section-label">Dining —</p>
+        <TextSectionLabel labelText="Dining" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
           <template #title>Packages</template>
           <template #body>

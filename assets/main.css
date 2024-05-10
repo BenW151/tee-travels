@@ -426,14 +426,6 @@ li {
   opacity: 0.8;
 }
 
-.section-label {
-  font-size: var(--font-size-XXS);
-  font-family: var(--font-family-primary);
-  grid-column: 1 / 3;
-  margin-left: auto;
-  height: fit-content;
-}
-
 .progress-bar {
   height: 2px;
   background: var(--accent-primary);
@@ -644,10 +636,6 @@ form label:nth-child(4) {
   }
   /** Accents */
 
-  .section-label {
-    margin-top: 1vh;
-    grid-row-start: 1;
-  }
 
   /** Text Effects */
 
