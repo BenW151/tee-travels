@@ -434,11 +434,6 @@
         </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
-
-    <section id="contact-form">
-      <FormsContactForm />
-    </section>
-
   </main>
 </template>
 
@@ -446,10 +441,6 @@
 useHead({
   title: "Bath Spa - Index",
   meta: [{ name: "description", content: "My amazing site." }],
-  bodyAttrs: {
-    class: "test",
-  },
-  script: [{ innerHTML: "console.log('Hello world')" }],
 });
 </script>
 
@@ -673,21 +664,5 @@ useHead({
     height: 30vh;
     margin: 0;
   }
-}
-</style>
-
-<style>
-
-.contact-form {
-  grid-column: 3 / 15;
-}
-
-#contact-form .paragraph-with-title {
-  grid-column: 3 / 12;
-  grid-row: 1;
-}
-
-#contact-form .item-inner {
-  margin: 0;
 }
 </style>
