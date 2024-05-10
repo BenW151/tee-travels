@@ -1,22 +1,22 @@
 <template>
-  <Header
-    imageUrl="/images/cross-bath.png"
-    title="Get in Touch"
-    subtitle="Britain's original natural thermal spa"
-    buttonText="Book Now"
-    buttonUrl="/another-page"
-    buttonDescription="Book Now"
-    headerClass="header-medium">
-    <template #description>
-      <p>
-        Have a Question?
-      </p>
-    </template>
-  </Header>
+  <div>
+    <Header
+      imageUrl="/images/cross-bath.png"
+      title="Get in Touch"
+      subtitle="Britain's original natural thermal spa"
+      buttonText="Book Now"
+      buttonUrl="/another-page"
+      buttonDescription="Book Now"
+      headerClass="header-medium">
+      <template #description>
+        <p>Have a Question?</p>
+      </template>
+    </Header>
 
-  <section id="contact-form">
+    <section id="contact-form">
       <FormsContactForm />
     </section>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -40,4 +40,3 @@ useHead({
   margin: 0;
 }
 </style>
-
