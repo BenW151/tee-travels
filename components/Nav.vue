@@ -33,13 +33,13 @@
       <a class="nav-item text-reveal" href="contact.html" aria-label="Home Page"
         >Book</a
       >
-      <ul class="item list link-list contact">
-        <li><a href="URL" aria-label="DESCRIPTION">Link List</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">List Item One</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">List Item Two</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">List Item Three</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">List Item Four</a></li>
-      </ul>
+      <ListsLinkList
+        class="contact"
+        :links="[
+          { url: '/contact', label: 'Instagram', description: 'Instagram' },
+          { url: '/contact', label: 'Twitter', description: 'Twitter' },
+          { url: '/contact', label: 'Facebook', description: 'Facebook' },
+        ]" />
 
       <div class="item card">
         <img alt="ALT TEXT" src="/images/logo-black.svg" />
