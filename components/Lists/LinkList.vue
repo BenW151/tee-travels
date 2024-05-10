@@ -17,3 +17,9 @@ const props = defineProps({
   }
 });
 </script>
+
+<style scoped>
+.link-list a {
+  margin-bottom: 0;
+}
+</style>

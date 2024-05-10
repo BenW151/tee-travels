@@ -400,10 +400,6 @@ li {
   font-weight: bold;
 }
 
-.link-list a {
-  margin-bottom: 0;
-}
-
 .faded-list li {
   opacity: 0.8;
 }
