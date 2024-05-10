@@ -1,6 +1,7 @@
 <template>
   <div class="image-strip container">
     <NuxtImg
+      format="webp"
       :alt="alt"
       :src="src"
       class="item rellax"

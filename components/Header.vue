@@ -5,7 +5,7 @@
       v-rellax
       data-rellax-speed="3"
       data-rellax-mobile-speed="0">
-      <NuxtImg :alt="title" :src="imageUrl" />
+      <NuxtImg format="webp" :alt="title" :src="imageUrl" />
     </div>
     <LayoutGridContainer>
       <div class="hero-text item">

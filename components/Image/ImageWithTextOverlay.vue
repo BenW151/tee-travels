@@ -7,7 +7,7 @@
     <div :class="['text-wrapper', textPosition]">
       <h4 v-html="overlayText"></h4>
     </div>
-    <NuxtImg :alt="altText" :src="imageUrl" />
+    <NuxtImg format="webp" :alt="altText" :src="imageUrl" />
   </div>
 </template>
 
