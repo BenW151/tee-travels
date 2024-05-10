@@ -1,4 +1,25 @@
 <template>
+  <Header
+    imageUrl="/images/pool-night.png"
+    title="Thermae Bath Spa"
+    subtitle="Britain's original natural thermal spa"
+    buttonText="Book Now"
+    buttonUrl="/another-page"
+    buttonDescription="Book Now">
+    <template #description>
+      <p>
+        Discover relaxation and rejuvenation at the only naturally warm,
+        mineral-rich waters in Britain. Immerse yourself in our luxurious spa
+        facilities, including the iconic rooftop pool with stunning views of the
+        historic city of Bath. Experience a blend of ancient tradition and
+        modern spa therapy as you unwind in the soothing waters and indulge in a
+        range of therapeutic treatments designed to refresh both body and mind.
+        Whether you seek a moment of solitude or a shared experience, Thermae
+        Bath Spa offers a timeless escape to enhance your wellbeing.
+      </p>
+    </template>
+  </Header>
+
   <main>
     <section id="about">
       <LayoutGridContainer>
@@ -38,10 +59,9 @@
 
     <section>
       <ImageStrip
-      src="/images/bath-pools.png"
-      alt="Bath Pools"
-      rellax-percentage="0.5"
-    />
+        src="/images/bath-pools.png"
+        alt="Bath Pools"
+        rellax-percentage="0.5" />
     </section>
 
     <section id="facilities">

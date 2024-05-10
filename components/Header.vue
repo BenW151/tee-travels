@@ -5,35 +5,26 @@
       v-rellax
       data-rellax-speed="3"
       data-rellax-mobile-speed="0">
-      <img alt="ALT TEXT" src="/images/pool-night.png" />
+      <img :alt="title" :src="imageUrl" />
     </div>
     <LayoutGridContainer>
       <div class="hero-text item">
-        <TextReveal tag="h1">Thermae Bath Spa </TextReveal>
-        <TextReveal tag="h2">Britain's original natural thermal spa</TextReveal>
+        <TextReveal tag="h1">{{ title }}</TextReveal>
+        <TextReveal tag="h2">{{ subtitle }}</TextReveal>
       </div>
       <div class="item paragraph">
-        <p class="body">
-          Discover relaxation and rejuvenation at the only naturally warm,
-          mineral-rich waters in Britain. Immerse yourself in our luxurious spa
-          facilities, including the iconic rooftop pool with stunning views of
-          the historic city of Bath. Experience a blend of ancient tradition and
-          modern spa therapy as you unwind in the soothing waters and indulge in
-          a range of therapeutic treatments designed to refresh both body and
-          mind. Whether you seek a moment of solitude or a shared experience,
-          Thermae Bath Spa offers a timeless escape to enhance your wellbeing.
-        </p>
+        <slot name="description"></slot>
         <a
-          href="URL"
-          aria-label="DESCRIPTION"
-          class="item link underline-out-icon">
-          <LucideSend />
-          Book Now
+          :href="buttonUrl"
+          :aria-label="buttonDescription"
+          class="item link underline-out">
+          {{ buttonText }}
         </a>
       </div>
     </LayoutGridContainer>
   </header>
 </template>
+
 
 <style scoped>
 header {
@@ -59,7 +50,7 @@ header a.link::after {
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 0;
 }
 
 .background-image img {
@@ -153,42 +144,19 @@ body.scrolled-past-header .burger-menu::before {
 }
 </style>
 
+<script setup>
+const props = defineProps({
+  imageUrl: String,
+  title: String,
+  subtitle: String,
+  buttonText: String,
+  buttonUrl: String,
+  buttonDescription: String
+});
+</script>
+
 <script>
 export default {
-  props: {
-    imageUrl: {
-      type: String,
-      required: true,
-    },
-    imageAlt: {
-      type: String,
-      default: "Header Image",
-    },
-    title: {
-      type: String,
-      default: "Default Title",
-    },
-    subtitle: {
-      type: String,
-      default: "Default Subtitle",
-    },
-    description: {
-      type: String,
-      default: "Default Description",
-    },
-    bookUrl: {
-      type: String,
-      default: "#",
-    },
-    rellaxSpeed: {
-      type: String,
-      default: "3",
-    },
-    rellaxMobileSpeed: {
-      type: String,
-      default: "0",
-    },
-  },
   mounted() {
     this.checkScroll(); // To initialize the class based on initial scroll position
     window.addEventListener("scroll", this.checkScroll);
