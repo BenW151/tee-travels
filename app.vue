@@ -1,30 +1,37 @@
 <template>
   <div>
-    <body>
-      <Nav />
-      <transition name="page" mode="out-in">
+    <Nav />
+    <transition name="page" mode="out-in">
+      <div :key="$route.path">
         <NuxtPage />
-      </transition>
-      <Footer />
-    </body>
+        <Footer />
+      </div>
+    </transition>
   </div>
 </template>
 
 <style>
-.page-enter-active,
+.page-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+
 .page-leave-active {
   transition: all 0.3s ease-in-out;
 }
+
 .page-enter-from {
   filter: brightness(0%);
+  transform: translateY(-2vh);
 }
 
 .page-leave-to {
   filter: brightness(0%);
+  transform: translateY(-2vh);
 }
 
 .page-enter-to,
 .page-leave-from {
   filter: brightness(100%);
+  transform: translateY(0);
 }
 </style>
