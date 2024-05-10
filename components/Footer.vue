@@ -15,23 +15,36 @@
         >
       </div>
 
-      <ul class="item list link-list contact">
-        <li>
-          <a class="link underline-out" href="URL" aria-label="DESCRIPTION"
-            >Book</a
-          >
-        </li>
-        <li><a href="URL" aria-label="DESCRIPTION">Contact</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">Careers</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">Sustainability</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">Accessibility</a></li>
-      </ul>
+      <ListsLinkList
+        class="contact"
+        :links="[
+          {
+            url: '/book',
+            label: 'Book',
+            description: 'Book a service',
+            class: 'underline-out',
+          },
+          { url: '/contact', label: 'Contact', description: 'Contact Us' },
+          { url: '/careers', label: 'Careers', description: 'View Careers' },
+          {
+            url: '/sustainability',
+            label: 'Sustainability',
+            description: 'Our Sustainability Efforts',
+          },
+          {
+            url: '/accessibility',
+            label: 'Accessibility',
+            description: 'Accessibility Options',
+          },
+        ]" />
 
-      <ul class="item list link-list socials">
-        <li><a href="URL" aria-label="DESCRIPTION">Instagram</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">Twitter</a></li>
-        <li><a href="URL" aria-label="DESCRIPTION">Facebook</a></li>
-      </ul>
+      <ListsLinkList
+        class="socials"
+        :links="[
+          { url: '/contact', label: 'Instagram', description: 'Instagram' },
+          { url: '/contact', label: 'Twitter', description: 'Twitter' },
+          { url: '/contact', label: 'Facebook', description: 'Facebook' },
+        ]" />
     </LayoutGridContainer>
 
     <LayoutGridContainer class="footer-end">

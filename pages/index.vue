@@ -212,49 +212,54 @@
           textPosition="right" />
         <Accordion>
           <AccordionItem title="Before You Arrive" index="1">
-            <ul class="item list">
-              <li class="list-title">Default List</li>
-              <li>List Item One</li>
-              <li>List Item Two</li>
-              <li>List Item Three</li>
-              <li>List Item Four</li>
-            </ul>
+            <ListsDefaultList
+              title="List Title"
+              :items="[
+                { id: 1, text: 'List Item One' },
+                { id: 2, text: 'List Item Two' },
+                { id: 3, text: 'List Item Three' },
+                { id: 4, text: 'List Item Four' },
+              ]" />
           </AccordionItem>
           <AccordionItem title="Your Visit" index="2">
-            <ul class="item list">
-              <li class="list-title">Default List</li>
-              <li>List Item One</li>
-              <li>List Item Two</li>
-              <li>List Item Three</li>
-              <li>List Item Four</li>
-            </ul>
+            <ListsDefaultList
+              title="List Title"
+              :items="[
+                { id: 1, text: 'List Item One' },
+                { id: 2, text: 'List Item Two' },
+                { id: 3, text: 'List Item Three' },
+                { id: 4, text: 'List Item Four' },
+              ]" />
           </AccordionItem>
           <AccordionItem title="Medical Conditions" index="3">
-            <ul class="item list">
-              <li class="list-title">Default List</li>
-              <li>List Item One</li>
-              <li>List Item Two</li>
-              <li>List Item Three</li>
-              <li>List Item Four</li>
-            </ul>
+            <ListsDefaultList
+              title="List Title"
+              :items="[
+                { id: 1, text: 'List Item One' },
+                { id: 2, text: 'List Item Two' },
+                { id: 3, text: 'List Item Three' },
+                { id: 4, text: 'List Item Four' },
+              ]" />
           </AccordionItem>
           <AccordionItem title="Opening Hours" index="4">
-            <ul class="item list">
-              <li class="list-title">Default List</li>
-              <li>List Item One</li>
-              <li>List Item Two</li>
-              <li>List Item Three</li>
-              <li>List Item Four</li>
-            </ul>
+            <ListsDefaultList
+              title="List Title"
+              :items="[
+                { id: 1, text: 'List Item One' },
+                { id: 2, text: 'List Item Two' },
+                { id: 3, text: 'List Item Three' },
+                { id: 4, text: 'List Item Four' },
+              ]" />
           </AccordionItem>
           <AccordionItem title="Find Us" index="5">
-            <ul class="item list">
-              <li class="list-title">Default List</li>
-              <li>List Item One</li>
-              <li>List Item Two</li>
-              <li>List Item Three</li>
-              <li>List Item Four</li>
-            </ul>
+            <ListsDefaultList
+              title="List Title"
+              :items="[
+                { id: 1, text: 'List Item One' },
+                { id: 2, text: 'List Item Two' },
+                { id: 3, text: 'List Item Three' },
+                { id: 4, text: 'List Item Four' },
+              ]" />
           </AccordionItem>
         </Accordion>
         <ImageWithTextOverlay
