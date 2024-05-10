@@ -3,13 +3,14 @@
     <Header
       imageUrl="/images/cross-bath.png"
       title="Get in Touch"
-      subtitle="Britain's original natural thermal spa"
-      buttonText="Book Now"
-      buttonUrl="/another-page"
-      buttonDescription="Book Now"
+      subtitle="Have a question? Let us know"
       headerClass="header-medium">
       <template #description>
-        <p>Have a Question?</p>
+        <!--
+                buttonText="Book Now"
+                buttonUrl="#contact-form"
+                buttonDescription="Book Now"
+          <p>Have a Question?</p>-->
       </template>
     </Header>
 

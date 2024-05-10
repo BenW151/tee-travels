@@ -11,22 +11,19 @@
 </template>
 
 <style>
-.page-enter-active {
-  transition: all 0.3s ease-in-out;
-}
-
+.page-enter-active,
 .page-leave-active {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
 
 .page-enter-from {
   filter: brightness(0%);
-  transform: translateY(-2vh);
+  transform: translateY(0vh);
 }
 
 .page-leave-to {
   filter: brightness(0%);
-  transform: translateY(-2vh);
+  transform: translateY(0vh);
 }
 
 .page-enter-to,
