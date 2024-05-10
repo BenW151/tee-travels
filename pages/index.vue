@@ -435,7 +435,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section id="contact-form">
       <FormsContactForm />
     </section>
 
@@ -587,11 +587,6 @@ useHead({
   grid-row: auto;
 }
 
-#contact-form .paragraph-with-title {
-  grid-column: 3 / 11;
-  grid-row: 1;
-}
-
 @media (max-width: 767px) {
   #lead-text .text-reveal {
     grid-column: 1 / 7;
@@ -678,5 +673,21 @@ useHead({
     height: 30vh;
     margin: 0;
   }
+}
+</style>
+
+<style>
+
+.contact-form {
+  grid-column: 3 / 15;
+}
+
+#contact-form .paragraph-with-title {
+  grid-column: 3 / 12;
+  grid-row: 1;
+}
+
+#contact-form .item-inner {
+  margin: 0;
 }
 </style>

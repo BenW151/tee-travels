@@ -89,10 +89,6 @@ form .button {
   border: none;
 }
 
-.contact-form {
-  grid-column: 3 / 15;
-}
-
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
