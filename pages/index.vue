@@ -5,7 +5,8 @@
     subtitle="Britain's original natural thermal spa"
     buttonText="Book Now"
     buttonUrl="/another-page"
-    buttonDescription="Book Now">
+    buttonDescription="Book Now"
+    headerClass="header-large">
     <template #description>
       <p>
         Discover relaxation and rejuvenation at the only naturally warm,
@@ -442,4 +443,5 @@ useHead({
 });
 </script>
 
-<style></style>
+<style>
+</style>

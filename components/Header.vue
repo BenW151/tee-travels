@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header ref="headerRef" :class="headerClass">
     <div
       class="background-image rellax"
       v-rellax
@@ -25,9 +25,50 @@
   </header>
 </template>
 
+<script setup>
+import { onMounted, onBeforeUnmount, ref } from "vue";
+
+const props = defineProps({
+  imageUrl: String,
+  title: String,
+  subtitle: String,
+  buttonText: String,
+  buttonUrl: String,
+  buttonDescription: String,
+  headerClass: String
+});
+
+const headerRef = ref(null);
+
+const checkScroll = () => {
+  if (!headerRef.value) return; 
+  const header = headerRef.value;
+  if (window.scrollY > header.offsetHeight) {
+    document.body.classList.add("scrolled-past-header");
+  } else {
+    document.body.classList.remove("scrolled-past-header");
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", checkScroll);
+  checkScroll();
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", checkScroll);
+});
+</script>
+
 
 <style scoped>
-header {
+.header-small {
+  height: 80lvh;
+}
+.header-medium {
+  height: 120lvh;
+}
+.header-large {
   height: 180lvh;
 }
 
@@ -97,28 +138,6 @@ header .item:nth-child(3) {
   margin-top: auto;
 }
 
-body.scrolled-past-header .logo-hide {
-  max-width: 9em;
-  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-body.scrolled-past-header nav .logo img {
-  filter: invert(100%);
-  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-body.scrolled-past-header nav a {
-  color: var(--color-black);
-}
-
-body.scrolled-past-header nav a::after {
-  background-color: var(--color-black);
-}
-
-body.scrolled-past-header .burger-menu::before {
-  filter: invert(100%);
-}
-
 @media (max-width: 767px) {
   header {
     height: 150lvh;
@@ -143,36 +162,3 @@ body.scrolled-past-header .burger-menu::before {
   }
 }
 </style>
-
-<script setup>
-const props = defineProps({
-  imageUrl: String,
-  title: String,
-  subtitle: String,
-  buttonText: String,
-  buttonUrl: String,
-  buttonDescription: String
-});
-</script>
-
-<script>
-export default {
-  mounted() {
-    this.checkScroll(); // To initialize the class based on initial scroll position
-    window.addEventListener("scroll", this.checkScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.checkScroll);
-  },
-  methods: {
-    checkScroll() {
-      const header = this.$el; // Vue reference to the header element
-      if (window.scrollY > header.offsetHeight) {
-        document.body.classList.add("scrolled-past-header");
-      } else {
-        document.body.classList.remove("scrolled-past-header");
-      }
-    },
-  },
-};
-</script>

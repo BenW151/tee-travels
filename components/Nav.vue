@@ -168,6 +168,28 @@ nav.scrolled {
   transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+body.scrolled-past-header .logo-hide {
+  max-width: 9em;
+  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body.scrolled-past-header nav .logo img {
+  filter: invert(100%);
+  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body.scrolled-past-header nav a {
+  color: var(--color-black);
+}
+
+body.scrolled-past-header nav a::after {
+  background-color: var(--color-black);
+}
+
+body.scrolled-past-header .burger-menu::before {
+  filter: invert(100%);
+}
+
 @media (max-width: 767px) {
   nav {
     height: 6vh;
