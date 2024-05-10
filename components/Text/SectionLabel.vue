@@ -25,6 +25,7 @@ const props = defineProps({
 @media (max-width: 767px) {
   .section-label {
     margin-top: 1vh;
+    grid-column: 1;
     grid-row-start: 1;
   }
 }

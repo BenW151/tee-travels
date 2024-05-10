@@ -46,8 +46,8 @@ const props = defineProps({
 }
 
 @media (max-width: 767px) {
-  .paragraph-with-title {
-    grid-column: span 5;
+.paragraph-with-title {
+    grid-column: span 6;
   }
 }
 </style>

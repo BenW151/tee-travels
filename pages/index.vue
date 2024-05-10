@@ -434,6 +434,11 @@
         </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
+
+    <section>
+      <FormsContactForm />
+    </section>
+
   </main>
 </template>
 
@@ -580,6 +585,11 @@ useHead({
 #packages .paragraph-with-title:not(:nth-of-type(2n)):not(:nth-of-type(1)) {
   grid-column: 2 / 9;
   grid-row: auto;
+}
+
+#contact-form .paragraph-with-title {
+  grid-column: 3 / 11;
+  grid-row: 1;
 }
 
 @media (max-width: 767px) {
