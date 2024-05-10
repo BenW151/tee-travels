@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/main.css"],
   modules: ["nuxt-lucide-icons", "@nuxtjs/google-fonts", "@nuxt/image",],
+  image: {
+    format: ['webp'],
+  },
   googleFonts: {
     families: {
       Lora: {
