@@ -3,8 +3,8 @@
     <div class="logo">
       <img alt="ALT TEXT" src="/images/logo-white.svg" />
       <div class="wordmark">
-        <a class="logo-hide" href="index.html" aria-label="Home Page"
-          >Thermae Bath Spa</a
+        <NuxtLink class="logo-hide" to="index.html" aria-label="Home Page"
+          >Thermae Bath Spa</NuxtLink
         >
       </div>
     </div>
@@ -12,26 +12,26 @@
     <div class="burger-menu" @click="toggleMenu"></div>
 
     <div class="nav">
-      <a
+      <NuxtLink
         class="nav-item text-reveal active"
-        href="index.html"
+        to="/"
         aria-label="Home Page"
-        >Home</a
+        >Home</NuxtLink
       >
-      <a class="nav-item text-reveal" href="#about" aria-label="Home Page"
-        >Story</a
+      <NuxtLink class="nav-item text-reveal" to="/about" aria-label="Home Page"
+        >Story</NuxtLink
       >
-      <a class="nav-item text-reveal" href="#portfolio" aria-label="Home Page"
-        >Facilities</a
+      <NuxtLink class="nav-item text-reveal" to="/portfolio" aria-label="Home Page"
+        >Facilities</NuxtLink
       >
-      <a class="nav-item text-reveal" href="#services" aria-label="Home Page"
-        >Treatments</a
+      <NuxtLink class="nav-item text-reveal" to="/services" aria-label="Home Page"
+        >Treatments</NuxtLink
       >
-      <a class="nav-item text-reveal" href="#projects" aria-label="Home Page"
-        >Information</a
+      <NuxtLink class="nav-item text-reveal" to="/projects" aria-label="Home Page"
+        >Information</NuxtLink
       >
-      <a class="nav-item text-reveal" href="contact.html" aria-label="Home Page"
-        >Book</a
+      <NuxtLink class="nav-item text-reveal" to="/contact" aria-label="Home Page"
+        >Book</NuxtLink
       >
       <ListsLinkList
         class="contact"

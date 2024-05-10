@@ -16,9 +16,9 @@
         <p class="body">Default paragraph content.</p>
       </slot>
 
-      <a v-if="linkUrl" :href="linkUrl" class="link underline-out">
+      <NuxtLink v-if="linkUrl" :to="linkUrl" class="link underline-out">
         <slot name="link-text">View More</slot>
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

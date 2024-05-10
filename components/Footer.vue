@@ -10,8 +10,8 @@
       </div>
 
       <div class="item address">
-        <a class="link" href="URL" aria-label="DESCRIPTION"
-          >The Hetling Pump Room, Hot Bath St, Bath, BA1 1SJ</a
+        <NuxtLink class="link" to="URL" aria-label="DESCRIPTION"
+          >The Hetling Pump Room, Hot Bath St, Bath, BA1 1SJ</NuxtLink
         >
       </div>
 
@@ -49,20 +49,23 @@
 
     <LayoutGridContainer class="footer-end">
       <p class="item">Copyright ©2024</p>
-      <a class="item" href="https://github.com/BenW151" aria-label="Home Page"
-        >Designed by Ben Ward</a
-      >
-      <a
+      <NuxtLink
         class="item"
-        href="privacy-policy.html"
+        to="https://github.com/BenW151"
+        aria-label="Home Page"
+        >Designed by Ben Ward</NuxtLink
+      >
+      <NuxtLink
+        class="item"
+        to="privacy-policy.html"
         aria-label="Privacy Policy Page"
-        >Privacy Policy</a
+        >Privacy Policy</NuxtLink
       >
-      <a
+      <NuxtLink
         class="item"
-        href="terms-and-conditions.html"
+        to="terms-and-conditions.html"
         aria-label="Terms and Conditions Page"
-        >Terms + Conditions</a
+        >Terms + Conditions</NuxtLink
       >
     </LayoutGridContainer>
   </footer>

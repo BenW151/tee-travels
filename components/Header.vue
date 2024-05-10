@@ -14,12 +14,12 @@
       </div>
       <div class="item paragraph">
         <slot name="description"></slot>
-        <a
-          :href="buttonUrl"
+        <NuxtLink
+          :to="buttonUrl"
           :aria-label="buttonDescription"
           class="item link underline-out">
           {{ buttonText }}
-        </a>
+        </NuxtLink>
       </div>
     </LayoutGridContainer>
   </header>
@@ -35,13 +35,13 @@ const props = defineProps({
   buttonText: String,
   buttonUrl: String,
   buttonDescription: String,
-  headerClass: String
+  headerClass: String,
 });
 
 const headerRef = ref(null);
 
 const checkScroll = () => {
-  if (!headerRef.value) return; 
+  if (!headerRef.value) return;
   const header = headerRef.value;
   if (window.scrollY > header.offsetHeight) {
     document.body.classList.add("scrolled-past-header");
@@ -59,7 +59,6 @@ onBeforeUnmount(() => {
   window.removeEventListener("scroll", checkScroll);
 });
 </script>
-
 
 <style scoped>
 .header-small {
