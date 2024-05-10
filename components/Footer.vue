@@ -1,13 +1,7 @@
 <template>
   <footer ref="footer" class="background-inverted">
     <LayoutGridContainer>
-      <div class="item card">
-        <NuxtImg format="webp"  alt="ALT TEXT" src="/images/logo-white.svg" />
-        <div class="card-text">
-          <h4>Thermae Bath Spa</h4>
-          <p>Britain's original natural thermal spa</p>
-        </div>
-      </div>
+      <TextCard />
 
       <div class="item address">
         <NuxtLink class="link" to="URL" aria-label="DESCRIPTION"
