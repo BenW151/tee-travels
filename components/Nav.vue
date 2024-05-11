@@ -13,36 +13,51 @@
 
     <div class="nav">
       <NuxtLink
-        class="nav-item text-reveal active"
+        class="nav-item text-reveal"
         to="/"
+        :class="{ 'active': $route.path === '/' }"
         aria-label="Home Page"
+        @click="toggleMenu"
         >Home</NuxtLink
       >
-      <NuxtLink class="nav-item text-reveal" to="/about" aria-label="Home Page"
+      <NuxtLink
+        class="nav-item text-reveal"
+        to="/about"
+        :class="{ 'active': $route.path === '/about' }"
+        aria-label="Home Page"
+        @click="toggleMenu"
         >Story</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
-        to="/portfolio"
+        to="/facilities"
+        :class="{ 'active': $route.path === '/facilities' }"
         aria-label="Home Page"
+        @click="toggleMenu"
         >Facilities</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
-        to="/services"
+        to="/treatments"
+        :class="{ 'active': $route.path === '/treatments' }"
         aria-label="Home Page"
+        @click="toggleMenu"
         >Treatments</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
-        to="/projects"
+        to="/information"
+        :class="{ 'active': $route.path === '/information' }"
         aria-label="Home Page"
+        @click="toggleMenu"
         >Information</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
         to="/contact"
+        :class="{ 'active': $route.path === '/contact' }"
         aria-label="Home Page"
+        @click="toggleMenu"
         >Book</NuxtLink
       >
       <ListsLinkList
@@ -80,10 +95,12 @@ onUnmounted(() => {
 });
 
 function toggleMenu() {
-  const navElement = nav.value.querySelector(".nav");
-  const burger = nav.value.querySelector(".burger-menu");
-  navElement.classList.toggle("nav-open");
-  burger.classList.toggle("active");
+  if (window.innerWidth < 768) {
+    const navElement = nav.value.querySelector(".nav");
+    const burger = nav.value.querySelector(".burger-menu");
+    navElement.classList.toggle("nav-open");
+    burger.classList.toggle("active");
+  }
 }
 </script>
 
