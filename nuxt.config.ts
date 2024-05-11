@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   },
   plugins: ["~/plugins/rellax.client.js"],
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in', appear: true,},
     head: {
       title: "Bath Spa",
       charset: "utf-8",
