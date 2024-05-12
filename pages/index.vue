@@ -439,12 +439,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: "Bath Spa - Index",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
+
 
 <style scoped>
 #lead-text .text-reveal {

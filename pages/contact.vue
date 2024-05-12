@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: "Bath Spa - Contact",
   meta: [{ name: "description", content: "My amazing site." }],

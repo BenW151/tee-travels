@@ -56,17 +56,17 @@
 }
 </style>
 
-<script setup lang="ts">
-import { ref, defineProps } from "vue";
+<script setup>
+import { ref, defineProps, onMounted } from "vue";
 
 const props = defineProps({
   tag: {
     type: String,
-    default: "div", // Default to div, but allow any tag to be specified
+    default: "div",
   },
 });
 
-const textContainer = ref<HTMLElement | null>(null);
+const textContainer = ref(null);
 
 onMounted(() => {
   if (textContainer.value) {
@@ -75,7 +75,7 @@ onMounted(() => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            animateText(entry.target as HTMLElement);
+            animateText(entry.target);
             observer.unobserve(entry.target);
           }
         });
@@ -90,7 +90,7 @@ onMounted(() => {
   }
 });
 
-function prepareText(container: HTMLElement): void {
+function prepareText(container) {
   const text = container.innerHTML;
   container.innerHTML = ""; // Clear initial content
   const lines = text.split(/<br\s*\/?>/i);
@@ -112,11 +112,11 @@ function prepareText(container: HTMLElement): void {
   });
 }
 
-function animateText(container: HTMLElement): void {
+function animateText(container) {
   const words = container.querySelectorAll(".word");
   words.forEach((word, index) => {
     setTimeout(() => {
-      (word as HTMLElement).style.animation = "reveal 0.6s forwards";
+      word.style.animation = "reveal 0.6s forwards";
     }, 100 * index); // Delay can be adjusted
   });
 }
