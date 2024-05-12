@@ -14,11 +14,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import type { NuxtError } from "#app";
-
+<script setup>
 const props = defineProps({
-  error: Object as () => NuxtError,
+  error: Object
 });
 
 const handleError = () => clearError({ redirect: "/" });
@@ -28,3 +26,4 @@ useHead({
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
+
