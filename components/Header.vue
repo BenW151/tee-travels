@@ -138,7 +138,13 @@ header .item:nth-child(3) {
 }
 
 @media (max-width: 767px) {
-  header {
+  .header-small {
+    height: 80lvh;
+  }
+  .header-medium {
+    height: 120lvh;
+  }
+  .header-large {
     height: 150lvh;
   }
 
