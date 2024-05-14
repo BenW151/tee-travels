@@ -4,9 +4,9 @@
       imageUrl="/images/background-pixel.png"
       title="Ben Ward"
       subtitle="Web Developer"
-      buttonText="Book Now"
-      buttonUrl="/another-page"
-      buttonDescription="Book Now"
+      buttonText="Contact Me"
+      buttonUrl="/contact"
+      buttonDescription="Contact Me"
       headerClass="header-large">
       <template #description>
         <p>
