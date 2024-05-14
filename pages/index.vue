@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pool-night.png"
-      title="Thermae Bath Spa"
+      title="Ben Ward"
       subtitle="Britain's original natural thermal spa"
       buttonText="Book Now"
       buttonUrl="/another-page"
