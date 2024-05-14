@@ -25,9 +25,9 @@ body {
   --accent-primary: var(--color-black);
   --accent-secondary: var(--color-white);
   --background-primary: var(--color-white);
-  --background-secondary: var(--color-blue);
+  --background-secondary: var(--color-black);
   --background-opacity: rgba(0, 0, 0, 0.1);
-  --font-family-primary: "Lora", serif;
+  --font-family-primary: "Roboto Slab", sans-serif;
   --font-family-secondary: "Roboto Flex", sans-serif;
   --font-size-XXL: 9vw;
   --font-size-XL: 8vw;

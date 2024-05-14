@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/cross-bath.png"
+      imageUrl="/images/background-pixel.png"
       title="Get in Touch"
       subtitle="Have a question? Let us know"
       headerClass="header-medium">

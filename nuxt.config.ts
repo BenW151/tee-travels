@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Lora: {
+      "Roboto Slab": {
         wght: [400, 500],
         ital: [100, 400],
       },

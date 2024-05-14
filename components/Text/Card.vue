@@ -2,8 +2,8 @@
   <div class="item card">
     <NuxtImg :format="'webp'" alt="ALT TEXT" :src="logoSrc" />
     <div class="card-text">
-      <h4>Thermae Bath Spa</h4>
-      <p>Britain's original natural thermal spa</p>
+      <h4>Ben Ward</h4>
+      <p>Web Developer</p>
     </div>
   </div>
 </template>

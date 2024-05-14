@@ -1,9 +1,9 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/pool-night.png"
+      imageUrl="/images/background-pixel.png"
       title="Ben Ward"
-      subtitle="Britain's original natural thermal spa"
+      subtitle="Web Developer"
       buttonText="Book Now"
       buttonUrl="/another-page"
       buttonDescription="Book Now"
@@ -17,7 +17,7 @@
           modern spa therapy as you unwind in the soothing waters and indulge in
           a range of therapeutic treatments designed to refresh both body and
           mind. Whether you seek a moment of solitude or a shared experience,
-          Thermae Bath Spa offers a timeless escape to enhance your wellbeing.
+          Ben Ward offers a timeless escape to enhance your wellbeing.
         </p>
       </template>
     </Header>
@@ -30,13 +30,13 @@
             <template #title>Our Story</template>
             <template #body>
               <p>
-                Thermae Bath Spa stands as a modern continuation of a
-                centuries-old tradition, rooted in the ancient practice of
-                bathing in naturally heated springs. The city of Bath, renowned
-                for its thermal waters, has been a destination for restorative
-                retreats since Roman times. In the 18th century, it became a
-                fashionable spa town, attracting visitors from across the globe
-                seeking the curative properties of its mineral-rich waters.
+                Ben Ward stands as a modern continuation of a centuries-old
+                tradition, rooted in the ancient practice of bathing in
+                naturally heated springs. The city of Bath, renowned for its
+                thermal waters, has been a destination for restorative retreats
+                since Roman times. In the 18th century, it became a fashionable
+                spa town, attracting visitors from across the globe seeking the
+                curative properties of its mineral-rich waters.
               </p>
               <p>
                 Our spa reimagines these age-old traditions with
@@ -124,9 +124,9 @@
       <section id="lead-text">
         <LayoutGridContainer>
           <TextReveal tag="h3" class="item">
-            Elevating wellness through serene experiences, Thermae Bath Spa
-            invites you to indulge in transformative relaxation and meaningful
-            tranquility for a restorative journey unlike any other.
+            Elevating wellness through serene experiences, Ben Ward invites you
+            to indulge in transformative relaxation and meaningful tranquility
+            for a restorative journey unlike any other.
           </TextReveal>
         </LayoutGridContainer>
       </section>
@@ -195,13 +195,13 @@
             <template #title>Information</template>
             <template #body>
               <p>
-                Thermae Bath Spa stands as a modern continuation of a
-                centuries-old tradition, rooted in the ancient practice of
-                bathing in naturally heated springs. The city of Bath, renowned
-                for its thermal waters, has been a destination for restorative
-                retreats since Roman times. In the 18th century, it became a
-                fashionable spa town, attracting visitors from across the globe
-                seeking the curative properties of its mineral-rich waters.
+                Ben Ward stands as a modern continuation of a centuries-old
+                tradition, rooted in the ancient practice of bathing in
+                naturally heated springs. The city of Bath, renowned for its
+                thermal waters, has been a destination for restorative retreats
+                since Roman times. In the 18th century, it became a fashionable
+                spa town, attracting visitors from across the globe seeking the
+                curative properties of its mineral-rich waters.
               </p>
             </template>
             <template #link-text>View Treatments & Packages</template>
@@ -445,7 +445,6 @@ useHead({
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
-
 
 <style scoped>
 #lead-text .text-reveal {

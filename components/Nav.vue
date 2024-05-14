@@ -4,7 +4,7 @@
       <NuxtImg format="webp" alt="ALT TEXT" src="/images/logo-white.svg" />
       <div class="wordmark">
         <NuxtLink class="logo-hide" to="/" aria-label="Home Page"
-          >Thermae Bath Spa</NuxtLink
+          >Ben Ward</NuxtLink
         >
       </div>
     </div>
@@ -15,7 +15,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/"
-        :class="{ 'active': $route.path === '/' }"
+        :class="{ active: $route.path === '/' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Home</NuxtLink
@@ -23,7 +23,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/about"
-        :class="{ 'active': $route.path === '/about' }"
+        :class="{ active: $route.path === '/about' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Story</NuxtLink
@@ -31,7 +31,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/facilities"
-        :class="{ 'active': $route.path === '/facilities' }"
+        :class="{ active: $route.path === '/facilities' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Facilities</NuxtLink
@@ -39,7 +39,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/treatments"
-        :class="{ 'active': $route.path === '/treatments' }"
+        :class="{ active: $route.path === '/treatments' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Treatments</NuxtLink
@@ -47,7 +47,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/information"
-        :class="{ 'active': $route.path === '/information' }"
+        :class="{ active: $route.path === '/information' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Information</NuxtLink
@@ -55,7 +55,7 @@
       <NuxtLink
         class="nav-item text-reveal"
         to="/contact"
-        :class="{ 'active': $route.path === '/contact' }"
+        :class="{ active: $route.path === '/contact' }"
         aria-label="Home Page"
         @click="toggleMenu"
         >Book</NuxtLink

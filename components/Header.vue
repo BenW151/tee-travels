@@ -110,11 +110,6 @@ header a.link::after {
   margin-top: 10vw;
 }
 
-.hero-text .text-reveal,
-.hero-text .line-container {
-  justify-content: center;
-}
-
 .hero-text h2 {
   font-size: var(--font-size-M);
   font-style: italic;
