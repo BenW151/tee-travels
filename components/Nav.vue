@@ -18,47 +18,23 @@
         :class="{ active: $route.path === '/' }"
         aria-label="Home Page"
         @click="toggleMenu"
-        >Home</NuxtLink
+        >About</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
-        to="/about"
-        :class="{ active: $route.path === '/about' }"
-        aria-label="Home Page"
+        to="/portfolio"
+        :class="{ active: $route.path === '/portfolio' }"
+        aria-label="Portfolio Page"
         @click="toggleMenu"
-        >Story</NuxtLink
-      >
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/facilities"
-        :class="{ active: $route.path === '/facilities' }"
-        aria-label="Home Page"
-        @click="toggleMenu"
-        >Facilities</NuxtLink
-      >
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/treatments"
-        :class="{ active: $route.path === '/treatments' }"
-        aria-label="Home Page"
-        @click="toggleMenu"
-        >Treatments</NuxtLink
-      >
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/information"
-        :class="{ active: $route.path === '/information' }"
-        aria-label="Home Page"
-        @click="toggleMenu"
-        >Information</NuxtLink
+        >Portfolio</NuxtLink
       >
       <NuxtLink
         class="nav-item text-reveal"
         to="/contact"
         :class="{ active: $route.path === '/contact' }"
-        aria-label="Home Page"
+        aria-label="Contact Page"
         @click="toggleMenu"
-        >Book</NuxtLink
+        >Contact</NuxtLink
       >
       <ListsLinkList
         class="contact"
@@ -191,7 +167,7 @@ nav.scrolled {
   transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-body.scrolled-past-header .logo-hide {
+/* body.scrolled-past-header .logo-hide {
   max-width: 9em;
   transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -211,7 +187,7 @@ body.scrolled-past-header nav a::after {
 
 body.scrolled-past-header .burger-menu::before {
   filter: invert(100%);
-}
+}*/
 
 @media (max-width: 767px) {
   nav {

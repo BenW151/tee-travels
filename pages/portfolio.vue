@@ -2,10 +2,15 @@
   <div>
     <Header
       backgroundColor="var(--color-black)"
-      title="Get in Touch"
-      subtitle="Have a question? Let me know"
+      title="Portfolio"
+      subtitle="Have a question? Let us know"
       headerClass="header-medium">
       <template #description>
+        <!--
+                buttonText="Book Now"
+                buttonUrl="#contact-form"
+                buttonDescription="Book Now"
+          <p>Have a Question?</p>-->
       </template>
     </Header>
 

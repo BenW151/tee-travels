@@ -72,7 +72,7 @@ onBeforeUnmount(() => {
   height: 80lvh;
 }
 .header-medium {
-  height: 120lvh;
+  height: 100lvh;
 }
 .header-large {
   height: 180lvh;

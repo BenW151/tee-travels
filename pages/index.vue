@@ -7,22 +7,22 @@
       buttonText="Contact Me"
       buttonUrl="/contact"
       buttonDescription="Contact Me"
-      headerClass="header-large">
+      headerClass="header-medium">
       <template #description>
-        <p>
-          Discover relaxation and rejuvenation at the only naturally warm,
-          mineral-rich waters in Britain. Immerse yourself in our luxurious spa
-          facilities, including the iconic rooftop pool with stunning views of
-          the historic city of Bath. Experience a blend of ancient tradition and
-          modern spa therapy as you unwind in the soothing waters and indulge in
-          a range of therapeutic treatments designed to refresh both body and
-          mind. Whether you seek a moment of solitude or a shared experience,
-          Ben Ward offers a timeless escape to enhance your wellbeing.
-        </p>
+        <p>Building sleek, scalable, and interactive web experiences.</p>
       </template>
     </Header>
 
     <main>
+      <section id="lead-text">
+        <LayoutGridContainer>
+          <TextReveal tag="h3" class="item">
+            Empowering businesses through engaging and practical designs, built
+            for outstanding performance and significant reach.
+          </TextReveal>
+        </LayoutGridContainer>
+      </section>
+
       <section id="about">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
@@ -59,48 +59,22 @@
         </LayoutGridContainer>
       </section>
 
-      <section>
-        <ImageStrip
-          src="/images/bath-pools.png"
-          alt="Bath Pools"
-          rellax-percentage="0.5" />
-      </section>
-
-      <section id="lead-text">
-        <LayoutGridContainer>
-          <TextReveal tag="h3" class="item">
-            Elevating wellness through serene experiences, Ben Ward invites you
-            to indulge in transformative relaxation and meaningful tranquility
-            for a restorative journey unlike any other.
-          </TextReveal>
-        </LayoutGridContainer>
-      </section>
-
       <section id="information">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
           <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Information</template>
+            <template #title>Services</template>
             <template #body>
               <p>
                 Ben Ward stands as a modern continuation of a centuries-old
                 tradition, rooted in the ancient practice of bathing in
-                naturally heated springs. The city of Bath, renowned for its
-                thermal waters, has been a destination for restorative retreats
-                since Roman times. In the 18th century, it became a fashionable
-                spa town, attracting visitors from across the globe seeking the
-                curative properties of its mineral-rich waters.
+                naturally heated springs.
               </p>
             </template>
             <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/minerva-bath.png"
-            altText="Minerva Bath"
-            overlayText="Minerva Bath"
-            textPosition="right" />
           <Accordion>
-            <AccordionItem title="Before You Arrive" index="1">
+            <AccordionItem title="Web Development" index="1">
               <ListsDefaultList
                 title="List Title"
                 :items="[
@@ -110,7 +84,7 @@
                   { id: 4, text: 'List Item Four' },
                 ]" />
             </AccordionItem>
-            <AccordionItem title="Your Visit" index="2">
+            <AccordionItem title="UI/UX Design" index="2">
               <ListsDefaultList
                 title="List Title"
                 :items="[
@@ -120,7 +94,7 @@
                   { id: 4, text: 'List Item Four' },
                 ]" />
             </AccordionItem>
-            <AccordionItem title="Medical Conditions" index="3">
+            <AccordionItem title="Brand Design" index="3">
               <ListsDefaultList
                 title="List Title"
                 :items="[
@@ -130,7 +104,7 @@
                   { id: 4, text: 'List Item Four' },
                 ]" />
             </AccordionItem>
-            <AccordionItem title="Opening Hours" index="4">
+            <AccordionItem title="SEO" index="4">
               <ListsDefaultList
                 title="List Title"
                 :items="[
@@ -140,7 +114,7 @@
                   { id: 4, text: 'List Item Four' },
                 ]" />
             </AccordionItem>
-            <AccordionItem title="Find Us" index="5">
+            <AccordionItem title="Support" index="5">
               <ListsDefaultList
                 title="List Title"
                 :items="[
@@ -401,7 +375,6 @@ useHead({
 #information .accordion:nth-of-type(3) {
   grid-column: 6 / 17;
   grid-row: 2;
-  background-color: var(--color-white);
   height: 40vw;
 }
 

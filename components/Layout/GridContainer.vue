@@ -11,7 +11,7 @@
   padding: 15vh 5vw;
   justify-content: center;
   margin: 0 auto;
-  background-color: var(--accent-secondary);
+  background-color: var(--background-primary);
   z-index: 3;
 }
 
