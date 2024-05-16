@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     "nuxt-lucide-icons",
     "@nuxtjs/google-fonts",
     "@nuxt/image",
-    "@nuxtjs/seo",
   ],
   image: {
     format: ["webp"],
