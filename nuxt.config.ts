@@ -6,13 +6,18 @@ export default defineNuxtConfig({
     assets: "/<rootDir>/assets",
   },
   css: ["~/assets/main.css"],
-  modules: ["nuxt-lucide-icons", "@nuxtjs/google-fonts", "@nuxt/image",'@nuxtjs/seo'],
+  modules: [
+    "nuxt-lucide-icons",
+    "@nuxtjs/google-fonts",
+    "@nuxt/image",
+    "@nuxtjs/seo",
+  ],
   image: {
-    format: ['webp'],
+    format: ["webp"],
   },
   googleFonts: {
     families: {
-      "Roboto Slab": {
+      Montserrat: {
         wght: [400, 500],
         ital: [100, 400],
       },
@@ -25,13 +30,13 @@ export default defineNuxtConfig({
   },
   plugins: ["~/plugins/rellax.client.js"],
   app: {
-    pageTransition: { name: 'page', mode: 'out-in', appear: true,},
+    pageTransition: { name: "page", mode: "out-in", appear: true },
     head: {
-      title: "Bath Spa",
+      title: "Ben Ward",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
-        lang: 'en'
+        lang: "en",
       },
       meta: [
         { charset: "utf-8" },

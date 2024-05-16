@@ -22,7 +22,7 @@
 
 <script setup>
 useHead({
-  title: "Bath Spa - Contact",
+  title: "Ben Ward - Contact",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>

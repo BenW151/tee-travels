@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/background-pixel.png"
+      backgroundColor="var(--color-black)"
       title="Ben Ward"
       subtitle="Web Developer"
       buttonText="Contact Me"
@@ -66,61 +66,6 @@
           rellax-percentage="0.5" />
       </section>
 
-      <section id="facilities">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Facilities" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>The Wellness Suite</template>
-            <template #body>
-              <p>
-                The Wellness Suite is a haven of tranquility designed to cater
-                to every aspect of your wellbeing. Within this serene area,
-                guests can indulge in a variety of thermal experiences that
-                detoxify, relax, and rejuvenate. The Infrared Room uses advanced
-                technology to deeply warm the body, enhancing circulation and
-                relieving muscle tension, perfect for soothing aches and
-                promoting deep relaxation. Each facility within the suite is
-                expertly designed to align with the spa's ethos of combining
-                age-old traditions with modern therapeutic practices, ensuring a
-                restorative visit for all who enter.
-              </p>
-            </template>
-            <template #link-text> View All Facilities </template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/infrared-room.png"
-            altText="Infrared Room"
-            overlayText="Infrared Room"
-            textPosition="left" />
-          <ImageWithTextOverlay
-            imageUrl="/images/georgian-room.png"
-            altText="Georgian Steam Bath"
-            overlayText="Georgian <br /> Steam Bath"
-            textPosition="right"
-            rellaxSpeed="1" />
-          <ImageWithTextOverlay
-            imageUrl="/images/ice-chamber.png"
-            altText="Ice Chamber"
-            overlayText="Ice <br /> Chamber"
-            textPosition="left"
-            rellaxPercentage="0.6"
-            rellaxSpeed="3" />
-          <ImageWithTextOverlay
-            imageUrl="/images/roman-room.png"
-            altText="Roman Steam Bath"
-            overlayText="Roman <br /> Steam Bath"
-            textPosition="left"
-            rellaxPercentage="0.6" />
-          <ImageWithTextOverlay
-            imageUrl="/images/celestial-room.webp"
-            altText="Celestial Relaxation Room"
-            overlayText="Celestial <br /> Relaxation Room"
-            textPosition="right"
-            rellaxPercentage="0.6"
-            rellaxSpeed="3" />
-        </LayoutGridContainer>
-      </section>
-
       <section id="lead-text">
         <LayoutGridContainer>
           <TextReveal tag="h3" class="item">
@@ -128,63 +73,6 @@
             to indulge in transformative relaxation and meaningful tranquility
             for a restorative journey unlike any other.
           </TextReveal>
-        </LayoutGridContainer>
-      </section>
-
-      <section id="treatments">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Packages" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Treatments</template>
-            <template #body>
-              <p>
-                Our treatments are meticulously crafted to offer a deeply
-                personal sense of wellbeing, drawing on both ancient rituals and
-                modern therapeutic techniques. Our guests can choose from a wide
-                range of services designed to harmonize and rejuvenate the body
-                and mind. Indulge in our signature massages that utilize local
-                aromatics and essential oils to release tension and restore
-                energy. Our facial treatments combine the finest natural
-                ingredients with expert techniques to revitalize the skin’s
-                luminosity. For a more immersive experience, our body wraps and
-                scrubs are infused with mineral-rich compounds that purify and
-                nourish, leaving skin silky and refreshed. Each treatment is
-                performed by our skilled therapists in a calm, soothing
-                environment, ensuring a restorative and holistic spa experience.
-              </p>
-            </template>
-            <template #link-text>View Treatments & Packages</template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/treatments-rocks.png"
-            altText="Hot Stones Therapy"
-            overlayText="Hot Stones <br /> Therapy"
-            textPosition="right" />
-        </LayoutGridContainer>
-      </section>
-
-      <section id="springs-cafe">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Dining" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Springs Café</template>
-            <template #body>
-              <p>
-                The Springs Café combines beautiful Georgian architecture with
-                classic, contemporary style. Throughout the day and evening, spa
-                users can enjoy light snacks and drinks. The drinks menu
-                presents a refreshing variety of rich coffees, exquisite teas,
-                natural soft drinks and specially selected wines, beers and
-                ciders. Please note robes are to be worn in the Restaurant.
-              </p>
-            </template>
-            <template #link-text>View Treatments & Packages</template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/springs-cafe.png"
-            altText="Springs Cafe"
-            overlayText="Springs <br /> Cafe"
-            textPosition="left" />
         </LayoutGridContainer>
       </section>
 
@@ -441,7 +329,7 @@
 
 <script setup>
 useHead({
-  title: "Bath Spa - Index",
+  title: "Ben Ward - Index",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>

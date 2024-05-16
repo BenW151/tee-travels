@@ -1,11 +1,17 @@
 <template>
   <header ref="headerRef" :class="headerClass">
     <div
+      v-if="imageUrl"
       class="background-image rellax"
       v-rellax
       data-rellax-speed="3"
       data-rellax-mobile-speed="0">
-      <NuxtImg format="webp" :alt="title" :src="imageUrl" />
+      <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
+    </div>
+    <div
+      v-else
+      :style="{ backgroundColor: backgroundColor }"
+      class="background-color">
     </div>
     <LayoutGridContainer>
       <div class="hero-text item">
@@ -36,6 +42,7 @@ const props = defineProps({
   buttonUrl: String,
   buttonDescription: String,
   headerClass: String,
+  backgroundColor: String,
 });
 
 const headerRef = ref(null);
@@ -102,6 +109,14 @@ header a.link::after {
   bottom: 0;
   right: 0;
   filter: brightness(0.6);
+}
+
+.background-color {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
 }
 
 .hero-text {
