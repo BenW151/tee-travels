@@ -38,16 +38,6 @@
                 spa town, attracting visitors from across the globe seeking the
                 curative properties of its mineral-rich waters.
               </p>
-              <p>
-                Our spa reimagines these age-old traditions with
-                state-of-the-art facilities and contemporary wellness
-                treatments. Opening its doors in the 21st century, Bath Thermae
-                Spa has quickly established itself as a sanctuary of health and
-                relaxation, merging historical elegance with modern luxury. We
-                are committed to providing a serene environment where guests can
-                connect with the healing powers of water, continuing the legacy
-                of wellness that has defined Bath for millennia.
-              </p>
             </template>
             <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
@@ -126,6 +116,17 @@
       <section id="packages">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Dining" />
+          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+            <template #title>Services</template>
+            <template #body>
+              <p>
+                Ben Ward stands as a modern continuation of a centuries-old
+                tradition, rooted in the ancient practice of bathing in
+                naturally heated springs.
+              </p>
+            </template>
+            <template #link-text>View Treatments & Packages</template>
+          </TextParagraphWithTitle>
           <TextParagraphWithTitle
             subtitleTag="h4"
             linkUrl="/facilities"
@@ -183,85 +184,14 @@ useHead({
   grid-row: 1;
 }
 
-#facilities .paragraph-with-title:nth-of-type(1) {
-  grid-column: 7 / 15;
-  grid-row: 1;
-}
-
-#facilities .image:nth-of-type(2) {
-  grid-column: 3 / 10;
-  grid-row: 1;
-  height: 45vw;
-}
-
-#facilities .image:nth-of-type(3) {
-  grid-column: 10 / 16;
-  grid-row: 2;
-  height: 30vw;
-}
-
-#facilities .image:nth-of-type(4) {
-  grid-column: 4 / 9;
-  grid-row: 2;
-  height: 25vw;
-  margin-top: 10%;
-}
-
-#facilities .image:nth-of-type(5) {
-  grid-column: 3 / 12;
-  grid-row: 3;
-  height: 40vw;
-}
-
-#facilities .image:nth-of-type(6) {
-  grid-column: 10 / 15;
-  grid-row: 3;
-  height: 25vw;
-}
-
 #information .paragraph-with-title:nth-of-type(1) {
-  grid-column: 3 / 11;
+  grid-column: 6 / 14;
   grid-row: 1;
 }
 
-#information .image:nth-of-type(2) {
-  grid-column: 9 / 16;
-  grid-row: 1;
-  height: 40vw;
-}
-
-#information .accordion:nth-of-type(3) {
+#information .accordion {
   grid-column: 6 / 17;
   grid-row: 2;
-  height: 40vw;
-}
-
-#information .image:nth-of-type(4) {
-  grid-column: 1 / 6;
-  grid-row: 2;
-  height: 30vw;
-  z-index: -1;
-}
-
-#treatments .paragraph-with-title:nth-of-type(1) {
-  grid-column: 3 / 11;
-  grid-row: 1;
-}
-
-#treatments .image:nth-of-type(2) {
-  grid-column: 9 / 16;
-  grid-row: 1;
-  height: 45vw;
-}
-
-#springs-cafe .paragraph-with-title:nth-of-type(1) {
-  grid-column: 7 / 15;
-  grid-row: 1;
-}
-
-#springs-cafe .image:nth-of-type(2) {
-  grid-column: 3 / 12;
-  grid-row: 1;
   height: 40vw;
 }
 
@@ -270,32 +200,13 @@ useHead({
   grid-row: 1;
 }
 
-#packages .image:nth-of-type(2) {
-  grid-column: 3 / 11;
-  grid-row: 1;
-  height: 40vw;
-}
-
-#packages a.link {
-  display: inline-block;
-}
-
-#packages .paragraph-with-title:not(:nth-of-type(1)) {
-  margin-top: 4vw;
-}
-
-#packages .paragraph-with-title:nth-of-type(3) {
-  grid-column: 2 / 9;
-  grid-row: 2;
-}
-
 #packages .paragraph-with-title:nth-of-type(2n) {
-  grid-column: 10 / 17;
+  grid-column: 2 / 9;
   grid-row: auto;
 }
 
 #packages .paragraph-with-title:not(:nth-of-type(2n)):not(:nth-of-type(1)) {
-  grid-column: 2 / 9;
+  grid-column: 10 / 17;
   grid-row: auto;
 }
 

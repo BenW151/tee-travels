@@ -8,7 +8,7 @@
 .container {
   position: relative;
   width: 100%;
-  padding: 15vh 5vw;
+  padding: 20vh 5vw;
   justify-content: center;
   margin: 0 auto;
   background-color: var(--background-primary);

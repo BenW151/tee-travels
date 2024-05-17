@@ -1,6 +1,6 @@
 <template>
   <div class="item paragraph-with-title">
-    <div class="item-inner">
+    <!--<div class="item-inner">-->
       <component :is="subtitleTag" class="subtitle">
         <template v-if="useTextReveal">
           <TextReveal>
@@ -15,7 +15,7 @@
       <slot name="body">
         <p class="body">Default paragraph content.</p>
       </slot>
-    </div>
+    <!--</div>-->
   </div>
 </template>
 

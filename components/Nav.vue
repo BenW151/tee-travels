@@ -106,6 +106,10 @@ nav.scrolled {
   justify-content: space-between;
 }
 
+.nav-item.active::after {
+    transform: scaleX(1);
+  }
+
 nav a {
   font-size: var(--font-size-XXS);
   margin: 0 var(--spacing-4);
