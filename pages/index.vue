@@ -7,7 +7,7 @@
       buttonText="Contact Me"
       buttonUrl="/contact"
       buttonDescription="Contact Me"
-      headerClass="header-medium">
+      headerClass="header-large">
       <template #description>
         <p>Building sleek, scalable, and interactive web experiences.</p>
       </template>
@@ -51,11 +51,6 @@
             </template>
             <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/cross-bath.png"
-            altText="The Cross Bath"
-            overlayText="The Cross Bath"
-            textPosition="right" />
         </LayoutGridContainer>
       </section>
 
@@ -125,143 +120,12 @@
                 ]" />
             </AccordionItem>
           </Accordion>
-          <ImageWithTextOverlay
-            imageUrl="/images/roof-pool-day.png"
-            altText="Rooftop Pool"
-            overlayText="Rooftop Pool"
-            data-rellax-speed="3"
-            textPosition="left" />
         </LayoutGridContainer>
       </section>
 
       <section id="packages">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Dining" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Packages</template>
-            <template #body>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Treatments & Packages</template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/rootop-pool-twilight.png"
-            altText="Twilight for Two"
-            overlayText="Twilight for Two"
-            textPosition="left" />
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
           <TextParagraphWithTitle
             subtitleTag="h4"
             linkUrl="/facilities"
@@ -317,12 +181,6 @@ useHead({
 #about .paragraph-with-title:nth-of-type(1) {
   grid-column: 3 / 11;
   grid-row: 1;
-}
-
-#about .image:nth-of-type(2) {
-  grid-column: 9 / 16;
-  grid-row: 1;
-  height: 50vw;
 }
 
 #facilities .paragraph-with-title:nth-of-type(1) {

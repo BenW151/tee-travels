@@ -27,7 +27,7 @@ body {
   --background-primary: var(--color-black);
   --background-secondary: var(--color-white);
   --background-opacity: rgba(0, 0, 0, 0.1);
-  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-primary: "Lexend", sans-serif;
   --font-family-secondary: "Roboto Flex", sans-serif;
   --font-size-XXL: 10vw;
   --font-size-XL: 8vw;
@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-primary);
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   margin-bottom: var(--spacing-2);
   margin-top: 0;
@@ -75,7 +75,7 @@ h6 {
 h1 {
   font-size: var(--font-size-XXL);
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h2 {

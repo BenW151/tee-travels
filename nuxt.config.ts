@@ -16,8 +16,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Montserrat: {
-        wght: [400, 500],
+      Lexend: {
+        wght: [300, 400, 500],
         ital: [100, 400],
       },
       "Roboto Flex": {
