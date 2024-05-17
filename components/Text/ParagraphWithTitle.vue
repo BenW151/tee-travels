@@ -15,10 +15,6 @@
       <slot name="body">
         <p class="body">Default paragraph content.</p>
       </slot>
-
-      <NuxtLink v-if="linkUrl" :to="linkUrl" class="link underline-out">
-        <slot name="link-text">View More</slot>
-      </NuxtLink>
     </div>
   </div>
 </template>
@@ -29,7 +25,6 @@ const props = defineProps({
     type: String,
     default: "h3",
   },
-  linkUrl: String,
   useTextReveal: {
     type: Boolean,
     default: true, // Use TextReveal by default

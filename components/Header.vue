@@ -10,8 +10,9 @@
     </div>
     <div
       v-else
+      v-rellax
       :style="{ backgroundColor: backgroundColor }"
-      class="background-color">
+      class="background-color rellax">
     </div>
     <LayoutGridContainer>
       <div class="hero-text item">

@@ -18,8 +18,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  column-gap: 2.3888888889vw;
-  row-gap: 2.3888888889vw;
+  column-gap: 1.3888888889vw;
+  row-gap: 1.3888888889vw;
   overflow: hidden;
 }
 

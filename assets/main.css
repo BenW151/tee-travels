@@ -242,6 +242,7 @@ button:hover::after {
 .underline-out-icon {
   align-items: center;
   display: flex;
+  width: fit-content;
 }
 
 .underline-out-icon::after {

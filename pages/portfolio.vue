@@ -3,7 +3,7 @@
     <Header
       backgroundColor="var(--color-black)"
       title="Portfolio"
-      subtitle="Have a question? Let us know"
+      subtitle="Previous Work"
       headerClass="header-medium">
       <template #description>
         <!--
@@ -14,32 +14,77 @@
       </template>
     </Header>
 
-   <!-- <section id="node-one">
-      <LayoutGridContainer>
-          <TextSectionLabel labelText="Node One" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Node One</template>
-            <template #body>
-              <p>
-                Node One is an IT services company specialising in Networking
-              </p>
-            </template>
-            <template #link-text>Visit Website</template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/cross-bath.png"
-            altText="The Cross Bath"
-            overlayText="The Cross Bath"
-            textPosition="right" />
-       </LayoutGridContainer>
-    </section>-->
-
     <section id="node-one">
       <LayoutGridContainer>
-        
+        <TextSectionLabel labelText="IT Services" />
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+          <template #title>Node One</template>
+          <template #body>
+            <p>Node One is an IT services company specialising in Networking</p>
+            <a class="link underline-out-icon"
+              ><LucideExternalLink />Visit Website</a
+            >
+          </template>
+        </TextParagraphWithTitle>
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
       </LayoutGridContainer>
     </section>
 
+    <section id="node-one">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="IT Services" />
+        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+          <template #title>Node One</template>
+          <template #body>
+            <p>Node One is an IT services company specialising in Networking</p>
+            <a class="link underline-out-icon"
+              ><LucideExternalLink />Visit Website</a
+            >
+          </template>
+        </TextParagraphWithTitle>
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.PNG"
+          altText="Celestial Relaxation Room"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+      </LayoutGridContainer>
+    </section>
   </div>
 </template>
 
@@ -62,5 +107,20 @@ useHead({
 
 #contact-form .item-inner {
   margin: 0;
+}
+
+#node-one .image:nth-child(3) {
+  grid-column: 2 / 16;
+  grid-row-start: 2;
+}
+
+#node-one .image:nth-child(4) {
+  grid-column: 2 / 11;
+  grid-row-start: 3;
+}
+
+#node-one .image:nth-child(5) {
+  grid-column: 11 / 16;
+  grid-row-start: 3;
 }
 </style>
