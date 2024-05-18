@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-primary);
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin-bottom: var(--spacing-2);
   margin-top: 0;
@@ -75,7 +75,7 @@ h6 {
 h1 {
   font-size: var(--font-size-XXL);
   margin-bottom: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {

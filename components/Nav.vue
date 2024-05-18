@@ -1,16 +1,6 @@
 <template>
-  <nav :class="{ scrolled: isScrolled }">
-    <div class="logo">
-      <NuxtImg format="webp" alt="ALT TEXT" src="/images/logo-white.svg" />
-      <div class="wordmark">
-        <NuxtLink class="logo-hide" to="/" aria-label="Home Page"
-          >Ben Ward</NuxtLink
-        >
-      </div>
-    </div>
-
+  <nav :class="{ scrolled: isScrolled, 'nav-hidden': isHidden }">
     <div class="burger-menu" @click="toggleMenu"></div>
-
     <div class="nav">
       <NuxtLink
         class="nav-item text-reveal"
@@ -18,64 +8,70 @@
         :class="{ active: $route.path === '/' }"
         aria-label="Home Page"
         @click="toggleMenu"
-        >About</NuxtLink
-      >
+      >About</NuxtLink>
       <NuxtLink
         class="nav-item text-reveal"
         to="/portfolio"
         :class="{ active: $route.path === '/portfolio' }"
         aria-label="Portfolio Page"
         @click="toggleMenu"
-        >Portfolio</NuxtLink
-      >
+      >Portfolio</NuxtLink>
       <NuxtLink
         class="nav-item text-reveal"
         to="/contact"
         :class="{ active: $route.path === '/contact' }"
         aria-label="Contact Page"
         @click="toggleMenu"
-        >Contact</NuxtLink
-      >
+      >Contact</NuxtLink>
       <ListsLinkList
         class="contact"
         :links="[
           { url: '/contact', label: 'Instagram', description: 'Instagram' },
           { url: '/contact', label: 'Twitter', description: 'Twitter' },
           { url: '/contact', label: 'Facebook', description: 'Facebook' },
-        ]" />
-
+        ]"
+      />
       <TextCard logoColor="black" />
     </div>
   </nav>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const isScrolled = ref(false);
-const nav = ref(null);
+const isHidden = ref(false);
+const lastScrollTop = ref(0);
 
 function handleScroll() {
-  if (nav.value) {
-    isScrolled.value = window.scrollY > 0;
+  const scrollTop = window.scrollY;
+
+  if (scrollTop > lastScrollTop.value) {
+    // Scrolling down
+    isHidden.value = true;
+  } else {
+    // Scrolling up
+    isHidden.value = false;
   }
+
+  isScrolled.value = scrollTop > 0;
+  lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
 onMounted(() => {
-  nav.value = document.querySelector("nav");
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener('scroll', handleScroll);
 });
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
+  window.removeEventListener('scroll', handleScroll);
 });
 
 function toggleMenu() {
   if (window.innerWidth < 768) {
-    const navElement = nav.value.querySelector(".nav");
-    const burger = nav.value.querySelector(".burger-menu");
-    navElement.classList.toggle("nav-open");
-    burger.classList.toggle("active");
+    const navElement = document.querySelector('nav .nav');
+    const burger = document.querySelector('nav .burger-menu');
+    navElement.classList.toggle('nav-open');
+    burger.classList.toggle('active');
   }
 }
 </script>
@@ -87,28 +83,29 @@ nav {
   align-items: center;
   top: 0;
   width: 100%;
-  height: 3vw;
+  height: 5vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-nav.scrolled {
-  backdrop-filter: blur(8px);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+nav.nav-hidden a {
+  transform: translateY(-100px); 
 }
 
 .nav {
   display: flex;
+  padding-bottom: 5px;
   margin: 0;
   align-items: center;
   margin-left: auto;
   margin-right: var(--spacing-3);
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .nav-item.active::after {
-    transform: scaleX(1);
-  }
+  transform: scaleX(1);
+}
 
 nav a {
   font-size: var(--font-size-XXS);
@@ -126,11 +123,6 @@ nav .card {
 
 nav .contact {
   display: none;
-}
-
-nav.scrolled {
-  backdrop-filter: blur(8px);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .wordmark {
