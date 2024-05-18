@@ -51,16 +51,6 @@ footer .container {
   position: relative;
 }
 
-.footer-end::before {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 1px;
-  top: 5px;
-  left: 5%;
-  background-color: var(--font-color-primary);
-}
-
 footer .list.socials {
   grid-column: 11 / 14;
   grid-row-start: 2;

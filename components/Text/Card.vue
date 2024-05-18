@@ -1,25 +1,26 @@
 <template>
   <div class="item card">
-    <NuxtImg :format="'webp'" alt="ALT TEXT" :src="logoSrc" />
+    <NuxtImg :format="'webp'" alt="ALT TEXT" :src="imgSrc" />
     <div class="card-text">
-      <h4>Ben Ward</h4>
-      <p>Web Developer</p>
+      <h4>{{ name }}</h4>
+      <h5>{{ position }}</h5>
+      <p>{{ quote }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed } from "vue";
 import { defineProps } from "vue";
 
 const props = defineProps({
-  logoColor: {
+  name: String,
+  quote: String,
+  position: String,
+  imgSrc: {
     type: String,
-    default: "white",
   },
 });
 
-const logoSrc = computed(() => `/images/logo-${props.logoColor}.svg`);
 </script>
 
 <style scoped>
@@ -27,32 +28,21 @@ const logoSrc = computed(() => `/images/logo-${props.logoColor}.svg`);
   display: flex;
   flex-direction: row;
   grid-column: span 7;
-  align-items: center;
 }
 
 .card-text {
   align-self: center;
 }
 
-.card-author {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: var(--spacing-1);
-}
-
 .card img {
   width: 6vw;
   height: 6vw;
-  margin-right: var(--spacing-2);
+  margin-right: var(--spacing-3);
 }
 
 .card-text p {
   margin: 0;
-}
-
-.card .name {
-  font-weight: bold;
+  font-style: italic
 }
 
 @media (max-width: 767px) {
