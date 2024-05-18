@@ -1,72 +1,19 @@
 <template>
-  <footer ref="footer" class="background-inverted">
-    <LayoutGridContainer>
-      <TextCard />
-
-      <div class="item address">
-        <NuxtLink class="link" to="URL" aria-label="DESCRIPTION"
-          >The Hetling Pump Room, Hot Bath St, Bath, BA1 1SJ</NuxtLink
-        >
-      </div>
-
-      <ListsLinkList
-        class="contact"
-        :links="[
-          {
-            url: '/book',
-            label: 'Book',
-            description: 'Book a service',
-            class: 'underline-out',
-          },
-          { url: '/contact', label: 'Contact', description: 'Contact Us' },
-          { url: '/careers', label: 'Careers', description: 'View Careers' },
-          {
-            url: '/sustainability',
-            label: 'Sustainability',
-            description: 'Our Sustainability Efforts',
-          },
-          {
-            url: '/accessibility',
-            label: 'Accessibility',
-            description: 'Accessibility Options',
-          },
-        ]" />
-
-      <ListsLinkList
-        class="socials"
-        :links="[
-          {
-            url: 'https://instagram.com',
-            label: 'Instagram',
-            description: 'Instagram',
-          },
-          {
-            url: 'https://instagram.com',
-            label: 'Twitter',
-            description: 'Twitter',
-          },
-          {
-            url: 'https://instagram.com',
-            label: 'Facebook',
-            description: 'Facebook',
-          },
-        ]" />
-    </LayoutGridContainer>
-
+  <footer ref="footer">
     <LayoutGridContainer class="footer-end">
       <p class="item">Copyright ©2024</p>
-      <a class="item" href="https://github.com/BenW151" aria-label="Home Page"
-        >Designed by Ben Ward</a
+      <NuxtLink class="item" href="/contact" aria-label="Contact Page"
+        >Contact</NuxtLink
       >
       <NuxtLink
         class="item"
-        to="privacy-policy.html"
+        to="/privacy-policy"
         aria-label="Privacy Policy Page"
         >Privacy Policy</NuxtLink
       >
       <NuxtLink
         class="item"
-        to="terms-and-conditions.html"
+        to="/terms-and-conditions"
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</NuxtLink
       >
@@ -75,40 +22,7 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    this.addScrollEffect();
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const footer = this.$refs.footer;
-      const scrollableDistance =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const footerHeight = footer.clientHeight;
-      const revealStartPoint = scrollableDistance - footerHeight;
 
-      let scrolled = window.scrollY;
-
-      if (scrolled >= revealStartPoint) {
-        let offset = scrolled - revealStartPoint;
-        let percentage = Math.min(offset / footerHeight, 1);
-        let translateY = -12 + percentage * 12;
-
-        footer.style.transform = `translateY(${translateY}rem)`;
-        document.body.style.paddingBottom = `${12 - translateY}rem`;
-      } else {
-        footer.style.transform = "translateY(-12rem)";
-        document.body.style.paddingBottom = "0";
-      }
-    },
-    addScrollEffect() {
-      window.addEventListener("scroll", this.handleScroll);
-    },
-  },
-};
 </script>
 
 <style scoped>
@@ -116,11 +30,9 @@ footer {
   position: relative;
   z-index: 2;
   transition: none;
-  transform: translateY(-12rem);
 }
 
 footer .container {
-  background-color: var(--background-secondary);
   color: var(--color-white);
   padding-bottom: var(--spacing-3);
   padding-top: var(--spacing-3);
@@ -146,7 +58,7 @@ footer .container {
   height: 1px;
   top: 5px;
   left: 5%;
-  background-color: var(--font-color-secondary);
+  background-color: var(--font-color-primary);
 }
 
 footer .list.socials {
