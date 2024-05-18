@@ -2,10 +2,22 @@
   <div>
     <Header
       backgroundColor="var(--color-black)"
-      title="Get in Touch"
+      title="Contact"
       subtitle="Have a question? Let me know"
       headerClass="header-medium">
       <template #description>
+        <ListsLinkList
+          class="contact"
+          :links="[
+            {
+              url: 'https://linkedin.com',
+              label: 'LinkedIn',
+              description: 'LinkedIn',
+              class: 'underline-out',
+            },
+            { url: 'https://github.com', label: 'GitHub', description: 'GitHub' },
+            { url: 'mailto:myemail@email.com', label: 'Email', description: 'Email' },
+          ]" />
       </template>
     </Header>
 
