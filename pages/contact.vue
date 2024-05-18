@@ -13,7 +13,6 @@
               url: 'https://linkedin.com',
               label: 'LinkedIn',
               description: 'LinkedIn',
-              class: 'underline-out',
             },
             { url: 'https://github.com', label: 'GitHub', description: 'GitHub' },
             { url: 'mailto:myemail@email.com', label: 'Email', description: 'Email' },

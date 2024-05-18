@@ -27,7 +27,7 @@
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Our Story</template>
+            <template #title>About Me</template>
             <template #body>
               <p>
                 Ben Ward stands as a modern continuation of a centuries-old
@@ -113,55 +113,6 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="packages">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Dining" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Services</template>
-            <template #body>
-              <p>
-                Ben Ward stands as a modern continuation of a centuries-old
-                tradition, rooted in the ancient practice of bathing in
-                naturally heated springs.
-              </p>
-            </template>
-            <template #link-text>View Treatments & Packages</template>
-          </TextParagraphWithTitle>
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-
-          <TextParagraphWithTitle
-            subtitleTag="h4"
-            linkUrl="/facilities"
-            :use-text-reveal="false">
-            <template #title>Thermae Welcome</template>
-            <template #body>
-              <h5>£20</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </template>
-            <template #link-text>View Package Details</template>
-          </TextParagraphWithTitle>
-        </LayoutGridContainer>
-      </section>
     </main>
   </div>
 </template>

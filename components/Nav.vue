@@ -17,7 +17,7 @@
         @click="toggleMenu"
       >Portfolio</NuxtLink>
       <NuxtLink
-        class="nav-item text-reveal"
+        class="nav-item text-reveal nav-contact"
         to="/contact"
         :class="{ active: $route.path === '/contact' }"
         aria-label="Contact Page"
@@ -83,7 +83,7 @@ nav {
   align-items: center;
   top: 0;
   width: 100%;
-  height: 5vw;
+  height: 8vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -94,22 +94,28 @@ nav.nav-hidden a {
 
 .nav {
   display: flex;
+  width: 100%;
   padding-bottom: 5px;
   margin: 0;
-  align-items: center;
-  margin-left: auto;
+  margin-left: var(--spacing-3);
   margin-right: var(--spacing-3);
+  align-items: center;
   justify-content: space-between;
   overflow: hidden;
 }
 
+.nav-contact {
+  margin-left: auto;
+}
+
 .nav-item.active::after {
   transform: scaleX(1);
+  transform-origin: bottom left
 }
 
 nav a {
   font-size: var(--font-size-XXS);
-  margin: 0 var(--spacing-4);
+  margin: 0 var(--spacing-3);
   color: var(--color-white);
 }
 
