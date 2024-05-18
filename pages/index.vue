@@ -20,6 +20,9 @@
             Empowering businesses through engaging and practical designs, built
             for outstanding performance and significant reach.
           </TextReveal>
+          <p>
+            Providing either one off collaborations, or ongoing relationships.
+          </p>
         </LayoutGridContainer>
       </section>
 
@@ -30,21 +33,38 @@
             <template #title>About Me</template>
             <template #body>
               <p>
-                Ben Ward stands as a modern continuation of a centuries-old
-                tradition, rooted in the ancient practice of bathing in
-                naturally heated springs. The city of Bath, renowned for its
-                thermal waters, has been a destination for restorative retreats
-                since Roman times. In the 18th century, it became a fashionable
-                spa town, attracting visitors from across the globe seeking the
-                curative properties of its mineral-rich waters.
+                At the foundation of design lies creativity, which should
+                consistently serve a specific objective. I focus on balancing
+                originality with practicality, ensuring my designs embody the
+                philosophy that form and function are complementary.
               </p>
             </template>
             <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
+          <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
+            <template #title>Form</template>
+            <template #body>
+              <p>
+                Aesthetic appeal and visual innovation, ensuring each design not
+                only captures the eye but also embodies a distinctive artistic
+                expression that elevates the overall user experience.
+              </p>
+            </template>
+          </TextParagraphWithTitle>
+          <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
+            <template #title>Function</template>
+            <template #body>
+              <p>
+                Practicality and usability, with designs engineered to deliver
+                optimal performance and ease of use, ensuring they meet the
+                exact needs of users with efficiency and reliability.
+              </p>
+            </template>
+          </TextParagraphWithTitle>
         </LayoutGridContainer>
       </section>
 
-      <section id="information">
+      <section id="services">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
           <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
@@ -113,6 +133,45 @@
         </LayoutGridContainer>
       </section>
 
+      <section id="skills">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Skills" />
+          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+            <template #title>Skills</template>
+            <template #body>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+              <p>
+                I craft responsive, SEO-friendly websites grounded in HTML5 and
+                CSS3, and enhance user experience with dynamic JavaScript
+                functionalities. Specializing in React.js, I develop efficient
+                UI components and effectively manage application state using
+                modern techniques like hooks and Redux. My proficiency in Figma
+                aids in creating clean, functional design prototypes that align
+                closely with project goals. Additionally, my design expertise
+                ensures visually compelling and practical layouts and graphics
+                that optimize user interaction and aesthetic appeal. Each
+                project reflects my skill in merging technical capabilities with
+                creative insights, guaranteeing innovation and quality.
+              </p>
+            </template>
+            <template #link-text>View Treatments & Packages</template>
+          </TextParagraphWithTitle>
+        </LayoutGridContainer>
+      </section>
+
+      <section id="contact">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Contact" />
+          <NuxtLink class="item get-in-touch underline-out" to="/Contact" aria-label="Contact Page"
+            ><TextReveal tag="h2" style="font-size: var(--font-size-XXL);">Get in Touch</TextReveal></NuxtLink
+          >
+        </LayoutGridContainer>
+      </section>
     </main>
   </div>
 </template>
@@ -125,40 +184,57 @@ useHead({
 </script>
 
 <style scoped>
+#lead-text .container {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
 #lead-text .text-reveal {
-  grid-column: 2 / 16;
   font-size: var(--font-size-M);
 }
 
-#about .paragraph-with-title:nth-of-type(1) {
-  grid-column: 3 / 11;
-  grid-row: 1;
+#lead-text .item,
+#lead-text p {
+  grid-column: 2 / 16;
 }
 
-#information .paragraph-with-title:nth-of-type(1) {
+#about .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
 }
 
-#information .accordion {
-  grid-column: 6 / 17;
-  grid-row: 2;
-  height: 40vw;
+#about .paragraph-with-title:nth-of-type(2) {
+  grid-column: 6 / 10;
+  grid-row-start: 2;
+  padding-top: 0;
 }
 
-#packages .paragraph-with-title:nth-of-type(1) {
-  grid-column: 7 / 15;
+#about .paragraph-with-title:nth-of-type(3) {
+  grid-column: 10 / 14;
+  grid-row-start: 2;
+  padding-top: 0;
+}
+
+#services .paragraph-with-title:nth-of-type(1) {
+  grid-column: 6 / 14;
   grid-row: 1;
 }
 
-#packages .paragraph-with-title:nth-of-type(2n) {
-  grid-column: 2 / 9;
-  grid-row: auto;
+#services .accordion {
+  grid-column: 6 / 17;
+  grid-row: 2;
+  /*height: 40vw;*/
 }
 
-#packages .paragraph-with-title:not(:nth-of-type(2n)):not(:nth-of-type(1)) {
-  grid-column: 10 / 17;
-  grid-row: auto;
+#skills .paragraph-with-title:nth-of-type(1) {
+  grid-column: 6 / 14;
+  grid-row: 1;
+}
+
+#contact .get-in-touch {
+  grid-column: 6 / 17;
+  grid-row: 1;
+  width: fit-content;
 }
 
 @media (max-width: 767px) {
