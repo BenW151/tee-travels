@@ -44,7 +44,7 @@ function handleClick() {
 }
 
 .accordion-title svg {
-  font-size: var(--font-size-XXS);
+  height: var(--font-size-XS);
   margin-right: var(--spacing-2);
   margin-left: auto;
 }
@@ -70,6 +70,7 @@ function handleClick() {
 }
 
 .accordion .accordion-content {
+  width: 65%;
   margin-bottom: 0;
   max-height: 0;
   opacity: 0;
