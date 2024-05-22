@@ -73,7 +73,8 @@ nav {
 }
 
 nav.nav-hidden a {
-  transform: translateY(-100px);
+  transform: translateY(-120%);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .nav {

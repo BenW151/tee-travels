@@ -86,22 +86,26 @@ useHead({
 </script>
 
 <style>
+.portfolio-item .paragraph-with-title {
+  grid-column: 6 / 14;
+}
+
 .portfolio-item .list {
   margin-top: 2vw;
 }
 
 .portfolio-item .list:nth-child(3) {
-  grid-column: 3 / 6;
-  grid-row-start: 2;
-}
-
-.portfolio-item .list:nth-child(4) {
   grid-column: 6 / 9;
   grid-row-start: 2;
 }
 
+.portfolio-item .list:nth-child(4) {
+  grid-column: 9 / 12;
+  grid-row-start: 2;
+}
+
 .portfolio-item .list:nth-child(5) {
-  grid-column: 9 / 11;
+  grid-column: 12 / 15;
   grid-row-start: 2;
 }
 
@@ -121,7 +125,7 @@ useHead({
 }
 
 .portfolio-item .card:nth-child(9) {
-  grid-column: 2 / 10;
+  grid-column: 2 / 8;
   grid-row-start: 5;
 }
 </style>

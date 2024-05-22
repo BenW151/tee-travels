@@ -1,10 +1,14 @@
 <template>
   <div class="item card">
-    <NuxtImg :format="'webp'" alt="ALT TEXT" :src="imgSrc" />
     <div class="card-text">
-      <h4>{{ name }}</h4>
-      <h5>{{ position }}</h5>
-      <p>{{ quote }}</p>
+      <p class="quote">{{ quote }}</p>
+      <div class="author">
+        <NuxtImg :format="'webp'" alt="ALT TEXT" :src="imgSrc" />
+        <div>
+          <p class="name">{{ name }}</p>
+          <p class="position">{{ position }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +24,6 @@ const props = defineProps({
     type: String,
   },
 });
-
 </script>
 
 <style scoped>
@@ -40,9 +43,22 @@ const props = defineProps({
   margin-right: var(--spacing-3);
 }
 
-.card-text p {
-  margin: 0;
-  font-style: italic
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.name {
+  font-weight: bold;
+}
+
+.author p {
+  margin-bottom: 0;
+}
+
+.quote {
+  font-style: italic;
 }
 
 @media (max-width: 767px) {

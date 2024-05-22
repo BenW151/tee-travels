@@ -123,7 +123,7 @@ header a.link::after {
 .hero-text {
   grid-column: 1 / 17;
   grid-row-start: 1;
-  margin-top: 5vw;
+  margin-top: 32vh;
 }
 
 .hero-text h2 {

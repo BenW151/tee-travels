@@ -167,8 +167,13 @@
       <section id="contact">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Contact" />
-          <NuxtLink class="item get-in-touch underline-out" to="/Contact" aria-label="Contact Page"
-            ><TextReveal tag="h2" style="font-size: var(--font-size-XXL);">Get in Touch</TextReveal></NuxtLink
+          <NuxtLink
+            class="item get-in-touch underline-out"
+            to="/Contact"
+            aria-label="Contact Page"
+            ><TextReveal tag="h2"
+              >Get in Touch</TextReveal
+            ></NuxtLink
           >
         </LayoutGridContainer>
       </section>
@@ -267,30 +272,6 @@ useHead({
     margin: 0;
   }
 
-  #treatments .item.paragraph-with-title {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  #treatments .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 30vh;
-    margin: 0;
-  }
-
-  #springs-cafe .item.paragraph-with-title {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  #springs-cafe .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 30vh;
-    margin: 0;
-  }
-
   #information .item.paragraph-with-title,
   #information .item.accordion {
     grid-column: 1 / 7;
@@ -312,16 +293,9 @@ useHead({
     display: none;
   }
 
-  #packages .container div.item.paragraph-with-title {
+  #services .item.paragraph-with-title:nth-of-type(1), #services .accordion, #skills .item.paragraph-with-title:nth-of-type(1), #contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
-  }
-
-  #packages .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 30vh;
-    margin: 0;
   }
 }
 </style>
