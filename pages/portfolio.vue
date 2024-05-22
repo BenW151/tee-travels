@@ -128,4 +128,16 @@ useHead({
   grid-column: 2 / 8;
   grid-row-start: 5;
 }
+
+@media (max-width: 767px) {
+  .portfolio-item .item.paragraph-with-title, .portfolio-item .item.image, .portfolio-item .item.card{
+    grid-column: 1 / 7;
+    grid-row: auto;
+  }
+
+  .portfolio-item .item.list {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
 </style>

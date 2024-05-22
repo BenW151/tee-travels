@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contact">
     <Header
       backgroundColor="var(--color-black)"
       title="Contact"
@@ -14,8 +14,16 @@
               label: 'LinkedIn',
               description: 'LinkedIn',
             },
-            { url: 'https://github.com', label: 'GitHub', description: 'GitHub' },
-            { url: 'mailto:myemail@email.com', label: 'Email', description: 'Email' },
+            {
+              url: 'https://github.com',
+              label: 'GitHub',
+              description: 'GitHub',
+            },
+            {
+              url: 'mailto:myemail@email.com',
+              label: 'Email',
+              description: 'Email',
+            },
           ]" />
       </template>
     </Header>
@@ -34,6 +42,10 @@ useHead({
 </script>
 
 <style>
+.contact header .item.paragraph:nth-child(2) {
+  grid-column: 15 / 16;
+}
+
 .contact-form {
   grid-column: 3 / 15;
 }
@@ -45,5 +57,12 @@ useHead({
 
 #contact-form .item-inner {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  #contact-form .item.paragraph-with-title {
+    grid-column: 1 / 7;
+    grid-row: auto;
+  }
 }
 </style>

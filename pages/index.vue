@@ -190,8 +190,8 @@ useHead({
 
 <style scoped>
 #lead-text .container {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 
 #lead-text .text-reveal {
@@ -243,33 +243,14 @@ useHead({
 }
 
 @media (max-width: 767px) {
-  #lead-text .text-reveal {
+  #lead-text .item, #lead-text p {
     grid-column: 1 / 7;
-    grid-row-start: 2;
+    grid-row: auto;
   }
 
   #about .item.paragraph-with-title {
     grid-column: 1 / 7;
     grid-row: auto;
-  }
-
-  #about .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 30vh;
-    margin: 0;
-  }
-
-  #facilities .item.paragraph-with-title {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  #facilities .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 30vh;
-    margin: 0;
   }
 
   #information .item.paragraph-with-title,
