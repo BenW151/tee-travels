@@ -64,16 +64,16 @@ onUnmounted(() => {
 nav {
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   top: 0;
   width: 100%;
-  height: 8vw;
+  height: 4vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 nav.nav-hidden a {
-  transform: translateY(-120%);
+  transform: translateY(-140%);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 

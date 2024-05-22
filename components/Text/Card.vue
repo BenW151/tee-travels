@@ -38,8 +38,8 @@ const props = defineProps({
 }
 
 .card img {
-  width: 6vw;
-  height: 6vw;
+  width: 4vw;
+  height: 4vw;
   margin-right: var(--spacing-3);
 }
 

@@ -5,13 +5,7 @@
       title="Portfolio"
       subtitle="Previous Work"
       headerClass="header-medium">
-      <template #description>
-        <!--
-                buttonText="Book Now"
-                buttonUrl="#contact-form"
-                buttonDescription="Book Now"
-          <p>Have a Question?</p>-->
-      </template>
+      <template #description> </template>
     </Header>
 
     <section class="portfolio-item">
@@ -30,7 +24,11 @@
               were also implemented to enhance online visibility and attract
               more business clientele.
             </p>
-            <a class="link underline-out-icon"
+            <a
+              class="link underline-out-icon"
+              href="https://www.nodeone.co.uk/"
+              aria-label="Node One Website"
+              target="_blank"
               ><LucideExternalLink />Visit Website</a
             >
           </template>
@@ -125,12 +123,14 @@ useHead({
 }
 
 .portfolio-item .card:nth-child(9) {
-  grid-column: 2 / 8;
+  grid-column: 11 / 16;
   grid-row-start: 5;
 }
 
 @media (max-width: 767px) {
-  .portfolio-item .item.paragraph-with-title, .portfolio-item .item.image, .portfolio-item .item.card{
+  .portfolio-item .item.paragraph-with-title,
+  .portfolio-item .item.image,
+  .portfolio-item .item.card {
     grid-column: 1 / 7;
     grid-row: auto;
   }
