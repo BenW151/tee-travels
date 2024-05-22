@@ -134,7 +134,7 @@
       <section id="skills">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Skills" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+          <TextParagraphWithTitle subtitleTag="h3">
             <template #title>Skills</template>
             <template #body>
               <p>
@@ -158,6 +158,22 @@
               </p>
             </template>
           </TextParagraphWithTitle>
+          <ListsDefaultList
+            title="Languages"
+            :items="[
+              { id: 1, text: 'HTML 5' },
+              { id: 2, text: 'CSS 3' },
+              { id: 3, text: 'JavaScript' },
+            ]" />
+          <ListsDefaultList
+            title="Frameworks"
+            :items="[
+              { id: 1, text: 'Nuxt 3' },
+              { id: 2, text: 'Vue 3' },
+            ]" />
+          <ListsDefaultList
+            title="Design"
+            :items="[{ id: 1, text: 'Figma' }]" />
         </LayoutGridContainer>
       </section>
 
@@ -173,11 +189,12 @@
                 and complexities of creating aesthetic and functional digital
                 experiences.
               </p>
-              <NuxtLink
+              <a
                 class="underline-out-icon"
-                to="/Contact"
+                href="/ben-ward-cv.pdf"
                 aria-label="View Full CV"
-                ><LucideDownload />View Full CV</NuxtLink
+                download=""
+                ><LucideDownload />View Full CV</a
               >
               <h4>Freelance Web Developer</h4>
               <h5>benward.io</h5>
@@ -289,6 +306,21 @@ useHead({
 #experience .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
+}
+
+#skills .list:nth-child(3) {
+  grid-column: 6 / 9;
+  grid-row-start: 2;
+}
+
+#skills .list:nth-child(4) {
+  grid-column: 9 / 12;
+  grid-row-start: 2;
+}
+
+#skills .list:nth-child(5) {
+  grid-column: 12 / 15;
+  grid-row-start: 2;
 }
 
 #contact .get-in-touch {
