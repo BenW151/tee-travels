@@ -478,24 +478,6 @@ li {
     font-size: 90%;
   }
 
-  h1 {
-    font-size: var(--font-size-XXL);
-  }
-
-  h2 {
-    font-size: var(--font-size-XL);
-  }
-
-  h3 {
-    font-size: var(--font-size-L);
-  }
-
-  h4,
-  h5,
-  h6 {
-    font-size: var(--font-size-L);
-  }
-
   p,
   a,
   button {

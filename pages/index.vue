@@ -41,7 +41,7 @@
             </template>
           </TextParagraphWithTitle>
           <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title><LucideBoxSelect/> Form</template>
+            <template #title><LucideBoxSelect /> Form</template>
             <template #body>
               <p>
                 Aesthetic appeal and visual innovation, ensuring each design not
@@ -51,7 +51,7 @@
             </template>
           </TextParagraphWithTitle>
           <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title><LucideFrame/> Function</template>
+            <template #title><LucideFrame /> Function</template>
             <template #body>
               <p>
                 Practicality and usability, with designs engineered to deliver
@@ -157,7 +157,65 @@
                 creative insights, guaranteeing innovation and quality.
               </p>
             </template>
-            <template #link-text>View Treatments & Packages</template>
+          </TextParagraphWithTitle>
+        </LayoutGridContainer>
+      </section>
+
+      <section id="experience">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Experience" />
+          <TextParagraphWithTitle subtitleTag="h3">
+            <template #title>Experience</template>
+            <template #body>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+              <NuxtLink
+                class="underline-out-icon"
+                to="/Contact"
+                aria-label="View Full CV"
+                ><LucideDownload />View Full CV</NuxtLink
+              >
+              <h4>Freelance Web Developer</h4>
+              <h5>benward.io</h5>
+              <h6>June 2021 - July 2023</h6>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+              <h4>Network Engineer</h4>
+              <h5>Hargreaves Lansdown</h5>
+              <h6>June 2021 - July 2023</h6>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+              <h4>IT Service Desk Analyst</h4>
+              <h5>Hargreaves Lansdown</h5>
+              <h6>June 2021 - July 2023</h6>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+              <h4>Infrastructure Technician</h4>
+              <h5>Marsh Corporate</h5>
+              <h6>June 2021 - July 2023</h6>
+              <p>
+                With a profound expertise in both web development and design, I
+                bring a comprehensive skill set that encompasses the essentials
+                and complexities of creating aesthetic and functional digital
+                experiences.
+              </p>
+            </template>
           </TextParagraphWithTitle>
         </LayoutGridContainer>
       </section>
@@ -227,7 +285,8 @@ useHead({
   /*height: 40vw;*/
 }
 
-#skills .paragraph-with-title:nth-of-type(1) {
+#skills .paragraph-with-title:nth-of-type(1),
+#experience .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
 }
@@ -274,7 +333,8 @@ useHead({
   #services .item.paragraph-with-title:nth-of-type(1),
   #services .accordion,
   #skills .item.paragraph-with-title:nth-of-type(1),
-  #contact .get-in-touch {
+  #contact .get-in-touch,
+  #experience .item.paragraph-with-title:nth-of-type(1) {
     grid-column: 1 / 7;
     grid-row: auto;
   }
