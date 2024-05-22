@@ -39,10 +39,9 @@
                 philosophy that form and function are complementary.
               </p>
             </template>
-            <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
           <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title>Form</template>
+            <template #title><LucideBoxSelect/> Form</template>
             <template #body>
               <p>
                 Aesthetic appeal and visual innovation, ensuring each design not
@@ -52,7 +51,7 @@
             </template>
           </TextParagraphWithTitle>
           <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title>Function</template>
+            <template #title><LucideFrame/> Function</template>
             <template #body>
               <p>
                 Practicality and usability, with designs engineered to deliver
@@ -75,59 +74,58 @@
                 tradition, rooted in the ancient practice of bathing in
                 naturally heated springs.
               </p>
+              <NuxtLink
+                class="underline-out"
+                to="/portfolio"
+                aria-label="Portfolio Page"
+                >Previous Work</NuxtLink
+              >
             </template>
             <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
           <Accordion>
             <AccordionItem title="Web Development" index="1">
-              <ListsDefaultList
-                title="List Title"
-                :items="[
-                  { id: 1, text: 'List Item One' },
-                  { id: 2, text: 'List Item Two' },
-                  { id: 3, text: 'List Item Three' },
-                  { id: 4, text: 'List Item Four' },
-                ]" />
+              <p>
+                Comprehensive web development services that include full-stack
+                development, custom website design, and CMS solutions. Using the
+                latest technologies and best practices, I ensure each website is
+                robust, fast-loading, and fully responsive, providing users with
+                a seamless experience across all devices.
+              </p>
             </AccordionItem>
             <AccordionItem title="UI/UX Design" index="2">
-              <ListsDefaultList
-                title="List Title"
-                :items="[
-                  { id: 1, text: 'List Item One' },
-                  { id: 2, text: 'List Item Two' },
-                  { id: 3, text: 'List Item Three' },
-                  { id: 4, text: 'List Item Four' },
-                ]" />
+              <p>
+                UI/UX design services focus on creating user-centric interfaces
+                that are both intuitive and engaging. From wireframing to final
+                design implementation, I employ a thorough design process to
+                ensure that every aspect of the user experience is streamlined
+                and aesthetically pleasing.
+              </p>
             </AccordionItem>
             <AccordionItem title="Brand Design" index="3">
-              <ListsDefaultList
-                title="List Title"
-                :items="[
-                  { id: 1, text: 'List Item One' },
-                  { id: 2, text: 'List Item Two' },
-                  { id: 3, text: 'List Item Three' },
-                  { id: 4, text: 'List Item Four' },
-                ]" />
+              <p>
+                Helping businesses establish a strong visual identity with my
+                brand design services. This includes logo design, color schemes,
+                typography, and overall brand strategy, ensuring a cohesive and
+                powerful brand image that resonates with the target audience.
+              </p>
             </AccordionItem>
             <AccordionItem title="SEO" index="4">
-              <ListsDefaultList
-                title="List Title"
-                :items="[
-                  { id: 1, text: 'List Item One' },
-                  { id: 2, text: 'List Item Two' },
-                  { id: 3, text: 'List Item Three' },
-                  { id: 4, text: 'List Item Four' },
-                ]" />
+              <p>
+                SEO services are designed to increase visibility and drive
+                traffic through strategic keyword placement, content
+                optimization, and backlink development. I focus on building
+                sustainable SEO strategies that improve search engine rankings
+                and enhance online presence.
+              </p>
             </AccordionItem>
             <AccordionItem title="Support" index="5">
-              <ListsDefaultList
-                title="List Title"
-                :items="[
-                  { id: 1, text: 'List Item One' },
-                  { id: 2, text: 'List Item Two' },
-                  { id: 3, text: 'List Item Three' },
-                  { id: 4, text: 'List Item Four' },
-                ]" />
+              <p>
+                Ongoing support and maintenance services to ensure websites
+                remain up-to-date and perform optimally. This includes regular
+                updates, security checks, and troubleshooting to help businesses
+                maintain a reliable and effective online presence.
+              </p>
             </AccordionItem>
           </Accordion>
         </LayoutGridContainer>
@@ -171,9 +169,7 @@
             class="item get-in-touch underline-out"
             to="/Contact"
             aria-label="Contact Page"
-            ><TextReveal tag="h2"
-              >Get in Touch</TextReveal
-            ></NuxtLink
+            ><TextReveal tag="h2">Get in Touch</TextReveal></NuxtLink
           >
         </LayoutGridContainer>
       </section>
@@ -243,7 +239,8 @@ useHead({
 }
 
 @media (max-width: 767px) {
-  #lead-text .item, #lead-text p {
+  #lead-text .item,
+  #lead-text p {
     grid-column: 1 / 7;
     grid-row: auto;
   }
@@ -274,7 +271,10 @@ useHead({
     display: none;
   }
 
-  #services .item.paragraph-with-title:nth-of-type(1), #services .accordion, #skills .item.paragraph-with-title:nth-of-type(1), #contact .get-in-touch {
+  #services .item.paragraph-with-title:nth-of-type(1),
+  #services .accordion,
+  #skills .item.paragraph-with-title:nth-of-type(1),
+  #contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
   }
