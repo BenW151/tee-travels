@@ -50,7 +50,7 @@
               required></textarea>
           </label>
           <button class="link underline-out-icon" type="submit">
-            <LucideMail />
+            <LucideSend />
             Submit
           </button>
         </form>
@@ -84,9 +84,10 @@ textarea:focus {
   border-bottom: 1px solid var(--accent-primary);
 }
 
-form .button {
+form button {
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 form {

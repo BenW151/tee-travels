@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
   height: 80lvh;
 }
 .header-medium {
-  height: 110lvh;
+  height: 120lvh;
 }
 .header-large {
   height: 140lvh;
@@ -123,7 +123,7 @@ header a.link::after {
 .hero-text {
   grid-column: 1 / 17;
   grid-row-start: 1;
-  margin-top: 32vh;
+  margin-top: 40vh;
 }
 
 .hero-text h2 {
