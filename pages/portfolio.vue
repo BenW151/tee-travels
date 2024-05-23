@@ -48,6 +48,7 @@
         <ImageWithTextOverlay
           imageUrl="/images/node-one-header.PNG"
           altText="Celestial Relaxation Room"
+          class="portfolio-header"
           overlayText="Header"
           textPosition="right"
           rellaxPercentage="0"
