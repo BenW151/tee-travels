@@ -308,6 +308,10 @@ useHead({
   grid-row: 1;
 }
 
+#experience h4 {
+  margin-top: var(--spacing-4);
+}
+
 #skills .list:nth-child(3) {
   grid-column: 6 / 9;
   grid-row-start: 2;
@@ -368,6 +372,11 @@ useHead({
   #contact .get-in-touch,
   #experience .item.paragraph-with-title:nth-of-type(1) {
     grid-column: 1 / 7;
+    grid-row: auto;
+  }
+
+  #skills .item.list {
+    grid-column: span 2;
     grid-row: auto;
   }
 }
