@@ -97,8 +97,8 @@ const circleClasses = computed(() => {
 <style scoped>
 .circle {
   position: fixed;
-  width: 8vw;
-  height: 8vw;
+  width: 6vw;
+  height: 6vw;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   background: rgba(0, 0, 0, 0.15);
@@ -110,13 +110,13 @@ const circleClasses = computed(() => {
   justify-content: center;
   text-align: center;
   transition: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease 0.1s;
   opacity: 0;
 }
 
 .circle-text {
   color: var(--font-color-white);
-  font-size: var(--font-size-XS);
+  font-size: var(--font-size-XXS);
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;

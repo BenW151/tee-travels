@@ -70,6 +70,7 @@ nav {
   height: 4vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  pointer-events: none;
 }
 
 nav.nav-hidden a {
@@ -102,6 +103,7 @@ nav a {
   font-size: var(--font-size-XXS);
   margin: 0 var(--spacing-3);
   color: var(--color-white);
+  pointer-events: all;
 }
 
 nav a::after {
