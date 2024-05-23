@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MouseFollower />
     <Nav />
     <transition name="page" mode="out-in">
       <div :key="$route.path">
