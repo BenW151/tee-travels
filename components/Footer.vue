@@ -140,36 +140,6 @@ footer .card h4 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  footer .list.socials {
-    grid-column: 10/13;
-    grid-row-start: 2;
-    margin-top: var(--spacing-5);
-  }
 
-  footer .list.contact {
-    grid-column: 13/17;
-    grid-row-start: 2;
-    margin-top: var(--spacing-5);
-  }
-
-  .footer-end .item:nth-child(1) {
-    grid-column: 1 / 5;
-    grid-row-start: 1;
-  }
-
-  .footer-end .item:nth-child(2) {
-    grid-column: 1 / 5;
-    grid-row-start: 2;
-  }
-
-  .footer-end .item:nth-child(3) {
-    grid-column: 13 / 17;
-    grid-row-start: 1;
-  }
-
-  .footer-end .item:nth-child(4) {
-    grid-column: 13 / 17;
-    grid-row-start: 2;
-  }
 }
 </style>
