@@ -4,8 +4,7 @@
       v-if="imageUrl"
       class="background-image rellax"
       v-rellax
-      data-rellax-speed="3"
-      data-rellax-mobile-speed="0">
+      data-rellax-speed="3">
       <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
     </div>
     <div
@@ -153,20 +152,20 @@ header .item:nth-child(3) {
     height: 80lvh;
   }
   .header-medium {
-    height: 100lvh;
+    height: 110lvh;
   }
   .header-large {
-    height: 150lvh;
+    height: 130lvh;
   }
 
   .hero-text {
     grid-column: span 6;
     grid-row-start: 1;
-    margin-top: 25vh;
+    margin-top: 30vh;
   }
 
   header .item:nth-child(2) {
-    grid-column: 3 / 7;
+    grid-column: 1 / 7;
     grid-row-start: 2;
     margin-top: auto;
   }

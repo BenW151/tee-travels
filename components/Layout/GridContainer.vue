@@ -25,7 +25,7 @@
 
 @media (max-width: 767px) {
   .container {
-    padding: 8vh var(--spacing-5);
+    padding: 8vh var(--spacing-4);
   }
 
   .grid,

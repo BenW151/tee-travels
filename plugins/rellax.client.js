@@ -6,7 +6,7 @@ export default defineNuxtPlugin(nuxtApp => {
       // Check if the current device is a mobile device
       const isMobile = window.innerWidth < 768;
 
-      if (!isMobile) {
+     // if (!isMobile) {
         // Initialize Rellax only if not on mobile, using configuration from attributes or defaults
         const speed = el.getAttribute('data-rellax-speed') || 1; // Default speed if not specified
         const rellaxInstance = new Rellax(el, {
@@ -20,7 +20,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
         // Attach the instance to the element for potential future use or destruction
         el.rellax = rellaxInstance;
-      }
+     // }
     },
     unmounted(el) {
       // Destroy the Rellax instance when the component is unmounted

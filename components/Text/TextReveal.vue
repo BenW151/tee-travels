@@ -51,10 +51,6 @@
   height: 100%;
 }
 
-.hero-text .line-container {
-  justify-content: center;
-}
-
 @media (max-width: 767px) {
   .text-reveal {
     grid-column: span 6;

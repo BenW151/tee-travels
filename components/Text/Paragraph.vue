@@ -45,5 +45,9 @@ const props = defineProps({
   .paragraph.large {
     grid-column: span 6;
   }
+
+  .paragraph.medium p {
+    font-size: var(--font-size-M);
+  }
 }
 </style>

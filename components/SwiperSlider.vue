@@ -47,7 +47,7 @@
         </NuxtLink>
       </swiper-slide>
     </swiper>
-    <div class="custom-scrollbar" v-if="!isMobile">
+    <div class="custom-scrollbar">
       <div
         class="custom-scrollbar-progress"
         :style="{ width: `${progress}%` }"></div>
