@@ -73,7 +73,7 @@ const images = [
     src: "/images/node-one-office.png",
     alt: "Node One",
     subDescription: "IT Services",
-    link: "#node-one",
+    link: "/node-one",
   },
   {
     src: "/images/node-one-header.png",
