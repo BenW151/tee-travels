@@ -73,8 +73,9 @@
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <ImageWithTextOverlay
-          imageUrl="/images/node-one-header.PNG"
+          imageUrl="/images/node-one-logo.png"
           altText="Celestial Relaxation Room"
+          class="portfolio-logo"
           overlayText="Header"
           textPosition="right"
           rellaxPercentage="0"

@@ -60,6 +60,11 @@ const updatePosition = (event) => {
       hoverClass.value = "get-in-touch";
       found = true;
       break;
+    } else if (classList.includes("portfolio-logo")) {
+      hoveredText.value = "Logo";
+      hoverClass.value = "get-in-touch";
+      found = true;
+      break;
     } else {
       switch (tagName) {
         case "header":
