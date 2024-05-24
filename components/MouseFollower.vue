@@ -35,6 +35,21 @@ const updatePosition = (event) => {
       hoverClass.value = "accordion";
       found = true;
       break;
+    } else if (classList.includes("swiper-button-next")) {
+      hoveredText.value = "Next";
+      hoverClass.value = "swiper-button";
+      found = true;
+      break;
+    } else if (classList.includes("swiper-button-prev")) {
+      hoveredText.value = "Previous";
+      hoverClass.value = "swiper-button";
+      found = true;
+      break;
+    } else if (classList.includes("slide-image")) {
+      hoveredText.value = "View";
+      hoverClass.value = "slide-image";
+      found = true;
+      break;
     } else if (classList.includes("get-in-touch")) {
       hoveredText.value = "Contact Me";
       hoverClass.value = "get-in-touch";
@@ -134,7 +149,7 @@ const circleClasses = computed(() => {
 }
 
 /* Additional styles for different hover locations */
-.header, .accordion, .get-in-touch {
+.header, .accordion, .get-in-touch, .swiper-button, .slide-image {
   opacity: 1;
 }
 </style>

@@ -8,6 +8,12 @@
       <template #description> </template>
     </Header>
 
+    <section>
+      <div class="container">
+        <SwiperSlider />
+      </div>
+    </section>
+
     <section class="portfolio-item">
       <LayoutGridContainer>
         <TextSectionLabel labelText="IT Services" />
