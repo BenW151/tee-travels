@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="portfolio">
     <Header
       imageUrl="/images/node-one-office.png"
       title="Node One"
@@ -9,18 +9,19 @@
       buttonDescription="View Website"
       headerClass="header-large">
       <template #description>
-        <p>An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.</p>
+        <p>
+          An IT services company offering best in class service and support. For
+          this project, I designed and developed a professional website that
+          effectively communicates the firm's expertise in IT solutions. The
+          site features a robust, informative layout that includes service
+          descriptions, client testimonials, and a live chat feature for instant
+          customer support. Strategic SEO practices were also implemented to
+          enhance online visibility and attract more business clientele.
+        </p>
       </template>
     </Header>
 
-    <section id="node-one" class="portfolio-item">
+    <section class="portfolio-item">
       <LayoutGridContainer>
         <TextSectionLabel labelText="IT Services" />
         <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
@@ -56,7 +57,11 @@
           title="Industry"
           :items="[{ id: 1, text: 'IT Services' }]" />
         <ListsDefaultList title="Date" :items="[{ id: 1, text: 'May 2024' }]" />
+      </LayoutGridContainer>
+    </section>
 
+    <section>
+      <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/node-one-header.PNG"
           altText="Celestial Relaxation Room"
@@ -65,13 +70,11 @@
           textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
-        <ImageWithTextOverlay
-          imageUrl="/images/node-one-header.PNG"
-          altText="Celestial Relaxation Room"
-          overlayText="Header"
-          textPosition="right"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
+      </LayoutGridContainer>
+    </section>
+
+    <section>
+      <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/node-one-logo.png"
           altText="Celestial Relaxation Room"
@@ -80,6 +83,24 @@
           textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
+      </LayoutGridContainer>
+    </section>
+
+    <section>
+      <LayoutGridContainer>
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-header.png"
+          altText="Celestial Relaxation Room"
+          class="portfolio-temp"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+      </LayoutGridContainer>
+    </section>
+
+    <section>
+      <LayoutGridContainer>
         <TextCard
           name="Ben Ward"
           position="Managing Director"
@@ -126,22 +147,20 @@ useHead({
   grid-row-start: 2;
 }
 
-.portfolio-item .image:nth-child(6) {
+.portfolio .portfolio-header {
   grid-column: 2 / 16;
-  grid-row-start: 3;
 }
 
-.portfolio-item .image:nth-child(7) {
+.portfolio .portfolio-logo {
+  grid-column: 10 / 15;
+}
+
+.portfolio .portfolio-temp {
   grid-column: 2 / 11;
   grid-row-start: 4;
 }
 
-.portfolio-item .image:nth-child(8) {
-  grid-column: 11 / 16;
-  grid-row-start: 4;
-}
-
-.portfolio-item .card:nth-child(9) {
+.portfolio .card {
   grid-column: 11 / 16;
   grid-row-start: 5;
 }
@@ -152,9 +171,9 @@ useHead({
     padding-right: var(--spacing-5);
   }
 
-  .portfolio-item .item.paragraph-with-title,
-  .portfolio-item .item.image,
-  .portfolio-item .item.card {
+  .portfolio .item.paragraph-with-title,
+  .portfolio .item.image,
+  .portfolio .item.card {
     grid-column: 1 / 7;
     grid-row: auto;
   }
