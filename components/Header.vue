@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .header-small {
-  height: 80lvh;
+  height: 100lvh;
 }
 .header-medium {
   height: 120lvh;

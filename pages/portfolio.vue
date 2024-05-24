@@ -4,7 +4,7 @@
       backgroundColor="var(--color-black)"
       title="Portfolio"
       subtitle="Previous Work"
-      headerClass="header-medium">
+      headerClass="header-small">
       <template #description> </template>
     </Header>
 

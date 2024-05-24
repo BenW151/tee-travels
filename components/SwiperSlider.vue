@@ -7,11 +7,12 @@
         SwiperAutoplay,
         SwiperFreeMode,
       ]"
-      :slides-per-view="3"
+      :slides-per-view="3.2"
       :space-between="10"
       :navigation="true"
       :mousewheel="true"
       :free-mode="true"
+      :free-mode-momentum="true"
       :autoplay="{
         delay: 8000,
         disableOnInteraction: true,
@@ -64,13 +65,13 @@ const images = [
     link: "/page2",
   },
   {
-    src: "/images/node-one-header.png",
+    src: "/images/background-pixel.png",
     alt: "Node Three",
     subDescription: "Mobile Development",
     link: "/page3",
   },
   {
-    src: "/images/node-one-header.png",
+    src: "/images/person.png",
     alt: "Node Four",
     subDescription: "Cloud Services",
     link: "/page4",
@@ -118,13 +119,14 @@ const clearHoverDescription = () => {
 .swiper-slide-custom {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: auto; 
+  align-items: flex-end;
 }
 
 .slide-image {
   width: 50vw;
   height: auto;
-  max-width: 28vw; 
+  max-width: 27vw; 
   max-height: 50vw; 
   object-fit: cover;
 }
@@ -182,11 +184,10 @@ const clearHoverDescription = () => {
 .swiper-button-prev {
   left: 0;
 }
+*/
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
-
-*/
 </style>
