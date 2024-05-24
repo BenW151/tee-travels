@@ -192,9 +192,9 @@
               <a
                 class="underline-out-icon"
                 href="/ben-ward-cv.pdf"
-                aria-label="View Full CV"
+                aria-label="Download CV"
                 download=""
-                ><LucideDownload />View Full CV</a
+                ><LucideDownload />Download CV</a
               >
               <h4>Freelance Web Developer</h4>
               <h5>benward.io</h5>
