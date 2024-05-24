@@ -102,10 +102,10 @@ header a.link::after {
 }
 
 .background-image img {
-  height: 150lvh;
+  height: 120lvh;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 60%;
+  object-position: 50% 50%;
   top: 0;
   bottom: 0;
   right: 0;

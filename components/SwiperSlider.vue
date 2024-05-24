@@ -143,7 +143,7 @@ const isMobile = computed(() => window.innerWidth < 768);
 }
 
 .slide-image {
-  width: 27vw;
+  width: 29vw;
   height: auto;
   max-height: 50vw;
   object-fit: cover;

@@ -1,13 +1,13 @@
 <template>
   <div>
     <Header
-      backgroundColor="var(--color-black)"
+      imageUrl="/images/web-dev.png"
       title="Ben Ward"
       subtitle="Web Developer"
       buttonText="Contact Me"
       buttonUrl="/contact"
       buttonDescription="Contact Me"
-      headerClass="header-medium">
+      headerClass="header-large">
       <template #description>
         <p>Building sleek, scalable, and interactive web experiences.</p>
       </template>
