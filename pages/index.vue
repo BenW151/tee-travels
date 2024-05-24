@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/web-dev.png"
+      imageUrl="/images/index-background.png"
       title="Ben Ward"
       subtitle="Web Developer"
       buttonText="Contact Me"

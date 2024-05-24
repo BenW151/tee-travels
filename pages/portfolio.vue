@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/portfolio-background.png"
+      backgroundColor="var(--color-black)"
       title="Portfolio"
       subtitle="Previous Work"
       headerClass="header-small">

@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <Header
-      imageUrl="/images/contact-background.png"
+      backgroundColor="var(--color-black)"
       title="Contact"
       subtitle="Have a question? Let me know"
       headerClass="header-medium">
