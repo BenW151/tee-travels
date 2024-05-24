@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MouseFollower />
+    <MouseFollower v-if="!isMobile" />
     <Nav />
     <transition name="page" mode="out-in">
       <div :key="$route.path">
@@ -10,6 +10,11 @@
     </transition>
   </div>
 </template>
+
+<script setup>
+const isMobile = computed(() => window.innerWidth < 768);
+</script>
+
 
 <style>
 .page-enter-active,

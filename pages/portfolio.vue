@@ -8,7 +8,7 @@
       <template #description> </template>
     </Header>
 
-    <section>
+    <section id="carousel">
       <div class="container">
         <SwiperSlider />
       </div>
@@ -91,6 +91,11 @@ useHead({
 </script>
 
 <style>
+#carousel .container {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 .portfolio-item .paragraph-with-title {
   grid-column: 6 / 14;
 }
@@ -135,6 +140,11 @@ useHead({
 }
 
 @media (max-width: 767px) {
+  #carousel .container {
+    padding-left: var(--spacing-5);
+    padding-right: var(--spacing-5);
+  }
+
   .portfolio-item .item.paragraph-with-title,
   .portfolio-item .item.image,
   .portfolio-item .item.card {

@@ -16,7 +16,8 @@
         </div>
       </div>
     </div>
-    <swiper v-else
+    <swiper
+      v-else
       :modules="[
         SwiperNavigation,
         SwiperMousewheel,
@@ -215,15 +216,21 @@ const isMobile = computed(() => window.innerWidth < 768);
     max-width: 100%;
     max-height: 100%;
   }
+
   .image-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .vertical-image {
     background-size: cover;
     width: 100%;
     height: auto;
+  }
+
+  .image-info .image-subtitle {
+    margin-bottom: var(--spacing-5);
   }
 }
 </style>
