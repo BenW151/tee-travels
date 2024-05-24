@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   font-size: 100%;
 }
 
@@ -474,7 +474,6 @@ li {
   }
 
   html {
-    scroll-behavior: auto;
     font-size: 90%;
   }
 
