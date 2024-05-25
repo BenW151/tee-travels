@@ -51,7 +51,8 @@
           :items="[
             { id: 1, text: 'UI/UX Design' },
             { id: 2, text: 'Web Development' },
-            { id: 3, text: 'SEO' },
+            { id: 3, text: 'Brand Design' },
+            { id: 4, text: 'SEO' },
           ]" />
         <ListsDefaultList
           title="Industry"
@@ -73,7 +74,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section class="logo">
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/node-one-logo.png"
@@ -83,15 +84,73 @@
           textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
+        <TextParagraphWithTitle subtitleTag="h4">
+          <template #title>Modernised Logo</template>
+          <template #body>
+            <p>
+              An IT services company offering best in class service and support.
+              For this project, I designed and developed a professional website
+              that effectively communicates the firm's expertise in IT
+              solutions. The site features a robust, informative layout that
+              includes service descriptions, client testimonials, and a live
+              chat feature for instant customer support. Strategic SEO practices
+              were also implemented to enhance online visibility and attract
+              more business clientele.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section class="team">
       <LayoutGridContainer>
         <ImageWithTextOverlay
-          imageUrl="/images/node-one-header.png"
+          imageUrl="/images/node-one-team.png"
           altText="Celestial Relaxation Room"
           class="portfolio-temp"
+          overlayText="Header"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <TextParagraphWithTitle subtitleTag="h4">
+          <template #title>A Personable, Approachable Team</template>
+          <template #body>
+            <p>
+              An IT services company offering best in class service and support.
+              For this project, I designed and developed a professional website
+              that effectively communicates the firm's expertise in IT
+              solutions. The site features a robust, informative layout that
+              includes service descriptions, client testimonials, and a live
+              chat feature for instant customer support. Strategic SEO practices
+              were also implemented to enhance online visibility and attract
+              more business clientele.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
+    <section class="services">
+      <LayoutGridContainer>
+        <TextParagraphWithTitle subtitleTag="h4">
+          <template #title>A Full Spectrum Of Services</template>
+          <template #body>
+            <p>
+              An IT services company offering best in class service and support.
+              For this project, I designed and developed a professional website
+              that effectively communicates the firm's expertise in IT
+              solutions. The site features a robust, informative layout that
+              includes service descriptions, client testimonials, and a live
+              chat feature for instant customer support. Strategic SEO practices
+              were also implemented to enhance online visibility and attract
+              more business clientele.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+        <ImageWithTextOverlay
+          imageUrl="/images/node-one-services.png"
+          altText="Celestial Relaxation Room"
+          class="portfolio-services"
           overlayText="Header"
           textPosition="right"
           rellaxPercentage="0"
@@ -119,9 +178,13 @@ useHead({
 </script>
 
 <style>
-#carousel .container {
-  padding-left: 1vw;
-  padding-right: 1vw;
+
+.image.image-text-overlay img {
+  object-fit: contain;
+}
+
+.container.grid {
+  overflow: visible;
 }
 
 .portfolio-item .paragraph-with-title {
@@ -152,17 +215,36 @@ useHead({
 }
 
 .portfolio .portfolio-logo {
-  grid-column: 10 / 15;
+  grid-column: 11 / 14;
+}
+
+.logo .paragraph-with-title {
+  grid-column: 3 / 9;
+  grid-row-start: 1;
 }
 
 .portfolio .portfolio-temp {
-  grid-column: 2 / 11;
-  grid-row-start: 4;
+  grid-column-end: 8;
+  margin-left: -500px;
+}
+
+.team .paragraph-with-title {
+  grid-column: 10 / 16;
+  grid-row-start: 1;
+}
+
+.portfolio .portfolio-services {
+  grid-column: 9 / 17;
+  margin-right: -400px;
+}
+
+.services .paragraph-with-title {
+  grid-column: 2 / 8;
+  grid-row-start: 1;
 }
 
 .portfolio .card {
   grid-column: 11 / 16;
-  grid-row-start: 5;
 }
 
 @media (max-width: 767px) {
@@ -176,6 +258,7 @@ useHead({
   .portfolio .item.card {
     grid-column: 1 / 7;
     grid-row: auto;
+    margin: 0;
   }
 
   .portfolio-item .item.list {
