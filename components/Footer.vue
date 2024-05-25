@@ -24,7 +24,7 @@
         >Terms + Conditions</NuxtLink
       >
       <NuxtLink
-        class="item"
+        class="item back-to-top"
         to="#header"
         aria-label="Terms and Conditions Page"
         ><LucideArrowUp /></NuxtLink
@@ -78,6 +78,14 @@ footer .container {
 .item.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+a.back-to-top::after {
+  display: none;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
 }
 
 @media (max-width: 767px) {

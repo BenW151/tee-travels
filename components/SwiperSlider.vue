@@ -74,31 +74,31 @@ const images = [
     src: "/images/travel-blog.png",
     alt: "Tee Travels",
     subDescription: "Tour Provider",
-    link: "/page2",
+    link: "/node-one",
   },
   {
     src: "/images/node-one-office.png",
     alt: "Node Three",
     subDescription: "Mobile Development",
-    link: "/page3",
+    link: "/node-one",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Node Four",
     subDescription: "Cloud Services",
-    link: "/page4",
+    link: "/node-one",
   },
   {
     src: "/images/node-one-office.png",
     alt: "Node Five",
     subDescription: "Consulting",
-    link: "/page5",
+    link: "/node-one",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Node Six",
     subDescription: "Support",
-    link: "/page6",
+    link: "/node-one",
   },
 ];
 
