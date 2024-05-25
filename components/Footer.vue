@@ -1,35 +1,42 @@
 <template>
   <footer ref="footer">
-    <LayoutGridContainer class="footer-end">
+    <div class="footer">
       <p class="item">Copyright ©2024</p>
-      <NuxtLink class="item" href="/contact" aria-label="Contact Page"
+      <NuxtLink
+        class="item footer-contact"
+        :class="{ active: $route.path === '/contact' }"
+        to="/contact"
+        aria-label="Contact Page"
         >Contact</NuxtLink
       >
       <NuxtLink
         class="item"
+        :class="{ active: $route.path === '/privacy-policy' }"
         to="/privacy-policy"
         aria-label="Privacy Policy Page"
         >Privacy Policy</NuxtLink
       >
       <NuxtLink
         class="item"
+        :class="{ active: $route.path === '/terms-and-conditions' }"
         to="/terms-and-conditions"
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</NuxtLink
       >
-    </LayoutGridContainer>
+    </div>
   </footer>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
 footer {
-  position: relative;
-  z-index: 2;
-  transition: none;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 4vw;
+  z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 footer .container {
@@ -39,107 +46,51 @@ footer .container {
   white-space: nowrap;
 }
 
-.footer-end .item {
-  margin-right: auto;
-  margin-top: var(--spacing-3);
-}
-
-.footer-end {
+.footer {
+  display: flex;
+  width: 100%;
+  padding-bottom: 5px;
+  margin: 0;
+  margin-left: var(--spacing-3);
+  margin-right: var(--spacing-3);
   align-items: center;
   justify-content: space-between;
-  margin: auto;
-  position: relative;
+  overflow: hidden;
 }
 
-footer .list.socials {
-  grid-column: 11 / 14;
-  grid-row-start: 2;
-  margin-top: auto;
+.footer .item {
+  font-size: var(--font-size-XXS);
+  margin: 0 var(--spacing-3);
+  color: var(--color-white);
+  pointer-events: all;
 }
 
-footer .list.contact {
-  grid-column: 14 /17;
-  grid-row-start: 2;
-  margin-top: auto;
+.footer .footer-contact {
+  margin-right: auto;
 }
 
-footer .address {
-  grid-column: 1 / 3;
-}
-
-footer .card {
-  grid-column: 1 / 4;
-  grid-row-start: 1;
-}
-
-footer .card h4 {
-  margin-bottom: var(--spacing-1);
-}
-
-.footer-end .item:nth-child(1) {
-  grid-column: 1 / 3;
-}
-
-.footer-end .item:nth-child(2) {
-  grid-column: 4 / 6;
-}
-
-.footer-end .item:nth-child(3) {
-  grid-column: 11 / 13;
-}
-
-.footer-end .item:nth-child(4) {
-  grid-column: 14 / 17;
+.item.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media (max-width: 767px) {
-  footer .container {
-    padding-bottom: 0;
+  footer {
+    height: 6vh;
   }
 
-  footer .card {
-    margin-bottom: var(--spacing-5);
-    grid-column: 1 / 7;
+  .footer {
+    align-items: start;
+    margin: 0;
   }
 
-  footer .list.socials {
-    grid-column: 1 / 3;
-    grid-row-start: 2;
+  .footer .item {
+    font-size: var(--font-size-XS);
+    margin: 0 var(--spacing-3);
   }
 
-  footer .list.contact {
-    grid-column: 5 / 7;
-    grid-row-start: 2;
-  }
-
-  footer .address {
-    grid-column: 1 / 7;
-    grid-row-start: 3;
-  }
-
-  .footer-end .item {
-    margin-top: 0;
-  }
-
-  .footer-end .item:nth-child(1) {
-    grid-column: 1 / 4;
-  }
-
-  .footer-end .item:nth-child(2) {
-    grid-column: 1 / 4;
-  }
-
-  .footer-end .item:nth-child(3) {
-    grid-column: 5 / 7;
-    grid-row-start: 1;
-  }
-
-  .footer-end .item:nth-child(4) {
-    grid-column: 5 / 7;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
 }
 </style>

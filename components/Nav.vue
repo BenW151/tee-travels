@@ -180,6 +180,10 @@ body.scrolled-past-header .burger-menu::before {
     font-size: var(--font-size-XS);
   }
 
+  .nav {
+    margin: 0;
+  }
+
   .wordmark {
     margin-left: 0;
     margin-top: var(--spacing-1);
