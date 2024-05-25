@@ -310,6 +310,11 @@ useHead({
 
 #experience h4 {
   margin-top: var(--spacing-4);
+  margin-bottom: 0;
+}
+
+#experience h5 {
+  margin-bottom: 1vh;
 }
 
 #skills .list:nth-child(3) {
@@ -332,6 +337,10 @@ useHead({
   grid-row: 1;
   width: fit-content;
 }
+
+#contact .get-in-touch h2{
+    font-size: var(--font-size-XXL);
+  }
 
 @media (max-width: 767px) {
   #lead-text .item,
@@ -378,6 +387,14 @@ useHead({
   #skills .item.list {
     grid-column: span 2;
     grid-row: auto;
+  }
+
+  #experience h5 {
+    margin-bottom: 1vw;
+  }
+
+  #contact .get-in-touch h2{
+    font-size: 14.5vw;
   }
 }
 </style>
