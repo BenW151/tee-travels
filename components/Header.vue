@@ -20,6 +20,7 @@
       <TextParagraph paragraphSize="medium">
         <slot name="description"></slot>
         <NuxtLink
+          v-if="buttonUrl"
           :to="buttonUrl"
           :aria-label="buttonDescription"
           class="item link underline-out">

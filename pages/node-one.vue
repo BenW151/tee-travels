@@ -78,7 +78,7 @@
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/node-one-logo.png"
-          altText="Office"
+          imageAlt="Office"
           class="portfolio-logo"
           overlayText="Header"
           textPosition="right"
