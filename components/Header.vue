@@ -35,6 +35,7 @@ import { onMounted, onBeforeUnmount, ref } from "vue";
 
 const props = defineProps({
   imageUrl: String,
+  imageAlt: String,
   title: String,
   subtitle: String,
   buttonText: String,

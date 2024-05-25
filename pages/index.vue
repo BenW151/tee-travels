@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/index-background.png"
-      imageAlt="Image of laptop with code on desk"
+      imageAlt="Laptop with code on desk"
       title="Ben Ward"
       subtitle="Web Developer"
       buttonText="Contact Me"
