@@ -85,7 +85,7 @@
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>Modernised Logo</template>
+          <template #title>A Fresh, Modern Appearance</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.
@@ -133,7 +133,7 @@
     <section class="services">
       <LayoutGridContainer>
         <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>A Full Spectrum Of Services</template>
+          <template #title>A Full Spectrum Of Services On Offer</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.

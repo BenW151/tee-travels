@@ -27,7 +27,11 @@
       :slides-per-view="3.2"
       :space-between="10"
       :navigation="true"
-      :mousewheel="{ forceToAxis: false, sensitivity: 0.1, releaseOnEdges: true }"
+      :mousewheel="{
+        forceToAxis: false,
+        sensitivity: 0.1,
+        releaseOnEdges: true,
+      }"
       :free-mode="true"
       :free-mode-momentum="true"
       :autoplay="{
@@ -152,7 +156,7 @@ const clearHoverDescription = () => {
   background-color: var(--color-white);
 }
 
-.swiper-slide a::after {
+.swiper-slide a::after, .image-item a::after {
   display: none;
 }
 
@@ -202,7 +206,6 @@ const clearHoverDescription = () => {
   left: 0;
 }
 */
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -230,6 +233,10 @@ const clearHoverDescription = () => {
 
   .image-info .image-subtitle {
     margin-bottom: var(--spacing-5);
+  }
+
+  .custom-scrollbar {
+    display: none;
   }
 }
 </style>

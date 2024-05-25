@@ -13,8 +13,8 @@
       </template>
       <template #link-text> View All Facilities </template>
     </TextParagraphWithTitle>
-    <div class="item contact-form fcf-body">
-      <div id="fcf-form">
+    <div class="item contact-form">
+      <div>
         <form
           action="https://formspree.io/f/xdoqplga"
           method="POST"
