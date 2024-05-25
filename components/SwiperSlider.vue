@@ -68,37 +68,37 @@ const images = [
     src: "/images/node-one-office.png",
     alt: "Node One",
     subDescription: "IT Services",
-    link: "/node-one",
+    link: "/portfolio/node-one",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Tee Travels",
     subDescription: "Tour Provider",
-    link: "/node-one",
+    link: "/portfolio/tias-tours",
   },
   {
     src: "/images/node-one-office.png",
     alt: "Node Three",
     subDescription: "Mobile Development",
-    link: "/node-one",
+    link: "/portfolio/node-one",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Node Four",
     subDescription: "Cloud Services",
-    link: "/node-one",
+    link: "/portfolio/node-one",
   },
   {
     src: "/images/node-one-office.png",
     alt: "Node Five",
     subDescription: "Consulting",
-    link: "/node-one",
+    link: "/portfolio/node-one",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Node Six",
     subDescription: "Support",
-    link: "/node-one",
+    link: "/portfolio/node-one",
   },
 ];
 
