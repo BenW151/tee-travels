@@ -71,9 +71,10 @@
             <template #title>Services</template>
             <template #body>
               <p>
-                Ben Ward stands as a modern continuation of a centuries-old
-                tradition, rooted in the ancient practice of bathing in
-                naturally heated springs.
+                I provide a full spectrum of web development services, including
+                custom website design, responsive development, e-commerce
+                solutions, and ongoing maintenance, ensuring a seamless and
+                engaging user experience across all devices.
               </p>
               <NuxtLink
                 class="underline-out"
@@ -197,42 +198,115 @@
                 download=""
                 ><LucideDownload />Download CV</a
               >
-              <h4>Freelance Web Developer</h4>
+              <h4>Web Developer</h4>
               <h5>benward.io</h5>
-              <h6>June 2021 - July 2023</h6>
+              <h6>April 2023 - Current</h6>
               <p>
                 With a profound expertise in both web development and design, I
                 bring a comprehensive skill set that encompasses the essentials
                 and complexities of creating aesthetic and functional digital
                 experiences.
               </p>
+              <ListsDefaultList
+                title="Key Duties"
+                :items="[
+                  {
+                    id: 1,
+                    text: ' - Designing and developing websites.',
+                  },
+                  {
+                    id: 2,
+                    text: ' - Ensuring excellent website performance and accessibility.',
+                  },
+                  {
+                    id: 3,
+                    text: ' - Keeping up to date with new technologies.',
+                  },
+                ]" />
               <h4>Network Engineer</h4>
               <h5>Hargreaves Lansdown</h5>
-              <h6>June 2021 - July 2023</h6>
+              <h6>August 2022 - April 2023</h6>
               <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
+                I was responsible for configuring, maintaining, and supporting
+                our network infrastructure that serviced 2000+ colleagues and
+                1.6 million clients. I collaborated with IT teams, managed
+                security policies, optimized network performance, and utilized
+                various software tools.
               </p>
+              <ListsDefaultList
+                title="Key Duties"
+                :items="[
+                  {
+                    id: 1,
+                    text: ' - Firewall policy management for enhanced security.',
+                  },
+                  {
+                    id: 2,
+                    text: ' - Configuration of L2 & L3 switches and F5 LTM.',
+                  },
+                  {
+                    id: 3,
+                    text: ' - Network patching for equipment and data centers.',
+                  },
+                  {
+                    id: 4,
+                    text: ' - Utilized networking software tools like SolarWinds, Infoblox, F5 BigIP, Checkpoint, Zscaler, and Juniper.',
+                  },
+                ]" />
               <h4>IT Service Desk Analyst</h4>
               <h5>Hargreaves Lansdown</h5>
-              <h6>June 2021 - July 2023</h6>
+              <h6>December 2018 - August 2022</h6>
               <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
+                I provided efficient first-line support to approximately 2000
+                users. My role included actively participating in new system
+                roll-outs and maintaining a professional and customer-focused
+                approach.
               </p>
+              <ListsDefaultList
+                title="Key Duties"
+                :items="[
+                  {
+                    id: 1,
+                    text: ' - First-line technical support via telephone, email, and face-to-face.',
+                  },
+                  {
+                    id: 2,
+                    text: ' - Contribution to new system and software deployments.',
+                  },
+                  {
+                    id: 3,
+                    text: ' - Administering a wide range of systems, including Active Directory, Microsoft Azure, VMWare Horizon, Exchange Online, and Defender.',
+                  },
+                ]" />
               <h4>Infrastructure Technician</h4>
               <h5>Marsh Corporate</h5>
-              <h6>June 2021 - July 2023</h6>
+              <h6>October 2017 - November 2018</h6>
               <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
+                I provided first-line support for several thousand users across
+                the UK, handling inquiries related to desktops, laptops, and
+                peripherals. I also engaged in second-line tasks, including
+                server administration and site infrastructure migrations.
               </p>
+              <ListsDefaultList
+                title="Key Duties"
+                :items="[
+                  {
+                    id: 1,
+                    text: ' - First-line technical support through various channels.',
+                  },
+                  {
+                    id: 2,
+                    text: ' - Contributing to site infrastructure migrations.',
+                  },
+                  {
+                    id: 3,
+                    text: ' - Developing PC images for streamlined setups.',
+                  },
+                  {
+                    id: 4,
+                    text: ' - Administering Microsoft Exchange and Citrix desktops.',
+                  },
+                ]" />
             </template>
           </TextParagraphWithTitle>
         </LayoutGridContainer>
@@ -339,9 +413,9 @@ useHead({
   width: fit-content;
 }
 
-#contact .get-in-touch h2{
-    font-size: var(--font-size-XXL);
-  }
+#contact .get-in-touch h2 {
+  font-size: var(--font-size-XXL);
+}
 
 @media (max-width: 767px) {
   #lead-text .item,
@@ -394,7 +468,7 @@ useHead({
     margin-bottom: 1vw;
   }
 
-  #contact .get-in-touch h2{
+  #contact .get-in-touch h2 {
     font-size: 14.5vw;
   }
 }

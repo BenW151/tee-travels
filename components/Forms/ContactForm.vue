@@ -5,13 +5,9 @@
       <template #title>Get in Touch</template>
       <template #body>
         <p>
-          The Wellness Suite is a haven of tranquility designed to cater to
-          every aspect of your wellbeing. Within this serene area, guests can
-          indulge in a variety of thermal experiences that detoxify, relax, and
-          rejuvenate.
+          For any inquiries or to discuss your project needs, feel free to get in touch. I'm always available to provide personalized solutions and help bring your digital vision to life.
         </p>
       </template>
-      <template #link-text> View All Facilities </template>
     </TextParagraphWithTitle>
     <div class="item contact-form">
       <div>
