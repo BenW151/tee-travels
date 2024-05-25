@@ -42,7 +42,7 @@
               href="https://www.nodeone.co.uk/"
               aria-label="Node One Website"
               target="_blank"
-              ><LucideExternalLink />Visit Website</a
+              ><LucideExternalLink />View Website</a
             >
           </template>
         </TextParagraphWithTitle>
@@ -80,7 +80,7 @@
           imageUrl="/images/node-one-logo.png"
           imageAlt="Office"
           class="portfolio-logo"
-          overlayText="Header"
+          overlayText="Logo"
           textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
@@ -108,7 +108,7 @@
           imageUrl="/images/node-one-team.png"
           altText="Celestial Relaxation Room"
           class="portfolio-temp"
-          overlayText="Header"
+          overlayText="The Team"
           textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
@@ -151,20 +151,54 @@
           imageUrl="/images/node-one-services.png"
           altText="Celestial Relaxation Room"
           class="portfolio-services"
-          overlayText="Header"
-          textPosition="right"
+          overlayText="Services"
+          textPosition="left"
           rellaxPercentage="0"
           rellaxSpeed="0" />
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section class="lighthouse">
+      <LayoutGridContainer>
+        <ImageWithTextOverlay
+          imageUrl="/images/lighthouse-score.png"
+          imageAlt="Office"
+          class="portfolio-lighthouse"
+          overlayText="Lighthouse Score"
+          textPosition="right"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <TextParagraphWithTitle subtitleTag="h4">
+          <template #title>High Performance, Available to Everyone</template>
+          <template #body>
+            <p>
+              An IT services company offering best in class service and support.
+              For this project, I designed and developed a professional website
+              that effectively communicates the firm's expertise in IT
+              solutions. The site features a robust, informative layout that
+              includes service descriptions, client testimonials, and a live
+              chat feature for instant customer support. Strategic SEO practices
+              were also implemented to enhance online visibility and attract
+              more business clientele.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
+    <section class="end">
       <LayoutGridContainer>
         <TextCard
           name="Ben Ward"
           position="Managing Director"
           quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
           imgSrc="/images/person.png" />
+        <NuxtLink
+          class="underline-out-icon"
+          to="/portfolio"
+          aria-label="Portfolio Page"
+          ><LucideArrowRight/>View Next Project</NuxtLink
+        >
       </LayoutGridContainer>
     </section>
   </div>
@@ -178,7 +212,6 @@ useHead({
 </script>
 
 <style>
-
 .image.image-text-overlay img {
   object-fit: contain;
 }
@@ -243,8 +276,21 @@ useHead({
   grid-row-start: 1;
 }
 
+.portfolio .portfolio-lighthouse {
+  grid-column: 10 / 16;
+}
+
+.lighthouse .paragraph-with-title {
+  grid-column: 2 / 8;
+  grid-row-start: 1;
+}
+
 .portfolio .card {
-  grid-column: 11 / 16;
+  grid-column:10 / 16;
+}
+
+.end a {
+  grid-column:10 / 15;
 }
 
 @media (max-width: 767px) {
@@ -255,7 +301,8 @@ useHead({
 
   .portfolio .item.paragraph-with-title,
   .portfolio .item.image,
-  .portfolio .item.card {
+  .portfolio .item.card,
+  .end a {
     grid-column: 1 / 7;
     grid-row: auto;
     margin: 0;

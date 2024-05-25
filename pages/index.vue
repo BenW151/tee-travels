@@ -245,7 +245,7 @@
             class="item get-in-touch underline-out"
             to="/Contact"
             aria-label="Contact Page"
-            ><TextReveal tag="h2">Get in Touch</TextReveal></NuxtLink
+            ><TextReveal tag="h2"> Get in Touch</TextReveal></NuxtLink
           >
         </LayoutGridContainer>
       </section>

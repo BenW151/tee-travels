@@ -1,5 +1,5 @@
 <template>
-  <header ref="headerRef" :class="headerClass">
+  <header ref="headerRef" :class="headerClass" id="header">
     <div
       v-if="imageUrl"
       class="background-image rellax"
@@ -128,7 +128,6 @@ header a.link::after {
 
 .hero-text h2 {
   font-size: var(--font-size-M);
-  font-style: italic;
   margin-top: var(--spacing-1);
 }
 

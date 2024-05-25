@@ -23,6 +23,12 @@
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</NuxtLink
       >
+      <NuxtLink
+        class="item"
+        to="#header"
+        aria-label="Terms and Conditions Page"
+        ><LucideArrowUp /></NuxtLink
+      >
     </div>
   </footer>
 </template>

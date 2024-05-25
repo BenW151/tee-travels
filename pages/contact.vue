@@ -10,12 +10,12 @@
           class="contact"
           :links="[
             {
-              url: 'https://linkedin.com',
+              url: 'https://www.linkedin.com/in/benw151/',
               label: 'LinkedIn',
               description: 'LinkedIn',
             },
             {
-              url: 'https://github.com',
+              url: 'https://github.com/BenW151/',
               label: 'GitHub',
               description: 'GitHub',
             },
