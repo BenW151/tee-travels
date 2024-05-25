@@ -18,12 +18,7 @@
     </div>
     <swiper
       v-else
-      :modules="[
-        SwiperNavigation,
-        SwiperMousewheel,
-        SwiperAutoplay,
-        SwiperFreeMode,
-      ]"
+      :modules="[SwiperNavigation, SwiperMousewheel, SwiperFreeMode]"
       :slides-per-view="3.2"
       :space-between="10"
       :navigation="true"
@@ -34,10 +29,6 @@
       }"
       :free-mode="true"
       :free-mode-momentum="true"
-      :autoplay="{
-        delay: 10000,
-        disableOnInteraction: true,
-      }"
       @swiper="onSwiper"
       @slideChange="onSlideChange">
       <swiper-slide
@@ -80,9 +71,9 @@ const images = [
     link: "/node-one",
   },
   {
-    src: "/images/node-one-office.png",
-    alt: "Node Two",
-    subDescription: "Web Development",
+    src: "/images/travel-blog.png",
+    alt: "Tee Travels",
+    subDescription: "Tour Provider",
     link: "/page2",
   },
   {
@@ -92,7 +83,7 @@ const images = [
     link: "/page3",
   },
   {
-    src: "/images/node-one-office.png",
+    src: "/images/travel-blog.png",
     alt: "Node Four",
     subDescription: "Cloud Services",
     link: "/page4",
@@ -104,7 +95,7 @@ const images = [
     link: "/page5",
   },
   {
-    src: "/images/node-one-office.png",
+    src: "/images/travel-blog.png",
     alt: "Node Six",
     subDescription: "Support",
     link: "/page6",
@@ -146,9 +137,10 @@ const clearHoverDescription = () => {
 }
 
 .slide-image {
-  width: 29vw;
+  width: 30vw;
   height: auto;
-  max-height: 50vw;
+  max-width: 30vw;
+  max-height: 30vw;
   object-fit: cover;
 }
 
@@ -156,7 +148,8 @@ const clearHoverDescription = () => {
   background-color: var(--color-white);
 }
 
-.swiper-slide a::after, .image-item a::after {
+.swiper-slide a::after,
+.image-item a::after {
   display: none;
 }
 
@@ -183,17 +176,16 @@ const clearHoverDescription = () => {
   transition: width 0.1s ease;
 }
 
-/*
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
+  bottom: 0;
+  width: 10%;
+  height: 4vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: white;
   z-index: 10;
   cursor: pointer;
 }
@@ -205,7 +197,7 @@ const clearHoverDescription = () => {
 .swiper-button-prev {
   left: 0;
 }
-*/
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
