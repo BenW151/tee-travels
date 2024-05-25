@@ -108,7 +108,7 @@ header a.link::after {
   top: 0;
   bottom: 0;
   right: 0;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
 }
 
 .background-color {

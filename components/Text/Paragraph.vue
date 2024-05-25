@@ -47,7 +47,7 @@ const props = defineProps({
   }
 
   .paragraph.medium p {
-    font-size: var(--font-size-M);
+    font-size: var(--font-size-S);
   }
 }
 </style>

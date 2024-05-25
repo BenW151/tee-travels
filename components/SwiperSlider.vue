@@ -110,6 +110,7 @@ const images = [
 const hoverDescription = ref("");
 const hoverSubDescription = ref("");
 const progress = ref(0);
+const isMobile = ref(window.innerWidth < 768);
 
 const onSwiper = (swiper) => {
   swiper.on("progress", (progressValue) => {
@@ -130,8 +131,6 @@ const clearHoverDescription = () => {
   hoverDescription.value = "";
   hoverSubDescription.value = "";
 };
-
-const isMobile = computed(() => window.innerWidth < 768);
 </script>
 
 <style>
@@ -176,7 +175,7 @@ const isMobile = computed(() => window.innerWidth < 768);
 
 .custom-scrollbar-progress {
   height: 1px;
-  background-color: var(--color-white); /* Customize the color as needed */
+  background-color: var(--color-white);
   transition: width 0.3s;
 }
 

@@ -15,10 +15,10 @@ body {
   --spacing-2: 1vw;
   --spacing-3: 1.3vw;
   --spacing-4: 1.8vw;
-  --spacing-5: 4vw;
+  --spacing-5: 5vw;
   --border-radius-box: 5px;
   --color-white: #f2f3f4;
-  --color-black: #1d1d1c;
+  --color-black: #070707;
   --font-color-primary: var(--color-white);
   --font-color-secondary: var(--color-black);
   --accent-primary: var(--color-white);
