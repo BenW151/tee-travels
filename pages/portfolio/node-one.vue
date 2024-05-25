@@ -206,7 +206,7 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Contact",
+  title: "Ben Ward - Portfolio",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
