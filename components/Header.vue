@@ -11,8 +11,7 @@
       v-else
       v-rellax
       :style="{ backgroundColor: backgroundColor }"
-      class="background-color rellax">
-    </div>
+      class="background-color rellax"></div>
     <LayoutGridContainer>
       <div class="hero-text item">
         <TextReveal tag="h1">{{ title }}</TextReveal>
@@ -156,6 +155,11 @@ header .item:nth-child(3) {
   }
   .header-large {
     height: 130lvh;
+  }
+
+  .background-image img {
+    height: 110lvh;
+    object-position: 65% 50%;
   }
 
   .hero-text {

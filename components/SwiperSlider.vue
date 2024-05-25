@@ -27,7 +27,7 @@
       :slides-per-view="3.2"
       :space-between="10"
       :navigation="true"
-      :mousewheel="true"
+      :mousewheel="{ forceToAxis: false, sensitivity: 0.1, releaseOnEdges: true }"
       :free-mode="true"
       :free-mode-momentum="true"
       :autoplay="{
@@ -176,7 +176,7 @@ const clearHoverDescription = () => {
 .custom-scrollbar-progress {
   height: 1px;
   background-color: var(--color-white);
-  transition: width 0.3s;
+  transition: width 0.1s ease;
 }
 
 /*

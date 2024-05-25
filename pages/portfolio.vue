@@ -22,10 +22,14 @@ useHead({
   meta: [{ name: "description", content: "My amazing site." }],
 });
 
+const isMobile = ref(window.innerWidth < 768);
+
 //Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
-definePageMeta({
-  pageTransition: false,
-})
+if (!isMobile.value) {
+  definePageMeta({
+    pageTransition: false,
+  });
+}
 </script>
 
 <style>
