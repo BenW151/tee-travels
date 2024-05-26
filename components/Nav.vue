@@ -107,66 +107,6 @@ nav a::after {
   background-color: var(--color-white);
 }
 
-.wordmark {
-  white-space: nowrap;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.wordmark a {
-  display: flex;
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-S);
-  margin: 0;
-  white-space: nowrap;
-}
-
-.wordmark a::after {
-  bottom: 0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: var(--spacing-3);
-}
-
-.logo img {
-  height: 2rem;
-  margin-right: var(--spacing-2);
-}
-
-.logo-hide {
-  max-width: 0px;
-  white-space: pre;
-  overflow: hidden;
-  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-/* body.scrolled-past-header .logo-hide {
-  max-width: 9em;
-  transition: max-width 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-body.scrolled-past-header nav .logo img {
-  filter: invert(100%);
-  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-body.scrolled-past-header nav a {
-  color: var(--color-black);
-}
-
-body.scrolled-past-header nav a::after {
-  background-color: var(--color-black);
-}
-
-body.scrolled-past-header .burger-menu::before {
-  filter: invert(100%);
-}*/
-
 @media (max-width: 767px) {
   nav {
     height: 6vh;
@@ -179,18 +119,6 @@ body.scrolled-past-header .burger-menu::before {
 
   .nav {
     margin: 0;
-  }
-
-  .wordmark {
-    margin-left: 0;
-    margin-top: var(--spacing-1);
-    margin-bottom: var(--spacing-1);
-    z-index: -1;
-  }
-
-  .wordmark a {
-    font-size: var(--font-size-L);
-    line-height: normal;
   }
 }
 </style>
