@@ -57,7 +57,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://benward.io/social-preview.png",
+          content: "https://benward.io/images/index-background.png",
         },
         { property: "og:url", content: "https://benward.io/" },
         { name: "twitter:card", content: "summary_large_image" },
