@@ -23,17 +23,24 @@
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</NuxtLink
       >
-      <NuxtLink
+      <button
         class="item back-to-top"
-        to="#header"
-        aria-label="Terms and Conditions Page"
-        ><LucideArrowUp /></NuxtLink
-      >
+        @click="scrollToTop"
+        aria-label="Back to Top">
+        <LucideArrowUp />
+      </button>
     </div>
   </footer>
 </template>
 
-<script></script>
+<script setup>
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+</script>
 
 <style scoped>
 footer {
@@ -80,12 +87,13 @@ footer .container {
   transform-origin: bottom left;
 }
 
-a.back-to-top::after {
+.back-to-top::after {
   display: none;
 }
 
 .back-to-top:hover {
   transform: translateY(-4px);
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -96,13 +104,13 @@ a.back-to-top::after {
   .footer {
     align-items: start;
     margin: 0;
+    text-align: center;
   }
 
   .footer .item {
     font-size: var(--font-size-XS);
     margin: 0 var(--spacing-3);
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
