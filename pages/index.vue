@@ -35,7 +35,7 @@
             <template #body>
               <p>
                 I transitioned from Network Engineering and IT Service Desk to
-                web development to merge my technical skills with my passion for
+                Web Development to merge my technical skills with my passion for
                 design. Self-taught and proficient in modern web technologies
                 like HTML, CSS, and JavaScript, I focus on creating
                 user-friendly and visually appealing websites. I believe in
@@ -77,8 +77,8 @@
             <template #body>
               <p>
                 I provide a full spectrum of web development services, including
-                custom website design, responsive development, e-commerce
-                solutions, and ongoing maintenance, ensuring a seamless and
+                custom website design, responsive, accessible development,
+                optimised SEO, and ongoing maintenance, ensuring a seamless and
                 engaging user experience across all devices.
               </p>
               <NuxtLink
@@ -93,7 +93,7 @@
           <Accordion>
             <AccordionItem title="Web Development" index="1">
               <p>
-                Comprehensive web development services that include full-stack
+                Comprehensive web development services that include front-end
                 development, custom website design, and CMS solutions. Using the
                 latest technologies and best practices, I ensure each website is
                 robust, fast-loading, and fully responsive, providing users with
@@ -145,23 +145,18 @@
             <template #title>Skills</template>
             <template #body>
               <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
-              </p>
-              <p>
-                I craft responsive, SEO-friendly websites grounded in HTML5 and
-                CSS3, and enhance user experience with dynamic JavaScript
-                functionalities. Specializing in React.js, I develop efficient
-                UI components and effectively manage application state using
-                modern techniques like hooks and Redux. My proficiency in Figma
-                aids in creating clean, functional design prototypes that align
-                closely with project goals. Additionally, my design expertise
-                ensures visually compelling and practical layouts and graphics
-                that optimize user interaction and aesthetic appeal. Each
-                project reflects my skill in merging technical capabilities with
-                creative insights, guaranteeing innovation and quality.
+                I bring a solid foundation in web development and design,
+                focused on creating functional and visually appealing digital
+                experiences. I craft responsive, SEO-friendly websites using
+                HTML5 and CSS3, and enhance user interaction with dynamic
+                JavaScript functionalities. With a focus on Vue and Nuxt, I
+                develop efficient UI components and manage application state
+                using modern techniques. My proficiency in Figma allows me to
+                create clean, functional design prototypes that align with
+                project goals. Additionally, my design skills ensure layouts and
+                graphics are both visually compelling and practical. Each
+                project demonstrates my ability to merge technical capabilities
+                with creative insights, ensuring innovation and quality.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -219,18 +214,19 @@
               </p>
               <ListsDefaultList
                 title="Key Duties"
+                :bullets="true"
                 :items="[
                   {
                     id: 1,
-                    text: ' - Designing and developing websites.',
+                    text: 'Designing and developing websites.',
                   },
                   {
                     id: 2,
-                    text: ' - Ensuring excellent website performance and accessibility.',
+                    text: 'Ensuring excellent website performance and accessibility.',
                   },
                   {
                     id: 3,
-                    text: ' - Keeping up to date with new technologies.',
+                    text: 'Keeping up to date with new technologies.',
                   },
                 ]" />
               <h4>Network Engineer</h4>
@@ -245,22 +241,23 @@
               </p>
               <ListsDefaultList
                 title="Key Duties"
+                :bullets="true"
                 :items="[
                   {
                     id: 1,
-                    text: ' - Firewall policy management for enhanced security.',
+                    text: 'Firewall policy management for enhanced security.',
                   },
                   {
                     id: 2,
-                    text: ' - Configuration of L2 & L3 switches and F5 LTM.',
+                    text: 'Configuration of L2 & L3 switches and F5 LTM.',
                   },
                   {
                     id: 3,
-                    text: ' - Network patching for equipment and data centers.',
+                    text: 'Network patching for equipment and data centers.',
                   },
                   {
                     id: 4,
-                    text: ' - Utilized networking software tools like SolarWinds, Infoblox, F5 BigIP, Checkpoint, Zscaler, and Juniper.',
+                    text: 'Utilized networking software tools like SolarWinds, Infoblox, F5 BigIP, Checkpoint, Zscaler, and Juniper.',
                   },
                 ]" />
               <h4>IT Service Desk Analyst</h4>
@@ -274,18 +271,19 @@
               </p>
               <ListsDefaultList
                 title="Key Duties"
+                :bullets="true"
                 :items="[
                   {
                     id: 1,
-                    text: ' - First-line technical support via telephone, email, and face-to-face.',
+                    text: 'First-line technical support via telephone, email, and face-to-face.',
                   },
                   {
                     id: 2,
-                    text: ' - Contribution to new system and software deployments.',
+                    text: 'Contribution to new system and software deployments.',
                   },
                   {
                     id: 3,
-                    text: ' - Administering a wide range of systems, including Active Directory, Microsoft Azure, VMWare Horizon, Exchange Online, and Defender.',
+                    text: 'Administering a wide range of systems, including Active Directory, Microsoft Azure, VMWare Horizon, Exchange Online, and Defender.',
                   },
                 ]" />
               <h4>Infrastructure Technician</h4>
@@ -299,22 +297,23 @@
               </p>
               <ListsDefaultList
                 title="Key Duties"
+                :bullets="true"
                 :items="[
                   {
                     id: 1,
-                    text: ' - First-line technical support through various channels.',
+                    text: 'First-line technical support through various channels.',
                   },
                   {
                     id: 2,
-                    text: ' - Contributing to site infrastructure migrations.',
+                    text: 'Contributing to site infrastructure migrations.',
                   },
                   {
                     id: 3,
-                    text: ' - Developing PC images for streamlined setups.',
+                    text: 'Developing PC images for streamlined setups.',
                   },
                   {
                     id: 4,
-                    text: ' - Administering Microsoft Exchange and Citrix desktops.',
+                    text: 'Administering Microsoft Exchange and Citrix desktops.',
                   },
                 ]" />
             </template>

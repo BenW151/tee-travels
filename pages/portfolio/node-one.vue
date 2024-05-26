@@ -192,10 +192,10 @@
           quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
           imgSrc="/images/person.png" />
         <NuxtLink
-          class="underline-out-icon"
+          class="underline-out"
           to="/portfolio"
           aria-label="Portfolio Page"
-          ><LucideArrowRight/>View Next Project</NuxtLink
+          >View Next Project</NuxtLink
         >
       </LayoutGridContainer>
     </section>
