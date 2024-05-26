@@ -32,44 +32,59 @@ const updatePosition = (event) => {
       break;
     } else if (classList.includes("accordion-item")) {
       hoveredText.value = "Read More";
-      hoverClass.value = "accordion";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("swiper-button-next")) {
       hoveredText.value = "Next";
-      hoverClass.value = "swiper-button";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("swiper-button-prev")) {
       hoveredText.value = "Previous";
-      hoverClass.value = "swiper-button";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("slide-image")) {
       hoveredText.value = "View";
-      hoverClass.value = "slide-image";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("get-in-touch")) {
       hoveredText.value = "Contact Me";
-      hoverClass.value = "get-in-touch";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("portfolio-header")) {
       hoveredText.value = "Header";
-      hoverClass.value = "get-in-touch";
+      hoverClass.value = "show";
       found = true;
       break;
     } else if (classList.includes("portfolio-logo")) {
       hoveredText.value = "Logo";
-      hoverClass.value = "get-in-touch";
+      hoverClass.value = "show";
+      found = true;
+      break;
+    } else if (classList.includes("portfolio-team")) {
+      hoveredText.value = "Team";
+      hoverClass.value = "show";
+      found = true;
+      break;
+    } else if (classList.includes("portfolio-lighthouse")) {
+      hoveredText.value = "PSI Score";
+      hoverClass.value = "show";
+      found = true;
+      break;
+    } else if (classList.includes("portfolio-services")) {
+      hoveredText.value = "Services";
+      hoverClass.value = "show";
       found = true;
       break;
     } else {
       switch (tagName) {
         case "header":
           hoveredText.value = "Scroll";
-          hoverClass.value = "header";
+          hoverClass.value = "show";
           found = true;
           break;
         default:
@@ -154,7 +169,7 @@ const circleClasses = computed(() => {
 }
 
 /* Additional styles for different hover locations */
-.header, .accordion, .get-in-touch, .swiper-button, .slide-image {
+.show {
   opacity: 1;
 }
 </style>

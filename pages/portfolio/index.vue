@@ -36,6 +36,7 @@ if (!isMobile.value) {
 #carousel .container {
   padding-left: 1vw;
   padding-right: 1vw;
+  padding-bottom: 7.5vh;
 }
 
 @media (max-width: 767px) {

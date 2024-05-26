@@ -2,6 +2,7 @@
   <div class="portfolio">
     <Header
       imageUrl="/images/node-one-office.png"
+      imageAlt="Modern office"
       title="Node One"
       subtitle="IT Services"
       buttonText="View Website"
@@ -107,7 +108,7 @@
         <ImageWithTextOverlay
           imageUrl="/images/node-one-team.png"
           altText="Celestial Relaxation Room"
-          class="portfolio-temp"
+          class="portfolio-team"
           overlayText="The Team"
           textPosition="right"
           rellaxPercentage="0"
@@ -256,7 +257,7 @@ useHead({
   grid-row-start: 1;
 }
 
-.portfolio .portfolio-temp {
+.portfolio .portfolio-team {
   grid-column-end: 8;
   margin-left: -500px;
 }
