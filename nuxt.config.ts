@@ -44,29 +44,28 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "short description sentence",
+          content: "Offering top-notch web development services to help businesses succeed online.",
         },
-        { name: "keywords", content: "keyword, keyword, keyword" },
-        { name: "theme-color", content: "#ffffff" },
+        { name: "keywords", content: "Web, Development, WebDev, Benward, Web Development Services, Ben Ward, Web Development, Web Developer, Developer" },
+        { name: "theme-color", content: "#000000" },
         { name: "msapplication-TileColor", content: "#da532c" },
         { name: "msapplication-config", content: "/browserconfig.xml" },
-        { property: "og:title", content: "Template - Short Tagline" },
+        { property: "og:title", content: "Ben Ward - Web Development Services" },
         {
           property: "og:description",
-          content:
-            "Offering top-notch IT services and solutions tailored to your business needs. From cloud services to cybersecurity, weve got you covered.",
+          content: "Offering top-notch web development services to help businesses succeed online.",
         },
         {
           property: "og:image",
-          content: "https://www.yourwebsite.com/images/social-preview.png",
+          content: "https://benward.io/social-preview.png",
         },
-        { property: "og:url", content: "https://www.yourwebsite.com/" },
+        { property: "og:url", content: "https://benward.io/" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [
         {
           rel: "canonical",
-          href: "https://benw151.github.io/template/index.html",
+          href: "https://benward.io/",
         },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
