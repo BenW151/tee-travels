@@ -338,7 +338,7 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Index",
+  title: "Ben Ward - Home",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 </script>
