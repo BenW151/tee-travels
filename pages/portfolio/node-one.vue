@@ -172,6 +172,13 @@
               were also implemented to enhance online visibility and attract
               more business clientele.
             </p>
+            <a
+              class="link underline-out-icon"
+              href="https://pagespeed.web.dev/analysis/https-portfolio-nuxt-6c3-pages-dev-portfolio-node-one/15ywm0w7vd?hl=en-GB&form_factor=desktop"
+              aria-label="Node One Website"
+              target="_blank"
+              ><LucideExternalLink/>View Full Report</a
+            >
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
