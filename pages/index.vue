@@ -34,10 +34,15 @@
             <template #title>About Me</template>
             <template #body>
               <p>
-                At the foundation of design lies creativity, which should
-                consistently serve a specific objective. I focus on balancing
-                originality with practicality, ensuring my designs embody the
-                philosophy that form and function are complementary.
+                I transitioned from Network Engineering and IT Service Desk to
+                web development to merge my technical skills with my passion for
+                design. Self-taught and proficient in modern web technologies
+                like HTML, CSS, and JavaScript, I focus on creating
+                user-friendly and visually appealing websites. I believe in
+                designs where form and function work together seamlessly,
+                ensuring that each project is not only aesthetically pleasing
+                but also highly functional. My aim is to continuously innovate
+                and exceed expectations in every project.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -186,10 +191,15 @@
             <template #title>Experience</template>
             <template #body>
               <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
+                After a successful career as a Network Engineer and IT Service
+                Desk professional, I made a proactive career switch to web
+                development. Driven by a passion for creating dynamic and
+                user-friendly websites, I undertook extensive self-study to
+                learn modern web technologies. Through dedicated learning and
+                hands-on projects, I have developed strong skills in HTML, CSS,
+                JavaScript, and various web development frameworks. I am excited
+                to bring my technical expertise and problem-solving abilities
+                into a web development role.
               </p>
               <a
                 class="underline-out-icon"
