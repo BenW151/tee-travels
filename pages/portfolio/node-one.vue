@@ -64,12 +64,10 @@
 
     <section>
       <LayoutGridContainer>
-        <ImageWithTextOverlay
+        <ImageDefault
           imageUrl="/images/node-one-header.PNG"
           altText="Celestial Relaxation Room"
           class="portfolio-header"
-          overlayText="Header"
-          textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
       </LayoutGridContainer>
@@ -77,12 +75,10 @@
 
     <section class="logo">
       <LayoutGridContainer>
-        <ImageWithTextOverlay
+        <ImageDefault
           imageUrl="/images/node-one-logo.png"
           imageAlt="Office"
           class="portfolio-logo"
-          overlayText="Logo"
-          textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
@@ -105,12 +101,10 @@
 
     <section class="team">
       <LayoutGridContainer>
-        <ImageWithTextOverlay
+        <ImageDefault
           imageUrl="/images/node-one-team.png"
           altText="Celestial Relaxation Room"
           class="portfolio-team"
-          overlayText="The Team"
-          textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
@@ -148,12 +142,10 @@
             </p>
           </template>
         </TextParagraphWithTitle>
-        <ImageWithTextOverlay
+        <ImageDefault
           imageUrl="/images/node-one-services.png"
           altText="Celestial Relaxation Room"
           class="portfolio-services"
-          overlayText="Services"
-          textPosition="left"
           rellaxPercentage="0"
           rellaxSpeed="0" />
       </LayoutGridContainer>
@@ -161,12 +153,10 @@
 
     <section class="lighthouse">
       <LayoutGridContainer>
-        <ImageWithTextOverlay
+        <ImageDefault
           imageUrl="/images/lighthouse-score.png"
           imageAlt="Office"
           class="portfolio-lighthouse"
-          overlayText="Lighthouse Score"
-          textPosition="right"
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
@@ -213,7 +203,7 @@ useHead({
 </script>
 
 <style>
-.image.image-text-overlay img {
+.image.image-default img {
   object-fit: contain;
 }
 
