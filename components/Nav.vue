@@ -6,7 +6,6 @@
         to="/"
         :class="{ active: $route.path === '/' }"
         aria-label="Home Page"
-        @click="toggleMenu"
         >About</NuxtLink
       >
       <NuxtLink
@@ -14,7 +13,6 @@
         to="/portfolio"
         :class="{ active: $route.path === '/portfolio' }"
         aria-label="Portfolio Page"
-        @click="toggleMenu"
         >Portfolio</NuxtLink
       >
       <NuxtLink
@@ -22,7 +20,6 @@
         to="/contact"
         :class="{ active: $route.path === '/contact' }"
         aria-label="Contact Page"
-        @click="toggleMenu"
         >Contact</NuxtLink
       >
     </div>
