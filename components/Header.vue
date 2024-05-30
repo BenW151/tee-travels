@@ -123,7 +123,7 @@ header a.link::after {
 .hero-text {
   grid-column: 1 / 17;
   grid-row-start: 1;
-  margin-top: 40vh;
+  margin-top: 5vh;
 }
 
 .hero-text h2 {
@@ -180,5 +180,11 @@ header .item:nth-child(3) {
     grid-row-start: 2;
     margin-top: auto;
   }
+}
+</style>
+
+<style>
+.hero-text .line-container, .hero-text .text-reveal {
+  justify-content: center;
 }
 </style>

@@ -35,7 +35,7 @@ const props = defineProps({
 <style scoped>
 .paragraph-with-title {
   grid-column: span 7;
-  background-color: var(--color-black);
+  /*background-color: var(--color-black);*/
   margin: auto;
   z-index: 5;
 }

@@ -53,7 +53,6 @@ footer {
 }
 
 footer .container {
-  color: var(--color-white);
   padding-bottom: var(--spacing-3);
   padding-top: var(--spacing-3);
   white-space: nowrap;
@@ -74,7 +73,6 @@ footer .container {
 .footer .item {
   font-size: var(--font-size-XXS);
   margin: 0 var(--spacing-3);
-  color: var(--color-white);
   pointer-events: all;
 }
 

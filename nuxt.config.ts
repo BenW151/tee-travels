@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Lexend: {
-        wght: [300, 400, 500],
+      "Roboto Slab": {
+        wght: [300, 400, 500, 600, 700],
         ital: [100, 400],
       },
       "Roboto Flex": {

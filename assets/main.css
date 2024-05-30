@@ -19,14 +19,14 @@ body {
   --border-radius-box: 5px;
   --color-white: #f2f3f4;
   --color-black: #070707;
-  --font-color-primary: var(--color-white);
-  --font-color-secondary: var(--color-black);
-  --accent-primary: var(--color-white);
-  --accent-secondary: var(--color-black);
-  --background-primary: var(--color-black);
-  --background-secondary: var(--color-white);
+  --font-color-primary: var(--color-black);
+  --font-color-secondary: var(--color-white);
+  --accent-primary: var(--color-black);
+  --accent-secondary: var(--color-white);
+  --background-primary: var(--color-white);
+  --background-secondary: var(--color-black);
   --background-opacity: rgba(0, 0, 0, 0.1);
-  --font-family-primary: "Lexend", sans-serif;
+  --font-family-primary: "Roboto Slab", sans-serif;
   --font-family-secondary: "Roboto Flex", sans-serif;
   --font-size-XXL: 10vw;
   --font-size-XL: 8vw;
@@ -74,7 +74,7 @@ h6 {
 h1 {
   font-size: var(--font-size-XXL);
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h2 {

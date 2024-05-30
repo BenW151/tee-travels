@@ -1,14 +1,14 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/travel-blog.png"
       imageAlt="Laptop with code on desk"
-      title="Ben Ward"
-      subtitle="Web Developer"
+      title="Why Not Adventures"
+      subtitle="Off The Beaten Track"
       buttonText="Contact Me"
       buttonUrl="/contact"
       buttonDescription="Contact Me"
-      headerClass="header-medium">
+      headerClass="header-large">
       <template #description>
         <p>Building sleek, scalable, and interactive web experiences.</p>
       </template>

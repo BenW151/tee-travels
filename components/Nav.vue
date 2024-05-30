@@ -12,11 +12,11 @@
         class="nav-item text-reveal"
         to="/portfolio"
         :class="{ active: $route.path === '/portfolio' }"
-        aria-label="Portfolio Page"
-        >Portfolio</NuxtLink
+        aria-label="Destinations Page"
+        >Destinations</NuxtLink
       >
       <NuxtLink
-        class="nav-item text-reveal nav-contact"
+        class="nav-item text-reveal"
         to="/contact"
         :class="{ active: $route.path === '/contact' }"
         aria-label="Contact Page"
@@ -83,12 +83,8 @@ nav.nav-hidden a {
   margin-left: var(--spacing-3);
   margin-right: var(--spacing-3);
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   overflow: hidden;
-}
-
-.nav-contact {
-  margin-left: auto;
 }
 
 .nav-item.active::after {
