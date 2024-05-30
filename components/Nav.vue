@@ -66,19 +66,23 @@ onUnmounted(() => {
 nav {
   position: fixed;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   top: 0;
   width: 100%;
-  height: 4vw;
+  height: 3vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   pointer-events: none;
-}
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: rgba(255, 255, 255, 0.8);}
 
+/*
 nav.nav-hidden a {
   transform: translateY(-140%);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
+*/
 
 .nav {
   display: flex;
@@ -100,12 +104,12 @@ nav.nav-hidden a {
 nav a {
   font-size: var(--font-size-XXS);
   margin: 0 var(--spacing-3);
-  color: var(--color-white);
+  color: var(--color-black);
   pointer-events: all;
 }
 
 nav a::after {
-  background-color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 .nav .wordmark {

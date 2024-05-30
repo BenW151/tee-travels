@@ -1,8 +1,9 @@
 <template>
   <div>
     <Header
-      backgroundColor="var(--color-black)"
-      title="Portfolio"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Laptop with code on desk"
+      title="Destinations"
       subtitle="Previous Work"
       headerClass="header-small">
       <template #description> </template>

@@ -1,10 +1,10 @@
 <template>
   <div class="portfolio">
     <Header
-      imageUrl="/images/node-one-office.png"
+      imageUrl="/images/travel-blog.png"
       imageAlt="Modern office"
-      title="Node One"
-      subtitle="IT Services"
+      title="Pakistan"
+      subtitle="7 Nights"
       buttonText="View Website"
       buttonUrl="/contact"
       buttonDescription="View Website"
@@ -177,7 +177,7 @@
               href="https://pagespeed.web.dev/analysis/https-portfolio-nuxt-6c3-pages-dev-portfolio-node-one/15ywm0w7vd?hl=en-GB&form_factor=desktop"
               aria-label="Node One Website"
               target="_blank"
-              ><LucideExternalLink/>View Full Report</a
+              ><LucideExternalLink />View Full Report</a
             >
           </template>
         </TextParagraphWithTitle>
@@ -284,11 +284,11 @@ useHead({
 }
 
 .portfolio .card {
-  grid-column:10 / 16;
+  grid-column: 10 / 16;
 }
 
 .end a {
-  grid-column:10 / 15;
+  grid-column: 10 / 15;
 }
 
 @media (max-width: 767px) {

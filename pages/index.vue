@@ -5,12 +5,17 @@
       imageAlt="Laptop with code on desk"
       title="Why Not Adventures"
       subtitle="Off The Beaten Track"
-      buttonText="Contact Me"
-      buttonUrl="/contact"
-      buttonDescription="Contact Me"
+      buttonText="View Destinations"
+      buttonUrl="/portfolio"
+      buttonDescription="Destinations"
       headerClass="header-large">
       <template #description>
-        <p>Building sleek, scalable, and interactive web experiences.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
       </template>
     </Header>
 
@@ -31,7 +36,7 @@
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>About Me</template>
+            <template #title>Why Choose Us?</template>
             <template #body>
               <p>
                 I transitioned from Network Engineering and IT Service Desk to

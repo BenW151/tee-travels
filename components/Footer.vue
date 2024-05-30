@@ -44,6 +44,7 @@ const scrollToTop = () => {
 
 <style scoped>
 footer {
+  background-color: var(--color-white);
   display: flex;
   align-items: flex-start;
   width: 100%;
