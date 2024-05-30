@@ -46,26 +46,6 @@
               </p>
             </template>
           </TextParagraphWithTitle>
-          <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title><LucideBoxSelect /> Form</template>
-            <template #body>
-              <p>
-                Aesthetic appeal and visual innovation, ensuring each design not
-                only captures the eye but also embodies a distinctive artistic
-                expression that elevates the overall user experience.
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-          <TextParagraphWithTitle subtitleTag="h4" linkUrl="/facilities">
-            <template #title><LucideFrame /> Function</template>
-            <template #body>
-              <p>
-                Practicality and usability, with designs engineered to deliver
-                optimal performance and ease of use, ensuring they meet the
-                exact needs of users with efficiency and reliability.
-              </p>
-            </template>
-          </TextParagraphWithTitle>
         </LayoutGridContainer>
       </section>
 
@@ -179,148 +159,6 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="experience">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Experience" />
-          <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>Experience</template>
-            <template #body>
-              <p>
-                After a successful career as a Network Engineer and IT Service
-                Desk professional, I made a proactive career switch to web
-                development. Driven by a passion for creating dynamic and
-                user-friendly websites, I undertook extensive self-study to
-                learn modern web technologies. Through dedicated learning and
-                hands-on projects, I have developed strong skills in HTML, CSS,
-                JavaScript, and various web development frameworks. I am excited
-                to bring my technical expertise and problem-solving abilities
-                into a web development role.
-              </p>
-              <a
-                class="underline-out-icon"
-                href="/ben-ward-cv.pdf"
-                aria-label="Download CV"
-                download=""
-                ><LucideDownload />Download CV</a
-              >
-              <h4>Web Developer</h4>
-              <h5>benward.io</h5>
-              <h6>April 2023 - Current</h6>
-              <p>
-                With a profound expertise in both web development and design, I
-                bring a comprehensive skill set that encompasses the essentials
-                and complexities of creating aesthetic and functional digital
-                experiences.
-              </p>
-              <ListsDefaultList
-                title="Key Duties"
-                :bullets="true"
-                :items="[
-                  {
-                    id: 1,
-                    text: 'Designing and developing websites.',
-                  },
-                  {
-                    id: 2,
-                    text: 'Ensuring excellent website performance and accessibility.',
-                  },
-                  {
-                    id: 3,
-                    text: 'Keeping up to date with new technologies.',
-                  },
-                ]" />
-              <h4>Network Engineer</h4>
-              <h5>Hargreaves Lansdown</h5>
-              <h6>August 2022 - April 2023</h6>
-              <p>
-                I was responsible for configuring, maintaining, and supporting
-                our network infrastructure that serviced 2000+ colleagues and
-                1.6 million clients. I collaborated with IT teams, managed
-                security policies, optimized network performance, and utilized
-                various software tools.
-              </p>
-              <ListsDefaultList
-                title="Key Duties"
-                :bullets="true"
-                :items="[
-                  {
-                    id: 1,
-                    text: 'Firewall policy management for enhanced security.',
-                  },
-                  {
-                    id: 2,
-                    text: 'Configuration of L2 & L3 switches and F5 LTM.',
-                  },
-                  {
-                    id: 3,
-                    text: 'Network patching for equipment and data centers.',
-                  },
-                  {
-                    id: 4,
-                    text: 'Utilized networking software tools like SolarWinds, Infoblox, F5 BigIP, Checkpoint, Zscaler, and Juniper.',
-                  },
-                ]" />
-              <h4>IT Service Desk Analyst</h4>
-              <h5>Hargreaves Lansdown</h5>
-              <h6>December 2018 - August 2022</h6>
-              <p>
-                I provided efficient first-line support to approximately 2000
-                users. My role included actively participating in new system
-                roll-outs and maintaining a professional and customer-focused
-                approach.
-              </p>
-              <ListsDefaultList
-                title="Key Duties"
-                :bullets="true"
-                :items="[
-                  {
-                    id: 1,
-                    text: 'First-line technical support via telephone, email, and face-to-face.',
-                  },
-                  {
-                    id: 2,
-                    text: 'Contribution to new system and software deployments.',
-                  },
-                  {
-                    id: 3,
-                    text: 'Administering a wide range of systems, including Active Directory, Microsoft Azure, VMWare Horizon, Exchange Online, and Defender.',
-                  },
-                ]" />
-              <h4>Infrastructure Technician</h4>
-              <h5>Marsh Corporate</h5>
-              <h6>October 2017 - November 2018</h6>
-              <p>
-                I provided first-line support for several thousand users across
-                the UK, handling inquiries related to desktops, laptops, and
-                peripherals. I also engaged in second-line tasks, including
-                server administration and site infrastructure migrations.
-              </p>
-              <ListsDefaultList
-                title="Key Duties"
-                :bullets="true"
-                :items="[
-                  {
-                    id: 1,
-                    text: 'First-line technical support through various channels.',
-                  },
-                  {
-                    id: 2,
-                    text: 'Contributing to site infrastructure migrations.',
-                  },
-                  {
-                    id: 3,
-                    text: 'Developing PC images for streamlined setups.',
-                  },
-                  {
-                    id: 4,
-                    text: 'Administering Microsoft Exchange and Citrix desktops.',
-                  },
-                ]" />
-            </template>
-          </TextParagraphWithTitle>
-        </LayoutGridContainer>
-      </section>
-
       <section id="contact">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Contact" />
@@ -361,18 +199,6 @@ useHead({
 #about .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
-}
-
-#about .paragraph-with-title:nth-of-type(2) {
-  grid-column: 6 / 10;
-  grid-row-start: 2;
-  padding-top: 0;
-}
-
-#about .paragraph-with-title:nth-of-type(3) {
-  grid-column: 10 / 14;
-  grid-row-start: 2;
-  padding-top: 0;
 }
 
 #services .paragraph-with-title:nth-of-type(1) {

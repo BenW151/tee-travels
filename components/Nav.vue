@@ -1,6 +1,11 @@
 <template>
   <nav :class="{ scrolled: isScrolled, 'nav-hidden': isHidden }">
     <div class="nav">
+      <div class="wordmark">
+        <NuxtLink class="logo-hide" to="/" aria-label="Home Page"
+          >Why Not Adventures</NuxtLink
+        >
+      </div>
       <NuxtLink
         class="nav-item text-reveal"
         to="/"
@@ -101,6 +106,23 @@ nav a {
 
 nav a::after {
   background-color: var(--color-white);
+}
+
+.nav .wordmark {
+  margin-right: auto;
+}
+
+.nav .wordmark a {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-XS);
+}
+
+body.scrolled-past-header nav a {
+  color: var(--color-black);
+}
+
+body.scrolled-past-header nav a::after {
+  background-color: var(--color-black);
 }
 
 @media (max-width: 767px) {
