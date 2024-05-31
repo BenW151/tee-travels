@@ -8,7 +8,7 @@
       buttonText="View Website"
       buttonUrl="/contact"
       buttonDescription="View Website"
-      headerClass="header-large">
+      headerClass="header-medium">
       <template #description>
         <p>
           An IT services company offering best in class service and support. For

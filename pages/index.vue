@@ -20,23 +20,11 @@
     </Header>
 
     <main>
-      <section id="lead-text">
-        <LayoutGridContainer>
-          <TextReveal tag="h3" class="item">
-            Empowering businesses through engaging and practical designs, built
-            for outstanding performance and significant reach.
-          </TextReveal>
-          <p>
-            Providing either one off collaborations, or ongoing relationships.
-          </p>
-        </LayoutGridContainer>
-      </section>
-
       <section id="about">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-            <template #title>Why Choose Us?</template>
+          <TextParagraphWithTitle subtitleTag="h3">
+            <template #title>Why Choose Why Not?</template>
             <template #body>
               <p>
                 I transitioned from Network Engineering and IT Service Desk to
@@ -51,13 +39,18 @@
               </p>
             </template>
           </TextParagraphWithTitle>
+          <ImageWithTextOverlay
+            imageUrl="/images/travel-blog.png"
+            altText="Hot Stones Therapy"
+            overlayText="Fairy Meadows, <br /> Pakistan"
+            textPosition="right" />
         </LayoutGridContainer>
       </section>
 
       <section id="services">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
-          <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+          <TextParagraphWithTitle subtitleTag="h3">
             <template #title>Services</template>
             <template #body>
               <p>
@@ -73,7 +66,6 @@
                 >Previous Work</NuxtLink
               >
             </template>
-            <template #link-text>View Treatments & Packages</template>
           </TextParagraphWithTitle>
           <Accordion>
             <AccordionItem title="Web Development" index="1">
@@ -126,8 +118,8 @@
       <section id="skills">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Skills" />
-          <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>Skills</template>
+          <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
+            <template #title>Who Are We?</template>
             <template #body>
               <p>
                 I bring a solid foundation in web development and design,
@@ -145,22 +137,11 @@
               </p>
             </template>
           </TextParagraphWithTitle>
-          <ListsDefaultList
-            title="Languages"
-            :items="[
-              { id: 1, text: 'HTML 5' },
-              { id: 2, text: 'CSS 3' },
-              { id: 3, text: 'JavaScript' },
-            ]" />
-          <ListsDefaultList
-            title="Frameworks"
-            :items="[
-              { id: 1, text: 'Nuxt 3' },
-              { id: 2, text: 'Vue 3' },
-            ]" />
-          <ListsDefaultList
-            title="Design"
-            :items="[{ id: 1, text: 'Figma' }]" />
+          <ImageWithTextOverlay
+            imageUrl="/images/tia.png"
+            altText="Hot Stones Therapy"
+            overlayText="Tia, <br /> Founder"
+            textPosition="left" />
         </LayoutGridContainer>
       </section>
 
@@ -187,23 +168,19 @@ useHead({
 </script>
 
 <style scoped>
-#lead-text .container {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
-}
-
-#lead-text .text-reveal {
-  font-size: var(--font-size-M);
-}
-
-#lead-text .item,
-#lead-text p {
-  grid-column: 2 / 16;
-}
-
 #about .paragraph-with-title:nth-of-type(1) {
-  grid-column: 6 / 14;
+  grid-column: 3 / 11;
   grid-row: 1;
+}
+
+#about .paragraph-with-title:nth-of-type(1) .item-inner {
+  margin-left: 0;
+}
+
+#about .image:nth-of-type(2) {
+  grid-column: 9 / 16;
+  grid-row: 1;
+  height: 40vw;
 }
 
 #services .paragraph-with-title:nth-of-type(1) {
@@ -217,7 +194,6 @@ useHead({
   /*height: 40vw;*/
 }
 
-#skills .paragraph-with-title:nth-of-type(1),
 #experience .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
@@ -232,19 +208,17 @@ useHead({
   margin-bottom: 1vh;
 }
 
-#skills .list:nth-child(3) {
-  grid-column: 6 / 9;
-  grid-row-start: 2;
+#skills .paragraph-with-title:nth-of-type(1){
+  grid-column: 9 / 16;
+  grid-row: 1;
 }
 
-#skills .list:nth-child(4) {
-  grid-column: 9 / 12;
-  grid-row-start: 2;
-}
 
-#skills .list:nth-child(5) {
-  grid-column: 12 / 15;
-  grid-row-start: 2;
+#skills .image:nth-of-type(2) {
+  grid-column: 3 / 11;
+  grid-row: 1 / 3;
+  height: 50vw;
+  z-index: -1;
 }
 
 #contact .get-in-touch {
@@ -258,12 +232,6 @@ useHead({
 }
 
 @media (max-width: 767px) {
-  #lead-text .item,
-  #lead-text p {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
   #about .item.paragraph-with-title {
     grid-column: 1 / 7;
     grid-row: auto;

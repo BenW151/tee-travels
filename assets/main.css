@@ -149,10 +149,6 @@ section {
   grid-column: span 8;
 }
 
-.item-inner {
-  margin: var(--spacing-4);
-}
-
 .block-quote {
   grid-column: span 4;
   font-style: italic;
@@ -195,6 +191,14 @@ button {
   display: inline-block;
   outline: none;
   border: none;
+}
+
+header a {
+  color: var(--font-color-secondary);
+}
+
+header a::after {
+  background-color: var(--font-color-secondary);
 }
 
 a.link,
@@ -492,10 +496,6 @@ li {
 
  
   /** Main Formatting */
-
-  .item-inner {
-    margin: 0;
-  }
 
   /** Text */
 

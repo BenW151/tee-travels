@@ -1,6 +1,6 @@
 <template>
   <div class="item paragraph-with-title">
-    <!--<div class="item-inner">-->
+    <div :class="['item-inner', textPosition]">
       <component :is="subtitleTag" class="subtitle">
         <template v-if="useTextReveal">
           <TextReveal>
@@ -15,7 +15,7 @@
       <slot name="body">
         <p class="body">Default paragraph content.</p>
       </slot>
-    <!--</div>-->
+    </div>
   </div>
 </template>
 
@@ -29,20 +29,40 @@ const props = defineProps({
     type: Boolean,
     default: true, // Use TextReveal by default
   },
+  textPosition: {
+    type: String,
+    default: "left",
+  },
 });
 </script>
 
 <style scoped>
 .paragraph-with-title {
   grid-column: span 7;
-  /*background-color: var(--color-black);*/
+  background-color: var(--color-white);
   margin: auto;
   z-index: 5;
+}
+
+.item-inner {
+  margin: var(--spacing-4);
+}
+
+.item-inner.right {
+  margin-right: 0;
+}
+
+.item-inner.left {
+  margin-left: 0;
 }
 
 @media (max-width: 767px) {
 .paragraph-with-title {
     grid-column: span 6;
+  }
+
+  .item-inner {
+    margin: 0;
   }
 }
 </style>
