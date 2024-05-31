@@ -3,7 +3,7 @@
     <div class="nav">
       <div class="wordmark">
         <NuxtLink class="logo-hide" to="/" aria-label="Home Page"
-          >Why Not<span class="question">?</span><span class="adventures"> Adventures</span></NuxtLink
+          >Why Not Adventures</NuxtLink
         >
       </div>
       <NuxtLink
@@ -119,36 +119,6 @@ nav a::after {
 .nav .wordmark a {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-XS);
-  align-items: center;
-  display: flex;
-}
-
-span {
-  white-space: pre;
-}
-
-.question {
-  max-width: 0;
-  width: 0;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.adventures {
-  max-width: fit-content;
-  width: fit-content;
-  overflow: hidden;
-  display: inline-block;
-}
-
-body.scrolled-past-header .question {
-  max-width: fit-content;
-  width: fit-content;
-}
-
-body.scrolled-past-header .adventures {
-  max-width: 0;
-  width: 0;
 }
 
 body.scrolled-past-header nav a {
