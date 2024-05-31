@@ -47,6 +47,36 @@
         </LayoutGridContainer>
       </section>
 
+      <section id="skills">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Skills" />
+          <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
+            <template #title>Who Am I?</template>
+            <template #body>
+              <p>
+                I bring a solid foundation in web development and design,
+                focused on creating functional and visually appealing digital
+                experiences. I craft responsive, SEO-friendly websites using
+                HTML5 and CSS3, and enhance user interaction with dynamic
+                JavaScript functionalities. With a focus on Vue and Nuxt, I
+                develop efficient UI components and manage application state
+                using modern techniques. My proficiency in Figma allows me to
+                create clean, functional design prototypes that align with
+                project goals. Additionally, my design skills ensure layouts and
+                graphics are both visually compelling and practical. Each
+                project demonstrates my ability to merge technical capabilities
+                with creative insights, ensuring innovation and quality.
+              </p>
+            </template>
+          </TextParagraphWithTitle>
+          <ImageWithTextOverlay
+            imageUrl="/images/tia.png"
+            altText="Hot Stones Therapy"
+            overlayText="Tia, <br /> Founder"
+            textPosition="left" />
+        </LayoutGridContainer>
+      </section>
+
       <section id="services">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
@@ -115,36 +145,6 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="skills">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Skills" />
-          <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
-            <template #title>Who Are We?</template>
-            <template #body>
-              <p>
-                I bring a solid foundation in web development and design,
-                focused on creating functional and visually appealing digital
-                experiences. I craft responsive, SEO-friendly websites using
-                HTML5 and CSS3, and enhance user interaction with dynamic
-                JavaScript functionalities. With a focus on Vue and Nuxt, I
-                develop efficient UI components and manage application state
-                using modern techniques. My proficiency in Figma allows me to
-                create clean, functional design prototypes that align with
-                project goals. Additionally, my design skills ensure layouts and
-                graphics are both visually compelling and practical. Each
-                project demonstrates my ability to merge technical capabilities
-                with creative insights, ensuring innovation and quality.
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-          <ImageWithTextOverlay
-            imageUrl="/images/tia.png"
-            altText="Hot Stones Therapy"
-            overlayText="Tia, <br /> Founder"
-            textPosition="left" />
-        </LayoutGridContainer>
-      </section>
-
       <section id="contact">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Contact" />
@@ -183,6 +183,19 @@ useHead({
   height: 40vw;
 }
 
+#skills .paragraph-with-title:nth-of-type(1){
+  grid-column: 9 / 16;
+  grid-row: 1;
+}
+
+
+#skills .image:nth-of-type(2) {
+  grid-column: 3 / 11;
+  grid-row: 1;
+  height: 40vw;
+  z-index: -1;
+}
+
 #services .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
@@ -192,33 +205,6 @@ useHead({
   grid-column: 6 / 17;
   grid-row: 2;
   /*height: 40vw;*/
-}
-
-#experience .paragraph-with-title:nth-of-type(1) {
-  grid-column: 6 / 14;
-  grid-row: 1;
-}
-
-#experience h4 {
-  margin-top: var(--spacing-4);
-  margin-bottom: 0;
-}
-
-#experience h5 {
-  margin-bottom: 1vh;
-}
-
-#skills .paragraph-with-title:nth-of-type(1){
-  grid-column: 9 / 16;
-  grid-row: 1;
-}
-
-
-#skills .image:nth-of-type(2) {
-  grid-column: 3 / 11;
-  grid-row: 1 / 3;
-  height: 50vw;
-  z-index: -1;
 }
 
 #contact .get-in-touch {

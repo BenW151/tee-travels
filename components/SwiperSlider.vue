@@ -6,7 +6,8 @@
         :key="index"
         class="image-item"
         @mouseover="updateHoverDescription(image)"
-        @mouseleave="clearHoverDescription">
+        @mouseleave="clearHoverDescription"
+      >
         <NuxtLink :href="image.link">
           <img :src="image.src" :alt="image.alt" class="vertical-image" />
         </NuxtLink>
@@ -25,18 +26,20 @@
       :mousewheel="{
         forceToAxis: false,
         sensitivity: 0.1,
-        releaseOnEdges: true,
+        releaseOnEdges: true
       }"
       :free-mode="true"
       :free-mode-momentum="true"
       @swiper="onSwiper"
-      @slideChange="onSlideChange">
+      @slideChange="onSlideChange"
+    >
       <swiper-slide
         v-for="(image, index) in images"
         :key="index"
         class="swiper-slide-custom"
         @mouseover="updateHoverDescription(image)"
-        @mouseleave="clearHoverDescription">
+        @mouseleave="clearHoverDescription"
+      >
         <NuxtLink :href="image.link">
           <img :src="image.src" :alt="image.alt" class="slide-image" />
         </NuxtLink>
@@ -45,7 +48,8 @@
     <div class="custom-scrollbar">
       <div
         class="custom-scrollbar-progress"
-        :style="{ width: `${progress}%` }"></div>
+        :style="{ width: `${progress}%` }"
+      ></div>
     </div>
     <div v-if="hoverDescription" class="image-description">
       <p>{{ hoverDescription }}</p>
@@ -59,48 +63,16 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
-const images = [
-  {
-    src: "/images/node-one-office.png",
-    alt: "Node One",
-    subDescription: "IT Services",
-    link: "/portfolio/node-one",
+const props = defineProps({
+  images: {
+    type: Array,
+    required: true,
   },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Tee Travels",
-    subDescription: "Tour Provider",
-    link: "/portfolio/tias-tours",
-  },
-  {
-    src: "/images/node-one-office.png",
-    alt: "Node Three",
-    subDescription: "Mobile Development",
-    link: "/portfolio/node-one",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Node Four",
-    subDescription: "Cloud Services",
-    link: "/portfolio/node-one",
-  },
-  {
-    src: "/images/node-one-office.png",
-    alt: "Node Five",
-    subDescription: "Consulting",
-    link: "/portfolio/node-one",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Node Six",
-    subDescription: "Support",
-    link: "/portfolio/node-one",
-  },
-];
+});
 
 const hoverDescription = ref("");
 const hoverSubDescription = ref("");

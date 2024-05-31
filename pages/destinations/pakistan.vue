@@ -73,6 +73,12 @@
       </LayoutGridContainer>
     </section>
 
+    <section id="carousel">
+      <div class="container">
+        <SwiperSlider :images="imageData" />
+      </div>
+    </section>
+
     <section class="logo">
       <LayoutGridContainer>
         <ImageDefault
@@ -207,6 +213,45 @@ useHead({
   title: "Ben Ward - Portfolio",
   meta: [{ name: "description", content: "My amazing site." }],
 });
+
+const imageData = [
+  {
+    src: "/images/travel-blog.png",
+    alt: "Node One",
+    subDescription: "IT Services",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Tee Travels",
+    subDescription: "Tour Provider",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/node-one-office.png",
+    alt: "Node Three",
+    subDescription: "Mobile Development",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Node Four",
+    subDescription: "Cloud Services",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/node-one-office.png",
+    alt: "Node Five",
+    subDescription: "Consulting",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Node Six",
+    subDescription: "Support",
+    link: "/destinations/pakistan",
+  },
+];
 </script>
 
 <style>
@@ -285,6 +330,12 @@ useHead({
 
 .portfolio .card {
   grid-column: 10 / 16;
+}
+
+#carousel .container {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 7.5vh;
 }
 
 .end a {

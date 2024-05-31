@@ -15,8 +15,8 @@
       >
       <NuxtLink
         class="nav-item text-reveal"
-        to="/portfolio"
-        :class="{ active: $route.path === '/portfolio' }"
+        to="/destinations"
+        :class="{ active: $route.path === '/destinations' }"
         aria-label="Destinations Page"
         >Destinations</NuxtLink
       >

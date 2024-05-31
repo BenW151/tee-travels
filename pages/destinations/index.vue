@@ -11,7 +11,7 @@
 
     <section id="carousel">
       <div class="container">
-        <SwiperSlider />
+        <SwiperSlider :images="imageData" />
       </div>
     </section>
   </div>
@@ -31,6 +31,45 @@ if (!isMobile.value) {
     pageTransition: false,
   });
 }
+
+const imageData = [
+  {
+    src: "/images/node-one-office.png",
+    alt: "Node One",
+    subDescription: "IT Services",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Tee Travels",
+    subDescription: "Tour Provider",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/node-one-office.png",
+    alt: "Node Three",
+    subDescription: "Mobile Development",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Node Four",
+    subDescription: "Cloud Services",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/node-one-office.png",
+    alt: "Node Five",
+    subDescription: "Consulting",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Node Six",
+    subDescription: "Support",
+    link: "/destinations/pakistan",
+  },
+];
 </script>
 
 <style>
