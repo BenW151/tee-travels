@@ -219,7 +219,7 @@ button::after {
   width: 100%;
   transform: scaleX(0);
   height: 1px;
-  bottom: -3px;
+  bottom: -2px;
   left: 0;
   background-color: var(--font-color-primary);
   transform-origin: bottom right;
@@ -468,7 +468,7 @@ li {
     --spacing-3: 4.6vw;
     --spacing-4: 5vw;
     --spacing-5: 7vw;
-    --font-size-XXL: 18vw;
+    --font-size-XXL: 14vw;
     --font-size-XL: 12vw;
     --font-size-L: 10vw;
     --font-size-M: 7vw;

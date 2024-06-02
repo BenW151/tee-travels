@@ -6,27 +6,37 @@
           >Why Not Adventures</NuxtLink
         >
       </div>
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/"
-        :class="{ active: $route.path === '/' }"
-        aria-label="Home Page"
-        >About</NuxtLink
-      >
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/destinations"
-        :class="{ active: $route.path === '/destinations' }"
-        aria-label="Destinations Page"
-        >Destinations</NuxtLink
-      >
-      <NuxtLink
-        class="nav-item text-reveal"
-        to="/contact"
-        :class="{ active: $route.path === '/contact' }"
-        aria-label="Contact Page"
-        >Contact</NuxtLink
-      >
+      <div class="burger-menu" @click="toggleMenu">
+        <span :class="{ open: isMenuOpen }"></span>
+        <span :class="{ open: isMenuOpen }"></span>
+        <span :class="{ open: isMenuOpen }"></span>
+      </div>
+      <div :class="{ 'nav-items': true, open: isMenuOpen }">
+        <NuxtLink
+          class="nav-item text-reveal"
+          to="/"
+          :class="{ active: $route.path === '/' }"
+          aria-label="Home Page"
+          @click="toggleMenu"
+          >About</NuxtLink
+        >
+        <NuxtLink
+          class="nav-item text-reveal"
+          to="/destinations"
+          :class="{ active: $route.path === '/destinations' }"
+          aria-label="Destinations Page"
+          @click="toggleMenu"
+          >Destinations</NuxtLink
+        >
+        <NuxtLink
+          class="nav-item text-reveal"
+          to="/contact"
+          :class="{ active: $route.path === '/contact' }"
+          aria-label="Contact Page"
+          @click="toggleMenu"
+          >Contact</NuxtLink
+        >
+      </div>
     </div>
   </nav>
 </template>
@@ -37,6 +47,8 @@ import { ref, onMounted, onUnmounted } from "vue";
 const isScrolled = ref(false);
 const isHidden = ref(false);
 const lastScrollTop = ref(0);
+const isMenuOpen = ref(false);
+const isMobile = computed(() => window.innerWidth < 768);
 
 function handleScroll() {
   const scrollTop = window.scrollY;
@@ -51,6 +63,12 @@ function handleScroll() {
 
   isScrolled.value = scrollTop > 0;
   lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+}
+
+function toggleMenu() {
+  if (isMobile.value) {
+    isMenuOpen.value = !isMenuOpen.value;
+  }
 }
 
 onMounted(() => {
@@ -72,28 +90,24 @@ nav {
   height: 3vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  pointer-events: none;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
-/*
-nav.nav-hidden a {
-  transform: translateY(-140%);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-*/
-
 .nav {
   display: flex;
   width: 100%;
-  padding-bottom: 5px;
   margin: 0;
   margin-left: var(--spacing-3);
   margin-right: var(--spacing-3);
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-item.active::after {
@@ -132,15 +146,75 @@ body.scrolled-past-header nav a::after {
 @media (max-width: 767px) {
   nav {
     height: 6vh;
+    z-index: 100000;
   }
 
-  nav a {
+  .nav-items {
     display: flex;
-    font-size: var(--font-size-XS);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
   }
 
-  .nav {
-    margin: 0;
+  .nav-items.open {
+    transform: translateY(0);
+  }
+
+  .nav-items.open a {
+    margin: 10px 0;
+    color: var(--color-black);
+    font-size: var(--font-size-XL);
+    font-family: var(--font-family-primary);
+  }
+
+  .nav-items.open a::after {
+    background-color: var(--color-black);
+  }
+
+  .burger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: var(--font-size-S);
+    height: var(--font-size-S);
+    z-index: 10;
+    pointer-events: all;
+  }
+
+  .burger-menu span {
+    width: 100%;
+    height: 1px;
+    background: var(--color-white);
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  .burger-menu span.open, body.scrolled-past-header .burger-menu span {
+    background: var(--color-black);
+  }
+
+  .burger-menu span.open:nth-child(1) {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .burger-menu span.open:nth-child(2) {
+    opacity: 1;
+  }
+
+  .burger-menu span.open:nth-child(3) {
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 </style>
