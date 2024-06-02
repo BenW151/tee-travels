@@ -42,6 +42,7 @@
           <ImageWithTextOverlay
             imageUrl="/images/travel-blog.png"
             altText="Hot Stones Therapy"
+            rellaxSpeed="10"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
         </LayoutGridContainer>
@@ -72,6 +73,7 @@
           <ImageWithTextOverlay
             imageUrl="/images/tia.png"
             altText="Hot Stones Therapy"
+            rellaxSpeed="10"
             overlayText="Tia, <br /> Founder"
             textPosition="left" />
         </LayoutGridContainer>
@@ -222,27 +224,6 @@ useHead({
     grid-row: auto;
   }
 
-  .information .item.paragraph-with-title,
-  .information .item.accordion {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  .information .item.image {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    height: 20vh;
-    margin: 0;
-  }
-
-  .information .item.accordion {
-    height: 100vw;
-  }
-
-  .information .item.image:nth-of-type(4) {
-    display: none;
-  }
-
   section div.container.grid div.item, .contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
@@ -259,6 +240,10 @@ useHead({
 
   .contact .get-in-touch h2 {
     font-size: 14.5vw;
+  }
+
+  .container .image:nth-of-type(2) {
+    height: 40vh;
   }
 }
 </style>

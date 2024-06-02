@@ -12,7 +12,8 @@
 </template>
 
 <script setup>
-// Define the props the component accepts
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+const isMobile = ref(window.innerWidth <= 768);
 const props = defineProps({
   imageUrl: {
     type: String,
@@ -34,11 +35,24 @@ const props = defineProps({
     type: String,
     default: "0.6", // Default value for rellax effect
   },
-  rellaxSpeed: {
-    type: String,
-    default: "2", // Default speed for rellax effect
-  },
 });
+
+const handleResize = () => {
+  isMobile.value = window.innerWidth <= 768;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
+const rellaxSpeed = computed(() => {
+  return isMobile.value ? "0" : "1";
+});
+
 </script>
 
 <style scoped>
