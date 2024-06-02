@@ -1,5 +1,5 @@
 <template>
-  <p class="item accent section-label">{{ labelText }} —</p>
+  <p class="item accent section-label"><LucideAsterisk /> {{ labelText }}</p>
 </template>
 
 <script setup>
@@ -20,6 +20,13 @@ const props = defineProps({
   font-weight: 300;
   grid-column: 1 / 2;
   height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.lucide {
+  margin-right: 3px;
+  stroke-width: 1px;
 }
 
 @media (max-width: 767px) {
