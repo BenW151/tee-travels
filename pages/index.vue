@@ -20,7 +20,7 @@
     </Header>
 
     <main>
-      <section id="about">
+      <section class="about">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
@@ -47,7 +47,7 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="skills">
+      <section class="skills">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Skills" />
           <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
@@ -77,7 +77,7 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="services">
+      <section class="services">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
           <TextParagraphWithTitle subtitleTag="h3">
@@ -145,7 +145,7 @@
         </LayoutGridContainer>
       </section>
 
-      <section id="contact">
+      <section class="contact">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Contact" />
           <NuxtLink
@@ -168,101 +168,96 @@ useHead({
 </script>
 
 <style scoped>
-#about .paragraph-with-title:nth-of-type(1) {
+.about .paragraph-with-title:nth-of-type(1) {
   grid-column: 3 / 11;
   grid-row: 1;
 }
 
-#about .paragraph-with-title:nth-of-type(1) .item-inner {
+.about .paragraph-with-title:nth-of-type(1) .item-inner {
   margin-left: 0;
 }
 
-#about .image:nth-of-type(2) {
+.about .image:nth-of-type(2) {
   grid-column: 9 / 16;
   grid-row: 1;
   height: 40vw;
 }
 
-#skills .paragraph-with-title:nth-of-type(1){
+.skills .paragraph-with-title:nth-of-type(1) {
   grid-column: 9 / 16;
   grid-row: 1;
 }
 
-
-#skills .image:nth-of-type(2) {
+.skills .image:nth-of-type(2) {
   grid-column: 3 / 11;
   grid-row: 1;
   height: 40vw;
   z-index: -1;
 }
 
-#services .paragraph-with-title:nth-of-type(1) {
+.services .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
 }
 
-#services .accordion {
+.services .accordion {
   grid-column: 6 / 17;
   grid-row: 2;
   /*height: 40vw;*/
 }
 
-#contact .get-in-touch {
+.contact .get-in-touch {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-#contact .get-in-touch h2 {
+.contact .get-in-touch h2 {
   font-size: var(--font-size-XXL);
 }
 
 @media (max-width: 767px) {
-  #about .item.paragraph-with-title {
+  .about .item.paragraph-with-title {
     grid-column: 1 / 7;
     grid-row: auto;
   }
 
-  #information .item.paragraph-with-title,
-  #information .item.accordion {
+  .information .item.paragraph-with-title,
+  .information .item.accordion {
     grid-column: 1 / 7;
     grid-row: auto;
   }
 
-  #information .item.image {
+  .information .item.image {
     grid-column: 1 / 7;
     grid-row: auto;
     height: 20vh;
     margin: 0;
   }
 
-  #information .item.accordion {
+  .information .item.accordion {
     height: 100vw;
   }
 
-  #information .item.image:nth-of-type(4) {
+  .information .item.image:nth-of-type(4) {
     display: none;
   }
 
-  #services .item.paragraph-with-title:nth-of-type(1),
-  #services .accordion,
-  #skills .item.paragraph-with-title:nth-of-type(1),
-  #contact .get-in-touch,
-  #experience .item.paragraph-with-title:nth-of-type(1) {
+  section div.container.grid div.item, .contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
   }
 
-  #skills .item.list {
+  .skills .item.list {
     grid-column: span 2;
     grid-row: auto;
   }
 
-  #experience h5 {
+  .experience h5 {
     margin-bottom: 1vw;
   }
 
-  #contact .get-in-touch h2 {
+  .contact .get-in-touch h2 {
     font-size: 14.5vw;
   }
 }

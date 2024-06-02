@@ -332,7 +332,7 @@ const imageData = [
   grid-column: 10 / 16;
 }
 
-#carousel .container {
+.carousel .container {
   padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 7.5vh;
@@ -343,7 +343,7 @@ const imageData = [
 }
 
 @media (max-width: 767px) {
-  #carousel .container {
+  .carousel .container {
     padding-left: var(--spacing-5);
     padding-right: var(--spacing-5);
   }

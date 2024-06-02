@@ -9,7 +9,7 @@
       <template #description> </template>
     </Header>
 
-    <section id="carousel">
+    <section class="carousel">
       <div class="container">
         <SwiperSlider :images="imageData" />
       </div>
@@ -73,14 +73,14 @@ const imageData = [
 </script>
 
 <style>
-#carousel .container {
+.carousel .container {
   padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 7.5vh;
 }
 
 @media (max-width: 767px) {
-  #carousel .container {
+  .carousel .container {
     padding-left: var(--spacing-5);
     padding-right: var(--spacing-5);
   }
