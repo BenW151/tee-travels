@@ -6,7 +6,7 @@
       title="Why Not Adventures"
       subtitle="Off The Beaten Track"
       buttonText="View Destinations"
-      buttonUrl="/portfolio"
+      buttonUrl="/destinations"
       buttonDescription="Destinations"
       headerClass="header-large">
       <template #description>

@@ -98,8 +98,8 @@ nav {
   display: flex;
   width: 100%;
   margin: 0;
-  margin-left: var(--spacing-3);
-  margin-right: var(--spacing-3);
+  margin-left: var(--spacing-5);
+  margin-right: var(--spacing-5);
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
@@ -113,6 +113,10 @@ nav {
 .nav-item.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.nav-items .nav-item:last-child {
+  margin-right: 0;
 }
 
 nav a {
@@ -133,6 +137,7 @@ nav a::after {
 .nav .wordmark a {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-XS);
+  margin-left: 0;
 }
 
 body.scrolled-past-header nav a {

@@ -19,6 +19,7 @@ body {
   --border-radius-box: 5px;
   --color-white: #f2f3f4;
   --color-black: #070707;
+  --opacity: 70%;
   --font-color-primary: var(--color-black);
   --font-color-secondary: var(--color-white);
   --accent-primary: var(--color-black);
@@ -259,8 +260,8 @@ button:hover::after {
 
 .lucide {
   color: var(--font-color-primary);
-  width: var(--font-size-S);
-  height: var(--font-size-S);
+  width: var(--font-size-XS);
+  height: var(--font-size-XS);
 }
 
 .underline-out-icon svg {

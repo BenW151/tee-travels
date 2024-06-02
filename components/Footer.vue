@@ -1,23 +1,65 @@
 <template>
   <footer ref="footer">
-    <div class="footer">
-      <p class="item">Copyright ©2024</p>
+    <LayoutGridContainer>
+      <div :class="{ 'nav-items': true, open: isMenuOpen }">
+        <NuxtLink
+          class="nav-item"
+          to="/"
+          :class="{ active: $route.path === '/' }"
+          aria-label="Home Page"
+          @click="toggleMenu"
+          >About</NuxtLink
+        >
+        <NuxtLink
+          class="nav-item"
+          to="/destinations"
+          :class="{ active: $route.path === '/destinations' }"
+          aria-label="Destinations Page"
+          @click="toggleMenu"
+          >Destinations</NuxtLink
+        >
+        <NuxtLink
+          class="nav-item"
+          to="/contact"
+          :class="{ active: $route.path === '/contact' }"
+          aria-label="Contact Page"
+          @click="toggleMenu"
+          >Contact</NuxtLink
+        >
+      </div>
+      <ListsLinkList
+        class="socials"
+        :links="[
+          {
+            url: 'https://www.linkedin.com/in/benw151/',
+            label: 'Instagram',
+            description: 'Instagram',
+          },
+          {
+            url: 'https://github.com/BenW151/',
+            label: 'Facebook',
+            description: 'Facebook',
+          },
+          {
+            url: 'mailto:myemail@email.com',
+            label: 'Twitter',
+            description: 'Twitter',
+          },
+        ]" />
+      <FormsNewsletter />
+    </LayoutGridContainer>
+
+    <LayoutGridContainer class="footer-end">
+      <p class="item copyright">Copyright ©2024</p>
       <NuxtLink
-        class="item footer-contact"
-        :class="{ active: $route.path === '/contact' }"
-        to="/contact"
-        aria-label="Contact Page"
-        >Contact</NuxtLink
-      >
-      <NuxtLink
-        class="item"
+        class="item privacy-policy"
         :class="{ active: $route.path === '/privacy-policy' }"
         to="/privacy-policy"
         aria-label="Privacy Policy Page"
         >Privacy Policy</NuxtLink
       >
       <NuxtLink
-        class="item"
+        class="item terms"
         :class="{ active: $route.path === '/terms-and-conditions' }"
         to="/terms-and-conditions"
         aria-label="Terms and Conditions Page"
@@ -29,7 +71,7 @@
         aria-label="Back to Top">
         <LucideArrowUp />
       </button>
-    </div>
+    </LayoutGridContainer>
   </footer>
 </template>
 
@@ -46,9 +88,10 @@ const scrollToTop = () => {
 footer {
   background-color: var(--color-white);
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 4vw;
+  height: 30vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -59,26 +102,49 @@ footer .container {
   white-space: nowrap;
 }
 
-.footer {
+footer .nav-items {
+  grid-column: 1 / 4;
   display: flex;
-  width: 100%;
-  padding-bottom: 5px;
-  margin: 0;
-  margin-left: var(--spacing-3);
-  margin-right: var(--spacing-3);
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+  flex-direction: column;
 }
 
-.footer .item {
-  font-size: var(--font-size-XXS);
-  margin: 0 var(--spacing-3);
-  pointer-events: all;
+footer .nav-items .nav-item {
+  font-size: var(--font-size-M);
+  font-family: var(--font-family-primary);
 }
 
-.footer .footer-contact {
+footer .socials {
+  grid-column: 1 / 4;
+  grid-row-start: 2;
+}
+
+.contact-form {
+  grid-column: 11 / 14;
+  grid-row-start: 2;
+}
+
+.footer-end .item {
   margin-right: auto;
+}
+
+.copyright {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.terms {
+  grid-column: 6 / 8;
+  grid-row: 1;
+}
+
+.privacy-policy {
+  grid-column: 11 / 13;
+  grid-row: 1;
+}
+
+.back-to-top {
+  grid-column: 16 / 17;
+  grid-row: 1;
 }
 
 .item.active::after {
@@ -95,9 +161,14 @@ footer .container {
   cursor: pointer;
 }
 
+.nav-item.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media (max-width: 767px) {
   footer {
-    height: 6vh;
+    height: 30vh;
   }
 
   .footer {
