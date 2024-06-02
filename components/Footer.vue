@@ -47,6 +47,27 @@
           },
         ]" />
       <FormsNewsletter />
+      <div class="legal">
+        <div class="images">
+          <ImageDefault
+            imageUrl="/images/atol.svg"
+            altText="Celestial Relaxation Room"
+            class="atol"
+            rellaxPercentage="0"
+            rellaxSpeed="0" />
+          <ImageDefault
+            imageUrl="/images/abta.png"
+            altText="Celestial Relaxation Room"
+            class="abta"
+            rellaxPercentage="0"
+            rellaxSpeed="0" />
+        </div>
+        <p>
+          Flight-inclusive Packages are financially
+          protected by the ATOL scheme – ATOL number 00000.
+        </p>
+        <p>Why Not Adventures are a UK registered company – Address, Address, 123, Address, United Kingdom, GL1 7SQ</p>
+      </div>
     </LayoutGridContainer>
 
     <LayoutGridContainer class="footer-end">
@@ -123,6 +144,23 @@ footer .socials {
   grid-row-start: 2;
 }
 
+.legal {
+  grid-column: 11 / 17;
+  grid-row-start: 1;
+  white-space: wrap;
+}
+
+.images {
+  display: inline-flex;
+}
+
+.atol,
+.abta {
+  height: 5vw;
+  margin: var(--spacing-3);
+  margin-left: 0;
+}
+
 .footer-end .item {
   margin-right: auto;
 }
@@ -180,6 +218,35 @@ footer .socials {
   .footer .item {
     font-size: var(--font-size-XS);
     margin: 0 var(--spacing-3);
+  }
+
+  .contact-form, .legal {
+    grid-column: 1 / 7;
+    grid-row-start: auto;
+  }
+
+  .atol, .abta {
+    height: 10vh;
+  }
+
+  .copyright {
+    grid-column: 5 / 7;
+    grid-row: 1;
+  }
+
+  .terms {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .privacy-policy {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .back-to-top {
+    grid-column: 5 / 7;
+    grid-row: 2;
   }
 }
 

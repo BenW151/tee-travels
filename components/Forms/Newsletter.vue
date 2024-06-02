@@ -1,7 +1,10 @@
 <template>
   <div class="item contact-form">
     <div>
-      <p class="sign-up">Sign up to our newsletter to <br> receive updates on upcoming trips.</p>
+      <p class="sign-up">
+        Sign up to our newsletter to <br />
+        receive updates on upcoming trips.
+      </p>
       <p>Newsletter</p>
       <form
         action="https://formspree.io/f/xdoqplga"
@@ -15,9 +18,7 @@
             placeholder="Email"
             required />
         </label>
-        <button class="link" type="submit">
-          Submit
-        </button>
+        <button class="link" type="submit">Submit</button>
       </form>
     </div>
   </div>
@@ -58,7 +59,7 @@ form {
   display: flex;
   flex-direction: row;
 }
- 
+
 .sign-up {
   opacity: var(--opacity);
 }
@@ -66,6 +67,11 @@ form {
 @media (max-width: 767px) {
   .contact-form {
     grid-column: 1 / 7;
+  }
+
+  input,
+  textarea {
+    width: 60vw;
   }
 }
 </style>
