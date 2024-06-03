@@ -51,8 +51,14 @@
             { id: 4, text: 'Horse Ride' },
           ]" />
         <ListsDefaultList
-          title="Industry"
-          :items="[{ id: 1, text: 'IT Services' }]" />
+          title="Regions Visited"
+          :items="[
+            { id: 1, text: 'Islamabad' },
+            { id: 2, text: 'Lahore' },
+            { id: 3, text: 'Fairy Meadows' },
+            { id: 4, text: 'Nanga Parbat' },
+          ]" />
+
         <ListsDefaultList
           title="Upcoming Dates"
           :items="[
