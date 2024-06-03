@@ -20,7 +20,7 @@
     </Header>
 
     <main>
-      <section class="about">
+      <section class="about text-left">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
@@ -48,7 +48,7 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="skills">
+      <section class="skills text-right">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Skills" />
           <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
@@ -170,31 +170,26 @@ useHead({
 </script>
 
 <style scoped>
-.about .paragraph-with-title:nth-of-type(1) {
+.text-left .paragraph-with-title {
   grid-column: 3 / 11;
-  grid-row: 1;
+  grid-row-start: 1;
 }
 
-.about .paragraph-with-title:nth-of-type(1) .item-inner {
-  margin-left: 0;
-}
-
-.about .image:nth-of-type(2) {
+.text-left .image {
   grid-column: 9 / 16;
-  grid-row: 1;
+  grid-row-start: 1;
   height: 40vw;
 }
 
-.skills .paragraph-with-title:nth-of-type(1) {
+.text-right .paragraph-with-title {
   grid-column: 9 / 16;
-  grid-row: 1;
+  grid-row-start: 1;
 }
 
-.skills .image:nth-of-type(2) {
+.text-right .image {
   grid-column: 3 / 11;
-  grid-row: 1;
+  grid-row-start: 1;
   height: 40vw;
-  z-index: -1;
 }
 
 .services .paragraph-with-title:nth-of-type(1) {
@@ -219,23 +214,9 @@ useHead({
 }
 
 @media (max-width: 767px) {
-  .about .item.paragraph-with-title {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
   section div.container.grid div.item, .contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
-  }
-
-  .skills .item.list {
-    grid-column: span 2;
-    grid-row: auto;
-  }
-
-  .experience h5 {
-    margin-bottom: 1vw;
   }
 
   .contact .get-in-touch h2 {

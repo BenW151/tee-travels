@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio">
+  <div class="destination">
     <Header
       imageUrl="/images/travel-blog.png"
       imageAlt="Modern office"
@@ -18,7 +18,7 @@
       </template>
     </Header>
 
-    <section class="portfolio-item">
+    <section class="overview">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Overview" />
         <TextParagraphWithTitle subtitleTag="h3">
@@ -127,24 +127,24 @@
     <section>
       <LayoutGridContainer>
         <ImageDefault
-          imageUrl="/images/node-one-header.PNG"
+          imageUrl="/images/travel-blog.png"
           altText="Celestial Relaxation Room"
-          class="portfolio-header"
+          class="destination-header"
           rellaxPercentage="0"
           rellaxSpeed="0" />
       </LayoutGridContainer>
     </section>
 
-    <section class="logo">
+    <section class="itinerary-day text-left" id="day1">
       <LayoutGridContainer>
         <ImageDefault
-          imageUrl="/images/node-one-logo.png"
+          imageUrl="/images/travel-blog.png"
           imageAlt="Office"
-          class="portfolio-logo"
+          class="itinerary-image"
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>A Fresh, Modern Appearance</template>
+          <template #title>Day 1 | XYZ hike</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.
@@ -161,16 +161,16 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="team">
+    <section class="itinerary-day text-right" id="day2">
       <LayoutGridContainer>
         <ImageDefault
-          imageUrl="/images/node-one-team.png"
+          imageUrl="/images/travel-blog.png"
           altText="Celestial Relaxation Room"
-          class="portfolio-team"
+          class="itinerary-image"
           rellaxPercentage="0"
           rellaxSpeed="0" />
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>A Personable, Approachable Team</template>
+        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
+          <template #title>Day 2 | XYZ hike</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.
@@ -187,42 +187,16 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="services" id="day1">
-      <LayoutGridContainer>
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>A Full Spectrum Of Services On Offer</template>
-          <template #body>
-            <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-        <ImageDefault
-          imageUrl="/images/node-one-services.png"
-          altText="Celestial Relaxation Room"
-          class="portfolio-services"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
-      </LayoutGridContainer>
-    </section>
-
-    <section class="lighthouse" id="day2">
+    <section class="itinerary-day text-left" id="day3">
       <LayoutGridContainer>
         <ImageDefault
-          imageUrl="/images/lighthouse-score.png"
+          imageUrl="/images/travel-blog.png"
           imageAlt="Office"
-          class="portfolio-lighthouse"
+          class="itinerary-image"
           rellaxPercentage="0"
           rellaxSpeed="0" />
         <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>High Performance, Available to Everyone</template>
+          <template #title>Day 3 | XYZ hike</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.
@@ -234,13 +208,32 @@
               were also implemented to enhance online visibility and attract
               more business clientele.
             </p>
-            <a
-              class="link underline-out-icon"
-              href="https://pagespeed.web.dev/analysis/https-portfolio-nuxt-6c3-pages-dev-portfolio-node-one/15ywm0w7vd?hl=en-GB&form_factor=desktop"
-              aria-label="Node One Website"
-              target="_blank"
-              ><LucideExternalLink />View Full Report</a
-            >
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
+    <section class="itinerary-day text-right" id="day4">
+      <LayoutGridContainer>
+        <ImageDefault
+          imageUrl="/images/travel-blog.png"
+          imageAlt="Office"
+          class="itinerary-image"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
+        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
+          <template #title>Day 4 | XYZ hike</template>
+          <template #body>
+            <p>
+              An IT services company offering best in class service and support.
+              For this project, I designed and developed a professional website
+              that effectively communicates the firm's expertise in IT
+              solutions. The site features a robust, informative layout that
+              includes service descriptions, client testimonials, and a live
+              chat feature for instant customer support. Strategic SEO practices
+              were also implemented to enhance online visibility and attract
+              more business clientele.
+            </p>
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
@@ -255,8 +248,8 @@
           imgSrc="/images/person.png" />
         <NuxtLink
           class="underline-out"
-          to="/portfolio"
-          aria-label="Portfolio Page"
+          to="/destination"
+          aria-label="destination Page"
           >View Next Project</NuxtLink
         >
       </LayoutGridContainer>
@@ -266,7 +259,7 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Portfolio",
+  title: "Ben Ward - destination",
   meta: [{ name: "description", content: "My amazing site." }],
 });
 
@@ -311,33 +304,29 @@ const imageData = [
 </script>
 
 <style>
-.image.image-default img {
-  object-fit: contain;
-}
-
 .container.grid {
   overflow: visible;
 }
 
-.portfolio-item .paragraph-with-title {
+.overview .paragraph-with-title {
   grid-column: 3 / 11;
 }
 
-.portfolio-item .list {
+.overview .list {
   margin-top: 2vw;
 }
 
-.portfolio-item .list:nth-child(3) {
+.overview .list:nth-child(3) {
   grid-column: 3 / 6;
   grid-row-start: 2;
 }
 
-.portfolio-item .list:nth-child(4) {
+.overview .list:nth-child(4) {
   grid-column: 6 / 9;
   grid-row-start: 2;
 }
 
-.portfolio-item .list:nth-child(5) {
+.overview .list:nth-child(5) {
   grid-column: 9 / 12;
   grid-row-start: 2;
 }
@@ -352,74 +341,58 @@ const imageData = [
   height: 30vw;
 }
 
-.portfolio .portfolio-header {
-  grid-column: 2 / 16;
+.destination .destination-header {
+  grid-column: 1 / 17;
+  height: 40vw;
 }
 
-.portfolio .portfolio-logo {
-  grid-column: 11 / 14;
-}
-
-.logo .paragraph-with-title {
-  grid-column: 3 / 9;
+.text-left .paragraph-with-title {
+  grid-column: 3 / 11;
   grid-row-start: 1;
 }
 
-.portfolio .portfolio-team {
-  grid-column-end: 8;
-  margin-left: -500px;
+.text-left .image {
+  grid-column: 9 / 16;
+  grid-row-start: 1;
+  height: 40vw;
 }
 
-.team .paragraph-with-title {
-  grid-column: 10 / 16;
+.text-right .paragraph-with-title {
+  grid-column: 9 / 16;
   grid-row-start: 1;
 }
 
-.portfolio .portfolio-services {
-  grid-column: 9 / 17;
-  margin-right: -400px;
-}
-
-.services .paragraph-with-title {
-  grid-column: 2 / 8;
+.text-right .image {
+  grid-column: 3 / 11;
   grid-row-start: 1;
+  height: 40vw;
 }
 
-.portfolio .portfolio-lighthouse {
-  grid-column: 10 / 16;
-}
-
-.lighthouse .paragraph-with-title {
-  grid-column: 2 / 8;
-  grid-row-start: 1;
-}
-
-.portfolio .card {
-  grid-column: 10 / 16;
+.destination .card {
+  grid-column: 11 / 17;
 }
 
 .end a {
-  grid-column: 10 / 15;
+  grid-column: 11 / 17;
 }
 
 @media (max-width: 767px) {
-  .portfolio .item.paragraph-with-title,
-  .portfolio .item.image,
-  .portfolio .item.card,
-  .end a {
-    grid-column: 1 / 7;
-    grid-row: auto;
-    margin: 0;
-  }
-
   section div.container.grid div.item {
     grid-column: 1 / 7;
     grid-row: auto;
   }
 
-  .portfolio-item .item.list {
+  .overview .item.list {
     grid-column: span 2;
     grid-row: auto;
+  }
+
+  .destination .card {
+    grid-column: 1 / 7;
+  }
+
+  .end a {
+    grid-column: 1 / 7;
   }
 }
 </style>

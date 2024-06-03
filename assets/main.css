@@ -122,6 +122,28 @@ p {
 
 /** Grid Positioning */
 
+.text-left .paragraph-with-title {
+  grid-column: 3 / 11;
+  grid-row-start: 1;
+}
+
+.text-left .image {
+  grid-column: 9 / 16;
+  grid-row-start: 1;
+  height: 40vw;
+}
+
+.text-right .paragraph-with-title {
+  grid-column: 9 / 16;
+  grid-row-start: 1;
+}
+
+.text-right .image {
+  grid-column: 3 / 11;
+  grid-row-start: 1;
+  height: 40vw;
+}
+
 /** Main formatting */
 
 section {
