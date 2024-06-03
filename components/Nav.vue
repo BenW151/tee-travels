@@ -154,6 +154,11 @@ body.scrolled-past-header nav a::after {
     z-index: 100000;
   }
 
+  .nav {
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
+  }
+
   .nav-items {
     display: flex;
     flex-direction: column;

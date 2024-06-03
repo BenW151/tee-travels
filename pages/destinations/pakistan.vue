@@ -8,16 +8,12 @@
       buttonText="View Website"
       buttonUrl="/contact"
       buttonDescription="View Website"
-      headerClass="header-medium">
+      headerClass="header-large">
       <template #description>
         <p>
-          An IT services company offering best in class service and support. For
-          this project, I designed and developed a professional website that
-          effectively communicates the firm's expertise in IT solutions. The
-          site features a robust, informative layout that includes service
-          descriptions, client testimonials, and a live chat feature for instant
-          customer support. Strategic SEO practices were also implemented to
-          enhance online visibility and attract more business clientele.
+          Pakistan, officially the Islamic Republic of Pakistan, is a country in
+          South Asia. It is the fifth-most populous country, with a population
+          of over 241.5 million, having the largest Muslim population as of 2023
         </p>
       </template>
     </Header>
@@ -59,6 +55,57 @@
           title="Industry"
           :items="[{ id: 1, text: 'IT Services' }]" />
         <ListsDefaultList title="Date" :items="[{ id: 1, text: 'May 2024' }]" />
+      </LayoutGridContainer>
+    </section>
+
+    <section class="itinerary-brief">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Itinerary" />
+        <ListsItinerary
+          :days="[
+            {
+              id: 1,
+              shortSummary: 'XYZ hike',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 2,
+              shortSummary: 'ABC village tour',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 3,
+              shortSummary: 'Beach day',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 4,
+              shortSummary: 'Mountain hike',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 5,
+              shortSummary: 'Mountain hike',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 6,
+              shortSummary: 'Mountain hike',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+            {
+              id: 7,
+              shortSummary: 'Mountain hike',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            },
+          ]" />
       </LayoutGridContainer>
     </section>
 
@@ -131,7 +178,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="services">
+    <section class="services" id="day1">
       <LayoutGridContainer>
         <TextParagraphWithTitle subtitleTag="h4">
           <template #title>A Full Spectrum Of Services On Offer</template>
@@ -157,7 +204,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="lighthouse">
+    <section class="lighthouse" id="day2">
       <LayoutGridContainer>
         <ImageDefault
           imageUrl="/images/lighthouse-score.png"
@@ -286,6 +333,10 @@ const imageData = [
   grid-row-start: 2;
 }
 
+.itinerary {
+  grid-column: 3 / 11;
+}
+
 .portfolio .portfolio-header {
   grid-column: 2 / 16;
 }
@@ -355,6 +406,11 @@ const imageData = [
     grid-column: 1 / 7;
     grid-row: auto;
     margin: 0;
+  }
+
+  section div.container.grid div.item {
+    grid-column: 1 / 7;
+    grid-row: auto;
   }
 
   .portfolio-item .item.list {

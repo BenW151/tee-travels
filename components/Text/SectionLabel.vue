@@ -18,7 +18,7 @@ const props = defineProps({
   font-size: var(--font-size-XXS);
   font-family: var(--font-family-primary);
   font-weight: 300;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   height: fit-content;
   display: flex;
   flex-direction: row;
