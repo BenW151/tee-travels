@@ -5,9 +5,9 @@
       imageAlt="Modern office"
       title="Pakistan"
       subtitle="7 Nights"
-      buttonText="View Website"
+      buttonText="Book Trip"
       buttonUrl="/contact"
-      buttonDescription="View Website"
+      buttonDescription="Book Trip"
       headerClass="header-large">
       <template #description>
         <p>
@@ -20,9 +20,9 @@
 
     <section class="portfolio-item">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="IT Services" />
-        <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
-          <template #title>Best In Class IT Services Provider</template>
+        <TextSectionLabel labelText="Overview" />
+        <TextParagraphWithTitle subtitleTag="h3">
+          <template #title>Explore the Hidden Gems of Pakistan</template>
           <template #body>
             <p>
               An IT services company offering best in class service and support.
@@ -34,27 +34,31 @@
               were also implemented to enhance online visibility and attract
               more business clientele.
             </p>
-            <a
-              class="link underline-out-icon"
-              href="https://www.nodeone.co.uk/"
-              aria-label="Node One Website"
-              target="_blank"
-              ><LucideExternalLink />View Website</a
+            <NuxtLink
+              class="link underline-out"
+              to="/contact"
+              aria-label="Book trip"
+              >Book Trip</NuxtLink
             >
           </template>
         </TextParagraphWithTitle>
         <ListsDefaultList
-          title="Services"
+          title="Key Activities"
           :items="[
-            { id: 1, text: 'UI/UX Design' },
-            { id: 2, text: 'Web Development' },
-            { id: 3, text: 'Brand Design' },
-            { id: 4, text: 'SEO' },
+            { id: 1, text: 'Hiking' },
+            { id: 2, text: 'Cooking Class' },
+            { id: 3, text: 'School Visit' },
+            { id: 4, text: 'Horse Ride' },
           ]" />
         <ListsDefaultList
           title="Industry"
           :items="[{ id: 1, text: 'IT Services' }]" />
-        <ListsDefaultList title="Date" :items="[{ id: 1, text: 'May 2024' }]" />
+        <ListsDefaultList
+          title="Upcoming Dates"
+          :items="[
+            { id: 1, text: '2nd May - 9th May 2024' },
+            { id: 2, text: '12th June - 21st June 2024' },
+          ]" />
       </LayoutGridContainer>
     </section>
 
@@ -106,6 +110,11 @@
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             },
           ]" />
+        <ImageWithTextOverlay
+          imageUrl="/images/travel-blog.png"
+          altText="Hot Stones Therapy"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
       </LayoutGridContainer>
     </section>
 
@@ -118,12 +127,6 @@
           rellaxPercentage="0"
           rellaxSpeed="0" />
       </LayoutGridContainer>
-    </section>
-
-    <section id="carousel">
-      <div class="container">
-        <SwiperSlider :images="imageData" />
-      </div>
     </section>
 
     <section class="logo">
@@ -311,7 +314,7 @@ const imageData = [
 }
 
 .portfolio-item .paragraph-with-title {
-  grid-column: 6 / 14;
+  grid-column: 3 / 11;
 }
 
 .portfolio-item .list {
@@ -319,22 +322,28 @@ const imageData = [
 }
 
 .portfolio-item .list:nth-child(3) {
-  grid-column: 6 / 9;
+  grid-column: 3 / 6;
   grid-row-start: 2;
 }
 
 .portfolio-item .list:nth-child(4) {
-  grid-column: 9 / 12;
+  grid-column: 6 / 9;
   grid-row-start: 2;
 }
 
 .portfolio-item .list:nth-child(5) {
-  grid-column: 12 / 15;
+  grid-column: 9 / 12;
   grid-row-start: 2;
 }
 
 .itinerary {
-  grid-column: 3 / 11;
+  grid-column: 9 / 16;
+}
+
+.itinerary-brief .image {
+  grid-column: 3 / 8;
+  grid-row-start: 1;
+  height: 30vw;
 }
 
 .portfolio .portfolio-header {
@@ -383,22 +392,11 @@ const imageData = [
   grid-column: 10 / 16;
 }
 
-.carousel .container {
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 7.5vh;
-}
-
 .end a {
   grid-column: 10 / 15;
 }
 
 @media (max-width: 767px) {
-  .carousel .container {
-    padding-left: var(--spacing-5);
-    padding-right: var(--spacing-5);
-  }
-
   .portfolio .item.paragraph-with-title,
   .portfolio .item.image,
   .portfolio .item.card,
