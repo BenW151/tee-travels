@@ -42,22 +42,21 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10px;
-  transform: translateY(0.8vw);
+  margin-right: 1vw;
+  transform: translateY(1.2vw);
   overflow: hidden;
   width: 3vw;
 }
 
 .dot {
-  width: 0.8vw;
-  height: 0.8vw;
+  width: 9px;
+  height: 1px;
   background-color: var(--font-color-primary);
-  border-radius: 50%;
 }
 
 .line {
   width: 1px;
-  height: 10vw;
+  height: 12vw;
   background-color: var(--font-color-primary);
 }
 
@@ -76,12 +75,7 @@ const props = defineProps({
 @media (max-width: 767px) {
   .dot-line {
     width: 10vw;
-    transform: translateY(1.5vw);
-  }
-
-  .dot {
-    width: 2vw;
-    height: 2vw;
+    transform: translateY(2.7vw);
   }
 
   .line {
