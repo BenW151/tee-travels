@@ -239,6 +239,74 @@
       </LayoutGridContainer>
     </section>
 
+    <section class="faq">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Details" />
+          <TextParagraphWithTitle subtitleTag="h3">
+            <template #title>FAQ</template>
+            <template #body>
+              <p>
+                I provide a full spectrum of web development services, including
+                custom website design, responsive, accessible development,
+                optimised SEO, and ongoing maintenance, ensuring a seamless and
+                engaging user experience across all devices.
+              </p>
+              <NuxtLink
+                class="underline-out"
+                to="/portfolio"
+                aria-label="Portfolio Page"
+                >Previous Work</NuxtLink
+              >
+            </template>
+          </TextParagraphWithTitle>
+          <Accordion>
+            <AccordionItem title="Web Development" index="1">
+              <p>
+                Comprehensive web development services that include front-end
+                development, custom website design, and CMS solutions. Using the
+                latest technologies and best practices, I ensure each website is
+                robust, fast-loading, and fully responsive, providing users with
+                a seamless experience across all devices.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="UI/UX Design" index="2">
+              <p>
+                UI/UX design services focus on creating user-centric interfaces
+                that are both intuitive and engaging. From wireframing to final
+                design implementation, I employ a thorough design process to
+                ensure that every aspect of the user experience is streamlined
+                and aesthetically pleasing.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Brand Design" index="3">
+              <p>
+                Helping businesses establish a strong visual identity with my
+                brand design services. This includes logo design, color schemes,
+                typography, and overall brand strategy, ensuring a cohesive and
+                powerful brand image that resonates with the target audience.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="SEO" index="4">
+              <p>
+                SEO services are designed to increase visibility and drive
+                traffic through strategic keyword placement, content
+                optimization, and backlink development. I focus on building
+                sustainable SEO strategies that improve search engine rankings
+                and enhance online presence.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Support" index="5">
+              <p>
+                Ongoing support and maintenance services to ensure websites
+                remain up-to-date and perform optimally. This includes regular
+                updates, security checks, and troubleshooting to help businesses
+                maintain a reliable and effective online presence.
+              </p>
+            </AccordionItem>
+          </Accordion>
+        </LayoutGridContainer>
+      </section>
+
     <section class="end">
       <LayoutGridContainer>
         <TextCard
@@ -366,6 +434,17 @@ const imageData = [
   grid-column: 3 / 11;
   grid-row-start: 1;
   height: 40vw;
+}
+
+.faq .paragraph-with-title:nth-of-type(1) {
+  grid-column: 6 / 14;
+  grid-row: 1;
+}
+
+.faq .accordion {
+  grid-column: 6 / 17;
+  grid-row: 2;
+  /*height: 40vw;*/
 }
 
 .destination .card {
