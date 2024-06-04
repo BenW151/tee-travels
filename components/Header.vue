@@ -139,7 +139,7 @@ header .item:nth-child(3) {
 
 @media (max-width: 767px) {
   .header-small {
-    height: 80lvh;
+    height: 100lvh;
   }
   .header-medium {
     height: 110lvh;
@@ -156,7 +156,6 @@ header .item:nth-child(3) {
   .hero-text {
     grid-column: span 6;
     grid-row-start: 1;
-    margin-top: 30vh;
   }
 
   header .item:nth-child(2) {
