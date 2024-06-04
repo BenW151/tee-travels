@@ -56,7 +56,7 @@ const props = defineProps({
 
 .line {
   width: 1px;
-  height: 12vw;
+  height: 8vw;
   background-color: var(--font-color-primary);
 }
 
@@ -79,7 +79,7 @@ const props = defineProps({
   }
 
   .line {
-    height: 30vw;
+    height: 22vw;
   }
 }
 </style>

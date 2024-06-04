@@ -31,11 +31,11 @@
               placeholder="Email"
               required />
           </label>
-          <label class="form-project">
+          <label class="form-destination">
             <input
               type="text"
-              name="project-title"
-              placeholder="Project Title"
+              name="destination"
+              placeholder="Destination"
               required />
           </label>
           <label class="form-message">

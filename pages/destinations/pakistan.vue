@@ -6,7 +6,7 @@
       title="Pakistan"
       subtitle="7 Nights"
       buttonText="Book Trip"
-      buttonUrl="/contact"
+      buttonUrl="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
       buttonDescription="Book Trip"
       headerClass="header-large">
       <template #description>
@@ -25,20 +25,28 @@
           <template #title>Explore the Hidden Gems of Pakistan</template>
           <template #body>
             <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque and Lahore
+              Fort. Venture north to the enchanting Fairy Meadows, a lush alpine
+              meadow offering stunning views of Nanga Parbat, the world's
+              ninth-highest mountain. Enjoy exhilarating hikes through the
+              northern regions, where you can explore the awe-inspiring
+              Karakoram and Himalayan mountain ranges. This trip promises a
+              perfect blend of adventure, culture, and natural splendor, making
+              it a once-in-a-lifetime experience.
             </p>
-            <NuxtLink
+            <h4>£1200 | 7 Nights</h4>
+            <a
               class="link underline-out"
-              to="/contact"
+              href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
               aria-label="Book trip"
-              >Book Trip</NuxtLink
+              target="_blank"
+              >Book Trip</a
             >
           </template>
         </TextParagraphWithTitle>
@@ -65,6 +73,11 @@
             { id: 1, text: '2nd May - 9th May 2024' },
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
+        <ImageWithTextOverlay
+          imageUrl="/images/travel-blog.png"
+          altText="Hot Stones Therapy"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
       </LayoutGridContainer>
     </section>
 
@@ -77,43 +90,43 @@
               id: 1,
               shortSummary: 'XYZ hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 2,
               shortSummary: 'ABC village tour',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 3,
               shortSummary: 'Beach day',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 4,
               shortSummary: 'Mountain hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 5,
               shortSummary: 'Mountain hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 6,
               shortSummary: 'Mountain hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 7,
               shortSummary: 'Mountain hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
           ]" />
         <ImageWithTextOverlay
@@ -121,17 +134,6 @@
           altText="Hot Stones Therapy"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
-      </LayoutGridContainer>
-    </section>
-
-    <section>
-      <LayoutGridContainer>
-        <ImageDefault
-          imageUrl="/images/travel-blog.png"
-          altText="Celestial Relaxation Room"
-          class="destination-header"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
       </LayoutGridContainer>
     </section>
 
@@ -147,14 +149,13 @@
           <template #title>Day 1 | XYZ hike</template>
           <template #body>
             <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
             </p>
           </template>
         </TextParagraphWithTitle>
@@ -173,14 +174,13 @@
           <template #title>Day 2 | XYZ hike</template>
           <template #body>
             <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
             </p>
           </template>
         </TextParagraphWithTitle>
@@ -199,14 +199,13 @@
           <template #title>Day 3 | XYZ hike</template>
           <template #body>
             <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
             </p>
           </template>
         </TextParagraphWithTitle>
@@ -225,14 +224,13 @@
           <template #title>Day 4 | XYZ hike</template>
           <template #body>
             <p>
-              An IT services company offering best in class service and support.
-              For this project, I designed and developed a professional website
-              that effectively communicates the firm's expertise in IT
-              solutions. The site features a robust, informative layout that
-              includes service descriptions, client testimonials, and a live
-              chat feature for instant customer support. Strategic SEO practices
-              were also implemented to enhance online visibility and attract
-              more business clientele.
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
             </p>
           </template>
         </TextParagraphWithTitle>
@@ -240,72 +238,118 @@
     </section>
 
     <section class="faq">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Details" />
-          <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>FAQ</template>
-            <template #body>
-              <p>
-                I provide a full spectrum of web development services, including
-                custom website design, responsive, accessible development,
-                optimised SEO, and ongoing maintenance, ensuring a seamless and
-                engaging user experience across all devices.
-              </p>
-              <NuxtLink
-                class="underline-out"
-                to="/portfolio"
-                aria-label="Portfolio Page"
-                >Previous Work</NuxtLink
-              >
-            </template>
-          </TextParagraphWithTitle>
-          <Accordion>
-            <AccordionItem title="Web Development" index="1">
-              <p>
-                Comprehensive web development services that include front-end
-                development, custom website design, and CMS solutions. Using the
-                latest technologies and best practices, I ensure each website is
-                robust, fast-loading, and fully responsive, providing users with
-                a seamless experience across all devices.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="UI/UX Design" index="2">
-              <p>
-                UI/UX design services focus on creating user-centric interfaces
-                that are both intuitive and engaging. From wireframing to final
-                design implementation, I employ a thorough design process to
-                ensure that every aspect of the user experience is streamlined
-                and aesthetically pleasing.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="Brand Design" index="3">
-              <p>
-                Helping businesses establish a strong visual identity with my
-                brand design services. This includes logo design, color schemes,
-                typography, and overall brand strategy, ensuring a cohesive and
-                powerful brand image that resonates with the target audience.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="SEO" index="4">
-              <p>
-                SEO services are designed to increase visibility and drive
-                traffic through strategic keyword placement, content
-                optimization, and backlink development. I focus on building
-                sustainable SEO strategies that improve search engine rankings
-                and enhance online presence.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="Support" index="5">
-              <p>
-                Ongoing support and maintenance services to ensure websites
-                remain up-to-date and perform optimally. This includes regular
-                updates, security checks, and troubleshooting to help businesses
-                maintain a reliable and effective online presence.
-              </p>
-            </AccordionItem>
-          </Accordion>
-        </LayoutGridContainer>
-      </section>
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Details" />
+        <TextParagraphWithTitle subtitleTag="h3">
+          <template #title>FAQ</template>
+          <template #body>
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+        <Accordion>
+          <AccordionItem title="What's included?" index="1">
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Do I need a visa?" index="2">
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </AccordionItem>
+          <AccordionItem
+            title="What airport do I need to fly in to/out of?"
+            index="3">
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Do I need travel insurance?" index="4">
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Will the itinerary change?" index="5">
+            <p>
+              Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Any other questions?" index="6">
+            <p>Get in touch with us through any of the below channels</p>
+            <ListsLinkList
+              class="contact"
+              :links="[
+                {
+                  url: '/contact',
+                  label: 'Contact Form',
+                  description: 'GitHub',
+                },
+                {
+                  url: 'https://www.linkedin.com/in/benw151/',
+                  label: 'Phone',
+                  description: 'LinkedIn',
+                },
+                {
+                  url: 'mailto:myemail@email.com',
+                  label: 'Email',
+                  description: 'Email',
+                },
+              ]" />
+          </AccordionItem>
+        </Accordion>
+      </LayoutGridContainer>
+    </section>
+
+    <section class="contact">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Contact" />
+        <a
+          class="item get-in-touch underline-out"
+          href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
+          aria-label="Book Now"
+          target="_blank"
+          ><TextReveal tag="h2">Book Trip</TextReveal></a
+        >
+      </LayoutGridContainer>
+    </section>
 
     <section class="end">
       <LayoutGridContainer>
@@ -330,45 +374,6 @@ useHead({
   title: "Ben Ward - destination",
   meta: [{ name: "description", content: "My amazing site." }],
 });
-
-const imageData = [
-  {
-    src: "/images/travel-blog.png",
-    alt: "Node One",
-    subDescription: "IT Services",
-    link: "/destinations/pakistan",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Tee Travels",
-    subDescription: "Tour Provider",
-    link: "/destinations/pakistan",
-  },
-  {
-    src: "/images/node-one-office.png",
-    alt: "Node Three",
-    subDescription: "Mobile Development",
-    link: "/destinations/pakistan",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Node Four",
-    subDescription: "Cloud Services",
-    link: "/destinations/pakistan",
-  },
-  {
-    src: "/images/node-one-office.png",
-    alt: "Node Five",
-    subDescription: "Consulting",
-    link: "/destinations/pakistan",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Node Six",
-    subDescription: "Support",
-    link: "/destinations/pakistan",
-  },
-];
 </script>
 
 <style>
@@ -378,6 +383,15 @@ const imageData = [
 
 .overview .paragraph-with-title {
   grid-column: 3 / 11;
+}
+
+.overview .paragraph-with-title .item-inner {
+  margin: 0;
+}
+
+.overview .image {
+  grid-column: 12 / 17;
+  grid-row: 1 / 3;
 }
 
 .overview .list {
@@ -395,7 +409,7 @@ const imageData = [
 }
 
 .overview .list:nth-child(5) {
-  grid-column: 9 / 12;
+  grid-column: 9 / 11;
   grid-row-start: 2;
 }
 
@@ -406,12 +420,6 @@ const imageData = [
 .itinerary-brief .image {
   grid-column: 3 / 8;
   grid-row-start: 1;
-  height: 30vw;
-}
-
-.destination .destination-header {
-  grid-column: 1 / 17;
-  height: 40vw;
 }
 
 .text-left .paragraph-with-title {
@@ -453,6 +461,16 @@ const imageData = [
 
 .end a {
   grid-column: 11 / 17;
+}
+
+.contact .get-in-touch {
+  grid-column: 6 / 17;
+  grid-row: 1;
+  width: fit-content;
+}
+
+.contact .get-in-touch h2 {
+  font-size: var(--font-size-XXL);
 }
 
 @media (max-width: 767px) {
