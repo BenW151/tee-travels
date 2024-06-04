@@ -6,14 +6,6 @@
       title="Why Not Adventures"
       subtitle="Off The Beaten Track"
       headerClass="header-small">
-      <template #description>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </template>
     </Header>
 
     <main>
@@ -38,8 +30,7 @@
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
             imageUrl="/images/travel-blog.png"
-            imageAlt="Hot Stones Therapy"
-            rellaxSpeed="10"
+            imageAlt="Fairy Meadows, Pakistan"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
         </LayoutGridContainer>
@@ -69,8 +60,7 @@
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
             imageUrl="/images/tia.png"
-            imageAlt="Hot Stones Therapy"
-            rellaxSpeed="10"
+            imageAlt="Fairy Meadows, Pakistan"
             overlayText="Tia, <br /> Founder"
             textPosition="left" />
         </LayoutGridContainer>
@@ -208,6 +198,7 @@ useHead({
 
 .contact .get-in-touch h2 {
   font-size: var(--font-size-XXL);
+  margin: 0;
 }
 
 @media (max-width: 767px) {

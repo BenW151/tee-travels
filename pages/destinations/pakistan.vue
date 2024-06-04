@@ -65,7 +65,7 @@
           ]" />
         <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Hot Stones Therapy"
+          imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
       </LayoutGridContainer>
@@ -120,7 +120,7 @@
             },
           ]" />
         <ImageDefault
-          imageUrl="/images/pakistan-map.webp"
+          imageUrl="/images/pakistan-map.svg"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
@@ -130,12 +130,11 @@
 
     <section class="itinerary-day text-left" id="day1">
       <LayoutGridContainer>
-        <ImageDefault
+        <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Office"
-          class="itinerary-image"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h4">
           <template #title>Day 1 | XYZ hike</template>
           <template #body>
@@ -155,12 +154,11 @@
 
     <section class="itinerary-day text-right" id="day2">
       <LayoutGridContainer>
-        <ImageDefault
+        <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Celestial Relaxation Room"
-          class="itinerary-image"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
           <template #title>Day 2 | XYZ hike</template>
           <template #body>
@@ -180,12 +178,11 @@
 
     <section class="itinerary-day text-left" id="day3">
       <LayoutGridContainer>
-        <ImageDefault
+        <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Office"
-          class="itinerary-image"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h4">
           <template #title>Day 3 | XYZ hike</template>
           <template #body>
@@ -205,12 +202,11 @@
 
     <section class="itinerary-day text-right" id="day4">
       <LayoutGridContainer>
-        <ImageDefault
+        <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Office"
-          class="itinerary-image"
-          rellaxPercentage="0"
-          rellaxSpeed="0" />
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
           <template #title>Day 4 | XYZ hike</template>
           <template #body>
@@ -409,8 +405,12 @@ useHead({
 }
 
 .itinerary-brief .image {
-  grid-column: 3 / 8;
+  grid-column: 3 / 9;
   grid-row-start: 1;
+}
+
+.itinerary-map.image-default img {
+  object-fit: contain;
 }
 
 .text-left .paragraph-with-title {
@@ -461,7 +461,8 @@ useHead({
 }
 
 .contact .get-in-touch h2 {
-  font-size: var(--font-size-XXL);
+  font-size: 13vw;
+  margin: 0;
 }
 
 a h4 {
@@ -481,6 +482,14 @@ a h4 {
 
   .destination .card {
     grid-column: 1 / 7;
+  }
+
+  .contact .get-in-touch {
+    grid-column: 1 / 7;
+  }
+
+  .contact .get-in-touch h2 {
+    font-size: 19vw;
   }
 
   .end a {

@@ -6,7 +6,6 @@
       title="Destinations"
       subtitle="Previous Work"
       headerClass="header-small">
-      <template #description> </template>
     </Header>
 
     <section class="carousel">

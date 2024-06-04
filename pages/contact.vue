@@ -6,27 +6,6 @@
       title="Contact"
       subtitle="Have a question? Let me know"
       headerClass="header-small">
-      <template #description>
-        <ListsLinkList
-          class="contact"
-          :links="[
-            {
-              url: 'https://www.linkedin.com/in/benw151/',
-              label: 'LinkedIn',
-              description: 'LinkedIn',
-            },
-            {
-              url: 'https://github.com/BenW151/',
-              label: 'GitHub',
-              description: 'GitHub',
-            },
-            {
-              url: 'mailto:myemail@email.com',
-              label: 'Email',
-              description: 'Email',
-            },
-          ]" />
-      </template>
     </Header>
 
     <section id="contact-form">
