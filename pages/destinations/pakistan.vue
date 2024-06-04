@@ -4,17 +4,9 @@
       imageUrl="/images/travel-blog.png"
       imageAlt="Modern office"
       title="Pakistan"
-      subtitle="7 Nights"
-      buttonText="Book Trip"
-      buttonUrl="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
-      buttonDescription="Book Trip"
-      headerClass="header-large">
+      subtitle="£950 | 7 Nights"
+      headerClass="header-small">
       <template #description>
-        <p>
-          Pakistan, officially the Islamic Republic of Pakistan, is a country in
-          South Asia. It is the fifth-most populous country, with a population
-          of over 241.5 million, having the largest Muslim population as of 2023
-        </p>
       </template>
     </Header>
 
@@ -40,13 +32,12 @@
               perfect blend of adventure, culture, and natural splendor, making
               it a once-in-a-lifetime experience.
             </p>
-            <h4>£1200 | 7 Nights</h4>
             <a
               class="link underline-out"
               href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
               aria-label="Book trip"
               target="_blank"
-              >Book Trip</a
+              ><h4>Book Trip</h4></a
             >
           </template>
         </TextParagraphWithTitle>
@@ -471,6 +462,10 @@ useHead({
 
 .contact .get-in-touch h2 {
   font-size: var(--font-size-XXL);
+}
+
+a h4 {
+  margin: 0;
 }
 
 @media (max-width: 767px) {

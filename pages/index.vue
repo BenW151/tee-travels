@@ -5,10 +5,7 @@
       imageAlt="Laptop with code on desk"
       title="Why Not Adventures"
       subtitle="Off The Beaten Track"
-      buttonText="View Destinations"
-      buttonUrl="/destinations"
-      buttonDescription="Destinations"
-      headerClass="header-large">
+      headerClass="header-small">
       <template #description>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

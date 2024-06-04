@@ -17,16 +17,6 @@
         <TextReveal tag="h1">{{ title }}</TextReveal>
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
       </div>
-      <TextParagraph paragraphSize="medium">
-        <slot name="description"></slot>
-        <NuxtLink
-          v-if="buttonUrl"
-          :to="buttonUrl"
-          :aria-label="buttonDescription"
-          class="item link underline-out">
-          {{ buttonText }}
-        </NuxtLink>
-      </TextParagraph>
     </LayoutGridContainer>
   </header>
 </template>
@@ -123,7 +113,7 @@ header a.link::after {
 .hero-text {
   grid-column: 1 / 17;
   grid-row-start: 1;
-  margin-top: 5vh;
+  align-self: center;
 }
 
 .hero-text h2 {
