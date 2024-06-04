@@ -7,19 +7,19 @@
     <div :class="['text-wrapper', textPosition]">
       <h4 v-html="overlayText"></h4>
     </div>
-    <NuxtImg format="webp" :alt="altText" :src="imageUrl" />
+    <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 const isMobile = ref(window.innerWidth <= 768);
 const props = defineProps({
   imageUrl: {
     type: String,
     required: true,
   },
-  altText: {
+  imageAlt: {
     type: String,
     default: "Image",
   },
@@ -42,17 +42,16 @@ const handleResize = () => {
 };
 
 onMounted(() => {
-  window.addEventListener('resize', handleResize);
+  window.addEventListener("resize", handleResize);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', handleResize);
+  window.removeEventListener("resize", handleResize);
 });
 
 const rellaxSpeed = computed(() => {
   return isMobile.value ? "0" : "1";
 });
-
 </script>
 
 <style scoped>

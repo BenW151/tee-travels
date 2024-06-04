@@ -4,7 +4,7 @@
     v-rellax
     :data-rellax-percentage="rellaxPercentage"
     :data-rellax-speed="rellaxSpeed">
-    <NuxtImg format="webp" :alt="altText" :src="imageUrl" />
+    <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  altText: {
+  imageAlt: {
     type: String,
     default: "Image",
   },

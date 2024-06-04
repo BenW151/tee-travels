@@ -38,7 +38,7 @@
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
             imageUrl="/images/travel-blog.png"
-            altText="Hot Stones Therapy"
+            imageAlt="Hot Stones Therapy"
             rellaxSpeed="10"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
@@ -69,7 +69,7 @@
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
             imageUrl="/images/tia.png"
-            altText="Hot Stones Therapy"
+            imageAlt="Hot Stones Therapy"
             rellaxSpeed="10"
             overlayText="Tia, <br /> Founder"
             textPosition="left" />
@@ -211,7 +211,8 @@ useHead({
 }
 
 @media (max-width: 767px) {
-  section div.container.grid div.item, .contact .get-in-touch {
+  section div.container.grid div.item,
+  .contact .get-in-touch {
     grid-column: 1 / 7;
     grid-row: auto;
   }

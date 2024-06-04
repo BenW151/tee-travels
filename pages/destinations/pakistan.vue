@@ -6,8 +6,7 @@
       title="Pakistan"
       subtitle="£950 | 7 Nights"
       headerClass="header-small">
-      <template #description>
-      </template>
+      <template #description> </template>
     </Header>
 
     <section class="overview">
@@ -66,7 +65,7 @@
           ]" />
         <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          altText="Hot Stones Therapy"
+          imageAlt="Hot Stones Therapy"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
       </LayoutGridContainer>
@@ -120,11 +119,12 @@
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
           ]" />
-        <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
-          altText="Hot Stones Therapy"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="right" />
+        <ImageDefault
+          imageUrl="/images/pakistan-map.webp"
+          imageAlt="Itinerary Map"
+          class="itinerary-map"
+          rellaxPercentage="0"
+          rellaxSpeed="0" />
       </LayoutGridContainer>
     </section>
 
@@ -157,7 +157,7 @@
       <LayoutGridContainer>
         <ImageDefault
           imageUrl="/images/travel-blog.png"
-          altText="Celestial Relaxation Room"
+          imageAlt="Celestial Relaxation Room"
           class="itinerary-image"
           rellaxPercentage="0"
           rellaxSpeed="0" />
