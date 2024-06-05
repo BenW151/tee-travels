@@ -127,6 +127,13 @@
       </LayoutGridContainer>
     </section>
 
+    <section>
+        <ImageStrip
+          src="/videos/montenegro-reel.mp4"
+          alt="Bath Pools"
+          rellax-percentage="0" />
+      </section>
+
     <section class="text-left included">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
@@ -360,11 +367,11 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="contact">
+    <section class="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
         <a
-          class="item get-in-touch underline-out"
+          class="item underline-out"
           href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
           aria-label="Book Now"
           target="_blank"
@@ -376,16 +383,16 @@
     <section class="end">
       <LayoutGridContainer>
         <TextCard
-          name="Ben Ward"
-          position="Managing Director"
-          quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
+          name="Tia Thomas"
+          position="Tour Leader"
+          quote="Embark on an unforgettable adventure to Pakistan with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque."
           imgSrc="/images/person.png" />
-        <NuxtLink
-          class="underline-out"
-          to="/destination"
-          aria-label="destination Page"
-          >View Next Project</NuxtLink
-        >
       </LayoutGridContainer>
     </section>
   </div>
@@ -489,17 +496,13 @@ useHead({
   grid-column: 11 / 17;
 }
 
-.end a {
-  grid-column: 11 / 17;
-}
-
-.contact .get-in-touch {
+.book a {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-.contact .get-in-touch h2 {
+.book a h2 {
   font-size: 13vw;
   margin: 0;
 }
@@ -523,16 +526,12 @@ a h4 {
     grid-column: 1 / 7;
   }
 
-  .contact .get-in-touch {
+  .book a {
     grid-column: 1 / 7;
   }
 
-  .contact .get-in-touch h2 {
+  .book a h2 {
     font-size: 19vw;
-  }
-
-  .end a {
-    grid-column: 1 / 7;
   }
 }
 </style>

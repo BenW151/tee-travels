@@ -360,11 +360,11 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="contact">
+    <section class="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
         <a
-          class="item get-in-touch underline-out"
+          class="item underline-out"
           href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
           aria-label="Book Now"
           target="_blank"
@@ -380,12 +380,6 @@
           position="Managing Director"
           quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
           imgSrc="/images/person.png" />
-        <NuxtLink
-          class="underline-out"
-          to="/destination"
-          aria-label="destination Page"
-          >View Next Project</NuxtLink
-        >
       </LayoutGridContainer>
     </section>
   </div>
@@ -493,13 +487,13 @@ useHead({
   grid-column: 11 / 17;
 }
 
-.contact .get-in-touch {
+.book a {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-.contact .get-in-touch h2 {
+.book a h2 {
   font-size: 13vw;
   margin: 0;
 }
@@ -523,16 +517,12 @@ a h4 {
     grid-column: 1 / 7;
   }
 
-  .contact .get-in-touch {
+  .book a {
     grid-column: 1 / 7;
   }
 
-  .contact .get-in-touch h2 {
+  .book a h2 {
     font-size: 19vw;
-  }
-
-  .end a {
-    grid-column: 1 / 7;
   }
 }
 </style>

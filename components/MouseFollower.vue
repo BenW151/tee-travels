@@ -30,6 +30,11 @@ const updatePosition = (event) => {
       hoverClass.value = "link";
       found = true;
       break;
+    } else if (classList.includes("destination-video")) {
+      hoveredText.value = "Click to Play";
+      hoverClass.value = "show";
+      found = true;
+      break;
     } else if (classList.includes("swiper-button-next")) {
       hoveredText.value = "Next";
       hoverClass.value = "show";
