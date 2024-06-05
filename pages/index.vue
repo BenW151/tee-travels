@@ -16,15 +16,14 @@
             <template #title>Why Choose Why Not?</template>
             <template #body>
               <p>
-                I transitioned from Network Engineering and IT Service Desk to
-                Web Development to merge my technical skills with my passion for
-                design. Self-taught and proficient in modern web technologies
-                like HTML, CSS, and JavaScript, I focus on creating
-                user-friendly and visually appealing websites. I believe in
-                designs where form and function work together seamlessly,
-                ensuring that each project is not only aesthetically pleasing
-                but also highly functional. My aim is to continuously innovate
-                and exceed expectations in every project.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque and Lahore Fort.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -36,6 +35,28 @@
         </LayoutGridContainer>
       </section>
 
+      <section class="destinations">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Destinations" />
+          <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
+            <template #title>Destinations</template>
+            <template #body>
+              <p>
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture.
+              </p>
+            </template>
+          </TextParagraphWithTitle>
+        </LayoutGridContainer>
+      </section>
+
+      <section class="carousel">
+        <div class="container">
+          <CarouselsDestinations />
+        </div>
+      </section>
+
       <section class="skills text-right">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Skills" />
@@ -43,18 +64,20 @@
             <template #title>Who Am I?</template>
             <template #body>
               <p>
-                I bring a solid foundation in web development and design,
-                focused on creating functional and visually appealing digital
-                experiences. I craft responsive, SEO-friendly websites using
-                HTML5 and CSS3, and enhance user interaction with dynamic
-                JavaScript functionalities. With a focus on Vue and Nuxt, I
-                develop efficient UI components and manage application state
-                using modern techniques. My proficiency in Figma allows me to
-                create clean, functional design prototypes that align with
-                project goals. Additionally, my design skills ensure layouts and
-                graphics are both visually compelling and practical. Each
-                project demonstrates my ability to merge technical capabilities
-                with creative insights, ensuring innovation and quality.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque and Lahore Fort. Venture north to the enchanting Fairy
+                Meadows, a lush alpine meadow offering stunning views of Nanga
+                Parbat, the world's ninth-highest mountain. Enjoy exhilarating
+                hikes through the northern regions, where you can explore the
+                awe-inspiring Karakoram and Himalayan mountain ranges. This trip
+                promises a perfect blend of adventure, culture, and natural
+                splendor, making it a once-in-a-lifetime experience.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -66,69 +89,105 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="services">
+      <section class="faq">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Details" />
           <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>Services</template>
+            <template #title>Things To Know</template>
             <template #body>
               <p>
-                I provide a full spectrum of web development services, including
-                custom website design, responsive, accessible development,
-                optimised SEO, and ongoing maintenance, ensuring a seamless and
-                engaging user experience across all devices.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes.
               </p>
-              <NuxtLink
-                class="underline-out"
-                to="/portfolio"
-                aria-label="Portfolio Page"
-                >Previous Work</NuxtLink
-              >
             </template>
           </TextParagraphWithTitle>
           <Accordion>
-            <AccordionItem title="Web Development" index="1">
+            <AccordionItem title="What's included?" index="1">
               <p>
-                Comprehensive web development services that include front-end
-                development, custom website design, and CMS solutions. Using the
-                latest technologies and best practices, I ensure each website is
-                robust, fast-loading, and fully responsive, providing users with
-                a seamless experience across all devices.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="UI/UX Design" index="2">
+            <AccordionItem title="Do I need a visa?" index="2">
               <p>
-                UI/UX design services focus on creating user-centric interfaces
-                that are both intuitive and engaging. From wireframing to final
-                design implementation, I employ a thorough design process to
-                ensure that every aspect of the user experience is streamlined
-                and aesthetically pleasing.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="Brand Design" index="3">
+            <AccordionItem
+              title="What airport do I need to fly in to/out of?"
+              index="3">
               <p>
-                Helping businesses establish a strong visual identity with my
-                brand design services. This includes logo design, color schemes,
-                typography, and overall brand strategy, ensuring a cohesive and
-                powerful brand image that resonates with the target audience.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="SEO" index="4">
+            <AccordionItem title="Do I need travel insurance?" index="4">
               <p>
-                SEO services are designed to increase visibility and drive
-                traffic through strategic keyword placement, content
-                optimization, and backlink development. I focus on building
-                sustainable SEO strategies that improve search engine rankings
-                and enhance online presence.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="Support" index="5">
+            <AccordionItem title="Will the itinerary change?" index="5">
               <p>
-                Ongoing support and maintenance services to ensure websites
-                remain up-to-date and perform optimally. This includes regular
-                updates, security checks, and troubleshooting to help businesses
-                maintain a reliable and effective online presence.
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
               </p>
+            </AccordionItem>
+            <AccordionItem title="Any other questions?" index="6">
+              <p>Get in touch with us through any of the below channels</p>
+              <ListsLinkList
+                class="contact"
+                :links="[
+                  {
+                    url: '/contact',
+                    label: 'Contact Form',
+                    description: 'GitHub',
+                  },
+                  {
+                    url: 'https://www.linkedin.com/in/benw151/',
+                    label: 'Phone',
+                    description: 'LinkedIn',
+                  },
+                  {
+                    url: 'mailto:myemail@email.com',
+                    label: 'Email',
+                    description: 'Email',
+                  },
+                ]" />
             </AccordionItem>
           </Accordion>
         </LayoutGridContainer>
@@ -154,6 +213,15 @@ useHead({
   title: "Ben Ward - Home",
   meta: [{ name: "description", content: "My amazing site." }],
 });
+
+const isMobile = ref(window.innerWidth < 768);
+
+//Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
+if (!isMobile.value) {
+  definePageMeta({
+    pageTransition: false,
+  });
+}
 </script>
 
 <style scoped>
@@ -179,12 +247,12 @@ useHead({
   height: 40vw;
 }
 
-.services .paragraph-with-title:nth-of-type(1) {
+.faq .paragraph-with-title:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
 }
 
-.services .accordion {
+.faq .accordion {
   grid-column: 6 / 17;
   grid-row: 2;
   /*height: 40vw;*/
@@ -199,6 +267,14 @@ useHead({
 .contact .get-in-touch h2 {
   font-size: var(--font-size-XXL);
   margin: 0;
+}
+
+.destinations .container {
+  padding-bottom: 0;
+}
+
+.carousel .container {
+  padding-top: 0;
 }
 
 @media (max-width: 767px) {

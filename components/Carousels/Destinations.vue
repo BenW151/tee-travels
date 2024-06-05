@@ -6,8 +6,7 @@
         :key="index"
         class="image-item"
         @mouseover="updateHoverDescription(image)"
-        @mouseleave="clearHoverDescription"
-      >
+        @mouseleave="clearHoverDescription">
         <NuxtLink :href="image.link">
           <img :src="image.src" :alt="image.alt" class="vertical-image" />
         </NuxtLink>
@@ -19,45 +18,43 @@
     </div>
     <swiper
       v-else
-      :modules="[SwiperNavigation, SwiperMousewheel, SwiperFreeMode]"
+      :modules="[Navigation, Mousewheel, FreeMode]"
       :slides-per-view="3.2"
       :space-between="10"
       :navigation="true"
       :mousewheel="{
         forceToAxis: false,
         sensitivity: 0.1,
-        releaseOnEdges: true
+        releaseOnEdges: true,
       }"
       :free-mode="true"
       :free-mode-momentum="true"
       @swiper="onSwiper"
-      @slideChange="onSlideChange"
-    >
+      @slideChange="onSlideChange">
       <swiper-slide
         v-for="(image, index) in images"
         :key="index"
         class="swiper-slide-custom"
         @mouseover="updateHoverDescription(image)"
-        @mouseleave="clearHoverDescription"
-      >
+        @mouseleave="clearHoverDescription">
         <NuxtLink :href="image.link">
           <img :src="image.src" :alt="image.alt" class="slide-image" />
         </NuxtLink>
       </swiper-slide>
     </swiper>
-    <div class="custom-scrollbar">
+    <!--<div class="custom-scrollbar">
       <div
         class="custom-scrollbar-progress"
         :style="{ width: `${progress}%` }"
       ></div>
-    </div>
+    </div>-->
     <div v-if="hoverDescription" class="image-description">
       <p>{{ hoverDescription }}</p>
       <p>{{ hoverSubDescription }}</p>
     </div>
     <div v-else-if="!isMobile" class="image-description">
       <p>Scroll to Explore</p>
-      <p>10 Items</p>
+      <p>4 Destinations</p>
     </div>
   </div>
 </template>
@@ -66,13 +63,6 @@
 import { ref } from "vue";
 import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-
-const props = defineProps({
-  images: {
-    type: Array,
-    required: true,
-  },
-});
 
 const hoverDescription = ref("");
 const hoverSubDescription = ref("");
@@ -98,6 +88,33 @@ const clearHoverDescription = () => {
   hoverDescription.value = "";
   hoverSubDescription.value = "";
 };
+
+const images = [
+  {
+    src: "/images/pakistan-cover.png",
+    alt: "Pakistan",
+    subDescription: "7 Nights | £950",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/montenegro-cover.png",
+    alt: "Montenegro",
+    subDescription: "5 Nights | £650",
+    link: "/destinations/montenegro",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Pakistan",
+    subDescription: "7 Nights | £950",
+    link: "/destinations/pakistan",
+  },
+  {
+    src: "/images/travel-blog.png",
+    alt: "Pakistan",
+    subDescription: "7 Nights | £950",
+    link: "/destinations/pakistan",
+  },
+];
 </script>
 
 <style>
@@ -144,35 +161,35 @@ const clearHoverDescription = () => {
 
 .custom-scrollbar-progress {
   height: 1px;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
   transition: width 0.1s ease;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  bottom: 0;
+  top: 5%;
   width: 10%;
-  height: 4vw;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  z-index: 10;
+  z-index: 1000;
   cursor: pointer;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .swiper-button-next {
   right: 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmYzZjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLXJpZ2h0Ij48cGF0aCBkPSJtOSAxOCA2LTYtNi02Ii8+PC9zdmc+");
 }
 
 .swiper-button-prev {
   left: 0;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmMmYzZjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWxlZnQiPjxwYXRoIGQ9Im0xNSAxOC02LTYgNi02Ii8+PC9zdmc+");
 }
 
 @media (max-width: 767px) {
