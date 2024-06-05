@@ -12,19 +12,24 @@
     <template v-else>
       <video
         ref="video"
+        @click="videoClicked"
         :poster="poster"
         :src="src"
+        preload="metadata"
         class="item destination-video"
-        controls
-        repeat>
+        v-bind="controlsHidden ? {} : { controls: true }"
+        loop>
         Your browser does not support the video tag.
       </video>
+      <div :class="{ 'text-wrapper': true, hidden: overlayHidden }">
+        <h4>Play Showreel</h4>
+      </div>
     </template>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, computed, onMounted } from "vue";
 
 const props = defineProps({
   src: {
@@ -37,11 +42,17 @@ const props = defineProps({
   },
   poster: {
     type: String,
-    default: "", // Provide a default poster image URL if needed
+    default: "",
   },
 });
 
 const videoRef = ref(null);
+const overlayHidden = ref(false);
+const controlsHidden = ref(true);
+const videoClicked = () => {
+  overlayHidden.value = true;
+  controlsHidden.value = false;
+};
 
 onMounted(() => {
   if (videoRef.value) {
@@ -65,7 +76,7 @@ const isImage = computed(() => {
 <style scoped>
 .image-strip.container {
   max-width: 100%;
-  height: 40vw;
+  height: 50vw;
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
@@ -73,15 +84,37 @@ const isImage = computed(() => {
 
 .image-strip img,
 .image-strip video {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.text-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 15vh;
+  left: 0;
+  text-align: left;
+  margin-left: var(--spacing-3);
+  pointer-events: none;
+}
+
+.text-wrapper h4 {
+  color: var(--color-white);
+}
+
+.text-wrapper.hidden {
+  opacity: 0;
+}
+
 @media (max-width: 767px) {
   .image-strip.container {
-    height: 80vh;
+    height: 90vh;
+  }
+
+  .text-wrapper {
+    bottom: 8vh;
   }
 }
 </style>

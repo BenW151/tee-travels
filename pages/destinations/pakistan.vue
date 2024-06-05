@@ -128,11 +128,11 @@
     </section>
 
     <section>
-        <ImageStrip
-          src="/videos/montenegro-reel.mp4"
-          alt="Bath Pools"
-          rellax-percentage="0" />
-      </section>
+      <ImageStrip
+        src="/videos/montenegro-reel.mp4"
+        poster="/images/pakistan-cover.png"
+        alt="Montenegro Showreel" />
+    </section>
 
     <section class="text-left included">
       <LayoutGridContainer>
