@@ -42,11 +42,9 @@ const props = defineProps({
 .dot-line {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-right: 1vw;
   transform: translateY(1.2vw);
   overflow: hidden;
-  width: 3vw;
 }
 
 .dot {
@@ -75,7 +73,6 @@ const props = defineProps({
 
 @media (max-width: 767px) {
   .dot-line {
-    width: 10vw;
     transform: translateY(2.7vw);
   }
 
