@@ -80,8 +80,13 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Terms + Conditions",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Terms + Conditions",
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
 });
 </script>
 

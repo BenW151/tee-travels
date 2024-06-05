@@ -2,7 +2,7 @@
   <div>
     <Nav />
     <Header
-      imageUrl="/images/infrared-room.png"
+      imageUrl="/images/pakistan-cover.png"
       :title="`${error.statusCode} Error`"
       subtitle="This Page Does Not Exist"
       headerClass="header-small"
@@ -24,7 +24,12 @@ const props = defineProps({
 const handleError = () => clearError({ redirect: "/" });
 
 useHead({
-  title: "Ben Ward - Error",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Error",
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
 });
 </script>

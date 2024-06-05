@@ -210,8 +210,8 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Home",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Home",
+  meta: [{ name: "description", content: "Offering affordable tours to off the beaten track destinations" }],
 });
 
 const isMobile = ref(window.innerWidth < 768);

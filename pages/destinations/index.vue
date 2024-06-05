@@ -18,8 +18,13 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Portfolio",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Destinations",
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
 });
 
 const isMobile = ref(window.innerWidth < 768);
@@ -34,6 +39,5 @@ if (!isMobile.value) {
 
 <style>
 @media (max-width: 767px) {
-
 }
 </style>

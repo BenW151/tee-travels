@@ -16,8 +16,13 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - Contact",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Contact",
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
 });
 </script>
 

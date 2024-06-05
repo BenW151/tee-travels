@@ -376,7 +376,7 @@
     <section class="end">
       <LayoutGridContainer>
         <TextCard
-          name="Ben Ward"
+          name="Why Not Adventures"
           position="Managing Director"
           quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
           imgSrc="/images/person.png" />
@@ -387,8 +387,13 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward - destination",
-  meta: [{ name: "description", content: "My amazing site." }],
+  title: "Why Not Adventures - Montenegro",
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
 });
 </script>
 

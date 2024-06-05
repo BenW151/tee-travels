@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     "nuxt-lucide-icons",
     "@nuxtjs/google-fonts",
     "@nuxt/image",
-    'nuxt-swiper',
+    "nuxt-swiper",
   ],
   image: {
     format: ["webp"],
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in", appear: true },
     head: {
-      title: "Ben Ward",
+      title: "Why Not Adventures",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -44,28 +44,37 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "Offering top-notch web development services to help businesses succeed online.",
+          content:
+            "Offering affordable tours to off the beaten track destinations",
         },
-        { name: "keywords", content: "Web, Development, WebDev, Benward, Web Development Services, Ben Ward, Web Development, Web Developer, Developer" },
+        {
+          name: "keywords",
+          content:
+            "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Why Not Adventures, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
+        },
         { name: "theme-color", content: "#000000" },
         { name: "msapplication-TileColor", content: "#da532c" },
         { name: "msapplication-config", content: "/browserconfig.xml" },
-        { property: "og:title", content: "Ben Ward - Web Development Services" },
+        {
+          property: "og:title",
+          content: "Why Not Adventures - Adventure Tours",
+        },
         {
           property: "og:description",
-          content: "Offering top-notch web development services to help businesses succeed online.",
+          content:
+            "Offering affordable tours to off the beaten track destinations",
         },
         {
           property: "og:image",
-          content: "https://benward.io/images/index-background.png",
+          content: "https://whynotadventures.co.uk/images/pakistan-cover.png",
         },
-        { property: "og:url", content: "https://benward.io/" },
+        { property: "og:url", content: "https://whynotadventures.co.uk/" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [
         {
           rel: "canonical",
-          href: "https://benward.io/",
+          href: "https://whynotadventures.co.uk/",
         },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
