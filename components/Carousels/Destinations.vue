@@ -169,7 +169,7 @@ const images = [
 .swiper-button-prev {
   position: absolute;
   top: 5%;
-  width: 10%;
+  width: 5%;
   height: 100%;
   display: flex;
   align-items: center;
