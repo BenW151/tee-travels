@@ -32,11 +32,11 @@
               it a once-in-a-lifetime experience.
             </p>
             <a
-              class="link underline-out"
+              class="link underline-out-icon"
               href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
               aria-label="Book trip"
               target="_blank"
-              ><h4>Book Trip</h4></a
+              ><h4><LucideExternalLink />Book Trip</h4></a
             >
           </template>
         </TextParagraphWithTitle>
@@ -128,8 +128,44 @@
       </LayoutGridContainer>
     </section>
 
+    <section class="text-left included">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Included" />
+        <ImageWithTextOverlay
+          imageUrl="/images/travel-blog.png"
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
+        <TextParagraphWithTitle subtitleTag="h3">
+          <template #title>What's Included</template>
+          <template #body>
+            <ListsDefaultList
+              bullets
+              :items="[
+                { id: 1, text: '8 Nights Accommodation' },
+                { id: 2, text: 'Breakfast, Lunch and Dinner Each Day' },
+                { id: 3, text: 'All Activities Mentioned' },
+                { id: 4, text: 'Transfers Between Stops' },
+                { id: 5, text: 'Breakfast, Lunch and Dinner Each Day' },
+                { id: 6, text: 'All Activities Mentioned' },
+                { id: 7, text: 'Transfers Between Stops' },
+              ]" />
+            <ListsDefaultList
+              bullets
+              title="Optional Extras"
+              :items="[
+                { id: 1, text: 'Private Room' },
+                { id: 2, text: 'Airport Transfer' },
+                { id: 3, text: 'Boat Tour' },
+              ]" />
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="itinerary-day text-left" id="day1">
       <LayoutGridContainer>
+        <TextSectionLabel labelText="Detailed Itinerary" />
         <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
           imageAlt="Fairy Meadows, Pakistan"
@@ -226,7 +262,7 @@
 
     <section class="faq">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Details" />
+        <TextSectionLabel labelText="Information" />
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>FAQ</template>
           <template #body>
@@ -327,7 +363,7 @@
 
     <section class="contact">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Contact" />
+        <TextSectionLabel labelText="Get Involved" />
         <a
           class="item get-in-touch underline-out"
           href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
@@ -405,7 +441,7 @@ useHead({
 }
 
 .itinerary-brief .image {
-  grid-column: 3 / 9;
+  grid-column: 3 / 8;
   grid-row-start: 1;
 }
 
@@ -433,6 +469,10 @@ useHead({
   grid-column: 3 / 11;
   grid-row-start: 1;
   height: 40vw;
+}
+
+.included .image {
+  height: 65vw;
 }
 
 .faq .paragraph-with-title:nth-of-type(1) {

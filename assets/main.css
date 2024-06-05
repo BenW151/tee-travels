@@ -282,7 +282,6 @@ button:hover::after {
 
 .lucide {
   color: var(--font-color-primary);
-  width: var(--font-size-XS);
   height: var(--font-size-XS);
 }
 

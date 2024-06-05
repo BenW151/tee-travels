@@ -1,5 +1,6 @@
 <template>
   <div class="itinerary item">
+    <h3>Itinerary</h3>
     <div v-for="(day, index) in days" :key="index" class="day-item">
       <div class="dot-line">
         <div class="dot"></div>

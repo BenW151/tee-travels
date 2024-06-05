@@ -40,7 +40,8 @@ const props = defineProps({
 .paragraph-with-title {
   grid-column: span 7;
   background-color: var(--color-white);
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   z-index: 5;
 }
 

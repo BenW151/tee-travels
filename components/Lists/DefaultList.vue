@@ -1,6 +1,6 @@
 <template>
   <ul :class="['item list', { 'list-with-bullets': bullets }]">
-    <li class="list-title">{{ title }}</li>
+    <li v-if="title" class="list-title">{{ title }}</li>
     <li v-for="item in items" :key="item.id">{{ item.text }}</li>
   </ul>
 </template>
@@ -9,7 +9,7 @@
 const props = defineProps({
   title: {
     type: String,
-    default: 'Default List'
+    default: ''
   },
   items: {
     type: Array,
@@ -23,7 +23,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.list-with-bullets li:not(:nth-child(1)) {
+.list-with-bullets li:not(.list-title) {
   list-style-type: " - "; 
   margin-left: var(--spacing-1);
 }
