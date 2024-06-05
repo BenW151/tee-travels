@@ -1,10 +1,10 @@
 <template>
   <div class="destination">
     <Header
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/montenegro-cover.png"
       imageAlt="Modern office"
-      title="Pakistan"
-      subtitle="£950 | 7 Nights"
+      title="Montenegro"
+      subtitle="£650 | 5 Nights"
       headerClass="header-small">
     </Header>
 
@@ -50,10 +50,10 @@
         <ListsDefaultList
           title="Regions Visited"
           :items="[
-            { id: 1, text: 'Islamabad' },
-            { id: 2, text: 'Lahore' },
-            { id: 3, text: 'Fairy Meadows' },
-            { id: 4, text: 'Nanga Parbat' },
+            { id: 1, text: 'Kotor' },
+            { id: 2, text: 'Tivat' },
+            { id: 3, text: 'Perast' },
+            { id: 4, text: 'Durmitor National Park' },
           ]" />
 
         <ListsDefaultList
@@ -63,7 +63,7 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -131,7 +131,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -166,7 +166,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Detailed Itinerary" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -190,7 +190,7 @@
     <section class="itinerary-day text-right" id="day2">
       <LayoutGridContainer>
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="left" />
@@ -214,7 +214,7 @@
     <section class="itinerary-day text-left" id="day3">
       <LayoutGridContainer>
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -238,7 +238,7 @@
     <section class="itinerary-day text-right" id="day4">
       <LayoutGridContainer>
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="left" />
