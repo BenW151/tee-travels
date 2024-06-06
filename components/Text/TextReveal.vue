@@ -87,7 +87,7 @@ function animateText(container) {
     setTimeout(() => {
       const words = line.querySelectorAll(".word");
       words.forEach((word) => {
-        word.style.animation = "reveal 0.6s forwards";
+        word.style.animation = "reveal 0.7s cubic-bezier(0.77, 0, 0.175, 1) forwards";
       });
     }, 100 * index); // Delay each line
   });
@@ -97,7 +97,8 @@ function animateText(container) {
 <style>
 @keyframes reveal {
   0% {
-    transform: translateY(100%);
+    transform: translateY(100%) rotateX(90deg);
+    transform-origin: top;
     opacity: 0;
   }
   100% {
@@ -106,9 +107,10 @@ function animateText(container) {
   }
 }
 
+
 .text-reveal {
   display: flex;
-  flex-direction: column; /* Changed to column for line-by-line animation */
+  flex-direction: column;
 }
 
 .reveal-mask {
@@ -119,7 +121,7 @@ function animateText(container) {
 
 .word {
   display: inline-block;
-  transform: translateY(100%);
+  transform: translateY(100%) rotateX(90deg);
   opacity: 0;
   animation: none;
   white-space: pre;
