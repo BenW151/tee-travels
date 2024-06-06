@@ -233,6 +233,7 @@ footer .socials {
   .atol,
   .abta {
     height: 10vh;
+    margin-top: var(--spacing-3);
   }
 
   .copyright {

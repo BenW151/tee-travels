@@ -4,7 +4,7 @@
       imageUrl="/images/travel-blog.png"
       imageAlt="Laptop with code on desk"
       title="Destinations"
-      subtitle="Previous Work"
+      subtitle="Where Will You Go?"
       headerClass="header-small">
     </Header>
 

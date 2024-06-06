@@ -4,7 +4,8 @@
       imageUrl="/images/pakistan-cover.png"
       imageAlt="Modern office"
       title="Pakistan"
-      subtitle="£950 | 7 Nights"
+      subtitle="Hiking in the north"
+      description="£950 | 7 Nights"
       headerClass="header-small">
     </Header>
 

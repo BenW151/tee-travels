@@ -4,7 +4,7 @@
       imageUrl="/images/travel-blog.png"
       imageAlt="Laptop with code on desk"
       title="Why Not Adventures"
-      subtitle="Off The Beaten Track"
+      subtitle="Get Off The Beaten Track"
       headerClass="header-small">
     </Header>
 

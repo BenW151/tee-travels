@@ -16,6 +16,7 @@
       <div class="hero-text item">
         <TextReveal tag="h1">{{ title }}</TextReveal>
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
+        <TextReveal tag="h3">{{ description }}</TextReveal>
       </div>
     </LayoutGridContainer>
   </header>
@@ -29,6 +30,7 @@ const props = defineProps({
   imageAlt: String,
   title: String,
   subtitle: String,
+  description: String,
   buttonText: String,
   buttonUrl: String,
   buttonDescription: String,
@@ -118,7 +120,10 @@ header a.link::after {
 
 .hero-text h2 {
   font-size: var(--font-size-M);
-  margin-top: var(--spacing-1);
+}
+
+.hero-text h3 {
+  font-size: var(--font-size-S);
 }
 
 header .container {

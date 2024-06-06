@@ -2,7 +2,7 @@
   <nav :class="{ scrolled: isScrolled, 'nav-hidden': isHidden }">
     <div class="nav">
       <div class="wordmark">
-        <NuxtLink class="logo-hide" to="/" aria-label="Home Page"
+        <NuxtLink :class="{ 'logo-hide': true, open: isMenuOpen }" to="/" aria-label="Home Page"
           >Why Not Adventures</NuxtLink
         >
       </div>
@@ -187,6 +187,14 @@ body.scrolled-past-header nav a::after {
 
   .nav-items.open a::after {
     background-color: var(--color-black);
+  }
+
+  .nav .wordmark a {
+    z-index: 1000;
+  }
+
+  .nav .wordmark a.open {
+    color: var(--color-black);
   }
 
   .burger-menu {

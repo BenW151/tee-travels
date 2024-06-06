@@ -4,7 +4,8 @@
       imageUrl="/images/montenegro-cover.png"
       imageAlt="Modern office"
       title="Montenegro"
-      subtitle="£650 | 5 Nights"
+      subtitle="Hiking in the north"
+      description="£950 | 7 Nights"
       headerClass="header-small">
     </Header>
 
@@ -12,10 +13,10 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Overview" />
         <TextParagraphWithTitle subtitleTag="h3">
-          <template #title>Explore the Hidden Gems of Pakistan</template>
+          <template #title>Explore the Hidden Gems of Montenegro</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -50,10 +51,10 @@
         <ListsDefaultList
           title="Regions Visited"
           :items="[
-            { id: 1, text: 'Kotor' },
-            { id: 2, text: 'Tivat' },
-            { id: 3, text: 'Perast' },
-            { id: 4, text: 'Durmitor National Park' },
+            { id: 1, text: 'Islamabad' },
+            { id: 2, text: 'Lahore' },
+            { id: 3, text: 'Fairy Meadows' },
+            { id: 4, text: 'Nanga Parbat' },
           ]" />
 
         <ListsDefaultList
@@ -64,8 +65,8 @@
           ]" />
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
       </LayoutGridContainer>
     </section>
@@ -119,7 +120,7 @@
             },
           ]" />
         <ImageDefault
-          imageUrl="/images/pakistan-map.svg"
+          imageUrl="/images/montenegro-map.svg"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
@@ -127,13 +128,20 @@
       </LayoutGridContainer>
     </section>
 
+    <section>
+      <ImageStrip
+        src="/videos/montenegro-reel.mp4"
+        poster="/images/montenegro-cover.png"
+        alt="Montenegro Showreel" />
+    </section>
+
     <section class="text-left included">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>What's Included</template>
@@ -167,14 +175,14 @@
         <TextSectionLabel labelText="Detailed Itinerary" />
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h4">
           <template #title>Day 1 | XYZ hike</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -191,14 +199,14 @@
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
           <template #title>Day 2 | XYZ hike</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -215,14 +223,14 @@
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h4">
           <template #title>Day 3 | XYZ hike</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -239,14 +247,14 @@
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Montenegro"
+          overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
           <template #title>Day 4 | XYZ hike</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -266,7 +274,7 @@
           <template #title>FAQ</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -279,7 +287,7 @@
         <Accordion>
           <AccordionItem title="What's included?" index="1">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -290,7 +298,7 @@
           </AccordionItem>
           <AccordionItem title="Do I need a visa?" index="2">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -303,7 +311,7 @@
             title="What airport do I need to fly in to/out of?"
             index="3">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -314,7 +322,7 @@
           </AccordionItem>
           <AccordionItem title="Do I need travel insurance?" index="4">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -325,7 +333,7 @@
           </AccordionItem>
           <AccordionItem title="Will the itinerary change?" index="5">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
+              Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
               of Islamabad, where modern architecture meets serene landscapes.
@@ -376,9 +384,15 @@
     <section class="end">
       <LayoutGridContainer>
         <TextCard
-          name="Why Not Adventures"
-          position="Managing Director"
-          quote="Working with this team has been a game-changer for our business. The web development service provided was top-notch, with a keen attention to detail and a clear focus on our objectives. Our new website is not only visually stunning but also highly functional and user-friendly. The continuous support we receive ensures our site remains up-to-date and continues to perform excellently."
+          name="Tia Thomas"
+          position="Tour Leader"
+          quote="Embark on an unforgettable adventure to Montenegro with our
+              organized tour, showcasing the country's breathtaking natural
+              beauty and vibrant culture. Begin your journey in the capital city
+              of Islamabad, where modern architecture meets serene landscapes.
+              Next, travel to the historical city of Lahore, renowned for its
+              rich heritage, bustling bazaars, and magnificent Mughal
+              architecture, including the iconic Badshahi Mosque."
           imgSrc="/images/person.png" />
       </LayoutGridContainer>
     </section>
@@ -485,10 +499,6 @@ useHead({
 }
 
 .destination .card {
-  grid-column: 11 / 17;
-}
-
-.end a {
   grid-column: 11 / 17;
 }
 
