@@ -52,7 +52,7 @@ export default defineNuxtConfig({
           content:
             "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Why Not Adventures, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
         },
-        { name: "theme-color", content: "#000000" },
+        { name: "theme-color", content: "#f2f3f4" },
         { name: "msapplication-TileColor", content: "#da532c" },
         { name: "msapplication-config", content: "/browserconfig.xml" },
         {
