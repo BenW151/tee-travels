@@ -1,8 +1,6 @@
 <template>
   <div class="itinerary item">
-    <TextReveal>
-      <slot name="subtitle"><h3>Itinerary</h3></slot>
-    </TextReveal>
+    <TextReveal tag="h3">Itinerary</TextReveal>
     <div v-for="(day, index) in days" :key="index" class="day-item">
       <div class="dot-line">
         <div class="dot"></div>

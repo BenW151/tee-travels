@@ -78,6 +78,7 @@ h1 {
   font-size: var(--font-size-XXL);
   margin-bottom: 0;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {

@@ -16,7 +16,7 @@
     ></div>
     <LayoutGridContainer>
       <div class="hero-text item">
-        <TextReveal tag="h1">{{ title }}</TextReveal>
+        <h1>{{ title }}</h1>
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
         <TextReveal tag="h3">{{ description }}</TextReveal>
       </div>

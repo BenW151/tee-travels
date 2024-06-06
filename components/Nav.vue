@@ -13,7 +13,7 @@
       </div>
       <div :class="{ 'nav-items': true, open: isMenuOpen }">
         <NuxtLink
-          class="nav-item text-reveal"
+          class="nav-item"
           to="/"
           :class="{ active: $route.path === '/' }"
           aria-label="Home Page"
@@ -21,7 +21,7 @@
           >About</NuxtLink
         >
         <NuxtLink
-          class="nav-item text-reveal"
+          class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
@@ -29,7 +29,7 @@
           >Destinations</NuxtLink
         >
         <NuxtLink
-          class="nav-item text-reveal"
+          class="nav-item"
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
           aria-label="Contact Page"
