@@ -82,14 +82,11 @@ function prepareText(container) {
 }
 
 function animateText(container) {
-  const lines = container.querySelectorAll(".line-container");
-  lines.forEach((line, index) => {
+  const words = container.querySelectorAll(".word");
+  words.forEach((word, index) => {
     setTimeout(() => {
-      const words = line.querySelectorAll(".word");
-      words.forEach((word) => {
-        word.style.animation = "reveal 0.7s cubic-bezier(0.77, 0, 0.175, 1) forwards";
-      });
-    }, 100 * index); // Delay each line
+      word.style.animation = "reveal 0.6s forwards";
+    }, 100 * index); // Delay can be adjusted
   });
 }
 </script>
@@ -102,15 +99,15 @@ function animateText(container) {
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) rotateX(0);
     opacity: 1;
   }
 }
 
-
 .text-reveal {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .reveal-mask {
@@ -125,7 +122,7 @@ function animateText(container) {
   opacity: 0;
   animation: none;
   white-space: pre;
-  vertical-align: middle;
+  vertical-align: middle; /* Ensure alignment with icons */
 }
 
 .line-container {
