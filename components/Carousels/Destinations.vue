@@ -23,9 +23,8 @@
       :space-between="10"
       :navigation="true"
       :mousewheel="{
-        forceToAxis: false,
+        forceToAxis: true,
         sensitivity: 0.1,
-        releaseOnEdges: true,
       }"
       :free-mode="true"
       :free-mode-momentum="true"

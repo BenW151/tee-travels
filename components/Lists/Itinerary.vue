@@ -1,6 +1,8 @@
 <template>
   <div class="itinerary item">
-    <h3>Itinerary</h3>
+    <TextReveal>
+      <slot name="subtitle"><h3>Itinerary</h3></slot>
+    </TextReveal>
     <div v-for="(day, index) in days" :key="index" class="day-item">
       <div class="dot-line">
         <div class="dot"></div>
@@ -9,7 +11,7 @@
       <div class="day-content">
         <a :href="`#day${day.id}`" class="underline-out-icon">
           <h5>
-            <LucideArrowDown/>Day {{ index + 1 }} | {{ day.shortSummary }}
+            <LucideArrowDown />Day {{ index + 1 }} | {{ day.shortSummary }}
           </h5>
         </a>
         <p id="day{{day.id}}">{{ day.detailSummary }}</p>

@@ -4,60 +4,6 @@
   </component>
 </template>
 
-<style>
-@keyframes reveal {
-  0% {
-    transform: translateY(100%);
-    rotate: 2deg;
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    rotate: 0deg;
-    opacity: 1;
-  }
-}
-
-.text-reveal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.reveal-mask {
-  overflow: hidden;
-  display: inline-block;
-  height: auto;
-}
-
-.word {
-  display: inline-block;
-  transform: translateY(100%);
-  opacity: 0;
-  rotate: 2deg;
-  animation: none;
-  white-space: pre;
-  vertical-align: middle; /* Ensure alignment with icons */
-}
-
-.line-container {
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.text-reveal svg {
-  margin-right: var(--spacing-2);
-  height: 100%;
-}
-
-@media (max-width: 767px) {
-  .text-reveal {
-    grid-column: span 6;
-  }
-}
-</style>
-
 <script setup>
 import { ref, defineProps, onMounted } from "vue";
 
@@ -136,11 +82,64 @@ function prepareText(container) {
 }
 
 function animateText(container) {
-  const words = container.querySelectorAll(".word");
-  words.forEach((word, index) => {
+  const lines = container.querySelectorAll(".line-container");
+  lines.forEach((line, index) => {
     setTimeout(() => {
-      word.style.animation = "reveal 0.6s forwards";
-    }, 100 * index); // Delay can be adjusted
+      const words = line.querySelectorAll(".word");
+      words.forEach((word) => {
+        word.style.animation = "reveal 0.6s forwards";
+      });
+    }, 100 * index); // Delay each line
   });
 }
 </script>
+
+<style>
+@keyframes reveal {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-reveal {
+  display: flex;
+  flex-direction: column; /* Changed to column for line-by-line animation */
+}
+
+.reveal-mask {
+  overflow: hidden;
+  display: inline-block;
+  height: auto;
+}
+
+.word {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: none;
+  white-space: pre;
+  vertical-align: middle;
+}
+
+.line-container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-reveal svg {
+  margin-right: var(--spacing-2);
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .text-reveal {
+    grid-column: span 6;
+  }
+}
+</style>
