@@ -162,6 +162,7 @@ footer .socials {
   height: 5vw;
   margin: var(--spacing-3);
   margin-left: 0;
+  margin-top: 0;
 }
 
 .footer-end .item {
