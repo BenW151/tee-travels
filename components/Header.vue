@@ -123,7 +123,7 @@ header a.link::after {
 
 .scroll {
   position: absolute;
-  bottom: var(--spacing-4);
+  bottom: calc(100lvh - 100svh + var(--spacing-4));
   right: var(--spacing-5);
   margin: 0;
   display: flex;
