@@ -4,15 +4,10 @@
     <Header
       imageUrl="/images/pakistan-cover.png"
       :title="`${error.statusCode} Error`"
-      subtitle="This Page Does Not Exist"
-      headerClass="header-small"
-      buttonText="Go Home"
-      buttonUrl="/"
-      buttonDescription="Go Home">
-      <template #description>
-        <p>I haven't created this page yet.</p>
-      </template>
+      subtitle="Destination Unknown"
+      headerClass="header-small">
     </Header>
+    <Footer />
   </div>
 </template>
 

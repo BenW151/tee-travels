@@ -106,13 +106,13 @@ const images = [
     src: "/images/travel-blog.png",
     alt: "Pakistan",
     subDescription: "7 Nights | £950",
-    link: "/destinations/pakistan",
+    link: "/destinations/destination",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Pakistan",
     subDescription: "7 Nights | £950",
-    link: "/destinations/pakistan",
+    link: "/destinations/destination",
   },
 ];
 </script>
