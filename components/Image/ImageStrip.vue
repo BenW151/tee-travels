@@ -22,7 +22,8 @@
         Your browser does not support the video tag.
       </video>
       <div :class="{ 'text-wrapper': true, hidden: overlayHidden }">
-        <h4>Play Showreel</h4>
+        <h4 v-if="!isMobile">Click to Play Showreel</h4>
+        <h4 v-if="isMobile">Tap to Play Showreel</h4>
       </div>
     </template>
   </div>
@@ -46,6 +47,7 @@ const props = defineProps({
   },
 });
 
+const isMobile = computed(() => window.innerWidth < 768);
 const videoRef = ref(null);
 const overlayHidden = ref(false);
 const controlsHidden = ref(true);

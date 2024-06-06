@@ -20,8 +20,8 @@
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
         <TextReveal tag="h3">{{ description }}</TextReveal>
       </div>
-      <p class="scroll"><LucideArrowDown /> Scroll</p>
     </LayoutGridContainer>
+    <p class="scroll"><LucideArrowDown /> Scroll</p>
   </header>
 </template>
 
@@ -123,7 +123,7 @@ header a.link::after {
 
 .scroll {
   position: absolute;
-  bottom: var(--spacing-5);
+  bottom: var(--spacing-4);
   right: var(--spacing-5);
   margin: 0;
   display: flex;
