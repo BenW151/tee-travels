@@ -127,6 +127,7 @@ const circleClasses = computed(() => {
   transition: none;
   transition: opacity 0.5s ease 0.1s;
   opacity: 0;
+  display: none;
 }
 
 .circle-text {

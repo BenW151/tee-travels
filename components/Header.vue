@@ -4,26 +4,29 @@
       v-if="imageUrl"
       class="background-image rellax"
       v-rellax
-      data-rellax-speed="3">
+      data-rellax-speed="3"
+    >
       <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
     </div>
     <div
       v-else
       v-rellax
       :style="{ backgroundColor: backgroundColor }"
-      class="background-color rellax"></div>
+      class="background-color rellax"
+    ></div>
     <LayoutGridContainer>
       <div class="hero-text item">
         <TextReveal tag="h1">{{ title }}</TextReveal>
         <TextReveal tag="h2">{{ subtitle }}</TextReveal>
         <TextReveal tag="h3">{{ description }}</TextReveal>
       </div>
+      <p class="scroll"><LucideArrowDown /> Scroll</p>
     </LayoutGridContainer>
   </header>
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from "vue";
+import { onMounted, onBeforeUnmount, ref } from 'vue';
 
 const props = defineProps({
   imageUrl: String,
@@ -44,21 +47,27 @@ const checkScroll = () => {
   if (!headerRef.value) return;
   const header = headerRef.value;
   if (window.scrollY > header.offsetHeight) {
-    document.body.classList.add("scrolled-past-header");
+    document.body.classList.add('scrolled-past-header');
   } else {
-    document.body.classList.remove("scrolled-past-header");
+    document.body.classList.remove('scrolled-past-header');
+  }
+  if (window.scrollY > 0) {
+    document.body.classList.add('scrolled-from-top');
+  } else {
+    document.body.classList.remove('scrolled-from-top');
   }
 };
 
 onMounted(() => {
-  window.addEventListener("scroll", checkScroll);
-  checkScroll();
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Check the scroll position on mount
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", checkScroll);
+  window.removeEventListener('scroll', checkScroll);
 });
 </script>
+
 
 <style scoped>
 .header-small {
@@ -110,6 +119,24 @@ header a.link::after {
   position: fixed;
   top: 0;
   z-index: 0;
+}
+
+.scroll {
+  position: absolute;
+  bottom: var(--spacing-5);
+  right: var(--spacing-5);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  opacity: var(--opacity);
+}
+
+.scroll .lucide {
+  color: var(--color-white);
+}
+
+body.scrolled-from-top .scroll {
+  opacity: 0;
 }
 
 .hero-text {
@@ -178,7 +205,8 @@ header .item:nth-child(3) {
 </style>
 
 <style>
-.hero-text .line-container, .hero-text .text-reveal {
+.hero-text .line-container,
+.hero-text .text-reveal {
   justify-content: center;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{ scrolled: isScrolled, 'nav-hidden': isHidden }">
+  <nav :class="{ scrolled: isScrolled,}">
     <div class="nav">
       <div class="wordmark">
         <NuxtLink :class="{ 'logo-hide': true, open: isMenuOpen }" to="/" aria-label="Home Page"

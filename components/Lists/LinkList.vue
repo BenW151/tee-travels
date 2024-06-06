@@ -1,5 +1,6 @@
 <template>
   <ul class="item list link-list">
+    <li v-if="title" class="list-title">{{ title }}</li>
     <li v-for="link in links" :key="link.url">
       <NuxtLink
         v-if="isInternalLink(link.url)"
@@ -30,6 +31,10 @@ const props = defineProps({
     default: () => [],
     validator: (links) => links.every((link) => link.url && link.label),
   },
+  title: {
+    type: String,
+    default: ''
+  },
 });
 
 // Function to check if a link is internal
@@ -41,5 +46,9 @@ const isInternalLink = (url) => {
 <style scoped>
 .link-list a {
   margin-bottom: 0;
+}
+
+.list-title {
+  font-weight: bold;
 }
 </style>

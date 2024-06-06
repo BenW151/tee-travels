@@ -39,8 +39,9 @@ function handleClick() {
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-top: var(--spacing-3);
-  margin-bottom: var(--spacing-3);
+  margin: 0;
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
 }
 
 .accordion-title svg {

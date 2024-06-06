@@ -89,6 +89,10 @@ const isImage = computed(() => {
   object-fit: cover;
 }
 
+.image-strip video:hover {
+  cursor: pointer;
+}
+
 .text-wrapper {
   position: absolute;
   width: 100%;

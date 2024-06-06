@@ -343,9 +343,9 @@
             </p>
           </AccordionItem>
           <AccordionItem title="Any other questions?" index="6">
-            <p>Get in touch with us through any of the below channels</p>
             <ListsLinkList
               class="contact"
+              title="Get in touch with us through any of the below channels"
               :links="[
                 {
                   url: '/contact',
