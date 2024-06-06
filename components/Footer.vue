@@ -109,6 +109,9 @@ const scrollToTop = () => {
 </script>
 
 <style scoped>
+
+/*TODO Fix grid wrap on safari */
+
 footer {
   background-color: var(--color-white);
   display: flex;
@@ -156,6 +159,8 @@ footer .socials {
 .images {
   display: inline-flex;
 }
+
+/*TODO Fix abta/atol logo on safari */
 
 .atol,
 .abta {
