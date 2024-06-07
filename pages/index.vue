@@ -211,7 +211,18 @@
 <script setup>
 useHead({
   title: "Why Not Adventures - Home",
-  meta: [{ name: "description", content: "Offering affordable tours to off the beaten track destinations" }],
+  meta: [
+    {
+      name: "description",
+      content: "Offering affordable tours to off the beaten track destinations",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://whynotadventures.co.uk",
+    },
+  ],
 });
 
 const isMobile = ref(window.innerWidth < 768);

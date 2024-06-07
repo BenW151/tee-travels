@@ -72,10 +72,6 @@ export default defineNuxtConfig({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [
-        {
-          rel: "canonical",
-          href: "https://whynotadventures.co.uk/",
-        },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
           rel: "apple-touch-icon",

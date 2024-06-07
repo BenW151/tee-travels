@@ -586,6 +586,12 @@ useHead({
       content: "Offering affordable tours to off the beaten track destinations",
     },
   ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://whynotadventures.co.uk/destinations/pakistan",
+    },
+  ],
 });
 </script>
 

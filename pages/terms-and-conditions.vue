@@ -87,6 +87,12 @@ useHead({
       content: "Offering affordable tours to off the beaten track destinations",
     },
   ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://whynotadventures.co.uk/terms-and-conditions",
+    },
+  ],
 });
 </script>
 
