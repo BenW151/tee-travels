@@ -22,6 +22,7 @@
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll</p>
+    <ListsPageIndex v-if="pageIndexLabels" :labels="pageIndexLabels" />
   </header>
 </template>
 
@@ -39,6 +40,7 @@ const props = defineProps({
   buttonDescription: String,
   headerClass: String,
   backgroundColor: String,
+  pageIndexLabels: Array,
 });
 
 const headerRef = ref(null);
@@ -67,6 +69,7 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', checkScroll);
 });
 </script>
+
 
 
 <style scoped>
@@ -124,15 +127,28 @@ header a.link::after {
 .scroll {
   position: absolute;
   bottom: calc(100lvh - 100svh + var(--spacing-4));
+  left: var(--spacing-5);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  opacity: var(--opacity);
+  font-size: var(--font-size-XXS);
+}
+
+.scroll .lucide {
+  color: var(--color-white);
+  height: var(--font-size-XXS);
+}
+
+.page-index {
+  position: absolute;
+  bottom: calc(100lvh - 100svh + var(--spacing-4));
   right: var(--spacing-5);
   margin: 0;
   display: flex;
   align-items: center;
   opacity: var(--opacity);
-}
-
-.scroll .lucide {
-  color: var(--color-white);
+  z-index: 1000;
 }
 
 body.scrolled-from-top .scroll {

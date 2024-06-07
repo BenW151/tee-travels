@@ -6,10 +6,17 @@
       title="Pakistan"
       subtitle="Hiking in the north"
       description="£950 | 7 Nights"
-      headerClass="header-small">
+      headerClass="header-small"
+      :pageIndexLabels="[
+        { title: 'Overview', link: 'overview' },
+        { title: 'Included', link: 'included' },
+        { title: 'Itinerary', link: 'itinerary-detailed' },
+        { title: 'FAQ', link: 'faq' },
+        { title: 'Book', link: 'book' },
+      ]">
     </Header>
 
-    <section class="overview">
+    <section class="overview" id="overview">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Overview" />
         <TextParagraphWithTitle subtitleTag="h3">
@@ -71,7 +78,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="itinerary-brief">
+    <section class="itinerary-brief" id="itinerary-brief">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Itinerary" />
         <ListsItinerary
@@ -158,14 +165,14 @@
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section id="showreel">
       <ImageStrip
         src="/videos/montenegro-reel.mp4"
         poster="/images/pakistan-cover.png"
         alt="Montenegro Showreel" />
     </section>
 
-    <section class="text-left included">
+    <section class="text-left included" id="included">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
@@ -476,7 +483,7 @@
       </template>
     </ItineraryDay>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Information" />
         <TextParagraphWithTitle subtitleTag="h3">
@@ -577,7 +584,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="end-text">
+    <section class="end-text" id="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
         <a
