@@ -200,102 +200,281 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="itinerary-day text-left" id="day1">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Detailed Itinerary" />
-        <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="right" />
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>Day 1 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day1"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 1 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 1</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-right" id="day2">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
-          imageAlt="Skardu, Pakistan"
-          overlayText="Skardu, <br /> Pakistan"
-          textPosition="left" />
-        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
-          <template #title>Day 2 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day2"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Skardu, Pakistan"
+      overlayText="Skardu, <br /> Pakistan"
+      textPosition="left"
+      title="Day 2 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 2</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-left" id="day3">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="right" />
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>Day 3 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day3"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 3 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 3</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-right" id="day4">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="left" />
-        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
-          <template #title>Day 4 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day4"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="left"
+      title="Day 4 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day5"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 5 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day6"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="left"
+      title="Day 6 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day7"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 7 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day8"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="left"
+      title="Day 8 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day9"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 9 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day10"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="left"
+      title="Day 10 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day11"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="right"
+      title="Day 11 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day12"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Pakistan"
+      overlayText="Fairy Meadows, <br /> Pakistan"
+      textPosition="left"
+      title="Day 12 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Pakistan with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
 
     <section class="faq">
       <LayoutGridContainer>
