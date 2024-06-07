@@ -236,5 +236,13 @@ const images = [
   .custom-scrollbar {
     display: none;
   }
+
+  .image-title {
+    font-weight: bold;
+  }
+
+  .image-info p {
+    margin: 0;
+  }
 }
 </style>
