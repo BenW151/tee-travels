@@ -53,12 +53,14 @@
             imageUrl="/images/atol.svg"
             imageAlt="Celestial Relaxation Room"
             class="atol"
+            objectFit="contain"
             rellaxPercentage="0"
             rellaxSpeed="0" />
           <ImageDefault
             imageUrl="/images/abta.png"
             imageAlt="Celestial Relaxation Room"
             class="abta"
+            objectFit="contain"
             rellaxPercentage="0"
             rellaxSpeed="0" />
         </div>
@@ -110,8 +112,6 @@ const scrollToTop = () => {
 
 <style scoped>
 
-/*TODO Fix grid wrap on safari */
-
 footer {
   background-color: var(--color-white);
   display: flex;
@@ -153,14 +153,12 @@ footer .socials {
 .legal {
   grid-column: 11 / 17;
   grid-row-start: 1;
-  white-space: wrap;
+  white-space: normal;
 }
 
 .images {
   display: inline-flex;
 }
-
-/*TODO Fix abta/atol logo on safari */
 
 .atol,
 .abta {

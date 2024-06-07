@@ -561,17 +561,12 @@
           <AccordionItem title="Any other questions?" index="6">
             <ListsLinkList
               class="contact"
-              title="Get in touch with us through any of the below channels"
+              title="Get in touch"
               :links="[
                 {
                   url: '/contact',
                   label: 'Contact Form',
-                  description: 'GitHub',
-                },
-                {
-                  url: 'https://www.linkedin.com/in/benw151/',
-                  label: 'Phone',
-                  description: 'LinkedIn',
+                  description: 'Contact Page',
                 },
                 {
                   url: 'mailto:myemail@email.com',

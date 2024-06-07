@@ -4,7 +4,7 @@
     v-rellax
     :data-rellax-percentage="rellaxPercentage"
     :data-rellax-speed="computedRellaxSpeed">
-    <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
+    <NuxtImg :class="objectFitClass" format="webp" :alt="imageAlt" :src="imageUrl" />
   </div>
 </template>
 
@@ -29,6 +29,11 @@ const props = defineProps({
     type: String,
     default: "2", // Default speed for rellax effect
   },
+  objectFit: {
+    type: String,
+    default: "cover", // Default object-fit value
+    validator: (value) => ["cover", "contain"].includes(value), // Ensure only "cover" or "contain" can be used
+  }
 });
 
 // Reactive reference to track window width
@@ -48,8 +53,12 @@ onMounted(() => {
 const computedRellaxSpeed = computed(() => {
   return isMobile.value ? '0' : props.rellaxSpeed;
 });
-</script>
 
+// Computed property for objectFit class
+const objectFitClass = computed(() => {
+  return props.objectFit === "contain" ? "object-fit-contain" : "object-fit-cover";
+});
+</script>
 
 <style scoped>
 .image-default {
@@ -60,10 +69,18 @@ const computedRellaxSpeed = computed(() => {
   margin: 0;
 }
 
-.image-default img,
-.image-default video {
+img, video {
   width: 100%;
   height: 100%;
+}
+
+img.object-fit-cover,
+video.object-fit-cover {
   object-fit: cover;
+}
+
+img.object-fit-contain ,
+video.object-fit-contain  {
+  object-fit: contain;
 }
 </style>
