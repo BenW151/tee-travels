@@ -123,7 +123,7 @@ header a.link::after {
 .scroll,
 .page-index {
   position: absolute;
-  bottom: calc(100lvh - 100svh + var(--spacing-4));
+  bottom: var(--spacing-4);
   z-index: 100;
   margin: 0;
   display: flex;
@@ -220,6 +220,7 @@ header .item:nth-child(3) {
     font-size: var(--font-size-XS);
     right: 0;
     width: 100%;
+    top: calc(100dvh - var(--spacing-5));
   }
 }
 </style>
