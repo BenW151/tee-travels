@@ -4,7 +4,7 @@
       imageUrl="/images/travel-blog.png"
       imageAlt="Laptop with code on desk"
       title="Contact"
-      subtitle="Have a question? Let me know"
+      subtitle="Have a question? Let us know"
       headerClass="header-small">
     </Header>
 

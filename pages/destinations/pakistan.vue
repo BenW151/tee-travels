@@ -599,9 +599,10 @@
 
     <section class="end">
       <LayoutGridContainer>
+        <TextSectionLabel labelText="Testimonials" />
         <TextCard
           name="Tia Thomas"
-          position="Tour Leader"
+          position="Trip Leader"
           quote="Embark on an unforgettable adventure to Pakistan with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
@@ -716,7 +717,7 @@ useHead({
 }
 
 .destination .card {
-  grid-column: 11 / 17;
+  grid-column: 6 / 12;
 }
 
 .end-text a {
