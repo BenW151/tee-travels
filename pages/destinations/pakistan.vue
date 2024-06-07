@@ -4,7 +4,7 @@
       imageUrl="/images/pakistan-cover.png"
       imageAlt="Modern office"
       title="Pakistan"
-      subtitle="Hiking in the north"
+      subtitle="Hiking in the Hunza Valley + Skardu"
       description="£950 | 7 Nights"
       headerClass="header-small"
       :pageIndexLabels="[
@@ -157,11 +157,11 @@
             },
           ]" />
         <ImageDefault
-          imageUrl="/images/pakistan-map.svg"
+          imageUrl="/images/pakistan-map.png"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
-          rellaxSpeed="0" />
+          rellaxSpeed="-5" />
       </LayoutGridContainer>
     </section>
 
@@ -675,6 +675,7 @@ useHead({
 
 .itinerary-map.image-default img {
   object-fit: contain;
+  height: auto;
 }
 
 .text-left .paragraph-with-title {
@@ -742,6 +743,10 @@ a h4 {
   .overview .item.list {
     grid-column: span 2;
     grid-row: auto;
+  }
+
+  .overview .image {
+    height: 80vw;
   }
 
   .destination .card {
