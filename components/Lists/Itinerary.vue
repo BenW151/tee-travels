@@ -8,9 +8,9 @@
       </div>
       <div class="day-content">
         <a :href="`#day${day.id}`">
-          <h5>
+          <h4>
             Day {{ index + 1 }} | {{ day.shortSummary }}
-          </h5>
+          </h4>
         </a>
         <p id="day{{day.id}}">{{ day.detailSummary }}</p>
       </div>
@@ -63,8 +63,9 @@ const props = defineProps({
   flex-grow: 1;
 }
 
-.day-content h5 {
+.day-content h4 {
   margin-bottom: 0;
+  font-size: var(--font-size-S);
 }
 
 .lucide {
