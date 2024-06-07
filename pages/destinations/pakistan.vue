@@ -78,43 +78,73 @@
           :days="[
             {
               id: 1,
-              shortSummary: 'XYZ hike',
+              shortSummary: 'Arrival in Islamabad',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 2,
-              shortSummary: 'ABC village tour',
+              shortSummary: 'Islamabad to jaglot',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 3,
-              shortSummary: 'Beach day',
+              shortSummary: 'jaglot to Fairy Meadows ',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 4,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Beyal Camp and Nanga Parbat Viewpoint',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 5,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Fairy Meadows to skardu',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 6,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Overnight stay in skardu',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 7,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Egalnest',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 8,
+              shortSummary: 'Egalnest ',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 9,
+              shortSummary: 'Rakaposhi hapakun',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 10,
+              shortSummary: 'Treak to Basecamp and gulkin',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 11,
+              shortSummary: 'Gulkin and attabd lake',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 12,
+              shortSummary: 'straight to Islamabad',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
@@ -199,8 +229,8 @@
       <LayoutGridContainer>
         <ImageWithTextOverlay
           imageUrl="/images/travel-blog.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Skardu, Pakistan"
+          overlayText="Skardu, <br /> Pakistan"
           textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
           <template #title>Day 2 | XYZ hike</template>
@@ -368,7 +398,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="book">
+    <section class="end-text">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
         <a
@@ -502,13 +532,13 @@ useHead({
   grid-column: 11 / 17;
 }
 
-.book a {
+.end-text a {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-.book a h2 {
+.end-text a h2 {
   font-size: 13vw;
   margin: 0;
 }
@@ -532,11 +562,11 @@ a h4 {
     grid-column: 1 / 7;
   }
 
-  .book a {
+  .end-text a {
     grid-column: 1 / 7;
   }
 
-  .book a h2 {
+  .end-text a h2 {
     font-size: 19vw;
   }
 }

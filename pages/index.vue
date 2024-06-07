@@ -193,14 +193,14 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="contact">
+      <section class="end-text">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Contact" />
           <NuxtLink
-            class="item get-in-touch underline-out"
-            to="/Contact"
-            aria-label="Contact Page"
-            ><TextReveal tag="h2"> Get in Touch</TextReveal></NuxtLink
+            class="item underline-out"
+            to="/destinations"
+            aria-label="destinations Page"
+            ><TextReveal tag="h2">Destinations</TextReveal></NuxtLink
           >
         </LayoutGridContainer>
       </section>
@@ -258,13 +258,13 @@ if (!isMobile.value) {
   /*height: 40vw;*/
 }
 
-.contact .get-in-touch {
+.end-text a {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-.contact .get-in-touch h2 {
+.end-text a h2 {
   font-size: var(--font-size-XXL);
   margin: 0;
 }
@@ -279,12 +279,12 @@ if (!isMobile.value) {
 
 @media (max-width: 767px) {
   section div.container.grid div.item,
-  .contact .get-in-touch {
+  .end-text a {
     grid-column: 1 / 7;
     grid-row: auto;
   }
 
-  .contact .get-in-touch h2 {
+  .end-text a h2 {
     font-size: 14.5vw;
   }
 
