@@ -30,7 +30,7 @@ function handleClick() {
 
 <style>
 .accordion-item {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(7, 7, 7, 0.2);
 }
 
 .accordion-title {
@@ -55,7 +55,7 @@ function handleClick() {
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   background-color: var(--font-color-primary);
   transform: scaleX(0);
