@@ -105,7 +105,7 @@
             </template>
           </TextParagraphWithTitle>
           <Accordion>
-            <AccordionItem title="What's included?" index="1">
+            <AccordionItem title="Are the tours suitable for all ages?" index="1">
               <p>
                 Embark on an unforgettable adventure to Pakistan with our
                 organized tour, showcasing the country's breathtaking natural
@@ -117,7 +117,7 @@
                 Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="Do I need a visa?" index="2">
+            <AccordionItem title="Do I need to organize anything myself?" index="2">
               <p>
                 Embark on an unforgettable adventure to Pakistan with our
                 organized tour, showcasing the country's breathtaking natural
@@ -130,7 +130,7 @@
               </p>
             </AccordionItem>
             <AccordionItem
-              title="What airport do I need to fly in to/out of?"
+              title="Can I join a tour as a solo traveler?"
               index="3">
               <p>
                 Embark on an unforgettable adventure to Pakistan with our
@@ -155,7 +155,7 @@
                 Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="Will the itinerary change?" index="5">
+            <AccordionItem title="What is the group size for the tours?" index="5">
               <p>
                 Embark on an unforgettable adventure to Pakistan with our
                 organized tour, showcasing the country's breathtaking natural
@@ -167,27 +167,56 @@
                 Mosque
               </p>
             </AccordionItem>
-            <AccordionItem title="Any other questions?" index="6">
-              <p>Get in touch with us through any of the below channels</p>
+            <AccordionItem title="What is your cancellation policy?" index="6">
+              <p>
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
+              </p>
+            </AccordionItem>
+            <AccordionItem title="What if I have special dietary requirements?" index="7">
+              <p>
+                Embark on an unforgettable adventure to Pakistan with our
+                organized tour, showcasing the country's breathtaking natural
+                beauty and vibrant culture. Begin your journey in the capital
+                city of Islamabad, where modern architecture meets serene
+                landscapes. Next, travel to the historical city of Lahore,
+                renowned for its rich heritage, bustling bazaars, and
+                magnificent Mughal architecture, including the iconic Badshahi
+                Mosque
+              </p>
+            </AccordionItem>
+            <AccordionItem title="Any other questions?" index="8">
               <ListsLinkList
-                class="contact"
-                :links="[
-                  {
-                    url: '/contact',
-                    label: 'Contact Form',
-                    description: 'GitHub',
-                  },
-                  {
-                    url: 'https://www.linkedin.com/in/benw151/',
-                    label: 'Phone',
-                    description: 'LinkedIn',
-                  },
-                  {
-                    url: 'mailto:myemail@email.com',
-                    label: 'Email',
-                    description: 'Email',
-                  },
-                ]" />
+              class="contact"
+              title="Get in touch"
+              :links="[
+                {
+                  url: '/contact',
+                  label: 'Fill out the contact form',
+                  description: 'Contact Page',
+                },
+                {
+                  url: 'mailto:myemail@email.com',
+                  label: 'Email us',
+                  description: 'Email',
+                },
+                {
+                  url: 'https://instagram.com/whynotadventures_',
+                  label: 'Message us on Instagram',
+                  description: 'Instagram',
+                },
+                {
+                  url: 'https://instagram.com/whynotadventures_',
+                  label: 'Message us on WhatsApp',
+                  description: 'WhatsApp',
+                },
+              ]" />
             </AccordionItem>
           </Accordion>
         </LayoutGridContainer>
