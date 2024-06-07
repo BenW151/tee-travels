@@ -4,7 +4,7 @@
       imageUrl="/images/montenegro-cover.png"
       imageAlt="Modern office"
       title="Montenegro"
-      subtitle="Hiking in the north"
+      subtitle="Hiking in the Hunza Valley + Skardu"
       description="£950 | 7 Nights"
       headerClass="header-small"
       :pageIndexLabels="[
@@ -71,7 +71,7 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
@@ -87,81 +87,76 @@
               id: 1,
               shortSummary: 'Arrival in Islamabad',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Arrive in Islamabad, check into your hotel, and explore nearby attractions if time permits.',
             },
             {
               id: 2,
-              shortSummary: 'Islamabad to jaglot',
+              shortSummary: 'Islamabad to Jaglot',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Drive from Islamabad to Jaglot, enjoying scenic views of lush valleys and rivers along the way.',
             },
             {
               id: 3,
-              shortSummary: 'jaglot to Fairy Meadows ',
+              shortSummary: 'Jaglot to Fairy Meadows',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Travel from Jaglot to Fairy Meadows, with a stop for lunch and a rugged jeep ride to your destination.',
             },
             {
               id: 4,
               shortSummary: 'Beyal Camp and Nanga Parbat',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Hike to Beyal Camp for breathtaking views of Nanga Parbat and explore the pristine natural beauty.',
             },
             {
               id: 5,
-              shortSummary: 'Fairy Meadows to skardu',
+              shortSummary: 'Fairy Meadows to Skardu',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Depart from Fairy Meadows and drive to Skardu Valley, checking into your hotel upon arrival.',
             },
             {
               id: 6,
-              shortSummary: 'Overnight stay in skardu',
+              shortSummary: 'Masoor Rock Hike',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Hike to Masoor Rock for panoramic views and explore the Sarfaranga Desert with a camel ride or stroll.',
             },
             {
               id: 7,
-              shortSummary: 'Egalnest',
+              shortSummary: 'Eagle’s Nest',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Drive to Eagle’s Nest for stunning mountain views, a yak BBQ, and a local drink called moonshine.',
             },
             {
               id: 8,
-              shortSummary: 'Egalnest ',
+              shortSummary: 'Rakaposhi Hapakun',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Go shopping in Karimabad, then drive to Rakaposhi Minapin and hike to Hapakun for beautiful mountain views.',
             },
             {
               id: 9,
-              shortSummary: 'Rakaposhi hapakun',
+              shortSummary: 'Trek to Basecamp and Gulkin',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Trek to Rakaposhi base camp for stunning views, then drive to Gulkin and experience local hospitality.',
             },
             {
               id: 10,
-              shortSummary: 'Treak to Basecamp and gulkin',
+              shortSummary: 'Gulkin and Attabad Lake',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Hike for a view of Attabad Lake, cross the Passu Bridge, and visit Passu Cones mountains.',
             },
             {
               id: 11,
-              shortSummary: 'Gulkin and attabd lake',
+              shortSummary: 'Return to Islamabad',
               detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            },
-            {
-              id: 12,
-              shortSummary: 'straight to Islamabad',
-              detailSummary:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'Drive back to Islamabad, a 16-hour journey, and prepare for your departure flight the next morning.',
             },
           ]" />
+
         <ImageDefault
-          imageUrl="/images/montenegro-map.svg"
+          imageUrl="/images/pakistan-map.png"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
-          rellaxSpeed="0" />
+          rellaxSpeed="-5" />
       </LayoutGridContainer>
     </section>
 
@@ -176,7 +171,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/montenegro-cover.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
@@ -209,277 +204,265 @@
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/montenegro-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="right"
-      title="Day 1 | XYZ hike">
+      title="Day 1 | Arrival in Islamabad">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Arrive in Islamabad and check into your hotel. Spend the day resting
+          and acclimatizing to the local time zone. Islamabad, the capital city
+          of Montenegro, offers a blend of modern and traditional culture.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          If time permits, explore some nearby attractions such as Faisal
+          Mosque, one of the largest mosques in the world, or Lok Virsa Museum,
+          which showcases Montenegro's rich cultural heritage.
         </p>
-        <a href="https://example.com">Learn more about Day 1</a>
+        <p>Accommodation in Islamabad.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/montenegro-cover.png"
       imageAlt="Skardu, Montenegro"
       overlayText="Skardu, <br /> Montenegro"
       textPosition="left"
-      title="Day 2 | XYZ hike">
+      title="Day 2 | Islamabad to Jaglot">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Depart from Islamabad early in the morning and drive to Jaglot. Enjoy
+          scenic views along the way, including lush valleys and rivers, as you
+          travel through the picturesque landscape of northern Montenegro.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Arrive in Jaglot and check into your hotel. Spend the evening
+          exploring the town and relaxing by the river. Jaglot serves as a
+          gateway to some of the most stunning regions of Gilgit-Baltistan.
         </p>
-        <a href="https://example.com">Learn more about Day 2</a>
+        <p>Accommodation in Jaglot.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/montenegro-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="right"
-      title="Day 3 | XYZ hike">
+      title="Day 3 | Jaglot to Fairy Meadows">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Depart from Jaglot and drive towards Raikot. Stop in Raikot for lunch
+          and to stretch your legs, enjoying the local cuisine and hospitality.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Continue the journey to Raikot Bridge, where you'll transfer to local
+          jeeps for the rugged ride to Fairy Meadows, a stunningly beautiful
+          grassland at the base of Nanga Parbat.
         </p>
-        <a href="https://example.com">Learn more about Day 3</a>
+        <p>
+          Arrive in Fairy Meadows and check into your accommodation. Enjoy the
+          evening at leisure, soaking in the stunning views of Nanga Parbat, the
+          world's ninth highest mountain.
+        </p>
+        <p>Accommodation in Fairy Meadows.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/montenegro-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="left"
-      title="Day 4 | XYZ hike">
+      title="Day 4 | Beyal Camp and Nanga Parbat Viewpoint">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Wake up early and hike to Beyal Camp for breathtaking views of Nanga
+          Parbat. This hike offers stunning panoramic views and a chance to
+          experience the pristine natural beauty of the region.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Spend the day exploring the area around Beyal Camp, enjoying the
+          tranquility and the stunning mountain vistas. Capture some memorable
+          photographs of the landscape and wildlife.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>
+          Return to Fairy Meadows in the evening and relax, sharing stories
+          around a campfire.
+        </p>
+        <p>Accommodation in Fairy Meadows.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Skardu, Montenegro"
+      overlayText="Skardu, <br /> Montenegro"
       textPosition="right"
-      title="Day 5 | XYZ hike">
+      title="Day 5 | Fairy Meadows to Skardu">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Depart from Fairy Meadows and drive to Skardu Valley, a journey that
+          takes you through some of the most dramatic and breathtaking
+          landscapes in Montenegro.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Arrive in Skardu and check into your hotel. Skardu is known for its
+          stunning natural beauty, including turquoise lakes and towering peaks.
+          Take some time to relax and enjoy the serene environment.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>Accommodation in Skardu.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Sarfaranga Desert, Montenegro"
+      overlayText="Sarfaranga Desert, <br /> Montenegro"
       textPosition="left"
-      title="Day 6 | XYZ hike">
+      title="Day 6 | Masoor Rock Hike and Sarfaranga Desert Exploration">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          After breakfast, embark on a hike to Masoor Rock, known for its unique
+          geological formations and panoramic views. The ascent provides a
+          rewarding experience with breathtaking vistas from the top.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Descend back to the base and return to Skardu for lunch. In the
+          afternoon, drive to Sarfaranga Desert, an otherworldly landscape known
+          for its white sands and stunning contrasts against the surrounding
+          mountains.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>
+          Take a camel ride or stroll through the desert landscape, enjoying the
+          serenity and beauty of this unique environment.
+        </p>
+        <p>Return to Skardu in the evening and relax.</p>
+        <p>Accommodation in Skardu.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Eagle’s Nest, Montenegro"
+      overlayText="Eagle’s Nest, <br /> Montenegro"
       textPosition="right"
-      title="Day 7 | XYZ hike">
+      title="Day 7 | Eagle’s Nest">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Drive back from Skardu straight to Eagle’s Nest, where you’ll stay in
+          a hotel. Eagle’s Nest offers panoramic views of seven mountains, each
+          towering above 6,500 meters, providing a breathtaking backdrop.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          At Eagle’s Nest, enjoy a yak BBQ and a local drink called moonshine,
+          experiencing the unique flavors and traditions of the region.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>Accommodation in Eagle’s Nest.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Rakaposhi, Montenegro"
+      overlayText="Rakaposhi, <br /> Montenegro"
       textPosition="left"
-      title="Day 8 | XYZ hike">
+      title="Day 8 | Rakaposhi Hapakun">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Have breakfast and go to Karimabad for some shopping, famous for its
+          gemstones and handicrafts. Take your time to explore the local markets
+          and find unique souvenirs.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Depart from Karimabad after shopping and drive to Rakaposhi Minapin.
+          Hike to Hapakun for stunning views of Rakaposhi, one of the most
+          beautiful and accessible peaks in the Karakoram Range.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>
+          Enjoy stargazing from the tents at night, a magical experience under
+          the clear mountain skies.
+        </p>
+        <p>Accommodation in Hapakun.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Gulkin, Montenegro"
+      overlayText="Gulkin, <br /> Montenegro"
       textPosition="right"
-      title="Day 9 | XYZ hike">
+      title="Day 9 | Trek to Basecamp and Gulkin">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Trek to the base camp of Rakaposhi for stunning views of two massive
+          mountains and their glaciers. The trek is challenging but offers
+          unparalleled beauty and adventure.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Trek down from the base camp and drive to Gulkin. Experience the
+          hospitality of a local family in Gulkin village and learn about their
+          way of life, participating in traditional meals and cultural
+          activities.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>Accommodation with a local family in Gulkin.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Attabad Lake, Montenegro"
+      overlayText="Attabad Lake, <br /> Montenegro"
       textPosition="left"
-      title="Day 10 | XYZ hike">
+      title="Day 10 | Gulkin and Attabad Lake">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Go on the Baskochi hike for a stunning view of the famous Attabad
+          Lake, a beautiful turquoise lake formed after a landslide in 2010. The
+          hike offers incredible views and photo opportunities.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Visit the Passu Bridge to cross the river, a thrilling experience many
+          say is the most dangerous walking bridge in the world. While safe, it
+          offers an exciting adventure for thrill-seekers.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>
+          Visit the Passu Cones mountains and take an iconic picture with the
+          group on top of the bus, capturing the unique landscape and memories.
+        </p>
+        <p>Accommodation in Gulkin.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
+      imageUrl="/images/montenegro-cover.png"
+      imageAlt="Islamabad, Montenegro"
+      overlayText="Islamabad, <br /> Montenegro"
       textPosition="right"
-      title="Day 11 | XYZ hike">
+      title="Day 11 | Return to Islamabad">
       <template #body>
         <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
+          Depart from Gulkin early in the morning and drive back to Islamabad,
+          which is a 16-hour journey. Enjoy the scenic drive through the
+          mountainous terrain and reflect on your adventures.
         </p>
         <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
+          Arrive in Islamabad and stay overnight, ready for your departure
+          flight in the morning. Say goodbye to Montenegro and cherish the
+          memories of your unforgettable journey.
         </p>
-        <a href="https://example.com">Learn more about Day 4</a>
-      </template>
-    </ItineraryDay>
-
-    <ItineraryDay
-      dayId="day12"
-      imageUrl="/images/travel-blog.png"
-      imageAlt="Fairy Meadows, Montenegro"
-      overlayText="Fairy Meadows, <br /> Montenegro"
-      textPosition="left"
-      title="Day 12 | XYZ hike">
-      <template #body>
-        <p>
-          Embark on an unforgettable adventure to Montenegro with our organized
-          tour, showcasing the country's breathtaking natural beauty and vibrant
-          culture. Begin your journey in the capital city of Islamabad, where
-          modern architecture meets serene landscapes.
-        </p>
-        <p>
-          Next, travel to the historical city of Lahore, renowned for its rich
-          heritage, bustling bazaars, and magnificent Mughal architecture,
-          including the iconic Badshahi Mosque.
-        </p>
-        <a href="https://example.com">Learn more about Day 4</a>
+        <p>Accommodation in Islamabad.</p>
       </template>
     </ItineraryDay>
 
@@ -561,17 +544,12 @@
           <AccordionItem title="Any other questions?" index="6">
             <ListsLinkList
               class="contact"
-              title="Get in touch with us through any of the below channels"
+              title="Get in touch"
               :links="[
                 {
                   url: '/contact',
                   label: 'Contact Form',
-                  description: 'GitHub',
-                },
-                {
-                  url: 'https://www.linkedin.com/in/benw151/',
-                  label: 'Phone',
-                  description: 'LinkedIn',
+                  description: 'Contact Page',
                 },
                 {
                   url: 'mailto:myemail@email.com',
@@ -599,9 +577,10 @@
 
     <section class="end">
       <LayoutGridContainer>
+        <TextSectionLabel labelText="Testimonials" />
         <TextCard
           name="Tia Thomas"
-          position="Tour Leader"
+          position="Trip Leader"
           quote="Embark on an unforgettable adventure to Montenegro with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
@@ -675,6 +654,7 @@ useHead({
 
 .itinerary-map.image-default img {
   object-fit: contain;
+  height: auto;
 }
 
 .text-left .paragraph-with-title {
@@ -715,7 +695,7 @@ useHead({
 }
 
 .destination .card {
-  grid-column: 11 / 17;
+  grid-column: 6 / 12;
 }
 
 .end-text a {
@@ -742,6 +722,10 @@ a h4 {
   .overview .item.list {
     grid-column: span 2;
     grid-row: auto;
+  }
+
+  .overview .image {
+    height: 80vw;
   }
 
   .destination .card {

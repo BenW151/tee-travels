@@ -63,12 +63,12 @@ export default {
 
 <style scoped>
 .left .paragraph-with-title {
-  grid-column: 3 / 11;
+  grid-column: 3 / 10;
   grid-row-start: 1;
 }
 
 .left .image {
-  grid-column: 9 / 16;
+  grid-column: 8 / 16;
   grid-row-start: 1;
   height: 40vw;
 }

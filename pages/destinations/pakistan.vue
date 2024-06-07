@@ -189,14 +189,6 @@
                 { id: 6, text: 'All Activities Mentioned' },
                 { id: 7, text: 'Transfers Between Stops' },
               ]" />
-            <ListsDefaultList
-              bullets
-              title="Optional Extras"
-              :items="[
-                { id: 1, text: 'Private Room' },
-                { id: 2, text: 'Airport Transfer' },
-                { id: 3, text: 'Boat Tour' },
-              ]" />
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
@@ -338,10 +330,6 @@
           afternoon, drive to Sarfaranga Desert, an otherworldly landscape known
           for its white sands and stunning contrasts against the surrounding
           mountains.
-        </p>
-        <p>
-          Take a camel ride or stroll through the desert landscape, enjoying the
-          serenity and beauty of this unique environment.
         </p>
         <p>Return to Skardu in the evening and relax.</p>
         <p>Accommodation in Skardu.</p>
@@ -486,59 +474,44 @@
         <Accordion>
           <AccordionItem title="What's included?" index="1">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              Our tour includes accommodation, transportation within Pakistan,
+              guided tours, and most meals. You'll also enjoy unique experiences
+              such as hikes, local cultural activities, and visits to key
+              attractions.
             </p>
           </AccordionItem>
           <AccordionItem title="Do I need a visa?" index="2">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              Yes, most travelers will need a visa to enter Pakistan. It's
+              essential to check the specific visa requirements for your
+              nationality and apply in advance. Ensure your passport is valid
+              for at least six months beyond your planned departure date.
             </p>
           </AccordionItem>
           <AccordionItem
             title="What airport do I need to fly in to/out of?"
             index="3">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              You will fly into and out of Islamabad International Airport
+              (ISB). This airport serves as the main gateway for our tour,
+              providing convenient access to all starting and ending points of
+              our itinerary.
             </p>
           </AccordionItem>
           <AccordionItem title="Do I need travel insurance?" index="4">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              Yes, travel insurance is mandatory for our tour. It should cover
+              medical expenses, trip cancellations, and any unforeseen events.
+              We recommend purchasing comprehensive travel insurance to ensure a
+              safe and worry-free journey.
             </p>
           </AccordionItem>
           <AccordionItem title="Will the itinerary change?" index="5">
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              While we strive to stick to the planned itinerary, there may be
+              occasions where changes are necessary due to weather conditions,
+              road closures, or other unforeseen circumstances. We will do our
+              best to keep you informed and provide suitable alternatives.
             </p>
           </AccordionItem>
           <AccordionItem title="Any other questions?" index="6">
@@ -548,13 +521,23 @@
               :links="[
                 {
                   url: '/contact',
-                  label: 'Contact Form',
+                  label: 'Fill out the contact form',
                   description: 'Contact Page',
                 },
                 {
                   url: 'mailto:myemail@email.com',
-                  label: 'Email',
+                  label: 'Email us',
                   description: 'Email',
+                },
+                {
+                  url: 'https://instagram.com/whynotadventures_',
+                  label: 'Message us on Instagram',
+                  description: 'Instagram',
+                },
+                {
+                  url: 'https://instagram.com/whynotadventures_',
+                  label: 'Message us on WhatsApp',
+                  description: 'WhatsApp',
                 },
               ]" />
           </AccordionItem>
@@ -680,7 +663,7 @@ useHead({
 }
 
 .included .image {
-  height: 65vw;
+  height: 50vw;
 }
 
 .faq .paragraph-with-title:nth-of-type(1) {

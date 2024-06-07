@@ -7,9 +7,9 @@
         <div v-if="index < days.length - 1" class="line"></div>
       </div>
       <div class="day-content">
-        <a :href="`#day${day.id}`" class="underline-out-icon">
+        <a :href="`#day${day.id}`">
           <h5>
-            <LucideArrowDown />Day {{ index + 1 }} | {{ day.shortSummary }}
+            Day {{ index + 1 }} | {{ day.shortSummary }}
           </h5>
         </a>
         <p id="day{{day.id}}">{{ day.detailSummary }}</p>
