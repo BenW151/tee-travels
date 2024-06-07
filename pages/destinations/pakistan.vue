@@ -461,13 +461,10 @@
           <template #title>FAQ</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
+              Have questions? We've got answers! Check out our FAQ section for
+              quick and helpful information about our tours, booking process,
+              and more. If you can't find what you're looking for, feel free to
+              reach out to us directly.
             </p>
           </template>
         </TextParagraphWithTitle>
@@ -564,13 +561,7 @@
         <TextCard
           name="Tia Thomas"
           position="Trip Leader"
-          quote="Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque."
+          quote="Pakistan is a land of stunning contrasts and hidden treasures. From the bustling streets of Lahore, rich with history and culture, to the serene, breathtaking landscapes of the northern regions, this tour offers an unforgettable experience. Every corner of Pakistan tells a story, and I’ve personally curated this trip to ensure you get the most authentic and enriching experience possible. Join us on this adventure, and discover the warmth and hospitality of Pakistan’s people, the vibrant markets, and the awe-inspiring natural beauty. It’s a journey you’ll cherish forever!"
           imgSrc="/images/person.png" />
       </LayoutGridContainer>
     </section>
