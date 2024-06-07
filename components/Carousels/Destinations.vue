@@ -116,7 +116,7 @@ const images = [
     link: "/destinations/montenegro",
   },
   {
-    src: "/images/travel-blog.png",
+    src: "/images/montenegro-cover.png",
     alt: "Pakistan",
     subDescription: "Hiking in the north",
     nightsPrice: "7 Nights | £950",
