@@ -181,7 +181,7 @@ header .item:nth-child(3) {
 
 @media (max-width: 767px) {
   .header-small {
-    height: 100lvh;
+    height: 100svh;
   }
   .header-medium {
     height: 110lvh;
@@ -220,7 +220,6 @@ header .item:nth-child(3) {
     font-size: var(--font-size-XS);
     right: 0;
     width: 100%;
-    bottom: calc(100lvh - 100svh + var(--spacing-4));
   }
 }
 </style>
