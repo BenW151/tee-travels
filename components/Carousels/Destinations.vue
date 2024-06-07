@@ -97,29 +97,29 @@ const images = [
   {
     src: "/images/pakistan-cover.png",
     alt: "Pakistan",
-    subDescription: "Hunza Valley + Skardu",
+    subDescription: "Hiking in Hunza Valley + Skardu",
     nightsPrice: "11 Nights | £950",
     link: "/destinations/pakistan",
   },
   {
-    src: "/images/montenegro-cover.png",
+    src: "/images/montenegro-hiking-cover.png",
     alt: "Montenegro",
-    subDescription: "Durmitor + Lovcen National Park",
+    subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "4 Nights | £450",
     link: "/destinations/montenegro",
   },
   {
-    src: "/images/montenegro-cover.png",
+    src: "/images/montenegro-kotor-cover.png",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "7 Nights | £600",
     link: "/destinations/montenegro",
   },
   {
-    src: "/images/montenegro-cover.png",
-    alt: "Pakistan",
-    subDescription: "Hiking in the north",
-    nightsPrice: "7 Nights | £950",
+    src: "/images/kyrgyzstan-cover.png",
+    alt: "Kyrgyzstan",
+    subDescription: "Hiking in Ala Archa National Park",
+    nightsPrice: "10 Nights | £800",
     link: "/destinations/destination",
   },
 ];
@@ -191,7 +191,7 @@ const images = [
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
 }
 
 .swiper-button-next {

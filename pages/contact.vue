@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <Header
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/kyrgyzstan-cover.png"
       imageAlt="Laptop with code on desk"
       title="Contact"
       subtitle="Have a question? Let us know"

@@ -71,7 +71,7 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/pakistan-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -171,7 +171,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/travel-blog.png"
+          imageUrl="/images/pakistan-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -196,7 +196,7 @@
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -218,7 +218,7 @@
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="left"
@@ -240,7 +240,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -266,7 +266,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="left"
@@ -292,7 +292,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="right"
@@ -314,7 +314,7 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Sarfaranga Desert, Pakistan"
       overlayText="Sarfaranga Desert, <br /> Pakistan"
       textPosition="left"
@@ -338,7 +338,7 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Eagle’s Nest, Pakistan"
       overlayText="Eagle’s Nest, <br /> Pakistan"
       textPosition="right"
@@ -359,7 +359,7 @@
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Rakaposhi, Pakistan"
       overlayText="Rakaposhi, <br /> Pakistan"
       textPosition="left"
@@ -385,7 +385,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Gulkin, Pakistan"
       overlayText="Gulkin, <br /> Pakistan"
       textPosition="right"
@@ -408,7 +408,7 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Attabad Lake, Pakistan"
       overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
@@ -434,7 +434,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"

@@ -5,7 +5,12 @@
       <template #title>Get in Touch</template>
       <template #body>
         <p>
-          For any inquiries or to discuss your project needs, feel free to get in touch. I'm always available to provide personalized solutions and help bring your digital vision to life.
+          We’re here to help you with any questions or concerns you may have.
+          Whether you need more information about our tours, assistance with
+          booking, or have specific requests, our dedicated team is ready to
+          assist you. Please fill out the contact form below, and we’ll get back
+          to you as soon as possible. We look forward to hearing from you and
+          helping you plan your next adventure!
         </p>
       </template>
     </TextParagraphWithTitle>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/travel-blog.png"
+      imageUrl="/images/pakistan-cover.png"
       imageAlt="Laptop with code on desk"
       title="Why Not Adventures"
       subtitle="Get Off The Beaten Track"
@@ -28,7 +28,7 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/travel-blog.png"
+            imageUrl="/images/pakistan-cover.png"
             imageAlt="Fairy Meadows, Pakistan"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
@@ -37,7 +37,7 @@
 
       <section class="destinations">
         <LayoutGridContainer>
-          <TextSectionLabel labelText="Destinations" />
+          <TextSectionLabel labelText="Trips" />
           <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
             <template #title>Destinations</template>
             <template #body>
@@ -57,9 +57,9 @@
         </div>
       </section>
 
-      <section class="skills text-right">
+      <section class="profile text-right">
         <LayoutGridContainer>
-          <TextSectionLabel labelText="Skills" />
+          <TextSectionLabel labelText="Profile" />
           <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
             <template #title>Who Am I?</template>
             <template #body>
@@ -91,7 +91,7 @@
 
       <section class="faq">
         <LayoutGridContainer>
-          <TextSectionLabel labelText="Details" />
+          <TextSectionLabel labelText="Information" />
           <TextParagraphWithTitle subtitleTag="h3">
             <template #title>Things To Know</template>
             <template #body>
@@ -105,118 +105,92 @@
             </template>
           </TextParagraphWithTitle>
           <Accordion>
-            <AccordionItem title="Are the tours suitable for all ages?" index="1">
+            <AccordionItem
+              title="Are the tours suitable for all ages?"
+              index="1">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Our tours are designed to accommodate a wide range of ages.
+                However, some activities may have age restrictions. Please check
+                the specific tour details for more information.
               </p>
             </AccordionItem>
-            <AccordionItem title="Do I need to organize anything myself?" index="2">
+            <AccordionItem
+              title="Do I need to organize anything myself?"
+              index="2">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Most of the planning is taken care of for you. We handle
+                accommodations, meals, and activities. You may need to organize
+                your travel to the starting point of the tour and any personal
+                items you wish to bring.
               </p>
             </AccordionItem>
             <AccordionItem
               title="Can I join a tour as a solo traveler?"
               index="3">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Absolutely! Many of our guests travel solo and find our tours to
+                be a great way to meet new people and make lasting friendships.
               </p>
             </AccordionItem>
             <AccordionItem title="Do I need travel insurance?" index="4">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Yes, we highly recommend having travel insurance to cover any
+                unforeseen circumstances such as medical emergencies, trip
+                cancellations, or lost luggage.
               </p>
             </AccordionItem>
-            <AccordionItem title="What is the group size for the tours?" index="5">
+            <AccordionItem
+              title="What is the group size for the tours?"
+              index="5">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Group sizes vary by tour, but we aim to keep them small to
+                ensure a more personalized experience. Typically, group sizes
+                range from 10 to 20 people.
               </p>
             </AccordionItem>
             <AccordionItem title="What is your cancellation policy?" index="6">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                Our cancellation policy varies depending on the tour. Generally,
+                cancellations made a certain number of days before departure are
+                eligible for a partial refund. Please refer to our terms and
+                conditions for specific details.
               </p>
             </AccordionItem>
-            <AccordionItem title="What if I have special dietary requirements?" index="7">
+            <AccordionItem
+              title="What if I have special dietary requirements?"
+              index="7">
               <p>
-                Embark on an unforgettable adventure to Pakistan with our
-                organized tour, showcasing the country's breathtaking natural
-                beauty and vibrant culture. Begin your journey in the capital
-                city of Islamabad, where modern architecture meets serene
-                landscapes. Next, travel to the historical city of Lahore,
-                renowned for its rich heritage, bustling bazaars, and
-                magnificent Mughal architecture, including the iconic Badshahi
-                Mosque
+                We can accommodate most dietary requirements with prior notice.
+                Please inform us of any dietary restrictions at the time of
+                booking.
               </p>
             </AccordionItem>
             <AccordionItem title="Any other questions?" index="8">
               <ListsLinkList
-              class="contact"
-              title="Get in touch"
-              :links="[
-                {
-                  url: '/contact',
-                  label: 'Fill out the contact form',
-                  description: 'Contact Page',
-                },
-                {
-                  url: 'mailto:myemail@email.com',
-                  label: 'Email us',
-                  description: 'Email',
-                },
-                {
-                  url: 'https://instagram.com/whynotadventures_',
-                  label: 'Message us on Instagram',
-                  description: 'Instagram',
-                },
-                {
-                  url: 'https://instagram.com/whynotadventures_',
-                  label: 'Message us on WhatsApp',
-                  description: 'WhatsApp',
-                },
-              ]" />
+                class="contact"
+                title="Get in touch"
+                :links="[
+                  {
+                    url: '/contact',
+                    label: 'Fill out the contact form',
+                    description: 'Contact Page',
+                  },
+                  {
+                    url: 'mailto:myemail@email.com',
+                    label: 'Email us',
+                    description: 'Email',
+                  },
+                  {
+                    url: 'https://instagram.com/whynotadventures_',
+                    label: 'Message us on Instagram',
+                    description: 'Instagram',
+                  },
+                  {
+                    url: 'https://instagram.com/whynotadventures_',
+                    label: 'Message us on WhatsApp',
+                    description: 'WhatsApp',
+                  },
+                ]" />
             </AccordionItem>
           </Accordion>
         </LayoutGridContainer>
@@ -224,7 +198,7 @@
 
       <section class="end-text">
         <LayoutGridContainer>
-          <TextSectionLabel labelText="Contact" />
+          <TextSectionLabel labelText="Trips" />
           <NuxtLink
             class="item underline-out"
             to="/destinations"
