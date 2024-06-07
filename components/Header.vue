@@ -220,7 +220,7 @@ header .item:nth-child(3) {
     font-size: var(--font-size-XS);
     right: 0;
     width: 100%;
-    top: 97dvh;
+    bottom: calc(100lvh - 100svh + var(--spacing-4));
   }
 }
 </style>
