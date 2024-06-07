@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 const props = defineProps({
   labels: {
@@ -44,4 +44,19 @@ ul li:last-child {
   margin-right: 0;
 }
 
+@media (max-width: 767px) {
+  a {
+    margin: 0;
+    font-size: var(--font-size-XS);
+  }
+
+  li {
+    margin: 0;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-around
+  }
+}
 </style>
