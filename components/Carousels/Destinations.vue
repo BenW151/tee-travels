@@ -13,6 +13,7 @@
         <div class="image-info">
           <p class="image-title">{{ image.alt }}</p>
           <p class="image-subtitle">{{ image.subDescription }}</p>
+          <p class="image-nights-price">{{ image.nightsPrice }}</p>
         </div>
       </div>
     </div>
@@ -50,6 +51,7 @@
     <div v-if="hoverDescription" class="image-description">
       <p>{{ hoverDescription }}</p>
       <p>{{ hoverSubDescription }}</p>
+      <p>{{ hoverNightsPrice }}</p>
     </div>
     <div v-else-if="!isMobile" class="image-description">
       <p>Scroll to Explore</p>
@@ -65,6 +67,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 const hoverDescription = ref("");
 const hoverSubDescription = ref("");
+const hoverNightsPrice = ref("");
 const progress = ref(0);
 const isMobile = ref(window.innerWidth < 768);
 
@@ -81,36 +84,42 @@ const onSlideChange = (swiper) => {
 const updateHoverDescription = (image) => {
   hoverDescription.value = image.alt;
   hoverSubDescription.value = image.subDescription;
+  hoverNightsPrice.value = image.nightsPrice;
 };
 
 const clearHoverDescription = () => {
   hoverDescription.value = "";
   hoverSubDescription.value = "";
+  hoverNightsPrice.value = "";
 };
 
 const images = [
   {
     src: "/images/pakistan-cover.png",
     alt: "Pakistan",
-    subDescription: "7 Nights | £950",
+    subDescription: "Hunza Valley + Skardu",
+    nightsPrice: "11 Nights | £950",
     link: "/destinations/pakistan",
   },
   {
     src: "/images/montenegro-cover.png",
     alt: "Montenegro",
-    subDescription: "5 Nights | £650",
+    subDescription: "Durmitor + Lovcen National Park",
+    nightsPrice: "4 Nights | £450",
+    link: "/destinations/montenegro",
+  },
+  {
+    src: "/images/montenegro-cover.png",
+    alt: "Montenegro",
+    subDescription: "Bay of Kotor + Budva",
+    nightsPrice: "7 Nights | £600",
     link: "/destinations/montenegro",
   },
   {
     src: "/images/travel-blog.png",
     alt: "Pakistan",
-    subDescription: "7 Nights | £950",
-    link: "/destinations/destination",
-  },
-  {
-    src: "/images/travel-blog.png",
-    alt: "Pakistan",
-    subDescription: "7 Nights | £950",
+    subDescription: "Hiking in the north",
+    nightsPrice: "7 Nights | £950",
     link: "/destinations/destination",
   },
 ];
@@ -142,12 +151,15 @@ const images = [
 }
 
 .image-description {
-  margin-top: 10px;
-  font-size: 1.2em;
+  margin-top: 0.5vw;
+  height: 5vw;
 }
 
 .image-description p:first-child {
   font-weight: bold;
+}
+
+.image-description p {
   margin-bottom: 0;
 }
 
@@ -173,12 +185,13 @@ const images = [
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--color-white);
   z-index: 1000;
   cursor: pointer;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
 }
 
 .swiper-button-next {
@@ -216,7 +229,7 @@ const images = [
     height: auto;
   }
 
-  .image-info .image-subtitle {
+  .image-info .image-nights-price {
     margin-bottom: var(--spacing-5);
   }
 

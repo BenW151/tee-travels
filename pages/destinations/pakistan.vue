@@ -103,7 +103,7 @@
             },
             {
               id: 4,
-              shortSummary: 'Beyal Camp and Nanga Parbat Viewpoint',
+              shortSummary: 'Beyal Camp and Nanga Parbat',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },

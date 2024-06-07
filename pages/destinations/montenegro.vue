@@ -6,10 +6,17 @@
       title="Montenegro"
       subtitle="Hiking in the north"
       description="£950 | 7 Nights"
-      headerClass="header-small">
+      headerClass="header-small"
+      :pageIndexLabels="[
+        { title: 'Overview', link: 'overview' },
+        { title: 'Included', link: 'included' },
+        { title: 'Itinerary', link: 'itinerary-detailed' },
+        { title: 'FAQ', link: 'faq' },
+        { title: 'Book', link: 'book' },
+      ]">
     </Header>
 
-    <section class="overview">
+    <section class="overview" id="overview">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Overview" />
         <TextParagraphWithTitle subtitleTag="h3">
@@ -64,57 +71,87 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
+          imageUrl="/images/travel-blog.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
       </LayoutGridContainer>
     </section>
 
-    <section class="itinerary-brief">
+    <section class="itinerary-brief" id="itinerary-brief">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Itinerary" />
         <ListsItinerary
           :days="[
             {
               id: 1,
-              shortSummary: 'XYZ hike',
+              shortSummary: 'Arrival in Islamabad',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 2,
-              shortSummary: 'ABC village tour',
+              shortSummary: 'Islamabad to jaglot',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 3,
-              shortSummary: 'Beach day',
+              shortSummary: 'jaglot to Fairy Meadows ',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 4,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Beyal Camp and Nanga Parbat',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 5,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Fairy Meadows to skardu',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 6,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Overnight stay in skardu',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             {
               id: 7,
-              shortSummary: 'Mountain hike',
+              shortSummary: 'Egalnest',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 8,
+              shortSummary: 'Egalnest ',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 9,
+              shortSummary: 'Rakaposhi hapakun',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 10,
+              shortSummary: 'Treak to Basecamp and gulkin',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 11,
+              shortSummary: 'Gulkin and attabd lake',
+              detailSummary:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            },
+            {
+              id: 12,
+              shortSummary: 'straight to Islamabad',
               detailSummary:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
@@ -128,18 +165,18 @@
       </LayoutGridContainer>
     </section>
 
-    <section>
+    <section id="showreel">
       <ImageStrip
         src="/videos/montenegro-reel.mp4"
         poster="/images/montenegro-cover.png"
         alt="Montenegro Showreel" />
     </section>
 
-    <section class="text-left included">
+    <section class="text-left included" id="included">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
+          imageUrl="/images/travel-blog.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
@@ -170,104 +207,283 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="itinerary-day text-left" id="day1">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Detailed Itinerary" />
-        <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Montenegro"
-          overlayText="Fairy Meadows, <br /> Montenegro"
-          textPosition="right" />
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>Day 1 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Montenegro with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day1"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 1 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 1</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-right" id="day2">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Montenegro"
-          overlayText="Fairy Meadows, <br /> Montenegro"
-          textPosition="left" />
-        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
-          <template #title>Day 2 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Montenegro with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day2"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Skardu, Montenegro"
+      overlayText="Skardu, <br /> Montenegro"
+      textPosition="left"
+      title="Day 2 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 2</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-left" id="day3">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Montenegro"
-          overlayText="Fairy Meadows, <br /> Montenegro"
-          textPosition="right" />
-        <TextParagraphWithTitle subtitleTag="h4">
-          <template #title>Day 3 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Montenegro with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day3"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 3 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 3</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="itinerary-day text-right" id="day4">
-      <LayoutGridContainer>
-        <ImageWithTextOverlay
-          imageUrl="/images/montenegro-cover.png"
-          imageAlt="Fairy Meadows, Montenegro"
-          overlayText="Fairy Meadows, <br /> Montenegro"
-          textPosition="left" />
-        <TextParagraphWithTitle subtitleTag="h4" textPosition="right">
-          <template #title>Day 4 | XYZ hike</template>
-          <template #body>
-            <p>
-              Embark on an unforgettable adventure to Montenegro with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItineraryDay
+      dayId="day4"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="left"
+      title="Day 4 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
 
-    <section class="faq">
+    <ItineraryDay
+      dayId="day5"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 5 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day6"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="left"
+      title="Day 6 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day7"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 7 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day8"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="left"
+      title="Day 8 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day9"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 9 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day10"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="left"
+      title="Day 10 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day11"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="right"
+      title="Day 11 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <ItineraryDay
+      dayId="day12"
+      imageUrl="/images/travel-blog.png"
+      imageAlt="Fairy Meadows, Montenegro"
+      overlayText="Fairy Meadows, <br /> Montenegro"
+      textPosition="left"
+      title="Day 12 | XYZ hike">
+      <template #body>
+        <p>
+          Embark on an unforgettable adventure to Montenegro with our organized
+          tour, showcasing the country's breathtaking natural beauty and vibrant
+          culture. Begin your journey in the capital city of Islamabad, where
+          modern architecture meets serene landscapes.
+        </p>
+        <p>
+          Next, travel to the historical city of Lahore, renowned for its rich
+          heritage, bustling bazaars, and magnificent Mughal architecture,
+          including the iconic Badshahi Mosque.
+        </p>
+        <a href="https://example.com">Learn more about Day 4</a>
+      </template>
+    </ItineraryDay>
+
+    <section class="faq" id="faq">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Information" />
         <TextParagraphWithTitle subtitleTag="h3">
@@ -343,9 +559,9 @@
             </p>
           </AccordionItem>
           <AccordionItem title="Any other questions?" index="6">
-            <p>Get in touch with us through any of the below channels</p>
             <ListsLinkList
               class="contact"
+              title="Get in touch with us through any of the below channels"
               :links="[
                 {
                   url: '/contact',
@@ -368,7 +584,7 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="book">
+    <section class="end-text" id="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
         <a
@@ -502,13 +718,13 @@ useHead({
   grid-column: 11 / 17;
 }
 
-.book a {
+.end-text a {
   grid-column: 6 / 17;
   grid-row: 1;
   width: fit-content;
 }
 
-.book a h2 {
+.end-text a h2 {
   font-size: 13vw;
   margin: 0;
 }
@@ -532,11 +748,11 @@ a h4 {
     grid-column: 1 / 7;
   }
 
-  .book a {
+  .end-text a {
     grid-column: 1 / 7;
   }
 
-  .book a h2 {
+  .end-text a h2 {
     font-size: 19vw;
   }
 }
