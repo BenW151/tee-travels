@@ -15,8 +15,12 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/image",
     "nuxt-swiper",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "nuxt-gtag"
   ],
+  gtag: {
+    id: 'G-1P9CWR1H63'
+  },
   image: {
     format: ["webp"],
   },
