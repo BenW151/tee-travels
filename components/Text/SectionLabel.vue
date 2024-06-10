@@ -1,5 +1,5 @@
 <template>
-  <p class="item accent section-label"><LucideChevronRight /> {{ labelText }}</p>
+  <p class="item accent section-label">{{ labelText }} —</p>
 </template>
 
 <script setup>
