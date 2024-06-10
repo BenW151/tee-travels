@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     "nuxt-gtag"
   ],
   gtag: {
-    id: 'G-1P9CWR1H63'
+    id: 'G-1P9CWR1H63',
+    enabled: false,
   },
   image: {
     format: ["webp"],
