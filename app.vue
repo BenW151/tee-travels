@@ -2,10 +2,10 @@
   <div>
     <MouseFollower v-if="!isMobile" />
     <Nav />
+    <Consent />
     <transition name="page" mode="out-in">
       <div :key="$route.path">
         <NuxtPage />
-        <Consent />
         <Footer />
       </div>
     </transition>
