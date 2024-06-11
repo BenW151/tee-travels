@@ -2,7 +2,7 @@
   <div>
     <MouseFollower v-if="!isMobile" />
     <Nav />
-    <Consent />
+    <AnalyticsConsent />
     <transition name="page" mode="out-in">
       <div :key="$route.path">
         <NuxtPage />

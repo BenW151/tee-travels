@@ -70,28 +70,14 @@ p {
   margin: 0;
   margin-left: var(--spacing-3);
   margin-right: var(--spacing-3);
-  color: var(--color-white);
 }
 
 a {
-  color: var(--color-white);
   margin: 0;
-}
-
-button::after, a::after {
-  background-color: var(--color-white);
 }
 
 a::after {
   bottom: 0;
-}
-
-body.scrolled-from-top .consent p, body.scrolled-from-top .consent button, body.scrolled-from-top .consent a {
-  color: var(--color-black);
-}
-
-body.scrolled-from-top .consent button::after, body.scrolled-from-top .consent a::after {
-  background-color: var(--color-black);
 }
 
 @media (max-width: 767px) {

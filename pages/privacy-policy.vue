@@ -73,6 +73,7 @@
             </p>
           </template>
         </TextParagraphWithTitle>
+        <AnalyticsUpdate />
       </LayoutGridContainer>
     </section>
   </div>
@@ -100,6 +101,11 @@ useHead({
 #policy .paragraph-with-title:nth-of-type(1) {
   grid-column: 2 / 10;
   grid-row: 1;
+}
+
+.consent {
+  grid-column: 2 / 10;
+  grid-row: 2;
 }
 
 @media (max-width: 767px) {
