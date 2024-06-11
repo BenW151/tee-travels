@@ -13,11 +13,12 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const { gtag, initialize, disableAnalytics } = useGtag();
+const { gtag, initialize, disableAnalytics, enableAnalytics } = useGtag();
 const consentGiven = ref(false);
 
 const grantConsent = () => {
   initialize();
+  enableAnalytics();
   localStorage.setItem("consentGiven", "true");
   consentGiven.value = true;
 };
