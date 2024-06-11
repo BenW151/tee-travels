@@ -1,12 +1,22 @@
 <template>
-  <div class="consent">
+  <div class="consent" id="consent">
     <h3>Update Cookie Settings</h3>
     <p>
       We'd like to set some cookies to understand how you use our website,
       remember your settings and improve services.
     </p>
-    <button @click="grantConsent" class="underline-out">Grant Permission</button>
-    <button @click="declineConsent" class="underline-out">Remove Permission</button>
+    <div v-if="!consentGiven">
+      <p>Cookies currently disabled</p>
+      <button @click="grantConsent" class="underline-out">
+        Grant Permission
+      </button>
+    </div>
+    <div v-else>
+      <p>Cookies currently enabled</p>
+      <button @click="declineConsent" class="underline-out">
+        Remove Permission
+      </button>
+    </div>
   </div>
 </template>
 
@@ -25,15 +35,16 @@ const grantConsent = () => {
 
 const declineConsent = () => {
   disableAnalytics();
-  consentGiven.value = true;
+  localStorage.removeItem("consentGiven");
+  consentGiven.value = false;
 };
 
-/*onMounted(() => {
-  if (localStorage.getItem('consentGiven') === 'true') {
+onMounted(() => {
+  if (localStorage.getItem("consentGiven") === "true") {
     initialize();
     consentGiven.value = true;
   }
-});*/
+});
 </script>
 
 <style scoped>

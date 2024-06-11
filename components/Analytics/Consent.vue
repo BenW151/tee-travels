@@ -22,15 +22,17 @@ const grantConsent = () => {
 };
 
 const declineConsent = () => {
-  consentGiven.value = true;
+  disableAnalytics();
+  localStorage.removeItem("consentGiven");
+  consentGiven.value = false;
 };
 
-/*onMounted(() => {
+onMounted(() => {
   if (localStorage.getItem('consentGiven') === 'true') {
     initialize();
     consentGiven.value = true;
   }
-});*/
+});
 </script>
 
 <style scoped>

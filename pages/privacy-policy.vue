@@ -13,6 +13,12 @@
               website.
             </p>
             <p>Last Updated: 22/05/2024</p>
+            <a
+              href="#consent"
+              class="underline-out"
+              aria-label="Update Cookie Permissions"
+              >Update Cookie Permissions</a
+            >
             <h4>1. Information I Collect</h4>
             <p>
               I may collect both personally identifiable information (PII) and
