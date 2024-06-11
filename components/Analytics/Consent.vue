@@ -1,5 +1,5 @@
 <template>
-  <div :class="['consent', { hidden: consentGiven }]">
+  <div :class="['consent', { hidden: consentGiven || optionSelected }]">
     <p>
       We'd like to set some
       <NuxtLink to="/privacy-policy" class="link underline-out"
