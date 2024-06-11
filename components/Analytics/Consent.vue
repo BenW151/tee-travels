@@ -1,8 +1,12 @@
 <template>
   <div :class="['consent', { hidden: consentGiven }]">
     <p>
-      We'd like to set some <NuxtLink to="/privacy-policy" class="link underline-out">cookies</Nuxtlink> to understand how you use our website,
-      remember your settings and improve services.
+      We'd like to set some
+      <NuxtLink to="/privacy-policy" class="link underline-out"
+        >cookies</NuxtLink
+      >
+      to understand how you use our website, remember your settings and improve
+      services.
     </p>
     <button @click="grantConsent">Accept</button>
     <button @click="declineConsent">Decline</button>
@@ -12,23 +16,26 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const { gtag, initialize } = useGtag();
+const { gtag, initialize, disableAnalytics } = useGtag();
 const consentGiven = ref(false);
+const optionSelected = ref(false);
 
 const grantConsent = () => {
   initialize();
   localStorage.setItem("consentGiven", "true");
   consentGiven.value = true;
+  optionSelected.value = true;
 };
 
 const declineConsent = () => {
   disableAnalytics();
   localStorage.removeItem("consentGiven");
   consentGiven.value = false;
+  optionSelected.value = true;
 };
 
 onMounted(() => {
-  if (localStorage.getItem('consentGiven') === 'true') {
+  if (localStorage.getItem("consentGiven") === "true") {
     initialize();
     consentGiven.value = true;
   }

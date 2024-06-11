@@ -41,7 +41,6 @@ const declineConsent = () => {
 
 onMounted(() => {
   if (localStorage.getItem("consentGiven") === "true") {
-    initialize();
     consentGiven.value = true;
   }
 });
