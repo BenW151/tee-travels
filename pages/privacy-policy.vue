@@ -119,5 +119,10 @@ useHead({
     grid-column: 1 / 7;
     grid-row: auto;
   }
+
+  .consent {
+    grid-column: 1 / 7;
+    grid-row: 2;
+  }
 }
 </style>

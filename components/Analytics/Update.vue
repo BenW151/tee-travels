@@ -70,8 +70,6 @@ a::after {
 }
 
 @media (max-width: 767px) {
-  .consent {
-    height: 20vw;
-  }
+
 }
 </style>
