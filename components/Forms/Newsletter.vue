@@ -71,7 +71,7 @@ form {
 
   input,
   textarea {
-    width: 60vw;
+    width: 70vw;
   }
 }
 </style>

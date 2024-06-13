@@ -106,6 +106,7 @@ useHead({
   #terms .item.paragraph-with-title {
     grid-column: 1 / 7;
     grid-row: auto;
+    margin-top: 6vh;
   }
 }
 </style>

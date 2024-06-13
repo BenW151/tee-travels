@@ -178,14 +178,14 @@ body.scrolled-past-header nav a::after {
     transform: translateY(0);
   }
 
-  .nav-items.open a {
-    margin: 10px 0;
+  .nav-items a {
+    margin-bottom: var(--spacing-1);
     color: var(--color-black);
     font-size: var(--font-size-XL);
     font-family: var(--font-family-primary);
   }
 
-  .nav-items.open a::after {
+  .nav-items a::after {
     background-color: var(--color-black);
   }
 

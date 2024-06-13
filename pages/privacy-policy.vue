@@ -32,12 +32,14 @@
             <p>
               I use the information I collect for various purposes, including:
             </p>
-            <ul>
-              <li>Providing and improving my website</li>
-              <li>Responding to your inquiries</li>
-              <li>Sending newsletters or promotional materials</li>
-              <li>Customizing your experience on my website</li>
-            </ul>
+            <ListsDefaultList
+              bullets="true"
+              :items="[
+                { id: 1, text: 'Providing and improving my website' },
+                { id: 2, text: 'Responding to your inquiries' },
+                { id: 3, text: 'Sending newsletters or promotional materials' },
+                { id: 4, text: 'Customizing your experience on my website' },
+              ]" />
             <h4>3. Cookies and Tracking Technologies</h4>
             <p>
               I may use cookies and similar tracking technologies to enhance
@@ -118,6 +120,7 @@ useHead({
   #policy .item.paragraph-with-title {
     grid-column: 1 / 7;
     grid-row: auto;
+    margin-top: 6vh;
   }
 
   .consent {
