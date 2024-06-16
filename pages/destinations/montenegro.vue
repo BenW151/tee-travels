@@ -1,7 +1,7 @@
 <template>
   <div class="destination">
     <Header
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Modern office"
       title="Montenegro"
       subtitle="Hiking in the Hunza Valley + Skardu"
@@ -71,7 +71,7 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/montenegro-hiking-cover.png"
+          imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
@@ -152,7 +152,7 @@
           ]" />
 
         <ImageDefault
-          imageUrl="/images/pakistan-map.png"
+          imageUrl="/images/pakistan/pakistan-map.png"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
@@ -163,7 +163,7 @@
     <section id="showreel">
       <ImageStrip
         src="/videos/montenegro-reel.mp4"
-        poster="/images/montenegro-hiking-cover.png"
+        poster="/images/montenegro-hiking/montenegro-hiking-cover.png"
         alt="Montenegro Showreel" />
     </section>
 
@@ -171,7 +171,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/montenegro-hiking-cover.png"
+          imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
           imageAlt="Fairy Meadows, Montenegro"
           overlayText="Fairy Meadows, <br /> Montenegro"
           textPosition="right" />
@@ -204,7 +204,7 @@
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="right"
@@ -226,7 +226,7 @@
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Skardu, Montenegro"
       overlayText="Skardu, <br /> Montenegro"
       textPosition="left"
@@ -248,7 +248,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="right"
@@ -274,7 +274,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Fairy Meadows, Montenegro"
       overlayText="Fairy Meadows, <br /> Montenegro"
       textPosition="left"
@@ -300,7 +300,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Skardu, Montenegro"
       overlayText="Skardu, <br /> Montenegro"
       textPosition="right"
@@ -322,7 +322,7 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Sarfaranga Desert, Montenegro"
       overlayText="Sarfaranga Desert, <br /> Montenegro"
       textPosition="left"
@@ -350,7 +350,7 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Eagle’s Nest, Montenegro"
       overlayText="Eagle’s Nest, <br /> Montenegro"
       textPosition="right"
@@ -371,7 +371,7 @@
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Rakaposhi, Montenegro"
       overlayText="Rakaposhi, <br /> Montenegro"
       textPosition="left"
@@ -397,7 +397,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Gulkin, Montenegro"
       overlayText="Gulkin, <br /> Montenegro"
       textPosition="right"
@@ -420,7 +420,7 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Attabad Lake, Montenegro"
       overlayText="Attabad Lake, <br /> Montenegro"
       textPosition="left"
@@ -446,7 +446,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Islamabad, Montenegro"
       overlayText="Islamabad, <br /> Montenegro"
       textPosition="right"

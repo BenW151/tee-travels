@@ -1,7 +1,7 @@
 <template>
   <div class="destination">
     <Header
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Modern office"
       title="Pakistan"
       subtitle="Hiking in the Hunza Valley + Skardu"
@@ -71,7 +71,7 @@
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan-cover.png"
+          imageUrl="/images/pakistan/pakistan-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -152,7 +152,7 @@
           ]" />
 
         <ImageDefault
-          imageUrl="/images/pakistan-map.png"
+          imageUrl="/images/pakistan/pakistan-map.png"
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
@@ -163,7 +163,7 @@
     <section id="showreel">
       <ImageStrip
         src="/videos/montenegro-reel.mp4"
-        poster="/images/pakistan-cover.png"
+        poster="/images/pakistan/pakistan-cover.png"
         alt="Montenegro Showreel" />
     </section>
 
@@ -171,7 +171,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan-cover.png"
+          imageUrl="/images/pakistan/pakistan-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -196,7 +196,7 @@
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -218,7 +218,7 @@
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="left"
@@ -240,7 +240,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -266,7 +266,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="left"
@@ -292,7 +292,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="right"
@@ -314,7 +314,7 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Sarfaranga Desert, Pakistan"
       overlayText="Sarfaranga Desert, <br /> Pakistan"
       textPosition="left"
@@ -338,7 +338,7 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Eagle’s Nest, Pakistan"
       overlayText="Eagle’s Nest, <br /> Pakistan"
       textPosition="right"
@@ -359,7 +359,7 @@
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Rakaposhi, Pakistan"
       overlayText="Rakaposhi, <br /> Pakistan"
       textPosition="left"
@@ -385,7 +385,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Gulkin, Pakistan"
       overlayText="Gulkin, <br /> Pakistan"
       textPosition="right"
@@ -408,7 +408,7 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Attabad Lake, Pakistan"
       overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
@@ -434,7 +434,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"
@@ -546,7 +546,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Guide" />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan-guide.png"
+          imageUrl="/images/pakistan/pakistan-guide.png"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -556,18 +556,18 @@
             <p class="bold">Name: Ahmed Khan</p>
             <p class="bold">From: Hunza Valley, Pakistan</p>
             <p>
-              Born and raised in the picturesque Hunza Valley, Ahmed has a profound
-              connection to the rugged beauty of the Pakistani mountains. With
-              over a decade of experience as a professional mountain guide,
-              Ahmed's extensive knowledge of the region's trails, history, and
-              culture makes him an invaluable companion for your adventure. His
-              passion for the great outdoors is matched only by his dedication
-              to ensuring every traveler experiences the awe-inspiring
-              landscapes safely and memorably. Fluent in English, Urdu, and the
-              local Burushaski language, Ahmed's friendly and approachable
-              demeanor makes him a favorite among tourists. When he's not
-              guiding expeditions, Ahmed enjoys photography, capturing the
-              stunning vistas of his homeland, and sharing stories of his
+              Born and raised in the picturesque Hunza Valley, Ahmed has a
+              profound connection to the rugged beauty of the Pakistani
+              mountains. With over a decade of experience as a professional
+              mountain guide, Ahmed's extensive knowledge of the region's
+              trails, history, and culture makes him an invaluable companion for
+              your adventure. His passion for the great outdoors is matched only
+              by his dedication to ensuring every traveler experiences the
+              awe-inspiring landscapes safely and memorably. Fluent in English,
+              Urdu, and the local Burushaski language, Ahmed's friendly and
+              approachable demeanor makes him a favorite among tourists. When
+              he's not guiding expeditions, Ahmed enjoys photography, capturing
+              the stunning vistas of his homeland, and sharing stories of his
               adventures over a warm cup of chai.
             </p>
           </template>

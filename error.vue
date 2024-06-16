@@ -2,7 +2,7 @@
   <div>
     <Nav />
     <Header
-      imageUrl="/images/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.png"
       :title="`${error.statusCode} Error`"
       subtitle="Destination Unknown"
       headerClass="header-small">

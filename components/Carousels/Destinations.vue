@@ -95,21 +95,21 @@ const clearHoverDescription = () => {
 
 const images = [
   {
-    src: "/images/pakistan-cover.png",
+    src: "/images/pakistan/pakistan-cover.png",
     alt: "Pakistan",
     subDescription: "Hiking in Hunza Valley + Skardu",
     nightsPrice: "11 Nights | £950",
     link: "/destinations/pakistan",
   },
   {
-    src: "/images/montenegro-hiking-cover.png",
+    src: "/images/montenegro-hiking/montenegro-hiking-cover.png",
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "4 Nights | £450",
     link: "/destinations/montenegro",
   },
   {
-    src: "/images/montenegro-kotor-cover.png",
+    src: "/images/montenegro-kotor/montenegro-kotor-cover.png",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "7 Nights | £600",

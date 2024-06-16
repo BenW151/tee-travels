@@ -2,8 +2,8 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   site: {
-    url: 'https://whynotadventures.co.uk/',
-    name: 'Why Not Adventures',
+    url: "https://whynotadventures.co.uk/",
+    name: "Why Not Adventures",
   },
   devtools: { enabled: true },
   alias: {
@@ -16,10 +16,10 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-swiper",
     "@nuxtjs/sitemap",
-    "nuxt-gtag"
+    "nuxt-gtag",
   ],
   gtag: {
-    id: 'G-1P9CWR1H63',
+    id: "G-1P9CWR1H63",
     enabled: false,
   },
   image: {
@@ -76,7 +76,8 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://whynotadventures.co.uk/images/pakistan-cover.png",
+          content:
+            "https://whynotadventures.co.uk/images/pakistan/pakistan-cover.png",
         },
         { property: "og:url", content: "https://whynotadventures.co.uk/" },
         { name: "twitter:card", content: "summary_large_image" },

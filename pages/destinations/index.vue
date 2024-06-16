@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/montenegro-hiking-cover.png"
+      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.png"
       imageAlt="Laptop with code on desk"
       title="Destinations"
       subtitle="Where Will You Go?"

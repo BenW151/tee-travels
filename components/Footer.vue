@@ -50,13 +50,6 @@
       <div class="legal">
         <div class="images">
           <ImageDefault
-            imageUrl="/images/atol.svg"
-            imageAlt="Celestial Relaxation Room"
-            class="atol"
-            objectFit="contain"
-            rellaxPercentage="0"
-            rellaxSpeed="0" />
-          <ImageDefault
             imageUrl="/images/abta.png"
             imageAlt="Celestial Relaxation Room"
             class="abta"
@@ -64,10 +57,6 @@
             rellaxPercentage="0"
             rellaxSpeed="0" />
         </div>
-        <p>
-          Flight-inclusive Packages are financially protected by the ATOL scheme
-          – ATOL number 00000.
-        </p>
         <p>
           Why Not Adventures are a UK registered company – Address, Address,
           123, Address, United Kingdom, GL1 7SQ
@@ -160,7 +149,6 @@ footer .socials {
   display: inline-flex;
 }
 
-.atol,
 .abta {
   height: 5vw;
   margin: var(--spacing-3);
@@ -233,7 +221,6 @@ footer .socials {
     grid-row-start: auto;
   }
 
-  .atol,
   .abta {
     height: 10vh;
     margin-top: var(--spacing-3);
