@@ -209,6 +209,11 @@ const images = [
   display: none;
 }
 
+.carousel .container {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 @media (max-width: 767px) {
   .image-item {
     width: 100%;
@@ -243,6 +248,11 @@ const images = [
 
   .image-info p {
     margin: 0;
+  }
+
+  .carousel .container {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
   }
 }
 </style>

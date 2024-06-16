@@ -125,12 +125,6 @@ p {
 
 /** Grid Positioning */
 
-.carousel .container {
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 7.5vh;
-}
-
 .text-left .paragraph-with-title {
   grid-column: 3 / 11;
   grid-row-start: 1;
@@ -528,10 +522,6 @@ li {
 
   /** Grid Positioning */
 
-  .carousel .container {
-    padding-left: var(--spacing-4);
-    padding-right: var(--spacing-4);
-  }
 
   section .accent {
     grid-column: 1;
