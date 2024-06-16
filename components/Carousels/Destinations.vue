@@ -19,6 +19,7 @@
     </div>
     <swiper
       v-else
+      ref="swiperRef"
       :modules="[Navigation, Mousewheel, FreeMode]"
       :slides-per-view="3.2"
       :space-between="10"
@@ -42,12 +43,6 @@
         </NuxtLink>
       </swiper-slide>
     </swiper>
-    <!--<div class="custom-scrollbar">
-      <div
-        class="custom-scrollbar-progress"
-        :style="{ width: `${progress}%` }"
-      ></div>
-    </div>-->
     <div v-if="hoverDescription" class="image-description">
       <p>{{ hoverDescription }}</p>
       <p>{{ hoverSubDescription }}</p>
@@ -61,7 +56,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch, nextTick } from "vue";
 import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -70,6 +65,11 @@ const hoverSubDescription = ref("");
 const hoverNightsPrice = ref("");
 const progress = ref(0);
 const isMobile = ref(window.innerWidth < 768);
+const swiperRef = ref(null);
+
+const updateIsMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
 
 const onSwiper = (swiper) => {
   swiper.on("progress", (progressValue) => {
@@ -123,6 +123,29 @@ const images = [
     link: "/destinations/destination",
   },
 ];
+
+watch(isMobile, async (newVal, oldVal) => {
+  if (newVal !== oldVal && swiperRef.value && swiperRef.value.swiper) {
+    await nextTick();
+    swiperRef.value.swiper.destroy(true, true);
+    nextTick(() => {
+      swiperRef.value.swiper = new Swiper('.swiper', {
+        modules: [Navigation, Mousewheel, FreeMode],
+        slidesPerView: 3.2,
+        spaceBetween: 10,
+        navigation: true,
+        mousewheel: {
+          forceToAxis: true,
+          sensitivity: 0.1,
+        },
+        freeMode: true,
+        freeModeMomentum: true,
+      });
+    });
+  }
+});
+
+window.addEventListener("resize", updateIsMobile);
 </script>
 
 <style>
