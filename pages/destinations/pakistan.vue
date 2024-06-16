@@ -240,7 +240,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan/pakistan-skardu.png"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -266,7 +266,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat-camp.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="left"
@@ -292,7 +292,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan/pakistan-nanga-parbat-camp.png"
+      imageUrl="/images/pakistan/pakistan-skardu.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="right"
