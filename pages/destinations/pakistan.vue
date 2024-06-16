@@ -575,6 +575,34 @@
       </LayoutGridContainer>
     </section>
 
+    <section class="text-right leader" id="leader">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Leader" />
+        <ImageWithTextOverlay
+          imageUrl="/images/tia.png"
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="left" />
+        <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
+          <template #title>Meet Your Trip Leader</template>
+          <template #body>
+            <p class="bold">Name: Tia</p>
+            <p class="bold">From: Bristol, United Kingdom</p>
+            <p>
+              Born and raised in the picturesque Hunza Valley, Ahmed has a
+              profound connection to the rugged beauty of the Pakistani
+              mountains. With over a decade of experience as a professional
+              mountain guide, Ahmed's extensive knowledge of the region's
+              trails, history, and culture makes him an invaluable companion for
+              your adventure. His passion for the great outdoors is matched only
+              by his dedication to ensuring every traveler experiences the
+              awe-inspiring landscapes safely and memorably.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="end-text" id="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
@@ -709,6 +737,10 @@ useHead({
 
 .guide .image {
   height: 50vw;
+}
+
+.leader .image {
+  height: 45vw;
 }
 
 .destination .card {
