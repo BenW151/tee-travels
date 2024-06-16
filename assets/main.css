@@ -181,6 +181,14 @@ section {
   grid-column: span 8;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .block-quote {
   grid-column: span 4;
   font-style: italic;
