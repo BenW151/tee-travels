@@ -196,9 +196,9 @@
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/pakistan/pakistan-cover.png"
-      imageAlt="Fairy Meadows, Pakistan"
-      overlayText="Fairy Meadows, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-islamabad-mosque.png"
+      imageAlt="Faisal Mosque, Islamabad"
+      overlayText="Faisal Mosque, <br /> Islamabad"
       textPosition="right"
       title="Day 1 | Arrival in Islamabad">
       <template #body>
@@ -240,7 +240,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-skardu.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
@@ -266,7 +266,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="left"
@@ -292,7 +292,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat-camp.png"
       imageAlt="Skardu, Pakistan"
       overlayText="Skardu, <br /> Pakistan"
       textPosition="right"
@@ -314,7 +314,7 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-sarfaranga-desert.png"
       imageAlt="Sarfaranga Desert, Pakistan"
       overlayText="Sarfaranga Desert, <br /> Pakistan"
       textPosition="left"
@@ -338,7 +338,7 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-eagles-nest.png"
       imageAlt="Eagle’s Nest, Pakistan"
       overlayText="Eagle’s Nest, <br /> Pakistan"
       textPosition="right"
@@ -359,7 +359,7 @@
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-rakaposhi.png"
       imageAlt="Rakaposhi, Pakistan"
       overlayText="Rakaposhi, <br /> Pakistan"
       textPosition="left"
@@ -385,7 +385,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-rakaposhi-2.png"
       imageAlt="Gulkin, Pakistan"
       overlayText="Gulkin, <br /> Pakistan"
       textPosition="right"
@@ -408,7 +408,7 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-attabad-lake.png"
       imageAlt="Attabad Lake, Pakistan"
       overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
@@ -434,7 +434,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-lahore.png"
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"
