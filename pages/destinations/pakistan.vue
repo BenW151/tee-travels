@@ -156,7 +156,7 @@
           imageAlt="Itinerary Map"
           class="itinerary-map"
           rellaxPercentage="0"
-          rellaxSpeed="-5" />
+          rellaxSpeed="-3" />
       </LayoutGridContainer>
     </section>
 
