@@ -20,22 +20,19 @@ const isMobile = computed(() => window.innerWidth < 768);
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s linear;
+  transition: filter 0.3s linear;
 }
 
 .page-enter-from {
   filter: brightness(0%);
-  transform: translateY(0vh);
 }
 
 .page-leave-to {
   filter: brightness(0%);
-  transform: translateY(0vh);
 }
 
 .page-enter-to,
 .page-leave-from {
   filter: brightness(100%);
-  transform: translateY(0);
 }
 </style>

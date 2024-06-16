@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   },
   plugins: ["~/plugins/rellax.client.js"],
   app: {
-    pageTransition: { name: "page", mode: "out-in", appear: true },
+    pageTransition: { name: "page", mode: "out", appear: true },
     head: {
       title: "Why Not Adventures",
       charset: "utf-8",
