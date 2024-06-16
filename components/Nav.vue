@@ -1,8 +1,11 @@
 <template>
-  <nav :class="{ scrolled: isScrolled,}">
+  <nav :class="{ scrolled: isScrolled }">
     <div class="nav">
       <div class="wordmark">
-        <NuxtLink :class="{ 'logo-hide': true, open: isMenuOpen }" to="/" aria-label="Home Page"
+        <NuxtLink
+          :class="{ 'logo-hide': true, open: isMenuOpen }"
+          to="/"
+          aria-label="Home Page"
           >Why Not Adventures</NuxtLink
         >
       </div>
@@ -42,13 +45,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const isScrolled = ref(false);
 const isHidden = ref(false);
 const lastScrollTop = ref(0);
 const isMenuOpen = ref(false);
-const isMobile = computed(() => window.innerWidth < 768);
 
 function handleScroll() {
   const scrollTop = window.scrollY;
@@ -65,6 +67,13 @@ function handleScroll() {
   lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
+const isMobile = ref(window.innerWidth < 768);
+
+// Function to update isMobile on resize
+const updateIsMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
 function toggleMenu() {
   if (isMobile.value) {
     isMenuOpen.value = !isMenuOpen.value;
@@ -73,10 +82,12 @@ function toggleMenu() {
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", updateIsMobile);
 });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
+  window.removeEventListener("resize", updateIsMobile);
 });
 </script>
 
@@ -217,7 +228,8 @@ body.scrolled-past-header nav a::after {
     transform-origin: 1px;
   }
 
-  .burger-menu span.open, body.scrolled-past-header .burger-menu span {
+  .burger-menu span.open,
+  body.scrolled-past-header .burger-menu span {
     background: var(--color-black);
   }
 
