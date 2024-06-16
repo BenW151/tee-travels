@@ -83,4 +83,10 @@ export default {
   grid-row-start: 1;
   height: 40vw;
 }
+
+@media (max-width: 767px) {
+  .right .image, .left .image {
+    height: 60vw;
+  }
+}
 </style>

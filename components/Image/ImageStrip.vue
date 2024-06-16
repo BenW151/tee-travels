@@ -120,7 +120,7 @@ const isImage = computed(() => {
   }
 
   .text-wrapper {
-    bottom: 8vh;
+    bottom: 3vh;
   }
 }
 </style>
