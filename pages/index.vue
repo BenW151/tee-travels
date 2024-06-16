@@ -230,7 +230,7 @@ useHead({
 const isMobile = ref(window.innerWidth < 768);
 
 //Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
-if (!isMobile.value) {
+if (process.env.NODE_ENV === 'development' && !isMobile.value) {
   definePageMeta({
     pageTransition: false,
   });
