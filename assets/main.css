@@ -385,7 +385,7 @@ li {
 }
 
 .faded-list li {
-  opacity: 0.8;
+  opacity: var(--opacity);
 }
 
 .data-list {
@@ -439,7 +439,7 @@ li {
 
 .index-counter {
   font-size: var(--font-size-XXS);
-  opacity: 0.8;
+  opacity: var(--opacity);
 }
 
 .progress-bar {

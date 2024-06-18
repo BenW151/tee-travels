@@ -59,7 +59,7 @@
         </div>
         <p>
           Why Not Adventures are a UK registered company – Address, Address,
-          123, Address, United Kingdom, GL1 7SQ
+          123, Address, United Kingdom, GL1 7SQ.
         </p>
       </div>
     </LayoutGridContainer>
@@ -145,6 +145,10 @@ footer .socials {
   grid-column: 6 / 10;
   grid-row-start: 2;
   white-space: normal;
+}
+
+.legal p {
+  opacity: var(--opacity);
 }
 
 .images {
