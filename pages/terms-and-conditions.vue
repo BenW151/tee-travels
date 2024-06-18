@@ -94,6 +94,16 @@ useHead({
     },
   ],
 });
+
+import { onMounted, onBeforeUnmount } from "vue";
+
+onMounted(() => {
+  document.body.classList.add("scrolled-past-header");
+});
+
+onBeforeUnmount(() => {
+  document.body.classList.remove("scrolled-past-header");
+});
 </script>
 
 <style scoped>
