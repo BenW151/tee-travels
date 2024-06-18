@@ -553,23 +553,30 @@
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>Meet Your Local Guide</template>
           <template #body>
-            <p class="bold">Name: Ahmed Khan</p>
+            <p class="bold">Name: Aziz Ali Khan</p>
             <p class="bold">From: Hunza Valley, Pakistan</p>
             <p>
-              Born and raised in the picturesque Hunza Valley, Ahmed has a
+              Born and raised in the picturesque Hunza Valley, Aziz has a
               profound connection to the rugged beauty of the Pakistani
               mountains. With over a decade of experience as a professional
-              mountain guide, Ahmed's extensive knowledge of the region's
+              mountain guide, Aziz's extensive knowledge of the region's
               trails, history, and culture makes him an invaluable companion for
               your adventure. His passion for the great outdoors is matched only
               by his dedication to ensuring every traveler experiences the
               awe-inspiring landscapes safely and memorably. Fluent in English,
-              Urdu, and the local Burushaski language, Ahmed's friendly and
+              Urdu, and the local Burushaski language, Aziz's friendly and
               approachable demeanor makes him a favorite among tourists. When
-              he's not guiding expeditions, Ahmed enjoys photography, capturing
+              he's not guiding expeditions, Aziz enjoys photography, capturing
               the stunning vistas of his homeland, and sharing stories of his
               adventures over a warm cup of chai.
             </p>
+            <a
+              href="https://instagram.com/azizkhan45050"
+              aria-label="Instagram"
+              class="underline-out-icon link"
+              target="_blank"
+              ><LucideExternalLink />View Instagram</a
+            >
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
@@ -589,15 +596,22 @@
             <p class="bold">Name: Tia</p>
             <p class="bold">From: Bristol, United Kingdom</p>
             <p>
-              Born and raised in the picturesque Hunza Valley, Ahmed has a
+              Born and raised in the picturesque Hunza Valley, Aziz has a
               profound connection to the rugged beauty of the Pakistani
               mountains. With over a decade of experience as a professional
-              mountain guide, Ahmed's extensive knowledge of the region's
+              mountain guide, Aziz's extensive knowledge of the region's
               trails, history, and culture makes him an invaluable companion for
               your adventure. His passion for the great outdoors is matched only
               by his dedication to ensuring every traveler experiences the
               awe-inspiring landscapes safely and memorably.
             </p>
+            <a
+              href="https://instagram.com/teetravels_"
+              aria-label="Instagram"
+              class="underline-out-icon link"
+              target="_blank"
+              ><LucideExternalLink />View Instagram</a
+            >
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
