@@ -132,16 +132,18 @@ footer .nav-items .nav-item {
 footer .socials {
   grid-column: 1 / 4;
   grid-row-start: 2;
+  margin-top: auto;
 }
 
 .contact-form {
-  grid-column: 11 / 14;
+  grid-column: 11 / 15;
   grid-row-start: 2;
+  margin-top: auto;
 }
 
 .legal {
-  grid-column: 11 / 17;
-  grid-row-start: 1;
+  grid-column: 6 / 10;
+  grid-row-start: 2;
   white-space: normal;
 }
 

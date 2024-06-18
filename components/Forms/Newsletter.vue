@@ -34,7 +34,7 @@ textarea {
   background-color: transparent;
   position: relative;
   padding-bottom: var(--spacing-1);
-  width: 25vw;
+  width: 70%;
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
 }
@@ -53,11 +53,6 @@ form button {
   border: none;
   cursor: pointer;
   margin-left: var(--spacing-3);
-}
-
-form {
-  display: flex;
-  flex-direction: row;
 }
 
 .sign-up {
