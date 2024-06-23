@@ -630,17 +630,6 @@
         >
       </LayoutGridContainer>
     </section>
-
-    <section class="end">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Testimonials" />
-        <TextCard
-          name="Tia Thomas"
-          position="Trip Leader"
-          quote="Pakistan is a land of stunning contrasts and hidden treasures. From the bustling streets of Lahore, rich with history and culture, to the serene, breathtaking landscapes of the northern regions, this tour offers an unforgettable experience. Every corner of Pakistan tells a story, and I’ve personally curated this trip to ensure you get the most authentic and enriching experience possible. Join us on this adventure, and discover the warmth and hospitality of Pakistan’s people, the vibrant markets, and the awe-inspiring natural beauty. It’s a journey you’ll cherish forever!"
-          imgSrc="/images/person.png" />
-      </LayoutGridContainer>
-    </section>
   </div>
 </template>
 
@@ -685,9 +674,9 @@ useHead({
   grid-row-start: 3;
 }
 
-.overview .list {
+/*.overview .list {
   margin-top: 2vw;
-}
+}*/
 
 .overview .list:nth-child(3) {
   grid-column: 3 / 6;

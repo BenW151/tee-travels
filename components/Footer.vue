@@ -135,7 +135,7 @@ footer .socials {
   margin-top: auto;
 }
 
-.contact-form {
+.newsletter {
   grid-column: 11 / 15;
   grid-row-start: 2;
   margin-top: auto;
@@ -221,7 +221,7 @@ footer .socials {
     margin: 0 var(--spacing-3);
   }
 
-  .contact-form,
+  .newsletter,
   .legal {
     grid-column: 1 / 7;
     grid-row-start: auto;
