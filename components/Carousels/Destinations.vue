@@ -105,22 +105,19 @@ const images = [
     src: "/images/montenegro-hiking/montenegro-hiking-cover.png",
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
-    nightsPrice: "4 Nights | £450",
-    link: "/destinations/pakistan",
+    nightsPrice: "Coming Soon",
   },
   {
     src: "/images/montenegro-kotor/montenegro-kotor-cover.png",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
-    nightsPrice: "7 Nights | £600",
-    link: "/destinations/pakistan",
+    nightsPrice: "Coming Soon",
   },
   {
     src: "/images/kyrgyzstan-cover.png",
     alt: "Kyrgyzstan",
     subDescription: "Hiking in Ala Archa National Park",
-    nightsPrice: "10 Nights | £800",
-    link: "/destinations/pakistan",
+    nightsPrice: "Coming Soon",
   },
 ];
 
