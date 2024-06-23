@@ -43,7 +43,7 @@
         </NuxtLink>
       </swiper-slide>
     </swiper>
-    <div v-if="hoverDescription" class="image-description">
+    <div v-if="hoverDescription && !isMobile" class="image-description">
       <p>{{ hoverDescription }}</p>
       <p>{{ hoverSubDescription }}</p>
       <p>{{ hoverNightsPrice }}</p>
