@@ -4,7 +4,7 @@
       imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Laptop with code on desk"
       title="Booking Confirmed"
-      subtitle="Booking Confirmed"
+      subtitle="You're in!"
       headerClass="header-small">
     </Header>
 
