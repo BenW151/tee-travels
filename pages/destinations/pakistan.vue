@@ -689,17 +689,17 @@ useHead({
   margin-top: 2vw;
 }
 
-.overview .list:nth-child(4) {
+.overview .list:nth-child(3) {
   grid-column: 3 / 6;
   grid-row-start: 2;
 }
 
-.overview .list:nth-child(5) {
+.overview .list:nth-child(4) {
   grid-column: 6 / 9;
   grid-row-start: 2;
 }
 
-.overview .list:nth-child(6) {
+.overview .list:nth-child(5) {
   grid-column: 9 / 11;
   grid-row-start: 2;
 }
