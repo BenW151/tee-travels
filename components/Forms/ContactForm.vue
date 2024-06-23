@@ -17,7 +17,7 @@
     <div class="item contact-form">
       <div>
         <form
-          action="https://formspree.io/f/xdoqplga"
+          action="https://formspree.io/f/mkgwwbng"
           method="POST"
           autocomplete="on">
           <label class="form-name">

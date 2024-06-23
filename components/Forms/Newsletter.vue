@@ -7,7 +7,7 @@
       </p>
       <p>Newsletter</p>
       <form
-        action="https://formspree.io/f/xdoqplga"
+        action="https://formspree.io/f/mgegjkzq"
         method="POST"
         autocomplete="on">
         <label class="form-email">
