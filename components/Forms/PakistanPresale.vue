@@ -1,13 +1,13 @@
 <template>
-  <div class="item newsletter">
+  <div class="item pakistan-presale">
     <div>
+      <h4 class="presale">Sign Up to Presale</h4>
       <p class="sign-up">
-        Sign up to our newsletter to <br />
-        receive updates on upcoming trips.
+        Only 14 spots available—sign up now to receive <br />
+        the payment link 48 hours before everyone else!
       </p>
-      <p>Newsletter</p>
       <form
-        action="https://formspree.io/f/mgegjkzq"
+        action="https://formspree.io/f/mnnaavqz"
         method="POST"
         autocomplete="on">
         <label class="form-email">

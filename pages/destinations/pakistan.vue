@@ -38,13 +38,13 @@
               perfect blend of adventure, culture, and natural splendor, making
               it a once-in-a-lifetime experience.
             </p>
-            <a
+            <!--<a
               class="link underline-out-icon"
               href="https://book.stripe.com/bIYdU90Dlcw7aeQeUU"
               aria-label="Book trip"
               target="_blank"
               ><h4><LucideExternalLink />Book Trip</h4></a
-            >
+            >-->
           </template>
         </TextParagraphWithTitle>
         <ListsDefaultList
@@ -70,6 +70,7 @@
             { id: 1, text: '2nd May - 9th May 2024' },
             { id: 2, text: '12th June - 21st June 2024' },
           ]" />
+        <FormsPakistanPresale />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-cover.png"
           imageAlt="Fairy Meadows, Pakistan"
@@ -559,10 +560,10 @@
               Born and raised in the picturesque Hunza Valley, Aziz has a
               profound connection to the rugged beauty of the Pakistani
               mountains. With over a decade of experience as a professional
-              mountain guide, Aziz's extensive knowledge of the region's
-              trails, history, and culture makes him an invaluable companion for
-              your adventure. His passion for the great outdoors is matched only
-              by his dedication to ensuring every traveler experiences the
+              mountain guide, Aziz's extensive knowledge of the region's trails,
+              history, and culture makes him an invaluable companion for your
+              adventure. His passion for the great outdoors is matched only by
+              his dedication to ensuring every traveler experiences the
               awe-inspiring landscapes safely and memorably. Fluent in English,
               Urdu, and the local Burushaski language, Aziz's friendly and
               approachable demeanor makes him a favorite among tourists. When
@@ -599,10 +600,10 @@
               Born and raised in the picturesque Hunza Valley, Aziz has a
               profound connection to the rugged beauty of the Pakistani
               mountains. With over a decade of experience as a professional
-              mountain guide, Aziz's extensive knowledge of the region's
-              trails, history, and culture makes him an invaluable companion for
-              your adventure. His passion for the great outdoors is matched only
-              by his dedication to ensuring every traveler experiences the
+              mountain guide, Aziz's extensive knowledge of the region's trails,
+              history, and culture makes him an invaluable companion for your
+              adventure. His passion for the great outdoors is matched only by
+              his dedication to ensuring every traveler experiences the
               awe-inspiring landscapes safely and memorably.
             </p>
             <a
@@ -676,24 +677,29 @@ useHead({
 
 .overview .image {
   grid-column: 12 / 17;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.pakistan-presale {
+  grid-column: 3 / 11;
+  grid-row-start: 3;
 }
 
 .overview .list {
   margin-top: 2vw;
 }
 
-.overview .list:nth-child(3) {
+.overview .list:nth-child(4) {
   grid-column: 3 / 6;
   grid-row-start: 2;
 }
 
-.overview .list:nth-child(4) {
+.overview .list:nth-child(5) {
   grid-column: 6 / 9;
   grid-row-start: 2;
 }
 
-.overview .list:nth-child(5) {
+.overview .list:nth-child(6) {
   grid-column: 9 / 11;
   grid-row-start: 2;
 }
