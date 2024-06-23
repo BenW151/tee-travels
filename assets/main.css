@@ -21,6 +21,7 @@ body {
   --border-radius-box: 5px;
   --color-white: #f2f3f4;
   --color-black: #070707;
+  --color-grey: #555555;
   --opacity: 70%;
   --font-color-primary: var(--color-black);
   --font-color-secondary: var(--color-white);
@@ -121,6 +122,16 @@ p {
 
 .background-inverted a::after {
   background-color: var(--font-color-secondary);
+}
+
+::-moz-selection {
+  color: var(--color-white);
+  background: var(--color-grey);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-grey);
 }
 
 /** Grid Positioning */
@@ -522,13 +533,11 @@ li {
 
   /** Grid Positioning */
 
-
   section .accent {
     grid-column: 1;
     margin: auto;
   }
 
- 
   /** Main Formatting */
 
   /** Text */
@@ -552,8 +561,6 @@ li {
   }
 
   /** Text Effects */
-
-
 
   .marquee {
     grid-column: span 6;
