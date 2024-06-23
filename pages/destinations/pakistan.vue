@@ -40,7 +40,7 @@
             </p>
             <a
               class="link underline-out-icon"
-              href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
+              href="https://book.stripe.com/bIYdU90Dlcw7aeQeUU"
               aria-label="Book trip"
               target="_blank"
               ><h4><LucideExternalLink />Book Trip</h4></a
@@ -622,7 +622,7 @@
         <TextSectionLabel labelText="Get Involved" />
         <a
           class="item underline-out"
-          href="https://buy.stripe.com/5kAeVW6eQ7gp6Wc9AA"
+          href="https://book.stripe.com/bIYdU90Dlcw7aeQeUU"
           aria-label="Book Now"
           target="_blank"
           ><TextReveal tag="h2">Book Trip</TextReveal></a
