@@ -4,8 +4,8 @@
       imageUrl="/images/pakistan/pakistan-cover.png"
       imageAlt="Modern office"
       title="Pakistan"
-      subtitle="Hiking in the Hunza Valley + Skardu"
-      description="£950 | 7 Nights"
+      subtitle="Hiking in the Hunza Valley"
+      description="£950 | 10 Nights"
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Overview', link: 'overview' },
@@ -554,7 +554,7 @@
           <template #title>Meet Your Local Guide</template>
           <template #body>
             <p class="bold">Name: Aziz Ali Khan</p>
-            <p class="bold">From: Hunza Valley, Pakistan</p>
+            <p class="bold">From: Karimabad, Hunza Valley, Pakistan</p>
             <p>
               Born and raised in the picturesque Hunza Valley, Aziz has a
               profound connection to the rugged beauty of the Pakistani

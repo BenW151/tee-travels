@@ -126,12 +126,12 @@ p {
 
 ::-moz-selection {
   color: var(--color-white);
-  background: var(--color-grey);
+  background: rgba(85, 85, 85, 0.8);
 }
 
 ::selection {
   color: var(--color-white);
-  background: var(--color-grey);
+  background: rgba(85, 85, 85, 0.8);
 }
 
 /** Grid Positioning */

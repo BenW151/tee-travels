@@ -79,6 +79,13 @@
                 trip a memorable and transformative experience. Join me on this
                 incredible journey and let's discover the world together!
               </p>
+              <a
+                href="https://instagram.com/teetravels_"
+                aria-label="Instagram"
+                class="underline-out-icon link"
+                target="_blank"
+                ><LucideExternalLink />View Instagram</a
+              >
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
