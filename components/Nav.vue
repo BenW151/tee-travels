@@ -3,11 +3,11 @@
     <div class="nav">
       <div class="wordmark">
         <NuxtLink
-          :class="{ 'logo-hide': true, open: isMenuOpen }"
+          :class="{ open: isMenuOpen }"
           to="/"
           aria-label="Home Page"
-          >Why Not Adventures</NuxtLink
-        >
+          @click="toggleMenuIfOpen"
+        >Why Not Adventures</NuxtLink>
       </div>
       <div class="burger-menu" @click="toggleMenu">
         <span :class="{ open: isMenuOpen }"></span>
@@ -21,28 +21,26 @@
           :class="{ active: $route.path === '/' }"
           aria-label="Home Page"
           @click="toggleMenu"
-          >About</NuxtLink
-        >
+        >About</NuxtLink>
         <NuxtLink
           class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
           @click="toggleMenu"
-          >Destinations</NuxtLink
-        >
+        >Destinations</NuxtLink>
         <NuxtLink
           class="nav-item"
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
           aria-label="Contact Page"
           @click="toggleMenu"
-          >Contact</NuxtLink
-        >
+        >Contact</NuxtLink>
       </div>
     </div>
   </nav>
 </template>
+
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
@@ -77,6 +75,12 @@ const updateIsMobile = () => {
 function toggleMenu() {
   if (isMobile.value) {
     isMenuOpen.value = !isMenuOpen.value;
+  }
+}
+
+function toggleMenuIfOpen() {
+  if (isMobile.value && isMenuOpen.value) {
+    toggleMenu();
   }
 }
 
@@ -183,6 +187,11 @@ body.scrolled-past-header nav a::after {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     transform: translateY(-100%);
+  }
+
+  .nav-items .nav-item {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .nav-items.open {
