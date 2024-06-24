@@ -42,7 +42,7 @@ useHead({
 }
 
 #contact-form .paragraph-with-title {
-  grid-column: 3 / 12;
+  grid-column: 3 / 11;
   grid-row: 1;
 }
 

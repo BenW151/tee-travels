@@ -13,19 +13,19 @@
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>What Happens Now?</template>
+            <template #title>What's Next?</template>
             <template #body>
               <p>
                 Thank you for booking with Why Not Adventures! To complete your
                 reservation, please fill out the form provided in the
-                confirmation email you received. We will also need a scanned
-                copy of your passport for verification purposes. Once we receive
-                these details, we'll send you an email outlining the next steps,
-                which include important information about your upcoming
-                adventure, packing tips, and travel itinerary. If you have any
-                questions or need assistance, please do not hesitate to contact
-                our support team. We look forward to helping you embark on an
-                unforgettable journey!
+                confirmation email you should receive shortly. We will also need
+                a scanned copy of your passport for verification purposes. Once
+                we receive these details, we'll send you an email outlining the
+                next steps, which include important information about your
+                upcoming adventure, packing tips, and travel itinerary. If you
+                have any questions or need assistance, please do not hesitate to
+                contact our support team. We look forward to helping you embark
+                on an unforgettable journey!
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -42,6 +42,11 @@ useHead({
     {
       name: "description",
       content: "Offering affordable tours to off the beaten track destinations",
+    },
+    {
+      hid: "robots",
+      name: "robots",
+      content: "noindex",
     },
   ],
   link: [
@@ -64,13 +69,12 @@ const isMobile = ref(window.innerWidth < 768);
 
 <style scoped>
 .payment-confirmed .paragraph-with-title {
-  grid-column: 3 / 12;
+  grid-column: 5 / 13;
   grid-row-start: 1;
 }
 
 @media (max-width: 767px) {
-  section div.container.grid div.item,
-  .end-text a {
+  section div.container.grid div.item {
     grid-column: 1 / 7;
     grid-row: auto;
   }

@@ -219,7 +219,7 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Home",
+  title: "Why Not Adventures",
   meta: [
     {
       name: "description",
