@@ -7,7 +7,6 @@
           to="/"
           :class="{ active: $route.path === '/' }"
           aria-label="Home Page"
-          @click="toggleMenu"
           >About</NuxtLink
         >
         <NuxtLink
@@ -15,7 +14,6 @@
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
-          @click="toggleMenu"
           >Destinations</NuxtLink
         >
         <NuxtLink
@@ -23,7 +21,6 @@
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
           aria-label="Contact Page"
-          @click="toggleMenu"
           >Contact</NuxtLink
         >
       </div>
@@ -31,19 +28,14 @@
         class="socials"
         :links="[
           {
-            url: 'https://www.linkedin.com/in/benw151/',
+            url: 'https://www.instagram.com/whynotadventures_/',
             label: 'Instagram',
             description: 'Instagram',
           },
           {
-            url: 'https://github.com/BenW151/',
+            url: 'https://facebook.com/whynotadventures_/',
             label: 'Facebook',
             description: 'Facebook',
-          },
-          {
-            url: 'mailto:myemail@email.com',
-            label: 'Twitter',
-            description: 'Twitter',
           },
         ]" />
       <FormsNewsletter />
@@ -100,7 +92,6 @@ const scrollToTop = () => {
 </script>
 
 <style scoped>
-
 footer {
   background-color: var(--color-white);
   display: flex;

@@ -110,37 +110,37 @@
             },
             {
               id: 5,
-              shortSummary: 'Fairy Meadows to Skardu',
+              shortSummary: 'Fairy Meadows to Karimabad',
               detailSummary:
                 'Depart from Fairy Meadows and drive to Skardu Valley, checking into your hotel upon arrival.',
             },
             {
               id: 6,
-              shortSummary: 'Masoor Rock Hike',
+              shortSummary: 'Eagle’s Nest',
               detailSummary:
                 'Hike to Masoor Rock for panoramic views and explore the Sarfaranga Desert with a camel ride or stroll.',
             },
             {
               id: 7,
-              shortSummary: 'Eagle’s Nest',
+              shortSummary: 'Rakaposhi Hakapun',
               detailSummary:
                 'Drive to Eagle’s Nest for stunning mountain views, a yak BBQ, and a local drink called moonshine.',
             },
             {
               id: 8,
-              shortSummary: 'Rakaposhi Hapakun',
+              shortSummary: 'Rakaposhi Basecamp + Glacier',
               detailSummary:
                 'Go shopping in Karimabad, then drive to Rakaposhi Minapin and hike to Hapakun for beautiful mountain views.',
             },
             {
               id: 9,
-              shortSummary: 'Trek to Basecamp and Gulkin',
+              shortSummary: 'Attabad Lake + Gulkin',
               detailSummary:
                 'Trek to Rakaposhi base camp for stunning views, then drive to Gulkin and experience local hospitality.',
             },
             {
               id: 10,
-              shortSummary: 'Gulkin and Attabad Lake',
+              shortSummary: 'Passu Cones + Borith Lake',
               detailSummary:
                 'Hike for a view of Attabad Lake, cross the Passu Bridge, and visit Passu Cones mountains.',
             },
@@ -151,13 +151,12 @@
                 'Drive back to Islamabad, a 16-hour journey, and prepare for your departure flight the next morning.',
             },
           ]" />
-
-        <ImageDefault
+        <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-map.png"
           imageAlt="Itinerary Map"
           class="itinerary-map"
-          rellaxPercentage="0"
-          rellaxSpeed="-3" />
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
       </LayoutGridContainer>
     </section>
 
@@ -182,13 +181,13 @@
             <ListsDefaultList
               bullets
               :items="[
-                { id: 1, text: '8 Nights Accommodation' },
-                { id: 2, text: 'Breakfast, Lunch and Dinner Each Day' },
-                { id: 3, text: 'All Activities Mentioned' },
+                { id: 1, text: '10 nights accommodation' },
+                { id: 2, text: 'Breakfast, lunch and dinner each day' },
+                { id: 3, text: 'Drinking water, hot drinks at breakfast' },
                 { id: 4, text: 'Transfers Between Stops' },
-                { id: 5, text: 'Breakfast, Lunch and Dinner Each Day' },
+                { id: 5, text: 'Airport pickup and drop off' },
                 { id: 6, text: 'All Activities Mentioned' },
-                { id: 7, text: 'Transfers Between Stops' },
+                { id: 7, text: 'Local tour guide' },
               ]" />
           </template>
         </TextParagraphWithTitle>
@@ -477,23 +476,42 @@
               such as hikes, local cultural activities, and visits to key
               attractions.
             </p>
+            <ListsDefaultList
+              bullets
+              :items="[
+                { id: 1, text: '10 nights accommodation' },
+                { id: 2, text: 'Breakfast, lunch and dinner each day' },
+                { id: 3, text: 'Drinking water, hot drinks at breakfast' },
+                { id: 4, text: 'Transfers Between Stops' },
+                { id: 5, text: 'Airport pickup and drop off' },
+                { id: 6, text: 'All Activities Mentioned' },
+                { id: 7, text: 'Local tour guide' },
+              ]" />
           </AccordionItem>
-          <AccordionItem title="Do I need a visa?" index="2">
+          <AccordionItem title="What's not included?" index="2">
+            <p>
+              Our tour includes accommodation, transportation within Pakistan,
+              guided tours, and most meals. You'll also enjoy unique experiences
+              such as hikes, local cultural activities, and visits to key
+              attractions.
+            </p>
+            <ListsDefaultList
+              bullets
+              :items="[
+                { id: 1, text: 'Flights' },
+                { id: 2, text: 'Visa' },
+                { id: 3, text: 'Any additional nights accommodation - We can organise this for you however' },
+                { id: 4, text: 'Additional food and drinks' },
+                { id: 5, text: 'Souvenirs' },
+                { id: 6, text: 'Tips - at your discretion' },
+              ]" />
+          </AccordionItem>
+          <AccordionItem title="Do I need a visa?" index="3">
             <p>
               Yes, most travelers will need a visa to enter Pakistan. It's
               essential to check the specific visa requirements for your
               nationality and apply in advance. Ensure your passport is valid
               for at least six months beyond your planned departure date.
-            </p>
-          </AccordionItem>
-          <AccordionItem
-            title="What airport do I need to fly in to/out of?"
-            index="3">
-            <p>
-              You will fly into and out of Islamabad International Airport
-              (ISB). This airport serves as the main gateway for our tour,
-              providing convenient access to all starting and ending points of
-              our itinerary.
             </p>
           </AccordionItem>
           <AccordionItem title="Do I need travel insurance?" index="4">
@@ -504,7 +522,17 @@
               safe and worry-free journey.
             </p>
           </AccordionItem>
-          <AccordionItem title="Will the itinerary change?" index="5">
+          <AccordionItem
+            title="What airport do I need to fly in and out of?"
+            index="5">
+            <p>
+              You will fly into and out of Islamabad International Airport
+              (ISB). This airport serves as the main gateway for our tour,
+              providing convenient access to all starting and ending points of
+              our itinerary.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Will the itinerary change?" index="6">
             <p>
               While we strive to stick to the planned itinerary, there may be
               occasions where changes are necessary due to weather conditions,
@@ -512,7 +540,7 @@
               best to keep you informed and provide suitable alternatives.
             </p>
           </AccordionItem>
-          <AccordionItem title="Any other questions?" index="6">
+          <AccordionItem title="Any other questions?" index="7">
             <ListsLinkList
               class="contact"
               title="Get in touch"
@@ -701,6 +729,7 @@ useHead({
 .itinerary-brief .image {
   grid-column: 3 / 8;
   grid-row-start: 1;
+  align-self: center;
 }
 
 .itinerary-map.image-default img {
