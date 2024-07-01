@@ -582,7 +582,7 @@
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>Meet Your Local Guide</template>
           <template #body>
-            <p class="bold">Name: Aziz Ali</p>
+            <p class="bold">Name: Aziz</p>
             <p class="bold">From: Karimabad, Hunza Valley, Pakistan</p>
             <p>
               Born and raised in the picturesque Hunza Valley, Aziz has a

@@ -98,7 +98,7 @@ const images = [
     src: "/images/pakistan/pakistan-cover.png",
     alt: "Pakistan",
     subDescription: "Hiking in Hunza Valley + Skardu",
-    nightsPrice: "11 Nights | £950",
+    nightsPrice: "10 Nights | £950",
     link: "/destinations/pakistan",
   },
   {
