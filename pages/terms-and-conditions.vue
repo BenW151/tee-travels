@@ -6,70 +6,153 @@
           <template #title>Terms + Conditions</template>
           <template #body>
             <p>
-              Thank you for visiting my website. Your privacy is important to
-              me, and I am committed to protecting your personal information.
-              This Privacy Policy is designed to help you understand how I
-              collect, use, and safeguard your information when you visit my
-              website.
+              Welcome to Why Not Adventures! By using our website and booking
+              our tours, you agree to comply with and be bound by the following
+              terms and conditions. Please review them carefully.
             </p>
+
             <p>Last Updated: 22/05/2024</p>
-            <h4>1. Information I Collect</h4>
+
+            <h4>1. General Website Terms</h4>
             <p>
-              I may collect both personally identifiable information (PII) and
-              non-personally identifiable information when you visit my website.
-              PII may include your name, email address, and other information
-              that can be used to identify you personally. Non-personally
-              identifiable information may include your IP address, browser
-              type, and other technical details.
+              By accessing and using this website, you agree to be bound by
+              these terms and conditions.
             </p>
-            <h4>2. How I Use Your Information</h4>
             <p>
-              I use the information I collect for various purposes, including:
+              All content on this website, including but not limited to text,
+              graphics, images, and information, is the property of Why Not
+              Adventures and is protected by intellectual property laws.
             </p>
-            <ul>
-              <li>Providing and improving my website</li>
-              <li>Responding to your inquiries</li>
-              <li>Sending newsletters or promotional materials</li>
-              <li>Customizing your experience on my website</li>
-            </ul>
-            <h4>3. Cookies and Tracking Technologies</h4>
             <p>
-              I may use cookies and similar tracking technologies to enhance
-              your experience on my website. You can choose to disable cookies
-              through your browser settings, but please note that some features
-              of my website may not function properly if you do so.
+              You may not use, reproduce, distribute, or display any content
+              from this website without prior written permission from Why Not
+              Adventures.
             </p>
-            <h4>4. Third-Party Disclosure</h4>
             <p>
-              I do not sell, trade, or otherwise transfer your personal
-              information to third parties without your consent. However, I may
-              share your information with trusted third parties who assist me in
-              operating my website, conducting my business, or servicing you.
+              We reserve the right to modify or terminate any part of the
+              website or services without prior notice.
             </p>
-            <h4>5. Security Measures</h4>
+
+            <h4>2. Booking and Payment</h4>
+            <p>All bookings must be made through our website.</p>
             <p>
-              I take reasonable precautions to protect your information.
-              However, no data transmission over the internet or electronic
-              storage is completely secure, and I cannot guarantee absolute
-              security.
+              A non-refundable deposit is required at the time of booking to
+              secure your spot on the tour.
             </p>
-            <h4>6. Your Choices</h4>
             <p>
-              You have the right to access, correct, or delete your personal
-              information. You may also choose to opt-out of certain
-              communications. If you have any concerns about your privacy,
-              please contact me using the information provided below.
+              The remaining balance is due 60 days before the tour start date.
+              Failure to pay the remaining balance on time may result in the
+              cancellation of your booking.
             </p>
-            <h4>7. Changes to This Privacy Policy</h4>
+
+            <h4>3. Refund Policy</h4>
             <p>
-              I reserve the right to update my Privacy Policy from time to time.
-              Any changes will be posted on this page with a revised date.
+              The deposit is non-refundable unless the tour is cancelled by the
+              operator.
             </p>
-            <h4>8. Contact Information</h4>
             <p>
-              If you have any questions or concerns regarding my Privacy Policy,
-              please contact me at myemail@email.com. By using my website, you
-              consent to the terms outlined in this Privacy Policy
+              If you cancel your booking more than 60 days before the tour start
+              date, you will receive a refund of the remaining balance, minus
+              the non-refundable deposit.
+            </p>
+            <p>
+              Cancellations made less than 60 days before the tour start date
+              are non-refundable.
+            </p>
+
+            <h4>4. Insurance, Visas, and Flights</h4>
+            <p>
+              Why Not Adventures does not provide insurance, visas, or flights.
+              It is your responsibility to arrange these.
+            </p>
+            <p>
+              We strongly recommend purchasing travel insurance to cover any
+              unforeseen circumstances.
+            </p>
+            <p>
+              We are not responsible for any issues related to your insurance,
+              visa, or flights that may prevent you from attending the tour.
+            </p>
+
+            <h4>5. Tour Participation</h4>
+            <p>
+              Participants must be in good health and physically able to
+              participate in the tour activities.
+            </p>
+            <p>
+              Any medical conditions or dietary restrictions must be disclosed
+              to Why Not Adventures at the time of booking.
+            </p>
+            <p>
+              We reserve the right to decline or remove any participant from the
+              tour if their behavior is deemed disruptive or unsafe to
+              themselves or others.
+            </p>
+
+            <h4>6. Changes and Cancellations by the Operator</h4>
+            <p>
+              Why Not Adventures reserves the right to make changes to the tour
+              itinerary if necessary due to unforeseen circumstances.
+            </p>
+            <p>
+              If a tour is cancelled by the operator, you will receive a full
+              refund, including the deposit.
+            </p>
+            <p>
+              We are not responsible for any additional expenses you may incur
+              due to changes or cancellations, such as flight or accommodation
+              costs.
+            </p>
+
+            <h4>7. Liability</h4>
+            <p>
+              Why Not Adventures is not liable for any personal injury, loss, or
+              damage that may occur during the tour.
+            </p>
+            <p>
+              Participants are responsible for their own safety and personal
+              belongings at all times.
+            </p>
+
+            <h4>8. Privacy Policy</h4>
+            <p>
+              Your personal information will be kept confidential and used
+              solely for the purpose of booking and managing your tour.
+            </p>
+            <p>
+              We will not share your information with third parties without your
+              consent, except as required by law.
+            </p>
+
+            <h4>9. Governing Law</h4>
+            <p>
+              These terms and conditions are governed by and construed in
+              accordance with the laws of the United Kingdom.
+            </p>
+            <p>
+              Any disputes arising out of or in connection with these terms and
+              conditions shall be subject to the exclusive jurisdiction of the
+              courts of the United Kingdom.
+            </p>
+
+            <h4>10. Changes to Terms and Conditions</h4>
+            <p>
+              I reserve the right to update the Terms and Conditions from time
+              to time. Any changes will be posted on this page with a revised
+              date.
+            </p>
+
+            <p>
+              By booking a tour with Why Not Adventures, you acknowledge that
+              you have read, understood, and agree to these terms and
+              conditions. If you have any questions or concerns, please contact
+              us at
+              <a
+                href="mailto:myemail@email.com"
+                aria-label="email address"
+                class="underline-out"
+                >contact@whynotadventures.co.uk</a
+              >.
             </p>
           </template>
         </TextParagraphWithTitle>
