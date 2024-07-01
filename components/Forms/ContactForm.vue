@@ -37,11 +37,7 @@
               required />
           </label>
           <label class="form-destination">
-            <input
-              type="text"
-              name="destination"
-              placeholder="Destination"
-              required />
+            <input type="text" name="destination" placeholder="Destination" />
           </label>
           <label class="form-message">
             <textarea
