@@ -621,13 +621,14 @@
     <section class="end-text" id="book">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Get Involved" />
-        <a
+        <FormsPakistanPresale />
+        <!--<a
           class="item underline-out"
           href="https://book.stripe.com/bIYdU90Dlcw7aeQeUU"
           aria-label="Book Now"
           target="_blank"
           ><TextReveal tag="h2">Book Trip</TextReveal></a
-        >
+        >-->
       </LayoutGridContainer>
     </section>
   </div>
@@ -771,6 +772,19 @@ a h4 {
   margin: 0;
 }
 
+.end-text .pakistan-presale {
+  grid-column: 6 / 17;
+  grid-row-start: 1;
+}
+
+.end-text .pakistan-presale h4 {
+  font-size: 7vw;
+}
+
+.end-text .pakistan-presale input {
+  width: 45%;
+}
+
 @media (max-width: 767px) {
   section div.container.grid div.item {
     grid-column: 1 / 7;
@@ -796,6 +810,10 @@ a h4 {
 
   .end-text a h2 {
     font-size: 19vw;
+  }
+
+  .end-text .pakistan-presale input {
+    width: 70vw;
   }
 }
 </style>
