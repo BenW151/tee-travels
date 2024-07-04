@@ -176,6 +176,7 @@ footer .socials {
 .back-to-top, .credit {
   grid-column: 15 / 17;
   grid-row: 1;
+  margin-bottom: 0;
 }
 
 .item.active::after {
