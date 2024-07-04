@@ -72,12 +72,13 @@
         aria-label="Terms and Conditions Page"
         >Terms + Conditions</NuxtLink
       >
-      <button
+      <!--<button
         class="item back-to-top"
         @click="scrollToTop"
         aria-label="Back to Top">
         <LucideArrowUp />
-      </button>
+      </button>-->
+      <p class="credit">Site by <a class="link underline-out" href="https://benward.io">Ben Ward</a></p>
     </LayoutGridContainer>
   </footer>
 </template>
@@ -172,8 +173,8 @@ footer .socials {
   grid-row: 1;
 }
 
-.back-to-top {
-  grid-column: 16 / 17;
+.back-to-top, .credit {
+  grid-column: 15 / 17;
   grid-row: 1;
 }
 
