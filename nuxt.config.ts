@@ -77,7 +77,7 @@ export default defineNuxtConfig({
         {
           property: "og:image",
           content:
-            "https://whynotadventures.co.uk/images/pakistan/pakistan-cover.png",
+            "https://whynotadventures.co.uk/images/why-not-logo.png",
         },
         { property: "og:url", content: "https://whynotadventures.co.uk/" },
         { name: "twitter:card", content: "summary_large_image" },
