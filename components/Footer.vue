@@ -239,7 +239,7 @@ footer .socials {
     grid-row: 2;
   }
 
-  .back-to-top {
+  .back-to-top, .credit {
     grid-column: 5 / 7;
     grid-row: 2;
   }
