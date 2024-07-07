@@ -98,7 +98,7 @@ const images = [
     src: "/images/pakistan/pakistan-cover.png",
     alt: "Pakistan",
     subDescription: "Hiking in Hunza Valley + Skardu",
-    nightsPrice: "10 Nights | £950",
+    nightsPrice: "10 Nights | £985",
     link: "/destinations/pakistan",
   },
   {
@@ -126,7 +126,7 @@ watch(isMobile, async (newVal, oldVal) => {
     await nextTick();
     swiperRef.value.swiper.destroy(true, true);
     nextTick(() => {
-      swiperRef.value.swiper = new Swiper('.swiper', {
+      swiperRef.value.swiper = new Swiper(".swiper", {
         modules: [Navigation, Mousewheel, FreeMode],
         slidesPerView: 3.2,
         spaceBetween: 10,

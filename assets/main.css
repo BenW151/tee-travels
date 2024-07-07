@@ -257,6 +257,10 @@ button.link {
   margin-right: auto;
 }
 
+p a {
+  margin: 0;
+}
+
 a::after,
 button::after {
   content: "";

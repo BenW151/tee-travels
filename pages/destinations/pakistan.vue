@@ -5,7 +5,7 @@
       imageAlt="Modern office"
       title="Pakistan"
       subtitle="Hiking in the Hunza Valley"
-      description="£950 | 10 Nights"
+      description="£985 | 10 Nights"
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Overview', link: 'overview' },
@@ -460,31 +460,15 @@
             </p>
           </AccordionItem>
           <AccordionItem title="Any other questions?" index="7">
-            <ListsLinkList
-              class="contact"
-              title="Get in touch"
-              :links="[
-                {
-                  url: '/contact',
-                  label: 'Fill out the contact form',
-                  description: 'Contact Page',
-                },
-                {
-                  url: 'mailto:myemail@email.com',
-                  label: 'Email us',
-                  description: 'Email',
-                },
-                {
-                  url: 'https://instagram.com/whynotadventures_',
-                  label: 'Message us on Instagram',
-                  description: 'Instagram',
-                },
-                {
-                  url: 'https://instagram.com/whynotadventures_',
-                  label: 'Message us on WhatsApp',
-                  description: 'WhatsApp',
-                },
-              ]" />
+            <p>
+              Get in touch with us via the
+              <NuxtLink
+                to="/contact"
+                class="underline-out"
+                aria-label="Contact Page"
+                >contact page</NuxtLink
+              >
+            </p>
           </AccordionItem>
         </Accordion>
       </LayoutGridContainer>
