@@ -5,11 +5,15 @@ export default defineNuxtConfig({
     url: "https://whynotadventures.co.uk/",
     name: "Why Not Adventures",
   },
+
   devtools: { enabled: true },
+
   alias: {
     assets: "/<rootDir>/assets",
   },
+
   css: ["~/assets/main.css"],
+
   modules: [
     "nuxt-lucide-icons",
     "@nuxtjs/google-fonts",
@@ -18,13 +22,16 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "nuxt-gtag",
   ],
+
   gtag: {
     id: "G-1P9CWR1H63",
     enabled: false,
   },
+
   image: {
     format: ["webp"],
   },
+
   googleFonts: {
     families: {
       "Roboto Slab": {
@@ -38,7 +45,9 @@ export default defineNuxtConfig({
     },
     display: "swap",
   },
+
   plugins: ["~/plugins/rellax.client.js"],
+
   app: {
     pageTransition: { name: "page", mode: "out", appear: true },
     head: {
@@ -106,4 +115,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: "2024-07-05",
 });
