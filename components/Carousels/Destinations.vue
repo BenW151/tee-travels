@@ -21,7 +21,7 @@
       v-else
       ref="swiperRef"
       :modules="[Navigation, Mousewheel, FreeMode]"
-      :slides-per-view="3.2"
+      :slides-per-view="2.2"
       :space-between="10"
       :navigation="true"
       :mousewheel="{
@@ -113,12 +113,6 @@ const images = [
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "Coming Soon",
   },
-  {
-    src: "/images/kyrgyzstan-cover.png",
-    alt: "Kyrgyzstan",
-    subDescription: "Hiking in Ala Archa National Park",
-    nightsPrice: "Coming Soon",
-  },
 ];
 
 watch(isMobile, async (newVal, oldVal) => {
@@ -128,7 +122,7 @@ watch(isMobile, async (newVal, oldVal) => {
     nextTick(() => {
       swiperRef.value.swiper = new Swiper(".swiper", {
         modules: [Navigation, Mousewheel, FreeMode],
-        slidesPerView: 3.2,
+        slidesPerView: 2.2,
         spaceBetween: 10,
         navigation: true,
         mousewheel: {
@@ -154,9 +148,8 @@ window.addEventListener("resize", updateIsMobile);
 }
 
 .slide-image {
-  width: 30vw;
+  width: 43.5vw;
   height: auto;
-  max-width: 30vw;
   max-height: 30vw;
   object-fit: cover;
 }
