@@ -31,16 +31,18 @@
             url: 'https://www.instagram.com/whynotadventures_/',
             label: 'Instagram',
             description: 'Instagram',
+            icon: 'Instagram',
           },
           {
             url: 'https://facebook.com/whynotadventures_/',
             label: 'Facebook',
             description: 'Facebook',
+            icon: 'Facebook',
           },
         ]" />
       <FormsNewsletter />
       <div class="legal">
-        <div class="images">
+        <!--<div class="images">
           <ImageDefault
             imageUrl="/images/abta.png"
             imageAlt="Celestial Relaxation Room"
@@ -48,11 +50,8 @@
             objectFit="contain"
             rellaxPercentage="0"
             rellaxSpeed="0" />
-        </div>
-        <p>
-          Why Not Adventures are a UK registered company – Address, Address,
-          123, Address, United Kingdom, GL1 7SQ.
-        </p>
+        </div>-->
+        <p>Why Not Adventures Ltd are a UK registered company – No. 00000000</p>
       </div>
     </LayoutGridContainer>
 
@@ -78,7 +77,10 @@
         aria-label="Back to Top">
         <LucideArrowUp />
       </button>-->
-      <p class="credit">Site by <a class="link underline-out" href="https://benward.io">Ben Ward</a></p>
+      <p class="credit">
+        Site by
+        <a class="link underline-out" href="https://benward.io">Ben Ward</a>
+      </p>
     </LayoutGridContainer>
   </footer>
 </template>
@@ -97,7 +99,7 @@ footer {
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   height: 30vw;
   z-index: 1000;
@@ -112,6 +114,7 @@ footer .container {
 
 footer .nav-items {
   grid-column: 1 / 4;
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
 }
@@ -122,14 +125,14 @@ footer .nav-items .nav-item {
 }
 
 footer .socials {
-  grid-column: 1 / 4;
-  grid-row-start: 2;
+  grid-column: 6 / 10;
+  grid-row-start: 1;
   margin-top: auto;
 }
 
 .newsletter {
   grid-column: 11 / 15;
-  grid-row-start: 2;
+  grid-row: 1 / 3;
   margin-top: auto;
 }
 
@@ -137,6 +140,7 @@ footer .socials {
   grid-column: 6 / 10;
   grid-row-start: 2;
   white-space: normal;
+  margin-top: auto;
 }
 
 .legal p {
@@ -148,6 +152,7 @@ footer .socials {
 }
 
 .abta {
+  display: none;
   height: 5vw;
   margin: var(--spacing-3);
   margin-left: 0;
@@ -173,7 +178,8 @@ footer .socials {
   grid-row: 1;
 }
 
-.back-to-top, .credit {
+.back-to-top,
+.credit {
   grid-column: 15 / 17;
   grid-row: 1;
   margin-bottom: 0;
@@ -201,6 +207,7 @@ footer .socials {
 @media (max-width: 767px) {
   footer {
     height: 30vh;
+    justify-content: space-between;
   }
 
   .footer {
@@ -215,9 +222,12 @@ footer .socials {
   }
 
   .newsletter,
-  .legal {
+  .legal,
+  footer .socials,
+  footer .nav-items {
     grid-column: 1 / 7;
     grid-row-start: auto;
+    grid-row: auto;
   }
 
   .abta {
@@ -240,12 +250,23 @@ footer .socials {
     grid-row: 2;
   }
 
-  .back-to-top, .credit {
+  .back-to-top,
+  .credit {
     grid-column: 5 / 7;
     grid-row: 2;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+}
+</style>
+
+<style>
+footer .socials a {
+  font-size: var(--font-size-S);
+}
+
+footer .socials a::after {
+  display: none;
 }
 </style>
