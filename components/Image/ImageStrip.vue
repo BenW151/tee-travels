@@ -78,7 +78,7 @@ const isImage = computed(() => {
 <style scoped>
 .image-strip.container {
   max-width: 100%;
-  height: 50vw;
+  height: 55vw;
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;

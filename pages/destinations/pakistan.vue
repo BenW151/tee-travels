@@ -78,7 +78,7 @@
 
     <section id="showreel">
       <ImageStrip
-        src="/videos/montenegro-reel.mp4"
+        src="/videos/pakistan-showreel.mp4"
         poster="/images/pakistan/pakistan-cover.png"
         alt="Montenegro Showreel" />
     </section>
