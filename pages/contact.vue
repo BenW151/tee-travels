@@ -4,7 +4,7 @@
       imageUrl="/images/kyrgyzstan-cover.png"
       imageAlt="Laptop with code on desk"
       title="Contact"
-      subtitle="Have a question? Let us know"
+      subtitle="Have a question? Let us know."
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Email', link: 'mailto:contact@whynotadventures.co.uk' },
