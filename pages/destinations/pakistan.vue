@@ -9,8 +9,8 @@
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Overview', link: 'overview' },
-        { title: 'Included', link: 'included' },
         { title: 'Itinerary', link: 'itinerary-detailed' },
+        { title: 'Inclusions', link: 'included' },
         { title: 'FAQ', link: 'faq' },
         { title: 'Book', link: 'book' },
       ]">
@@ -26,15 +26,15 @@
               Embark on an unforgettable adventure to Pakistan with our
               organized tour, showcasing the country's breathtaking natural
               beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, where modern architecture meets serene landscapes.
-              Next, travel to the historical city of Lahore, renowned for its
-              rich heritage, bustling bazaars, and magnificent Mughal
-              architecture, including the iconic Badshahi Mosque and Lahore
-              Fort. Venture north to the enchanting Fairy Meadows, a lush alpine
-              meadow offering stunning views of Nanga Parbat, the world's
-              ninth-highest mountain. Enjoy exhilarating hikes through the
-              northern regions, where you can explore the awe-inspiring
-              Karakoram and Himalayan mountain ranges. This trip promises a
+              of Islamabad, exploring the iconic Faisal Mosque and local
+              attractions. Travel north to Jaglot and then to the enchanting
+              Fairy Meadows, where you will enjoy stunning views of Nanga
+              Parbat, the world's ninth-highest mountain. Experience
+              exhilarating off-road jeep rides, hike to serene mountain huts,
+              and camp under the stars. Continue to Karimabad, visiting the
+              historic Baltit Fort and exploring the vibrant local markets. Trek
+              to Rakaposhi base camp, enjoy scenic boat trips on Attabad Lake,
+              and hike to the Passu Cones viewpoint. This trip promises a
               perfect blend of adventure, culture, and natural splendor, making
               it a once-in-a-lifetime experience.
             </p>
@@ -59,16 +59,15 @@
           title="Regions Visited"
           :items="[
             { id: 1, text: 'Islamabad' },
-            { id: 2, text: 'Lahore' },
+            { id: 2, text: 'Hunza Valley' },
             { id: 3, text: 'Fairy Meadows' },
-            { id: 4, text: 'Nanga Parbat' },
+            { id: 4, text: 'Rakaposhi' },
           ]" />
 
         <ListsDefaultList
           title="Upcoming Dates"
           :items="[
-            { id: 1, text: '2nd May - 9th May 2024' },
-            { id: 2, text: '12th June - 21st June 2024' },
+            { id: 1, text: '2nd May - 9th May 2025' },
           ]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
@@ -79,119 +78,11 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="itinerary-brief" id="itinerary-brief">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Itinerary" />
-        <ListsItinerary
-          :days="[
-            {
-              id: 1,
-              shortSummary: 'Arrival in Islamabad',
-              detailSummary:
-                'Arrive in Islamabad, check into your hotel, and explore nearby attractions if time permits.',
-            },
-            {
-              id: 2,
-              shortSummary: 'Islamabad to Jaglot',
-              detailSummary:
-                'Drive from Islamabad to Jaglot, enjoying scenic views of lush valleys and rivers along the way.',
-            },
-            {
-              id: 3,
-              shortSummary: 'Jaglot to Fairy Meadows',
-              detailSummary:
-                'Travel from Jaglot to Fairy Meadows, with a stop for lunch and a rugged jeep ride to your destination.',
-            },
-            {
-              id: 4,
-              shortSummary: 'Beyal Camp and Nanga Parbat',
-              detailSummary:
-                'Hike to Beyal Camp for breathtaking views of Nanga Parbat and explore the pristine natural beauty.',
-            },
-            {
-              id: 5,
-              shortSummary: 'Fairy Meadows to Karimabad',
-              detailSummary:
-                'Depart from Fairy Meadows and drive to Skardu Valley, checking into your hotel upon arrival.',
-            },
-            {
-              id: 6,
-              shortSummary: 'Eagle’s Nest',
-              detailSummary:
-                'Hike to Masoor Rock for panoramic views and explore the Sarfaranga Desert with a camel ride or stroll.',
-            },
-            {
-              id: 7,
-              shortSummary: 'Rakaposhi Hakapun',
-              detailSummary:
-                'Drive to Eagle’s Nest for stunning mountain views, a yak BBQ, and a local drink called moonshine.',
-            },
-            {
-              id: 8,
-              shortSummary: 'Rakaposhi Basecamp + Glacier',
-              detailSummary:
-                'Go shopping in Karimabad, then drive to Rakaposhi Minapin and hike to Hapakun for beautiful mountain views.',
-            },
-            {
-              id: 9,
-              shortSummary: 'Attabad Lake + Gulkin',
-              detailSummary:
-                'Trek to Rakaposhi base camp for stunning views, then drive to Gulkin and experience local hospitality.',
-            },
-            {
-              id: 10,
-              shortSummary: 'Passu Cones + Borith Lake',
-              detailSummary:
-                'Hike for a view of Attabad Lake, cross the Passu Bridge, and visit Passu Cones mountains.',
-            },
-            {
-              id: 11,
-              shortSummary: 'Return to Islamabad',
-              detailSummary:
-                'Drive back to Islamabad, a 16-hour journey, and prepare for your departure flight the next morning.',
-            },
-          ]" />
-        <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-map.png"
-          imageAlt="Itinerary Map"
-          class="itinerary-map"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="right" />
-      </LayoutGridContainer>
-    </section>
-
     <section id="showreel">
       <ImageStrip
         src="/videos/montenegro-reel.mp4"
         poster="/images/pakistan/pakistan-cover.png"
         alt="Montenegro Showreel" />
-    </section>
-
-    <section class="text-left included" id="included">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Included" />
-        <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-cover.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
-          textPosition="right" />
-        <TextParagraphWithTitle subtitleTag="h3">
-          <template #title>What's Included</template>
-          <template #body>
-            <ListsDefaultList
-              bullets
-              :items="[
-                { id: 1, text: '10 nights accommodation' },
-                { id: 2, text: 'Breakfast, lunch and dinner each day' },
-                { id: 3, text: 'Drinking water, hot drinks at breakfast' },
-                { id: 4, text: 'Transfers Between Stops' },
-                { id: 5, text: 'Airport pickup and drop off' },
-                { id: 6, text: 'All Activities Mentioned' },
-                { id: 7, text: 'Local tour guide' },
-              ]" />
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
     </section>
 
     <ItineraryDay
@@ -454,6 +345,33 @@
       </template>
     </ItineraryDay>
 
+    <section class="text-left included" id="included">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Included" />
+        <ImageWithTextOverlay
+          imageUrl="/images/pakistan/pakistan-cover.png"
+          imageAlt="Fairy Meadows, Pakistan"
+          overlayText="Fairy Meadows, <br /> Pakistan"
+          textPosition="right" />
+        <TextParagraphWithTitle subtitleTag="h3">
+          <template #title>What's Included</template>
+          <template #body>
+            <ListsDefaultList
+              bullets
+              :items="[
+                { id: 1, text: '10 nights accommodation' },
+                { id: 2, text: 'Breakfast, lunch and dinner each day' },
+                { id: 3, text: 'Drinking water, hot drinks at breakfast' },
+                { id: 4, text: 'Transfers Between Stops' },
+                { id: 5, text: 'Airport pickup and drop off' },
+                { id: 6, text: 'All Activities Mentioned' },
+                { id: 7, text: 'Local tour guide' },
+              ]" />
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="faq" id="faq">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Information" />
@@ -500,7 +418,10 @@
               :items="[
                 { id: 1, text: 'Flights' },
                 { id: 2, text: 'Visa' },
-                { id: 3, text: 'Any additional nights accommodation - We can organise this for you however' },
+                {
+                  id: 3,
+                  text: 'Any additional nights accommodation - We can organise this for you however',
+                },
                 { id: 4, text: 'Additional food and drinks' },
                 { id: 5, text: 'Souvenirs' },
                 { id: 6, text: 'Tips - at your discretion' },

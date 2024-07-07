@@ -1,7 +1,7 @@
 <template>
   <section :class="['itinerary-day', textPosition]" :id="dayId">
     <LayoutGridContainer>
-      <TextSectionLabel v-if="dayId === 'day1'" labelText="Detailed Itinerary" id="itinerary-detailed" />
+      <TextSectionLabel v-if="dayId === 'day1'" labelText="Itinerary" id="itinerary-detailed" />
       <ImageWithTextOverlay
         :imageUrl="imageUrl"
         :imageAlt="imageAlt"
