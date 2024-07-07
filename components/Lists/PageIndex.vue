@@ -2,7 +2,11 @@
   <div class="page-index">
     <ul>
       <li v-for="label in labels" :key="label.link">
-        <a :href="'#' + label.link">{{ label.title }}</a>
+        <a :href="getLinkHref(label.link)" 
+           :target="isExternal(label.link) ? '_blank' : undefined" 
+           :rel="isExternal(label.link) ? 'noopener noreferrer' : undefined">
+          {{ label.title }}
+        </a>
       </li>
     </ul>
   </div>
@@ -17,6 +21,14 @@ const props = defineProps({
     required: true,
   },
 });
+
+const isExternal = (link) => {
+  return /^(http|https|mailto):/.test(link);
+};
+
+const getLinkHref = (link) => {
+  return isExternal(link) ? link : `#${link}`;
+};
 </script>
 
 <style scoped>
