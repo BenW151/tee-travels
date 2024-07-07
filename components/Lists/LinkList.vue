@@ -5,17 +5,19 @@
       <NuxtLink
         v-if="isInternalLink(link.url)"
         :to="link.url"
-        :class="['link', link.class]"
+        :class="['link', link.class, { 'underline-out-icon': link.icon }]"
         :aria-label="link.description">
+        <component :is="getIconComponent(link.icon)" v-if="link.icon" />
         {{ link.label }}
       </NuxtLink>
       <a
         v-else
         :href="link.url"
-        :class="['link', link.class]"
+        :class="['link', link.class, { 'underline-out-icon': link.icon }]"
         :aria-label="link.description"
         target="_blank"
         rel="noopener noreferrer">
+        <component :is="getIconComponent(link.icon)" v-if="link.icon" />
         {{ link.label }}
       </a>
     </li>
@@ -24,6 +26,7 @@
 
 <script setup>
 import { defineProps } from "vue";
+import * as LucideIcons from 'lucide-vue-next';
 
 const props = defineProps({
   links: {
@@ -41,7 +44,13 @@ const props = defineProps({
 const isInternalLink = (url) => {
   return !url.startsWith("http");
 };
+
+// Function to get the Lucide icon component
+const getIconComponent = (iconName) => {
+  return iconName ? LucideIcons[`Lucide${iconName}`] : null;
+};
 </script>
+
 
 <style scoped>
 .link-list a {
