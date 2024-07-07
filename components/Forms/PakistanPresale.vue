@@ -3,7 +3,7 @@
     <div>
       <h4 class="presale">Sign Up to Presale</h4>
       <p class="sign-up">
-        Only 14 spots available—sign up now to receive <br />
+        Only 15 spots available—sign up now to receive <br />
         the payment link 48 hours before everyone else!
       </p>
       <form
