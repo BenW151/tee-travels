@@ -169,7 +169,6 @@ window.addEventListener("resize", updateIsMobile);
 }
 
 .image-description p:first-child {
-  font-weight: bold;
   font-size: var(--font-size-S);
   font-family: var(--font-family-primary);
 }
@@ -262,7 +261,6 @@ window.addEventListener("resize", updateIsMobile);
   }
 
   .image-title {
-    font-weight: bold;
     font-size: var(--font-size-M);
     font-family: var(--font-family-primary);
   }
