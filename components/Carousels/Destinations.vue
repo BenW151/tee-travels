@@ -50,7 +50,7 @@
     </div>
     <div v-else-if="!isMobile" class="image-description">
       <p>Scroll to Explore</p>
-      <p>4 Destinations</p>
+      <p>3 Destinations</p>
     </div>
   </div>
 </template>
@@ -97,7 +97,7 @@ const images = [
   {
     src: "/images/pakistan/pakistan-cover.png",
     alt: "Pakistan",
-    subDescription: "Hiking in Hunza Valley + Skardu",
+    subDescription: "Hiking in the Hunza Valley",
     nightsPrice: "10 Nights | £985",
     link: "/destinations/pakistan",
   },
@@ -170,6 +170,8 @@ window.addEventListener("resize", updateIsMobile);
 
 .image-description p:first-child {
   font-weight: bold;
+  font-size: var(--font-size-S);
+  font-family: var(--font-family-primary);
 }
 
 .image-description p {
@@ -235,6 +237,10 @@ window.addEventListener("resize", updateIsMobile);
     max-height: 100%;
   }
 
+  .image-item a {
+    margin-bottom: 0;
+  }
+
   .image-list {
     display: flex;
     flex-direction: column;
@@ -257,6 +263,8 @@ window.addEventListener("resize", updateIsMobile);
 
   .image-title {
     font-weight: bold;
+    font-size: var(--font-size-M);
+    font-family: var(--font-family-primary);
   }
 
   .image-info p {
