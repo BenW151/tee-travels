@@ -51,9 +51,9 @@
           title="Key Activities"
           :items="[
             { id: 1, text: 'Hiking' },
-            { id: 2, text: 'Cooking Class' },
-            { id: 3, text: 'School Visit' },
-            { id: 4, text: 'Horse Ride' },
+            { id: 2, text: 'Boat Trip' },
+            { id: 3, text: 'Homestay' },
+            { id: 4, text: 'Cooking Class' },
           ]" />
         <ListsDefaultList
           title="Regions Visited"
@@ -66,9 +66,7 @@
 
         <ListsDefaultList
           title="Upcoming Dates"
-          :items="[
-            { id: 1, text: '2nd May - 9th May 2025' },
-          ]" />
+          :items="[{ id: 1, text: '2nd May - 9th May 2025' }]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-cover.png"
@@ -300,8 +298,8 @@
     <ItineraryDay
       dayId="day10"
       imageUrl="/images/pakistan/pakistan-attabad-lake.png"
-      imageAlt="Attabad Lake, Pakistan"
-      overlayText="Attabad Lake, <br /> Pakistan"
+      imageAlt="Attabad Lake, Gojal"
+      overlayText="Attabad Lake, <br /> Gojal"
       textPosition="left"
       title="Day 10 | Gulkin and Attabad Lake">
       <template #body>
@@ -497,13 +495,13 @@
         <TextSectionLabel labelText="Guide" />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-guide.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Fairy Meadows, Diamer"
+          overlayText="Fairy Meadows, <br /> Diamer"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>Meet Your Local Guide</template>
           <template #body>
-            <p class="bold">Name: Aziz</p>
+            <p class="bold name">Name: Aziz</p>
             <p class="bold">From: Karimabad, Hunza Valley, Pakistan</p>
             <p>
               Born and raised in the picturesque Hunza Valley, Aziz has a
@@ -516,9 +514,8 @@
               awe-inspiring landscapes safely and memorably. Fluent in English,
               Urdu, and the local Burushaski language, Aziz's friendly and
               approachable demeanor makes him a favorite among tourists. When
-              he's not guiding expeditions, Aziz enjoys photography, capturing
-              the stunning vistas of his homeland, and sharing stories of his
-              adventures over a warm cup of chai.
+              he's not guiding expeditions, Aziz enjoys playing the Rubab, and
+              sharing stories of his adventures over a warm cup of chai.
             </p>
             <a
               href="https://instagram.com/azizkhan45050"
@@ -537,13 +534,13 @@
         <TextSectionLabel labelText="Leader" />
         <ImageWithTextOverlay
           imageUrl="/images/tia.png"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Marsur Rock, Skardu"
+          overlayText="Marsur Rock, <br /> Skardu"
           textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
           <template #title>Meet Your Trip Leader</template>
           <template #body>
-            <p class="bold">Name: Tia</p>
+            <p class="bold name">Name: Tia</p>
             <p class="bold">From: Bristol, United Kingdom</p>
             <p>
               Born and raised in the picturesque Hunza Valley, Aziz has a
@@ -701,6 +698,10 @@ useHead({
 
 .leader .image {
   height: 45vw;
+}
+
+.name {
+  margin-bottom: 0;
 }
 
 .destination .card {
