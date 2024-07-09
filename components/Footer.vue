@@ -31,13 +31,13 @@
             url: 'https://www.instagram.com/whynotadventures_/',
             label: 'Instagram',
             description: 'Instagram',
-            icon: 'Instagram',
+            icon: 'ExternalLink',
           },
           {
             url: 'https://facebook.com/whynotadventures_/',
             label: 'Facebook',
             description: 'Facebook',
-            icon: 'Facebook',
+            icon: 'ExternalLink',
           },
         ]" />
       <FormsNewsletter />
@@ -264,6 +264,7 @@ footer .socials {
 <style>
 footer .socials a {
   font-size: var(--font-size-S);
+  font-family: var(--font-family-primary);
 }
 
 footer .socials a::after {
