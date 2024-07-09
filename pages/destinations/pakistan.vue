@@ -634,6 +634,15 @@
           target="_blank"
           ><TextReveal tag="h2">Book Trip</TextReveal></a
         >-->
+        <div class="item private-trip">
+          <h5>Interested in visiting Pakistan on a solo/private trip?</h5>
+          <p>Get in touch with us via the <NuxtLink
+            to="/contact"
+            class="underline-out"
+            aria-label="Contact Page"
+            >contact page</NuxtLink
+          >.</p>
+        </div>
       </LayoutGridContainer>
     </section>
   </div>
@@ -795,6 +804,12 @@ a h4 {
 
 .end-text .pakistan-presale input {
   width: 45%;
+}
+
+.private-trip {
+  grid-column: 6 / 17;
+  grid-row-start: 2;
+  margin-top: var(--spacing-4);
 }
 
 @media (max-width: 767px) {

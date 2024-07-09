@@ -101,7 +101,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  height: 30vw;
+  height: auto;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }

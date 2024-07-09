@@ -9,7 +9,7 @@
     </Header>
 
     <main>
-      <section class="payment-confirmed">
+      <section class="payment-confirmed text-left">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
@@ -29,6 +29,11 @@
               </p>
             </template>
           </TextParagraphWithTitle>
+          <ImageWithTextOverlay
+            imageUrl="/images/pakistan/pakistan-goat.png"
+            imageAlt="Fairy Meadows, Pakistan"
+            overlayText="Fairy Meadows, <br /> Pakistan"
+            textPosition="right" />
         </LayoutGridContainer>
       </section>
     </main>
@@ -68,9 +73,26 @@ const isMobile = ref(window.innerWidth < 768);
 </script>
 
 <style scoped>
-.payment-confirmed .paragraph-with-title {
-  grid-column: 5 / 13;
+.text-left .paragraph-with-title {
+  grid-column: 3 / 11;
   grid-row-start: 1;
+}
+
+.text-left .image {
+  grid-column: 9 / 16;
+  grid-row-start: 1;
+  height: 40vw;
+}
+
+.text-right .paragraph-with-title {
+  grid-column: 9 / 16;
+  grid-row-start: 1;
+}
+
+.text-right .image {
+  grid-column: 3 / 11;
+  grid-row-start: 1;
+  height: 40vw;
 }
 
 @media (max-width: 767px) {
