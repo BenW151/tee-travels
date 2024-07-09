@@ -47,7 +47,7 @@ const props = defineProps({
   },
 });
 
-const { windowWidth, isMobile } = useWindowWidth();
+const isMobile = computed(() => window.innerWidth < 768);
 const videoRef = ref(null);
 const overlayHidden = ref(false);
 const controlsHidden = ref(true);
