@@ -2,7 +2,7 @@
   <div class="item newsletter">
     <div>
       <p class="sign-up">
-        Sign up to our newsletter to <br />
+        Sign up to our newsletter to <br v-if="!isMobile" />
         receive updates on upcoming trips.
       </p>
       <p>Newsletter</p>
@@ -23,6 +23,26 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+
+const windowWidth = ref(window.innerWidth);
+
+const isMobile = computed(() => windowWidth.value < 768);
+
+const updateWidth = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener("resize", updateWidth);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateWidth);
+});
+</script>
 
 <style scoped>
 input,
