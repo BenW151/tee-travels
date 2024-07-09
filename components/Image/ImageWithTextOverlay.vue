@@ -13,7 +13,6 @@
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
-const isMobile = ref(window.innerWidth <= 768);
 const props = defineProps({
   imageUrl: {
     type: String,
@@ -37,17 +36,7 @@ const props = defineProps({
   },
 });
 
-const handleResize = () => {
-  isMobile.value = window.innerWidth <= 768;
-};
-
-onMounted(() => {
-  window.addEventListener("resize", handleResize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", handleResize);
-});
+const { windowWidth, isMobile } = useWindowWidth();
 
 const rellaxSpeed = computed(() => {
   return isMobile.value ? "0" : "1";

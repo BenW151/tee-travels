@@ -673,21 +673,8 @@ useHead({
 
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
-const windowWidth = ref(window.innerWidth);
+const { windowWidth, isMobile } = useWindowWidth();
 
-const isMobile = computed(() => windowWidth.value < 768);
-
-const updateWidth = () => {
-  windowWidth.value = window.innerWidth;
-};
-
-onMounted(() => {
-  window.addEventListener("resize", updateWidth);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateWidth);
-});
 </script>
 
 <style>

@@ -36,18 +36,7 @@ const props = defineProps({
   }
 });
 
-// Reactive reference to track window width
-const windowWidth = ref(window.innerWidth);
-
-// Computed property to determine if the device is mobile
-const isMobile = computed(() => windowWidth.value < 768);
-
-// Update window width on resize
-onMounted(() => {
-  window.addEventListener('resize', () => {
-    windowWidth.value = window.innerWidth;
-  });
-});
+const { windowWidth, isMobile } = useWindowWidth();
 
 // Computed property for rellaxSpeed
 const computedRellaxSpeed = computed(() => {

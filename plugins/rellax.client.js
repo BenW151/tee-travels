@@ -13,7 +13,7 @@ export default defineNuxtPlugin(nuxtApp => {
         }
 
         // Check if the current device is a mobile device
-        const isMobile = window.innerWidth < 768;
+        const { windowWidth, isMobile } = useWindowWidth();
 
         // Initialize Rellax only if not on mobile, using configuration from attributes or defaults
         //if (!isMobile) {
