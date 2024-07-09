@@ -58,12 +58,9 @@ const hoverDescription = ref("");
 const hoverSubDescription = ref("");
 const hoverNightsPrice = ref("");
 const progress = ref(0);
-const isMobile = ref(window.innerWidth < 768);
 const swiperRef = ref(null);
 
-const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768;
-};
+const { windowWidth, isMobile } = useWindowWidth();
 
 const onSwiper = (swiper) => {
   swiper.on("progress", (progressValue) => {
@@ -132,7 +129,6 @@ watch(isMobile, async (newVal, oldVal) => {
   }
 });
 
-window.addEventListener("resize", updateIsMobile);
 </script>
 
 <style>

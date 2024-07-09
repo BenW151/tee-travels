@@ -65,12 +65,7 @@ function handleScroll() {
   lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
-const isMobile = ref(window.innerWidth < 768);
-
-// Function to update isMobile on resize
-const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768;
-};
+const { windowWidth, isMobile } = useWindowWidth();
 
 function toggleMenu() {
   if (isMobile.value) {
@@ -86,12 +81,10 @@ function toggleMenuIfOpen() {
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", updateIsMobile);
 });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
-  window.removeEventListener("resize", updateIsMobile);
 });
 </script>
 
