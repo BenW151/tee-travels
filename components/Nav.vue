@@ -65,7 +65,7 @@ function handleScroll() {
   lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
-const isMobile = ref(window.innerWidth < 768);
+const { windowWidth, isMobile } = useWindowWidth();
 
 // Function to update isMobile on resize
 const updateIsMobile = () => {

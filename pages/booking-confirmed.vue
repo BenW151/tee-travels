@@ -11,7 +11,7 @@
     <main>
       <section class="payment-confirmed text-left">
         <LayoutGridContainer>
-          <TextSectionLabel labelText="About" />
+          <TextSectionLabel labelText="Confirmed" />
           <TextParagraphWithTitle subtitleTag="h3">
             <template #title>What's Next?</template>
             <template #body>
@@ -62,7 +62,7 @@ useHead({
   ],
 });
 
-const isMobile = ref(window.innerWidth < 768);
+const { windowWidth, isMobile } = useWindowWidth();
 
 //Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
 /*if (process.env.NODE_ENV === 'development' && !isMobile.value) {
