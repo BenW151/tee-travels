@@ -51,7 +51,7 @@
             rellaxPercentage="0"
             rellaxSpeed="0" />
         </div>-->
-        <p>Why Not Adventures Ltd are a UK registered company – No. 00000000</p>
+        <p>Why Not Adventures Ltd are a UK registered company – No. 15826857</p>
       </div>
     </LayoutGridContainer>
 
