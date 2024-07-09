@@ -10,7 +10,7 @@
         <NuxtLink :href="image.link">
           <img :src="image.src" :alt="image.alt" class="vertical-image" />
         </NuxtLink>
-        <div class="image-info">
+        <div class="overlay-text">
           <p class="image-title">{{ image.alt }}</p>
           <p class="image-subtitle">{{ image.subDescription }}</p>
           <p class="image-nights-price">{{ image.nightsPrice }}</p>
@@ -35,11 +35,14 @@
       <swiper-slide
         v-for="(image, index) in images"
         :key="index"
-        :class="['swiper-slide-custom', image.customClass]"
-        @mouseover="updateHoverDescription(image)"
-        @mouseleave="clearHoverDescription">
-        <NuxtLink :href="image.link">
+        :class="['swiper-slide-custom', image.customClass]">
+        <NuxtLink :href="image.link" class="slide-link">
           <img :src="image.src" :alt="image.alt" class="slide-image" />
+          <div class="overlay-text">
+            <p class="image-title">{{ image.alt }}</p>
+            <p class="image-subtitle">{{ image.subDescription }}</p>
+            <p class="image-nights-price">{{ image.nightsPrice }}</p>
+          </div>
         </NuxtLink>
       </swiper-slide>
     </swiper>
@@ -106,14 +109,14 @@ const images = [
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "Coming Soon",
-    customClass: "coming-soon"
+    customClass: "coming-soon",
   },
   {
     src: "/images/montenegro-kotor/montenegro-kotor-cover.png",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "Coming Soon",
-    customClass: "coming-soon"
+    customClass: "coming-soon",
   },
 ];
 
@@ -234,12 +237,37 @@ window.addEventListener("resize", updateIsMobile);
   filter: brightness(0.4);
 }
 
+.coming-soon .image-nights-price {
+  font-weight: bold;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--spacing-4);
+  color: var(--color-white);
+  text-align: left;
+}
+
+.image-title {
+  font-size: var(--font-size-M);
+  font-family: var(--font-family-primary);
+}
+
+.overlay-text p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
 @media (max-width: 767px) {
   .image-item {
     width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    margin-bottom: var(--spacing-4);
   }
 
   .image-item a {
