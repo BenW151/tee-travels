@@ -105,9 +105,9 @@
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/pakistan/pakistan-cover.png"
-      imageAlt="Jaglot, Pakistan"
-      overlayText="Jaglot, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-karakoram-highway.png"
+      imageAlt="Karakoram Highway, Hunza"
+      overlayText="Karakoram Highway, <br /> Hunza"
       textPosition="left"
       title="Day 2 | Journey to Jaglot">
       <template #body>
@@ -126,9 +126,9 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
-      imageAlt="Fairy Meadows, Pakistan"
-      overlayText="Fairy Meadows, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-fairy-meadows-road.png"
+      imageAlt="Fairy Meadows, Diamer"
+      overlayText="Fairy Meadows Road, <br /> Diamer"
       textPosition="right"
       title="Day 3 | Off-Road Adventure to Fairy Meadows">
       <template #body>
@@ -146,9 +146,9 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/pakistan/pakistan-nanga-parbat-camp.png"
-      imageAlt="Fairy Meadows, Pakistan"
-      overlayText="Fairy Meadows, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
+      imageAlt="Fairy Meadows, Diamer"
+      overlayText="Fairy Meadows, <br /> Diamer"
       textPosition="left"
       title="Day 4 | Hike to Nanga Parbat Base Camp">
       <template #body>
@@ -167,7 +167,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan/pakistan-skardu.png"
+      imageUrl="/images/pakistan/pakistan-karimabad.png"
       imageAlt="Karimabad, Pakistan"
       overlayText="Karimabad, <br /> Pakistan"
       textPosition="right"
@@ -188,11 +188,11 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/pakistan/pakistan-sarfaranga-desert.png"
-      imageAlt="Karimabad, Pakistan"
-      overlayText="Karimabad, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-rakaposhi-hakapun.png"
+      imageAlt="Rakaposhi Hakapun, Minapin"
+      overlayText="Rakaposhi Hakapun, <br /> Minapin"
       textPosition="left"
-      title="Day 6 | Explore Karimabad and Hike to Rakaposhi Hapakun">
+      title="Day 6 | Karimabad and Hike to Rakaposhi Hapakun">
       <template #body>
         <p>
           Spend the morning exploring Karimabad, shopping in local markets for
@@ -209,9 +209,9 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/pakistan/pakistan-eagles-nest.png"
-      imageAlt="Eagle’s Nest, Pakistan"
-      overlayText="Eagle’s Nest, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-rakaposhi-basecamp.png"
+      imageAlt="Rakpaoshi, Minapin"
+      overlayText="Rakaposhi, <br /> Minapin"
       textPosition="right"
       title="Day 7 | Rakaposhi Base Camp and Eagle’s Nest">
       <template #body>
@@ -219,17 +219,17 @@
           Begin the day with a hike to the Rakaposhi base camp, where you can
           enjoy noodles and tea while taking in the breathtaking views. Explore
           the glacier and hike up to a viewpoint for more stunning vistas. After
-          lunch, descend back to Minapin and drive up to Eagle’s Nest for a
+          lunch, descend back to Minapin and drive up to Eagle's Nest for a
           sunset viewpoint. Enjoy a BBQ and campfire in the evening, surrounded
           by panoramic views of the towering mountains.
         </p>
-        <p>Accommodation at Eagle’s Nest.</p>
+        <p>Accommodation at Eagle's Nest.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/pakistan/pakistan-rakaposhi.png"
+      imageUrl="/images/pakistan/pakistan-attabad-lake.png"
       imageAlt="Attabad Lake, Pakistan"
       overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
@@ -249,11 +249,11 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/pakistan/pakistan-rakaposhi-2.png"
-      imageAlt="Gulkin, Pakistan"
-      overlayText="Gulkin, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-passu-cones.png"
+      imageAlt="Passu Cones, Passu"
+      overlayText="Passu Cones, <br /> Passu"
       textPosition="right"
-      title="Day 9 | Borith Lake and Gulkin Glacier">
+      title="Day 9 | Passu Cones and Borith Lake">
       <template #body>
         <p>
           Spend the morning at Borith Lake, where you can swim, kayak, or enjoy
@@ -269,9 +269,9 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/pakistan/pakistan-attabad-lake.png"
-      imageAlt="Three Mountains Junction, Pakistan"
-      overlayText="Three Mountains Junction, <br /> Pakistan"
+      imageUrl="/images/pakistan/pakistan-karakoram-highway-2.png"
+      imageAlt="Karakoram Highway, Hunza"
+      overlayText="Karakoram Highway, <br /> Hunza"
       textPosition="left"
       title="Day 10 | Return to Islamabad">
       <template #body>
@@ -288,7 +288,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/pakistan/pakistan-lahore.png"
+      imageUrl="/images/pakistan/pakistan-plane.png"
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"
