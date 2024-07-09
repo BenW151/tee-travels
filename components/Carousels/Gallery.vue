@@ -290,7 +290,7 @@ window.addEventListener("resize", updateIsMobile);
 
   .slide-image {
     width: 100%;
-    height: 75vh;
+    height: 65vh;
   }
 
   .carousel .container {

@@ -309,6 +309,11 @@
         <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
           <template #title>Gallery</template>
           <template #body>
+            <p>
+              Check out our gallery to see some amazing shots of Pakistan. Each
+              photo shows a piece of the country's beauty and culture. Have a
+              browse and get inspired for your next adventure.
+            </p>
             <p v-if="isMobile">
               Swipe right for more. Tap an image for details.
             </p>
@@ -733,14 +738,6 @@ const isMobile = ref(window.innerWidth < 768);
   height: 40vw;
 }
 
-.gallery .container {
-  padding-bottom: 0;
-}
-
-.carousel .container {
-  padding-top: 0;
-}
-
 .included .image {
   height: 50vw;
 }
@@ -830,5 +827,15 @@ a h4 {
   .end-text .pakistan-presale input {
     width: 70vw;
   }
+}
+</style>
+
+<style scoped>
+.gallery .container {
+  padding-bottom: 0;
+}
+
+.carousel .container {
+  padding-top: 0;
 }
 </style>
