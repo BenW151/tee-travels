@@ -76,6 +76,99 @@
       </LayoutGridContainer>
     </section>
 
+    <section class="carousel">
+      <div class="container">
+        <CarouselsGallery
+          :images="[
+            {
+              src: '/images/pakistan/pakistan-attabad-lake.png',
+              alt: 'Attabad Lake',
+              subDescription: 'Beautiful view of Attabad Lake',
+            },
+            {
+              src: '/images/pakistan/pakistan-cover.png',
+              alt: 'Pakistan Cover',
+              subDescription: 'Cover photo of Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-cover-old.png',
+              alt: 'Old Pakistan Cover',
+              subDescription: 'Old cover photo of Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-eagles-nest.png',
+              alt: 'Eagles Nest',
+              subDescription: 'Eagles Nest in Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-fairy-meadows-road.png',
+              alt: 'Fairy Meadows Road',
+              subDescription: 'Road to Fairy Meadows',
+            },
+            {
+              src: '/images/pakistan/pakistan-guide.png',
+              alt: 'Pakistan Guide',
+              subDescription: 'Guide to Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-islamabad-mosque.png',
+              alt: 'Islamabad Mosque',
+              subDescription: 'Faisal Mosque in Islamabad',
+            },
+            {
+              src: '/images/pakistan/pakistan-karakoram-highway.png',
+              alt: 'Karakoram Highway',
+              subDescription: 'Scenic view of Karakoram Highway',
+            },
+            {
+              src: '/images/pakistan/pakistan-karakoram-highway-2.png',
+              alt: 'Karakoram Highway 2',
+              subDescription: 'Another view of Karakoram Highway',
+            },
+            {
+              src: '/images/pakistan/pakistan-karimabad.png',
+              alt: 'Karimabad',
+              subDescription: 'Karimabad in Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-nanga-parbat.png',
+              alt: 'Nanga Parbat',
+              subDescription: 'View of Nanga Parbat',
+            },
+            {
+              src: '/images/pakistan/pakistan-passu-cones.png',
+              alt: 'Passu Cones',
+              subDescription: 'Famous Passu Cones',
+            },
+            {
+              src: '/images/pakistan/pakistan-plane.png',
+              alt: 'Pakistan Plane',
+              subDescription: 'Plane flying over Pakistan',
+            },
+            {
+              src: '/images/pakistan/pakistan-rakaposhi.png',
+              alt: 'Rakaposhi',
+              subDescription: 'View of Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/pakistan-rakaposhi-2.png',
+              alt: 'Rakaposhi 2',
+              subDescription: 'Another view of Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/pakistan-rakaposhi-basecamp.png',
+              alt: 'Rakaposhi Basecamp',
+              subDescription: 'Basecamp of Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/pakistan-rakaposhi-hakapun.png',
+              alt: 'Rakaposhi Hakapun',
+              subDescription: 'Hakapun near Rakaposhi',
+            },
+          ]" />
+      </div>
+    </section>
+
     <section id="showreel">
       <ImageStrip
         src="/videos/pakistan-showreel.mp4"
