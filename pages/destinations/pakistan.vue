@@ -79,7 +79,7 @@
     <section id="showreel">
       <ImageStrip
         src="/videos/pakistan-showreel.mp4"
-        poster="/images/pakistan/pakistan-cover.png"
+        poster="/images/pakistan/pakistan-rakaposhi.png"
         alt="Montenegro Showreel" />
     </section>
 
@@ -89,17 +89,15 @@
       imageAlt="Faisal Mosque, Islamabad"
       overlayText="Faisal Mosque, <br /> Islamabad"
       textPosition="right"
-      title="Day 1 | Arrival in Islamabad">
+      title="Day 1 | Arrival in Islamabad and Faisal Mosque">
       <template #body>
         <p>
-          Arrive in Islamabad and check into your hotel. Spend the day resting
-          and acclimatizing to the local time zone. Islamabad, the capital city
-          of Pakistan, offers a blend of modern and traditional culture.
-        </p>
-        <p>
-          If time permits, explore some nearby attractions such as Faisal
-          Mosque, one of the largest mosques in the world, or Lok Virsa Museum,
-          which showcases Pakistan's rich cultural heritage.
+          Arrive in Islamabad and check into your accommodation. After settling
+          in, go for lunch at a local restaurant to get a taste of the regional
+          cuisine. Spend the afternoon exploring Faisal Mosque, one of the
+          largest and most iconic mosques in the world, known for its stunning
+          architecture and serene ambiance. In the evening, enjoy dinner at
+          another local eatery, soaking in the atmosphere of the capital city.
         </p>
         <p>Accommodation in Islamabad.</p>
       </template>
@@ -108,20 +106,19 @@
     <ItineraryDay
       dayId="day2"
       imageUrl="/images/pakistan/pakistan-cover.png"
-      imageAlt="Skardu, Pakistan"
-      overlayText="Skardu, <br /> Pakistan"
+      imageAlt="Jaglot, Pakistan"
+      overlayText="Jaglot, <br /> Pakistan"
       textPosition="left"
-      title="Day 2 | Islamabad to Jaglot">
+      title="Day 2 | Journey to Jaglot">
       <template #body>
         <p>
-          Depart from Islamabad early in the morning and drive to Jaglot. Enjoy
-          scenic views along the way, including lush valleys and rivers, as you
-          travel through the picturesque landscape of northern Pakistan.
-        </p>
-        <p>
-          Arrive in Jaglot and check into your hotel. Spend the evening
-          exploring the town and relaxing by the river. Jaglot serves as a
-          gateway to some of the most stunning regions of Gilgit-Baltistan.
+          Depart from Islamabad early in the morning and begin your drive
+          towards the north. Along the way, enjoy scenic views of lush valleys
+          and rivers, capturing the picturesque landscape of northern Pakistan.
+          Stop for lunch at a charming spot en route. Arrive in Jaglot in the
+          late afternoon, check into your hotel, and spend the evening exploring
+          the town or relaxing by the river. End the day with a delicious
+          dinner, experiencing the local cuisine.
         </p>
         <p>Accommodation in Jaglot.</p>
       </template>
@@ -133,21 +130,15 @@
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="right"
-      title="Day 3 | Jaglot to Fairy Meadows">
+      title="Day 3 | Off-Road Adventure to Fairy Meadows">
       <template #body>
         <p>
-          Depart from Jaglot and drive towards Raikot. Stop in Raikot for lunch
-          and to stretch your legs, enjoying the local cuisine and hospitality.
-        </p>
-        <p>
-          Continue the journey to Raikot Bridge, where you'll transfer to local
-          jeeps for the rugged ride to Fairy Meadows, a stunningly beautiful
-          grassland at the base of Nanga Parbat.
-        </p>
-        <p>
-          Arrive in Fairy Meadows and check into your accommodation. Enjoy the
-          evening at leisure, soaking in the stunning views of Nanga Parbat, the
-          world's ninth highest mountain.
+          In the morning, embark on an off-road adventure in jeeps towards Fairy
+          Meadows. The rugged journey offers spectacular views and a sense of
+          adventure. Upon arrival at Fairy Meadows, hike through the stunning
+          grasslands to reach your campsite. Spend the evening around a
+          campfire, sharing stories and enjoying a hearty dinner with
+          breathtaking views of Nanga Parbat in the background.
         </p>
         <p>Accommodation in Fairy Meadows.</p>
       </template>
@@ -159,21 +150,16 @@
       imageAlt="Fairy Meadows, Pakistan"
       overlayText="Fairy Meadows, <br /> Pakistan"
       textPosition="left"
-      title="Day 4 | Beyal Camp and Nanga Parbat Viewpoint">
+      title="Day 4 | Hike to Nanga Parbat Base Camp">
       <template #body>
         <p>
-          Wake up early and hike to Beyal Camp for breathtaking views of Nanga
-          Parbat. This hike offers stunning panoramic views and a chance to
-          experience the pristine natural beauty of the region.
-        </p>
-        <p>
-          Spend the day exploring the area around Beyal Camp, enjoying the
-          tranquility and the stunning mountain vistas. Capture some memorable
-          photographs of the landscape and wildlife.
-        </p>
-        <p>
-          Return to Fairy Meadows in the evening and relax, sharing stories
-          around a campfire.
+          Wake up early and embark on a hike to the base camp of Nanga Parbat,
+          stopping at mountain huts along the way for food and tea. The hike
+          provides stunning panoramic views and a chance to experience the
+          pristine natural beauty of the region. Spend the day exploring the
+          area, enjoying the tranquility and the stunning mountain vistas.
+          Return to Fairy Meadows in the evening, where you can relax and have
+          dinner.
         </p>
         <p>Accommodation in Fairy Meadows.</p>
       </template>
@@ -182,46 +168,42 @@
     <ItineraryDay
       dayId="day5"
       imageUrl="/images/pakistan/pakistan-skardu.png"
-      imageAlt="Skardu, Pakistan"
-      overlayText="Skardu, <br /> Pakistan"
+      imageAlt="Karimabad, Pakistan"
+      overlayText="Karimabad, <br /> Pakistan"
       textPosition="right"
-      title="Day 5 | Fairy Meadows to Skardu">
+      title="Day 5 | Fairy Meadows to Karimabad">
       <template #body>
         <p>
-          Depart from Fairy Meadows and drive to Skardu Valley, a journey that
-          takes you through some of the most dramatic and breathtaking
-          landscapes in Pakistan.
+          Depart from Fairy Meadows in the morning, taking jeeps back down to
+          the main road. From there, drive to Karimabad, stopping for lunch
+          along the way. Arrive in Karimabad and check into Moose Chalet, a
+          charming accommodation offering beautiful views of the surrounding
+          landscape. In the evening, go for dinner at a local woman-run
+          restaurant, experiencing the unique flavors and traditions of the
+          region.
         </p>
-        <p>
-          Arrive in Skardu and check into your hotel. Skardu is known for its
-          stunning natural beauty, including turquoise lakes and towering peaks.
-          Take some time to relax and enjoy the serene environment.
-        </p>
-        <p>Accommodation in Skardu.</p>
+        <p>Accommodation in Karimabad.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day6"
       imageUrl="/images/pakistan/pakistan-sarfaranga-desert.png"
-      imageAlt="Sarfaranga Desert, Pakistan"
-      overlayText="Sarfaranga Desert, <br /> Pakistan"
+      imageAlt="Karimabad, Pakistan"
+      overlayText="Karimabad, <br /> Pakistan"
       textPosition="left"
-      title="Day 6 | Masoor Rock Hike and Sarfaranga Desert Exploration">
+      title="Day 6 | Explore Karimabad and Hike to Rakaposhi Hapakun">
       <template #body>
         <p>
-          After breakfast, embark on a hike to Masoor Rock, known for its unique
-          geological formations and panoramic views. The ascent provides a
-          rewarding experience with breathtaking vistas from the top.
+          Spend the morning exploring Karimabad, shopping in local markets for
+          gemstones and handicrafts. Visit the historic Baltit Fort to learn
+          about the region's rich history and cultural heritage. Enjoy lunch in
+          Karimabad before driving to the town of Minapin, the starting point
+          for your hike to Rakaposhi Hapakun. The hike offers stunning views of
+          Rakaposhi and the surrounding landscape. Arrive at Hakapun, where
+          you'll spend the night under the stars.
         </p>
-        <p>
-          Descend back to the base and return to Skardu for lunch. In the
-          afternoon, drive to Sarfaranga Desert, an otherworldly landscape known
-          for its white sands and stunning contrasts against the surrounding
-          mountains.
-        </p>
-        <p>Return to Skardu in the evening and relax.</p>
-        <p>Accommodation in Skardu.</p>
+        <p>Accommodation in Hakapun.</p>
       </template>
     </ItineraryDay>
 
@@ -231,44 +213,37 @@
       imageAlt="Eagle’s Nest, Pakistan"
       overlayText="Eagle’s Nest, <br /> Pakistan"
       textPosition="right"
-      title="Day 7 | Eagle’s Nest">
+      title="Day 7 | Rakaposhi Base Camp and Eagle’s Nest">
       <template #body>
         <p>
-          Drive back from Skardu straight to Eagle’s Nest, where you’ll stay in
-          a hotel. Eagle’s Nest offers panoramic views of seven mountains, each
-          towering above 6,500 meters, providing a breathtaking backdrop.
+          Begin the day with a hike to the Rakaposhi base camp, where you can
+          enjoy noodles and tea while taking in the breathtaking views. Explore
+          the glacier and hike up to a viewpoint for more stunning vistas. After
+          lunch, descend back to Minapin and drive up to Eagle’s Nest for a
+          sunset viewpoint. Enjoy a BBQ and campfire in the evening, surrounded
+          by panoramic views of the towering mountains.
         </p>
-        <p>
-          At Eagle’s Nest, enjoy a yak BBQ and a local drink called moonshine,
-          experiencing the unique flavors and traditions of the region.
-        </p>
-        <p>Accommodation in Eagle’s Nest.</p>
+        <p>Accommodation at Eagle’s Nest.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day8"
       imageUrl="/images/pakistan/pakistan-rakaposhi.png"
-      imageAlt="Rakaposhi, Pakistan"
-      overlayText="Rakaposhi, <br /> Pakistan"
+      imageAlt="Attabad Lake, Pakistan"
+      overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
-      title="Day 8 | Rakaposhi Hapakun">
+      title="Day 8 | Attabad Lake and Baskochi Meadow">
       <template #body>
         <p>
-          Have breakfast and go to Karimabad for some shopping, famous for its
-          gemstones and handicrafts. Take your time to explore the local markets
-          and find unique souvenirs.
+          Drive to Attabad Lake for lunch, followed by a scenic boat trip on the
+          turquoise waters. In the afternoon, hike at Baskochi Meadow, enjoying
+          the beautiful natural surroundings. Head to your homestay for the
+          night. Later, take a sunset hike up to Passu Cones and Black Glacier
+          viewpoint, capturing stunning photographs and enjoying the peaceful
+          ambiance.
         </p>
-        <p>
-          Depart from Karimabad after shopping and drive to Rakaposhi Minapin.
-          Hike to Hapakun for stunning views of Rakaposhi, one of the most
-          beautiful and accessible peaks in the Karakoram Range.
-        </p>
-        <p>
-          Enjoy stargazing from the tents at night, a magical experience under
-          the clear mountain skies.
-        </p>
-        <p>Accommodation in Hapakun.</p>
+        <p>Accommodation at a Gulkin homestay.</p>
       </template>
     </ItineraryDay>
 
@@ -278,46 +253,36 @@
       imageAlt="Gulkin, Pakistan"
       overlayText="Gulkin, <br /> Pakistan"
       textPosition="right"
-      title="Day 9 | Trek to Basecamp and Gulkin">
+      title="Day 9 | Borith Lake and Gulkin Glacier">
       <template #body>
         <p>
-          Trek to the base camp of Rakaposhi for stunning views of two massive
-          mountains and their glaciers. The trek is challenging but offers
-          unparalleled beauty and adventure.
+          Spend the morning at Borith Lake, where you can swim, kayak, or enjoy
+          a pedalo ride. Afterward, hike to Gulkin Glacier, experiencing the
+          natural beauty and rugged terrain. Visit the Passu Bridge for a
+          thrilling adventure and take in the views of the Passu Cones. Return
+          to your homestay in the evening, where you can participate in a
+          cooking session, making traditional paratha.
         </p>
-        <p>
-          Trek down from the base camp and drive to Gulkin. Experience the
-          hospitality of a local family in Gulkin village and learn about their
-          way of life, participating in traditional meals and cultural
-          activities.
-        </p>
-        <p>Accommodation with a local family in Gulkin.</p>
+        <p>Accommodation at a Gulkin homestay.</p>
       </template>
     </ItineraryDay>
 
     <ItineraryDay
       dayId="day10"
       imageUrl="/images/pakistan/pakistan-attabad-lake.png"
-      imageAlt="Attabad Lake, Gojal"
-      overlayText="Attabad Lake, <br /> Gojal"
+      imageAlt="Three Mountains Junction, Pakistan"
+      overlayText="Three Mountains Junction, <br /> Pakistan"
       textPosition="left"
-      title="Day 10 | Gulkin and Attabad Lake">
+      title="Day 10 | Return to Islamabad">
       <template #body>
         <p>
-          Go on the Baskochi hike for a stunning view of the famous Attabad
-          Lake, a beautiful turquoise lake formed after a landslide in 2010. The
-          hike offers incredible views and photo opportunities.
+          Depart from your homestay early in the morning and drive back to
+          Islamabad, which is a 16-hour journey. Along the way, stop at the
+          Three Mountains Junction View Point for a scenic break, as well as
+          various spots for food and rest. Reflect on your adventures during the
+          scenic drive through the mountainous terrain.
         </p>
-        <p>
-          Visit the Passu Bridge to cross the river, a thrilling experience many
-          say is the most dangerous walking bridge in the world. While safe, it
-          offers an exciting adventure for thrill-seekers.
-        </p>
-        <p>
-          Visit the Passu Cones mountains and take an iconic picture with the
-          group on top of the bus, capturing the unique landscape and memories.
-        </p>
-        <p>Accommodation in Gulkin.</p>
+        <p>Accommodation in Islamabad.</p>
       </template>
     </ItineraryDay>
 
@@ -327,19 +292,14 @@
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"
-      title="Day 11 | Return to Islamabad">
+      title="Day 11 | Farewell and Departure">
       <template #body>
         <p>
-          Depart from Gulkin early in the morning and drive back to Islamabad,
-          which is a 16-hour journey. Enjoy the scenic drive through the
-          mountainous terrain and reflect on your adventures.
+          Enjoy a farewell breakfast in Islamabad before preparing for your
+          departure flight. Reflect on the unforgettable experiences and
+          memories made during your journey through Pakistan.
         </p>
-        <p>
-          Arrive in Islamabad and stay overnight, ready for your departure
-          flight in the morning. Say goodbye to Pakistan and cherish the
-          memories of your unforgettable journey.
-        </p>
-        <p>Accommodation in Islamabad.</p>
+        <p>Departure from Islamabad.</p>
       </template>
     </ItineraryDay>
 
@@ -467,7 +427,7 @@
                 class="underline-out"
                 aria-label="Contact Page"
                 >contact page</NuxtLink
-              >
+              >.
             </p>
           </AccordionItem>
         </Accordion>
