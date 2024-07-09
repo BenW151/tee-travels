@@ -4,7 +4,7 @@
       <div
         v-for="(image, index) in images"
         :key="index"
-        class="image-item"
+        :class="['image-item', image.customClass]"
         @mouseover="updateHoverDescription(image)"
         @mouseleave="clearHoverDescription">
         <NuxtLink :href="image.link">
@@ -35,7 +35,7 @@
       <swiper-slide
         v-for="(image, index) in images"
         :key="index"
-        class="swiper-slide-custom"
+        :class="['swiper-slide-custom', image.customClass]"
         @mouseover="updateHoverDescription(image)"
         @mouseleave="clearHoverDescription">
         <NuxtLink :href="image.link">
@@ -106,12 +106,14 @@ const images = [
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "Coming Soon",
+    customClass: "coming-soon"
   },
   {
     src: "/images/montenegro-kotor/montenegro-kotor-cover.png",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "Coming Soon",
+    customClass: "coming-soon"
   },
 ];
 
@@ -226,6 +228,10 @@ window.addEventListener("resize", updateIsMobile);
 .carousel .container {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.coming-soon img {
+  filter: brightness(0.4);
 }
 
 @media (max-width: 767px) {
