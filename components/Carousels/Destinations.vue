@@ -46,15 +46,6 @@
         </NuxtLink>
       </swiper-slide>
     </swiper>
-    <div v-if="hoverDescription && !isMobile" class="image-description">
-      <p>{{ hoverDescription }}</p>
-      <p>{{ hoverSubDescription }}</p>
-      <p>{{ hoverNightsPrice }}</p>
-    </div>
-    <div v-else-if="!isMobile" class="image-description">
-      <p>Scroll to Explore</p>
-      <p>3 Destinations</p>
-    </div>
   </div>
 </template>
 
@@ -154,8 +145,7 @@ window.addEventListener("resize", updateIsMobile);
 
 .slide-image {
   width: 43.5vw;
-  height: auto;
-  max-height: 30vw;
+  height: 30vw;
   object-fit: cover;
 }
 
