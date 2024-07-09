@@ -635,13 +635,19 @@
           ><TextReveal tag="h2">Book Trip</TextReveal></a
         >-->
         <div class="item private-trip">
-          <h5>Interested in visiting Pakistan on a solo/private trip?</h5>
-          <p>Get in touch with us via the <NuxtLink
-            to="/contact"
-            class="underline-out"
-            aria-label="Contact Page"
-            >contact page</NuxtLink
-          >.</p>
+          <h5>
+            Interested in visiting Pakistan on <br v-if="!isMobile" />
+            a solo or private group trip?
+          </h5>
+          <p>
+            Get in touch with us via the
+            <NuxtLink
+              to="/contact"
+              class="underline-out"
+              aria-label="Contact Page"
+              >contact page</NuxtLink
+            >.
+          </p>
         </div>
       </LayoutGridContainer>
     </section>
@@ -665,7 +671,8 @@ useHead({
   ],
 });
 
-const isMobile = ref(window.innerWidth < 768);
+const { windowWidth, isMobile } = useWindowWidth();
+
 </script>
 
 <style>

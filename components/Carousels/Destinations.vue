@@ -224,7 +224,7 @@ window.addEventListener("resize", updateIsMobile);
 }
 
 .coming-soon img {
-  filter: brightness(0.4);
+  filter: brightness(0.3);
 }
 
 .coming-soon .image-nights-price {
