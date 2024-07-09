@@ -135,40 +135,9 @@ window.addEventListener("resize", updateIsMobile);
   object-fit: cover;
 }
 
-.swiper-scrollbar-drag {
-  background-color: var(--color-white);
-}
-
 .swiper-slide a::after,
 .image-item a::after {
   display: none;
-}
-
-.image-description {
-  margin-top: 0.5vw;
-  height: 5vw;
-}
-
-.image-description p:first-child {
-  font-size: var(--font-size-S);
-  font-family: var(--font-family-primary);
-}
-
-.image-description p {
-  margin-bottom: 0;
-}
-
-.custom-scrollbar {
-  position: relative;
-  width: 20%;
-  height: 1px;
-  background-color: grey;
-}
-
-.custom-scrollbar-progress {
-  height: 1px;
-  background-color: var(--color-black);
-  transition: width 0.1s ease;
 }
 
 .swiper-button-next,
@@ -273,10 +242,6 @@ window.addEventListener("resize", updateIsMobile);
 
   .image-info .image-nights-price {
     margin-bottom: var(--spacing-5);
-  }
-
-  .custom-scrollbar {
-    display: none;
   }
 
   .image-title {

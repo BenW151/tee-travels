@@ -90,8 +90,8 @@
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
             imageUrl="/images/tia.png"
-            imageAlt="Fairy Meadows, Pakistan"
-            overlayText="Tia, <br /> Founder"
+            imageAlt="Marsur Rock, Pakistan"
+            overlayText="Marsur Rock, <br /> Pakistan"
             textPosition="left" />
         </LayoutGridContainer>
       </section>
