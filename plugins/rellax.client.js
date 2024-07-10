@@ -1,9 +1,12 @@
 import Rellax from 'rellax';
+import { onMounted, onBeforeUnmount, watch } from 'vue';
 
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.directive('rellax', {
     mounted(el, binding) {
       let rellaxInstance;
+
+      const { windowWidth, isMobile } = useWindowWidth();
 
       // Function to initialize Rellax
       const initRellax = () => {
@@ -12,11 +15,8 @@ export default defineNuxtPlugin(nuxtApp => {
           rellaxInstance.destroy();
         }
 
-        // Check if the current device is a mobile device
-        const { windowWidth, isMobile } = useWindowWidth();
-
-        // Initialize Rellax only if not on mobile, using configuration from attributes or defaults
-        //if (!isMobile) {
+        // Initialize Rellax only if not on mobile
+        if (!isMobile.value) {
           const speed = el.getAttribute('data-rellax-speed') || 1; // Default speed if not specified
           rellaxInstance = new Rellax(el, {
             speed: parseInt(speed),
@@ -29,11 +29,16 @@ export default defineNuxtPlugin(nuxtApp => {
 
           // Attach the instance to the element for potential future use or destruction
           el.rellax = rellaxInstance;
-       // }
+        }
       };
 
       // Initialize Rellax on mount
       initRellax();
+
+      // Watch for changes in isMobile and windowWidth to reinitialize Rellax
+      watch([isMobile, windowWidth], () => {
+        initRellax();
+      });
 
       // Re-initialize Rellax on window resize
       const resizeListener = () => {
