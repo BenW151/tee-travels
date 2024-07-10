@@ -22,11 +22,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Contact",
+  title: "Contact | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Get in Touch: We're Here to Help Plan Your Next Adventure.",
     },
   ],
   link: [

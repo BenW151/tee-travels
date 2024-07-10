@@ -23,7 +23,8 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
   ],
 });

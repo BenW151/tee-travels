@@ -163,11 +163,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Terms + Conditions",
+  title: "Terms + Conditions | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Our Terms and Conditions: What You Need to Know Before Booking.",
     },
   ],
   link: [

@@ -103,11 +103,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Privacy Policy",
+  title: "Privacy Policy | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Your Privacy Matters: How Why Not Adventures Protects Your Information.",
     },
   ],
   link: [

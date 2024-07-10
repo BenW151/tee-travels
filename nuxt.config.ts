@@ -64,7 +64,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Offering affordable tours to off the beaten track destinations",
+            "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           name: "keywords",
@@ -76,17 +76,16 @@ export default defineNuxtConfig({
         { name: "msapplication-config", content: "/browserconfig.xml" },
         {
           property: "og:title",
-          content: "Why Not Adventures - Adventure Tours",
+          content: "Why Not Adventures | Adventure Tours",
         },
         {
           property: "og:description",
           content:
-            "Offering affordable tours to off the beaten track destinations",
+            "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           property: "og:image",
-          content:
-            "https://whynotadventures.co.uk/images/why-not-logo.png",
+          content: "https://whynotadventures.co.uk/cover.png",
         },
         { property: "og:url", content: "https://whynotadventures.co.uk/" },
         { name: "twitter:card", content: "summary_large_image" },

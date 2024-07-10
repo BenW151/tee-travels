@@ -727,11 +727,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Pakistan",
+  title: "Pakistan | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Discover the Hunza Valley: An Unforgettable Journey to Fairy Meadows, Rakaposhi, and Beyond.",
     },
   ],
   link: [

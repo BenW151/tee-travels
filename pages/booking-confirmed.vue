@@ -42,11 +42,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Booking Confirmed",
+  title: "Booking Confirmed | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
     {
       hid: "robots",

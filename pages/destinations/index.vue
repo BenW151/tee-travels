@@ -18,11 +18,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures - Destinations",
+  title: "Destinations | Why Not Adventures",
   meta: [
     {
       name: "description",
-      content: "Offering affordable tours to off the beaten track destinations",
+      content:
+        "Discover Your Next Adventure: Unique Destinations and Authentic Experiences",
     },
   ],
   link: [
