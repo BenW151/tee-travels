@@ -44,7 +44,7 @@
       <div class="legal">
         <!--<div class="images">
           <ImageDefault
-            imageUrl="/images/abta.png"
+            imageUrl="/images/abta.webp"
             imageAlt="Celestial Relaxation Room"
             class="abta"
             objectFit="contain"

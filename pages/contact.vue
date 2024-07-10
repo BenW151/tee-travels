@@ -1,14 +1,14 @@
 <template>
   <div class="contact">
     <Header
-      imageUrl="/images/kyrgyzstan-cover.png"
+      imageUrl="/images/kyrgyzstan-cover.webp"
       imageAlt="Laptop with code on desk"
       title="Contact"
       subtitle="Have a question? Let us know."
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Email', link: 'mailto:contact@whynotadventures.co.uk' },
-        { title: 'Whatsapp', link: 'https://wa.me/447000000000'},
+        { title: 'Whatsapp', link: 'https://wa.me/447000000000' },
         { title: 'Instagram', link: 'https://instagram.com/whynotadventures_' },
         { title: 'Facebook', link: 'https://facebook.com/whynotadventures_' },
       ]">

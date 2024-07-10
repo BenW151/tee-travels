@@ -1,7 +1,7 @@
 <template>
   <div class="destination">
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.webp"
       imageAlt="Modern office"
       title="Pakistan"
       subtitle="Hiking in the Hunza Valley"
@@ -69,7 +69,7 @@
           :items="[{ id: 1, text: '2nd May - 9th May 2025' }]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-cover.png"
+          imageUrl="/images/pakistan/pakistan-cover.webp"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -79,13 +79,13 @@
     <section id="showreel">
       <ImageStrip
         src="/videos/pakistan-showreel.mp4"
-        poster="/images/pakistan/pakistan-rakaposhi.png"
+        poster="/images/pakistan/pakistan-rakaposhi.webp"
         alt="Montenegro Showreel" />
     </section>
 
     <ItineraryDay
       dayId="day1"
-      imageUrl="/images/pakistan/pakistan-islamabad-mosque.png"
+      imageUrl="/images/pakistan/pakistan-islamabad-mosque.webp"
       imageAlt="Faisal Mosque, Islamabad"
       overlayText="Faisal Mosque, <br /> Islamabad"
       textPosition="right"
@@ -105,7 +105,7 @@
 
     <ItineraryDay
       dayId="day2"
-      imageUrl="/images/pakistan/pakistan-karakoram-highway.png"
+      imageUrl="/images/pakistan/pakistan-karakoram-highway.webp"
       imageAlt="Karakoram Highway, Hunza"
       overlayText="Karakoram Highway, <br /> Hunza"
       textPosition="left"
@@ -126,7 +126,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan/pakistan-fairy-meadows-road.png"
+      imageUrl="/images/pakistan/pakistan-fairy-meadows-road.webp"
       imageAlt="Fairy Meadows, Diamer"
       overlayText="Fairy Meadows Road, <br /> Diamer"
       textPosition="right"
@@ -146,7 +146,7 @@
 
     <ItineraryDay
       dayId="day4"
-      imageUrl="/images/pakistan/pakistan-nanga-parbat.png"
+      imageUrl="/images/pakistan/pakistan-nanga-parbat.webp"
       imageAlt="Fairy Meadows, Diamer"
       overlayText="Fairy Meadows, <br /> Diamer"
       textPosition="left"
@@ -167,7 +167,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan/pakistan-karimabad.png"
+      imageUrl="/images/pakistan/pakistan-karimabad.webp"
       imageAlt="Karimabad, Pakistan"
       overlayText="Karimabad, <br /> Pakistan"
       textPosition="right"
@@ -188,7 +188,7 @@
 
     <ItineraryDay
       dayId="day6"
-      imageUrl="/images/pakistan/pakistan-rakaposhi-hakapun.png"
+      imageUrl="/images/pakistan/pakistan-rakaposhi-hakapun.webp"
       imageAlt="Rakaposhi Hakapun, Minapin"
       overlayText="Rakaposhi Hakapun, <br /> Minapin"
       textPosition="left"
@@ -209,7 +209,7 @@
 
     <ItineraryDay
       dayId="day7"
-      imageUrl="/images/pakistan/pakistan-rakaposhi-basecamp.png"
+      imageUrl="/images/pakistan/pakistan-rakaposhi-basecamp.webp"
       imageAlt="Rakpaoshi, Minapin"
       overlayText="Rakaposhi, <br /> Minapin"
       textPosition="right"
@@ -229,7 +229,7 @@
 
     <ItineraryDay
       dayId="day8"
-      imageUrl="/images/pakistan/pakistan-attabad-lake.png"
+      imageUrl="/images/pakistan/pakistan-attabad-lake.webp"
       imageAlt="Attabad Lake, Pakistan"
       overlayText="Attabad Lake, <br /> Pakistan"
       textPosition="left"
@@ -249,7 +249,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/pakistan/pakistan-passu-cones.png"
+      imageUrl="/images/pakistan/pakistan-passu-cones.webp"
       imageAlt="Passu Cones, Passu"
       overlayText="Passu Cones, <br /> Passu"
       textPosition="right"
@@ -269,7 +269,7 @@
 
     <ItineraryDay
       dayId="day10"
-      imageUrl="/images/pakistan/pakistan-karakoram-highway-2.png"
+      imageUrl="/images/pakistan/pakistan-karakoram-highway-2.webp"
       imageAlt="Karakoram Highway, Hunza"
       overlayText="Karakoram Highway, <br /> Hunza"
       textPosition="left"
@@ -288,7 +288,7 @@
 
     <ItineraryDay
       dayId="day11"
-      imageUrl="/images/pakistan/pakistan-plane.png"
+      imageUrl="/images/pakistan/pakistan-plane.webp"
       imageAlt="Islamabad, Pakistan"
       overlayText="Islamabad, <br /> Pakistan"
       textPosition="right"
@@ -330,87 +330,87 @@
         <CarouselsGallery
           :images="[
             {
-              src: '/images/pakistan/pakistan-attabad-lake.png',
+              src: '/images/pakistan/pakistan-attabad-lake.webp',
               alt: 'Attabad Lake',
               subDescription: 'Beautiful view of Attabad Lake',
             },
             {
-              src: '/images/pakistan/pakistan-cover.png',
+              src: '/images/pakistan/pakistan-cover.webp',
               alt: 'Pakistan Cover',
               subDescription: 'Cover photo of Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-cover-old.png',
+              src: '/images/pakistan/pakistan-cover-old.webp',
               alt: 'Old Pakistan Cover',
               subDescription: 'Old cover photo of Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-eagles-nest.png',
+              src: '/images/pakistan/pakistan-eagles-nest.webp',
               alt: 'Eagles Nest',
               subDescription: 'Eagles Nest in Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-fairy-meadows-road.png',
+              src: '/images/pakistan/pakistan-fairy-meadows-road.webp',
               alt: 'Fairy Meadows Road',
               subDescription: 'Road to Fairy Meadows',
             },
             {
-              src: '/images/pakistan/pakistan-guide.png',
+              src: '/images/pakistan/pakistan-guide.webp',
               alt: 'Pakistan Guide',
               subDescription: 'Guide to Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-islamabad-mosque.png',
+              src: '/images/pakistan/pakistan-islamabad-mosque.webp',
               alt: 'Islamabad Mosque',
               subDescription: 'Faisal Mosque in Islamabad',
             },
             {
-              src: '/images/pakistan/pakistan-karakoram-highway.png',
+              src: '/images/pakistan/pakistan-karakoram-highway.webp',
               alt: 'Karakoram Highway',
               subDescription: 'Scenic view of Karakoram Highway',
             },
             {
-              src: '/images/pakistan/pakistan-karakoram-highway-2.png',
+              src: '/images/pakistan/pakistan-karakoram-highway-2.webp',
               alt: 'Karakoram Highway 2',
               subDescription: 'Another view of Karakoram Highway',
             },
             {
-              src: '/images/pakistan/pakistan-karimabad.png',
+              src: '/images/pakistan/pakistan-karimabad.webp',
               alt: 'Karimabad',
               subDescription: 'Karimabad in Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-nanga-parbat.png',
+              src: '/images/pakistan/pakistan-nanga-parbat.webp',
               alt: 'Nanga Parbat',
               subDescription: 'View of Nanga Parbat',
             },
             {
-              src: '/images/pakistan/pakistan-passu-cones.png',
+              src: '/images/pakistan/pakistan-passu-cones.webp',
               alt: 'Passu Cones',
               subDescription: 'Famous Passu Cones',
             },
             {
-              src: '/images/pakistan/pakistan-plane.png',
+              src: '/images/pakistan/pakistan-plane.webp',
               alt: 'Pakistan Plane',
               subDescription: 'Plane flying over Pakistan',
             },
             {
-              src: '/images/pakistan/pakistan-rakaposhi.png',
+              src: '/images/pakistan/pakistan-rakaposhi.webp',
               alt: 'Rakaposhi',
               subDescription: 'View of Rakaposhi',
             },
             {
-              src: '/images/pakistan/pakistan-rakaposhi-2.png',
+              src: '/images/pakistan/pakistan-rakaposhi-2.webp',
               alt: 'Rakaposhi 2',
               subDescription: 'Another view of Rakaposhi',
             },
             {
-              src: '/images/pakistan/pakistan-rakaposhi-basecamp.png',
+              src: '/images/pakistan/pakistan-rakaposhi-basecamp.webp',
               alt: 'Rakaposhi Basecamp',
               subDescription: 'Basecamp of Rakaposhi',
             },
             {
-              src: '/images/pakistan/pakistan-rakaposhi-hakapun.png',
+              src: '/images/pakistan/pakistan-rakaposhi-hakapun.webp',
               alt: 'Rakaposhi Hakapun',
               subDescription: 'Hakapun near Rakaposhi',
             },
@@ -422,7 +422,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-cover.png"
+          imageUrl="/images/pakistan/pakistan-cover.webp"
           imageAlt="Fairy Meadows, Pakistan"
           overlayText="Fairy Meadows, <br /> Pakistan"
           textPosition="right" />
@@ -553,7 +553,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Guide" />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-guide.png"
+          imageUrl="/images/pakistan/pakistan-guide.webp"
           imageAlt="Fairy Meadows, Diamer"
           overlayText="Fairy Meadows, <br /> Diamer"
           textPosition="right" />
@@ -592,7 +592,7 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Leader" />
         <ImageWithTextOverlay
-          imageUrl="/images/tia.png"
+          imageUrl="/images/tia.webp"
           imageAlt="Marsur Rock, Skardu"
           overlayText="Marsur Rock, <br /> Skardu"
           textPosition="left" />
@@ -674,7 +674,6 @@ useHead({
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
 const { windowWidth, isMobile } = useWindowWidth();
-
 </script>
 
 <style>

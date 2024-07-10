@@ -86,21 +86,21 @@ const clearHoverDescription = () => {
 
 const images = [
   {
-    src: "/images/pakistan/pakistan-cover.png",
+    src: "/images/pakistan/pakistan-cover.webp",
     alt: "Pakistan",
     subDescription: "Hiking in the Hunza Valley",
     nightsPrice: "10 Nights | £985",
     link: "/destinations/pakistan",
   },
   {
-    src: "/images/montenegro-hiking/montenegro-hiking-cover.png",
+    src: "/images/montenegro-hiking/montenegro-hiking-cover.webp",
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "Coming Soon",
     customClass: "coming-soon",
   },
   {
-    src: "/images/montenegro-kotor/montenegro-kotor-cover.png",
+    src: "/images/montenegro-kotor/montenegro-kotor-cover.webp",
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "Coming Soon",
@@ -128,7 +128,6 @@ watch(isMobile, async (newVal, oldVal) => {
     });
   }
 });
-
 </script>
 
 <style>

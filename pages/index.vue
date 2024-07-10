@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.webp"
       imageAlt="Laptop with code on desk"
       title="Why Not Adventures"
       subtitle="Get Off The Beaten Track"
@@ -31,7 +31,7 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/pakistan/pakistan-cover.png"
+            imageUrl="/images/pakistan/pakistan-cover.webp"
             imageAlt="Fairy Meadows, Pakistan"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
@@ -89,7 +89,7 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/tia.png"
+            imageUrl="/images/tia.webp"
             imageAlt="Marsur Rock, Pakistan"
             overlayText="Marsur Rock, <br /> Pakistan"
             textPosition="left" />

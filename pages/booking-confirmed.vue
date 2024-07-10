@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.png"
+      imageUrl="/images/pakistan/pakistan-cover.webp"
       imageAlt="Laptop with code on desk"
       title="Booking Confirmed"
       subtitle="You're in!"
@@ -30,7 +30,7 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/pakistan/pakistan-goat.png"
+            imageUrl="/images/pakistan/pakistan-goat.webp"
             imageAlt="Fairy Meadows, Pakistan"
             overlayText="Fairy Meadows, <br /> Pakistan"
             textPosition="right" />
