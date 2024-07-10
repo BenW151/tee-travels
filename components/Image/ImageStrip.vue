@@ -17,8 +17,7 @@
         :src="src"
         preload="metadata"
         class="item destination-video"
-        v-bind="controlsHidden ? {} : { controls: true }"
-        loop>
+        v-bind="controlsHidden ? {} : { controls: true }">
         Your browser does not support the video tag.
       </video>
       <div :class="{ 'text-wrapper': true, hidden: overlayHidden }">
@@ -116,7 +115,7 @@ const isImage = computed(() => {
 
 @media (max-width: 767px) {
   .image-strip.container {
-    height: 90vh;
+    height: 177.78vw;
   }
 
   .text-wrapper {

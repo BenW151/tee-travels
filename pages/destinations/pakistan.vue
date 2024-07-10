@@ -78,9 +78,15 @@
 
     <section id="showreel">
       <ImageStrip
+        v-if="isMobile"
+        src="/videos/pakistan-showreel-mobile.mp4"
+        poster="/images/pakistan/pakistan-rakaposhi.webp"
+        alt="Pakistan Showreel" />
+      <ImageStrip
+        v-else
         src="/videos/pakistan-showreel.mp4"
         poster="/images/pakistan/pakistan-rakaposhi.webp"
-        alt="Montenegro Showreel" />
+        alt="Pakistan Showreel" />
     </section>
 
     <ItineraryDay
