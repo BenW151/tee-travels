@@ -11,7 +11,7 @@
         v-for="(image, index) in images"
         :key="index"
         :class="['swiper-slide-custom', image.customClass]">
-        <div>
+        <div class="filter">
           <img :src="image.src" :alt="image.alt" class="slide-image" />
           <div class="overlay-text">
             <p class="image-title">{{ image.alt }}</p>
@@ -39,7 +39,7 @@
         v-for="(image, index) in images"
         :key="index"
         :class="['swiper-slide-custom', image.customClass]">
-        <div>
+        <div class="filter">
           <img :src="image.src" :alt="image.alt" class="slide-image" />
           <div class="overlay-text">
             <p class="image-title">{{ image.alt }}</p>
@@ -55,13 +55,13 @@
 import { ref, watch, nextTick } from "vue";
 import { Navigation, Mousewheel, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 const props = defineProps({
   images: {
     type: Array,
-    required: true
-  }
+    required: true,
+  },
 });
 
 const hoverDescription = ref("");
@@ -71,7 +71,6 @@ const progress = ref(0);
 const swiperRef = ref(null);
 
 const { windowWidth, isMobile } = useWindowWidth();
-
 
 const onSwiper = (swiper) => {
   swiper.on("progress", (progressValue) => {
@@ -115,7 +114,6 @@ watch(isMobile, async (newVal, oldVal) => {
     });
   }
 });
-
 </script>
 
 <style scoped>
@@ -195,7 +193,7 @@ watch(isMobile, async (newVal, oldVal) => {
 }
 
 .swiper-slide:hover img {
-  filter: brightness(0.8);
+  filter: brightness(80%) hue-rotate(350deg);
 }
 
 .swiper-slide:hover .overlay-text {
@@ -210,6 +208,34 @@ watch(isMobile, async (newVal, oldVal) => {
 .overlay-text p {
   margin: 0;
   margin-bottom: 2px;
+}
+
+.filter img {
+  position: relative;
+  -webkit-filter: brightness(105%) hue-rotate(350deg);
+  filter: brightness(105%) hue-rotate(350deg);
+}
+
+.filter::before {
+  content: "";
+  display: block;
+  height: 30vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: darken;
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(66, 10, 14, 0.2) 1,
+    rgba(0, 0, 0, 0)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(66, 10, 14, 0.2) 1%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 @media (max-width: 767px) {
@@ -253,6 +279,10 @@ watch(isMobile, async (newVal, oldVal) => {
   .slide-image {
     width: 100%;
     height: 65vh;
+  }
+
+  .filter::before {
+    height: 65vw;
   }
 
   .carousel .container {
