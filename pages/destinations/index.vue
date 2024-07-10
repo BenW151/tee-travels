@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.webp"
-      imageAlt="Laptop with code on desk"
+      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       title="Destinations"
       subtitle="Where Will You Go?"
       headerClass="header-small">

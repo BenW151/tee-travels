@@ -97,6 +97,7 @@ const images = [
     alt: "Montenegro",
     subDescription: "Hiking in Durmitor + Lovcen National Park",
     nightsPrice: "Coming Soon",
+    link: "/destinations",
     customClass: "coming-soon",
   },
   {
@@ -104,6 +105,7 @@ const images = [
     alt: "Montenegro",
     subDescription: "Bay of Kotor + Budva",
     nightsPrice: "Coming Soon",
+    link: "/destinations",
     customClass: "coming-soon",
   },
 ];
@@ -216,6 +218,10 @@ watch(isMobile, async (newVal, oldVal) => {
 .carousel .container {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.coming-soon {
+  pointer-events: none;
 }
 
 .coming-soon img {

@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
-      imageAlt="Laptop with code on desk"
+      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       title="Booking Confirmed"
       subtitle="You're in!"
       headerClass="header-small">

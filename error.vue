@@ -3,6 +3,7 @@
     <Nav />
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
+      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       :title="`${error.statusCode} Error`"
       subtitle="Destination Unknown"
       headerClass="header-small">
@@ -25,6 +26,11 @@ useHead({
       name: "description",
       content:
         "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+    },
+    {
+      hid: "robots",
+      name: "robots",
+      content: "noindex",
     },
   ],
 });

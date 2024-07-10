@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
-      imageAlt="Laptop with code on desk"
+      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       title="Why Not Adventures"
       subtitle="Get Off The Beaten Track"
       headerClass="header-small">

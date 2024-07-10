@@ -2,7 +2,7 @@
   <div class="destination">
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
-      imageAlt="Modern office"
+      imageAlt="View of Rakaposhi from Karimabad"
       title="Pakistan"
       subtitle="Hiking in the Hunza Valley"
       description="£985 | 10 Nights"

@@ -2,7 +2,7 @@
   <div class="contact">
     <Header
       imageUrl="/images/kyrgyzstan-cover.webp"
-      imageAlt="Laptop with code on desk"
+      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       title="Contact"
       subtitle="Have a question? Let us know."
       headerClass="header-small"
