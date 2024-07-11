@@ -116,8 +116,9 @@
               index="1">
               <p>
                 Our tours are designed to accommodate a wide range of ages.
-                However, some activities may have age restrictions. Please check
-                the specific tour details for more information.
+                However, all trips are for individuals 18 and over, and some
+                activities may have specific age ranges. Please check the
+                specific tour details for more information.
               </p>
             </AccordionItem>
             <AccordionItem
@@ -138,65 +139,40 @@
                 be a great way to meet new people and make lasting friendships.
               </p>
             </AccordionItem>
-            <AccordionItem title="Do I need travel insurance?" index="4">
-              <p>
-                Yes, we highly recommend having travel insurance to cover any
-                unforeseen circumstances such as medical emergencies, trip
-                cancellations, or lost luggage.
-              </p>
-            </AccordionItem>
             <AccordionItem
               title="What is the group size for the tours?"
-              index="5">
+              index="4">
               <p>
                 Group sizes vary by tour, but we aim to keep them small to
                 ensure a more personalized experience. Typically, group sizes
-                range from 10 to 20 people.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="What is your cancellation policy?" index="6">
-              <p>
-                Our cancellation policy varies depending on the tour. Generally,
-                cancellations made a certain number of days before departure are
-                eligible for a partial refund. Please refer to our terms and
-                conditions for specific details.
+                range from 10 to 16 people.
               </p>
             </AccordionItem>
             <AccordionItem
-              title="What if I have special dietary requirements?"
-              index="7">
+              title="Can I do any of your trips independently?"
+              index="5">
               <p>
-                We can accommodate most dietary requirements with prior notice.
-                Please inform us of any dietary restrictions at the time of
-                booking.
+                Absolutely! Yes, you can embark on our trips independently. We
+                offer bespoke tours using our trusted guides. Simply get in
+                touch via the
+                <NuxtLink
+                  to="/contact"
+                  class="underline-out"
+                  aria-label="Contact Page"
+                  >contact page</NuxtLink
+                >.
               </p>
             </AccordionItem>
-            <AccordionItem title="Any other questions?" index="8">
-              <ListsLinkList
-                class="contact"
-                title="Get in touch"
-                :links="[
-                  {
-                    url: '/contact',
-                    label: 'Fill out the contact form',
-                    description: 'Contact Page',
-                  },
-                  {
-                    url: 'mailto:myemail@email.com',
-                    label: 'Email us',
-                    description: 'Email',
-                  },
-                  {
-                    url: 'https://instagram.com/whynotadventures_',
-                    label: 'Message us on Instagram',
-                    description: 'Instagram',
-                  },
-                  {
-                    url: 'https://instagram.com/whynotadventures_',
-                    label: 'Message us on WhatsApp',
-                    description: 'WhatsApp',
-                  },
-                ]" />
+            <AccordionItem title="Any other questions?" index="6">
+              <p>
+                Get in touch with us via the
+                <NuxtLink
+                  to="/contact"
+                  class="underline-out"
+                  aria-label="Contact Page"
+                  >contact page</NuxtLink
+                >.
+              </p>
             </AccordionItem>
           </Accordion>
         </LayoutGridContainer>

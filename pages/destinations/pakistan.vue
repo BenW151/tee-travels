@@ -605,7 +605,22 @@
               best to keep you informed and provide suitable alternatives.
             </p>
           </AccordionItem>
-          <AccordionItem title="Any other questions?" index="7">
+          <AccordionItem
+            title="Can I do this trip independently?"
+            index="7">
+            <p>
+              Absolutely! Yes, you can embark on our trips independently. We
+              offer bespoke tours using our trusted guides. Simply get in touch
+              via the
+              <NuxtLink
+                to="/contact"
+                class="underline-out"
+                aria-label="Contact Page"
+                >contact page</NuxtLink
+              >.
+            </p>
+          </AccordionItem>
+          <AccordionItem title="Any other questions?" index="8">
             <p>
               Get in touch with us via the
               <NuxtLink
