@@ -451,9 +451,9 @@
               subDescription: 'Beautiful dusk view in Karimabad',
             },
             {
-              src: '/images/pakistan/gallery/pussu-cones.webp',
-              alt: 'Pussu Cones',
-              subDescription: 'Iconic Pussu Cones',
+              src: '/images/pakistan/gallery/passu-cones.webp',
+              alt: 'Passu Cones',
+              subDescription: 'Iconic Passu Cones',
             },
             {
               src: '/images/pakistan/gallery/PXL_20240627_063625090.webp',
