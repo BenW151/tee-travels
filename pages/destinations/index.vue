@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/montenegro-hiking/montenegro-hiking-cover.webp"
+      imageUrl="/images/pakistan/pakistan-passu-cones.webp"
       imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       title="Destinations"
       subtitle="Where Will You Go?"

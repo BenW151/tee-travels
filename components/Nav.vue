@@ -116,6 +116,7 @@ nav {
 .nav-items {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2px;
 }
 
 .nav-item.active::after {
@@ -128,7 +129,6 @@ nav {
 }
 
 nav a {
-  font-size: var(--font-size-XXS);
   margin: 0 var(--spacing-3);
   color: var(--color-white);
   pointer-events: all;
