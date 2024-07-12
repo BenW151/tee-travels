@@ -2,12 +2,17 @@
   <nav :class="{ scrolled: isScrolled }">
     <div class="nav">
       <div class="wordmark">
-        <NuxtLink
+        <!--<NuxtLink
           :class="{ open: isMenuOpen }"
           to="/"
           aria-label="Home Page"
           @click="toggleMenuIfOpen"
-        >Why Not Adventures</NuxtLink>
+        >Why Not Adventures</NuxtLink>-->
+        <NuxtImg
+          src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
+          alt="Why Not Adventures Logo"
+          class="nav-logo"
+          :class="{ open: isMenuOpen }" />
       </div>
       <div class="burger-menu" @click="toggleMenu">
         <span :class="{ open: isMenuOpen }"></span>
@@ -21,26 +26,28 @@
           :class="{ active: $route.path === '/' }"
           aria-label="Home Page"
           @click="toggleMenu"
-        >About</NuxtLink>
+          >About</NuxtLink
+        >
         <NuxtLink
           class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
           @click="toggleMenu"
-        >Destinations</NuxtLink>
+          >Destinations</NuxtLink
+        >
         <NuxtLink
           class="nav-item"
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
           aria-label="Contact Page"
           @click="toggleMenu"
-        >Contact</NuxtLink>
+          >Contact</NuxtLink
+        >
       </div>
     </div>
   </nav>
 </template>
-
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
@@ -95,7 +102,7 @@ nav {
   align-items: center;
   top: 0;
   width: 100%;
-  height: 3vw;
+  height: 5vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   backdrop-filter: blur(10px);
@@ -156,6 +163,15 @@ body.scrolled-past-header nav a::after {
   background-color: var(--color-black);
 }
 
+.nav-logo {
+  filter: invert(100%);
+  height: 4vw;
+}
+
+body.scrolled-past-header .nav-logo {
+  filter: invert(0%);
+}
+
 @media (max-width: 767px) {
   nav {
     height: 6vh;
@@ -208,6 +224,15 @@ body.scrolled-past-header nav a::after {
 
   .nav .wordmark a.open {
     color: var(--color-black);
+  }
+
+  .nav-logo {
+    height: 10vw;
+    z-index: 1000;
+  }
+
+  .nav-logo.open {
+    filter: invert(0);
   }
 
   .burger-menu {
