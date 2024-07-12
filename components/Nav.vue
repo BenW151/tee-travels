@@ -1,18 +1,17 @@
 <template>
   <nav :class="{ scrolled: isScrolled }">
     <div class="nav">
-      <div class="wordmark">
-        <!--<NuxtLink
-          :class="{ open: isMenuOpen }"
+      <div class="logo-container">
+        <NuxtLink
           to="/"
           aria-label="Home Page"
-          @click="toggleMenuIfOpen"
-        >Why Not Adventures</NuxtLink>-->
-        <NuxtImg
-          src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
-          alt="Why Not Adventures Logo"
-          class="nav-logo"
-          :class="{ open: isMenuOpen }" />
+          @click="toggleMenuIfOpen">
+          <NuxtImg
+            src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
+            alt="Why Not Adventures Logo"
+            class="nav-logo"
+            :class="{ open: isMenuOpen }"
+        /></NuxtLink>
       </div>
       <div class="burger-menu" @click="toggleMenu">
         <span :class="{ open: isMenuOpen }"></span>
@@ -145,11 +144,11 @@ nav a::after {
   background-color: var(--color-white);
 }
 
-.nav .wordmark {
+.nav .logo-container {
   margin-right: auto;
 }
 
-.nav .wordmark a {
+.nav .logo-container a {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-XS);
   margin-left: 0;
@@ -218,11 +217,11 @@ body.scrolled-past-header .nav-logo {
     background-color: var(--color-black);
   }
 
-  .nav .wordmark a {
+  .nav .logo-container a {
     z-index: 1000;
   }
 
-  .nav .wordmark a.open {
+  .nav .logo-container a.open {
     color: var(--color-black);
   }
 
