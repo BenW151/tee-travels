@@ -165,7 +165,7 @@ body.scrolled-past-header nav a::after {
 
 .nav-logo {
   filter: invert(100%);
-  height: 4vw;
+  height: 5vw;
 }
 
 body.scrolled-past-header .nav-logo {
