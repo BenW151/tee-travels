@@ -53,6 +53,10 @@
         </div>-->
         <p>Why Not Adventures Ltd are a UK registered company – No. 15826857</p>
       </div>
+      <NuxtImg
+        src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
+        alt="Why Not Adventures Logo"
+        class="footer-logo" />
     </LayoutGridContainer>
 
     <LayoutGridContainer class="footer-end">
@@ -132,7 +136,7 @@ footer .socials {
 
 .newsletter {
   grid-column: 11 / 15;
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
   margin-top: auto;
 }
 
@@ -157,6 +161,12 @@ footer .socials {
   margin: var(--spacing-3);
   margin-left: 0;
   margin-top: 0;
+}
+
+.footer-logo {
+  grid-column: 11 /15;
+  height: 5vw;
+  margin: 0;
 }
 
 .footer-end .item {
