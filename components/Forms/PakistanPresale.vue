@@ -30,6 +30,7 @@ textarea {
   border: none;
   outline: none;
   border-bottom: 1px solid grey;
+  border-radius: 0;
   color: var(--font-color-primary);
   background-color: transparent;
   position: relative;
