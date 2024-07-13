@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@nuxtjs/sitemap",
     "nuxt-gtag",
+    'nuxt-purgecss',
   ],
 
   gtag: {
