@@ -22,7 +22,6 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "nuxt-lucide-icons": "^1.0.4",
-    "nuxt-purgecss": "^2.0.0"
+    "nuxt-lucide-icons": "^1.0.4"
   }
 }
