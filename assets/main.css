@@ -214,7 +214,8 @@ section {
   left: 0;
   background-color: var(--font-color-primary);
   transform-origin: bottom left;
-  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.5s,
+    background-color 0.2s linear;
 }
 
 .underline.visible::after {
@@ -272,7 +273,8 @@ button::after {
   left: 0;
   background-color: var(--font-color-primary);
   transform-origin: bottom right;
-  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+    background-color 0.2s linear;
 }
 
 a:hover::after,
