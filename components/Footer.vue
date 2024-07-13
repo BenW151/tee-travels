@@ -228,10 +228,15 @@ footer .socials {
   .newsletter,
   .legal,
   footer .socials,
-  footer .nav-items {
+  footer .nav-items, footer .footer-logo {
     grid-column: 1 / 7;
     grid-row-start: auto;
     grid-row: auto;
+  }
+
+  .footer-logo {
+    width: 100%;
+    height: auto;
   }
 
   .abta {
