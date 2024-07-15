@@ -6,23 +6,58 @@
         Only 15 spots available—sign up now to receive <br />
         the payment link 48 hours before everyone else!
       </p>
-      <form
-        action="https://formspree.io/f/mnnaavqz"
-        method="POST"
-        autocomplete="on">
+      <form @submit.prevent="submitForm" autocomplete="on">
         <label class="form-email">
           <input
             type="email"
+            v-model="email"
             name="email"
             autocomplete="email"
             placeholder="Email"
             required />
         </label>
         <button class="link" type="submit">Submit</button>
+        <p class="message">{{ message }}</p>
       </form>
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const { windowWidth, isMobile } = useWindowWidth()
+
+const email = ref('')
+const message = ref('')
+
+const submitForm = async () => {
+  message.value = 'Submitting...'
+
+  try {
+    const response = await fetch('https://newsletter.whynotadventures.co.uk/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams({ email: email.value })
+    })
+
+    const result = await response.json()
+
+    if (response.ok) {
+      message.value = `Email successfully submitted`
+    } else {
+      message.value = `Failed to submit email: ${result.message}`
+      console.error('Error response from server:', result.message)
+    }
+  } catch (error) {
+    message.value = `An error occurred: ${error.message}`
+    console.error('Fetch error:', error)
+  }
+}
+</script>
+
 
 <style scoped>
 input,
@@ -56,8 +91,12 @@ form button {
   margin-left: var(--spacing-3);
 }
 
-.sign-up {
+.sign-up, .message {
   opacity: var(--opacity);
+}
+
+.message {
+  margin-top: var(--spacing-1);
 }
 
 @media (max-width: 767px) {
