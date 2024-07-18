@@ -5,10 +5,10 @@
       <template #title>Get in Touch</template>
       <template #body>
         <p>
-          We’re here to help you with any questions or concerns you may have.
+          We're here to help you with any questions or concerns you may have.
           Whether you need more information about our tours, assistance with
           booking, or have specific requests, our dedicated team is ready to
-          assist you. Please fill out the contact form below, and we’ll get back
+          assist you. Please fill out the contact form below, and we'll get back
           to you as soon as possible. We look forward to hearing from you and
           helping you plan your next adventure!
         </p>
@@ -16,13 +16,11 @@
     </TextParagraphWithTitle>
     <div class="item contact-form">
       <div>
-        <form
-          action="https://formspree.io/f/mkgwwbng"
-          method="POST"
-          autocomplete="on">
+        <form @submit.prevent="submitForm" autocomplete="on">
           <label class="form-name">
             <input
               type="text"
+              v-model="formData.name"
               name="name"
               autocomplete="name"
               placeholder="Name"
@@ -31,17 +29,22 @@
           <label class="form-email">
             <input
               type="email"
+              v-model="formData.email"
               name="email"
               autocomplete="email"
               placeholder="Email"
               required />
           </label>
           <label class="form-destination">
-            <input type="text" name="destination" placeholder="Destination" />
+            <input
+              type="text"
+              v-model="formData.destination"
+              name="destination"
+              placeholder="Destination" />
           </label>
           <label class="form-message">
             <textarea
-              type="text"
+              v-model="formData.message"
               name="message"
               placeholder="Message"
               required></textarea>
@@ -51,10 +54,50 @@
             Submit
           </button>
         </form>
+        <p>{{ message }}</p>
       </div>
     </div>
   </LayoutGridContainer>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const formData = ref({
+  name: '',
+  email: '',
+  destination: '',
+  message: ''
+})
+
+const message = ref('')
+
+const submitForm = async () => {
+  message.value = 'Submitting...'
+
+  try {
+    const response = await fetch('https://contact-form.whynotadventures.co.uk/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData.value)
+    })
+
+    const result = await response.json()
+
+    if (response.ok) {
+      message.value = `Form submitted, we will get back to you as soon as possible.`
+    } else {
+      message.value = `Failed to submit form: ${result.message}`
+      console.error('Error response from server:', result.message)
+    }
+  } catch (error) {
+    message.value = `An error occurred: ${error.message}`
+    console.error('Fetch error:', error)
+  }
+}
+</script>
 
 <style scoped>
 input,
