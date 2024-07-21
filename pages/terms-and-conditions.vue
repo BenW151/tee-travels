@@ -27,7 +27,7 @@
             <p>
               <strong>"Contract"</strong> means the agreement between us and you
               which comprises of these Terms and Conditions, the Tour itinerary,
-              the application booking form, and the Travel Risk Acknowledgement.
+              the booking form, and the Travel Risk Acknowledgement.
             </p>
             <p>
               <strong>"Departure Date"</strong> means the date of commencement
@@ -43,7 +43,7 @@
             </p>
             <p>
               <strong>"Traveller"</strong> or <strong>"you"</strong> means the
-              person whose signature and details appear on the application form.
+              person whose signature and details appear on the booking form.
             </p>
             <p>
               <strong>"Unforeseen Event"</strong> means an event or circumstance

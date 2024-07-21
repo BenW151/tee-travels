@@ -12,15 +12,11 @@
               collect, use, and safeguard your information when you visit our
               website.
             </p>
-            <p>Last Updated: 22/05/2024</p>
-            <a
-              href="#consent"
-              class="underline-out"
-              aria-label="Update Cookie Permissions"
-              >Update Cookie Permissions</a
-            >
+
+            <p>Last Updated: 22/07/2024</p>
 
             <h4>1. Information We Collect</h4>
+
             <p>
               We may collect both personally identifiable information (PII) and
               non-personally identifiable information when you visit our
@@ -31,19 +27,42 @@
             </p>
 
             <h4>2. How We Use Your Information</h4>
+
             <p>
               We use the information we collect for various purposes, including:
             </p>
+
             <ListsDefaultList
               bullets="true"
               :items="[
-                { id: 1, text: 'Providing and improving my website' },
+                { id: 1, text: 'Providing and improving our website' },
                 { id: 2, text: 'Responding to your inquiries' },
                 { id: 3, text: 'Sending newsletters or promotional materials' },
-                { id: 4, text: 'Customizing your experience on my website' },
+                { id: 4, text: 'Customizing your experience on our website' },
               ]" />
 
-            <h4>3. Cookies and Tracking Technologies</h4>
+            <h4>3. Legal Basis for Processing</h4>
+
+            <p>
+              Under the General Data Protection Regulation (GDPR), we are
+              required to inform you about the legal grounds on which we process
+              your personal data. These legal bases include:
+            </p>
+
+            <ListsDefaultList
+              bullets="true"
+              :items="[
+                { id: 1, text: 'Your consent' },
+                { id: 2, text: 'The performance of a contract' },
+                {
+                  id: 3,
+                  text: 'Our legitimate interests, which include operating our business, improving our services, and marketing our products',
+                },
+                { id: 4, text: 'Compliance with legal obligations' },
+              ]" />
+
+            <h4>4. Cookies and Tracking Technologies</h4>
+
             <p>
               We may use cookies and similar tracking technologies to enhance
               your experience on our website. You can choose to disable cookies
@@ -51,7 +70,8 @@
               of our website may not function properly if you do so.
             </p>
 
-            <h4>4. Third-Party Disclosure</h4>
+            <h4>5. Third-Party Disclosure</h4>
+
             <p>
               We do not sell, trade, or otherwise transfer your personal
               information to third parties without your consent. However, we may
@@ -59,7 +79,34 @@
               operating our website, conducting our business, or servicing you.
             </p>
 
-            <h4>5. Security Measures</h4>
+            <h4>6. Data Transfers</h4>
+
+            <p>
+              If we transfer your data outside the EU, we will ensure that
+              appropriate safeguards are in place to protect your data, such as
+              Standard Contractual Clauses or equivalent protection measures.
+            </p>
+
+            <h4>7. Data Retention</h4>
+
+            <p>
+              We will retain your personal data only for as long as is necessary
+              for the purposes set out in this Privacy Policy. The criteria used
+              to determine the retention period include the nature and
+              sensitivity of the data, the purposes for processing, and legal
+              requirements.
+            </p>
+
+            <h4>8. Data Breach Notification</h4>
+
+            <p>
+              In the event of a data breach that is likely to result in a risk
+              to your rights and freedoms, we will notify you and the relevant
+              data protection authorities as required by law.
+            </p>
+
+            <h4>9. Security Measures</h4>
+
             <p>
               We take reasonable precautions to protect your information.
               However, no data transmission over the internet or electronic
@@ -67,7 +114,8 @@
               security.
             </p>
 
-            <h4>6. Your Choices</h4>
+            <h4>10. Your Choices</h4>
+
             <p>
               You have the right to access, correct, or delete your personal
               information. You may also choose to opt-out of certain
@@ -75,13 +123,22 @@
               please contact us using the information provided below.
             </p>
 
-            <h4>7. Changes to This Privacy Policy</h4>
+            <h4>11. Automated Decision-Making and Profiling</h4>
+
+            <p>
+              We do not engage in automated decision-making or profiling that
+              has legal or similarly significant effects on you.
+            </p>
+
+            <h4>12. Changes to This Privacy Policy</h4>
+
             <p>
               We reserve the right to update our Privacy Policy from time to
               time. Any changes will be posted on this page with a revised date.
             </p>
 
-            <h4>8. Contact Information</h4>
+            <h4>13. Contact Information</h4>
+
             <p>
               By using our website, you consent to the terms outlined in this
               Privacy Policy. If you have any questions or concerns regarding
