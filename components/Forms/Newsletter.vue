@@ -45,7 +45,7 @@ const submitForm = async () => {
     const result = await response.json()
 
     if (response.ok) {
-      message.value = `Email successfully submitted`
+      message.value = `Email successfully submitted.`
     } else {
       message.value = `Failed to submit email: ${result.message}`
       console.error('Error response from server:', result.message)

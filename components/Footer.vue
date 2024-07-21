@@ -121,6 +121,7 @@ footer .nav-items {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 }
 
 footer .nav-items .nav-item {

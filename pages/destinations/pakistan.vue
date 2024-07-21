@@ -66,7 +66,7 @@
 
         <ListsDefaultList
           title="Upcoming Dates"
-          :items="[{ id: 1, text: '2nd May - 9th May 2025' }]" />
+          :items="[{ id: 1, text: '16th - 26th May 2025' }]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-cover.webp"
@@ -101,9 +101,8 @@
           Arrive in Islamabad and check into your accommodation. After settling
           in, go for lunch at a local restaurant to get a taste of the regional
           cuisine. Spend the afternoon exploring Faisal Mosque, one of the
-          largest and most iconic mosques in the world, known for its stunning
-          architecture and serene ambiance. In the evening, enjoy dinner at
-          another local eatery, soaking in the atmosphere of the capital city.
+          largest and most iconic mosques in the world. In the evening, we will
+          have a welcome party back at our accommodation!
         </p>
         <p>Accommodation in Islamabad.</p>
       </template>
@@ -140,13 +139,13 @@
       <template #body>
         <p>
           In the morning, embark on an off-road adventure in jeeps towards Fairy
-          Meadows. The rugged journey offers spectacular views and a sense of
-          adventure. Upon arrival at Fairy Meadows, hike through the stunning
+          Meadows. It's such an adventure and has the most incredible mountain
+          views. Upon arrival at Fairy Meadows, hike through the stunning
           grasslands to reach your campsite. Spend the evening around a
           campfire, sharing stories and enjoying a hearty dinner with
           breathtaking views of Nanga Parbat in the background.
         </p>
-        <p>Accommodation in Fairy Meadows.</p>
+        <p>Accommodation in cabins at Fairy Meadows.</p>
       </template>
     </ItineraryDay>
 
@@ -160,14 +159,12 @@
       <template #body>
         <p>
           Wake up early and embark on a hike to the base camp of Nanga Parbat,
-          stopping at mountain huts along the way for food and tea. The hike
-          provides stunning panoramic views and a chance to experience the
-          pristine natural beauty of the region. Spend the day exploring the
-          area, enjoying the tranquility and the stunning mountain vistas.
-          Return to Fairy Meadows in the evening, where you can relax and have
-          dinner.
+          stopping at mountain huts along the way for freshly cooked food and
+          tea. This hike offers multiple amazing viewpoints of Nanga Parbat and
+          at the base camp we almost reach 4000m. Return to Fairy Meadows in the
+          evening, where you can relax and have dinner.
         </p>
-        <p>Accommodation in Fairy Meadows.</p>
+        <p>Accommodation in cabins at Fairy Meadows.</p>
       </template>
     </ItineraryDay>
 
@@ -182,11 +179,11 @@
         <p>
           Depart from Fairy Meadows in the morning, taking jeeps back down to
           the main road. From there, drive to Karimabad, stopping for lunch
-          along the way. Arrive in Karimabad and check into Moose Chalet, a
-          charming accommodation offering beautiful views of the surrounding
-          landscape. In the evening, go for dinner at a local woman-run
-          restaurant, experiencing the unique flavors and traditions of the
-          region.
+          along the way. Arrive in Karimabad and check into Moose Chalet, this
+          is the most beautiful place I have ever stayed, it looks directly onto
+          Rakaposhi and has fresh cherries you can pick from the garden. In the
+          evening, go for dinner at a local woman-run restaurant, trying foods
+          local to this region.
         </p>
         <p>Accommodation in Karimabad.</p>
       </template>
@@ -206,10 +203,10 @@
           about the region's rich history and cultural heritage. Enjoy lunch in
           Karimabad before driving to the town of Minapin, the starting point
           for your hike to Rakaposhi Hapakun. The hike offers stunning views of
-          Rakaposhi and the surrounding landscape. Arrive at Hakapun, where
+          Rakaposhi and the surrounding landscape. Arrive at Hakapun camp, where
           you'll spend the night under the stars.
         </p>
-        <p>Accommodation in Hakapun.</p>
+        <p>Accommodation in tents at Hakapun camp.</p>
       </template>
     </ItineraryDay>
 
@@ -224,12 +221,13 @@
         <p>
           Begin the day with a hike to the Rakaposhi base camp, where you can
           enjoy noodles and tea while taking in the breathtaking views. Explore
-          the glacier and hike up to a viewpoint for more stunning vistas. After
-          lunch, descend back to Minapin and drive up to Eagle's Nest for a
-          sunset viewpoint. Enjoy a BBQ and campfire in the evening, surrounded
-          by panoramic views of the towering mountains.
+          the glacier and hike up to a viewpoint for the most insane 360 view of
+          multiple huge mountains. After lunch, descend back to Minapin and
+          drive up to Eagle's Nest for a sunset viewpoint. Enjoy a BBQ and
+          campfire in the evening, drinking local spirit moonshine to celebrate,
+          surrounded by panoramic views of the towering mountains.
         </p>
-        <p>Accommodation at Eagle's Nest.</p>
+        <p>Accommodation in hotel at Eagle's Nest.</p>
       </template>
     </ItineraryDay>
 
@@ -243,11 +241,11 @@
       <template #body>
         <p>
           Drive to Attabad Lake for lunch, followed by a scenic boat trip on the
-          turquoise waters. In the afternoon, hike at Baskochi Meadow, enjoying
-          the beautiful natural surroundings. Head to your homestay for the
-          night. Later, take a sunset hike up to Passu Cones and Black Glacier
-          viewpoint, capturing stunning photographs and enjoying the peaceful
-          ambiance.
+          turquoise waters. In the afternoon, hike at Baskochi Meadow, for the
+          best viewpoint down onto the bright blue lake. A short walk through
+          gorgeous meadows to your homestay for the night where you will meet
+          your local host family. Later, take a sunset hike up to Passu Cones
+          and Black Glacier viewpoint.
         </p>
         <p>Accommodation at a Gulkin homestay.</p>
       </template>
@@ -263,10 +261,9 @@
       <template #body>
         <p>
           Spend the morning at Borith Lake, where you can swim, kayak, or enjoy
-          a pedalo ride. Afterward, hike to Gulkin Glacier, experiencing the
-          natural beauty and rugged terrain. Visit the Passu Bridge for a
-          thrilling adventure and take in the views of the Passu Cones. Return
-          to your homestay in the evening, where you can participate in a
+          a pedalo ride. Afterward, hike to the impressive Gulkin Glacier. Brave
+          crossing the Passu Bridge and get your iconic photo at Passu Cones.
+          Return to your homestay in the evening, where you can participate in a
           cooking session, making traditional paratha.
         </p>
         <p>Accommodation at a Gulkin homestay.</p>
@@ -508,7 +505,7 @@
                 { id: 3, text: 'Drinking water, hot drinks at breakfast' },
                 { id: 4, text: 'Transfers Between Stops' },
                 { id: 5, text: 'Airport pickup and drop off' },
-                { id: 6, text: 'All Activities Mentioned' },
+                { id: 6, text: 'All activities mentioned' },
                 { id: 7, text: 'Local tour guide' },
               ]" />
           </template>
@@ -546,17 +543,11 @@
                 { id: 3, text: 'Drinking water, hot drinks at breakfast' },
                 { id: 4, text: 'Transfers Between Stops' },
                 { id: 5, text: 'Airport pickup and drop off' },
-                { id: 6, text: 'All Activities Mentioned' },
+                { id: 6, text: 'All activities mentioned' },
                 { id: 7, text: 'Local tour guide' },
               ]" />
           </AccordionItem>
           <AccordionItem title="What's not included?" index="2">
-            <p>
-              Our tour includes accommodation, transportation within Pakistan,
-              guided tours, and most meals. You'll also enjoy unique experiences
-              such as hikes, local cultural activities, and visits to key
-              attractions.
-            </p>
             <ListsDefaultList
               bullets
               :items="[
@@ -568,15 +559,17 @@
                 },
                 { id: 4, text: 'Additional food and drinks' },
                 { id: 5, text: 'Souvenirs' },
-                { id: 6, text: 'Tips - at your discretion' },
+                { id: 6, text: 'Tips - At your discretion' },
               ]" />
           </AccordionItem>
           <AccordionItem title="Do I need a visa?" index="3">
             <p>
               Yes, most travelers will need a visa to enter Pakistan. It's
               essential to check the specific visa requirements for your
-              nationality and apply in advance. Ensure your passport is valid
-              for at least six months beyond your planned departure date.
+              nationality and apply in advance. We will require you to provide a
+              copy of your visa ahead of the trip start date. Also Ensure your
+              passport is valid for at least six months beyond your planned
+              departure date.
             </p>
           </AccordionItem>
           <AccordionItem title="Do I need travel insurance?" index="4">
@@ -584,7 +577,8 @@
               Yes, travel insurance is mandatory for our tour. It should cover
               medical expenses, trip cancellations, and any unforeseen events.
               We recommend purchasing comprehensive travel insurance to ensure a
-              safe and worry-free journey.
+              safe and worry-free journey. We will require you to provide a
+              copy of your insurance ahead of the trip start date.
             </p>
           </AccordionItem>
           <AccordionItem
@@ -593,7 +587,7 @@
             <p>
               You will fly into and out of Islamabad International Airport
               (ISB). This airport serves as the main gateway for our tour,
-              providing convenient access to all starting and ending points of
+              providing convenient access to the starting and ending points of
               our itinerary.
             </p>
           </AccordionItem>
@@ -605,9 +599,7 @@
               best to keep you informed and provide suitable alternatives.
             </p>
           </AccordionItem>
-          <AccordionItem
-            title="Can I do this trip independently?"
-            index="7">
+          <AccordionItem title="Can I do this trip independently?" index="7">
             <p>
               Absolutely! Yes, you can embark on our trips independently. We
               offer bespoke tours using our trusted guides. Simply get in touch
@@ -655,10 +647,10 @@
               mountain guide, Aziz's extensive knowledge of the region's trails,
               history, and culture makes him an invaluable companion for your
               adventure. His passion for the great outdoors is matched only by
-              his dedication to ensuring every traveler experiences the
+              his dedication to ensuring every traveller experiences the
               awe-inspiring landscapes safely and memorably. Fluent in English,
               Urdu, and the local Burushaski language, Aziz's friendly and
-              approachable demeanor makes him a favorite among tourists. When
+              approachable demeanour makes him a favourite among tourists. When
               he's not guiding expeditions, Aziz enjoys playing the Rubab, and
               sharing stories of his adventures over a warm cup of chai.
             </p>
@@ -694,7 +686,7 @@
               mountain guide, Aziz's extensive knowledge of the region's trails,
               history, and culture makes him an invaluable companion for your
               adventure. His passion for the great outdoors is matched only by
-              his dedication to ensuring every traveler experiences the
+              his dedication to ensuring every traveller experiences the
               awe-inspiring landscapes safely and memorably.
             </p>
             <a

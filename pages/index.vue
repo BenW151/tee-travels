@@ -16,17 +16,17 @@
             <template #title>Why Choose Why Not?</template>
             <template #body>
               <p>
-                At Why Not Adventures, we embrace the spirit of "why not?" - the
-                attitude of seizing opportunities and diving into new
-                experiences headfirst. We believe that life is too short for
-                hesitation and that the best memories are made when you take a
-                leap of faith. Our tours are crafted for those who seek
-                adventure, exploration, and the thrill of discovering the
-                unknown. With a focus on small group sizes, personalized
-                service, and unique activities, we ensure that every journey is
-                as bold and unforgettable as you are. Choose Why Not Adventures
-                and say yes to a world of possibilities. Why not take the trip
-                of a lifetime?
+                After years of travelling, it became clear to me that my best
+                adventures came from embracing the spirit of "why not?". I have
+                always had a passion for exploring less travelled destinations
+                and wanted to find a way to bring like minded spontaneous,
+                adventure loving travellers together. Most importantly I wanted
+                to make sure these trips were affordable for everyone. I was fed
+                up of seeing overpriced trips so I have curated all these trips
+                from scratch from my first hand experience of travelling to
+                ensure the best value and itinerary. I created Why Not
+                Adventures to share my love for adventure and inspire others to
+                embrace the spirit of "why not?" in their own journeys.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -68,7 +68,7 @@
             <template #title>Who Am I?</template>
             <template #body>
               <p>
-                Hi, I'm Tia, the founder of Why Not Adventures. Traveling has
+                Hi, I'm Tia, the founder of Why Not Adventures. Travelling has
                 always been my passion, and I've dedicated my life to exploring
                 the world and uncovering its hidden gems. With years of
                 experience in the travel industry, I created Why Not Adventures

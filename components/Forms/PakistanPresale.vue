@@ -3,7 +3,7 @@
     <div>
       <h4 class="presale">Sign Up to Presale</h4>
       <p class="sign-up">
-        Only 15 spots available—sign up now to receive <br />
+        Only 12 spots available—sign up now to receive <br />
         the payment link 48 hours before everyone else!
       </p>
       <form @submit.prevent="submitForm" autocomplete="on">
@@ -46,7 +46,7 @@ const submitForm = async () => {
     const result = await response.json()
 
     if (response.ok) {
-      message.value = `Email successfully submitted`
+      message.value = `Email successfully submitted.`
     } else {
       message.value = `Failed to submit email: ${result.message}`
       console.error('Error response from server:', result.message)
