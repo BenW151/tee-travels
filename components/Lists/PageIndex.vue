@@ -1,10 +1,11 @@
 <template>
   <div class="page-index">
-    <ul>
+    <ul ref="linksContainer">
       <li v-for="label in labels" :key="label.link">
-        <a :href="getLinkHref(label.link)" 
-           :target="isExternal(label.link) ? '_blank' : undefined" 
-           :rel="isExternal(label.link) ? 'noopener noreferrer' : undefined">
+        <a
+          :href="getLinkHref(label.link)"
+          :target="isExternal(label.link) ? '_blank' : undefined"
+          :rel="isExternal(label.link) ? 'noopener noreferrer' : undefined">
           {{ label.title }}
         </a>
       </li>
@@ -13,7 +14,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, onMounted, ref } from "vue";
 
 const props = defineProps({
   labels: {
@@ -22,6 +23,8 @@ const props = defineProps({
   },
 });
 
+const linksContainer = ref(null);
+
 const isExternal = (link) => {
   return /^(http|https|mailto):/.test(link);
 };
@@ -29,6 +32,20 @@ const isExternal = (link) => {
 const getLinkHref = (link) => {
   return isExternal(link) ? link : `#${link}`;
 };
+
+onMounted(() => {
+  const links = linksContainer.value.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
 </script>
 
 <style scoped>
@@ -68,7 +85,7 @@ ul li:last-child {
 
   ul {
     width: 100%;
-    justify-content: space-around
+    justify-content: space-around;
   }
 }
 </style>

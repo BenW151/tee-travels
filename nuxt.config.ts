@@ -48,6 +48,12 @@ export default defineNuxtConfig({
 
   plugins: ["~/plugins/rellax.client.js"],
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
+
   app: {
     pageTransition: { name: "page", mode: "out", appear: true },
     head: {

@@ -17,7 +17,6 @@
 const isMobile = computed(() => window.innerWidth < 768);
 </script>
 
-
 <style>
 .page-enter-active,
 .page-leave-active {
