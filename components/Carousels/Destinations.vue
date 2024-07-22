@@ -173,7 +173,7 @@ watch(isMobile, async (newVal, oldVal) => {
   position: relative;
   width: 20%;
   height: 1px;
-  background-color: grey;
+  background-color: var(--color-grey);
 }
 
 .custom-scrollbar-progress {

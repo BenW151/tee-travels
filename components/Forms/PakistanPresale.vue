@@ -64,7 +64,7 @@ input,
 textarea {
   border: none;
   outline: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--color-grey);
   border-radius: 0;
   color: var(--font-color-primary);
   background-color: transparent;
@@ -81,7 +81,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-bottom: 1px solid var(--accent-primary);
+  border-bottom: 1px solid var(--color-black);
 }
 
 form button {
