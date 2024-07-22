@@ -1,6 +1,7 @@
 <template>
   <div>
     <MouseFollower v-if="!isMobile" />
+    <NuxtLoadingIndicator color="var(--color-white)" />
     <Nav />
     <AnalyticsConsent />
     <transition name="page" mode="out-in">
