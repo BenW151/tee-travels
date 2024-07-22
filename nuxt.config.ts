@@ -6,6 +6,15 @@ export default defineNuxtConfig({
     name: "Why Not Adventures",
   },
 
+  ssr: true,
+  nitro: {
+    preset: 'static',
+  },
+
+  webpack: {
+    extractCSS: true,
+  },
+
   devtools: { enabled: true },
 
   alias: {
