@@ -5,7 +5,7 @@
       class="background-image rellax"
       v-rellax
       data-rellax-speed="3">
-      <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" />
+      <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" preload />
     </div>
     <div
       v-else

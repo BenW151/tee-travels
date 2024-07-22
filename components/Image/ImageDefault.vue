@@ -4,7 +4,7 @@
     v-rellax
     :data-rellax-percentage="rellaxPercentage"
     :data-rellax-speed="computedRellaxSpeed">
-    <NuxtImg :class="objectFitClass" format="webp" :alt="imageAlt" :src="imageUrl" />
+    <NuxtImg :class="objectFitClass" format="webp" :alt="imageAlt" :src="imageUrl" loading="lazy"/>
   </div>
 </template>
 
