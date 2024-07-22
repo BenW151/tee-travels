@@ -54,7 +54,7 @@
         <p>Why Not Adventures Ltd are a UK registered company – No. 15826857</p>
       </div>
       <NuxtImg
-        src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
+        src="/branding/why-not-adventures-logo-rectangle-no-bg-no-margin.svg"
         alt="Why Not Adventures Logo"
         class="footer-logo" />
     </LayoutGridContainer>
