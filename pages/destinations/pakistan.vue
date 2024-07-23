@@ -29,7 +29,7 @@
               Start off in Islamabad, the capital city, where you'll check out
               the famous Faisal Mosque and get a taste for local cuisines. Then,
               head north on the most beautiful drive to Jaglot before setting
-              off to the magical Fairy Meadows, where we hike to the
+              off the next day to Fairy Meadows, where we hike to the
               breathtaking Nanga Parbat base camp, the world's ninth-highest
               mountain.
             </p>
@@ -139,8 +139,8 @@
           and rivers, capturing the picturesque landscape of northern Pakistan.
           Stop for lunch at a charming spot en route. Arrive in Jaglot in the
           late afternoon, check into your hotel, and spend the evening exploring
-          the town or relaxing by the river. End the day with a delicious
-          dinner, experiencing the local cuisine.
+          the town. End the day with a delicious dinner, experiencing the local
+          cuisine.
         </p>
         <p>Accommodation in Jaglot.</p>
       </template>
@@ -325,7 +325,7 @@
       </template>
     </ItineraryDay>
 
-    <section class="gallery">
+    <section class="gallery" v-if="!isMobile">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Highlights" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
@@ -347,11 +347,11 @@
       </LayoutGridContainer>
     </section>
 
-    <section class="carousel">
+    <section class="carousel" v-if="!isMobile">
       <div class="container">
         <CarouselsGallery
           :images="[
-           {
+            {
               src: '/images/pakistan/gallery/attabad-lake-boat-2.webp',
               alt: 'Attabad Lake Boat',
               subDescription: 'Boat trip on attabad lake',
@@ -389,12 +389,14 @@
             {
               src: '/images/pakistan/gallery/woman-run-restaurant.webp',
               alt: 'Woman Run Restaurant',
-              subDescription: 'My favourite restaurant in Karimabad run by a local woman',
+              subDescription:
+                'My favourite restaurant in Karimabad run by a local woman',
             },
             {
               src: '/images/pakistan/gallery/diran-peak.webp',
               alt: 'Diran Peak',
-              subDescription: 'Viewpoint of Diran Peak (7266m)from Rakaposhi hike',
+              subDescription:
+                'Viewpoint of Diran Peak (7266m)from Rakaposhi hike',
             },
             {
               src: '/images/pakistan/gallery/hakapun-tea.webp',
@@ -409,7 +411,8 @@
             {
               src: '/images/pakistan/gallery/karimabad-view.webp',
               alt: 'Karimabad View',
-              subDescription: 'Panoramic view of Rakaposhi from our accomodation',
+              subDescription:
+                'Panoramic view of Rakaposhi from our accomodation',
             },
             {
               src: '/images/pakistan/gallery/homestay-host-stara.webp',
@@ -429,7 +432,8 @@
             {
               src: '/images/pakistan/gallery/fairy-meadows-goat.webp',
               alt: 'Fairy Meadows reflection point',
-              subDescription: 'So many cute goats,horses and donkeys at fairy meadows',
+              subDescription:
+                'So many cute goats,horses and donkeys at fairy meadows',
             },
             {
               src: '/images/pakistan/gallery/karimabad-dusk.webp',
@@ -526,7 +530,6 @@
               alt: 'Passu Cones',
               subDescription: 'Iconic Passu Cones',
             },
-
           ]" />
       </div>
     </section>

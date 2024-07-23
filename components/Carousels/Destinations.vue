@@ -240,6 +240,7 @@ watch(isMobile, async (newVal, oldVal) => {
   padding: var(--spacing-4);
   color: var(--color-white);
   text-align: left;
+  pointer-events: none;
 }
 
 .image-title {
