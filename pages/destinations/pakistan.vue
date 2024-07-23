@@ -20,23 +20,39 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Overview" />
         <TextParagraphWithTitle subtitleTag="h3">
-          <template #title>Explore the Hidden Gems of Pakistan</template>
+          <template #title>About the Trip</template>
           <template #body>
             <p>
-              Embark on an unforgettable adventure to Pakistan with our
-              organized tour, showcasing the country's breathtaking natural
-              beauty and vibrant culture. Begin your journey in the capital city
-              of Islamabad, exploring the iconic Faisal Mosque and local
-              attractions. Travel north to Jaglot and then to the enchanting
-              Fairy Meadows, where you will enjoy stunning views of Nanga
-              Parbat, the world's ninth-highest mountain. Experience
-              exhilarating off-road jeep rides, hike to serene mountain huts,
-              and camp under the stars. Continue to Karimabad, visiting the
-              historic Baltit Fort and exploring the vibrant local markets. Trek
-              to Rakaposhi base camp, enjoy scenic boat trips on Attabad Lake,
-              and hike to the Passu Cones viewpoint. This trip promises a
-              perfect blend of adventure, culture, and natural splendor, making
-              it a once-in-a-lifetime experience.
+              Get ready for an unforgettable adventure in my favourite country
+              Pakistan with this all inclusive organized tour, where we will
+              dive into the country's insane natural beauty and lively culture.
+              Start off in Islamabad, the capital city, where you'll check out
+              the famous Faisal Mosque and get a taste for local cuisines. Then,
+              head north on the most beautiful drive to Jaglot before setting
+              off to the magical Fairy Meadows, where we hike to the
+              breathtaking Nanga Parbat base camp, the world's ninth-highest
+              mountain.
+            </p>
+
+            <p>
+              Next, we'll make our way to Karimabad, home to the historic Baltit
+              Fort and bustling local markets. From there, trek to Rakaposhi
+              base camp where you will see the impressive glacier and camp under
+              the stars. Take scenic boat trips on Attabad Lake, hike up to
+              Basckochi Meadows, Passu Cones viewpoint, glacier and bridge!
+            </p>
+
+            <p>
+              Finish off this trip staying with a local family who I met on my
+              travels in Pakistan, we will have cooking lessons and hear stories
+              from this beautiful family about their life in the mountains of
+              Pakistan.
+            </p>
+
+            <p>
+              This trip is packed with adventure, culture, and jaw-dropping
+              landscapes, making it a once-in-a-lifetime experience you won't
+              want to miss!
             </p>
             <!--<a
               class="link underline-out-icon"
@@ -69,9 +85,9 @@
           :items="[{ id: 1, text: '16th - 26th May 2025' }]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
-          imageUrl="/images/pakistan/pakistan-cover.webp"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageUrl="/images/pakistan/pakistan-nanga-parbat.webp"
+          imageAlt="Nanga Parbat, Diamer"
+          overlayText="Nanga Parbat, <br /> Diamer"
           textPosition="right" />
       </LayoutGridContainer>
     </section>
@@ -80,12 +96,12 @@
       <ImageStrip
         v-if="isMobile"
         src="/videos/pakistan-showreel-mobile.mp4"
-        poster="/images/pakistan/pakistan-rakaposhi.webp"
+        poster="/images/pakistan/pakistan-passu-cones.webp"
         alt="Pakistan Showreel" />
       <ImageStrip
         v-else
         src="/videos/pakistan-showreel.mp4"
-        poster="/images/pakistan/pakistan-rakaposhi.webp"
+        poster="/images/pakistan/pakistan-passu-cones.webp"
         alt="Pakistan Showreel" />
     </section>
 
@@ -131,7 +147,7 @@
 
     <ItineraryDay
       dayId="day3"
-      imageUrl="/images/pakistan/pakistan-fairy-meadows-road.webp"
+      imageUrl="/images/pakistan/pakistan-fairy-meadows-cabin.webp"
       imageAlt="Fairy Meadows, Diamer"
       overlayText="Fairy Meadows Road, <br /> Diamer"
       textPosition="right"
@@ -140,10 +156,11 @@
         <p>
           In the morning, embark on an off-road adventure in jeeps towards Fairy
           Meadows. It's such an adventure and has the most incredible mountain
-          views. Upon arrival at Fairy Meadows, hike through the stunning
-          grasslands to reach your campsite. Spend the evening around a
-          campfire, sharing stories and enjoying a hearty dinner with
-          breathtaking views of Nanga Parbat in the background.
+          views. Upon arrival at Fairy Meadows, hike towards our accommodation
+          for the night, beginning to see Nanga Parbat in the distance as we
+          ascend. Spend the evening around a campfire, sharing stories and
+          enjoying a hearty dinner with breathtaking views of Nanga Parbat in
+          the background.
         </p>
         <p>Accommodation in cabins at Fairy Meadows.</p>
       </template>
@@ -152,8 +169,8 @@
     <ItineraryDay
       dayId="day4"
       imageUrl="/images/pakistan/pakistan-nanga-parbat.webp"
-      imageAlt="Fairy Meadows, Diamer"
-      overlayText="Fairy Meadows, <br /> Diamer"
+      imageAlt="Nanga Parbat, Diamer"
+      overlayText="Nanga Parbat, <br /> Diamer"
       textPosition="left"
       title="Day 4 | Hike to Nanga Parbat Base Camp">
       <template #body>
@@ -171,8 +188,8 @@
     <ItineraryDay
       dayId="day5"
       imageUrl="/images/pakistan/pakistan-karimabad.webp"
-      imageAlt="Karimabad, Pakistan"
-      overlayText="Karimabad, <br /> Pakistan"
+      imageAlt="Karimabad, Hunza"
+      overlayText="Karimabad, <br /> Hunza"
       textPosition="right"
       title="Day 5 | Fairy Meadows to Karimabad">
       <template #body>
@@ -202,9 +219,9 @@
           gemstones and handicrafts. Visit the historic Baltit Fort to learn
           about the region's rich history and cultural heritage. Enjoy lunch in
           Karimabad before driving to the town of Minapin, the starting point
-          for your hike to Rakaposhi Hapakun. The hike offers stunning views of
-          Rakaposhi and the surrounding landscape. Arrive at Hakapun camp, where
-          you'll spend the night under the stars.
+          for your hike to Rakaposhi Hapakun campsite. The hike offers stunning
+          views of Rakaposhi and the surrounding mountains and glaciers. Arrive
+          at Hakapun camp, where you'll spend the night under the stars.
         </p>
         <p>Accommodation in tents at Hakapun camp.</p>
       </template>
@@ -213,19 +230,20 @@
     <ItineraryDay
       dayId="day7"
       imageUrl="/images/pakistan/pakistan-rakaposhi-basecamp.webp"
-      imageAlt="Rakpaoshi, Minapin"
+      imageAlt="Rakaposhi, Minapin"
       overlayText="Rakaposhi, <br /> Minapin"
       textPosition="right"
       title="Day 7 | Rakaposhi Base Camp and Eagle’s Nest">
       <template #body>
         <p>
           Begin the day with a hike to the Rakaposhi base camp, where you can
-          enjoy noodles and tea while taking in the breathtaking views. Explore
-          the glacier and hike up to a viewpoint for the most insane 360 view of
-          multiple huge mountains. After lunch, descend back to Minapin and
-          drive up to Eagle's Nest for a sunset viewpoint. Enjoy a BBQ and
-          campfire in the evening, drinking local spirit moonshine to celebrate,
-          surrounded by panoramic views of the towering mountains.
+          enjoy food and tea while taking in the breathtaking views. Explore the
+          glacier and hike up to an even higher viewpoint for the most insane
+          360 view of multiple peaks over 7000m. After lunch, descend back to
+          Minapin and drive up to Eagle's Nest for a sunset viewpoint. Enjoy a
+          BBQ with local Yak meat (vegan option available!) and campfire in the
+          evening, drinking local spirit moonshine to celebrate, surrounded by
+          panoramic views of the towering mountains as the sunsets.
         </p>
         <p>Accommodation in hotel at Eagle's Nest.</p>
       </template>
@@ -234,18 +252,18 @@
     <ItineraryDay
       dayId="day8"
       imageUrl="/images/pakistan/pakistan-attabad-lake.webp"
-      imageAlt="Attabad Lake, Pakistan"
-      overlayText="Attabad Lake, <br /> Pakistan"
+      imageAlt="Attabad Lake, Gojal"
+      overlayText="Attabad Lake, <br /> Gojal"
       textPosition="left"
       title="Day 8 | Attabad Lake and Baskochi Meadow">
       <template #body>
         <p>
-          Drive to Attabad Lake for lunch, followed by a scenic boat trip on the
-          turquoise waters. In the afternoon, hike at Baskochi Meadow, for the
-          best viewpoint down onto the bright blue lake. A short walk through
-          gorgeous meadows to your homestay for the night where you will meet
-          your local host family. Later, take a sunset hike up to Passu Cones
-          and Black Glacier viewpoint.
+          Drive to Attabad Lake for lunch, where we will have a scenic boat trip
+          on the turquoise waters. In the afternoon, hike at Baskochi Meadow,
+          for the best viewpoint down onto the bright blue lake. A short walk
+          through gorgeous meadows and we will arrive at our homestay for the
+          night where you will meet your local host family. Later, take a sunset
+          hike up to Passu Cones and Black Glacier viewpoint.
         </p>
         <p>Accommodation at a Gulkin homestay.</p>
       </template>
@@ -253,7 +271,7 @@
 
     <ItineraryDay
       dayId="day9"
-      imageUrl="/images/pakistan/pakistan-passu-cones.webp"
+      imageUrl="/images/pakistan/pakistan-passu-cones-2.webp"
       imageAlt="Passu Cones, Passu"
       overlayText="Passu Cones, <br /> Passu"
       textPosition="right"
@@ -280,10 +298,10 @@
       <template #body>
         <p>
           Depart from your homestay early in the morning and drive back to
-          Islamabad, which is a 16-hour journey. Along the way, stop at the
-          Three Mountains Junction View Point for a scenic break, as well as
-          various spots for food and rest. Reflect on your adventures during the
-          scenic drive through the mountainous terrain.
+          Islamabad. Along the way, stop at the Three Mountains Junction View
+          Point for a scenic break, as well as various spots for food and rest.
+          Reflect on your adventures during the scenic drive through the
+          mountainous terrain before having our final group dinner.
         </p>
         <p>Accommodation in Islamabad.</p>
       </template>
@@ -292,8 +310,8 @@
     <ItineraryDay
       dayId="day11"
       imageUrl="/images/pakistan/pakistan-plane.webp"
-      imageAlt="Islamabad, Pakistan"
-      overlayText="Islamabad, <br /> Pakistan"
+      imageAlt="Islamabad"
+      overlayText="Islamabad"
       textPosition="right"
       title="Day 11 | Farewell and Departure">
       <template #body>
@@ -333,74 +351,14 @@
         <CarouselsGallery
           :images="[
             {
-              src: '/images/pakistan/gallery/rakaposhi-roadside.webp',
-              alt: 'Rakaposhi Roadside',
-              subDescription: 'Beautiful roadside view of Rakaposhi',
-            },
-            {
-              src: '/images/pakistan/gallery/rakaposhi-view.webp',
-              alt: 'Rakaposhi View',
-              subDescription: 'Panoramic view of Rakaposhi',
-            },
-            {
-              src: '/images/pakistan/gallery/traditional-meal.webp',
-              alt: 'Traditional Meal',
-              subDescription: 'Delicious traditional Pakistani meal',
-            },
-            {
-              src: '/images/pakistan/gallery/attabad-lake-boat.webp',
-              alt: 'Attabad Lake Boat',
-              subDescription: 'Boating on Attabad Lake',
-            },
-            {
-              src: '/images/pakistan/gallery/passu-cones.webp',
-              alt: 'Passu Cones',
-              subDescription: 'Passu Cones',
-            },
-            {
               src: '/images/pakistan/gallery/attabad-lake-boat-2.webp',
-              alt: 'Attabad Lake Boat 2',
+              alt: 'Attabad Lake Boat',
               subDescription: 'Another view of boating on Attabad Lake',
             },
             {
-              src: '/images/pakistan/gallery/attabad-lake-pass-cones-view.webp',
-              alt: 'Attabad Lake Pass Cones View',
-              subDescription: 'View of Pass Cones from Attabad Lake',
-            },
-            {
-              src: '/images/pakistan/gallery/attabad-lake-topview.webp',
-              alt: 'Attabad Lake Topview',
-              subDescription: 'Top view of Attabad Lake',
-            },
-            {
-              src: '/images/pakistan/gallery/borith-lake.webp',
-              alt: 'Borith Lake',
-              subDescription: 'Serene view of Borith Lake',
-            },
-            {
-              src: '/images/pakistan/gallery/borith-lake-pedalo.webp',
-              alt: 'Borith Lake Pedalo',
-              subDescription: 'Pedalo on Borith Lake',
-            },
-            {
-              src: '/images/pakistan/gallery/chips-in-mountain-hut.webp',
-              alt: 'Chips in Mountain Hut',
-              subDescription: 'Enjoying chips in a cozy mountain hut',
-            },
-            {
-              src: '/images/pakistan/gallery/eagles-nest.webp',
-              alt: 'Eagles Nest',
-              subDescription: 'Stunning view from Eagles Nest',
-            },
-            {
-              src: '/images/pakistan/gallery/eagles-nest-viewpoint.webp',
-              alt: 'Eagles Nest Viewpoint',
-              subDescription: 'Viewpoint at Eagles Nest',
-            },
-            {
-              src: '/images/pakistan/gallery/fairy-meadows.webp',
-              alt: 'Fairy Meadows',
-              subDescription: 'Scenic view of Fairy Meadows',
+              src: '/images/pakistan/gallery/rakaposhi-roadside.webp',
+              alt: 'Rakaposhi Roadside',
+              subDescription: 'Beautiful roadside view of Rakaposhi',
             },
             {
               src: '/images/pakistan/gallery/fairy-meadows-cabins.webp',
@@ -408,59 +366,14 @@
               subDescription: 'Cabins at Fairy Meadows',
             },
             {
-              src: '/images/pakistan/gallery/fairy-meadows-goat.webp',
-              alt: 'Fairy Meadows Goat',
-              subDescription: 'Goat grazing in Fairy Meadows',
-            },
-            {
-              src: '/images/pakistan/gallery/fairy-meadows-jeep.webp',
-              alt: 'Fairy Meadows Jeep',
-              subDescription: 'Jeep ride to Fairy Meadows',
-            },
-            {
-              src: '/images/pakistan/gallery/fairy-meadows-jeeps.webp',
-              alt: 'Fairy Meadows Jeeps',
-              subDescription: 'Jeeps parked at Fairy Meadows',
-            },
-            {
-              src: '/images/pakistan/gallery/gulkin-homestay.webp',
-              alt: 'Gulkin Homestay',
-              subDescription: 'Homestay in Gulkin village',
+              src: '/images/pakistan/gallery/chips-in-mountain-hut.webp',
+              alt: 'Chips in Mountain Hut',
+              subDescription: 'Enjoying chips in a cozy mountain hut',
             },
             {
               src: '/images/pakistan/gallery/homestay-host-stara.webp',
-              alt: 'Homestay Host Stara',
-              subDescription: 'Friendly homestay host in Stara',
-            },
-            {
-              src: '/images/pakistan/gallery/hussaini-bridge.webp',
-              alt: 'Hussaini Bridge',
-              subDescription: 'Crossing the Hussaini Suspension Bridge',
-            },
-            {
-              src: '/images/pakistan/gallery/karimabad-accomodation.webp',
-              alt: 'Karimabad Accommodation',
-              subDescription: 'Accommodation in Karimabad',
-            },
-            {
-              src: '/images/pakistan/gallery/karimabad-dusk.webp',
-              alt: 'Karimabad Dusk',
-              subDescription: 'Beautiful dusk view in Karimabad',
-            },
-            {
-              src: '/images/pakistan/gallery/passu-cones.webp',
-              alt: 'Passu Cones',
-              subDescription: 'Iconic Passu Cones',
-            },
-            {
-              src: '/images/pakistan/gallery/PXL_20240627_063625090.webp',
-              alt: 'Mountain Landscape',
-              subDescription: 'Beautiful mountain landscape',
-            },
-            {
-              src: '/images/pakistan/gallery/rakaposhi-basecamp.webp',
-              alt: 'Rakaposhi Basecamp',
-              subDescription: 'Basecamp at Rakaposhi',
+              alt: 'Homestay Host',
+              subDescription: 'Out friendly homestay host Stara',
             },
             {
               src: '/images/pakistan/gallery/rakaposhi-glacier-view.webp',
@@ -468,9 +381,94 @@
               subDescription: 'View of Rakaposhi Glacier',
             },
             {
-              src: '/images/pakistan/gallery/rakaposhi-hakapun.webp',
-              alt: 'Rakaposhi Hakapun',
-              subDescription: 'Hakapun region near Rakaposhi',
+              src: '/images/pakistan/gallery/borith-lake.webp',
+              alt: 'Borith Lake',
+              subDescription: 'Serene view of Borith Lake',
+            },
+            {
+              src: '/images/pakistan/gallery/fairy-meadows-goat.webp',
+              alt: 'Fairy Meadows Goat',
+              subDescription: 'Goat grazing in Fairy Meadows',
+            },
+            {
+              src: '/images/pakistan/gallery/karimabad-dusk.webp',
+              alt: 'Karimabad Dusk',
+              subDescription: 'Dusk view in Karimabad',
+            },
+            {
+              src: '/images/pakistan/gallery/hussaini-bridge.webp',
+              alt: 'Hussaini Bridge',
+              subDescription: 'Crossing the Hussaini Suspension Bridge',
+            },
+            {
+              src: '/images/pakistan/gallery/attabad-lake-pass-cones-view.webp',
+              alt: 'Attabad Lake Passu Cones View',
+              subDescription: 'View of Passu Cones from Attabad Lake',
+            },
+            {
+              src: '/images/pakistan/gallery/rakaposhi-basecamp.webp',
+              alt: 'Rakaposhi Basecamp',
+              subDescription: 'Basecamp at Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/gallery/eagles-nest-viewpoint.webp',
+              alt: 'Eagles Nest Viewpoint',
+              subDescription: 'Viewpoint at Eagles Nest',
+            },
+            {
+              src: '/images/pakistan/gallery/fairy-meadows-jeeps.webp',
+              alt: 'Fairy Meadows Jeeps',
+              subDescription: 'Jeeps parked at Fairy Meadows',
+            },
+            {
+              src: '/images/pakistan/gallery/rakaposhi-view.webp',
+              alt: 'Rakaposhi View',
+              subDescription: 'Panoramic view of Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/gallery/fairy-meadows-jeep.webp',
+              alt: 'Fairy Meadows Jeep',
+              subDescription: 'Jeep ride to Fairy Meadows',
+            },
+            {
+              src: '/images/pakistan/gallery/gulkin-homestay.webp',
+              alt: 'Gulkin',
+              subDescription: 'Viewpoint from Gulkin village',
+            },
+            {
+              src: '/images/pakistan/gallery/attabad-lake-topview.webp',
+              alt: 'Baskochi Hike Viewpoint',
+              subDescription: 'View of Attabad Lake from Baskochi Meadow',
+            },
+            {
+              src: '/images/pakistan/gallery/borith-lake-pedalo.webp',
+              alt: 'Borith Lake Pedalo',
+              subDescription: 'Going for a Pedalo on Borith Lake',
+            },
+            {
+              src: '/images/pakistan/gallery/karimabad-accomodation.webp',
+              alt: 'Karimabad Accommodation',
+              subDescription: 'Out accommodation in Karimabad',
+            },
+            {
+              src: '/images/pakistan/gallery/traditional-meal.webp',
+              alt: 'Traditional Meal',
+              subDescription: 'Delicious traditional Pakistani meal',
+            },
+            {
+              src: '/images/pakistan/gallery/fairy-meadows.webp',
+              alt: 'Fairy Meadows',
+              subDescription: 'Scenic view of Fairy Meadows',
+            },
+            {
+              src: '/images/pakistan/gallery/attabad-lake-boat.webp',
+              alt: 'Attabad Lake Boat',
+              subDescription: 'Boating on Attabad Lake',
+            },
+            {
+              src: '/images/pakistan/gallery/rakaposhi-hakapun-camping-2.webp',
+              alt: 'Rakaposhi Hakapun Camping 2',
+              subDescription: 'Another view of camping at Rakaposhi Hakapun',
             },
             {
               src: '/images/pakistan/gallery/rakaposhi-hakapun-camping.webp',
@@ -478,9 +476,19 @@
               subDescription: 'Camping at Rakaposhi Hakapun',
             },
             {
-              src: '/images/pakistan/gallery/rakaposhi-hakapun-camping-2.webp',
-              alt: 'Rakaposhi Hakapun Camping 2',
-              subDescription: 'Another view of camping at Rakaposhi Hakapun',
+              src: '/images/pakistan/gallery/rakaposhi-hakapun.webp',
+              alt: 'Rakaposhi Hakapun',
+              subDescription: 'Hakapun campground on the way to Rakaposhi',
+            },
+            {
+              src: '/images/pakistan/gallery/passu-cones.webp',
+              alt: 'Passu Cones',
+              subDescription: 'Iconic Passu Cones',
+            },
+            {
+              src: '/images/pakistan/gallery/passu-cones.webp',
+              alt: 'Passu Cones',
+              subDescription: 'Popular viewpoint of the Passu Cones',
             },
           ]" />
       </div>
@@ -491,8 +499,8 @@
         <TextSectionLabel labelText="Included" />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-cover.webp"
-          imageAlt="Fairy Meadows, Pakistan"
-          overlayText="Fairy Meadows, <br /> Pakistan"
+          imageAlt="Karimabad, Hunza"
+          overlayText="Fairy Meadows, <br /> Hunza"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>What's Included</template>
@@ -577,8 +585,8 @@
               Yes, travel insurance is mandatory for our tour. It should cover
               medical expenses, trip cancellations, and any unforeseen events.
               We recommend purchasing comprehensive travel insurance to ensure a
-              safe and worry-free journey. We will require you to provide a
-              copy of your insurance ahead of the trip start date.
+              safe and worry-free journey. We will require you to provide a copy
+              of your insurance ahead of the trip start date.
             </p>
           </AccordionItem>
           <AccordionItem
@@ -670,9 +678,9 @@
       <LayoutGridContainer>
         <TextSectionLabel labelText="Leader" />
         <ImageWithTextOverlay
-          imageUrl="/images/tia.webp"
-          imageAlt="Marsur Rock, Skardu"
-          overlayText="Marsur Rock, <br /> Skardu"
+          imageUrl="/images/tia-passu.webp"
+          imageAlt="Passu Cones, Passu"
+          overlayText="Passu Cones, <br /> Passu"
           textPosition="left" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
           <template #title>Meet Your Trip Leader</template>
@@ -680,14 +688,17 @@
             <p class="bold name">Name: Tia</p>
             <p class="bold">From: Bristol, United Kingdom</p>
             <p>
-              Born and raised in the picturesque Hunza Valley, Aziz has a
-              profound connection to the rugged beauty of the Pakistani
-              mountains. With over a decade of experience as a professional
-              mountain guide, Aziz's extensive knowledge of the region's trails,
-              history, and culture makes him an invaluable companion for your
-              adventure. His passion for the great outdoors is matched only by
-              his dedication to ensuring every traveller experiences the
-              awe-inspiring landscapes safely and memorably.
+              Hey! I'm Tia, the girl behind @teetravels_ . I am a full time
+              traveller who is so passionate about being in the mountains and
+              hiking. I first fell in love with hiking on a trip to Central
+              America 2 years ago, I found hiking so healing and after
+              travelling to over 55 countries I have learnt I always feel the
+              happiest in nature. I have hiked in top mountain destinations like
+              Switzerland, Canada, Peru, Norway, Austria but none of them
+              compare to what I experienced when I travelled to Pakistan. The
+              scale of seeing a mountain over 8000m in person is indescribable,
+              plus the trails are so much quieter. It truly is a special place
+              and a mountain and adventure lovers dream.
             </p>
             <a
               href="https://instagram.com/teetravels_"
@@ -835,7 +846,7 @@ const { windowWidth, isMobile } = useWindowWidth();
 }
 
 .included .image {
-  height: 50vw;
+  height: 45vw;
 }
 
 .faq .paragraph-with-title:nth-of-type(1) {
@@ -846,15 +857,11 @@ const { windowWidth, isMobile } = useWindowWidth();
 .faq .accordion {
   grid-column: 6 / 17;
   grid-row: 2;
-  /*height: 40vw;*/
 }
 
-.guide .image {
-  height: 50vw;
-}
-
+.guide .image,
 .leader .image {
-  height: 45vw;
+  height: 50vw;
 }
 
 .name {

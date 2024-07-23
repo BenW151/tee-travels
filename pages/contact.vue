@@ -2,9 +2,9 @@
   <div class="contact">
     <Header
       imageUrl="/images/pakistan/pakistan-attabad-lake-2.webp"
-      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
+      imageAlt="Attabad Lake"
       title="Contact"
-      subtitle="Have a question? Let us know."
+      subtitle="Have a question? Let us know"
       headerClass="header-small"
       :pageIndexLabels="[
         { title: 'Email', link: 'mailto:contact@whynotadventures.co.uk' },

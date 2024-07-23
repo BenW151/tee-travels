@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pakistan/pakistan-passu-cones.webp"
-      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
+      imageAlt="Passu Cones"
       title="Destinations"
       subtitle="Where Will You Go?"
       headerClass="header-small">

@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
-      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
+      imageAlt="View of Rakaposhi from Karimabad"
       title="Why Not Adventures"
       subtitle="Get Off The Beaten Track"
       headerClass="header-small">
@@ -31,9 +31,9 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/pakistan/pakistan-cover.webp"
-            imageAlt="Fairy Meadows, Pakistan"
-            overlayText="Fairy Meadows, <br /> Pakistan"
+            imageUrl="/images/pakistan/pakistan-attabad-lake.webp"
+            imageAlt="Attabad Lake, Pakistan"
+            overlayText="Attabad Lake, <br /> Pakistan"
             textPosition="right" />
         </LayoutGridContainer>
       </section>
@@ -69,15 +69,13 @@
             <template #body>
               <p>
                 Hi, I'm Tia, the founder of Why Not Adventures. Travelling has
-                always been my passion, and I've dedicated my life to exploring
-                the world and uncovering its hidden gems. With years of
-                experience in the travel industry, I created Why Not Adventures
-                to share my love for adventure and inspire others to embrace the
-                spirit of "why not" in their own journeys. Whether it's hiking
-                through lush forests, exploring vibrant cultures, or simply
-                soaking in breathtaking landscapes, I believe in making every
-                trip a memorable and transformative experience. Join me on this
-                incredible journey and let's discover the world together!
+                always been my passion and I've dedicated my life to exploring
+                the world. I love adventure, being in nature, exploring off the
+                beaten track and learning about local life in different
+                countries. After years of experience travelling, I decided to
+                create Why Not Adventures, to share my love for my favourite
+                travel destinations and bring together like-minded travellers
+                from around the world.
               </p>
               <a
                 href="https://instagram.com/teetravels_"
@@ -89,9 +87,9 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/tia.webp"
-            imageAlt="Marsur Rock, Pakistan"
-            overlayText="Marsur Rock, <br /> Pakistan"
+            imageUrl="/images/tia-passu.webp"
+            imageAlt="Passu Cones, Pakistan"
+            overlayText="Passu Cones, <br /> Pakistan"
             textPosition="left" />
         </LayoutGridContainer>
       </section>

@@ -2,7 +2,7 @@
   <div>
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
-      imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
+      imageAlt="View of Rakaposhi from Karimabad"
       title="Booking Confirmed"
       subtitle="You're in!"
       headerClass="header-small">
