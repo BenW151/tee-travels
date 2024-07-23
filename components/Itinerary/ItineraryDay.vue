@@ -1,14 +1,19 @@
 <template>
   <section :class="['itinerary-day', textPosition]" :id="dayId">
     <LayoutGridContainer>
-      <TextSectionLabel v-if="dayId === 'day1'" labelText="Itinerary" id="itinerary-detailed" />
+      <TextSectionLabel
+        v-if="dayId === 'day1'"
+        labelText="Itinerary"
+        id="itinerary-detailed" />
+      <h3 v-if="dayId === 'day1'" class="heading">Itinerary</h3>
       <ImageWithTextOverlay
         :imageUrl="imageUrl"
         :imageAlt="imageAlt"
         :overlayText="overlayText"
-        :textPosition="imageTextPosition"
-      />
-      <TextParagraphWithTitle :subtitleTag="subtitleTag" :textPosition="textPosition">
+        :textPosition="imageTextPosition" />
+      <TextParagraphWithTitle
+        :subtitleTag="subtitleTag"
+        :textPosition="textPosition">
         <template #title>{{ title }}</template>
         <template #body>
           <slot name="body"></slot>
@@ -20,48 +25,57 @@
 
 <script>
 export default {
-  name: 'ItineraryDay',
+  name: "ItineraryDay",
   props: {
     dayId: {
       type: String,
-      required: true
+      required: true,
     },
     imageUrl: {
       type: String,
-      required: true
+      required: true,
     },
     imageAlt: {
       type: String,
-      required: true
+      required: true,
     },
     overlayText: {
       type: String,
-      required: true
+      required: true,
     },
     textPosition: {
       type: String,
-      default: 'left',
-      validator: value => ['left', 'right'].includes(value)
+      default: "left",
+      validator: (value) => ["left", "right"].includes(value),
     },
     subtitleTag: {
       type: String,
-      default: 'h4'
+      default: "h4",
     },
     title: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     imageTextPosition() {
-      return this.textPosition === 'left' ? 'right' : 'left';
-    }
-  }
-}
+      return this.textPosition === "left" ? "right" : "left";
+    },
+  },
+};
 </script>
 
-
 <style scoped>
+.heading {
+  grid-column: 3 / 10;
+  grid-row-start: 1;
+}
+
+#day1 .paragraph-with-title,
+#day1 .image {
+  grid-row-start: 2;
+}
+
 .left .paragraph-with-title {
   grid-column: 3 / 10;
   grid-row-start: 1;
@@ -85,8 +99,16 @@ export default {
 }
 
 @media (max-width: 767px) {
-  .right .image, .left .image {
+  .right .image,
+  .left .image {
     height: 60vw;
+  }
+
+  .heading,
+  #day1 .paragraph-with-title,
+  #day1 .image {
+    grid-column: 1 / 7;
+    grid-row-start: auto;
   }
 }
 </style>
