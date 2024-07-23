@@ -3,7 +3,7 @@
     <LayoutGridContainer>
       <TextSectionLabel
         v-if="dayId === 'day1'"
-        labelText="Itinerary"
+        labelText="The Plan"
         id="itinerary-detailed" />
       <h3 v-if="dayId === 'day1'" class="heading">Itinerary</h3>
       <ImageWithTextOverlay

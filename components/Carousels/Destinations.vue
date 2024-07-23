@@ -95,7 +95,7 @@ const images = [
   {
     src: "/images/montenegro-hiking/montenegro-hiking-cover.webp",
     alt: "Montenegro",
-    subDescription: "Hiking in Durmitor + Lovcen National Park",
+    subDescription: "Hiking in Durmitor + The Accursed Mountains",
     nightsPrice: "Coming Soon",
     link: "/destinations",
     customClass: "coming-soon",

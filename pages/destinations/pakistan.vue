@@ -38,8 +38,9 @@
               Next, we'll make our way to Karimabad, home to the historic Baltit
               Fort and bustling local markets. From there, trek to Rakaposhi
               base camp where you will see the impressive glacier and camp under
-              the stars. Take scenic boat trips on Attabad Lake, hike up to
-              Basckochi Meadows, Passu Cones viewpoint, glacier and bridge!
+              the stars. Take a scenic boat trip on Attabad Lake, hike up to
+              Basckochi Meadows, Passu Cones viewpoint, Passu glacier and brave
+              the Passu bridge!
             </p>
 
             <p>
@@ -187,7 +188,7 @@
 
     <ItineraryDay
       dayId="day5"
-      imageUrl="/images/pakistan/pakistan-karimabad.webp"
+      imageUrl="/images/pakistan/pakistan-altit-fort.webp"
       imageAlt="Karimabad, Hunza"
       overlayText="Karimabad, <br /> Hunza"
       textPosition="right"
@@ -299,8 +300,8 @@
         <p>
           Depart from your homestay early in the morning and drive back to
           Islamabad. Along the way, stop at the Three Mountains Junction View
-          Point for a scenic break, as well as various spots for food and rest.
-          Reflect on your adventures during the scenic drive through the
+          Point where you can see the three tallest mountain ranges in the
+          world. Reflect on your adventures during the scenic drive through the
           mountainous terrain before having our final group dinner.
         </p>
         <p>Accommodation in Islamabad.</p>
@@ -326,7 +327,7 @@
 
     <section class="gallery">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Gallery" />
+        <TextSectionLabel labelText="Highlights" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
           <template #title>Gallery</template>
           <template #body>
@@ -350,10 +351,10 @@
       <div class="container">
         <CarouselsGallery
           :images="[
-            {
+           {
               src: '/images/pakistan/gallery/attabad-lake-boat-2.webp',
               alt: 'Attabad Lake Boat',
-              subDescription: 'Another view of boating on Attabad Lake',
+              subDescription: 'Boat trip on attabad lake',
             },
             {
               src: '/images/pakistan/gallery/rakaposhi-roadside.webp',
@@ -362,58 +363,58 @@
             },
             {
               src: '/images/pakistan/gallery/fairy-meadows-cabins.webp',
-              alt: 'Fairy Meadows Cabins',
+              alt: 'Fairy Meadows Accommodation',
               subDescription: 'Cabins at Fairy Meadows',
             },
             {
               src: '/images/pakistan/gallery/chips-in-mountain-hut.webp',
-              alt: 'Chips in Mountain Hut',
-              subDescription: 'Enjoying chips in a cozy mountain hut',
+              alt: 'Mountain hut en route to Nanga Parbat Basecamp',
+              subDescription: 'Enjoying homemade chips in a cozy mountain hut',
             },
             {
               src: '/images/pakistan/gallery/naltar-goat.webp',
-              alt: 'Naltar Goat',
-              subDescription: 'A goat in the Naltar Valley',
+              alt: 'Cute goat en route to Rakaposhi Base Camp',
+              subDescription: 'So many cute animals in the mountains',
             },
             {
               src: '/images/pakistan/gallery/playing-music.webp',
-              alt: 'Playing Music',
+              alt: 'Playing Music at a local restaurant',
               subDescription: 'Our local guide playing traditional music',
             },
             {
               src: '/images/pakistan/gallery/shispare-mountain.webp',
               alt: 'Shispare Mountain',
-              subDescription: 'Stunning view of Shispare Mountain',
+              subDescription: 'View on hike down from Rakaposhi',
             },
             {
               src: '/images/pakistan/gallery/woman-run-restaurant.webp',
               alt: 'Woman Run Restaurant',
-              subDescription: 'A cozy restaurant run by a local woman',
+              subDescription: 'My favourite restaurant in Karimabad run by a local woman',
             },
             {
               src: '/images/pakistan/gallery/diran-peak.webp',
               alt: 'Diran Peak',
-              subDescription: 'Majestic view of Diran Peak',
+              subDescription: 'Viewpoint of Diran Peak (7266m)from Rakaposhi hike',
             },
             {
               src: '/images/pakistan/gallery/hakapun-tea.webp',
               alt: 'Tea at Hakapun',
-              subDescription: 'Enjoying a cup of tea at Hakapun',
+              subDescription: 'Enjoying fresh tea at HakapunCamp',
             },
             {
               src: '/images/pakistan/gallery/hand-weaving-shop.webp',
               alt: 'Hand Weaving Shop',
-              subDescription: 'A shop showcasing traditional hand weaving',
+              subDescription: 'A shop showcasing traditional crafts',
             },
             {
               src: '/images/pakistan/gallery/karimabad-view.webp',
               alt: 'Karimabad View',
-              subDescription: 'Panoramic view of Karimabad town',
+              subDescription: 'Panoramic view of Rakaposhi from our accomodation',
             },
             {
               src: '/images/pakistan/gallery/homestay-host-stara.webp',
               alt: 'Homestay Host',
-              subDescription: 'Out friendly homestay host Stara',
+              subDescription: 'Out friendly homestay host Sitara',
             },
             {
               src: '/images/pakistan/gallery/rakaposhi-glacier-view.webp',
@@ -422,18 +423,18 @@
             },
             {
               src: '/images/pakistan/gallery/borith-lake.webp',
-              alt: 'Borith Lake',
-              subDescription: 'Serene view of Borith Lake',
+              alt: 'Borith Lake looking onto Shispare Peak (7611m)',
+              subDescription: 'A beautiful lake to swim and kayak',
             },
             {
               src: '/images/pakistan/gallery/fairy-meadows-goat.webp',
-              alt: 'Fairy Meadows Goat',
-              subDescription: 'Goat grazing in Fairy Meadows',
+              alt: 'Fairy Meadows reflection point',
+              subDescription: 'So many cute goats,horses and donkeys at fairy meadows',
             },
             {
               src: '/images/pakistan/gallery/karimabad-dusk.webp',
               alt: 'Karimabad Dusk',
-              subDescription: 'Dusk view in Karimabad',
+              subDescription: 'Rakaposhi glowing at night',
             },
             {
               src: '/images/pakistan/gallery/hussaini-bridge.webp',
@@ -453,17 +454,17 @@
             {
               src: '/images/pakistan/gallery/eagles-nest-viewpoint.webp',
               alt: 'Eagles Nest Viewpoint',
-              subDescription: 'Viewpoint at Eagles Nest',
+              subDescription: 'Sunset 360 viewpoint over the mountains',
             },
             {
               src: '/images/pakistan/gallery/fairy-meadows-jeeps.webp',
               alt: 'Fairy Meadows Jeeps',
-              subDescription: 'Jeeps parked at Fairy Meadows',
+              subDescription: 'Off road jeeps to fairy meadows',
             },
             {
               src: '/images/pakistan/gallery/rakaposhi-view.webp',
               alt: 'Rakaposhi View',
-              subDescription: 'Panoramic view of Rakaposhi',
+              subDescription: 'Highest viewpoint, extra hike from basecamp',
             },
             {
               src: '/images/pakistan/gallery/fairy-meadows-jeep.webp',
@@ -472,7 +473,7 @@
             },
             {
               src: '/images/pakistan/gallery/gulkin-homestay.webp',
-              alt: 'Gulkin',
+              alt: 'Walk to homestay',
               subDescription: 'Viewpoint from Gulkin village',
             },
             {
@@ -525,22 +526,18 @@
               alt: 'Passu Cones',
               subDescription: 'Iconic Passu Cones',
             },
-            {
-              src: '/images/pakistan/gallery/passu-cones.webp',
-              alt: 'Passu Cones',
-              subDescription: 'Popular viewpoint of the Passu Cones',
-            },
+
           ]" />
       </div>
     </section>
 
     <section class="text-left included" id="included">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Included" />
+        <TextSectionLabel labelText="Inclusions" />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-cover.webp"
           imageAlt="Karimabad, Hunza"
-          overlayText="Fairy Meadows, <br /> Hunza"
+          overlayText="Karimabad, <br /> Hunza"
           textPosition="right" />
         <TextParagraphWithTitle subtitleTag="h3">
           <template #title>What's Included</template>
@@ -689,18 +686,16 @@
             <p class="bold name">Name: Aziz</p>
             <p class="bold">From: Karimabad, Hunza Valley, Pakistan</p>
             <p>
-              Born and raised in the picturesque Hunza Valley, Aziz has a
-              profound connection to the rugged beauty of the Pakistani
-              mountains. With over a decade of experience as a professional
-              mountain guide, Aziz's extensive knowledge of the region's trails,
-              history, and culture makes him an invaluable companion for your
-              adventure. His passion for the great outdoors is matched only by
-              his dedication to ensuring every traveller experiences the
-              awe-inspiring landscapes safely and memorably. Fluent in English,
-              Urdu, and the local Burushaski language, Aziz's friendly and
-              approachable demeanour makes him a favourite among tourists. When
-              he's not guiding expeditions, Aziz enjoys playing the Rubab, and
-              sharing stories of his adventures over a warm cup of chai.
+              Meet Aziz, a true local from the stunning Hunza Valley. Growing up
+              surrounded by the majestic Pakistani mountains, he's got a deep
+              love for the area's rugged beauty. With over five years of guiding
+              under his belt, Aziz knows every trail, bit of history, and
+              cultural detail like the back of his hand. He's all about making
+              sure you have a safe and unforgettable adventure. Plus, he speaks
+              English, Urdu, and the local language in Hunza, Burushaski. Aziz's
+              friendly vibe will make you feel right at home. When he's not
+              leading treks, he's playig his Rubab or swapping adventure tales
+              over a warm cup of chai.
             </p>
             <a
               href="https://instagram.com/azizkhan45050"

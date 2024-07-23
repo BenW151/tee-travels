@@ -24,9 +24,7 @@
                 to make sure these trips were affordable for everyone. I was fed
                 up of seeing overpriced trips so I have curated all these trips
                 from scratch from my first hand experience of travelling to
-                ensure the best value and itinerary. I created Why Not
-                Adventures to share my love for adventure and inspire others to
-                embrace the spirit of "why not?" in their own journeys.
+                ensure the best value and itinerary.
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -45,7 +43,7 @@
             <template #title>Destinations</template>
             <template #body>
               <p>
-                Embark on an adventure and discover the world's most captivating
+                Embark on an adventure and discover some of my favourite
                 destinations. Each location offers unique experiences and
                 unforgettable memories. Check out our diverse range of tours and
                 find your next great escape!
@@ -147,8 +145,17 @@
               </p>
             </AccordionItem>
             <AccordionItem
-              title="Can I do any of your trips independently?"
+              title="Can you cater for dietary requirements?"
               index="5">
+              <p>
+                Yes! I am vegan myself and am aware of how difficult it can be
+                finding food which fits your dietary needs. We will absolutely
+                strive to ensure that any requirements are met.
+              </p>
+            </AccordionItem>
+            <AccordionItem
+              title="Can I do any of your trips independently?"
+              index="6">
               <p>
                 Absolutely! Yes, you can embark on our trips independently. We
                 offer bespoke tours using our trusted guides. Simply get in
@@ -161,7 +168,7 @@
                 >.
               </p>
             </AccordionItem>
-            <AccordionItem title="Any other questions?" index="6">
+            <AccordionItem title="Any other questions?" index="7">
               <p>
                 Get in touch with us via the
                 <NuxtLink
