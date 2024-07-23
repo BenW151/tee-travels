@@ -77,7 +77,7 @@ const submitForm = async () => {
   message.value = 'Submitting...'
 
   try {
-    const response = await fetch('https://contact-form.whynotadventures.co.uk/', {
+    const response = await fetch('https://bold-snowflake-e1c9.benward151.workers.dev/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -91,11 +91,11 @@ const submitForm = async () => {
       message.value = `Form submitted, we will get back to you as soon as possible.`
       formData.value = { ...initialFormData } // Reset form fields
     } else {
-      message.value = `Failed to submit form: ${result.message}`
+      message.value = `Failed to submit form: ${result.message}. Please send us a direct email at contact@whynotadventures.com.`
       console.error('Error response from server:', result.message)
     }
   } catch (error) {
-    message.value = `An error occurred: ${error.message}`
+    message.value = `An error occurred: ${error.message}. Please send us a direct email at contact@whynotadventures.com.`
     console.error('Fetch error:', error)
   }
 }
