@@ -371,6 +371,46 @@
               subDescription: 'Enjoying chips in a cozy mountain hut',
             },
             {
+              src: '/images/pakistan/gallery/naltar-goat.webp',
+              alt: 'Naltar Goat',
+              subDescription: 'A goat in the Naltar Valley',
+            },
+            {
+              src: '/images/pakistan/gallery/playing-music.webp',
+              alt: 'Playing Music',
+              subDescription: 'Our local guide playing traditional music',
+            },
+            {
+              src: '/images/pakistan/gallery/shispare-mountain.webp',
+              alt: 'Shispare Mountain',
+              subDescription: 'Stunning view of Shispare Mountain',
+            },
+            {
+              src: '/images/pakistan/gallery/woman-run-restaurant.webp',
+              alt: 'Woman Run Restaurant',
+              subDescription: 'A cozy restaurant run by a local woman',
+            },
+            {
+              src: '/images/pakistan/gallery/diran-peak.webp',
+              alt: 'Diran Peak',
+              subDescription: 'Majestic view of Diran Peak',
+            },
+            {
+              src: '/images/pakistan/gallery/hakapun-tea.webp',
+              alt: 'Tea at Hakapun',
+              subDescription: 'Enjoying a cup of tea at Hakapun',
+            },
+            {
+              src: '/images/pakistan/gallery/hand-weaving-shop.webp',
+              alt: 'Hand Weaving Shop',
+              subDescription: 'A shop showcasing traditional hand weaving',
+            },
+            {
+              src: '/images/pakistan/gallery/karimabad-view.webp',
+              alt: 'Karimabad View',
+              subDescription: 'Panoramic view of Karimabad town',
+            },
+            {
               src: '/images/pakistan/gallery/homestay-host-stara.webp',
               alt: 'Homestay Host',
               subDescription: 'Out friendly homestay host Stara',
