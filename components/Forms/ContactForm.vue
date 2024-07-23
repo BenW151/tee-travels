@@ -77,7 +77,7 @@ const submitForm = async () => {
   message.value = 'Submitting...'
 
   try {
-    const response = await fetch('https://bold-snowflake-e1c9.benward151.workers.dev/', {
+    const response = await fetch('https://contact-form.whynotadventures.co.uk/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
