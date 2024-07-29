@@ -700,13 +700,6 @@
               leading treks, he's playig his Rubab or swapping adventure tales
               over a warm cup of chai.
             </p>
-            <a
-              href="https://instagram.com/azizkhan45050"
-              aria-label="Instagram"
-              class="underline-out-icon link"
-              target="_blank"
-              ><LucideExternalLink />View Instagram</a
-            >
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
