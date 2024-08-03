@@ -144,7 +144,7 @@
               Privacy Policy. If you have any questions or concerns regarding
               our Privacy Policy, please contact us at
               <a
-                href="mailto:myemail@email.com"
+                href="mailto:contact@whynotadventures.co.uk"
                 aria-label="email address"
                 class="underline-out"
                 >contact@whynotadventures.co.uk</a
