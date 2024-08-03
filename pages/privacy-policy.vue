@@ -152,7 +152,6 @@
             </p>
           </template>
         </TextParagraphWithTitle>
-        <AnalyticsUpdate />
       </LayoutGridContainer>
     </section>
   </div>

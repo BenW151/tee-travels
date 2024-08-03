@@ -49,7 +49,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    pageTransition: { name: "page", mode: "out", appear: true },
+    pageTransition: { name: "page", appear: true },
     head: {
       title: "Why Not Adventures",
       charset: "utf-8",

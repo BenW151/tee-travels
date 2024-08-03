@@ -1,0 +1,114 @@
+<template>
+  <div class="item newsletter">
+    <div>
+      <h4>Unsubscribe</h4>
+      <p class="sign-up">
+        Enter your email below to be removed from our mailing list.
+      </p>
+      <form @submit.prevent="submitForm" autocomplete="on">
+        <label class="form-email">
+          <input
+            type="email"
+            v-model="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Email"
+            required />
+        </label>
+        <button class="link" type="submit">Submit</button>
+        <p class="message">{{ message }}</p>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const { windowWidth, isMobile } = useWindowWidth();
+
+const email = ref("");
+const message = ref("");
+
+const submitForm = async () => {
+  message.value = "Submitting...";
+
+  try {
+    const response = await fetch(
+      "https://why-not-adventures-newsletter-unsubscribe.benward151.workers.dev",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({ email: email.value }),
+      }
+    );
+
+    const result = await response.json();
+
+    if (response.ok) {
+      message.value = `Email successfully submitted. Pease allow 24 hours for removal to complete.`;
+    } else {
+      message.value = `Failed to submit email: ${result.message}`;
+      console.error("Error response from server:", result.message);
+    }
+  } catch (error) {
+    message.value = `An error occurred: ${error.message}`;
+    console.error("Fetch error:", error);
+  }
+};
+</script>
+
+<style scoped>
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-grey);
+  border-radius: 0;
+  color: var(--font-color-primary);
+  background-color: transparent;
+  position: relative;
+  padding-bottom: var(--spacing-1);
+  width: 70%;
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-XS);
+}
+
+textarea {
+  height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid var(--color-black);
+}
+
+form button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: var(--spacing-3);
+}
+
+.sign-up,
+.message {
+  opacity: var(--opacity);
+}
+
+.message {
+  margin-top: var(--spacing-1);
+}
+
+@media (max-width: 767px) {
+  .newsletter {
+    grid-column: 1 / 7;
+  }
+
+  input,
+  textarea {
+    width: 70vw;
+  }
+}
+</style>
