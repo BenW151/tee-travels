@@ -1,10 +1,10 @@
 <template>
   <div class="item pakistan-presale">
     <div>
-      <h4 class="presale">Sign Up to Presale</h4>
+      <h4 class="presale">Currently Sold Out</h4>
       <p class="sign-up">
-        Only 12 spots available—sign up now to receive <br />
-        the payment link 48 hours before everyone else!
+        Unfortunately, all spaces on this trip are sold out. Sign<br />
+        up to the newsletter below to be notified on future trips.
       </p>
       <form @submit.prevent="submitForm" autocomplete="on">
         <label class="form-email">
@@ -24,40 +24,39 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const { windowWidth, isMobile } = useWindowWidth()
+const { windowWidth, isMobile } = useWindowWidth();
 
-const email = ref('')
-const message = ref('')
+const email = ref("");
+const message = ref("");
 
 const submitForm = async () => {
-  message.value = 'Submitting...'
+  message.value = "Submitting...";
 
   try {
-    const response = await fetch('https://newsletter.whynotadventures.co.uk/', {
-      method: 'POST',
+    const response = await fetch("https://newsletter.whynotadventures.co.uk/", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: new URLSearchParams({ email: email.value })
-    })
+      body: new URLSearchParams({ email: email.value }),
+    });
 
-    const result = await response.json()
+    const result = await response.json();
 
     if (response.ok) {
-      message.value = `Email successfully submitted.`
+      message.value = `Email successfully submitted.`;
     } else {
-      message.value = `Failed to submit email: ${result.message}`
-      console.error('Error response from server:', result.message)
+      message.value = `Failed to submit email: ${result.message}`;
+      console.error("Error response from server:", result.message);
     }
   } catch (error) {
-    message.value = `An error occurred: ${error.message}`
-    console.error('Fetch error:', error)
+    message.value = `An error occurred: ${error.message}`;
+    console.error("Fetch error:", error);
   }
-}
+};
 </script>
-
 
 <style scoped>
 input,
@@ -91,7 +90,8 @@ form button {
   margin-left: var(--spacing-3);
 }
 
-.sign-up, .message {
+.sign-up,
+.message {
   opacity: var(--opacity);
 }
 

@@ -82,8 +82,11 @@
           ]" />
 
         <ListsDefaultList
+          class="dates"
           title="Upcoming Dates"
-          :items="[{ id: 1, text: '16th - 26th May 2025' }]" />
+          :items="[
+            { id: 1, text: 'SOLD OUT: 16th - 26th May 2025.' },
+          ]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
           imageUrl="/images/pakistan/pakistan-nanga-parbat.webp"
