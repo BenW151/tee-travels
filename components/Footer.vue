@@ -1,7 +1,7 @@
 <template>
   <footer ref="footer">
     <LayoutGridContainer>
-      <div :class="{ 'nav-items': true, open: isMenuOpen }">
+      <div :class="{ 'nav-items': true }">
         <NuxtLink
           class="nav-item"
           to="/"
