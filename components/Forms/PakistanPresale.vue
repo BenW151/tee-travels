@@ -1,10 +1,15 @@
 <template>
   <div class="item pakistan-presale">
     <div>
-      <h4 class="presale">Currently Sold Out</h4>
-      <p class="sign-up">
+      <!--<h4 class="presale">Currently Sold Out</h4>-->
+      <h4 class="presale">Sign Up to Presale</h4>
+      <!--<p class="sign-up">
         Unfortunately, all spaces on this trip are sold out. Sign<br />
         up to the newsletter below to be notified on future trips.
+      </p>-->
+      <p class="sign-up">
+        Only 12 spots available—sign up now to receive <br />
+        the payment link 48 hours before everyone else!
       </p>
       <form @submit.prevent="submitForm" autocomplete="on">
         <label class="form-email">
