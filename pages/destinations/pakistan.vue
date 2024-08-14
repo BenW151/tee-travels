@@ -85,8 +85,7 @@
           class="dates"
           title="Upcoming Dates"
           :items="[
-            { id: 1, text: 'SOLD OUT: 16th - 26th May 2025.' },
-            { id: 2, text: '29th May - 8th June 2025.' },
+            { id: 1, text: 'All Upcoming Trips are Sold Out' },
           ]" />
         <FormsPakistanPresale />
         <ImageWithTextOverlay
