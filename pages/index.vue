@@ -13,7 +13,10 @@
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>Why Choose Why Not?</template>
+            <template #title
+              >Why Choose<br />
+              Why Not?</template
+            >
             <template #body>
               <p>
                 After years of travelling, it became clear to me that my best
