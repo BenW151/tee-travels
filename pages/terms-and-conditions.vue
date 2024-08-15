@@ -228,6 +228,14 @@
             <h4>9. Tour Participation</h4>
 
             <p>
+              Participants must be between the ages of 18 and 40 at the time of
+              the tour's Departure Date. By booking a tour with Why Not
+              Adventures, you confirm that you meet this age requirement. We
+              reserve the right to verify your age and to decline participation
+              if this condition is not met.
+            </p>
+
+            <p>
               Participants must be in good health and physically able to
               participate in the tour activities.
             </p>
