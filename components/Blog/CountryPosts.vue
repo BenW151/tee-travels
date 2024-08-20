@@ -39,7 +39,7 @@ const { data: countryPosts } = await useAsyncData(
       (post) =>
         post.country &&
         post.country.toLowerCase() === props.country.toLowerCase() &&
-        !post._path.includes('destinations') // Exclude items from the 'destinations' directory
+        !post._path.includes("destinations") // Exclude items from the 'destinations' directory
     );
 
     return filteredContent;
@@ -50,7 +50,7 @@ const { data: countryPosts } = await useAsyncData(
 <style scoped>
 .post-title {
   font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   margin-right: auto;
 }
 

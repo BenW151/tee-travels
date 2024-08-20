@@ -1,9 +1,6 @@
 <template>
   <div
-    class="item image image-text-overlay rellax"
-    v-rellax
-    :data-rellax-percentage="rellaxPercentage"
-    :data-rellax-speed="rellaxSpeed">
+    class="item image image-text-overlay">
     <div :class="['text-wrapper', textPosition]">
       <h4 v-html="overlayText"></h4>
     </div>
@@ -31,17 +28,10 @@ const props = defineProps({
     type: String,
     default: "left", // Default position of the text overlay
   },
-  rellaxPercentage: {
-    type: String,
-    default: "0.6", // Default value for rellax effect
-  },
 });
 
 const { windowWidth, isMobile } = useWindowWidth();
 
-const rellaxSpeed = computed(() => {
-  return isMobile.value ? "0" : "1";
-});
 </script>
 
 <style scoped>

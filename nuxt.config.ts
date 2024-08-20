@@ -29,7 +29,11 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      "Roboto Slab": {
+      "Lora": {
+        wght: [300, 400, 500, 600, 700],
+        ital: [100, 400],
+      },
+      "Poppins": {
         wght: [300, 400, 500, 600, 700],
         ital: [100, 400],
       },

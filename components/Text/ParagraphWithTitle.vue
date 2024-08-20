@@ -27,7 +27,7 @@ const props = defineProps({
   },
   useTextReveal: {
     type: Boolean,
-    default: true, // Use TextReveal by default
+    default: false, // Use TextReveal by default
   },
   textPosition: {
     type: String,

@@ -50,7 +50,7 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 <style scoped>
 .destination-title {
   font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   margin-right: auto;
 }
 

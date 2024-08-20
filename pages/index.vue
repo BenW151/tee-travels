@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="View of Rakaposhi from Karimabad"
       title="Tee Travels"
       subtitle="Get Off The Beaten Track"
@@ -9,6 +9,15 @@
     </Header>
 
     <main>
+      <section class="lead-text">
+        <LayoutGridContainer>
+          <TextColorOnScroll tag="h3" class="item">
+            Join Us on a Journey to Explore the Globe's Most Captivating
+            Corners, Uncovering Unseen Beauty and Unique Experiences.
+          </TextColorOnScroll>
+        </LayoutGridContainer>
+      </section>
+
       <section class="about text-left">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
@@ -280,6 +289,15 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 .carousel .container {
   padding-top: 0;
+}
+
+.lead-text .color-reveal {
+  font-size: var(--font-size-M);
+}
+
+.lead-text .item,
+.lead-text p {
+  grid-column: 2 / 16;
 }
 
 @media (max-width: 767px) {

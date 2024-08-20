@@ -61,44 +61,47 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const initialFormData = {
-  name: '',
-  email: '',
-  destination: '',
-  message: ''
-}
+  name: "",
+  email: "",
+  destination: "",
+  message: "",
+};
 
-const formData = ref({ ...initialFormData })
-const message = ref('')
+const formData = ref({ ...initialFormData });
+const message = ref("");
 
 const submitForm = async () => {
-  message.value = 'Submitting...'
+  message.value = "Submitting...";
 
   try {
-    const response = await fetch('https://contact-form.whynotadventures.co.uk/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData.value)
-    })
+    const response = await fetch(
+      "https://contact-form.whynotadventures.co.uk/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData.value),
+      }
+    );
 
-    const result = await response.json()
+    const result = await response.json();
 
     if (response.ok) {
-      message.value = `Form submitted, we will get back to you as soon as possible.`
-      formData.value = { ...initialFormData } // Reset form fields
+      message.value = `Form submitted, we will get back to you as soon as possible.`;
+      formData.value = { ...initialFormData }; // Reset form fields
     } else {
-      message.value = `Failed to submit form: ${result.message}. Please send us a direct email at contact@whynotadventures.com.`
-      console.error('Error response from server:', result.message)
+      message.value = `Failed to submit form: ${result.message}. Please send us a direct email at contact@whynotadventures.com.`;
+      console.error("Error response from server:", result.message);
     }
   } catch (error) {
-    message.value = `An error occurred: ${error.message}. Please send us a direct email at contact@whynotadventures.com.`
-    console.error('Fetch error:', error)
+    message.value = `An error occurred: ${error.message}. Please send us a direct email at contact@whynotadventures.com.`;
+    console.error("Fetch error:", error);
   }
-}
+};
 </script>
 
 <style scoped>
@@ -114,7 +117,7 @@ textarea {
   padding-bottom: var(--spacing-3);
   margin-bottom: var(--spacing-4);
   width: 100%;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-tertiary);
   font-size: var(--font-size-XS);
 }
 

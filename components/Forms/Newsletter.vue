@@ -23,38 +23,38 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const { windowWidth, isMobile } = useWindowWidth()
+const { windowWidth, isMobile } = useWindowWidth();
 
-const email = ref('')
-const message = ref('')
+const email = ref("");
+const message = ref("");
 
 const submitForm = async () => {
-  message.value = 'Submitting...'
+  message.value = "Submitting...";
 
   try {
-    const response = await fetch('https://newsletter.whynotadventures.co.uk/', {
-      method: 'POST',
+    const response = await fetch("https://newsletter.whynotadventures.co.uk/", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: new URLSearchParams({ email: email.value })
-    })
+      body: new URLSearchParams({ email: email.value }),
+    });
 
-    const result = await response.json()
+    const result = await response.json();
 
     if (response.ok) {
-      message.value = `Email successfully submitted.`
+      message.value = `Email successfully submitted.`;
     } else {
-      message.value = `Failed to submit email: ${result.message}`
-      console.error('Error response from server:', result.message)
+      message.value = `Failed to submit email: ${result.message}`;
+      console.error("Error response from server:", result.message);
     }
   } catch (error) {
-    message.value = `An error occurred: ${error.message}`
-    console.error('Fetch error:', error)
+    message.value = `An error occurred: ${error.message}`;
+    console.error("Fetch error:", error);
   }
-}
+};
 </script>
 
 <style scoped>
@@ -69,7 +69,7 @@ textarea {
   position: relative;
   padding-bottom: var(--spacing-1);
   width: 70%;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-tertiary);
   font-size: var(--font-size-XS);
 }
 
@@ -89,7 +89,8 @@ form button {
   margin-left: var(--spacing-3);
 }
 
-.sign-up, .message {
+.sign-up,
+.message {
   opacity: var(--opacity);
 }
 

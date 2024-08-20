@@ -34,7 +34,7 @@ function handleClick() {
 }
 
 .accordion-title {
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   font-size: var(--font-size-S);
   display: flex;
   align-items: center;

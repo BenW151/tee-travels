@@ -6,7 +6,7 @@
       backgroundColor="var(--background-primary)"
       title=""
       subtitle=""
-      headerClass="header-large"
+      headerClass="header-small"
     />
     
     <!-- Blog Content -->
@@ -18,7 +18,7 @@
           :imageAlt="doc.headerImageAlt"
           :title="doc.title"
           :subtitle="doc.subtitle"
-          headerClass="header-large"
+          headerClass="header-small"
         />
 
         <section class="contents">

@@ -2,16 +2,15 @@
   <nav :class="{ scrolled: isScrolled }">
     <div class="nav">
       <div class="logo-container">
-        <NuxtLink
-          to="/"
-          aria-label="Home Page"
-          @click="toggleMenuIfOpen">
-          <NuxtImg
+        <NuxtLink to="/" aria-label="Home Page" @click="toggleMenuIfOpen">
+          <p class="wordmark">Tee Travels</p>
+          <!--<NuxtImg
             src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
             alt="Why Not Adventures Logo"
             class="nav-logo"
             :class="{ open: isMenuOpen }"
-        /></NuxtLink>
+        />--></NuxtLink
+        >
       </div>
       <div class="burger-menu" @click="toggleMenu">
         <span :class="{ open: isMenuOpen }"></span>
@@ -29,21 +28,29 @@
         >
         <NuxtLink
           class="nav-item"
+          to="/blog"
+          :class="{ active: $route.path === '/blog' }"
+          aria-label="Blog Page"
+          @click="toggleMenu"
+          >Blog</NuxtLink
+        >
+        <NuxtLink
+          class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
           @click="toggleMenu"
           >Destinations</NuxtLink
         >
-        <NuxtLink
-          class="nav-item"
+      </div>
+      <NuxtLink
+          class="nav-item contact"
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
           aria-label="Contact Page"
           @click="toggleMenu"
           >Contact</NuxtLink
         >
-      </div>
     </div>
   </nav>
 </template>
@@ -104,8 +111,6 @@ nav {
   height: 5vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 .nav {
@@ -130,8 +135,20 @@ nav {
   transform-origin: bottom left;
 }
 
-.nav-items .nav-item:last-child {
+.contact {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
+  border: 1px solid var(--color-white);
+  border-radius: 5vw;
+  padding: var(--spacing-1) var(--spacing-3);
+  margin-left: auto;
   margin-right: 0;
+}
+
+.contact:hover {
+  backdrop-filter: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 nav a {
@@ -149,9 +166,15 @@ nav a::after {
 }
 
 .nav .logo-container a {
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
   margin-left: 0;
+}
+
+.wordmark {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-S);
+  margin-bottom: 0;
 }
 
 body.scrolled-past-header nav a {
@@ -160,6 +183,10 @@ body.scrolled-past-header nav a {
 
 body.scrolled-past-header nav a::after {
   background-color: var(--color-black);
+}
+
+body.scrolled-past-header .contact {
+  border: 1px solid var(--color-black);
 }
 
 .nav-logo {
@@ -210,7 +237,7 @@ body.scrolled-past-header .nav-logo {
     margin-bottom: var(--spacing-1);
     color: var(--color-black);
     font-size: var(--font-size-XL);
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
   }
 
   .nav-items a::after {

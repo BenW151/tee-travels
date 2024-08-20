@@ -1,90 +1,81 @@
 <template>
   <footer ref="footer">
-    <LayoutGridContainer>
-      <div :class="{ 'nav-items': true }">
-        <NuxtLink
-          class="nav-item"
-          to="/"
-          :class="{ active: $route.path === '/' }"
-          aria-label="Home Page"
-          >About</NuxtLink
-        >
-        <NuxtLink
-          class="nav-item"
-          to="/destinations"
-          :class="{ active: $route.path === '/destinations' }"
-          aria-label="Destinations Page"
-          >Destinations</NuxtLink
-        >
-        <NuxtLink
-          class="nav-item"
-          to="/contact"
-          :class="{ active: $route.path === '/contact' }"
-          aria-label="Contact Page"
-          >Contact</NuxtLink
-        >
+    <LayoutGridContainer class="footer">
+      <div class="work-with-me">
+        <h5>Work With Me</h5>
+        <p>
+          For all inquiries please contact<br />
+          me at
+          <a
+            href="mailto:contact@benward.io"
+            aria-label="email address"
+            class="underline-out email"
+            >contact@benward.io</a
+          >.
+        </p>
       </div>
+      <div class="location">
+        <h5>Current Location</h5>
+        <p class="time">
+          Melbourne, Australia (AEST) <br />
+          {{ currentTime }} | {{ currentDate }}
+        </p>
+      </div>
+      <ListsLinkList
+        class="nav-links"
+        :links="[
+          {
+            url: '/',
+            label: 'About',
+            description: 'About Page',
+          },
+          {
+            url: '/blog',
+            label: 'Blog',
+            description: 'Blog Page',
+          },
+          {
+            url: '/destinations',
+            label: 'Destinations',
+            description: 'Destinations Page',
+          },
+          {
+            url: '/contact',
+            label: 'Contact',
+            description: 'Contact Page',
+          },
+          {
+            url: '/terms-and-conditions',
+            label: 'Terms + Conditions',
+            description: 'Terms + Conditions Page',
+          },
+          {
+            url: '/privacy-policy',
+            label: 'Privacy Policy',
+            description: 'Privacy Policy',
+          },
+        ]" />
       <ListsLinkList
         class="socials"
         :links="[
           {
-            url: 'https://www.instagram.com/whynotadventures_/',
+            url: 'https://www.instagram.com/benward.io/',
             label: 'Instagram',
             description: 'Instagram',
-            icon: 'ExternalLink',
           },
           {
-            url: 'https://facebook.com/whynotadventures_/',
+            url: 'https://linkedin.com/in/benw151',
             label: 'Facebook',
-            description: 'Facebook',
-            icon: 'ExternalLink',
+            description: 'LinkedIn',
+          },
+          {
+            url: 'https://github.com/BenW151',
+            label: 'Twitter',
+            description: 'GitHub',
           },
         ]" />
-      <FormsNewsletter />
-      <div class="legal">
-        <!--<div class="images">
-          <ImageDefault
-            imageUrl="/images/.webp"
-            imageAlt=""
-            class="abta"
-            objectFit="contain"
-            rellaxPercentage="0"
-            rellaxSpeed="0" />
-        </div>-->
-        <p>Why Not Adventures Ltd are a UK registered company – No. 15826857</p>
-      </div>
-      <NuxtImg
-        src="/branding/why-not-adventures-logo-rectangle-no-bg-no-margin.svg"
-        alt="Why Not Adventures Logo"
-        class="footer-logo" />
-    </LayoutGridContainer>
-
-    <LayoutGridContainer class="footer-end">
+      <p class="wordmark">Tee Travels</p>
       <p class="item copyright">Copyright ©2024</p>
-      <NuxtLink
-        class="item privacy-policy"
-        :class="{ active: $route.path === '/privacy-policy' }"
-        to="/privacy-policy"
-        aria-label="Privacy Policy Page"
-        >Privacy Policy</NuxtLink
-      >
-      <NuxtLink
-        class="item terms"
-        :class="{ active: $route.path === '/terms-and-conditions' }"
-        to="/terms-and-conditions"
-        aria-label="Terms and Conditions Page"
-        >Terms + Conditions</NuxtLink
-      >
-      <!--<button
-        class="item back-to-top"
-        @click="scrollToTop"
-        aria-label="Back to Top">
-        Back to Top
-      </button>-->
-      <p class="credit">
-        Site by
-        <a class="link underline-out" href="https://benward.io" target="_blank">benward.io</a>
-      </p>
     </LayoutGridContainer>
   </footer>
 </template>
@@ -96,104 +87,89 @@ const scrollToTop = () => {
     behavior: "smooth",
   });
 };
+
+import { ref, onMounted, onUnmounted } from "vue";
+
+const currentTime = ref("");
+const currentDate = ref("");
+
+const updateTime = () => {
+  const optionsTime = {
+    timeZone: "Australia/Melbourne",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hourCycle: "h23", // 24-hour format
+  };
+  const optionsDate = {
+    timeZone: "Australia/Melbourne",
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
+  };
+  const now = new Date();
+  currentTime.value = now.toLocaleTimeString("en-AU", optionsTime);
+  currentDate.value = now.toLocaleDateString("en-AU", optionsDate);
+};
+
+onMounted(() => {
+  updateTime();
+  const interval = setInterval(updateTime, 1000);
+
+  onUnmounted(() => {
+    clearInterval(interval);
+  });
+});
 </script>
 
 <style scoped>
 footer {
-  background-color: var(--color-white);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-start;
   width: 100%;
-  height: auto;
-  z-index: 1000;
+  height: 4vw;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+footer::after {
+  content: "";
+  width: calc(100% - (2 * var(--spacing-5)));
+  height: 1px;
+  background-color: var(--accent-primary);
+  border-radius: 2vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
 footer .container {
+  color: var(--foreground-primary);
   padding-bottom: var(--spacing-3);
-  padding-top: var(--spacing-3);
   white-space: nowrap;
+  background-image: linear-gradient(
+      to bottom,
+      var(--color-white),
+      rgba(255, 255, 255, 0)
+    ),
+    /* Gradient fades from the background color to transparent */
+      url("images/forest.png"); /* Your background image */
+  background-size: cover;
+  background-position: 25% center;
 }
 
-footer .nav-items {
-  grid-column: 1 / 4;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-}
-
-footer .nav-items .nav-item {
-  font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
-}
-
-footer .socials {
-  grid-column: 6 / 10;
-  grid-row-start: 1;
-  margin-top: auto;
-}
-
-.newsletter {
-  grid-column: 11 / 15;
-  grid-row: 1 / 2;
-  margin-top: auto;
-}
-
-.legal {
-  grid-column: 6 / 10;
-  grid-row-start: 2;
-  white-space: normal;
-  margin-top: auto;
-}
-
-.legal p {
-  opacity: var(--opacity);
-}
-
-.images {
-  display: inline-flex;
-}
-
-.abta {
-  display: none;
-  height: 5vw;
-  margin: var(--spacing-3);
-  margin-left: 0;
-  margin-top: 0;
-}
-
-.footer-logo {
-  grid-column: 11 /15;
-  height: 5vw;
+.footer {
+  width: 100%;
+  padding-bottom: 5px;
   margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.footer-end .item {
+.footer .footer-contact {
   margin-right: auto;
-}
-
-.copyright {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-
-.terms {
-  grid-column: 6 / 8;
-  grid-row: 1;
-}
-
-.privacy-policy {
-  grid-column: 11 / 13;
-  grid-row: 1;
-}
-
-.back-to-top,
-.credit {
-  grid-column: 15 / 17;
-  grid-row: 1;
-  margin-bottom: 0;
 }
 
 .item.active::after {
@@ -201,84 +177,119 @@ footer .socials {
   transform-origin: bottom left;
 }
 
+.back-to-top::after {
+  display: none;
+}
+
 .back-to-top:hover {
+  transform: translateY(-4px);
   cursor: pointer;
 }
 
-.nav-item.active::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.copyright {
+  grid-column: 15 / 17;
+  grid-row: 2;
+  margin-top: auto;
+}
+
+.work-with-me {
+  grid-column: 1 / 6;
+  grid-row: 1;
+  margin-bottom: auto;
+}
+
+h5 {
+  margin-bottom: var(--spacing-1);
+}
+
+.location {
+  grid-column: 6 / 9;
+  grid-row: 1;
+  margin-bottom: auto;
+}
+
+.time {
+  margin-bottom: 0;
+}
+
+.nav-links {
+  grid-column: 11 / 13;
+  grid-row: 1;
+  margin-bottom: auto;
+}
+
+.socials {
+  grid-column: 15 / 17;
+  grid-row: 1;
+  margin-bottom: auto;
+}
+
+.wordmark {
+  grid-column: 1 / 11;
+  grid-row: 2;
+  transform: translateX(-0.5vw);
+  font-size: var(--font-size-XXL);
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
   footer {
-    height: 30vh;
-    justify-content: space-between;
+    height: 6vh;
+  }
+
+  footer::after {
+    width: calc(100% - (2 * var(--spacing-4)));
   }
 
   .footer {
     align-items: start;
     margin: 0;
-    text-align: center;
   }
 
   .footer .item {
     font-size: var(--font-size-XS);
-    margin: 0 var(--spacing-3);
   }
 
-  .newsletter,
-  .legal,
-  footer .socials,
-  footer .nav-items, footer .footer-logo {
-    grid-column: 1 / 7;
-    grid-row-start: auto;
-    grid-row: auto;
+  .work-with-me {
+    grid-column: 1 / 4;
+    grid-row: 1;
   }
 
-  .footer-logo {
-    width: 100%;
-    height: auto;
+  .location {
+    grid-column: 4 / 7;
+    grid-row: 1;
   }
 
-  .abta {
-    height: 10vh;
-    margin-top: var(--spacing-3);
+  .nav-links {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .socials {
+    grid-column: 4 / 7;
+    grid-row: 2;
   }
 
   .copyright {
-    grid-column: 5 / 7;
-    grid-row: 1;
-  }
-
-  .terms {
-    grid-column: 1 / 3;
-    grid-row: 1;
-  }
-
-  .privacy-policy {
-    grid-column: 1 / 3;
+    grid-column: 4 / 7;
     grid-row: 2;
+    margin-top: auto;
   }
 
-  .back-to-top,
-  .credit {
-    grid-column: 5 / 7;
-    grid-row: 2;
+  .wordmark {
+    grid-column: 1 / 7;
+    grid-row: 3;
+    font-size: 17vw;
+  }
+
+  h5 {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-}
-</style>
-
-<style>
-footer .socials a {
-  font-size: var(--font-size-S);
-  font-family: var(--font-family-primary);
-}
-
-footer .socials a::after {
-  display: none;
 }
 </style>

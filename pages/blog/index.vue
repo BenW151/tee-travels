@@ -1,11 +1,11 @@
 <template>
   <div class="blog-pages">
     <Header
-      imageUrl="/images/index-background.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="Laptop with code on desk"
       title="Recent Posts"
       subtitle="Recent Blog Posts."
-      headerClass="header-large">
+      headerClass="header-small">
     </Header>
 
     <BlogRecentPosts />
@@ -34,7 +34,7 @@ useHead({
 <style scoped>
 .post-title {
   font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   margin-right: auto;
 }
 
@@ -82,4 +82,3 @@ useHead({
   display: none;
 }
 </style>
-

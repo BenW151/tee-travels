@@ -15,8 +15,8 @@
     <LayoutGridContainer>
       <div class="hero-text item">
         <h1>{{ title }}</h1>
-        <TextReveal tag="h2">{{ subtitle }}</TextReveal>
-        <TextReveal tag="h3">{{ description }}</TextReveal>
+        <h2>{{ subtitle }}</h2>
+        <h3>{{ description }}</h3>
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll</p>
@@ -157,6 +157,7 @@ body.scrolled-from-top .scroll {
 
 .hero-text h2 {
   font-size: var(--font-size-M);
+  align-self: center;
 }
 
 .hero-text h3 {

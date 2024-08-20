@@ -2,7 +2,10 @@
   <div>
     <section class="recent-posts">
       <LayoutGridContainer v-if="posts && posts.length">
-        <div v-for="post in posts.slice(0, 6)" :key="post._path" class="blog-item">
+        <div
+          v-for="post in posts.slice(0, 6)"
+          :key="post._path"
+          class="blog-item">
           <NuxtLink :to="post._path" class="post-link">
             <!-- Display the image -->
             <img
@@ -50,7 +53,7 @@ const { data: posts } = await useAsyncData("posts", async () => {
 <style scoped>
 .post-title {
   font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   margin-right: auto;
 }
 

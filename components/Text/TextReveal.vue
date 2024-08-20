@@ -116,7 +116,7 @@ function animateText(container) {
 </script>
 
 
-<style>
+<style scoped>
 @keyframes reveal {
   0% {
     transform: translateY(100%) rotateX(90deg);

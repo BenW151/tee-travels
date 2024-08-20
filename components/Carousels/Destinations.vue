@@ -162,7 +162,7 @@ watch(isMobile, async (newVal, oldVal) => {
 
 .image-description p:first-child {
   font-size: var(--font-size-S);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
 }
 
 .image-description p {
@@ -245,7 +245,7 @@ watch(isMobile, async (newVal, oldVal) => {
 
 .image-title {
   font-size: var(--font-size-M);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
 }
 
 .overlay-text p {
@@ -288,7 +288,7 @@ watch(isMobile, async (newVal, oldVal) => {
 
   .image-title {
     font-size: var(--font-size-M);
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
   }
 
   .image-info p {

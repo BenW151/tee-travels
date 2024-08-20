@@ -16,7 +16,7 @@ const props = defineProps({
 <style scoped>
 .section-label {
   font-size: var(--font-size-XXS);
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family-secondary);
   font-weight: 400;
   grid-column: 1 / 3;
   height: fit-content;

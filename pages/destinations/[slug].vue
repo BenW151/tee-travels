@@ -6,7 +6,7 @@
       backgroundColor="var(--background-primary)"
       title=""
       subtitle=""
-      headerClass="header-large" />
+      headerClass="header-small" />
 
     <article v-if="contentLoaded">
       <!-- Actual Header -->
@@ -15,7 +15,7 @@
         :imageAlt="destinationData.headerImageAlt"
         :title="destinationData.title"
         :subtitle="destinationData.subtitle"
-        headerClass="header-large" />
+        headerClass="header-small" />
 
       <!-- Pass the correct country prop to BlogCountryPosts -->
       <BlogCountryPosts :country="country" />

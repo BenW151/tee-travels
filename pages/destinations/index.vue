@@ -1,11 +1,11 @@
 <template>
   <div class="destination-pages">
     <Header
-      imageUrl="/images/index-background.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
       title="Destinations"
       subtitle="Explore Posts by Destination."
-      headerClass="header-large">
+      headerClass="header-small">
     </Header>
 
     <BlogDestinationItems />

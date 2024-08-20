@@ -1,9 +1,6 @@
 <template>
   <div
-    class="item image image-default rellax"
-    v-rellax
-    :data-rellax-percentage="rellaxPercentage"
-    :data-rellax-speed="computedRellaxSpeed">
+    class="item image image-default">
     <NuxtImg :class="objectFitClass" format="webp" :alt="imageAlt" :src="imageUrl" loading="lazy"/>
   </div>
 </template>
@@ -21,14 +18,6 @@ const props = defineProps({
     type: String,
     default: "Image",
   },
-  rellaxPercentage: {
-    type: String,
-    default: "0.6", // Default value for rellax effect
-  },
-  rellaxSpeed: {
-    type: String,
-    default: "2", // Default speed for rellax effect
-  },
   objectFit: {
     type: String,
     default: "cover", // Default object-fit value
@@ -37,11 +26,6 @@ const props = defineProps({
 });
 
 const { windowWidth, isMobile } = useWindowWidth();
-
-// Computed property for rellaxSpeed
-const computedRellaxSpeed = computed(() => {
-  return isMobile.value ? '0' : props.rellaxSpeed;
-});
 
 // Computed property for objectFit class
 const objectFitClass = computed(() => {
