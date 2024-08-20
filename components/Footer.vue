@@ -231,7 +231,7 @@ h5 {
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-white);
   margin-bottom: 0;
 }
 

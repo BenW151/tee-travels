@@ -34,7 +34,7 @@ body {
   --background-opacity: rgba(0, 0, 0, 0.1);
 
   --font-family-primary: "Lora", serif;
-  --font-family-secondary: "Poppins", sans-serif;
+  --font-family-secondary: "Inter", sans-serif;
   --font-family-tertiary: "Roboto Flex", sans-serif;
 
   --font-size-XXL: 14vw;
@@ -74,7 +74,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-secondary);
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   margin-bottom: var(--spacing-2);
   margin-top: 0;
