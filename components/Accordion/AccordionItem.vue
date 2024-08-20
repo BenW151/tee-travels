@@ -57,7 +57,7 @@ function handleClick() {
   height: 1px;
   bottom: -1px;
   left: 0;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);

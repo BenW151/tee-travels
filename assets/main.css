@@ -1,42 +1,30 @@
-html {
-  font-size: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-html,
-body {
-  height: 100%;
-  color: var(--font-color-primary);
-  background-color: var(--background-primary);
-}
-
 :root {
+  /** Spacing */
   --spacing-1: 0.8vw;
   --spacing-2: 1vw;
   --spacing-3: 1.3vw;
   --spacing-4: 1.8vw;
   --spacing-5: 5vw;
-  
+
+  /** Other */
   --border-radius-box: 5px;
   --opacity: 70%;
+  --background-opacity: rgba(0, 0, 0, 0.1);
 
+  /** Colour */
   --color-white: #f2f3f4;
   --color-black: #070707;
   --color-grey: #555555;
-
-  --font-color-primary: var(--color-black);
-  --font-color-secondary: var(--color-white);
-  --accent-primary: var(--color-black);
-  --accent-secondary: var(--color-white);
+  --foreground-primary: var(--color-black);
   --background-primary: var(--color-white);
-  --background-secondary: var(--color-black);
-  --background-opacity: rgba(0, 0, 0, 0.1);
+  --accent-primary: var(--color-grey);
 
+  /** Font Family */
   --font-family-primary: "Lora", serif;
   --font-family-secondary: "Inter", sans-serif;
   --font-family-tertiary: "Roboto Flex", sans-serif;
 
+  /** Font Size */
   --font-size-XXL: 14vw;
   --font-size-XL: 8vw;
   --font-size-L: 6vw;
@@ -46,6 +34,7 @@ body {
   --font-size-XXS: 1vw;
 }
 
+/** Universal Styling */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,8 +45,9 @@ body {
   padding: 0;
 }
 
+/** HTML and Body */
 body {
-  font-family: var( --font-family-tertiary);
+  font-family: var(--font-family-tertiary);
   font-weight: normal;
   font-style: normal;
   font-size: var(--font-size-XS);
@@ -67,6 +57,56 @@ body {
   background-color: var(--background-primary);
 }
 
+html {
+  font-size: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--foreground-primary);
+  background-color: var(--background-primary);
+}
+
+/** Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--foreground-primary);
+  border: 2px solid var(--foreground-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+element {
+  scrollbar-width: thin;
+  scrollbar-color: var(--foreground-primary) var(--background-primary);
+}
+
+/** Hightlight Styling */
+
+::-moz-selection {
+  color: var(--background-primary);
+  background: rgba(250, 250, 250, 0.9);
+}
+
+::selection {
+  color: var(--background-primary);
+  background: rgba(250, 250, 250, 0.9);
+}
+
+/** Text Tags*/
 h1,
 h2,
 h3,
@@ -111,33 +151,10 @@ h6 {
 p {
   margin-top: 0;
   line-height: 1.3;
-  font-family: var( --font-family-tertiary);
+  font-family: var(--font-family-tertiary);
   font-weight: normal;
   font-style: normal;
   font-size: var(--font-size-XS);
-}
-
-.background-inverted {
-  background-color: var(--background-secondary);
-  color: var(--font-color-secondary);
-}
-
-.background-inverted a {
-  color: var(--font-color-secondary);
-}
-
-.background-inverted a::after {
-  background-color: var(--font-color-secondary);
-}
-
-::-moz-selection {
-  color: var(--color-white);
-  background: rgba(85, 85, 85, 0.8);
-}
-
-::selection {
-  color: var(--color-white);
-  background: rgba(85, 85, 85, 0.8);
 }
 
 /** Grid Positioning */
@@ -185,8 +202,6 @@ section {
   transition: none;
 }
 
-/** Logo */
-
 /** Text */
 .title {
   grid-column: span 8;
@@ -218,7 +233,7 @@ section {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
   transform-origin: bottom left;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.5s,
     background-color 0.2s linear;
@@ -231,8 +246,8 @@ section {
 /** Buttons */
 a,
 button {
-  font-family: var( --font-family-tertiary);
-  color: var(--font-color-primary);
+  font-family: var(--font-family-tertiary);
+  color: var(--foreground-primary);
   background: none;
   font-size: var(--font-size-XS);
   text-decoration: none;
@@ -246,11 +261,11 @@ button {
 }
 
 header a {
-  color: var(--font-color-secondary);
+  color: var(--backgroud-primary);
 }
 
 header a::after {
-  background-color: var(--font-color-secondary);
+  background-color: var(--backgroud-primary);
 }
 
 a.link,
@@ -277,7 +292,7 @@ button::after {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),
     background-color 0.2s linear;
@@ -315,7 +330,7 @@ button:hover::after {
 }
 
 .lucide {
-  color: var(--font-color-primary);
+  color: var(--foreground-primary);
   height: var(--font-size-XS);
 }
 
@@ -383,7 +398,7 @@ button:hover::after {
 
 .dropdown-content a {
   margin-bottom: var(--spacing-5);
-  color: var(--font-color-primary);
+  color: var(--foreground-primary);
   cursor: pointer;
 }
 
@@ -431,7 +446,7 @@ li {
   height: 1px;
   bottom: calc(var(--spacing-1) * -0.5);
   left: 0;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
 }
 
 .data-item {
@@ -467,7 +482,7 @@ li {
 
 .progress-bar {
   height: 2px;
-  background: var(--accent-primary);
+  background: var(--foreground-primary);
   width: 0%;
   z-index: 10000;
 }

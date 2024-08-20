@@ -42,8 +42,8 @@
           @click="toggleMenu"
           >Destinations</NuxtLink
         >
-      </div>
-      <NuxtLink
+        <NuxtLink
+          v-if="isMobile"
           class="nav-item contact"
           to="/contact"
           :class="{ active: $route.path === '/contact' }"
@@ -51,6 +51,16 @@
           @click="toggleMenu"
           >Contact</NuxtLink
         >
+      </div>
+      <NuxtLink
+        v-if="!isMobile"
+        class="nav-item contact"
+        to="/contact"
+        :class="{ active: $route.path === '/contact' }"
+        aria-label="Contact Page"
+        @click="toggleMenu"
+        >Contact</NuxtLink
+      >
     </div>
   </nav>
 </template>
@@ -138,7 +148,7 @@ nav {
 .contact {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* For Safari */
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--background-primary);
   border-radius: 5vw;
   padding: var(--spacing-1) var(--spacing-3);
   margin-left: auto;
@@ -146,19 +156,18 @@ nav {
 }
 
 .contact:hover {
-  backdrop-filter: none;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  color: var(--background-primary);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 nav a {
   margin: 0 var(--spacing-3);
-  color: var(--color-white);
+  color: var(--background-primary);
   pointer-events: all;
 }
 
 nav a::after {
-  background-color: var(--color-white);
+  background-color: var(--background-primary);
 }
 
 .nav .logo-container {
@@ -178,15 +187,15 @@ nav a::after {
 }
 
 body.scrolled-past-header nav a {
-  color: var(--color-black);
+  color: var(--foreground-primary);
 }
 
 body.scrolled-past-header nav a::after {
-  background-color: var(--color-black);
+  background-color: var(--foreground-primary);
 }
 
 body.scrolled-past-header .contact {
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--foreground-primary);
 }
 
 .nav-logo {
@@ -235,13 +244,13 @@ body.scrolled-past-header .nav-logo {
 
   .nav-items a {
     margin-bottom: var(--spacing-1);
-    color: var(--color-black);
+    color: var(--foreground-primary);
     font-size: var(--font-size-XL);
     font-family: var(--font-family-secondary);
   }
 
   .nav-items a::after {
-    background-color: var(--color-black);
+    background-color: var(--foreground-primary);
   }
 
   .nav .logo-container a {
@@ -249,7 +258,7 @@ body.scrolled-past-header .nav-logo {
   }
 
   .nav .logo-container a.open {
-    color: var(--color-black);
+    color: var(--foreground-primary);
   }
 
   .nav-logo {
@@ -275,7 +284,7 @@ body.scrolled-past-header .nav-logo {
   .burger-menu span {
     width: 100%;
     height: 1px;
-    background: var(--color-white);
+    background: var(--background-primary);
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
@@ -283,7 +292,7 @@ body.scrolled-past-header .nav-logo {
 
   .burger-menu span.open,
   body.scrolled-past-header .burger-menu span {
-    background: var(--color-black);
+    background: var(--foreground-primary);
   }
 
   .burger-menu span.open:nth-child(1) {
@@ -298,6 +307,24 @@ body.scrolled-past-header .nav-logo {
   .burger-menu span.open:nth-child(3) {
     transform: translateX(-100%);
     opacity: 0;
+  }
+
+  .contact {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none; /* For Safari */
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact:hover {
+    backdrop-filter: none;
+    background-color: none;
+  }
+
+  body.scrolled-past-header .contact {
+    border: none;
   }
 }
 </style>

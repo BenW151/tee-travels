@@ -135,7 +135,7 @@ footer::after {
   content: "";
   width: calc(100% - (2 * var(--spacing-5)));
   height: 1px;
-  background-color: var(--accent-primary);
+  background-color: var(--foreground-primary);
   border-radius: 2vw;
   position: absolute;
   top: 0;
@@ -150,7 +150,7 @@ footer .container {
   white-space: nowrap;
   background-image: linear-gradient(
       to bottom,
-      var(--color-white),
+      var(--background-primary),
       rgba(255, 255, 255, 0)
     ),
     /* Gradient fades from the background color to transparent */
@@ -231,7 +231,7 @@ h5 {
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--background-primary);
   margin-bottom: 0;
 }
 

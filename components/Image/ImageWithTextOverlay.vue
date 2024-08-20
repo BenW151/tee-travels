@@ -1,10 +1,14 @@
 <template>
-  <div
-    class="item image image-text-overlay">
+  <div class="item image image-text-overlay">
     <div :class="['text-wrapper', textPosition]">
       <h4 v-html="overlayText"></h4>
     </div>
-    <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" loading="lazy" placeholder/>
+    <NuxtImg
+      format="webp"
+      :alt="imageAlt"
+      :src="imageUrl"
+      loading="lazy"
+      placeholder />
   </div>
 </template>
 
@@ -31,7 +35,6 @@ const props = defineProps({
 });
 
 const { windowWidth, isMobile } = useWindowWidth();
-
 </script>
 
 <style scoped>
@@ -45,11 +48,11 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 .image-text-overlay .text-wrapper,
 .image-text-overlay .text-wrapper a.link {
-  color: var(--color-white);
+  color: var(--background-primary);
 }
 
 .image-text-overlay .text-wrapper a.link::after {
-  background-color: var(--color-white);
+  background-color: var(--background-primary);
 }
 
 .image-text-overlay img,

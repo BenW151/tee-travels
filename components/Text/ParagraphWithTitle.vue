@@ -39,7 +39,7 @@ const props = defineProps({
 <style scoped>
 .paragraph-with-title {
   grid-column: span 7;
-  background-color: var(--color-white);
+  background-color: var(--background-primary);
   margin-top: auto;
   margin-bottom: auto;
   z-index: 5;
@@ -58,7 +58,7 @@ const props = defineProps({
 }
 
 @media (max-width: 767px) {
-.paragraph-with-title {
+  .paragraph-with-title {
     grid-column: span 6;
   }
 

@@ -147,7 +147,7 @@ watch(isMobile, async (newVal, oldVal) => {
 }
 
 .swiper-scrollbar-drag {
-  background-color: var(--color-white);
+  background-color: var(--background-primary);
 }
 
 .swiper-slide a::after,
@@ -173,12 +173,12 @@ watch(isMobile, async (newVal, oldVal) => {
   position: relative;
   width: 20%;
   height: 1px;
-  background-color: var(--color-grey);
+  background-color: var(--accent-primary);
 }
 
 .custom-scrollbar-progress {
   height: 1px;
-  background-color: var(--color-black);
+  background-color: var(--foreground-primary);
   transition: width 0.1s ease;
 }
 
@@ -191,7 +191,7 @@ watch(isMobile, async (newVal, oldVal) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--background-primary);
   z-index: 1000;
   cursor: pointer;
   background-position: center;
@@ -238,7 +238,7 @@ watch(isMobile, async (newVal, oldVal) => {
   left: 0;
   width: 100%;
   padding: var(--spacing-4);
-  color: var(--color-white);
+  color: var(--background-primary);
   text-align: left;
   pointer-events: none;
 }

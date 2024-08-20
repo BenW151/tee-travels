@@ -82,11 +82,11 @@ onBeforeUnmount(() => {
 header,
 header a,
 header a .lucide {
-  color: var(--color-white);
+  color: var(--background-primary);
 }
 
 header a.link::after {
-  background-color: var(--color-white);
+  background-color: var(--background-primary);
 }
 
 .container {
@@ -135,8 +135,9 @@ header a.link::after {
   left: var(--spacing-5);
 }
 
-.scroll, .scroll .lucide {
-  color: var(--color-white);
+.scroll,
+.scroll .lucide {
+  color: var(--background-primary);
   height: var(--font-size-XXS);
   font-size: var(--font-size-XXS);
 }

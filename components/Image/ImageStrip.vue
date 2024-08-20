@@ -106,7 +106,7 @@ const isImage = computed(() => {
 }
 
 .text-wrapper h4 {
-  color: var(--color-white);
+  color: var(--background-primary);
 }
 
 .text-wrapper.hidden {

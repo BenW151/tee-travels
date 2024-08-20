@@ -7,9 +7,11 @@
 <style>
 @keyframes reveal-color {
   0% {
-    color: var(--color-orange);
+    opacity: var(--opacity);
+    color: var(--accent-primary);
   }
   100% {
+    opacity: 1;
     color: var(--foreground-primary);
   }
 }
@@ -22,7 +24,8 @@
 
 .word {
   display: inline-block;
-  color: var(--color-grey);
+  color: var(--accent-primary);
+  opacity: var(--opacity);
   animation: none;
   white-space: pre;
   vertical-align: middle; /* Ensure alignment with icons */
@@ -123,7 +126,7 @@ function animateText(container) {
   words.forEach((word, index) => {
     setTimeout(() => {
       word.style.animation = "reveal-color 0.6s forwards";
-    }, 50 * index); // Delay can be adjusted
+    }, 100 * index); // Delay can be adjusted
   });
 }
 </script>

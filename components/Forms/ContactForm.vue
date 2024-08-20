@@ -109,9 +109,9 @@ input,
 textarea {
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid var(--accent-primary);
   border-radius: 0;
-  color: var(--font-color-primary);
+  color: var(--foreground-primary);
   background-color: transparent;
   position: relative;
   padding-bottom: var(--spacing-3);
@@ -127,7 +127,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--foreground-primary);
 }
 
 form button {

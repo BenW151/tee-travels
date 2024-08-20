@@ -8,9 +8,7 @@
       </div>
       <div class="day-content">
         <a :href="`#day${day.id}`">
-          <h4>
-            Day {{ index + 1 }} | {{ day.shortSummary }}
-          </h4>
+          <h4>Day {{ index + 1 }} | {{ day.shortSummary }}</h4>
         </a>
         <p id="day{{day.id}}">{{ day.detailSummary }}</p>
       </div>
@@ -50,13 +48,13 @@ const props = defineProps({
 .dot {
   width: 9px;
   height: 1px;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
 }
 
 .line {
   width: 1px;
   height: 8vw;
-  background-color: var(--font-color-primary);
+  background-color: var(--foreground-primary);
 }
 
 .day-content {

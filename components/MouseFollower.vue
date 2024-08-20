@@ -107,7 +107,8 @@ const circleClasses = computed(() => {
 });*/
 </script>
 
-<style scoped>/*
+<style scoped>
+/*
 .circle {
   position: fixed;
   width: 6vw;
@@ -129,7 +130,7 @@ const circleClasses = computed(() => {
 }
 
 .circle-text {
-  color: var(--color-white);
+  color: var(--background-primary);
   font-size: var(--font-size-XXS);
   white-space: nowrap;
   pointer-events: none;

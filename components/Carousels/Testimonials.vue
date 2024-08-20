@@ -144,7 +144,7 @@ watch(isMobile, async (newVal, oldVal) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--background-primary);
   z-index: 1000;
   cursor: pointer;
   background-position: center;
@@ -183,7 +183,7 @@ watch(isMobile, async (newVal, oldVal) => {
   left: 0;
   width: 100%;
   padding: var(--spacing-4);
-  color: var(--color-white);
+  color: var(--background-primary);
   text-align: left;
 }
 
