@@ -1,50 +1,40 @@
 <template>
-  <div>
+  <div class="destination-pages">
     <Header
-      imageUrl="/images/pakistan/pakistan-passu-cones.webp"
-      imageAlt="Passu Cones"
+      imageUrl="/images/index-background.webp"
+      imageAlt="TODO alt"
       title="Destinations"
-      subtitle="Where Will You Go?"
-      headerClass="header-small">
+      subtitle="Explore Posts by Destination."
+      headerClass="header-large">
     </Header>
 
-    <section class="carousel">
-      <div class="container">
-        <CarouselsDestinations />
-      </div>
-    </section>
+    <BlogDestinationItems />
   </div>
 </template>
 
 <script setup>
 useHead({
-  title: "Destinations | Why Not Adventures",
+  title: "Ben Ward | Destinations",
   meta: [
     {
       name: "description",
       content:
-        "Discover Your Next Adventure: Unique Destinations and Authentic Experiences",
+        "Providing professional web development services focused on creating modern, responsive, and user-friendly websites tailored to your needs.",
     },
   ],
   link: [
     {
       rel: "canonical",
-      href: "https://whynotadventures.co.uk/destinations",
+      href: "https://benward.io/",
     },
   ],
 });
-
-const { windowWidth, isMobile } = useWindowWidth();
-
-//Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
-/*if (process.env.NODE_ENV === 'development' && !isMobile.value) {
-  definePageMeta({
-    pageTransition: false,
-  });
-}*/
 </script>
 
+<style scoped></style>
+
 <style>
-@media (max-width: 767px) {
+.destination-pages .paragraph.medium {
+  display: none;
 }
 </style>

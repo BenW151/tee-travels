@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-swiper",
     "@nuxtjs/sitemap",
+    "@nuxt/content"
   ],
 
   image: {

@@ -1,0 +1,108 @@
+site_url: https://cms-poc.benward.io
+search: false
+backend:
+  name: github
+  branch: cms-poc
+  repo: benw151/portfolio-nuxt
+  base_url: https://oauth.cms-poc.benward.io
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    format: "frontmatter"
+    create: true
+    slug: "{{country}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "This will also be used for SEO page meta.",
+        }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          hint: "This will also be used for SEO page meta.",
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Country",
+          name: "country",
+          widget: "relation",
+          collection: "destination",
+          search_fields: ["title"],
+          value_field: "title",
+          display_fields: ["title"],
+          multiple: false,
+        }
+      - {
+          label: "Tag",
+          name: "tag",
+          widget: "string",
+          hint: "Must exactly match related pages. Use all lower case and put dashes between words (Like this: tag-example)",
+          pattern: ["^[a-z]+(-[a-z]+)*$", "Use all lower case and put dashes between words (Like this: tag-example)"],
+        }
+      - {
+          label: "Header Image URL",
+          name: "headerImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "Header Image Alt Text",
+          name: "headerImageAlt",
+          widget: "string",
+        }
+      - { label: "What To Do Title", name: "whatToDoTitle", widget: "string" }
+      - { label: "What To Do Text", name: "whatToDoText", widget: "markdown" }
+      - {
+          label: "Where To Stay Title",
+          name: "whereToStayTitle",
+          widget: "string",
+        }
+      - {
+          label: "Where To Stay Text",
+          name: "whereToStayText",
+          widget: "markdown",
+        }
+      - { label: "What To See Title", name: "whatToSeeTitle", widget: "string" }
+      - { label: "What To See Text", name: "whatToSeeText", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "destination"
+    label: "Destinations"
+    folder: "content/destinations"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Country",
+          name: "country",
+          widget: "string",
+          pattern: ["^[a-z]+$", "Must be lower case"],
+        }
+      - {
+          label: "Header Image URL",
+          name: "headerImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "Header Image Alt Text",
+          name: "headerImageAlt",
+          widget: "string",
+        }

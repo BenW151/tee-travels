@@ -3,7 +3,7 @@
     <Header
       imageUrl="/images/pakistan/pakistan-cover.webp"
       imageAlt="View of Rakaposhi from Karimabad"
-      title="Why Not Adventures"
+      title="Tee Travels"
       subtitle="Get Off The Beaten Track"
       headerClass="header-small">
     </Header>
