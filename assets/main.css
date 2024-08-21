@@ -98,12 +98,12 @@ element {
 
 ::-moz-selection {
   color: var(--background-primary);
-  background: rgba(250, 250, 250, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 ::selection {
   color: var(--background-primary);
-  background: rgba(250, 250, 250, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 /** Text Tags*/
@@ -343,63 +343,6 @@ button:hover::after {
 .underline-out-icon:hover svg {
   padding-right: var(--spacing-1);
   max-width: 2rem;
-}
-
-.dropdown {
-  grid-column: span 2;
-}
-
-.dropdown-open {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: var(--spacing-1);
-}
-
-.dropdown-open::after {
-  display: none;
-}
-
-.dropdown-open i {
-  margin-left: var(--spacing-1);
-}
-
-.dropdown-open:hover i {
-  transform: rotate(180deg);
-}
-
-.dropdown-content {
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  min-width: 15vw;
-  z-index: 999;
-  left: 0;
-  transform: translateY(10px);
-  transition: all 0.1s;
-}
-
-.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: opacity 0.5s, visibility 0.2s, transform 0.5s;
-}
-
-.dropdown-content::before {
-  content: "";
-  position: absolute;
-  top: calc(var(--spacing-3) * -1);
-  height: var(--spacing-3);
-  width: 100%;
-  z-index: -1;
-}
-
-.dropdown-content a {
-  margin-bottom: var(--spacing-5);
-  color: var(--foreground-primary);
-  cursor: pointer;
 }
 
 /** Lists */

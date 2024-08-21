@@ -42,6 +42,26 @@
           @click="toggleMenu"
           >Destinations</NuxtLink
         >
+        <ButtonsDropdown
+          :listLinks="[
+            {
+              url: 'https://www.instagram.com/benward.io/',
+              label: 'Instagram',
+              description: 'Instagram',
+            },
+            {
+              url: 'https://linkedin.com/in/benw151',
+              label: 'LinkedIn',
+              description: 'LinkedIn',
+            },
+            {
+              url: 'https://github.com/BenW151',
+              label: 'GitHub',
+              description: 'GitHub',
+            },
+          ]">
+          <template #button>Dropdown</template>
+        </ButtonsDropdown>
         <NuxtLink
           v-if="isMobile"
           class="nav-item contact"
@@ -131,7 +151,6 @@ nav {
   margin-right: var(--spacing-5);
   align-items: center;
   justify-content: flex-end;
-  overflow: hidden;
 }
 
 .nav-items {
@@ -205,6 +224,10 @@ body.scrolled-past-header .contact {
 
 body.scrolled-past-header .nav-logo {
   filter: invert(0%);
+}
+
+.dropdown {
+  margin: 0 var(--spacing-3);
 }
 
 @media (max-width: 767px) {
