@@ -153,8 +153,7 @@ footer .container {
       var(--background-primary),
       rgba(255, 255, 255, 0)
     ),
-    /* Gradient fades from the background color to transparent */
-      url("images/forest.png"); /* Your background image */
+      url("/images/forest.png");
   background-size: cover;
   background-position: 25% center;
 }
