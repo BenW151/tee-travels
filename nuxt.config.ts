@@ -1,14 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from "path";
 export default defineNuxtConfig({
-  build: {
-    extend(config, { isDev, isClient }) {
-      config.module.rules.push({
-        test: /\.worker\.js$/,
-        loader: 'ignore-loader'
-      });
-    }
-  }
   site: {
     url: "https://whynotadventures.co.uk/",
     name: "Why Not Adventures",
