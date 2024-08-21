@@ -163,7 +163,7 @@ const pageIndexLabels = [
   { title: "Things To Do", link: "things-to-do" },
   { title: "Where To Stay", link: "where-to-stay" },
   { title: "FAQ", link: "faq" },
-  { title: "Blog Posts", link: "blog" },
+  { title: "Blog Posts", link: "blog-posts" },
 ];
 
 onMounted(() => {
@@ -186,6 +186,15 @@ const { data: destinationData } = await useAsyncData(
 </script>
 
 <style>
+.contents .container {
+  padding-bottom: var(--spacing-1);
+}
+
+.page-index {
+  grid-column: 1 / 17;
+  margin: auto;
+}
+
 .blog .paragraph.medium {
   display: none;
 }
