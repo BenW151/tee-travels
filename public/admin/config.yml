@@ -4,7 +4,7 @@ backend:
   name: github
   branch: main
   repo: benw151/tee-travels
-  base_url: https://oauth.tee-travels.benward.io
+  base_url: https://decap-proxy.benward151.workers.dev
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
