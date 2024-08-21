@@ -39,7 +39,7 @@ const props = defineProps({
 <style scoped>
 .paragraph-with-title {
   grid-column: span 7;
-  margin-top: auto;
+  margin-bottom: auto;
   z-index: 5;
 }
 

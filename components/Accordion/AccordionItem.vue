@@ -71,7 +71,7 @@ function handleClick() {
 }
 
 .accordion .accordion-content {
-  width: 70%;
+  width: 95%;
   margin-bottom: 0;
   max-height: 0;
   opacity: 0;

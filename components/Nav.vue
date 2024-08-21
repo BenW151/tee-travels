@@ -192,8 +192,7 @@ nav {
 }
 
 .contact:hover {
-  color: var(--background-primary);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(229, 207, 184, 0.5);
 }
 
 .contact::after {
