@@ -96,109 +96,6 @@
             textPosition="left" />
         </LayoutGridContainer>
       </section>
-
-      <section class="faq">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Information" />
-          <TextParagraphWithTitle subtitleTag="h3">
-            <template #title>Things To Know</template>
-            <template #body>
-              <p>
-                Have questions? We've got answers! Check out our FAQ section for
-                quick and helpful information about our tours, booking process,
-                and more. If you can't find what you're looking for, feel free
-                to reach out to us directly.
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-          <Accordion>
-            <AccordionItem
-              title="Are the tours suitable for all ages?"
-              index="1">
-              <p>
-                Our tours are designed to accommodate a wide range of ages.
-                However, all trips are for individuals 18 and over, and some
-                activities may have specific age ranges. Please check the
-                specific tour details for more information.
-              </p>
-            </AccordionItem>
-            <AccordionItem
-              title="Do I need to organize anything myself?"
-              index="2">
-              <p>
-                Most of the planning is taken care of for you. We handle
-                accommodations, meals, and activities. You may need to organize
-                your travel to the starting point of the tour and any personal
-                items you wish to bring.
-              </p>
-            </AccordionItem>
-            <AccordionItem
-              title="Can I join a tour as a solo traveler?"
-              index="3">
-              <p>
-                Absolutely! Many of our guests travel solo and find our tours to
-                be a great way to meet new people and make lasting friendships.
-              </p>
-            </AccordionItem>
-            <AccordionItem
-              title="What is the group size for the tours?"
-              index="4">
-              <p>
-                Group sizes vary by tour, but we aim to keep them small to
-                ensure a more personalized experience. Typically, group sizes
-                range from 10 to 16 people.
-              </p>
-            </AccordionItem>
-            <AccordionItem
-              title="Can you cater for dietary requirements?"
-              index="5">
-              <p>
-                Yes! I am vegan myself and am aware of how difficult it can be
-                finding food which fits your dietary needs. We will absolutely
-                strive to ensure that any requirements are met.
-              </p>
-            </AccordionItem>
-            <AccordionItem
-              title="Can I do any of your trips independently?"
-              index="6">
-              <p>
-                Absolutely! Yes, you can embark on our trips independently. We
-                offer bespoke tours using our trusted guides. Simply get in
-                touch via the
-                <NuxtLink
-                  to="/contact"
-                  class="underline-out"
-                  aria-label="Contact Page"
-                  >contact page</NuxtLink
-                >.
-              </p>
-            </AccordionItem>
-            <AccordionItem title="Any other questions?" index="7">
-              <p>
-                Get in touch with us via the
-                <NuxtLink
-                  to="/contact"
-                  class="underline-out"
-                  aria-label="Contact Page"
-                  >contact page</NuxtLink
-                >.
-              </p>
-            </AccordionItem>
-          </Accordion>
-        </LayoutGridContainer>
-      </section>
-
-      <section class="end-text">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Trips" />
-          <NuxtLink
-            class="item underline-out"
-            to="/destinations"
-            aria-label="destinations Page"
-            ><TextReveal tag="h2">Destinations</TextReveal></NuxtLink
-          >
-        </LayoutGridContainer>
-      </section>
     </main>
   </div>
 </template>
@@ -222,13 +119,6 @@ useHead({
 });
 
 const { windowWidth, isMobile } = useWindowWidth();
-
-//Temp fix for swiper mounting before dom is loaded on dev server. can be removed for prod
-/*if (process.env.NODE_ENV === 'development' && !isMobile.value) {
-  definePageMeta({
-    pageTransition: false,
-  });
-}*/
 </script>
 
 <style scoped>

@@ -1,5 +1,10 @@
 <template>
-  <p class="item accent section-label">——————————  {{ labelText }}</p>
+  <p class="item accent section-label">
+    <svg width="100" height="1" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="1" fill="black" />
+    </svg>
+    {{ labelText }}
+  </p>
 </template>
 
 <script setup>
@@ -24,11 +29,11 @@ const props = defineProps({
   display: flex;
   flex-direction: row;
   align-items: center;
+  white-space: pre;
 }
 
-.lucide {
-  margin-right: 3px;
-  stroke-width: 1px;
+.lucide, .svg {
+  margin-right: 5px;
 }
 
 @media (max-width: 767px) {

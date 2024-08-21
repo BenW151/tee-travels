@@ -117,7 +117,7 @@ textarea {
   padding-bottom: var(--spacing-3);
   margin-bottom: var(--spacing-4);
   width: 100%;
-  font-family: var(--font-family-tertiary);
+  font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
 }
 

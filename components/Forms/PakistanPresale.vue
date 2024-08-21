@@ -75,7 +75,7 @@ textarea {
   position: relative;
   padding-bottom: var(--spacing-1);
   width: 70%;
-  font-family: var(--font-family-tertiary);
+  font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
 }
 

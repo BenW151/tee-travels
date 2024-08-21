@@ -33,8 +33,8 @@ export default defineNuxtConfig({
         wght: [300, 400, 500, 600, 700],
         ital: [100, 400],
       },
-      "Inter": {
-        wght: [300, 400, 500, 600, 700],
+      "DM Sans": {
+        wght: [100, 200, 300, 400, 500, 600, 700],
         ital: [100, 400],
       },
       "Roboto Flex": {
