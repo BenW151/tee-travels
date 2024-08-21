@@ -2,17 +2,7 @@
   <footer ref="footer">
     <LayoutGridContainer class="footer">
       <div class="work-with-me">
-        <h5>Work With Me</h5>
-        <p>
-          For all inquiries please contact<br />
-          me at
-          <a
-            href="mailto:contact@benward.io"
-            aria-label="email address"
-            class="underline-out email"
-            >contact@benward.io</a
-          >.
-        </p>
+       <FormsNewsletter />
       </div>
       <div class="location">
         <h5>Current Location</h5>
@@ -193,7 +183,7 @@ footer .container {
 }
 
 .work-with-me {
-  grid-column: 1 / 6;
+  grid-column: 1 / 5;
   grid-row: 1;
   margin-bottom: auto;
 }
@@ -262,35 +252,36 @@ h5 {
   }
 
   .work-with-me {
-    grid-column: 1 / 4;
+    grid-column: 1 / 7;
     grid-row: 1;
   }
 
   .location {
-    grid-column: 4 / 7;
-    grid-row: 1;
+    grid-column: 1 / 7;
+    grid-row: 2;
+    margin-bottom: var(--spacing-4);
   }
 
   .nav-links {
     grid-column: 1 / 3;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   .socials {
     grid-column: 4 / 7;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   .copyright {
     grid-column: 4 / 7;
-    grid-row: 2;
+    grid-row: 3;
     margin-top: auto;
     color: var(--foreground-primary);
   }
 
   .wordmark {
     grid-column: 1 / 7;
-    grid-row: 3;
+    grid-row: 4;
     font-size: 17vw;
   }
 

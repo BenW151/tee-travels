@@ -1,6 +1,7 @@
 <template>
   <div class="item newsletter">
     <div>
+      <h5>Newsletter</h5>
       <p class="sign-up">
         Sign up to our newsletter to <br v-if="!isMobile" />
         receive updates on upcoming trips.
