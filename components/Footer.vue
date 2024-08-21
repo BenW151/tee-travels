@@ -17,7 +17,7 @@
       <div class="location">
         <h5>Current Location</h5>
         <p class="time">
-          Melbourne, Australia (AEST) <br />
+          Bali, Indonesia (CIT) <br />
           {{ currentTime }} | {{ currentDate }}
         </p>
       </div>
@@ -95,14 +95,14 @@ const currentDate = ref("");
 
 const updateTime = () => {
   const optionsTime = {
-    timeZone: "Australia/Melbourne",
+    timeZone: "Asia/Makassar",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
     hourCycle: "h23", // 24-hour format
   };
   const optionsDate = {
-    timeZone: "Australia/Melbourne",
+    timeZone: "Asia/Makassar",
     year: "numeric",
     month: "long",
     day: "2-digit",
@@ -190,6 +190,7 @@ footer .container {
   grid-column: 15 / 17;
   grid-row: 2;
   margin-top: auto;
+  color: var(--background-primary);
 }
 
 .work-with-me {
@@ -225,7 +226,7 @@ h5 {
 }
 
 .wordmark {
-  grid-column: 1 / 11;
+  grid-column: 1 / 15;
   grid-row: 2;
   transform: translateX(-0.5vw);
   font-size: var(--font-size-XXL);
@@ -233,6 +234,14 @@ h5 {
   font-weight: 600;
   color: var(--background-primary);
   margin-bottom: 0;
+  background: linear-gradient(
+    0deg,
+    var(--color-pink) 0%,
+    var(--color-lilac) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 767px) {
