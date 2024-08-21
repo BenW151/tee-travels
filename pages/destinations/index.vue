@@ -8,6 +8,10 @@
       headerClass="header-small">
     </Header>
 
+    <LayoutGridContainer>
+      <Search />
+    </LayoutGridContainer>
+
     <BlogDestinationItems />
   </div>
 </template>

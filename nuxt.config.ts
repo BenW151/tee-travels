@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     name: "Tee Travels",
   },
 
+  content: {
+    experimental: {
+      search: true,
+    },
+  },
+
   devtools: { enabled: true },
 
   alias: {
