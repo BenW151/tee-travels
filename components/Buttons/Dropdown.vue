@@ -106,14 +106,20 @@ body.scrolled-past-header .dropdown-open {
 
 .dropdown-content a.link::after {
   background-color: var(--background-primary);
+  transition: color 0.2s linear,
+  background-color 0.2s linear;
 }
 
 body.scrolled-past-header .dropdown-content a.link, body.scrolled-past-header nav .lucide  {
   color: var(--foreground-primary);
+  transition: color 0.2s linear,
+  background-color 0.2s linear;
 }
 
 body.scrolled-past-header .dropdown-content a.link::after {
   background-color: var(--foreground-primary);
+  transition: color 0.2s linear,
+  background-color 0.2s linear;
 }
 
 .dropdown-open.active .lucide {
