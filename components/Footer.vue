@@ -20,11 +20,6 @@
             description: 'About Page',
           },
           {
-            url: '/blog',
-            label: 'Blog',
-            description: 'Blog Page',
-          },
-          {
             url: '/destinations',
             label: 'Destinations',
             description: 'Destinations Page',
