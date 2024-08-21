@@ -154,9 +154,11 @@ nav {
   align-items: center;
   top: 0;
   width: 100%;
-  height: 5vw;
+  /* height: 5vw;*/
+  height: fit-content;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  background: rgba(189, 191, 215, 0.5);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* For Safari */
 }
@@ -167,11 +169,14 @@ nav {
   margin: 0;
   margin-left: var(--spacing-5);
   margin-right: var(--spacing-5);
-  align-items: center;
+  margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
+  align-items: start;
   justify-content: flex-end;
 }
 
 .nav-items {
+  margin-top: var(--spacing-1);
   display: flex;
   flex-direction: row;
   margin-bottom: 2px;
@@ -204,6 +209,7 @@ nav a {
   margin: 0 var(--spacing-3);
   color: var(--background-primary);
   pointer-events: all;
+  height: fit-content;
 }
 
 nav a::after {
@@ -224,6 +230,7 @@ nav a::after {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-S);
   margin-bottom: 0;
+  margin-top: 0.5vw;
 }
 
 body.scrolled-past-header nav a {

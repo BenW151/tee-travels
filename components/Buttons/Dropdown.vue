@@ -65,6 +65,7 @@ onUnmounted(() => {
   margin-bottom: 0;
   color: var(--background-primary);
   align-items: center;
+  width: 7vw;
 }
 
 body.scrolled-past-header .dropdown-open {
@@ -79,15 +80,12 @@ body.scrolled-past-header .dropdown-open {
   display: block;
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  min-width: 15vw;
+  /*position: absolute;*/
+  width: 5vw;
   z-index: 999;
   left: 0;
   transform: translateY(var(--spacing-1));
   transition: all 0.1s;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border-radius: 2.5vw;
 }
 
 .dropdown-content.show {

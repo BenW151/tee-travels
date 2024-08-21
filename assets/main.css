@@ -83,12 +83,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--foreground-primary);
-  border: 2px solid var(--foreground-primary);
+  background-color: var(--color-lilac);
+  border: 2px solid var(--color-lilac);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-primary);
+  background: var(--color-lilac);
 }
 
 element {
@@ -104,8 +104,8 @@ element {
 }
 
 ::selection {
-  color: var(--background-primary);
-  background: rgba(0, 0, 0, 0.9);
+  color: var(--foreground-primary);
+  background: var(--color-lilac);
 }
 
 /** Text Tags*/
