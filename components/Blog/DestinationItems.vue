@@ -9,24 +9,27 @@
           <NuxtLink
             :to="`/destinations/${destination.country}`"
             class="destination-link">
-            <!-- Display the image -->
-            <img
-              :src="destination.headerImageUrl"
-              :alt="destination.headerImageAlt"
-              class="destination-image content-image" />
-            <!-- Display the title -->
-            <NuxtLink
-              :to="`/destinations/${destination.country}`"
-              class="destination-title"
-              >{{ destination.title }}</NuxtLink
-            >
-            <p>{{ destination.description }}</p>
+            <!-- Container for image and title -->
+            <div class="image-container">
+              <!-- Display the image -->
+              <img
+                :src="destination.headerImageUrl"
+                :alt="destination.headerImageAlt"
+                class="destination-image content-image" />
+              <!-- Display the title -->
+              <NuxtLink
+                :to="`/destinations/${destination.country}`"
+                class="destination-title">
+                {{ destination.title }}
+              </NuxtLink>
+            </div>
           </NuxtLink>
         </div>
       </LayoutGridContainer>
     </section>
   </div>
 </template>
+
 
 <script setup>
 const { data: destinations } = await useAsyncData("destinations", async () => {
@@ -48,30 +51,57 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 </script>
 
 <style scoped>
-.destination-title {
-  font-size: var(--font-size-M);
-  font-family: var(--font-family-secondary);
-  margin-right: auto;
-}
-
 .destination-link::after {
   display: none;
 }
 
 .destination-image {
   width: 100%;
-  height: 30vw;
+  height: 20vw;
   object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
 }
 
-.destination-item:nth-child(2n + 1) {
-  grid-column: 1 / 9;
-  grid-row: auto;
+.image-container {
+  position: relative;
+  width: 100%;
 }
 
-.destination-item:nth-child(2n) {
-  grid-column: 9 / 17;
-  grid-row: auto;
+.destination-title {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: var(--font-size-M);
+  font-family: var(--font-family-secondary);
+  color: var(--color-white);
+  margin: 0;
+  pointer-events: none;
+}
+
+.destination-item:nth-child(1) {
+  grid-column: 1 / 5;
+  grid-row: 1;
+}
+
+.destination-item:nth-child(2) {
+  grid-column: 5 / 9;
+  grid-row: 1;
+}
+
+.destination-item:nth-child(3) {
+  grid-column: 9 / 13;
+  grid-row: 1;
+}
+
+.destination-item:nth-child(4) {
+  grid-column: 13 / 17;
+  grid-row: 1;
+}
+
+.index .container {
+  padding-top: 0;
 }
 
 @media (max-width: 767px) {

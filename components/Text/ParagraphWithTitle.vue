@@ -1,6 +1,6 @@
 <template>
   <div class="item paragraph-with-title">
-    <div :class="['item-inner', textPosition]">
+    <div :class="[textPosition]">
       <component :is="subtitleTag" class="subtitle">
         <template v-if="useTextReveal">
           <TextReveal>
@@ -39,9 +39,7 @@ const props = defineProps({
 <style scoped>
 .paragraph-with-title {
   grid-column: span 7;
-  background-color: var(--background-primary);
   margin-top: auto;
-  margin-bottom: auto;
   z-index: 5;
 }
 

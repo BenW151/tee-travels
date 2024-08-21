@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="View of Rakaposhi from Karimabad"
@@ -22,10 +22,7 @@
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
           <TextParagraphWithTitle subtitleTag="h3">
-            <template #title
-              >Why Choose<br />
-              Why Not?</template
-            >
+            <template #title>Start Planning Your Trip </template>
             <template #body>
               <p>
                 After years of travelling, it became clear to me that my best
@@ -41,9 +38,9 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/pakistan/pakistan-attabad-lake.webp"
-            imageAlt="Attabad Lake, Pakistan"
-            overlayText="Attabad Lake, <br /> Pakistan"
+            imageUrl="/images/santorini.png"
+            imageAlt="Santorini, Greece"
+            overlayText="Santorini, <br /> Greece"
             textPosition="right" />
         </LayoutGridContainer>
       </section>
@@ -65,11 +62,7 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="carousel">
-        <div class="container">
-          <CarouselsDestinations />
-        </div>
-      </section>
+      <BlogDestinationItems />
 
       <section class="profile text-right">
         <LayoutGridContainer>
@@ -240,25 +233,30 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 <style scoped>
 .text-left .paragraph-with-title {
-  grid-column: 3 / 11;
-  grid-row-start: 1;
+  grid-column: 1 / 9;
+  grid-row-start: 2;
 }
 
 .text-left .image {
-  grid-column: 9 / 16;
-  grid-row-start: 1;
+  grid-column: 10 / 17;
+  grid-row-start: 2;
   height: 40vw;
 }
 
 .text-right .paragraph-with-title {
-  grid-column: 9 / 16;
-  grid-row-start: 1;
+  grid-column: 9 / 17;
+  grid-row-start: 2;
 }
 
 .text-right .image {
-  grid-column: 3 / 11;
-  grid-row-start: 1;
+  grid-column: 1 / 8;
+  grid-row-start: 2;
   height: 40vw;
+}
+
+.destinations .paragraph-with-title {
+  grid-column: 1 / 9;
+  grid-row: 2;
 }
 
 .faq .paragraph-with-title:nth-of-type(1) {

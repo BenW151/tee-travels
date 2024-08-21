@@ -141,6 +141,8 @@ nav {
   height: 5vw;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
 }
 
 .nav {

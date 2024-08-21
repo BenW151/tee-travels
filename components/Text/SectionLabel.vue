@@ -1,5 +1,5 @@
 <template>
-  <p class="item accent section-label">{{ labelText }} —</p>
+  <p class="item accent section-label">——————————  {{ labelText }}</p>
 </template>
 
 <script setup>
@@ -19,6 +19,7 @@ const props = defineProps({
   font-family: var(--font-family-secondary);
   font-weight: 400;
   grid-column: 1 / 3;
+  grid-row: 1;
   height: fit-content;
   display: flex;
   flex-direction: row;
