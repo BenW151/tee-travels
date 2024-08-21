@@ -159,12 +159,12 @@
 
 <script setup>
 useHead({
-  title: "Privacy Policy | Why Not Adventures",
+  title: "Privacy Policy | Tee Travels",
   meta: [
     {
       name: "description",
       content:
-        "Your Privacy Matters: How Why Not Adventures Protects Your Information.",
+        "Your Privacy Matters: How Tee Travels Protects Your Information.",
     },
   ],
   link: [

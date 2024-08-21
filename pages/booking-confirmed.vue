@@ -16,7 +16,7 @@
             <template #title>What's Next?</template>
             <template #body>
               <p>
-                Thank you for booking with Why Not Adventures! To complete your
+                Thank you for booking with Tee Travels! To complete your
                 reservation, please fill out the form provided in the
                 confirmation email you should receive shortly. We will also need
                 a scanned copy of your passport for verification purposes. Once
@@ -42,12 +42,12 @@
 
 <script setup>
 useHead({
-  title: "Booking Confirmed | Why Not Adventures",
+  title: "Booking Confirmed | Tee Travels",
   meta: [
     {
       name: "description",
       content:
-        "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+        "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
     {
       hid: "robots",

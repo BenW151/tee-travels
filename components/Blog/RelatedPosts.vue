@@ -1,8 +1,23 @@
 <template>
   <div>
+    <section class="related-posts-text text-left" id="blog-posts">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Related Posts" />
+        <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
+          <template #title>Related Posts</template>
+          <template #body>
+            <p>
+              Embark on an adventure and discover some of my favourite
+              destinations. Each location offers unique experiences and
+              unforgettable memories. Check out our diverse range of tours and
+              find your next great escape!
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
     <section class="related-posts">
       <LayoutGridContainer v-if="relatedPosts && relatedPosts.length">
-        <h3>Related Posts</h3>
         <div v-for="post in relatedPosts" :key="post._path" class="blog-item">
           <NuxtLink :to="post._path" class="post-link">
             <!-- Display the image -->
@@ -54,6 +69,15 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
 </script>
 
 <style scoped>
+
+.related-posts-text .container {
+  padding-bottom: 0;
+}
+
+.related-posts .container {
+  padding-top: 0;
+}
+
 .blog-text {
   grid-column: 5 / 13;
 }
@@ -79,22 +103,22 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
   object-fit: cover;
 }
 
-.blog-item:nth-child(2) {
+.blog-item:nth-child(1) {
   grid-column: 1 / 5;
   grid-row: 2;
 }
 
-.blog-item:nth-child(3) {
+.blog-item:nth-child(2) {
   grid-column: 5 / 9;
   grid-row: 2;
 }
 
-.blog-item:nth-child(4) {
+.blog-item:nth-child(3) {
   grid-column: 9 / 13;
   grid-row: 2;
 }
 
-.blog-item:nth-child(5) {
+.blog-item:nth-child(4) {
   grid-column: 13 / 17;
   grid-row: 2;
 }

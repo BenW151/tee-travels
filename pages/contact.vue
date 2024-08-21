@@ -21,12 +21,11 @@
 
 <script setup>
 useHead({
-  title: "Contact | Why Not Adventures",
+  title: "Contact | Tee Travels",
   meta: [
     {
       name: "description",
-      content:
-        "Get in Touch: We're Here to Help Plan Your Next Adventure.",
+      content: "Get in Touch: We're Here to Help Plan Your Next Adventure.",
     },
   ],
   link: [

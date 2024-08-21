@@ -3,7 +3,7 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   site: {
     url: "https://whynotadventures.co.uk/",
-    name: "Why Not Adventures",
+    name: "Tee Travels",
   },
 
   devtools: { enabled: true },
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-swiper",
     "@nuxtjs/sitemap",
-    "@nuxt/content"
+    "@nuxt/content",
   ],
 
   image: {
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      "Lora": {
+      Lora: {
         wght: [300, 400, 500, 600, 700],
         ital: [100, 400],
       },
@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", appear: true },
     head: {
-      title: "Why Not Adventures",
+      title: "Tee Travels",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -69,24 +69,24 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+            "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           name: "keywords",
           content:
-            "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Why Not Adventures, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
+            "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Tee Travels, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
         },
         { name: "theme-color", content: "#f2f3f4" },
         { name: "msapplication-TileColor", content: "#da532c" },
         { name: "msapplication-config", content: "/browserconfig.xml" },
         {
           property: "og:title",
-          content: "Why Not Adventures | Adventure Tours",
+          content: "Tee Travels | Adventure Tours",
         },
         {
           property: "og:description",
           content:
-            "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+            "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           property: "og:image",
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
         { name: "twitter:card", content: "summary_large_image" },
         {
           property: "og:site_name",
-          content: "Why Not Adventures",
+          content: "Tee Travels",
         },
         {
           property: "og:locale",
@@ -109,7 +109,7 @@ export default defineNuxtConfig({
           json: {
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Why Not Adventures",
+            name: "Tee Travels",
             url: "https://whynotadventures.co.uk",
             logo: "https://whynotadventures.co.uk/branding/why-not-adventures-logo-rectangle.png",
             sameAs: [
@@ -118,7 +118,7 @@ export default defineNuxtConfig({
               // Add more social media profiles here if available
             ],
             description:
-              "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+              "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
           },
         },
         {

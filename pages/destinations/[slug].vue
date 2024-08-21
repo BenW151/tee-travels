@@ -128,22 +128,6 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="blog-posts text-left" id="blog-posts">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Blog" />
-          <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-            <template #title>Blog Posts</template>
-            <template #body>
-              <p>
-                Embark on an adventure and discover some of my favourite
-                destinations. Each location offers unique experiences and
-                unforgettable memories. Check out our diverse range of tours and
-                find your next great escape!
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-        </LayoutGridContainer>
-      </section>
       <BlogCountryPosts :country="country" />
     </article>
   </div>
@@ -163,7 +147,7 @@ const pageIndexLabels = [
   { title: "Things To Do", link: "things-to-do" },
   { title: "Where To Stay", link: "where-to-stay" },
   { title: "FAQ", link: "faq" },
-  { title: "Blog Posts", link: "blog-posts" },
+  { title: "Blog Posts", link: "country-posts" },
 ];
 
 onMounted(() => {

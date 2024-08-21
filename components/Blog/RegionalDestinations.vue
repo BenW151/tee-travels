@@ -1,5 +1,23 @@
 <template>
   <div>
+
+    <section class="destination-items-text text-left" id="destination-items-text">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Countries" />
+        <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
+          <template #title>Countries</template>
+          <template #body>
+            <p>
+              Embark on an adventure and discover some of my favourite
+              destinations. Each location offers unique experiences and
+              unforgettable memories. Check out our diverse range of tours and
+              find your next great escape!
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="destination-items">
       <LayoutGridContainer v-if="destinations && destinations.length">
         <div
@@ -58,6 +76,13 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
 
 
 <style scoped>
+.destination-items .container {
+  padding-top: 0;
+}
+
+.destination-items-text .container {
+  padding-bottom: 0;
+}
 
 .destination-link {
   margin-bottom: 0;

@@ -1,12 +1,13 @@
 ---
-title: Article 1
-subtitle: Article description
-description: This is a post description
-date: 2024-08-06T20:42:00.000Z
-headerImageUrl: /images/uploads/attabad-lake.webp
+title: Interail Itinerary
+subtitle: One Month Interail Itinerary.
+description: One Month Interail Itinerary.
+date: 2024-08-22T20:42:00.000Z
+headerImageUrl: /images/uploads/france-cover.png
 headerImageAlt: hello
-country: italy
-tag: running
+country: europe
+tag: hiking
+
 sectionOneTitle: Where to Stay
 sectionOneText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

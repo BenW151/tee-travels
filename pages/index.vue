@@ -70,14 +70,14 @@
             <template #title>Who Am I?</template>
             <template #body>
               <p>
-                Hi, I'm Tia, the founder of Why Not Adventures. Travelling has
-                always been my passion and I've dedicated my life to exploring
-                the world. I love adventure, being in nature, exploring off the
+                Hi, I'm Tia, the founder of Tee Travels. Travelling has always
+                been my passion and I've dedicated my life to exploring the
+                world. I love adventure, being in nature, exploring off the
                 beaten track and learning about local life in different
                 countries. After years of experience travelling, I decided to
-                create Why Not Adventures, to share my love for my favourite
-                travel destinations and bring together like-minded travellers
-                from around the world.
+                create Tee Travels, to share my love for my favourite travel
+                destinations and bring together like-minded travellers from
+                around the world.
               </p>
               <a
                 href="https://instagram.com/teetravels_"
@@ -101,12 +101,12 @@
 
 <script setup>
 useHead({
-  title: "Why Not Adventures",
+  title: "Tee Travels",
   meta: [
     {
       name: "description",
       content:
-        "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+        "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
   ],
   link: [

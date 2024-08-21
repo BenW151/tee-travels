@@ -20,12 +20,12 @@ const props = defineProps({
 const handleError = () => clearError({ redirect: "/" });
 
 useHead({
-  title: "Why Not Adventures - Error",
+  title: "Tee Travels - Error",
   meta: [
     {
       name: "description",
       content:
-        "Why Not Adventures offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+        "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
     {
       hid: "robots",

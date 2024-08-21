@@ -23,7 +23,7 @@ const props = defineProps({
   font-size: var(--font-size-XXS);
   font-family: var(--font-family-secondary);
   font-weight: 400;
-  grid-column: 1 / 3;
+  grid-column: 1 / 7;
   grid-row: 1;
   height: fit-content;
   display: flex;

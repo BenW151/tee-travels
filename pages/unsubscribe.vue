@@ -20,7 +20,7 @@
 
 <script setup>
 useHead({
-  title: "Unsubscribe | Why Not Adventures",
+  title: "Unsubscribe | Tee Travels",
   meta: [
     {
       name: "description",

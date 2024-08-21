@@ -6,7 +6,7 @@
           <p class="wordmark">Tee Travels</p>
           <!--<NuxtImg
             src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
-            alt="Why Not Adventures Logo"
+            alt="Tee Travels Logo"
             class="nav-logo"
             :class="{ open: isMenuOpen }"
         />--></NuxtLink
@@ -26,17 +26,22 @@
           @click="toggleMenu"
           >About</NuxtLink
         >
-        <NuxtLink
+        <!--<NuxtLink
           class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
           @click="toggleMenu"
           >Destinations</NuxtLink
-        >
+        >-->
         <ButtonsDropdown
           v-if="!isMobile"
           :listLinks="[
+            {
+              url: '/destinations',
+              label: 'Everywhere',
+              description: 'Everywhere',
+            },
             {
               url: '/destinations/europe',
               label: 'Europe',
@@ -180,7 +185,9 @@ nav {
 }
 
 .contact:hover {
-  background: rgba(229, 207, 184, 0.5);
+  background: var(--color-lilac);
+  color: var(--background-primary);
+  border: 1px solid var(--background-primary);
 }
 
 .contact::after {
@@ -225,6 +232,10 @@ body.scrolled-past-header nav a::after {
 
 body.scrolled-past-header .contact {
   border: 1px solid var(--foreground-primary);
+}
+
+body.scrolled-past-header .contact:hover {
+  border: 1px solid var(--background-primary);
 }
 
 .nav-logo {

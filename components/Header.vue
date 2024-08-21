@@ -84,7 +84,8 @@ header {
 }
 
 .header-small {
-  height: 100lvh;
+  min-height: 100lvh;
+  height: auto;
 }
 .header-medium {
   height: 120lvh;
@@ -104,7 +105,7 @@ header a.link::after {
 }
 
 .container {
-  min-height: 100%;
+  min-height: 100lvh;
 }
 
 .background-image {
