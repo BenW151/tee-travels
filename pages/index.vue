@@ -4,7 +4,6 @@
       imageUrl="/images/no-bg-image.png"
       imageAlt="View of Rakaposhi from Karimabad"
       title="Tee Travels"
-      subtitle="Get Off The Beaten Track."
       headerClass="header-small">
     </Header>
 

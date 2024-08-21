@@ -28,14 +28,6 @@
         >
         <NuxtLink
           class="nav-item"
-          to="/blog"
-          :class="{ active: $route.path === '/blog' }"
-          aria-label="Blog Page"
-          @click="toggleMenu"
-          >Blog</NuxtLink
-        >
-        <NuxtLink
-          class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
@@ -46,34 +38,24 @@
           v-if="!isMobile"
           :listLinks="[
             {
-              url: '/destinations',
+              url: '/destinations/europe',
               label: 'Europe',
               description: 'Europe',
             },
             {
-              url: '/destinations',
+              url: '/destinations/asia',
               label: 'Asia',
               description: 'Asia',
             },
             {
-              url: '/destinations',
+              url: '/destinations/north-america',
               label: 'North America',
               description: 'North America',
             },
             {
-              url: '/destinations',
-              label: 'South America',
-              description: 'South America',
-            },
-            {
-              url: '/destinations',
-              label: 'Middle East',
-              description: 'Middle East',
-            },
-            {
-              url: '/destinations',
-              label: 'Africa',
-              description: 'Africa',
+              url: '/destinations/oceania',
+              label: 'Oceania',
+              description: 'Oceania',
             },
           ]">
           <template #button>Regions <LucideChevronDown /></template>

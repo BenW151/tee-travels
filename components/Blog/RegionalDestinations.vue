@@ -30,12 +30,18 @@
   </div>
 </template>
 
-
 <script setup>
-const { data: destinations } = await useAsyncData("destinations", async () => {
+const props = defineProps({
+  region: {
+    type: String,
+    required: true,
+  },
+});
+
+const { data: destinations } = await useAsyncData(`destinations-${props.region}`, async () => {
   try {
-    // Fetch all destination pages from the 'destinations' folder
-    const content = await queryContent("destinations").find(); // Update path to 'destinations'
+    // Fetch all destination pages from the 'destinations' folder where the region matches the prop
+    const content = await queryContent("destinations").where({ region: props.region }).find();
 
     // Sort destinations by title or any other field if needed
     const sortedContent = content.sort((a, b) => {
@@ -49,6 +55,7 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
   }
 });
 </script>
+
 
 <style scoped>
 

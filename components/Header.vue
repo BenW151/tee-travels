@@ -26,6 +26,7 @@
     <LayoutGridContainer>
       <div class="hero-text item">
         <h1>{{ title }}</h1>
+        <h2>{{ subtitle }}</h2>
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll</p>

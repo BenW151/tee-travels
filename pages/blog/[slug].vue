@@ -6,9 +6,8 @@
       backgroundColor="var(--background-primary)"
       title=""
       subtitle=""
-      headerClass="header-small"
-    />
-    
+      headerClass="header-small" />
+
     <!-- Blog Content -->
     <ContentDoc v-slot="{ doc }">
       <article v-if="contentLoaded">
@@ -18,39 +17,73 @@
           :imageAlt="doc.headerImageAlt"
           :title="doc.title"
           :subtitle="doc.subtitle"
-          headerClass="header-small"
-        />
+          headerClass="header-small" />
 
-        <section class="contents">
+        <section class="text-left">
           <LayoutGridContainer>
-            <ListsPageIndex :labels="pageIndexLabels" />
+            <TextSectionLabel :labelText="doc.sectionOneTitle" />
+            <TextParagraphWithTitle subtitleTag="h3">
+              <template #title>{{ doc.sectionOneTitle }}</template>
+              <template #body>
+                <p v-html="doc.sectionOneText"></p>
+              </template>
+            </TextParagraphWithTitle>
+            <ImageWithTextOverlay
+              :imageUrl="doc.sectionOneImageUrl"
+              :imageAlt="doc.sectionOneImageAlt"
+              :overlayText="doc.sectionOneImageAlt"
+              textPosition="right" />
           </LayoutGridContainer>
         </section>
 
-        <section class="what-to-do" id="what-to-do">
+        <section class="text-right">
           <LayoutGridContainer>
-            <div class="blog-text">
-              <h3>{{ doc.whatToDoTitle }}</h3>
-              <div v-html="doc.whatToDoText"></div>
-            </div>
+            <TextSectionLabel :labelText="doc.sectionTwoTitle" />
+            <TextParagraphWithTitle subtitleTag="h3">
+              <template #title>{{ doc.sectionTwoTitle }}</template>
+              <template #body>
+                <p v-html="doc.sectionTwoText"></p>
+              </template>
+            </TextParagraphWithTitle>
+            <ImageWithTextOverlay
+              :imageUrl="doc.sectionTwoImageUrl"
+              :imageAlt="doc.sectionTwoImageAlt"
+              :overlayText="doc.sectionTwoImageAlt"
+              textPosition="left" />
           </LayoutGridContainer>
         </section>
 
-        <section class="where-to-stay" id="where-to-stay">
+        <section class="text-left">
           <LayoutGridContainer>
-            <div class="blog-text">
-              <h3>{{ doc.whereToStayTitle }}</h3>
-              <div v-html="doc.whereToStayText"></div>
-            </div>
+            <TextSectionLabel :labelText="doc.sectionThreeTitle" />
+            <TextParagraphWithTitle subtitleTag="h3">
+              <template #title>{{ doc.sectionThreeTitle }}</template>
+              <template #body>
+                <p v-html="doc.sectionThreeText"></p>
+              </template>
+            </TextParagraphWithTitle>
+            <ImageWithTextOverlay
+              :imageUrl="doc.sectionThreeImageUrl"
+              :imageAlt="doc.sectionThreeImageAlt"
+              :overlayText="doc.sectionThreeImageAlt"
+              textPosition="right" />
           </LayoutGridContainer>
         </section>
 
-        <section class="what-to-see" id="what-to-see">
+        <section class="text-right">
           <LayoutGridContainer>
-            <div class="blog-text">
-              <h3>{{ doc.whatToSeeTitle }}</h3>
-              <div v-html="doc.whatToSeeText"></div>
-            </div>
+            <TextSectionLabel :labelText="doc.sectionFourTitle" />
+            <TextParagraphWithTitle subtitleTag="h3">
+              <template #title>{{ doc.sectionFourTitle }}</template>
+              <template #body>
+                <p v-html="doc.sectionFourText"></p>
+              </template>
+            </TextParagraphWithTitle>
+            <ImageWithTextOverlay
+              :imageUrl="doc.sectionFourImageUrl"
+              :imageAlt="doc.sectionFourImageAlt"
+              :overlayText="doc.sectionFourImageAlt"
+              textPosition="left" />
           </LayoutGridContainer>
         </section>
 
@@ -61,34 +94,54 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 const contentLoaded = ref(false);
-
-const pageIndexLabels = [
-  { title: "What To Do", link: "what-to-do" },
-  { title: "Where To Stay", link: "where-to-stay" },
-  { title: "What To See", link: "what-to-see" },
-];
 
 onMounted(() => {
   setTimeout(() => {
     contentLoaded.value = true;
-  }, 200); 
+  }, 200);
 });
 </script>
-
 
 <style scoped>
 .blog-text {
   grid-column: 5 / 13;
 }
 
+.text-left .paragraph-with-title {
+  grid-column: 1 / 9;
+  grid-row-start: 2;
+}
+
+.text-left .image {
+  grid-column: 10 / 17;
+  grid-row-start: 2;
+  height: 40vw;
+}
+
+.text-right .paragraph-with-title {
+  grid-column: 9 / 17;
+  grid-row-start: 2;
+}
+
+.text-right .image {
+  grid-column: 1 / 8;
+  grid-row-start: 2;
+  height: 40vw;
+}
+
 @media (max-width: 767px) {
-  .blog-text {
+  section div.container.grid div.item,
+  .end-text a {
     grid-column: 1 / 7;
+    grid-row: auto;
   }
 
+  .container .image:nth-of-type(2) {
+    height: 40vh;
+  }
 }
 </style>
 
