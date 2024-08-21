@@ -11,7 +11,8 @@
       :class="{ show: isActive }"
       ref="dropdownContent"
       v-show="isActive">
-      <ListsLinkList :links="listLinks" />
+      <ListsLinkList :links="listLinks" @click="toggleDropdown"
+      />
     </div>
   </div>
 </template>
