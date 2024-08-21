@@ -3,13 +3,13 @@ name = "decap-proxy"
 main = "src/index.ts"
 compatibility_date = "2024-04-19"
 compatibility_flags = ["nodejs_compat"]
-route = { pattern = "oauth.cms-poc.benward.io", zone_name = "benward.io" }
-GITHUB_OAUTH_ID = "Ov23ligomCzjqqMDzQVH"
-GITHUB_OAUTH_SECRET = "5cdeff0872ac4dfa8bb449a3b5c4f022d2f4d876"
+route = { pattern = "oauth.tee-travels.benward.io", zone_name = "benward.io" }
+GITHUB_OAUTH_ID = "Ov23lid0qm38M0ZQofFl"
+GITHUB_OAUTH_SECRET = "daecd4de44f9a37b8a38123b89af67f61e23ac40"
 
 [vars]
-GITHUB_OAUTH_ID = "Ov23ligomCzjqqMDzQVH"
-GITHUB_OAUTH_SECRET = "5cdeff0872ac4dfa8bb449a3b5c4f022d2f4d876"
+GITHUB_OAUTH_ID = "Ov23lid0qm38M0ZQofFl"
+GITHUB_OAUTH_SECRET = "daecd4de44f9a37b8a38123b89af67f61e23ac40"
 
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)

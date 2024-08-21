@@ -1,10 +1,10 @@
-site_url: https://cms-poc.benward.io
+site_url: https://tee-travels.benward.io
 search: false
 backend:
   name: github
-  branch: cms-poc
-  repo: benw151/portfolio-nuxt
-  base_url: https://oauth.cms-poc.benward.io
+  branch: main
+  repo: benw151/tee-travels
+  base_url: https://oauth.tee-travels.benward.io
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
@@ -48,7 +48,11 @@ collections:
           name: "tag",
           widget: "string",
           hint: "Must exactly match related pages. Use all lower case and put dashes between words (Like this: tag-example)",
-          pattern: ["^[a-z]+(-[a-z]+)*$", "Use all lower case and put dashes between words (Like this: tag-example)"],
+          pattern:
+            [
+              "^[a-z]+(-[a-z]+)*$",
+              "Use all lower case and put dashes between words (Like this: tag-example)",
+            ],
         }
       - {
           label: "Header Image URL",
@@ -106,3 +110,62 @@ collections:
           name: "headerImageAlt",
           widget: "string",
         }
+      - { label: "Region", name: "region", widget: "string" }
+      - { label: "Spending", name: "spending", widget: "string" }
+      - {
+          label: "spending Image URL",
+          name: "spendingImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "spending Image Alt Text",
+          name: "spendingImageAlt",
+          widget: "string",
+        }
+      - { label: "Getting Around", name: "gettingAround", widget: "string" }
+      - {
+          label: "gettingAround Image URL",
+          name: "gettingAroundImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "gettingAround Image Alt Text",
+          name: "gettingAroundImageAlt",
+          widget: "string",
+        }
+      - { label: "Things To Do", name: "thingsToDo", widget: "string" }
+      - {
+          label: "thingsToDo Image URL",
+          name: "thingsToDoImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "thingsToDo Image Alt Text",
+          name: "thingsToDoImageAlt",
+          widget: "string",
+        }
+      - { label: "Where To Stay", name: "whereToStay", widget: "string" }
+      - {
+          label: "whereToStay Image URL",
+          name: "whereToStayImageUrl",
+          widget: "image",
+          allow_multiple: false,
+        }
+      - {
+          label: "whereToStay Image Alt Text",
+          name: "whereToStayImageAlt",
+          widget: "string",
+        }
+      - {
+          label: "FAQ Worth Visiting",
+          name: "faqWorthVisiting",
+          widget: "string",
+        }
+      - { label: "FAQ Cheap", name: "faqCheap", widget: "string" }
+      - { label: "FAQ Water", name: "faqWater", widget: "string" }
+      - { label: "FAQ Visa", name: "faqVisa", widget: "string" }
+      - { label: "FAQ Insurance", name: "faqInsurance", widget: "string" }
+      - { label: "FAQ Safety", name: "faqSafety", widget: "string" }
