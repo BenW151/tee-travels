@@ -15,7 +15,7 @@ export default defineNuxtPlugin(nuxtApp => {
         const isMobile = windowWidth < 768;
 
         // Initialize Rellax only if not on mobile
-        if (!isMobile) {
+      //  if (!isMobile) {
           const speed = el.getAttribute('data-rellax-speed') || 1; // Default speed if not specified
           rellaxInstance = new Rellax(el, {
             speed: parseInt(speed),
@@ -28,7 +28,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
           el.rellax = rellaxInstance;
         }
-      };
+      ;
 
       // Initialize Rellax on mount
       updateRellax();

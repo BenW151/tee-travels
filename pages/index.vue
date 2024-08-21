@@ -189,6 +189,12 @@ const { windowWidth, isMobile } = useWindowWidth();
 }
 
 @media (max-width: 767px) {
+  .lead-text .item,
+  .lead-text p {
+    grid-column: 1 / 7;
+    grid-row: auto;
+  }
+
   section div.container.grid div.item,
   .end-text a {
     grid-column: 1 / 7;

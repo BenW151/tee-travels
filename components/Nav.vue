@@ -43,39 +43,40 @@
           >Destinations</NuxtLink
         >
         <ButtonsDropdown
+          v-if="!isMobile"
           :listLinks="[
             {
-              url: '/europe',
+              url: '/destinations',
               label: 'Europe',
               description: 'Europe',
             },
             {
-              url: '/asia',
+              url: '/destinations',
               label: 'Asia',
               description: 'Asia',
             },
             {
-              url: '/north-america',
+              url: '/destinations',
               label: 'North America',
               description: 'North America',
             },
             {
-              url: '/south-america',
+              url: '/destinations',
               label: 'South America',
               description: 'South America',
             },
             {
-              url: '/middle-aast',
+              url: '/destinations',
               label: 'Middle East',
               description: 'Middle East',
             },
             {
-              url: '/africa',
+              url: '/destinations',
               label: 'Africa',
               description: 'Africa',
             },
           ]">
-          <template #button>Regions <LucideChevronDown/></template>
+          <template #button>Regions <LucideChevronDown /></template>
         </ButtonsDropdown>
         <NuxtLink
           v-if="isMobile"

@@ -39,7 +39,7 @@ const props = defineProps({
 @media (max-width: 767px) {
   .section-label {
     margin: 0;
-    grid-column: 1;
+    grid-column: 1 / 4;
     grid-row-start: 1;
   }
 }

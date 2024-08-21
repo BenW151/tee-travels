@@ -222,6 +222,22 @@ const { data: destinationData } = await useAsyncData(
   grid-row-start: 2;
   height: 40vw;
 }
+
+@media (max-width: 767px) {
+  section div.container.grid div.item,
+  .end-text a {
+    grid-column: 1 / 7;
+    grid-row: auto;
+  }
+
+  .end-text a h2 {
+    font-size: 14.5vw;
+  }
+
+  .container .image:nth-of-type(2) {
+    height: 40vh;
+  }
+}
 </style>
 
 <style>

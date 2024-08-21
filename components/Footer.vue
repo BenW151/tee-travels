@@ -286,6 +286,7 @@ h5 {
     grid-column: 4 / 7;
     grid-row: 2;
     margin-top: auto;
+    color: var(--foreground-primary);
   }
 
   .wordmark {
