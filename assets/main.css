@@ -15,6 +15,8 @@
   --color-white: #f2f3f4;
   --color-black: #070707;
   --color-grey: #555555;
+  --color-pink: #e5cfb8;
+  --color-lilac: #bdbfd7;
   --foreground-primary: var(--color-black);
   --background-primary: var(--color-white);
   --accent-primary: var(--color-grey);

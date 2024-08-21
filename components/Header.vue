@@ -1,6 +1,17 @@
 <template>
   <header ref="headerRef" :class="headerClass" id="header">
     <div
+      class="background-color rellax"
+      v-rellax
+      style="
+        background: rgb(229, 207, 184);
+        background: linear-gradient(
+          0deg,
+          var(--color-pink) 0%,
+          var(--color-lilac) 100%
+        );
+      "></div>
+    <div
       v-if="imageUrl"
       class="background-image rellax"
       v-rellax
@@ -15,8 +26,6 @@
     <LayoutGridContainer>
       <div class="hero-text item">
         <h1>{{ title }}</h1>
-        <h2>{{ subtitle }}</h2>
-        <h3>{{ description }}</h3>
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll</p>
@@ -69,6 +78,10 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+header {
+  z-index: 1;
+}
+
 .header-small {
   height: 100lvh;
 }
@@ -99,6 +112,12 @@ header a.link::after {
   position: fixed;
   top: 0;
   z-index: 0;
+  pointer-events: none;
+}
+
+.index .background-image {
+  top: 25%;
+  z-index: 4;
 }
 
 .background-image img {
@@ -109,7 +128,7 @@ header a.link::after {
   top: 0;
   bottom: 0;
   right: 0;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
 }
 
 .background-color {
