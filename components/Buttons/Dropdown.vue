@@ -64,6 +64,7 @@ onUnmounted(() => {
   flex-direction: row;
   margin-bottom: 0;
   color: var(--background-primary);
+  align-items: center;
 }
 
 body.scrolled-past-header .dropdown-open {
@@ -99,20 +100,25 @@ body.scrolled-past-header .dropdown-open {
 </style>
 
 <style>
-.dropdown-content a.link {
+.dropdown-content a.link, nav .lucide {
   color: var(--background-primary);
+  transition: transform 0.1s;
 }
 
 .dropdown-content a.link::after {
   background-color: var(--background-primary);
 }
 
-body.scrolled-past-header .dropdown-content a.link {
+body.scrolled-past-header .dropdown-content a.link, body.scrolled-past-header nav .lucide  {
   color: var(--foreground-primary);
 }
 
 body.scrolled-past-header .dropdown-content a.link::after {
   background-color: var(--foreground-primary);
+}
+
+.dropdown-open.active .lucide {
+  transform: rotate(-180deg);
 }
 
 </style>

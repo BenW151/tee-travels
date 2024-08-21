@@ -80,24 +80,20 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
   pointer-events: none;
 }
 
-.destination-item:nth-child(1) {
-  grid-column: 1 / 5;
-  grid-row: 1;
+.destination-item:nth-child(4n+1) {
+  grid-column: 1 / span 4;
 }
 
-.destination-item:nth-child(2) {
-  grid-column: 5 / 9;
-  grid-row: 1;
+.destination-item:nth-child(4n+2) {
+  grid-column: 5 / span 4;
 }
 
-.destination-item:nth-child(3) {
-  grid-column: 9 / 13;
-  grid-row: 1;
+.destination-item:nth-child(4n+3) {
+  grid-column: 9 / span 4;
 }
 
-.destination-item:nth-child(4) {
-  grid-column: 13 / 17;
-  grid-row: 1;
+.destination-item:nth-child(4n+4) {
+  grid-column: 13 / span 4;
 }
 
 .index .container {

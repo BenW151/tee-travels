@@ -45,22 +45,37 @@
         <ButtonsDropdown
           :listLinks="[
             {
-              url: 'https://www.instagram.com/benward.io/',
-              label: 'Instagram',
-              description: 'Instagram',
+              url: '/europe',
+              label: 'Europe',
+              description: 'Europe',
             },
             {
-              url: 'https://linkedin.com/in/benw151',
-              label: 'LinkedIn',
-              description: 'LinkedIn',
+              url: '/asia',
+              label: 'Asia',
+              description: 'Asia',
             },
             {
-              url: 'https://github.com/BenW151',
-              label: 'GitHub',
-              description: 'GitHub',
+              url: '/north-america',
+              label: 'North America',
+              description: 'North America',
+            },
+            {
+              url: '/south-america',
+              label: 'South America',
+              description: 'South America',
+            },
+            {
+              url: '/middle-aast',
+              label: 'Middle East',
+              description: 'Middle East',
+            },
+            {
+              url: '/africa',
+              label: 'Africa',
+              description: 'Africa',
             },
           ]">
-          <template #button>Dropdown</template>
+          <template #button>Regions <LucideChevronDown/></template>
         </ButtonsDropdown>
         <NuxtLink
           v-if="isMobile"
@@ -179,6 +194,10 @@ nav {
 .contact:hover {
   color: var(--background-primary);
   background: rgba(0, 0, 0, 0.5);
+}
+
+.contact::after {
+  display: none;
 }
 
 nav a {
