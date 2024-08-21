@@ -88,7 +88,7 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
 }
 
 .post-title {
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-S);
   font-family: var(--font-family-secondary);
   margin-right: auto;
 }
