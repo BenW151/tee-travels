@@ -21,10 +21,12 @@
         <div v-for="post in relatedPosts" :key="post._path" class="blog-item">
           <NuxtLink :to="post._path" class="post-link">
             <!-- Display the image -->
-            <img
-              :src="post.headerImageUrl"
-              :alt="post.headerImageAlt"
-              class="post-image content-image" />
+            <div class="image-container">
+              <img
+                :src="post.headerImageUrl"
+                :alt="post.headerImageAlt"
+                class="post-image content-image" />
+            </div>
             <!-- Display the title -->
             <NuxtLink :to="post._path" class="post-title">{{
               post.title
@@ -69,7 +71,6 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
 </script>
 
 <style scoped>
-
 .related-posts-text .container {
   padding-bottom: 0;
 }
@@ -99,8 +100,20 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
 
 .post-image {
   width: 100%;
-  height: 20vw;
+  height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.blog-item:hover .post-image {
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  overflow: hidden;
 }
 
 .blog-item:nth-child(1) {
