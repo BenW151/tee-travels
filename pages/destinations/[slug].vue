@@ -106,10 +106,10 @@
             </template>
           </TextParagraphWithTitle>
           <Accordion>
-            <AccordionItem title="Is Country worth visiting?" index="1">
+            <AccordionItem :title="`Is ${destinationData.title} worth visiting?`" index="1">
               <p v-html="destinationData.faqWorthVisiting"></p>
             </AccordionItem>
-            <AccordionItem title="Is Country cheap?" index="2">
+            <AccordionItem :title="`Is ${destinationData.title} cheap?`" index="2">
               <p v-html="destinationData.faqCheap"></p>
             </AccordionItem>
             <AccordionItem title="Can you drink tap water?" index="3">
