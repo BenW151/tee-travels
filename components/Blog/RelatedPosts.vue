@@ -103,10 +103,11 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
   height: 100%;
   object-fit: cover;
   display: block;
+  margin: auto;
 }
 
 .blog-item:hover .post-image {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .image-container {

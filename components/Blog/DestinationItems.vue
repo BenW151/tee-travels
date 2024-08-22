@@ -30,7 +30,6 @@
   </div>
 </template>
 
-
 <script setup>
 const { data: destinations } = await useAsyncData("destinations", async () => {
   try {
@@ -51,7 +50,6 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 </script>
 
 <style scoped>
-
 .destination-link {
   margin-bottom: 0;
 }
@@ -64,12 +62,13 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: auto;
   display: block;
   filter: brightness(0.6);
 }
 
 .destination-item:hover .destination-image {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .image-container {
@@ -91,19 +90,19 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
   pointer-events: none;
 }
 
-.destination-item:nth-child(4n+1) {
+.destination-item:nth-child(4n + 1) {
   grid-column: 1 / span 4;
 }
 
-.destination-item:nth-child(4n+2) {
+.destination-item:nth-child(4n + 2) {
   grid-column: 5 / span 4;
 }
 
-.destination-item:nth-child(4n+3) {
+.destination-item:nth-child(4n + 3) {
   grid-column: 9 / span 4;
 }
 
-.destination-item:nth-child(4n+4) {
+.destination-item:nth-child(4n + 4) {
   grid-column: 13 / span 4;
 }
 

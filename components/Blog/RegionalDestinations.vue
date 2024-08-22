@@ -1,7 +1,8 @@
 <template>
   <div>
-
-    <section class="destination-items-text text-left" id="destination-items-text">
+    <section
+      class="destination-items-text text-left"
+      id="destination-items-text">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Countries" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
@@ -56,24 +57,28 @@ const props = defineProps({
   },
 });
 
-const { data: destinations } = await useAsyncData(`destinations-${props.region}`, async () => {
-  try {
-    // Fetch all destination pages from the 'destinations' folder where the region matches the prop
-    const content = await queryContent("destinations").where({ region: props.region }).find();
+const { data: destinations } = await useAsyncData(
+  `destinations-${props.region}`,
+  async () => {
+    try {
+      // Fetch all destination pages from the 'destinations' folder where the region matches the prop
+      const content = await queryContent("destinations")
+        .where({ region: props.region })
+        .find();
 
-    // Sort destinations by title or any other field if needed
-    const sortedContent = content.sort((a, b) => {
-      return a.title.localeCompare(b.title);
-    });
+      // Sort destinations by title or any other field if needed
+      const sortedContent = content.sort((a, b) => {
+        return a.title.localeCompare(b.title);
+      });
 
-    return sortedContent;
-  } catch (err) {
-    console.error("Error fetching destinations:", err);
-    return [];
+      return sortedContent;
+    } catch (err) {
+      console.error("Error fetching destinations:", err);
+      return [];
+    }
   }
-});
+);
 </script>
-
 
 <style scoped>
 .destination-items .container {
@@ -85,7 +90,7 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
 }
 
 .destination-item:hover .destination-image {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .destination-link {
@@ -102,6 +107,7 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
   object-fit: cover;
   display: block;
   filter: brightness(0.6);
+  margin: auto;
 }
 
 .image-container {
@@ -123,19 +129,19 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
   pointer-events: none;
 }
 
-.destination-item:nth-child(4n+1) {
+.destination-item:nth-child(4n + 1) {
   grid-column: 1 / span 4;
 }
 
-.destination-item:nth-child(4n+2) {
+.destination-item:nth-child(4n + 2) {
   grid-column: 5 / span 4;
 }
 
-.destination-item:nth-child(4n+3) {
+.destination-item:nth-child(4n + 3) {
   grid-column: 9 / span 4;
 }
 
-.destination-item:nth-child(4n+4) {
+.destination-item:nth-child(4n + 4) {
   grid-column: 13 / span 4;
 }
 
