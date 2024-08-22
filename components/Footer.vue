@@ -277,7 +277,7 @@ h5 {
   .wordmark {
     grid-column: 1 / 7;
     grid-row: 4;
-    font-size: 17vw;
+    font-size: 16.5vw;
   }
 
   h5 {
