@@ -27,12 +27,12 @@
           >About</NuxtLink
         >
         <NuxtLink
-          class="nav-item contact"
-          to="/contact"
-          :class="{ active: $route.path === '/contact' }"
-          aria-label="Contact Page"
+          class="nav-item"
+          to="/resources"
+          :class="{ active: $route.path === '/resources' }"
+          aria-label="Resources Page"
           @click="toggleMenu"
-          >Contact</NuxtLink
+          >Resources</NuxtLink
         >
         <NuxtLink
           v-if="isMobile"
@@ -75,6 +75,14 @@
           ]">
           <template #button>Destinations <LucidePlus /></template>
         </ButtonsDropdown>
+        <NuxtLink
+          class="nav-item contact"
+          to="/contact"
+          :class="{ active: $route.path === '/contact' }"
+          aria-label="Contact Page"
+          @click="toggleMenu"
+          >Contact</NuxtLink
+        >
       </div>
       <Search v-if="!isMobile" />
     </div>

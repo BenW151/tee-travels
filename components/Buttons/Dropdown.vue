@@ -71,7 +71,7 @@ onUnmounted(() => {
 
 <style scoped>
 .dropdown {
-  grid-column: span 2;
+  width: 8.5vw;
 }
 
 .dropdown-open {
@@ -81,6 +81,7 @@ onUnmounted(() => {
   margin-bottom: 0;
   color: var(--background-primary);
   align-items: center;
+  margin-right: 0;
 }
 
 body.scrolled-past-header .dropdown-open {
@@ -140,8 +141,10 @@ body.scrolled-past-header .dropdown-content a.link::after {
   rotate: 0;
 }
 
-nav .lucide {
+.dropdown .lucide {
   transition: rotate 0.2s;
+  width: fit-content;
+  margin-left: 2.5px;
 }
 
 </style>
