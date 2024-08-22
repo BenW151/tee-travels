@@ -2,7 +2,7 @@
   <footer ref="footer">
     <LayoutGridContainer class="footer">
       <div class="work-with-me">
-       <FormsNewsletter />
+        <FormsNewsletter />
       </div>
       <div class="location">
         <p class="subtitle">Current Location</p>
@@ -23,6 +23,11 @@
             url: '/destinations',
             label: 'Destinations',
             description: 'Destinations Page',
+          },
+          {
+            url: '/resources',
+            label: 'Resources',
+            description: 'Resources Page',
           },
           {
             url: '/contact',
@@ -138,7 +143,7 @@ footer .container {
       var(--background-primary),
       rgba(255, 255, 255, 0)
     ),
-      url("/images/forest.png");
+    url("/images/forest.png");
   background-size: cover;
   background-position: 25% center;
 }
@@ -174,7 +179,7 @@ footer .container {
   grid-column: 15 / 17;
   grid-row: 2;
   margin-top: auto;
-  color: var(--background-primary);
+  color: var(--foreground-primary);
 }
 
 .work-with-me {
