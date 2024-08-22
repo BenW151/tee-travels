@@ -112,7 +112,7 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 }
 
 @media (max-width: 767px) {
-  .destination-image {
+  .image-container {
     height: 80vw;
   }
 

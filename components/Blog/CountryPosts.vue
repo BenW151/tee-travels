@@ -108,7 +108,7 @@ const { data: countryPosts } = await useAsyncData(
 }
 
 @media (max-width: 767px) {
-  .post-image {
+  .image-container {
     height: 60vw;
   }
 

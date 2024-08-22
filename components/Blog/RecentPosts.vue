@@ -78,7 +78,7 @@ const { data: posts } = await useAsyncData("posts", async () => {
 }
 
 @media (max-width: 767px) {
-  .post-image {
+  .image-container {
     height: 60vw;
   }
 
