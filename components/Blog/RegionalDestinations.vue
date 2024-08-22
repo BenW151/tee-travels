@@ -84,6 +84,10 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
   padding-bottom: 0;
 }
 
+.destination-item:hover .destination-image {
+  transform: scale(1.1);
+}
+
 .destination-link {
   margin-bottom: 0;
 }
@@ -94,7 +98,7 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
 
 .destination-image {
   width: 100%;
-  height: 20vw;
+  height: 100%;
   object-fit: cover;
   display: block;
   filter: brightness(0.6);
@@ -103,6 +107,8 @@ const { data: destinations } = await useAsyncData(`destinations-${props.region}`
 .image-container {
   position: relative;
   width: 100%;
+  height: 20vw;
+  overflow: hidden;
 }
 
 .destination-title {
