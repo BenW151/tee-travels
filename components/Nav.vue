@@ -271,7 +271,8 @@ body.scrolled-past-header .nav-logo {
     width: 100vw;
     height: 110vh;
     background-color: var(--background-primary);
-    justify-content: center;
+    justify-content: start;
+    padding-top: 30vh;
     align-items: start;
     transition: transform 0.3s ease-in-out;
     transform: translateY(-110%);

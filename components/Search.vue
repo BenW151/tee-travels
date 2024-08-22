@@ -152,6 +152,10 @@ body.scrolled-past-header input::placeholder {
     width: fit-content;
     margin-top: 0;
   }
+
+  .lucide {
+    display: none;
+  }
 }
 </style>
 
