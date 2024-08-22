@@ -230,6 +230,11 @@ const { data: destinationData } = await useAsyncData(
   .container .image:nth-of-type(2) {
     height: 40vh;
   }
+
+  .page-index {
+    grid-column: 1 / 7;
+    margin: 0;
+  }
 }
 </style>
 

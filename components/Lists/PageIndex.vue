@@ -85,6 +85,7 @@ ul li:last-child {
 
   ul {
     width: 100%;
+    flex-direction: column;
     justify-content: space-around;
   }
 }
