@@ -1,21 +1,4 @@
 <template>
-  <section class="country-posts-text text-left" id="country-posts">
-    <LayoutGridContainer>
-      <TextSectionLabel labelText="Related Posts" />
-      <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-        <template #title>Blog Posts</template>
-        <template #body>
-          <p>
-            Embark on an adventure and discover some of my favourite
-            destinations. Each location offers unique experiences and
-            unforgettable memories. Check out our diverse range of tours and
-            find your next great escape!
-          </p>
-        </template>
-      </TextParagraphWithTitle>
-    </LayoutGridContainer>
-  </section>
-
   <section class="country-posts">
     <LayoutGridContainer v-if="countryPosts && countryPosts.length">
       <div v-for="post in countryPosts" :key="post._path" class="blog-item">

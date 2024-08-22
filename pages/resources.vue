@@ -1,18 +1,18 @@
 <template>
-  <div class="destination-pages">
+  <div class="resources">
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
-      title="Europe"
-      subtitle="Explore Posts by Destination."
+      title="Resources"
+      subtitle="Helpful Resources."
       headerClass="header-small">
     </Header>
 
-    <section class="country-posts-text text-left" id="country-posts">
+    <section class="resources-text text-left">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Related Posts" />
+        <TextSectionLabel labelText="Resources" />
         <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-          <template #title>Blog Posts</template>
+          <template #title>Resources</template>
           <template #body>
             <p>
               Embark on an adventure and discover some of my favourite
@@ -24,9 +24,8 @@
         </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
-    <BlogCountryPosts country="europe" />
 
-    <BlogRegionalDestinations region="europe" />
+    <BlogCountryPosts country="resources" />
   </div>
 </template>
 
@@ -49,8 +48,10 @@ useHead({
 });
 </script>
 
-<style scoped>
-.country-posts-text .container {
+<style scoped></style>
+
+<style>
+.resources-text .container {
   padding-bottom: 0;
 }
 
@@ -74,17 +75,5 @@ useHead({
   grid-column: 1 / 8;
   grid-row-start: 2;
   height: 40vw;
-}
-
-@media (max-width: 767px) {
-  section div.container.grid div.item,
-  .end-text a {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  .container .image:nth-of-type(2) {
-    height: 40vh;
-  }
 }
 </style>

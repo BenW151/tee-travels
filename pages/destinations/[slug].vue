@@ -106,10 +106,14 @@
             </template>
           </TextParagraphWithTitle>
           <Accordion>
-            <AccordionItem :title="`Is ${destinationData.title} worth visiting?`" index="1">
+            <AccordionItem
+              :title="`Is ${destinationData.title} worth visiting?`"
+              index="1">
               <p v-html="destinationData.faqWorthVisiting"></p>
             </AccordionItem>
-            <AccordionItem :title="`Is ${destinationData.title} cheap?`" index="2">
+            <AccordionItem
+              :title="`Is ${destinationData.title} cheap?`"
+              index="2">
               <p v-html="destinationData.faqCheap"></p>
             </AccordionItem>
             <AccordionItem title="Can you drink tap water?" index="3">
@@ -128,6 +132,22 @@
         </LayoutGridContainer>
       </section>
 
+      <section class="country-posts-text text-left" id="country-posts">
+        <LayoutGridContainer>
+          <TextSectionLabel labelText="Related Posts" />
+          <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
+            <template #title>Blog Posts</template>
+            <template #body>
+              <p>
+                Embark on an adventure and discover some of my favourite
+                destinations. Each location offers unique experiences and
+                unforgettable memories. Check out our diverse range of tours and
+                find your next great escape!
+              </p>
+            </template>
+          </TextParagraphWithTitle>
+        </LayoutGridContainer>
+      </section>
       <BlogCountryPosts :country="country" />
     </article>
   </div>

@@ -8,6 +8,24 @@
       headerClass="header-small">
     </Header>
 
+    <section class="country-posts-text text-left" id="country-posts">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Related Posts" />
+        <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
+          <template #title>Blog Posts</template>
+          <template #body>
+            <p>
+              Embark on an adventure and discover some of my favourite
+              destinations. Each location offers unique experiences and
+              unforgettable memories. Check out our diverse range of tours and
+              find your next great escape!
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+    <BlogCountryPosts country="asia" />
+
     <BlogRegionalDestinations region="asia" />
   </div>
 </template>
@@ -31,10 +49,8 @@ useHead({
 });
 </script>
 
-<style scoped></style>
-
-<style>
-.destination-pages .paragraph.medium {
-  display: none;
+<style scoped>
+.country-posts-text .container {
+  padding-bottom: 0;
 }
 </style>
