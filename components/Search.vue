@@ -1,6 +1,9 @@
 <template>
   <div class="search" ref="searchContainer">
-    <input v-model="search" placeholder="Search..." />
+    <div class="search-input-wrapper">
+      <LucideSearch class="search-icon" />
+      <input v-model="search" placeholder="Search..." spellcheck="false" />
+    </div>
     <ListsLinkList
       v-if="results.length > 0"
       :links="
@@ -9,8 +12,7 @@
           label: result.title,
         }))
       "
-      @click="handleResultClick"
-    />
+      @click="handleResultClick" />
   </div>
 </template>
 
@@ -86,10 +88,27 @@ if (process.client) {
 }
 </script>
 
-
 <style scoped>
 .search {
   grid-column: 1 / 5;
+  width: 10vw;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: -2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search input {
+  width: 100%;
 }
 
 input {
@@ -99,7 +118,7 @@ input {
   color: var(--background-primary);
   background-color: transparent;
   position: relative;
-  width: 70%;
+  width: 100%;
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
 }
@@ -112,10 +131,28 @@ input::placeholder {
   margin-top: var(--spacing-1);
 }
 
-body.scrolled-past-header input, body.scrolled-past-header input::placeholder {
+body.scrolled-past-header input,
+body.scrolled-past-header input::placeholder {
   color: var(--foreground-primary);
 }
 
+@media (max-width: 767px) {
+  input,
+  input::placeholder {
+    color: var(--foreground-primary);
+    margin-bottom: var(--spacing-1);
+    color: var(--foreground-primary);
+    font-size: var(--font-size-XL);
+    font-family: var(--font-family-secondary);
+    width: fit-content;
+  }
+
+  .search {
+    margin: auto;
+    width: fit-content;
+    margin-top: 0;
+  }
+}
 </style>
 
 <style>
@@ -133,5 +170,16 @@ body.scrolled-past-header .search .list a {
 
 body.scrolled-past-header .search .list a::after {
   background-color: var(--foreground-primary);
+}
+
+@media (max-width: 767px) {
+  .search .list a {
+    color: var(--foreground-primary);
+    font-size: var(--font-size-M);
+  }
+
+  .search .list {
+    width: fit-content;
+  }
 }
 </style>

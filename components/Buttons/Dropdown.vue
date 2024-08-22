@@ -1,11 +1,11 @@
 <template>
   <div class="dropdown" ref="dropdown">
-    <a
+    <button
       class="dropdown-open link"
       @click="toggleDropdown"
       :class="{ active: isActive }">
       <slot name="button">Dropdown</slot>
-    </a>
+    </button>
     <div
       class="dropdown-content"
       :class="{ show: isActive }"
@@ -81,7 +81,6 @@ onUnmounted(() => {
   margin-bottom: 0;
   color: var(--background-primary);
   align-items: center;
-  width: 7vw;
 }
 
 body.scrolled-past-header .dropdown-open {
@@ -132,7 +131,17 @@ body.scrolled-past-header .dropdown-content a.link::after {
   background-color: var(--foreground-primary);
 }
 
-.dropdown-open.active .lucide {
-  transform: rotate(-180deg);
+.dropdown:hover .lucide {
+  rotate: 45deg;
+  transition: rotate 0.2s;
 }
+
+.dropdown:hover .active .lucide {
+  rotate: 0;
+}
+
+nav .lucide {
+  transition: rotate 0.2s;
+}
+
 </style>

@@ -26,14 +26,24 @@
           @click="toggleMenu"
           >About</NuxtLink
         >
-        <!--<NuxtLink
+        <NuxtLink
+          class="nav-item contact"
+          to="/contact"
+          :class="{ active: $route.path === '/contact' }"
+          aria-label="Contact Page"
+          @click="toggleMenu"
+          >Contact</NuxtLink
+        >
+        <NuxtLink
+          v-if="isMobile"
           class="nav-item"
           to="/destinations"
           :class="{ active: $route.path === '/destinations' }"
           aria-label="Destinations Page"
           @click="toggleMenu"
           >Destinations</NuxtLink
-        >-->
+        >
+        <Search v-if="isMobile" />
         <ButtonsDropdown
           v-if="!isMobile"
           :listLinks="[
@@ -63,28 +73,10 @@
               description: 'Oceania',
             },
           ]">
-          <template #button>Regions <LucideChevronDown /></template>
+          <template #button>Destinations <LucidePlus /></template>
         </ButtonsDropdown>
-        <NuxtLink
-          v-if="isMobile"
-          class="nav-item contact"
-          to="/contact"
-          :class="{ active: $route.path === '/contact' }"
-          aria-label="Contact Page"
-          @click="toggleMenu"
-          >Contact</NuxtLink
-        >
-        <Search />
       </div>
-      <NuxtLink
-        v-if="!isMobile"
-        class="nav-item contact"
-        to="/contact"
-        :class="{ active: $route.path === '/contact' }"
-        aria-label="Contact Page"
-        @click="toggleMenu"
-        >Contact</NuxtLink
-      >
+      <Search v-if="!isMobile" />
     </div>
   </nav>
 </template>
@@ -175,9 +167,9 @@ nav {
   transform-origin: bottom left;
 }
 
-.contact {
+/*.contact {
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); /* For Safari */
+  -webkit-backdrop-filter: blur(3px); 
   border: 1px solid var(--background-primary);
   border-radius: 5vw;
   padding: var(--spacing-1) var(--spacing-3);
@@ -193,7 +185,7 @@ nav {
 
 .contact::after {
   display: none;
-}
+}*/
 
 nav a {
   margin: 0 var(--spacing-3);
@@ -231,6 +223,7 @@ body.scrolled-past-header nav a::after {
   background-color: var(--foreground-primary);
 }
 
+/*
 body.scrolled-past-header .contact {
   border: 1px solid var(--foreground-primary);
 }
@@ -238,7 +231,7 @@ body.scrolled-past-header .contact {
 body.scrolled-past-header .contact:hover {
   border: 1px solid var(--background-primary);
 }
-
+*/
 .nav-logo {
   filter: invert(100%);
   height: 5vw;
@@ -250,6 +243,12 @@ body.scrolled-past-header .nav-logo {
 
 .dropdown {
   margin: 0 var(--spacing-3);
+}
+
+.search {
+  margin-left: auto;
+  margin-top: var(--spacing-1);
+  margin-bottom: 2px;
 }
 
 @media (max-width: 767px) {
@@ -270,12 +269,14 @@ body.scrolled-past-header .nav-logo {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--background-primary);
     justify-content: center;
-    align-items: center;
+    align-items: start;
     transition: transform 0.3s ease-in-out;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
+    padding-left: var(--spacing-2);
+    padding-right: var(--spacing-2);
   }
 
   .nav-items .nav-item {
@@ -284,7 +285,7 @@ body.scrolled-past-header .nav-logo {
   }
 
   .nav-items.open {
-    transform: translateY(0);
+    transform: translateY(-5%);
   }
 
   .nav-items a {
@@ -354,9 +355,9 @@ body.scrolled-past-header .nav-logo {
     opacity: 0;
   }
 
-  .contact {
+  /*.contact {
     backdrop-filter: none;
-    -webkit-backdrop-filter: none; /* For Safari */
+    -webkit-backdrop-filter: none;
     border: none;
     padding: 0;
     margin-left: 0;
@@ -370,6 +371,6 @@ body.scrolled-past-header .nav-logo {
 
   body.scrolled-past-header .contact {
     border: none;
-  }
+  }*/
 }
 </style>
