@@ -180,6 +180,7 @@ body.scrolled-from-top .scroll {
 .hero-text h2 {
   font-size: var(--font-size-M);
   align-self: center;
+  text-align: center;
 }
 
 .hero-text h3 {
