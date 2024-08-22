@@ -12,9 +12,31 @@
           to you as soon as possible. We look forward to hearing from you and
           helping you plan your next adventure!
         </p>
+
+        <ListsLinkList
+          class="socials"
+          title="Social Media"
+          :links="[
+            {
+              url: 'https://www.instagram.com/benward.io/',
+              label: 'Instagram',
+              description: 'Instagram',
+            },
+            {
+              url: 'https://linkedin.com/in/benw151',
+              label: 'Facebook',
+              description: 'LinkedIn',
+            },
+            {
+              url: 'https://github.com/BenW151',
+              label: 'Twitter',
+              description: 'GitHub',
+            },
+          ]" />
       </template>
     </TextParagraphWithTitle>
     <div class="item contact-form">
+      <h4>Contact Form</h4>
       <div>
         <form @submit.prevent="submitForm" autocomplete="on">
           <label class="form-name">
@@ -140,7 +162,6 @@ form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-3);
-  padding-top: var(--spacing-5);
 }
 
 form label:nth-child(1) {
@@ -163,7 +184,26 @@ form label:nth-child(4) {
   grid-row-start: 3;
 }
 
+#contact-form .paragraph-with-title {
+  grid-column: 1 / 9;
+  grid-row: 2;
+}
+
+.contact-form {
+  grid-column: 10 / 17;
+  grid-row: 2;
+}
+
 @media (max-width: 767px) {
+  #contact-form .item.paragraph-with-title {
+    grid-column: 1 / 7;
+    grid-row: auto;
+  }
+
+  .contact header .item.paragraph:nth-child(2) {
+    grid-column: 6 / 7;
+  }
+
   .contact-form {
     grid-column: 1 / 7;
   }

@@ -41,28 +41,4 @@ useHead({
 .contact header .item.paragraph:nth-child(2) {
   grid-column: 15 / 16;
 }
-
-.contact-form {
-  grid-column: 3 / 15;
-}
-
-#contact-form .paragraph-with-title {
-  grid-column: 3 / 11;
-  grid-row: 1;
-}
-
-#contact-form .item-inner {
-  margin: 0;
-}
-
-@media (max-width: 767px) {
-  #contact-form .item.paragraph-with-title {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  .contact header .item.paragraph:nth-child(2) {
-    grid-column: 6 / 7;
-  }
-}
 </style>
