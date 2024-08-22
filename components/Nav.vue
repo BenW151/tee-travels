@@ -372,5 +372,9 @@ body.scrolled-past-header .nav-logo {
   body.scrolled-past-header .contact {
     border: none;
   }*/
+
+  .search {
+    margin-top: 0;
+  }
 }
 </style>
