@@ -43,7 +43,6 @@
           @click="toggleMenu"
           >Destinations</NuxtLink
         >
-        <Search v-if="isMobile" @toggle-menu="toggleMenu" />
         <ButtonsDropdown
           v-if="!isMobile"
           :listLinks="[
@@ -83,6 +82,7 @@
           @click="toggleMenu"
           >Contact</NuxtLink
         >
+        <Search v-if="isMobile" @toggle-menu="toggleMenu" />
       </div>
       <Search v-if="!isMobile" />
     </div>
