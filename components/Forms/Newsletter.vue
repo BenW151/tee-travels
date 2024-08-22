@@ -1,7 +1,7 @@
 <template>
   <div class="item newsletter">
     <div>
-      <h5>Newsletter</h5>
+      <p class="subtitle">Newsletter</p>
       <p class="sign-up">
         Sign up to our newsletter to <br v-if="!isMobile" />
         receive updates on upcoming trips.
@@ -97,6 +97,11 @@ form button {
 
 .message {
   margin-top: var(--spacing-1);
+}
+
+.subtitle {
+  font-size: var(--font-size-S);
+  margin-bottom: var(--spacing-1);
 }
 
 @media (max-width: 767px) {

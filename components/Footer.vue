@@ -5,7 +5,7 @@
        <FormsNewsletter />
       </div>
       <div class="location">
-        <h5>Current Location</h5>
+        <p class="subtitle">Current Location</p>
         <p class="time">
           Bali, Indonesia (CIT) <br />
           {{ currentTime }} | {{ currentDate }}
@@ -183,7 +183,8 @@ footer .container {
   margin-bottom: auto;
 }
 
-h5 {
+.subtitle {
+  font-size: var(--font-size-S);
   margin-bottom: var(--spacing-1);
 }
 
