@@ -74,6 +74,7 @@
           @click="toggleMenu"
           >Contact</NuxtLink
         >
+        <Search />
       </div>
       <NuxtLink
         v-if="!isMobile"

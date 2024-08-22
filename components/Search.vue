@@ -1,23 +1,26 @@
 <template>
-  <div class="search">
+  <div class="search" ref="searchContainer">
     <input v-model="search" placeholder="Search..." />
     <ListsLinkList
       v-if="results.length > 0"
-      :links="results.slice(0, 4).map(result => ({
-        url: result.id,
-        label: result.title,
-      }))"
+      :links="
+        results.slice(0, 4).map((result) => ({
+          url: result.id,
+          label: result.title,
+        }))
+      "
+      @click="handleResultClick"
     />
-    <p class="item" v-else>No results found.</p>
   </div>
 </template>
 
 <script setup>
 import MiniSearch from "minisearch";
-import { ref, watchEffect } from "vue";
+import { ref, watchEffect, onMounted, onBeforeUnmount } from "vue";
 
 const search = ref("");
 const results = ref([]);
+const searchContainer = ref(null);
 
 // Initialize MiniSearch
 const miniSearch = new MiniSearch({
@@ -27,6 +30,29 @@ const miniSearch = new MiniSearch({
     prefix: true, // Allows searching for prefixes, e.g., 'fran' will match 'france'
     fuzzy: 0.3, // Allows for some degree of typo tolerance (0.2 = tolerate up to 20% of characters being wrong)
   },
+});
+
+const handleClickOutside = (event) => {
+  if (searchContainer.value && !searchContainer.value.contains(event.target)) {
+    search.value = ""; // Clear the search input
+    results.value = []; // Clear the search results
+  }
+};
+
+const handleResultClick = (event) => {
+  // Delay clearing to allow the navigation to complete
+  setTimeout(() => {
+    search.value = "";
+    results.value = [];
+  }, 100);
+};
+
+onMounted(() => {
+  document.addEventListener("click", handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("click", handleClickOutside);
 });
 
 if (process.client) {
@@ -60,8 +86,8 @@ if (process.client) {
 }
 </script>
 
-<style scoped>
 
+<style scoped>
 .search {
   grid-column: 1 / 5;
 }
@@ -69,19 +95,43 @@ if (process.client) {
 input {
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--accent-primary);
   border-radius: 0;
-  color: var(--foreground-primary);
+  color: var(--background-primary);
   background-color: transparent;
   position: relative;
-  padding-bottom: var(--spacing-1);
   width: 70%;
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-XS);
-  margin-bottom: var(--spacing-1);
 }
 
-input:focus {
-  border-bottom: 1px solid var(--foreground-primary);
+input::placeholder {
+  color: var(--background-primary);
+}
+
+.list {
+  margin-top: var(--spacing-1);
+}
+
+body.scrolled-past-header input, body.scrolled-past-header input::placeholder {
+  color: var(--foreground-primary);
+}
+
+</style>
+
+<style>
+.search .list a {
+  color: var(--background-primary);
+}
+
+.search .list a::after {
+  background-color: var(--background-primary);
+}
+
+body.scrolled-past-header .search .list a {
+  color: var(--foreground-primary);
+}
+
+body.scrolled-past-header .search .list a::after {
+  background-color: var(--foreground-primary);
 }
 </style>
