@@ -134,6 +134,7 @@ input::placeholder {
 
 .list {
   margin-top: var(--spacing-1);
+  margin-bottom: 0;
 }
 
 body.scrolled-past-header input,

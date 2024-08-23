@@ -362,6 +362,10 @@ li {
   margin-bottom: var(--spacing-1);
 }
 
+li:last-child {
+  margin-bottom: 0;
+}
+
 .list-title {
   font-weight: bold;
 }

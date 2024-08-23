@@ -26,7 +26,7 @@
 
 <script setup>
 import { defineProps } from "vue";
-import * as LucideIcons from 'lucide-vue-next';
+import * as LucideIcons from "lucide-vue-next";
 
 const props = defineProps({
   links: {
@@ -36,7 +36,7 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: ''
+    default: "",
   },
 });
 
@@ -51,7 +51,6 @@ const getIconComponent = (iconName) => {
 };
 </script>
 
-
 <style scoped>
 .link-list a {
   margin-bottom: 0;
@@ -59,5 +58,9 @@ const getIconComponent = (iconName) => {
 
 .list-title {
   font-weight: bold;
+}
+
+.linklist li:last-child {
+  margin-bottom: 0;
 }
 </style>
