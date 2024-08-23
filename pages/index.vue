@@ -11,8 +11,9 @@
       <section class="lead-text">
         <LayoutGridContainer>
           <TextColorOnScroll tag="h3" class="item">
-            Join Us on a Journey to Explore the Globe's Most Captivating
-            Corners, Uncovering Unseen Beauty and Unique Experiences.
+            Get ready to explore the world like never before with Tee Travels.
+            Dive into our travel stories and uncover the essence of each
+            destination through unique experiences and insider tips.
           </TextColorOnScroll>
         </LayoutGridContainer>
       </section>
@@ -24,15 +25,15 @@
             <template #title>Start Planning Your Trip </template>
             <template #body>
               <p>
-                After years of travelling, it became clear to me that my best
-                adventures came from embracing the spirit of "why not?". I have
-                always had a passion for exploring less travelled destinations
-                and wanted to find a way to bring like minded spontaneous,
-                adventure loving travellers together. Most importantly I wanted
-                to make sure these trips were affordable for everyone. I was fed
-                up of seeing overpriced trips so I have curated all these trips
-                from scratch from my first hand experience of travelling to
-                ensure the best value and itinerary.
+                Ready to turn your travel dreams into reality? Whether you're
+                seeking thrilling adventures, serene escapes, or cultural
+                immersions, we're here to help you every step of the way.
+                Explore our curated guides, travel tips, and destination
+                highlights to begin crafting your perfect itinerary. From
+                finding the best local experiences to navigating must-see
+                landmarks, Tee Travels provides all the inspiration and
+                information you need to plan an unforgettable journey. Start
+                your adventure today and let the world be your playground!
               </p>
             </template>
           </TextParagraphWithTitle>
@@ -44,24 +45,19 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="destinations">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Trips" />
-          <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-            <template #title>Destinations</template>
-            <template #body>
-              <p>
-                Embark on an adventure and discover some of my favourite
-                destinations. Each location offers unique experiences and
-                unforgettable memories. Check out our diverse range of tours and
-                find your next great escape!
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-        </LayoutGridContainer>
-      </section>
-
-      <BlogRegions />
+      <BlogRegions labelText="Destinations">
+        <template #title>Destinations</template>
+        <template #body>
+          <p>
+            Explore the countries I've had the pleasure of visiting. Each
+            destination has its own unique character and charm, offering a
+            diverse range of experiences and stories. Click through to read
+            about my adventures in these places, discover local tips, and see
+            the highlights of each country I've explored. I hope my travels
+            inspire your own journey to these amazing locations!
+          </p>
+        </template>
+      </BlogRegions>
 
       <section class="profile text-right">
         <LayoutGridContainer>
@@ -70,14 +66,14 @@
             <template #title>Who Am I?</template>
             <template #body>
               <p>
-                Hi, I'm Tia, the founder of Tee Travels. Travelling has always
-                been my passion and I've dedicated my life to exploring the
-                world. I love adventure, being in nature, exploring off the
-                beaten track and learning about local life in different
-                countries. After years of experience travelling, I decided to
-                create Tee Travels, to share my love for my favourite travel
-                destinations and bring together like-minded travellers from
-                around the world.
+                Hi, I'm Tia, your guide to the world's most exciting
+                destinations. With a passion for travel and a love for
+                discovering hidden gems, I've dedicated myself to sharing my
+                journeys with you. From navigating bustling streets to relaxing
+                in serene spots, my experiences offer a personal touch to each
+                destination I visit. Join me as I explore new places, embrace
+                local cultures, and uncover the stories that make each adventure
+                unique. Let's travel the world together!
               </p>
               <a
                 href="https://instagram.com/teetravels_"

@@ -8,24 +8,20 @@
       headerClass="header-small">
     </Header>
 
-    <section class="resources-text text-left">
-      <LayoutGridContainer>
-        <TextSectionLabel labelText="Resources" />
-        <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-          <template #title>Resources</template>
-          <template #body>
-            <p>
-              Embark on an adventure and discover some of my favourite
-              destinations. Each location offers unique experiences and
-              unforgettable memories. Check out our diverse range of tours and
-              find your next great escape!
-            </p>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
-
-    <BlogCountryPosts region="resources" />
+    <BlogCountryPosts region="resources" labelText="Resources">
+      <template #title>Resources</template>
+      <template #body>
+        <p>
+          Here are some of my favourite resources to help you make the most of
+          your travels. From must-have gear to essential tips and tricks, I've
+          gathered everything you need to prepare for your adventures. Whether
+          you're looking for packing advice, destination guides, or travel
+          hacks, these resources are designed to make your journey smoother and
+          more enjoyable. Explore my recommendations and get ready to travel
+          like a pro!
+        </p>
+      </template>
+    </BlogCountryPosts>
   </div>
 </template>
 

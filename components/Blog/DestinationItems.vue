@@ -1,5 +1,21 @@
 <template>
   <div>
+    <section
+      class="destination-items-text text-left"
+      id="destination-items-text">
+      <LayoutGridContainer>
+        <TextSectionLabel :labelText="labelText" />
+        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
+          <template #title>
+            <slot name="title"></slot>
+          </template>
+          <template #body>
+            <slot name="body"></slot>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="destination-items">
       <LayoutGridContainer v-if="destinations && destinations.length">
         <div
@@ -31,6 +47,14 @@
 </template>
 
 <script setup>
+
+const props = defineProps({
+  labelText: {
+    type: String,
+    default: '',
+  },
+});
+
 const { data: destinations } = await useAsyncData("destinations", async () => {
   try {
     // Fetch all destination pages from the 'destinations' folder
@@ -50,6 +74,15 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 </script>
 
 <style scoped>
+
+.destination-items-text .container {
+  padding-bottom: 0;
+}
+
+.destination-items .container {
+  padding-top: 0;
+}
+
 .destination-link {
   margin-bottom: 0;
   width: 100%;

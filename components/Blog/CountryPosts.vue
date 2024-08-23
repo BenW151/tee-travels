@@ -1,4 +1,18 @@
 <template>
+  <section class="country-posts-text text-left" id="country-posts">
+    <LayoutGridContainer>
+      <TextSectionLabel :labelText="labelText" />
+      <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
+        <template #title>
+          <slot name="title"></slot>
+        </template>
+        <template #body>
+          <slot name="body"></slot>
+        </template>
+      </TextParagraphWithTitle>
+    </LayoutGridContainer>
+  </section>
+
   <section class="country-posts">
     <LayoutGridContainer v-if="countryPosts && countryPosts.length">
       <div v-for="post in countryPosts" :key="post._path" class="blog-item">
@@ -32,6 +46,10 @@ const props = defineProps({
   region: {
     type: String,
     required: false, // Make this optional as well
+  },
+  labelText: {
+    type: String,
+    default: '',
   },
 });
 

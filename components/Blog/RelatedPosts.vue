@@ -1,21 +1,21 @@
 <template>
   <div>
-    <section class="related-posts-text text-left" id="blog-posts">
+    <section
+      class="related-posts-text text-left"
+      id="related-posts-text">
       <LayoutGridContainer>
-        <TextSectionLabel labelText="Related Posts" />
-        <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-          <template #title>Related Posts</template>
+        <TextSectionLabel :labelText="labelText" />
+        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
+          <template #title>
+            <slot name="title"></slot>
+          </template>
           <template #body>
-            <p>
-              Embark on an adventure and discover some of my favourite
-              destinations. Each location offers unique experiences and
-              unforgettable memories. Check out our diverse range of tours and
-              find your next great escape!
-            </p>
+            <slot name="body"></slot>
           </template>
         </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
+
     <section class="related-posts">
       <LayoutGridContainer v-if="relatedPosts && relatedPosts.length">
         <div v-for="post in relatedPosts" :key="post._path" class="blog-item">
@@ -44,6 +44,17 @@ import { useRoute } from "nuxt/app";
 
 const route = useRoute();
 const slug = route.params.slug;
+
+const props = defineProps({
+  region: {
+    type: String,
+    required: true,
+  },
+  labelText: {
+    type: String,
+    default: '',
+  },
+});
 
 const { data: currentPost } = await useAsyncData("currentPost", async () => {
   const post = await queryContent("blog")

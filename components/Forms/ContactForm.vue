@@ -5,12 +5,11 @@
       <template #title>Get in Touch</template>
       <template #body>
         <p>
-          We're here to help you with any questions or concerns you may have.
-          Whether you need more information about our tours, assistance with
-          booking, or have specific requests, our dedicated team is ready to
-          assist you. Please fill out the contact form below, and we'll get back
-          to you as soon as possible. We look forward to hearing from you and
-          helping you plan your next adventure!
+          I'd love to hear from you! Whether you have questions, need travel
+          advice, or just want to share your own travel stories, feel free to
+          reach out. Your feedback and connections mean a lot to me. Drop me a
+          message, and let's stay in touch as we embark on this journey
+          together. Looking forward to hearing from you!
         </p>
 
         <ListsLinkList

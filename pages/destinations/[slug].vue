@@ -132,23 +132,19 @@
         </LayoutGridContainer>
       </section>
 
-      <section class="country-posts-text text-left" id="country-posts">
-        <LayoutGridContainer>
-          <TextSectionLabel labelText="Related Posts" />
-          <TextParagraphWithTitle subtitleTag="h3" textPosition="left">
-            <template #title>Blog Posts</template>
-            <template #body>
-              <p>
-                Embark on an adventure and discover some of my favourite
-                destinations. Each location offers unique experiences and
-                unforgettable memories. Check out our diverse range of tours and
-                find your next great escape!
-              </p>
-            </template>
-          </TextParagraphWithTitle>
-        </LayoutGridContainer>
-      </section>
-      <BlogCountryPosts :country="country" />
+      <BlogCountryPosts :country="country" labelText="Related Posts">
+        <template #title>Related Posts</template>
+        <template #body>
+          <p>
+            Explore the countries I've had the pleasure of visiting. Each
+            destination has its own unique character and charm, offering a
+            diverse range of experiences and stories. Click through to read
+            about my adventures in these places, discover local tips, and see
+            the highlights of each country I've explored. I hope my travels
+            inspire your own journey to these amazing locations!
+          </p>
+        </template>
+      </BlogCountryPosts>
     </article>
   </div>
 </template>
@@ -262,6 +258,4 @@ const { data: destinationData } = await useAsyncData(
 }
 </style>
 
-<style>
-
-</style>
+<style></style>

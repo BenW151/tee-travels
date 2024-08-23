@@ -1,5 +1,21 @@
 <template>
   <div>
+    <section
+      class="region-items-text text-left"
+      id="region-items-text">
+      <LayoutGridContainer>
+        <TextSectionLabel :labelText="labelText" />
+        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
+          <template #title>
+            <slot name="title"></slot>
+          </template>
+          <template #body>
+            <slot name="body"></slot>
+          </template>
+        </TextParagraphWithTitle>
+      </LayoutGridContainer>
+    </section>
+
     <section class="region-items">
       <LayoutGridContainer>
         <div class="region-item">
@@ -72,9 +88,28 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  region: {
+    type: String,
+    required: true,
+  },
+  labelText: {
+    type: String,
+    default: '',
+  },
+});
 </script>
 
 <style scoped>
+
+.region-items-text .container {
+  padding-bottom: 0;
+}
+
+.region-items .container {
+  padding-top: 0;
+}
+
 .region-link {
   margin-bottom: 0;
   width: 100%;
