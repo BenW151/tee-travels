@@ -47,13 +47,13 @@
           },
           {
             url: 'https://linkedin.com/in/benw151',
-            label: 'LinkedIn',
-            description: 'LinkedIn',
+            label: 'Facebook',
+            description: 'Facebook',
           },
           {
             url: 'https://github.com/BenW151',
-            label: 'GitHub',
-            description: 'GitHub',
+            label: 'X',
+            description: 'X',
           },
         ]" />
       <p class="wordmark">Tee Travels</p>
