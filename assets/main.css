@@ -56,7 +56,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--background-primary);
 }
 
 html {
@@ -69,7 +68,7 @@ html,
 body {
   height: 100%;
   color: var(--foreground-primary);
-  background-color: var(--background-primary);
+  background-color: var(--color-black);
 }
 
 /** Custom Scrollbar */

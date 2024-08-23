@@ -14,56 +14,22 @@
       <ListsLinkList
         class="nav-links"
         :links="[
-          {
-            url: '/',
-            label: 'About',
-            description: 'About Page',
-          },
-          {
-            url: '/destinations',
-            label: 'Destinations',
-            description: 'Destinations Page',
-          },
-          {
-            url: '/resources',
-            label: 'Resources',
-            description: 'Resources Page',
-          },
-          {
-            url: '/contact',
-            label: 'Contact',
-            description: 'Contact Page',
-          },
-          {
-            url: '/terms-and-conditions',
-            label: 'Terms + Conditions',
-            description: 'Terms + Conditions Page',
-          },
-          {
-            url: '/privacy-policy',
-            label: 'Privacy Policy',
-            description: 'Privacy Policy',
-          },
-        ]" />
+          { url: '/', label: 'About', description: 'About Page' },
+          { url: '/destinations', label: 'Destinations', description: 'Destinations Page' },
+          { url: '/resources', label: 'Resources', description: 'Resources Page' },
+          { url: '/contact', label: 'Contact', description: 'Contact Page' },
+          { url: '/terms-and-conditions', label: 'Terms + Conditions', description: 'Terms + Conditions Page' },
+          { url: '/privacy-policy', label: 'Privacy Policy', description: 'Privacy Policy' },
+        ]"
+      />
       <ListsLinkList
         class="socials"
         :links="[
-          {
-            url: 'https://www.instagram.com/benward.io/',
-            label: 'Instagram',
-            description: 'Instagram',
-          },
-          {
-            url: 'https://linkedin.com/in/benw151',
-            label: 'Facebook',
-            description: 'LinkedIn',
-          },
-          {
-            url: 'https://github.com/BenW151',
-            label: 'Twitter',
-            description: 'GitHub',
-          },
-        ]" />
+          { url: 'https://www.instagram.com/benward.io/', label: 'Instagram', description: 'Instagram' },
+          { url: 'https://linkedin.com/in/benw151', label: 'LinkedIn', description: 'LinkedIn' },
+          { url: 'https://github.com/BenW151', label: 'GitHub', description: 'GitHub' },
+        ]"
+      />
       <p class="wordmark">Tee Travels</p>
       <p class="item copyright">Copyright ©2024</p>
     </LayoutGridContainer>
@@ -71,17 +37,11 @@
 </template>
 
 <script setup>
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted } from "vue";
 
 const currentTime = ref("");
 const currentDate = ref("");
+const footer = ref(null);
 
 const updateTime = () => {
   const optionsTime = {
@@ -105,6 +65,15 @@ const updateTime = () => {
 onMounted(() => {
   updateTime();
   const interval = setInterval(updateTime, 1000);
+
+  // Initial position off-screen
+  footer.value.style.position = 'relative';
+  footer.value.style.top = '100vh';
+
+  // Temp fix for FOUC
+  setTimeout(() => {
+    footer.value.style.top = '0';
+  }, 500);
 
   onUnmounted(() => {
     clearInterval(interval);
