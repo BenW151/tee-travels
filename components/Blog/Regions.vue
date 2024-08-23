@@ -23,9 +23,9 @@
                 src="/images/denmark-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/europe" class="region-title">
-                Europe
-              </NuxtLink>
+                <p class="region-title">
+                  Europe
+                </p>
             </div>
           </NuxtLink>
         </div>
@@ -36,9 +36,9 @@
                 src="/images/japan-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/asia" class="region-title">
-                Asia
-              </NuxtLink>
+                <p class="region-title">
+                  Asia
+                </p>
             </div>
           </NuxtLink>
         </div>
@@ -49,61 +49,61 @@
                 src="/images/canada-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/north-america" class="region-title">
-                North America
-              </NuxtLink>
+                <p class="region-title">
+                  North America
+                </p>
             </div>
           </NuxtLink>
         </div>
         <div class="region-item">
-          <NuxtLink to="/destinations/oceania" class="region-link">
+          <NuxtLink to="/destinations/central-america" class="region-link">
             <div class="image-container">
               <img
                 src="/images/guatemala-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/central-america" class="region-title">
+              <p class="region-title">
                 Central America
-              </NuxtLink>
+              </p>
             </div>
           </NuxtLink>
         </div>
         <div class="region-item">
-          <NuxtLink to="/destinations/oceania" class="region-link">
+          <NuxtLink to="/destinations/south-america" class="region-link">
             <div class="image-container">
               <img
                 src="/images/argentina-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/south-america" class="region-title">
-                South America
-              </NuxtLink>
+                <p class="region-title">
+                  South America
+                </p>
             </div>
           </NuxtLink>
         </div>
         <div class="region-item">
-          <NuxtLink to="/destinations/oceania" class="region-link">
+          <NuxtLink to="/destinations/middle-east" class="region-link">
             <div class="image-container">
               <img
                 src="/images/jordan-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/middle-east" class="region-title">
-                Middle East
-              </NuxtLink>
+                <p class="region-title">
+                  Middle East
+                </p>
             </div>
           </NuxtLink>
         </div>
         <div class="region-item">
-          <NuxtLink to="/destinations/oceania" class="region-link">
+          <NuxtLink to="/destinations/africa" class="region-link">
             <div class="image-container">
               <img
                 src="/images/tanzania-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/africa" class="region-title">
-                Africa
-              </NuxtLink>
+                <p class="region-title">
+                  Africa
+                </p>
             </div>
           </NuxtLink>
         </div>
@@ -114,9 +114,9 @@
                 src="/images/australia-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <NuxtLink to="/destinations/oceania" class="region-title">
-                Oceania
-              </NuxtLink>
+                <p class="region-title">
+                  Oceania
+                </p>
             </div>
           </NuxtLink>
         </div>

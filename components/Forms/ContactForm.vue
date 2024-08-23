@@ -28,7 +28,7 @@
             },
             {
               url: 'https://github.com/BenW151',
-              label: 'Twitter',
+              label: 'X',
               description: 'GitHub',
             },
           ]" />

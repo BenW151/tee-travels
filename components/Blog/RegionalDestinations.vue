@@ -33,11 +33,10 @@
                 :alt="destination.headerImageAlt"
                 class="destination-image content-image" />
               <!-- Display the title -->
-              <NuxtLink
-                :to="`/destinations/${destination.country}`"
+              <p
                 class="destination-title">
                 {{ destination.title }}
-              </NuxtLink>
+              </p>
             </div>
           </NuxtLink>
         </div>
