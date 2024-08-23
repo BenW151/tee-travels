@@ -2,16 +2,15 @@
   <div>
     <section class="recent-posts">
       <LayoutGridContainer v-if="posts && posts.length">
-        <div
-          v-for="post in posts.slice(0, 6)"
-          :key="post._path"
-          class="blog-item">
+        <div v-for="post in posts" :key="post._path" class="blog-item">
           <NuxtLink :to="post._path" class="post-link">
             <!-- Display the image -->
-            <img
-              :src="post.headerImageUrl"
-              :alt="post.headerImageUrl"
-              class="post-image content-image" />
+            <div class="image-container">
+              <img
+                :src="post.headerImageUrl"
+                :alt="post.headerImageUrl"
+                class="post-image content-image" />
+            </div>
             <!-- Display the title -->
             <NuxtLink :to="post._path" class="post-title">{{
               post.title
@@ -52,9 +51,10 @@ const { data: posts } = await useAsyncData("posts", async () => {
 
 <style scoped>
 .post-title {
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-S);
   font-family: var(--font-family-secondary);
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .post-link::after {
@@ -63,18 +63,37 @@ const { data: posts } = await useAsyncData("posts", async () => {
 
 .post-image {
   width: 100%;
-  height: 30vw;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  margin: auto;
 }
 
-.blog-item:nth-child(2n + 1) {
-  grid-column: 1 / 9;
-  grid-row: auto;
+.blog-item:hover .post-image {
+  transform: scale(1.05);
 }
 
-.blog-item:nth-child(2n) {
-  grid-column: 9 / 17;
-  grid-row: auto;
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  overflow: hidden;
+}
+
+.blog-item:nth-child(4n + 1) {
+  grid-column: 1 / span 4;
+}
+
+.blog-item:nth-child(4n + 2) {
+  grid-column: 5 / span 4;
+}
+
+.blog-item:nth-child(4n + 3) {
+  grid-column: 9 / span 4;
+}
+
+.blog-item:nth-child(4n + 4) {
+  grid-column: 13 / span 4;
 }
 
 @media (max-width: 767px) {
