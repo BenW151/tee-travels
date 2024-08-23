@@ -89,10 +89,6 @@
 
 <script setup>
 const props = defineProps({
-  region: {
-    type: String,
-    required: true,
-  },
   labelText: {
     type: String,
     default: '',
