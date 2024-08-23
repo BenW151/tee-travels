@@ -97,12 +97,16 @@ const { data: posts } = await useAsyncData("posts", async () => {
 }
 
 @media (max-width: 767px) {
-  .image-container {
-    height: 60vw;
-  }
-
   .post-title {
     margin-bottom: 0;
+  }
+
+  .post-image {
+    height: auto;
+  }
+
+  .image-container {
+    height: 40vw;
   }
 
   .blog-item:nth-child(2n + 1) {
