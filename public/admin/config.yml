@@ -41,6 +41,15 @@ collections:
           search_fields: ["title"],
           value_field: "title",
           display_fields: ["title"],
+          required: false,
+          multiple: false,
+        }
+      - {
+          label: "Region",
+          name: "region",
+          widget: "select",
+          options: ["europe", "asia", "north-america", "oceania", "none"],
+          required: false,
           multiple: false,
         }
       - {
@@ -65,20 +74,105 @@ collections:
           name: "headerImageAlt",
           widget: "string",
         }
-      - { label: "What To Do Title", name: "whatToDoTitle", widget: "string" }
-      - { label: "What To Do Text", name: "whatToDoText", widget: "markdown" }
       - {
-          label: "Where To Stay Title",
-          name: "whereToStayTitle",
+          label: "Section One Title",
+          name: "sectionOneTitle",
           widget: "string",
+          required: true,
         }
       - {
-          label: "Where To Stay Text",
-          name: "whereToStayText",
-          widget: "markdown",
+          label: "Section One Text",
+          name: "sectionOneText",
+          widget: "text",
+          required: true,
         }
-      - { label: "What To See Title", name: "whatToSeeTitle", widget: "string" }
-      - { label: "What To See Text", name: "whatToSeeText", widget: "markdown" }
+      - {
+          label: "Section One Image URL",
+          name: "sectionOneImageUrl",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Section One Image Alt Text",
+          name: "sectionOneImageAlt",
+          widget: "string",
+          required: true,
+        }
+
+      - {
+          label: "Section Two Title",
+          name: "sectionTwoTitle",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Section Two Text",
+          name: "sectionTwoText",
+          widget: "text",
+          required: true,
+        }
+      - {
+          label: "Section Two Image URL",
+          name: "sectionTwoImageUrl",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Section Two Image Alt Text",
+          name: "sectionTwoImageAlt",
+          widget: "string",
+          required: true,
+        }
+
+      - {
+          label: "Section Three Title",
+          name: "sectionThreeTitle",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Section Three Text",
+          name: "sectionThreeText",
+          widget: "text",
+          required: true,
+        }
+      - {
+          label: "Section Three Image URL",
+          name: "sectionThreeImageUrl",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Section Three Image Alt Text",
+          name: "sectionThreeImageAlt",
+          widget: "string",
+          required: true,
+        }
+
+      - {
+          label: "Section Four Title",
+          name: "sectionFourTitle",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Section Four Text",
+          name: "sectionFourText",
+          widget: "text",
+          required: true,
+        }
+      - {
+          label: "Section Four Image URL",
+          name: "sectionFourImageUrl",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Section Four Image Alt Text",
+          name: "sectionFourImageAlt",
+          widget: "string",
+          required: true,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "destination"
     label: "Destinations"

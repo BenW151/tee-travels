@@ -6,6 +6,7 @@ date: 2024-08-06T20:42:00.000Z
 headerImageUrl: /images/uploads/attabad-lake.webp
 headerImageAlt: hello
 country: france
+region: europe
 tag: hiking
 sectionOneTitle: Where to Stay
 sectionOneText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

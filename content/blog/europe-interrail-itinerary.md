@@ -5,7 +5,7 @@ description: One Month Interail Itinerary.
 date: 2024-08-22T20:42:00.000Z
 headerImageUrl: /images/uploads/france-cover.png
 headerImageAlt: hello
-country: europe
+region: europe
 tag: hiking
 
 sectionOneTitle: Where to Stay

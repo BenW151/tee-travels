@@ -24,7 +24,7 @@
         </TextParagraphWithTitle>
       </LayoutGridContainer>
     </section>
-    <BlogCountryPosts country="europe" />
+    <BlogCountryPosts region="europe" />
 
     <BlogRegionalDestinations region="europe" />
   </div>
