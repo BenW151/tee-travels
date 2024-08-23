@@ -94,6 +94,11 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
   margin-right: auto;
 }
 
+.post-link {
+  width: 100%;
+  height: 100%;
+}
+
 .post-link::after {
   display: none;
 }
@@ -144,8 +149,16 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
     grid-row: auto;
   }
 
+  .post-title {
+    margin-bottom: 0;
+  }
+
   .post-image {
     height: auto;
+  }
+
+  .image-container {
+    height: 40vw;
   }
 }
 </style>

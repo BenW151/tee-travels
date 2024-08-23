@@ -80,12 +80,18 @@ const { data: countryPosts } = await useAsyncData(
   margin-right: auto;
 }
 
+.post-link {
+  width: 100%;
+  height: 100%;
+}
+
 .post-link::after {
   display: none;
 }
 
 .post-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
   margin: auto;
@@ -130,6 +136,10 @@ const { data: countryPosts } = await useAsyncData(
 
   .post-title {
     margin-bottom: 0;
+  }
+
+  .post-image {
+    height: auto;
   }
 
   .blog-item:nth-child(2n + 1) {

@@ -14,7 +14,7 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward | Blog",
+  title: "Tee Travels | Blog",
   meta: [
     {
       name: "description",

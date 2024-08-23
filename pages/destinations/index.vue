@@ -7,14 +7,16 @@
       subtitle="Explore Posts by Destination."
       headerClass="header-small">
     </Header>
-    
+
+    <BlogRegions />
+
     <BlogDestinationItems />
   </div>
 </template>
 
 <script setup>
 useHead({
-  title: "Ben Ward | Destinations",
+  title: "Tee Travels | Destinations",
   meta: [
     {
       name: "description",

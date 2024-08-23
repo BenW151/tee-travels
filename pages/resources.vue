@@ -31,7 +31,7 @@
 
 <script setup>
 useHead({
-  title: "Ben Ward | Destinations",
+  title: "Tee Travels | Destinations",
   meta: [
     {
       name: "description",

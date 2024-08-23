@@ -52,6 +52,8 @@ const { data: destinations } = await useAsyncData("destinations", async () => {
 <style scoped>
 .destination-link {
   margin-bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .destination-link::after {

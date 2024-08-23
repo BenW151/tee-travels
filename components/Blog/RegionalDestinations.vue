@@ -95,6 +95,8 @@ const { data: destinations } = await useAsyncData(
 
 .destination-link {
   margin-bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .destination-link::after {
@@ -151,7 +153,7 @@ const { data: destinations } = await useAsyncData(
 
 @media (max-width: 767px) {
   .image-container {
-    height: 60vw;
+    height: 80vw;
   }
 
   .destination-title {
