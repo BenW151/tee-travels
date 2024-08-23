@@ -46,10 +46,6 @@ const route = useRoute();
 const slug = route.params.slug;
 
 const props = defineProps({
-  region: {
-    type: String,
-    required: true,
-  },
   labelText: {
     type: String,
     default: '',
