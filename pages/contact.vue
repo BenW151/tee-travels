@@ -5,12 +5,7 @@
       imageAlt="Attabad Lake"
       title="Contact"
       subtitle="Have a question? Let us know"
-      headerClass="header-small"
-      :pageIndexLabels="[
-        { title: 'Email', link: 'mailto:contact@whynotadventures.co.uk' },
-        { title: 'Instagram', link: 'https://instagram.com/whynotadventures_' },
-        { title: 'Facebook', link: 'https://facebook.com/whynotadventures_' },
-      ]">
+      headerClass="header-small">
     </Header>
 
     <section id="contact-form">
