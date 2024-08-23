@@ -236,6 +236,10 @@ const { data: destinationData } = await useAsyncData(
   height: 40vw;
 }
 
+.country-posts-text .container {
+  padding-bottom: 0;
+}
+
 @media (max-width: 767px) {
   section div.container.grid div.item,
   .end-text a {
@@ -259,7 +263,5 @@ const { data: destinationData } = await useAsyncData(
 </style>
 
 <style>
-.blog-posts .container {
-  padding-bottom: 0;
-}
+
 </style>

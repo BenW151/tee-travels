@@ -2,7 +2,7 @@
   <div>
     <Nav />
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       :title="`${error.statusCode} Error`"
       subtitle="Destination Unknown"

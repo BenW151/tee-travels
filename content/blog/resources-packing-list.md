@@ -5,10 +5,10 @@ description: One Month Packing List.
 date: 2024-08-22T20:42:00.000Z
 headerImageUrl: /images/uploads/france-cover.png
 headerImageAlt: hello
-country: resources
+region: resources
 tag: hiking
 
-sectionOneTitle: Where to Stay
+sectionOneTitle: Camera Equipment
 sectionOneText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -18,7 +18,7 @@ sectionOneText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 sectionOneImageUrl: /images/uploads/australia-cover.png
 sectionOneImageAlt: Paris, France
 
-sectionTwoTitle: What To Do
+sectionTwoTitle: Hiking Boots
 sectionTwoText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -28,7 +28,7 @@ sectionTwoText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 sectionTwoImageUrl: /images/uploads/australia-cover.png
 sectionTwoImageAlt: Paris, France
 
-sectionThreeTitle: What To Do
+sectionThreeTitle: Jackets
 sectionThreeText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -38,7 +38,7 @@ sectionThreeText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
 sectionThreeImageUrl: /images/uploads/australia-cover.png
 sectionThreeImageAlt: Paris, France
 
-sectionFourTitle: What To Do
+sectionFourTitle: Bags
 sectionFourText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

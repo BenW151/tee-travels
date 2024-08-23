@@ -86,7 +86,7 @@ const clearHoverDescription = () => {
 
 const images = [
   {
-    src: "/images/pakistan/pakistan-cover.webp",
+    src: "/images/index-background.png",
     alt: "Pakistan",
     subDescription: "Hiking in the Hunza Valley",
     nightsPrice: "10 Nights | £985",

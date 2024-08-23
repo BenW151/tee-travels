@@ -3,7 +3,7 @@ title: Article 5
 subtitle: Article description
 description: This is a post description
 date: 2024-08-06T20:42:00.000Z
-headerImageUrl: /images/uploads/attabad-lake.webp
+headerImageUrl: /images/index-background.png
 headerImageAlt: hello
 country: france
 region: europe
@@ -29,7 +29,8 @@ sectionTwoImageUrl: /images/uploads/australia-cover.png
 sectionTwoImageAlt: Paris, France
 
 sectionThreeTitle: What To Do
-sectionThreeText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+sectionThreeText:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit

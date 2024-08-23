@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <Header
-      imageUrl="/images/pakistan/pakistan-attabad-lake-2.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="Attabad Lake"
       title="Contact"
       subtitle="Have a question? Let us know"

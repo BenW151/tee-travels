@@ -25,7 +25,7 @@
       </LayoutGridContainer>
     </section>
 
-    <BlogCountryPosts country="resources" />
+    <BlogCountryPosts region="resources" />
   </div>
 </template>
 

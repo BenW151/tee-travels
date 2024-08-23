@@ -48,7 +48,7 @@ collections:
           label: "Region",
           name: "region",
           widget: "select",
-          options: ["europe", "asia", "north-america", "oceania", "none"],
+          options: ["europe", "asia", "north-america", "oceania", "resources", "none"],
           required: false,
           multiple: false,
         }

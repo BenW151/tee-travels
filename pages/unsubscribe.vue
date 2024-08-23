@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/pakistan/pakistan-cover.webp"
+      imageUrl="/images/index-background.png"
       imageAlt="View of Rakaposhi from Karimabad"
       title="Unsubscribe"
       subtitle="Enter Your Email Below"
