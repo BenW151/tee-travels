@@ -67,6 +67,26 @@
               description: 'North America',
             },
             {
+              url: '/destinations/central-america',
+              label: 'Central America',
+              description: 'Central America',
+            },
+            {
+              url: '/destinations/south-america',
+              label: 'South America',
+              description: 'South America',
+            },
+            {
+              url: '/destinations/middle-east',
+              label: 'Middle East',
+              description: 'Middle East',
+            },
+            {
+              url: '/destinations/africa',
+              label: 'Africa',
+              description: 'Africa',
+            },
+            {
               url: '/destinations/oceania',
               label: 'Oceania',
               description: 'Oceania',

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <section
-      class="region-items-text text-left"
-      id="region-items-text">
+    <section class="region-items-text text-left" id="region-items-text">
       <LayoutGridContainer>
         <TextSectionLabel :labelText="labelText" />
         <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
@@ -20,14 +18,11 @@
       <LayoutGridContainer>
         <div class="region-item">
           <NuxtLink to="/destinations/europe" class="region-link">
-            <!-- Container for image and title -->
             <div class="image-container">
-              <!-- Display the image -->
               <img
                 src="/images/denmark-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <!-- Display the title -->
               <NuxtLink to="/destinations/europe" class="region-title">
                 Europe
               </NuxtLink>
@@ -36,14 +31,11 @@
         </div>
         <div class="region-item">
           <NuxtLink to="/destinations/asia" class="region-link">
-            <!-- Container for image and title -->
             <div class="image-container">
-              <!-- Display the image -->
               <img
                 src="/images/japan-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <!-- Display the title -->
               <NuxtLink to="/destinations/asia" class="region-title">
                 Asia
               </NuxtLink>
@@ -52,14 +44,11 @@
         </div>
         <div class="region-item">
           <NuxtLink to="/destinations/north-america" class="region-link">
-            <!-- Container for image and title -->
             <div class="image-container">
-              <!-- Display the image -->
               <img
                 src="/images/canada-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <!-- Display the title -->
               <NuxtLink to="/destinations/north-america" class="region-title">
                 North America
               </NuxtLink>
@@ -68,14 +57,63 @@
         </div>
         <div class="region-item">
           <NuxtLink to="/destinations/oceania" class="region-link">
-            <!-- Container for image and title -->
             <div class="image-container">
-              <!-- Display the image -->
+              <img
+                src="/images/guatemala-cover.png"
+                alt="TODO Alt"
+                class="region-image content-image" />
+              <NuxtLink to="/destinations/central-america" class="region-title">
+                Central America
+              </NuxtLink>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="region-item">
+          <NuxtLink to="/destinations/oceania" class="region-link">
+            <div class="image-container">
+              <img
+                src="/images/argentina-cover.png"
+                alt="TODO Alt"
+                class="region-image content-image" />
+              <NuxtLink to="/destinations/south-america" class="region-title">
+                South America
+              </NuxtLink>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="region-item">
+          <NuxtLink to="/destinations/oceania" class="region-link">
+            <div class="image-container">
+              <img
+                src="/images/jordan-cover.png"
+                alt="TODO Alt"
+                class="region-image content-image" />
+              <NuxtLink to="/destinations/middle-east" class="region-title">
+                Middle East
+              </NuxtLink>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="region-item">
+          <NuxtLink to="/destinations/oceania" class="region-link">
+            <div class="image-container">
+              <img
+                src="/images/tanzania-cover.png"
+                alt="TODO Alt"
+                class="region-image content-image" />
+              <NuxtLink to="/destinations/africa" class="region-title">
+                Africa
+              </NuxtLink>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="region-item">
+          <NuxtLink to="/destinations/oceania" class="region-link">
+            <div class="image-container">
               <img
                 src="/images/australia-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
-              <!-- Display the title -->
               <NuxtLink to="/destinations/oceania" class="region-title">
                 Oceania
               </NuxtLink>
@@ -91,13 +129,12 @@
 const props = defineProps({
   labelText: {
     type: String,
-    default: '',
+    default: "",
   },
 });
 </script>
 
 <style scoped>
-
 .region-items-text .container {
   padding-bottom: 0;
 }
