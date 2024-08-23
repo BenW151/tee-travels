@@ -37,9 +37,9 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/santorini.png"
-            imageAlt="Santorini, Greece"
-            overlayText="Santorini, <br /> Greece"
+            imageUrl="/images/denmark-cover.png"
+            imageAlt="Copenhagen, Denmark"
+            overlayText="Copenhagen, <br /> Denmark"
             textPosition="right" />
         </LayoutGridContainer>
       </section>
@@ -61,7 +61,7 @@
         </LayoutGridContainer>
       </section>
 
-      <BlogDestinationItems />
+      <BlogRegions />
 
       <section class="profile text-right">
         <LayoutGridContainer>

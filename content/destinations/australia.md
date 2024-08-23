@@ -4,7 +4,7 @@ subtitle: Australia Posts
 description: Australia Posts
 date: 2024-08-09T09:00:00.000Z
 country: australia
-headerImageUrl: /images/uploads/australia-cover.png
+headerImageUrl: /images/australia-cover.png
 headerImageAlt: alt
 
 region: oceania

@@ -1,7 +1,7 @@
 <template>
   <div class="destination-pages">
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/australia-cover.png"
       imageAlt="TODO alt"
       title="Oceania"
       subtitle="Explore Posts by Destination."

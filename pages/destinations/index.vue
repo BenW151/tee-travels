@@ -7,9 +7,7 @@
       subtitle="Explore Posts by Destination."
       headerClass="header-small">
     </Header>
-
-    <BlogRegions />
-
+    
     <BlogDestinationItems />
   </div>
 </template>

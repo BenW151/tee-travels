@@ -8,7 +8,7 @@
             <div class="image-container">
               <!-- Display the image -->
               <img
-                src="/images/index-background.png"
+                src="/images/denmark-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
               <!-- Display the title -->
@@ -24,7 +24,7 @@
             <div class="image-container">
               <!-- Display the image -->
               <img
-                src="/images/index-background.png"
+                src="/images/japan-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
               <!-- Display the title -->
@@ -40,7 +40,7 @@
             <div class="image-container">
               <!-- Display the image -->
               <img
-                src="/images/index-background.png"
+                src="/images/canada-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
               <!-- Display the title -->
@@ -56,7 +56,7 @@
             <div class="image-container">
               <!-- Display the image -->
               <img
-                src="/images/index-background.png"
+                src="/images/australia-cover.png"
                 alt="TODO Alt"
                 class="region-image content-image" />
               <!-- Display the title -->

@@ -75,9 +75,10 @@ const { data: countryPosts } = await useAsyncData(
 }
 
 .post-title {
-  font-size: var(--font-size-M);
+  font-size: var(--font-size-S);
   font-family: var(--font-family-secondary);
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .post-link {
@@ -104,7 +105,7 @@ const { data: countryPosts } = await useAsyncData(
 .image-container {
   position: relative;
   width: 100%;
-  height: 30vw;
+  height: 20vw;
   overflow: hidden;
 }
 
@@ -113,6 +114,7 @@ const { data: countryPosts } = await useAsyncData(
   grid-row: 1;
 }
 
+/*
 .blog-item:nth-child(2n + 1) {
   grid-column: 1 / 9;
   grid-row: auto;
@@ -121,6 +123,22 @@ const { data: countryPosts } = await useAsyncData(
 .blog-item:nth-child(2n) {
   grid-column: 9 / 17;
   grid-row: auto;
+}*/
+
+.blog-item:nth-child(4n + 1) {
+  grid-column: 1 / span 4;
+}
+
+.blog-item:nth-child(4n + 2) {
+  grid-column: 5 / span 4;
+}
+
+.blog-item:nth-child(4n + 3) {
+  grid-column: 9 / span 4;
+}
+
+.blog-item:nth-child(4n + 4) {
+  grid-column: 13 / span 4;
 }
 
 .country-posts h3 {

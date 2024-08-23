@@ -1,7 +1,7 @@
 <template>
   <div class="destination-pages">
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/canada-cover.png"
       imageAlt="TODO alt"
       title="North America"
       subtitle="Explore Posts by Destination."
