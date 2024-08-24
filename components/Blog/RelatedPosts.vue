@@ -19,7 +19,7 @@
     <section class="related-posts">
       <LayoutGridContainer v-if="relatedPosts && relatedPosts.length">
         <div v-for="post in relatedPosts" :key="post._path" class="blog-item">
-          <NuxtLink :to="post._path" class="post-link">
+          <NuxtLink :to="post._path" class="post-link" @click="scrollToTop">
             <!-- Display the image -->
             <div class="image-container">
               <img
@@ -52,6 +52,11 @@ const props = defineProps({
   },
 });
 
+function scrollToTop() {
+  setTimeout(() => {
+    window.scrollTo({ top: 0 });
+  }, 300);
+}
 const { data: currentPost } = await useAsyncData("currentPost", async () => {
   const post = await queryContent("blog")
     .where({ _path: `/blog/${slug}` })
