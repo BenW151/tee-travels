@@ -8,6 +8,7 @@ headerImageUrl: /images/australia-cover.png
 headerImageAlt: alt
 
 region: oceania
+currency: AUD
 
 spending: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 spendingImageUrl: /images/uploads/australia-cover.png

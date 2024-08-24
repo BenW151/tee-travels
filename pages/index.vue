@@ -35,6 +35,7 @@
                 information you need to plan an unforgettable journey. Start
                 your adventure today and let the world be your playground!
               </p>
+
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay

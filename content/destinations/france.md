@@ -8,6 +8,7 @@ headerImageUrl: /images/uploads/france-cover.png
 headerImageAlt: Streets of France
 
 region: europe
+currency: EUR
 
 spending: France offers a range of experiences to suit every budget. From the bustling markets of Provence to the high-end boutiques of Paris, your spending can vary widely. Dining out can be affordable, especially in bistros and cafés, but expect to pay more in Michelin-starred restaurants. Transportation is efficient, with options ranging from budget-friendly buses and regional trains to the more luxurious TGV. For accommodation, there’s something for everyone, from charming rural gîtes to luxurious city hotels.
 

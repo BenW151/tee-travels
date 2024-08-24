@@ -30,6 +30,9 @@
             <template #title>Spending</template>
             <template #body>
               <p v-html="destinationData.spending"></p>
+
+              <OtherCurrencyConversion :fromCurrency="destinationData.currency" />
+
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
