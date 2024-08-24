@@ -185,7 +185,7 @@ body.scrolled-past-header .search .list a::after {
 @media (max-width: 767px) {
   .search .list a {
     color: var(--foreground-primary);
-    font-size: var(--font-size-M);
+    font-size: var(--font-size-S);
   }
 
   .search .list {

@@ -180,7 +180,7 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 .lead-text .item,
 .lead-text p {
-  grid-column: 2 / 16;
+  grid-column: 1 / 17;
 }
 
 @media (max-width: 767px) {
