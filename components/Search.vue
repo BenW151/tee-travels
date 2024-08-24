@@ -20,7 +20,7 @@
 import MiniSearch from "minisearch";
 import { ref, watchEffect, onMounted, onBeforeUnmount, defineEmits } from "vue";
 
-const emit = defineEmits(['toggle-menu']); // Declare the event
+const emit = defineEmits(["toggle-menu"]); // Declare the event
 
 const search = ref("");
 const results = ref([]);
@@ -48,8 +48,11 @@ const handleResultClick = (event) => {
   setTimeout(() => {
     search.value = "";
     results.value = [];
-    emit('toggle-menu'); // Emit the event to the parent component
+    emit("toggle-menu"); // Emit the event to the parent component
   }, 100);
+  setTimeout(() => {
+    window.scrollTo({ top: 0 });
+  }, 300);
 };
 
 onMounted(() => {

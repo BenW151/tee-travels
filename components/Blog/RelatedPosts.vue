@@ -57,6 +57,7 @@ function scrollToTop() {
     window.scrollTo({ top: 0 });
   }, 300);
 }
+
 const { data: currentPost } = await useAsyncData("currentPost", async () => {
   const post = await queryContent("blog")
     .where({ _path: `/blog/${slug}` })
