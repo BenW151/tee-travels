@@ -204,7 +204,12 @@ collections:
           name: "headerImageAlt",
           widget: "string",
         }
-      - { label: "Region", name: "region", widget: "string" }
+      - {
+          label: "Currency",
+          name: "currency",
+          widget: "string",
+          hint: "Use international currency code, EUR, GBP, USD, etc.",
+        }
       - { label: "Spending", name: "spending", widget: "string" }
       - {
           label: "spending Image URL",
