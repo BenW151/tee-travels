@@ -172,7 +172,7 @@ const pageIndexLabels = [
 onMounted(() => {
   setTimeout(() => {
     contentLoaded.value = true;
-  }, 300);
+  }, 0);
 });
 
 // Fetch the destination-specific data
