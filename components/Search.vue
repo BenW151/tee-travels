@@ -5,9 +5,9 @@
       <input v-model="search" placeholder="Search..." spellcheck="false" />
     </div>
     <ListsLinkList
-      v-if="results.length > 0"
+      v-if="filteredResults.length > 0"
       :links="
-        results.slice(0, 4).map((result) => ({
+        filteredResults.slice(0, 4).map((result) => ({
           url: result.id,
           label: result.title,
         }))
@@ -18,7 +18,8 @@
 
 <script setup>
 import MiniSearch from "minisearch";
-import { ref, watchEffect, onMounted, onBeforeUnmount, defineEmits } from "vue";
+import { ref, watchEffect, onMounted, onBeforeUnmount, defineEmits, computed } from "vue";
+import { useRoute } from "vue-router";
 
 const emit = defineEmits(["toggle-menu"]); // Declare the event
 
@@ -35,6 +36,12 @@ const miniSearch = new MiniSearch({
     fuzzy: 0.3, // Allows for some degree of typo tolerance (0.2 = tolerate up to 20% of characters being wrong)
   },
 });
+
+// Get current route's slug
+const route = useRoute();
+const getLastSegment = (path) => path.split('/').filter(Boolean).pop(); // Utility to get last segment
+
+const currentPageSlug = computed(() => getLastSegment(route.path));
 
 const handleClickOutside = (event) => {
   if (searchContainer.value && !searchContainer.value.contains(event.target)) {
@@ -57,13 +64,8 @@ const handleResultClick = (event) => {
 
 onMounted(() => {
   document.addEventListener("click", handleClickOutside);
-});
 
-onBeforeUnmount(() => {
-  document.removeEventListener("click", handleClickOutside);
-});
-
-if (process.client) {
+  // Watch the search value and perform the search
   watchEffect(async () => {
     if (search.value) {
       try {
@@ -91,7 +93,18 @@ if (process.client) {
       results.value = [];
     }
   });
-}
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("click", handleClickOutside);
+});
+
+const filteredResults = computed(() => {
+  return results.value.filter(result => {
+    const resultSlug = getLastSegment(result.id);
+    return resultSlug !== currentPageSlug.value;
+  });
+});
 </script>
 
 <style scoped>
