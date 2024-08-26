@@ -6,6 +6,14 @@ export default defineNuxtConfig({
     name: "Tee Travels",
   },
 
+  runtimeConfig: {
+    public: {
+      CONTACT_API_URL: process.env.CONTACT_API_URL,
+      NEWSLETTER_API_URL: process.env.NEWSLETTER_API_URL,
+      NEWSLETTER_UNSUBSCRIBE_API_URL: process.env.NEWSLETTER_UNSUBSCRIBE_API_URL,
+    }
+  },
+
   content: {
     experimental: {
       search: true,

@@ -93,13 +93,14 @@ const initialFormData = {
 
 const formData = ref({ ...initialFormData });
 const message = ref("");
+const config = useRuntimeConfig()
 
 const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
     const response = await fetch(
-      "https://contact-form.whynotadventures.co.uk/",
+      config.public.CONTACT_API_URL,
       {
         method: "POST",
         headers: {

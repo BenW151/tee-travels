@@ -30,12 +30,13 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 const email = ref("");
 const message = ref("");
+const config = useRuntimeConfig()
 
 const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
-    const response = await fetch("https://newsletter.whynotadventures.co.uk/", {
+    const response = await fetch(config.public.NEWSLETTER_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",

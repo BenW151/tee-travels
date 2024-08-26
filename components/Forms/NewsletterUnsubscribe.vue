@@ -29,13 +29,14 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 const email = ref("");
 const message = ref("");
+const config = useRuntimeConfig()
 
 const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
     const response = await fetch(
-      "https://why-not-adventures-newsletter-unsubscribe.benward151.workers.dev",
+      config.public.NEWSLETTER_UNSUBSCRIBE_API_URL,
       {
         method: "POST",
         headers: {
