@@ -58,3 +58,5 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
   return filteredContent.slice(0, 4);
 });
 </script>
+
+<style scoped></style>
