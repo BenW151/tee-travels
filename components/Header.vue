@@ -118,7 +118,7 @@ header a.link::after {
 }
 
 .index .background-image {
-  top: 25%;
+  top: 13vw;
   z-index: 4;
 }
 
@@ -215,8 +215,8 @@ header .item:nth-child(3) {
   }
 
   .background-image img {
-    height: 110lvh;
-    object-position: 65% 50%;
+    height: 60lvh;
+    object-position: 80% 50%;
   }
 
   .hero-text {
@@ -245,6 +245,25 @@ header .item:nth-child(3) {
     right: 0;
     width: 100%;
   }
+
+  .background-image img {
+    height: 110lvh;
+    object-position: 50% 50%;
+  }
+
+  .index .background-image {
+    top: 45vh;
+  }
+
+  .index .background-image img {
+    height: 60lvh;
+    object-position: 80% 50%;
+  }
+
+  .index h1 {
+    font-size: 26vw;
+  }
+
 }
 </style>
 
