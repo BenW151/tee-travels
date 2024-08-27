@@ -30,6 +30,7 @@ const props = defineProps({
   flex-direction: row;
   align-items: center;
   white-space: pre;
+  margin-bottom: 0;
 }
 
 .lucide, .svg {
