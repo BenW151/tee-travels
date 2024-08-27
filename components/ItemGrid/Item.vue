@@ -13,20 +13,47 @@
 
   <div v-else class="item-grid-item">
     <div class="item-grid-link">
-      <a :href="itemUrl" class="image-container">
+      <NuxtLink
+        v-if="isInternalLink(itemUrl)"
+        :to="itemUrl"
+        class="image-container">
+        <img
+          :src="itemImage"
+          :alt="itemImageAlt"
+          class="item-grid-image content-image" />
+      </NuxtLink>
+      <a
+        v-else
+        :href="itemUrl"
+        class="image-container"
+        target="_blank"
+        rel="noopener noreferrer">
         <img
           :src="itemImage"
           :alt="itemImageAlt"
           class="item-grid-image content-image" />
       </a>
-      <a :href="itemUrl" class="item-grid-title">{{ itemLabel }}</a>
+      <NuxtLink
+        v-if="isInternalLink(itemUrl)"
+        :to="itemUrl"
+        class="item-grid-title">
+        {{ itemLabel }}
+      </NuxtLink>
+      <a
+        v-else
+        :href="itemUrl"
+        class="item-grid-title"
+        target="_blank"
+        rel="noopener noreferrer">
+        {{ itemLabel }}
+      </a>
       <p>{{ itemDescription }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   itemUrl: {
     type: String,
     required: true,
@@ -52,6 +79,11 @@ defineProps({
     default: false,
   },
 });
+
+// Function to check if a link is internal
+const isInternalLink = (url) => {
+  return !url.startsWith('http');
+};
 </script>
 
 <style scoped>
