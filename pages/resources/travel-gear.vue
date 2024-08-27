@@ -8,6 +8,35 @@
       headerClass="header-small">
     </Header>
 
+    <section class="about text-left">
+      <LayoutGridContainer>
+        <TextSectionLabel labelText="Travel Essentials" />
+        <TextParagraphWithTitle subtitleTag="h3">
+          <template #title>Travel Essentials</template>
+          <template #body>
+            <p>
+              When it comes to travel, having the right gear can make all the
+              difference. Whether you're embarking on a weekend getaway or a
+              month-long adventure, investing in reliable, lightweight, and
+              versatile equipment is essential. From durable backpacks that can
+              withstand the rigors of travel to compact, high-performance
+              cameras that capture every moment, we've carefully curated a
+              selection of must-have items. Our recommendations are designed to
+              enhance your journey, ensuring you're prepared for any situation
+              while keeping your load light. Discover gear that balances
+              practicality with comfort, helping you travel smarter and more
+              efficiently.
+            </p>
+          </template>
+        </TextParagraphWithTitle>
+        <ImageWithTextOverlay
+          imageUrl="/images/girl.png"
+          imageAlt="Copenhagen, Denmark"
+          overlayText="Copenhagen, <br /> Denmark"
+          textPosition="right" />
+      </LayoutGridContainer>
+    </section>
+
     <ItemGridItems labelText="Hiking">
       <template #title>Hiking Gear</template>
       <template #body>
