@@ -1,38 +1,25 @@
 <template>
-  <section class="country-posts-text text-left" id="country-posts">
-    <LayoutGridContainer>
-      <TextSectionLabel :labelText="labelText" />
-      <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
-        <template #title>
-          <slot name="title"></slot>
-        </template>
-        <template #body>
-          <slot name="body"></slot>
-        </template>
-      </TextParagraphWithTitle>
-    </LayoutGridContainer>
-  </section>
+  <div id="country-posts">
+    <ItemGridItems labelText="Posts">
+      <template #title>Blog Posts</template>
+      <template #body>
+        <p>
+          Read about our latest adventures and insights from various countries
+          around the world.
+        </p>
+      </template>
 
-  <section class="country-posts">
-    <LayoutGridContainer v-if="countryPosts && countryPosts.length">
-      <div v-for="post in countryPosts" :key="post._path" class="blog-item">
-        <NuxtLink :to="post._path" class="post-link">
-          <!-- Display the image -->
-          <div class="image-container">
-            <img
-              :src="post.headerImageUrl"
-              :alt="post.headerImageAlt"
-              class="post-image content-image" />
-          </div>
-          <!-- Display the title -->
-          <NuxtLink :to="post._path" class="post-title">{{
-            post.title
-          }}</NuxtLink>
-          <p>{{ post.description }}</p>
-        </NuxtLink>
-      </div>
-    </LayoutGridContainer>
-  </section>
+      <ItemGridItem
+        v-for="post in countryPosts"
+        :key="post._path"
+        :itemUrl="post._path"
+        :itemImage="post.headerImageUrl"
+        :itemImageAlt="post.headerImageAlt"
+        :itemLabel="post.title"
+        :itemDescription="post.description"
+        :isDestination="false" />
+    </ItemGridItems>
+  </div>
 </template>
 
 <script setup>
@@ -49,7 +36,7 @@ const props = defineProps({
   },
   labelText: {
     type: String,
-    default: '',
+    default: "",
   },
 });
 
@@ -84,106 +71,5 @@ const { data: countryPosts } = await useAsyncData(
 </script>
 
 <style scoped>
-.country-posts .container {
-  padding-top: 0;
-}
 
-.country-posts-text .container {
-  padding-bottom: 0;
-}
-
-.post-title {
-  font-size: var(--font-size-S);
-  font-family: var(--font-family-secondary);
-  margin-right: auto;
-  margin-bottom: 0;
-}
-
-.post-link {
-  width: 100%;
-  height: 100%;
-}
-
-.post-link::after {
-  display: none;
-}
-
-.post-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-}
-
-.blog-item:hover .post-image {
-  transform: scale(1.05);
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 20vw;
-  overflow: hidden;
-}
-
-.country-posts h3 {
-  grid-column: 1 / 17;
-  grid-row: 1;
-}
-
-/*
-.blog-item:nth-child(2n + 1) {
-  grid-column: 1 / 9;
-  grid-row: auto;
-}
-
-.blog-item:nth-child(2n) {
-  grid-column: 9 / 17;
-  grid-row: auto;
-}*/
-
-.blog-item:nth-child(4n + 1) {
-  grid-column: 1 / span 4;
-}
-
-.blog-item:nth-child(4n + 2) {
-  grid-column: 5 / span 4;
-}
-
-.blog-item:nth-child(4n + 3) {
-  grid-column: 9 / span 4;
-}
-
-.blog-item:nth-child(4n + 4) {
-  grid-column: 13 / span 4;
-}
-
-.country-posts h3 {
-  grid-column: 1 / 17;
-  grid-row: 1;
-  text-transform: capitalize;
-}
-
-@media (max-width: 767px) {
-  .image-container {
-    height: 60vw;
-  }
-
-  .post-title {
-    margin-bottom: 0;
-  }
-
-  .post-image {
-    height: auto;
-  }
-
-  .blog-item:nth-child(2n + 1) {
-    grid-column: 1 / 7;
-  }
-
-  .blog-item:nth-child(2n) {
-    grid-column: 1 / 7;
-  }
-}
 </style>

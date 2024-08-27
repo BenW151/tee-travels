@@ -1,41 +1,24 @@
 <template>
-  <div>
-    <section
-      class="related-posts-text text-left"
-      id="related-posts-text">
-      <LayoutGridContainer>
-        <TextSectionLabel :labelText="labelText" />
-        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
-          <template #title>
-            <slot name="title"></slot>
-          </template>
-          <template #body>
-            <slot name="body"></slot>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+  <div class="related-posts">
+    <ItemGridItems labelText="Related Posts">
+      <template #title>Related Posts</template>
+      <template #body>
+        <p>
+          Check out these related posts for more insights and tips on similar
+          topics.
+        </p>
+      </template>
 
-    <section class="related-posts">
-      <LayoutGridContainer v-if="relatedPosts && relatedPosts.length">
-        <div v-for="post in relatedPosts" :key="post._path" class="blog-item">
-          <NuxtLink :to="post._path" class="post-link" @click="scrollToTop">
-            <!-- Display the image -->
-            <div class="image-container">
-              <img
-                :src="post.headerImageUrl"
-                :alt="post.headerImageAlt"
-                class="post-image content-image" />
-            </div>
-            <!-- Display the title -->
-            <NuxtLink :to="post._path" class="post-title">{{
-              post.title
-            }}</NuxtLink>
-            <p>{{ post.description }}</p>
-          </NuxtLink>
-        </div>
-      </LayoutGridContainer>
-    </section>
+      <ItemGridItem
+        v-for="post in relatedPosts"
+        :key="post._path"
+        :itemUrl="post._path"
+        :itemImage="post.headerImageUrl"
+        :itemImageAlt="post.headerImageAlt"
+        :itemLabel="post.title"
+        :itemDescription="post.description"
+        @click="scrollToTop" />
+    </ItemGridItems>
   </div>
 </template>
 
@@ -44,13 +27,6 @@ import { useRoute } from "nuxt/app";
 
 const route = useRoute();
 const slug = route.params.slug;
-
-const props = defineProps({
-  labelText: {
-    type: String,
-    default: '',
-  },
-});
 
 function scrollToTop() {
   setTimeout(() => {
@@ -82,97 +58,3 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
   return filteredContent.slice(0, 4);
 });
 </script>
-
-<style scoped>
-.related-posts-text .container {
-  padding-bottom: 0;
-}
-
-.related-posts .container {
-  padding-top: 0;
-}
-
-.blog-text {
-  grid-column: 5 / 13;
-}
-
-.related-posts h3 {
-  grid-column: 5 / 16;
-  grid-row: 1;
-}
-
-.post-title {
-  font-size: var(--font-size-S);
-  font-family: var(--font-family-secondary);
-  margin-right: auto;
-  margin-bottom: 0;
-}
-
-.post-link {
-  width: 100%;
-  height: 100%;
-}
-
-.post-link::after {
-  display: none;
-}
-
-.post-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-}
-
-.blog-item:hover .post-image {
-  transform: scale(1.05);
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 20vw;
-  overflow: hidden;
-}
-
-.blog-item:nth-child(1) {
-  grid-column: 1 / 5;
-  grid-row: 2;
-}
-
-.blog-item:nth-child(2) {
-  grid-column: 5 / 9;
-  grid-row: 2;
-}
-
-.blog-item:nth-child(3) {
-  grid-column: 9 / 13;
-  grid-row: 2;
-}
-
-.blog-item:nth-child(4) {
-  grid-column: 13 / 17;
-  grid-row: 2;
-}
-
-@media (max-width: 767px) {
-  .blog-item:nth-child(n),
-  .related-posts h3 {
-    grid-column: 1 / 7;
-    grid-row: auto;
-  }
-
-  .post-title {
-    margin-bottom: 0;
-  }
-
-  .post-image {
-    height: auto;
-  }
-
-  .image-container {
-    height: 40vw;
-  }
-}
-</style>

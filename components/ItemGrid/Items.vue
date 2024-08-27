@@ -39,4 +39,10 @@ defineProps({
 .item-grid-items .container {
   padding-top: 0;
 }
+
+@media (max-width: 767px) {
+  .item-grid-items-text .paragraph-with-title {
+    grid-column: 1 / 7;
+  }
+}
 </style>

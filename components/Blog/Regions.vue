@@ -1,226 +1,79 @@
 <template>
   <div>
-    <section class="region-items-text text-left" id="region-items-text">
-      <LayoutGridContainer>
-        <TextSectionLabel :labelText="labelText" />
-        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
-          <template #title>
-            <slot name="title"></slot>
-          </template>
-          <template #body>
-            <slot name="body"></slot>
-          </template>
-        </TextParagraphWithTitle>
-      </LayoutGridContainer>
-    </section>
+    <ItemGridItems labelText="Regions">
+      <template #title>Regions</template>
+      <template #body>
+        <p>
+          Explore the regions I've had the pleasure of visiting. Each
+          destination has its own unique character and charm, offering a diverse
+          range of experiences and stories. Click through to read about my
+          adventures in these places, discover local tips, and see the
+          highlights of each country I've explored. I hope my travels inspire
+          your own journey to these amazing locations!
+        </p>
+      </template>
 
-    <section class="region-items">
-      <LayoutGridContainer>
-        <div class="region-item">
-          <NuxtLink to="/destinations/europe" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/denmark-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  Europe
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/asia" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/japan-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  Asia
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/north-america" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/canada-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  North America
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/central-america" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/guatemala-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-              <p class="region-title">
-                Central America
-              </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/south-america" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/argentina-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  South America
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/middle-east" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/jordan-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  Middle East
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/africa" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/tanzania-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  Africa
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-        <div class="region-item">
-          <NuxtLink to="/destinations/oceania" class="region-link">
-            <div class="image-container">
-              <img
-                src="/images/australia-cover.png"
-                alt="TODO Alt"
-                class="region-image content-image" />
-                <p class="region-title">
-                  Oceania
-                </p>
-            </div>
-          </NuxtLink>
-        </div>
-      </LayoutGridContainer>
-    </section>
+      <ItemGridItem
+        itemUrl="/destinations/europe"
+        itemImage="/images/denmark-cover.png"
+        itemImageAlt="Europe Cover"
+        itemLabel="Europe"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/asia"
+        itemImage="/images/japan-cover.png"
+        itemImageAlt="Asia Cover"
+        itemLabel="Asia"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/north-america"
+        itemImage="/images/canada-cover.png"
+        itemImageAlt="North America Cover"
+        itemLabel="North America"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/central-america"
+        itemImage="/images/guatemala-cover.png"
+        itemImageAlt="Central America Cover"
+        itemLabel="Central America"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/south-america"
+        itemImage="/images/argentina-cover.png"
+        itemImageAlt="South America Cover"
+        itemLabel="South America"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/middle-east"
+        itemImage="/images/jordan-cover.png"
+        itemImageAlt="Middle East Cover"
+        itemLabel="Middle East"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/africa"
+        itemImage="/images/tanzania-cover.png"
+        itemImageAlt="Africa Cover"
+        itemLabel="Africa"
+        :isDestination="true"
+        />
+      <ItemGridItem
+        itemUrl="/destinations/oceania"
+        itemImage="/images/australia-cover.png"
+        itemImageAlt="Oceania Cover"
+        itemLabel="Oceania"
+        :isDestination="true"
+        />
+    </ItemGridItems>
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  labelText: {
-    type: String,
-    default: "",
-  },
-});
-</script>
+<script setup></script>
 
 <style scoped>
-.region-items-text .container {
-  padding-bottom: 0;
-}
-
-.region-items .container {
-  padding-top: 0;
-}
-
-.region-link {
-  margin-bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.region-link::after {
-  display: none;
-}
-
-.region-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: auto;
-  display: block;
-  filter: brightness(0.6);
-}
-
-.region-item:hover .region-image {
-  transform: scale(1.05);
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 20vw;
-  overflow: hidden;
-}
-
-.region-title {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  font-size: var(--font-size-M);
-  font-family: var(--font-family-secondary);
-  color: var(--color-white);
-  margin: 0;
-  pointer-events: none;
-  text-align: center;
-}
-
-.region-item:nth-child(4n + 1) {
-  grid-column: 1 / span 4;
-}
-
-.region-item:nth-child(4n + 2) {
-  grid-column: 5 / span 4;
-}
-
-.region-item:nth-child(4n + 3) {
-  grid-column: 9 / span 4;
-}
-
-.region-item:nth-child(4n + 4) {
-  grid-column: 13 / span 4;
-}
-
-.index .container {
-  padding-top: 0;
-}
-
-@media (max-width: 767px) {
-  .image-container {
-    height: 80vw;
-  }
-
-  .region-title {
-    margin-bottom: 0;
-  }
-
-  .region-item:nth-child(2n + 1) {
-    grid-column: 1 / 7;
-  }
-
-  .region-item:nth-child(2n) {
-    grid-column: 1 / 7;
-  }
-}
 </style>
