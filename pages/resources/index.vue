@@ -23,13 +23,13 @@
       </template>
       <ItemGridItem
         itemUrl="/resources/travel-gear"
-        itemImage="/images/argentina-cover.png"
+        itemImage="/images/hiking-bag.png"
         itemImageAlt="Image 1 description"
         itemLabel="Travel Gear"
         itemDescription="Recommended Travel Gear." />
       <ItemGridItem
         itemUrl="/resources/travel-resources"
-        itemImage="/images/argentina-cover.png"
+        itemImage="/images/map.png"
         itemImageAlt="Image 1 description"
         itemLabel="Travel Resources"
         itemDescription="How I Plan My Trips." />
