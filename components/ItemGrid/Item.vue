@@ -12,16 +12,16 @@
   </div>
 
   <div v-else class="item-grid-item">
-    <a :href="itemUrl" class="item-grid-link">
-      <div class="image-container">
+    <div class="item-grid-link">
+      <a :href="itemUrl" class="image-container">
         <img
           :src="itemImage"
           :alt="itemImageAlt"
           class="item-grid-image content-image" />
-      </div>
+      </a>
       <a :href="itemUrl" class="item-grid-title">{{ itemLabel }}</a>
       <p>{{ itemDescription }}</p>
-    </a>
+    </div>
   </div>
 </template>
 
@@ -72,6 +72,11 @@ defineProps({
   width: 100%;
   height: 20vw;
   overflow: hidden;
+  margin-bottom: 0;
+}
+
+.image-container::after {
+  display: none;
 }
 
 .item-grid-item:hover .item-grid-image, .item-grid-item:hover .destination-image {
