@@ -2,8 +2,12 @@
   <nav :class="{ scrolled: isScrolled }">
     <div class="nav">
       <div class="logo-container">
-        <NuxtLink to="/" aria-label="Home Page" @click="toggleMenuIfOpen">
-          <p class="wordmark">Tee Travels</p>
+        <NuxtLink
+          to="/"
+          aria-label="Home Page"
+          @click="toggleMenuIfOpen"
+          class="wordmark">
+          Tee Travels
           <!--<NuxtImg
             src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
             alt="Tee Travels Logo"
@@ -215,59 +219,44 @@ nav {
   display: none;
 }*/
 
-nav a {
+a {
   margin: 0 var(--spacing-3);
   color: var(--background-primary);
   pointer-events: all;
   height: fit-content;
 }
 
-nav a::after {
+a::after {
   background-color: var(--background-primary);
 }
 
-.nav .logo-container {
+.logo-container {
   margin-right: auto;
-}
-
-.nav .logo-container a {
-  font-family: var(--font-family-secondary);
-  font-size: var(--font-size-XS);
-  margin-left: 0;
 }
 
 .wordmark {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-S);
-  margin-bottom: 0;
+  margin-bottom: 0.5vw;
   margin-top: 0.5vw;
 }
 
-body.scrolled-past-header nav a {
+body.scrolled-past-header a {
   color: var(--foreground-primary);
 }
 
-body.scrolled-past-header nav a::after {
+body.scrolled-past-header a::after {
   background-color: var(--foreground-primary);
 }
 
-/*
-body.scrolled-past-header .contact {
-  border: 1px solid var(--foreground-primary);
-}
-
-body.scrolled-past-header .contact:hover {
-  border: 1px solid var(--background-primary);
-}
-*/
-.nav-logo {
+/*.nav-logo {
   filter: invert(100%);
   height: 5vw;
 }
 
 body.scrolled-past-header .nav-logo {
   filter: invert(0%);
-}
+}*/
 
 .dropdown {
   margin: 0 var(--spacing-3);
@@ -288,6 +277,7 @@ body.scrolled-past-header .nav-logo {
   .nav {
     margin-left: var(--spacing-4);
     margin-right: var(--spacing-4);
+    align-items: center;
   }
 
   .nav-items {
@@ -308,7 +298,7 @@ body.scrolled-past-header .nav-logo {
     padding-right: var(--spacing-2);
   }
 
-  .nav-items .nav-item {
+  .nav-item {
     margin-left: 0;
     margin-right: 0;
   }
@@ -317,23 +307,20 @@ body.scrolled-past-header .nav-logo {
     transform: translateY(-5%);
   }
 
-  .nav-items a {
+  a {
     margin-bottom: var(--spacing-1);
     color: var(--foreground-primary);
     font-size: var(--font-size-XL);
     font-family: var(--font-family-secondary);
   }
 
-  .nav-items a::after {
+  a::after {
     background-color: var(--foreground-primary);
   }
 
-  .nav .logo-container a {
-    z-index: 1000;
-  }
-
-  .nav .logo-container a.open {
-    color: var(--foreground-primary);
+  .wordmark {
+    margin: 0;
+    color: var(--background-primary);
   }
 
   .nav-logo {
@@ -341,9 +328,9 @@ body.scrolled-past-header .nav-logo {
     z-index: 1000;
   }
 
-  .nav-logo.open {
+  /*.nav-logo.open {
     filter: invert(0);
-  }
+  }*/
 
   .burger-menu {
     cursor: pointer;
@@ -383,24 +370,6 @@ body.scrolled-past-header .nav-logo {
     transform: translateX(-100%);
     opacity: 0;
   }
-
-  /*.contact {
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border: none;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .contact:hover {
-    backdrop-filter: none;
-    background-color: none;
-  }
-
-  body.scrolled-past-header .contact {
-    border: none;
-  }*/
 
   .search {
     margin-top: 0;
