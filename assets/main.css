@@ -45,6 +45,7 @@
     background-color 0.2s linear;
   position: relative;
   padding: 0;
+  margin-top: 0;
 }
 
 /** HTML and Body */
@@ -118,7 +119,6 @@ h6 {
   font-weight: 300;
   font-style: normal;
   margin-bottom: var(--spacing-2);
-  margin-top: 0;
 }
 
 h1 {
@@ -150,7 +150,6 @@ h6 {
 }
 
 p {
-  margin-top: 0;
   line-height: 1.3;
   font-family: var(--font-family-secondary);
   font-weight: 300;
@@ -158,90 +157,10 @@ p {
   font-size: var(--font-size-XS);
 }
 
-/** Grid Positioning */
-
-.text-left .paragraph-with-title {
-  grid-column: 3 / 11;
-  grid-row-start: 1;
-}
-
-.text-left .image {
-  grid-column: 9 / 16;
-  grid-row-start: 1;
-  height: 40vw;
-}
-
-.text-right .paragraph-with-title {
-  grid-column: 9 / 16;
-  grid-row-start: 1;
-}
-
-.text-right .image {
-  grid-column: 3 / 11;
-  grid-row-start: 1;
-  height: 40vw;
-}
-
 /** Main formatting */
-
-section {
-  overflow: hidden;
-}
-
-.item {
-  margin: var(--spacing-1) 0;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.item img {
-  display: block;
-}
 
 .rellax {
   transition: none;
-}
-
-/** Text */
-.title {
-  grid-column: span 8;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.block-quote {
-  grid-column: span 4;
-  font-style: italic;
-  font-size: var(--font-size-XXS);
-}
-
-.underline {
-  margin-right: auto;
-}
-
-.underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--foreground-primary);
-  transform-origin: bottom left;
-  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.5s,
-    background-color 0.2s linear;
-}
-
-.underline.visible::after {
-  transform: scaleX(1);
 }
 
 /** Buttons */
@@ -259,25 +178,6 @@ button {
   display: inline-block;
   outline: none;
   border: none;
-}
-
-header a {
-  color: var(--backgroud-primary);
-}
-
-header a::after {
-  background-color: var(--backgroud-primary);
-}
-
-a.link,
-button.link {
-  flex-direction: row;
-  grid-column: span 3;
-  white-space: nowrap;
-  margin: 0;
-  margin-top: auto;
-  margin-bottom: var(--spacing-1);
-  margin-right: auto;
 }
 
 p a {
@@ -347,10 +247,6 @@ button:hover::after {
 }
 
 /** Lists */
-.item.list {
-  grid-column: span 2;
-}
-
 li,
 ul {
   list-style: none;
@@ -360,119 +256,6 @@ li {
   font-size: var(--font-size-XS);
   position: relative;
   margin-bottom: var(--spacing-1);
-}
-
-.list-title {
-  font-weight: bold;
-}
-
-.faded-list li {
-  opacity: var(--opacity);
-}
-
-.data-list {
-  grid-column: span 4;
-}
-
-.data-title {
-  display: flex;
-  align-items: center;
-  font-family: var(--font-family-secondary);
-  font-size: var(--font-size-S);
-  margin-top: var(--spacing-3);
-  margin-bottom: var(--spacing-2);
-}
-
-.data-title::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: calc(var(--spacing-1) * -0.5);
-  left: 0;
-  background-color: var(--foreground-primary);
-}
-
-.data-item {
-  display: flex;
-  align-items: center;
-}
-
-.data-item-title {
-  font-family: var(--font-family-secondary);
-  font-size: var(--font-size-XS);
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--spacing-1);
-}
-
-.data-figure {
-  font-size: var(--font-size-XS);
-  margin-right: var(--spacing-2);
-  margin-bottom: var(--spacing-1);
-  margin-left: auto;
-}
-
-/** Accents */
-.accent {
-  white-space: nowrap;
-  grid-column: span 1;
-}
-
-.index-counter {
-  font-size: var(--font-size-XXS);
-  opacity: var(--opacity);
-}
-
-.progress-bar {
-  height: 2px;
-  background: var(--foreground-primary);
-  width: 0%;
-  z-index: 10000;
-}
-
-/** Text Effects */
-
-@keyframes marqueeLoop {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee {
-  grid-column: span 16;
-}
-
-.marquee-wrap {
-  display: flex;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-}
-
-.marquee-text {
-  font-family: var(--font-family-secondary);
-  font-weight: 300;
-  font-size: 18vw;
-  padding-right: 0.25em;
-  animation: marqueeLoop 5s infinite linear;
-}
-
-/** Forms */
-
-/** Images */
-
-.image-website {
-  grid-column: 3 / 15;
-}
-
-.image-website img {
-  width: 100%;
-  object-fit: cover;
 }
 
 /* Responsive design for mobile */

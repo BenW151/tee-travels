@@ -59,4 +59,6 @@ const { data: relatedPosts } = await useAsyncData("relatedPosts", async () => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

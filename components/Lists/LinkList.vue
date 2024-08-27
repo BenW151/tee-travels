@@ -63,4 +63,12 @@ const getIconComponent = (iconName) => {
 .linklist li:last-child {
   margin-bottom: 0;
 }
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  white-space: nowrap;
+}
 </style>

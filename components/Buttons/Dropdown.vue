@@ -100,7 +100,6 @@ body.scrolled-past-header .dropdown-open {
   width: 9vw;
   z-index: 999;
   left: 0;
-  transform: translateY(var(--spacing-1));
   transition: max-height 0.5s ease, opacity 0.1s ease;
 }
 
@@ -108,6 +107,10 @@ body.scrolled-past-header .dropdown-open {
   opacity: 1;
   overflow: visible; 
   transition: max-height 0.5s ease, 0.5s opacity 0.5s ease;
+}
+
+.dropdown ul {
+  margin-top: var(--spacing-1);
 }
 </style>
 

@@ -239,6 +239,8 @@ a::after {
   font-size: var(--font-size-S);
   margin-bottom: 0.5vw;
   margin-top: 0.5vw;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 body.scrolled-past-header a {
