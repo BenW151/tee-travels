@@ -1,7 +1,7 @@
 ---
-title: Packing List
-subtitle: One Month Packing List.
-description: One Month Packing List.
+title: Packing Guide
+subtitle: Recommended Gear.
+description: Recommended Gear.
 date: 2024-08-22T20:42:00.000Z
 headerImageUrl: /images/uploads/france-cover.png
 headerImageAlt: hello

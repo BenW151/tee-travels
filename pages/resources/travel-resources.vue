@@ -8,20 +8,31 @@
       headerClass="header-small">
     </Header>
 
-    <BlogCountryPosts region="resources" labelText="Resources">
-      <template #title>Resources</template>
+    <ItemGridItems labelText="Hiking">
+      <template #title>Accomodation</template>
       <template #body>
         <p>
-          Here are some of my favourite resources to help you make the most of
-          your travels. From must-have gear to essential tips and tricks, I've
-          gathered everything you need to prepare for your adventures. Whether
-          you're looking for packing advice, destination guides, or travel
-          hacks, these resources are designed to make your journey smoother and
-          more enjoyable. Explore my recommendations and get ready to travel
-          like a pro!
+          Here are some of the best hiking gear recommendations that will ensure
+          you're prepared for your next adventure.
         </p>
       </template>
-    </BlogCountryPosts>
+      <ItemGridItem
+        itemUrl="https://booking.com"
+        itemImage="/images/booking-com-logo.png"
+        itemImageAlt="Image 1 description"
+        itemLabel="Booking.com"
+        itemDescription="Here are some of my favourite resources to help you make the most of
+          your travels. From must-have gear to essential tips and tricks, I've
+          gathered everything you need to prepare for your adventures." />
+      <ItemGridItem
+        itemUrl="https://hostelworld.com"
+        itemImage="/images/booking-com-logo.png"
+        itemImageAlt="Image 1 description"
+        itemLabel="Hostel World"
+        itemDescription="Here are some of my favourite resources to help you make the most of
+          your travels. From must-have gear to essential tips and tricks, I've
+          gathered everything you need to prepare for your adventures." />
+    </ItemGridItems>
   </div>
 </template>
 
