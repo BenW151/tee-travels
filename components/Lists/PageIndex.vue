@@ -49,6 +49,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.page-index {
+  grid-column: 1 / 17;
+  margin: auto;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -87,6 +92,11 @@ ul li:last-child {
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .page-index {
+    grid-column: 1 / 7;
+    margin: 0;
   }
 }
 </style>

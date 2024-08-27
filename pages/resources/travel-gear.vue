@@ -8,6 +8,12 @@
       headerClass="header-small">
     </Header>
 
+    <section class="contents">
+      <LayoutGridContainer>
+        <ListsPageIndex :labels="pageIndexLabels" />
+      </LayoutGridContainer>
+    </section>
+
     <section class="about text-left">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Travel Essentials" />
@@ -37,7 +43,7 @@
       </LayoutGridContainer>
     </section>
 
-    <ItemGridItems labelText="Hiking">
+    <ItemGridItems labelText="Hiking" id="hiking">
       <template #title>Hiking Gear</template>
       <template #body>
         <p>
@@ -65,7 +71,7 @@
         itemDescription="Description of gear item 1." />
     </ItemGridItems>
 
-    <ItemGridItems labelText="Camera">
+    <ItemGridItems labelText="Camera" id="camera">
       <template #title>Camera Equipment</template>
       <template #body>
         <p>
@@ -96,6 +102,11 @@
 </template>
 
 <script setup>
+const pageIndexLabels = [
+  { title: "Hiking", link: "hiking" },
+  { title: "Camera", link: "camera" },
+];
+
 useHead({
   title: "Tee Travels | Destinations",
   meta: [
