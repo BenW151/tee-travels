@@ -4,8 +4,12 @@
       <template #title>Blog Posts</template>
       <template #body>
         <p>
-          Read about our latest adventures and insights from various countries
-          around the world.
+          Here, you'll find a collection of my latest travel adventures,
+          insights, and personal stories from the road. Each post is a
+          reflection of my experiences and discoveries, offering tips,
+          recommendations, and a glimpse into the places I've explored. Dive in
+          and join me as I share the highs and lows of my travels, and
+          hopefully, inspire your own adventures along the way.
         </p>
       </template>
 
@@ -70,6 +74,4 @@ const { data: countryPosts } = await useAsyncData(
 );
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

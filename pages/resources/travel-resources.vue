@@ -4,7 +4,7 @@
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
       title="Resources"
-      subtitle="Helpful Resources."
+      subtitle="Some Helpful Tools for Travel."
       headerClass="header-small">
     </Header>
 
@@ -27,17 +27,35 @@
         itemImage="/images/bookingcom-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Booking.com"
-        itemDescription="Here are some of my favourite resources to help you make the most of
-          your travels. From must-have gear to essential tips and tricks, I've
-          gathered everything you need to prepare for your adventures." />
+        itemDescription="Offering a vast selection of accommodations worldwide, 
+          Booking.com makes it easy to find the perfect place to stay, 
+          from budget-friendly options to luxury hotels, all 
+          with user reviews and flexible booking options." />
       <ItemGridItem
         itemUrl="https://hostelworld.com"
         itemImage="/images/hostelworld-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Hostel World"
-        itemDescription="Here are some of my favourite resources to help you make the most of
-          your travels. From must-have gear to essential tips and tricks, I've
-          gathered everything you need to prepare for your adventures." />
+        itemDescription="Hostelworld is the go-to platform for backpackers
+          and budget travelers, featuring a wide array of hostels, guesthouses, 
+          and shared accommodations in cities and off-the-beaten-path destinations." />
+      <ItemGridItem
+        itemUrl="https://hotels.com"
+        itemImage="/images/hotelscom-logo.png"
+        itemImageAlt="Image 1 description"
+        itemLabel="Hotels.com"
+        itemDescription="Hotels.com provides an extensive range of hotel 
+          options with the added perk of earning free nights through its 
+          rewards program, making it a great choice for frequent travelers." />
+      <ItemGridItem
+        itemUrl="https://airbnb.com"
+        itemImage="/images/airbnb-logo.png"
+        itemImageAlt="Image 1 description"
+        itemLabel="AirBnB"
+        itemDescription="Airbnb offers unique stays in local homes, 
+          apartments, and even castles, giving travelers a chance to 
+          experience a destination like a local with a variety of options 
+          to suit every budget." />
     </ItemGridItems>
 
     <ItemGridItems labelText="Accommodation" id="free-accommodation">

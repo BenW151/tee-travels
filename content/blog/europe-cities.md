@@ -1,9 +1,9 @@
 ---
-title: Interail Itinerary
-subtitle: One Month Interail Itinerary.
-description: One Month Interail Itinerary.
+title: European City Guide
+subtitle: The Best European Cities.
+description: The Best European Cities.
 date: 2024-08-22T20:42:00.000Z
-headerImageUrl: /images/uploads/france-cover.png
+headerImageUrl: /images/uploads/uk-cover.png
 headerImageAlt: hello
 region: europe
 tag: hiking

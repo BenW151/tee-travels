@@ -31,8 +31,8 @@
             <template #body>
               <p v-html="destinationData.spending"></p>
 
-              <OtherCurrencyConversion :fromCurrency="destinationData.currency" />
-
+              <OtherCurrencyConversion
+                :fromCurrency="destinationData.currency" />
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
@@ -101,10 +101,13 @@
             <template #title>FAQ</template>
             <template #body>
               <p>
-                I provide a full spectrum of web development services, including
-                custom website design, responsive, accessible development,
-                optimised SEO, and ongoing maintenance, ensuring a seamless and
-                engaging user experience across all devices.
+                Travel planning often brings up a lot of questions, so this FAQ
+                section covers common topics that apply to many destinations.
+                From visa requirements and local currency to safety advice and
+                cultural norms, these answers aim to help travelers prepare for
+                their journey. Whether it's tips on the best time to visit,
+                transportation options, or packing essentials, this guide offers
+                useful information to make any trip smoother and more enjoyable.
               </p>
             </template>
           </TextParagraphWithTitle>

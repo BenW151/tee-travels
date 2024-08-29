@@ -4,37 +4,13 @@
       imageUrl="/images/denmark-cover.png"
       imageAlt="TODO alt"
       title="Europe"
-      subtitle="Explore Posts by Destination."
+      subtitle="Your Guide to Europe."
       headerClass="header-small">
     </Header>
 
-    <BlogCountryPosts region="europe" labelText="Blog Posts">
-      <template #title>Blog Posts</template>
-          <template #body>
-            <p>
-              Here, you'll find a collection of my latest travel adventures,
-              insights, and personal stories from the road. Each post is a
-              reflection of my experiences and discoveries, offering tips,
-              recommendations, and a glimpse into the places I've explored. Dive
-              in and join me as I share the highs and lows of my travels, and
-              hopefully, inspire your own adventures along the way.
-            </p>
-          </template>
-    </BlogCountryPosts>
+    <BlogCountryPosts region="europe" />
 
-    <BlogRegionalDestinations region="europe" labelText="Countries">
-      <template #title>Countries</template>
-      <template #body>
-        <p>
-          Explore the countries I've had the pleasure of visiting. Each
-          destination has its own unique character and charm, offering a diverse
-          range of experiences and stories. Click through to read about my
-          adventures in these places, discover local tips, and see the
-          highlights of each country I've explored. I hope my travels inspire
-          your own journey to these amazing locations!
-        </p>
-      </template>
-    </BlogRegionalDestinations>
+    <BlogRegionalDestinations region="europe" />
   </div>
 </template>
 

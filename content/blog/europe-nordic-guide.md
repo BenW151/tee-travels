@@ -1,9 +1,9 @@
 ---
-title: Article 5
-subtitle: Article description
-description: This is a post description
+title: Nordic Guide
+subtitle: Guide to the Nordic Countries.
+description: Guide to the Nordic Countries.
 date: 2024-08-06T20:42:00.000Z
-headerImageUrl: /images/index-background.png
+headerImageUrl: /images/norway.png
 headerImageAlt: hello
 country: france
 region: europe
