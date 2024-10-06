@@ -197,6 +197,7 @@ footer .container {
 
 .subtitle {
   font-size: var(--font-size-S);
+  font-family: var(--font-family-secondary);
   margin-bottom: var(--spacing-1);
 }
 
